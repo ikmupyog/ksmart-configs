@@ -23,7 +23,7 @@
                 {
                   "stack": [
                     {
-                      "text": "GOVERNMENT OF PUNJAB",
+                      "text": "GOVERNMENT OF KERALA",
                       "style": "appendix-header-body"
                     },
                     {
@@ -105,7 +105,7 @@
                 {
                   "columns": [
                     {
-                      "text": ["This is to certify that the following information has been taken from the original record of birth which is the register for (local area/local body) CANTONMENT BOARD TESTING of tahsil/block TEST of District TEST of the State of Testing"],
+                      "text": ["This is to certify that the following information has been taken from the original record of birth which is the register for (local area/local body)TESTING of tahsil/block TEST of District TEST of the State of Testing"],
                       "style": "rule-body_multiLang"
                     }
                   ]
