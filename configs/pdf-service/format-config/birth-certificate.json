@@ -53,7 +53,7 @@
             "body": [
               [
                 {
-                  "text": "Name of Local Body issuing Certificate : {{tenantid}}",
+                  "text": "Name of Local Body issuing Certificate : {{tenantId}}",
                   "style": "title-header"
                 }
               ]
