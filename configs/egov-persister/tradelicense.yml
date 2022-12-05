@@ -106,6 +106,8 @@ serviceMaps:
 
           - jsonPath: $.Licenses.*.tradeLicenseDetail.businessActivityDesc
 
+          - jsonPath: $.Licenses.*.tradeLicenseDetail.licenseeType
+
           - jsonPath: $.Licenses.*.auditDetails.createdBy
 
           - jsonPath: $.Licenses.*.auditDetails.lastModifiedBy
