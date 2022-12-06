@@ -52,6 +52,13 @@
                   "type":"setEmpty"
                 },
                 {
+                  "variable": "tenantId", 
+                  "value": {
+                    "path": "$.tenantid"
+                  },
+                  "type":"setEmpty"
+                },
+                {
                     "variable": "registration_date", 
                     "value": {
                       "path": "$.dateofreport"
