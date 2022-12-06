@@ -791,12 +791,10 @@ serviceMaps:
            - jsonPath: $.Licenses.*.auditDetails.lastModifiedTime
 
 
-       - query: UPDATE eg_tl_structureplacedetail SET tenantid=?, structureplacesubtype=?, blockno=?, surveyno=?, subdivisionno=?, zonalcode=?, wardcode=?, wardno=?, doorno=?, doorsub=?, buildingid=?, vehicleno=?, vesselno=?, tradelicensedetailid=?, active=?, createdby=?, lastmodifiedby=?, createdtime=?, lastmodifiedtime=? WHERE id =?;
+       - query: UPDATE eg_tl_structureplacedetail SET tenantid=?, blockno=?, surveyno=?, subdivisionno=?, partitionno=?, doorno=?, doorsub=?, buildingid=?, vehicleno=?, vesselno=?, tradelicensedetailid=?, active=?, createdby=?, lastmodifiedby=?, createdtime=?, lastmodifiedtime=? WHERE id =?;
          basePath: Licenses.*.tradeLicenseDetail.structurePlace
          jsonMaps:
           - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.tenantId
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.structurePlaceSubType
 
           - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.blockNo
 
@@ -804,11 +802,7 @@ serviceMaps:
 
           - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.subDivisionNo
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.zonalcode
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.wardcode
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.wardNo
+          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.partitionNo
 
           - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.doorNo
 
