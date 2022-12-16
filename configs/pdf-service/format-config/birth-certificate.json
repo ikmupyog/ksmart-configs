@@ -22,6 +22,14 @@
                 },
                 {
                   "stack": [
+                   {
+                      "text": "FORM No.5",
+                      "style":"appendix-header-body"
+                    },
+                     {
+                      "text": "(See Rule 8)",
+                      "style":"appendix-header-body"
+                    },
                     {
                       "text": "കേരള സർക്കാർ",
                       "style":"appendix-header-body"
@@ -62,7 +70,38 @@
             "body": [
               [
                 {
-                  "text": "Name of Local Body issuing Certificate : {{tenantId}}",
+                  "text": "Name of Local Body issuing Certificate : Thiruvananthapuram Corporation",
+                  "style": "title-header"
+                }
+              ]
+            ]
+          },
+          "layout": "noBorders" 
+        },
+        {
+          "style": "ws-head",
+          "table": {
+            "widths": ["*"],
+            "body": [
+              [
+                 {
+                  "text": "ജനന സർട്ടിഫിക്കറ്റ്",
+                  "style": "title-header"
+                }
+                {
+                      "text": " ",
+                      "width": "1%"
+                    },
+                {
+                  "text": "BIRTH CERTIFICATE",
+                  "style": "title-header"
+                }
+                {
+                      "text": " ",
+                      "width": "1%"
+                    },
+                {
+                  "text": "(Issued Under Section 12)",
                   "style": "title-header"
                 }
               ]
@@ -77,33 +116,13 @@
             "body": [
               [
                 {
-                  "text": "ജനന സർട്ടിഫിക്കറ്റ്",
-                  "style": "title-header",
-                  "decoration": "underline"
-                }
-                {
-                  "text": "BIRTH CERTIFICATE",
-                  "style": "title-header",
-                  "decoration": "underline"
-                }
-              ]
-            ]
-          },
-          "layout": "noBorders" 
-        },
-        {
-          "style": "ws-head",
-          "table": {
-            "widths": ["*"],
-            "body": [
-              [
-                {
                   "columns": [
                     {
-                      "text": "Issued Under Section 12/17 of the Registration of Births and Deaths Act, 1969 and Rule8/13 the Testing Registration of Births and Deaths Rules,1999",
+                      "text": "(1967-ലെ ജനന-മരണ രജിസ്‌ട്രേഷൻ ആക്ടിലെ 12-ാം വകുപ്പും 1999-ലെ കേരള ജനന-മരണ രജിസ്ട്രേഷന് ചട്ടങ്ങളിലെ 8-ാംചാട്ടവും അനുസരിച്ചു നൽകുന്നത്.)",
                       "style": "rule-header"
                     }
                   ]
+                  
                 }
               ]
             ]
@@ -119,7 +138,27 @@
                 {
                   "columns": [
                     {
-                      "text": ["This is to certify that the following information has been taken from the original record of birth which is the register for (local area/local body) CANTONMENT BOARD TESTING of tahsil/block TEST of District TEST of the State of Testing"],
+                      "text": "(Issued Under Section 12/17 of the Registration of Births and Deaths Act, 1969 and Rule8/13 the Testing Registration of Births and Deaths Rules,1999)",
+                      "style": "rule-header"
+                    }
+                  ]
+                  
+                }
+              ]
+            ]
+          },
+          "layout": "noBorders"
+        },
+        {
+          "style": "ws-head",
+          "table": {
+            "widths": ["*"],
+            "body": [
+              [
+                {
+                  "columns": [
+                    {
+                      "text": ["താഴെ പറയുന്ന വിവരങ്ങൾ കേരള  സംസ്‌ഥാനത്തിലെ തിരുവനന്തപുരം ജില്ലയിലെ തിരുവനന്തപുരം താലൂക്കിലെ തിരുവനന്തപുരം കോർപ്പറേഷൻ -ലെ ( തദേശസ്ഥാപനം) അസ്സൽ ജനന രജിസ്റ്ററിൽ നിന്ന് എടുത്തിട്ടുള്ളവയാണെന്ന് സാക്ഷ്യപ്പെടുത്തുന്നു ."],
                       "style": "rule-body_multiLang"
                     }
                   ]
@@ -129,6 +168,7 @@
           },
           "layout": "noBorders"
         },
+        
         {
           "style": "ws-head",
           "table": {
@@ -138,7 +178,28 @@
                 {
                   "columns": [
                     {
-                      "text": "NAME: {{name}}",
+                      "text": ["This is to certify that the following information has been taken from the original record of birth which is the register for (local area/local
+body) Thiruvananthapuram Corporation of Taluk Thiruvananthapuram of District Thiruvananthapuram of State Kerala."],
+                      "style": "rule-body_multiLang"
+                    }
+                  ]
+                }
+              ] 
+            ]
+          },
+          "layout": "noBorders"
+        },
+        
+        {
+          "style": "ws-head",
+          "table": {
+            "widths": ["*"],
+            "body": [
+              [
+                {
+                  "columns": [
+                    {
+                      "text": "പേര്/NAME: {{name}}",
                       "width": "49%",
                       "style": "details-body"
                     },
@@ -147,7 +208,7 @@
                       "width": "1%"
                     },
                     {
-                      "text": "SEX: {{gender}}",
+                      "text": "ആൺ/പെൺ/SEX: {{gender}}",
                       "style": "details-body"
                     }
                   ]
@@ -157,7 +218,7 @@
                 {
                   "columns": [
                     {
-                      "text": "DATE OF BIRTH: {{dob}}",
+                      "text": "ജനന തീയതി/DATE OF BIRTH: {{dob}}",
                       "width": "49%",
                       "style": "details-body"
                     },
@@ -166,7 +227,7 @@
                       "width": "1%"
                     },
                     {
-                      "text": "PLACE OF BIRTH: {{placeOfBirth}}",
+                      "text": "ജനന സ്ഥലം/PLACE OF BIRTH: {{placeOfBirth}}",
                       "style": "details-body"
                     }
                   ]
@@ -176,7 +237,7 @@
                 {
                   "columns": [
                     {
-                      "text": "NAME OF MOTHER: {{motherName}}",
+                      "text": "മാതാവിന്റെ പേര്/NAME OF MOTHER: {{motherName}}",
                       "width": "49%",
                       "style": "details-body"
                     },
@@ -185,7 +246,7 @@
                       "width": "1%"
                     },
                     {
-                      "text": "{{father_name_label}} : {{fatherName}}",
+                      "text": "പിതാവിന്റെ പേര്/NAME OF FATHER: {{fatherName}}",
                       "style": "details-body"
                     }
                   ]
@@ -194,9 +255,26 @@
               [
                 {
                   "columns": [
+                   {
+                      "text": "കുട്ടിയുടെ ജനന സമയത്ത് മാതാപിതാക്കളുടെ മേൽവിലാസം: {{childAddress}}",
+                      "width": "49%",
+                      "style": "details-body"
+                    },
+                    {
+                      "text": " ",
+                      "width": "1%"
+                    },
                     {
                       "text": "ADDRESS OF PARENTS AT THE TIME OF BIRTH OF THE CHILD: {{childAddress}}",
                       "width": "49%",
+                      "style": "details-body"
+                    },
+                    {
+                      "text": " ",
+                      "width": "1%"
+                    },
+                     {
+                      "text": "മാതാപിതാക്കളുടെ സ്ഥിരമായ മേൽവിലാസം: {{parentsAddress}}",
                       "style": "details-body"
                     },
                     {
@@ -214,18 +292,10 @@
                 {
                   "columns": [
                     {
-                      "text": "REGISTRATION NUMBER: {{registrationNo}}",
+                      "text": "രജിസ്ട്രേഷൻ നമ്പർ/REGISTRATION NUMBER: {{registrationNo}}",
                       "width": "49%",
                       "style": "details-body"
                     },
-                    {
-                      "text": " ",
-                      "width": "1%"
-                    },
-                    {
-                      "text": "DATE OF REGISTRATION: {{registration_date}}",
-                      "style": "details-body"
-                    }
                   ]
                 }
               ],
@@ -233,7 +303,7 @@
                 {
                   "columns": [
                     {
-                      "text": "REMARKS (IF ANY): {{remarks}}",
+                      "text": "അഭിപ്രായകുറിപ്പ്/REMARKS (IF ANY): {{remarks}}",
                       "width": "49%",
                       "style": "details-body"
                     }
@@ -244,19 +314,10 @@
                 {
                   "columns": [
                     {
-                      "text": "DATE OF ISSUE: {{issueDate}}",
+                      "text": "നൽകുന്ന തീയതി/DATE OF ISSUE: {{issueDate}}",
                       "width": "49%",
                       "style": "details-body"
                     },
-                    {
-                      "text": " ",
-                      "width": "1%"
-                    },
-                    {
-                      "text": "Signature of the issuing authority :",
-                      "style": "details-body",
-                      "margin": [0, -15, 0, 0]
-                    }
                   ]
                 }
               ],
@@ -272,7 +333,7 @@
                       "width": "1%"
                     },
                     {
-                      "text": "Address of the issuing authority",
+                      "text": "നൽകുന്ന അധികാരിയുടെ മേൽവിലാസം/Address of the issuing authority",
                       "style": "details-body",
                       "margin": [0, -5, 0, 0]
                     }
@@ -308,36 +369,6 @@
             "body": [
               [  
                 {
-                  "text": "THIS IS A COMPUTER GENERATED CERTIFICATE.",
-                  "style": "footer"
-                }
-              ]
-            ]
-          },
-          "layout": "noBorders"
-        },
-        {
-          "style": "ws-head",
-          "table": {
-            "widths": ["*"],
-            "body": [
-              [  
-                {
-                  "text": "THE GOVT. OF INDIA VIDE CIRCULAR NO. 1/12/2014-VS(CRS) DATED 27-JULY-2015 HAS APPROVED THIS CERTIFICATE AS A VALID LEGAL DOCUMENT FOR ALL OFFICIAL PURPOSES.",
-                  "style": "footer"
-                }
-              ]
-            ]
-          },
-          "layout": "noBorders"
-        },
-        {
-          "style": "ws-head",
-          "table": {
-            "widths": ["*"],
-            "body": [
-              [  
-                {
                   "text": "ENSURE REGISTRATION OF EVERY BIRTH AND DEATH.",
                   "style": "footer"
                 }
@@ -345,7 +376,41 @@
             ]
           },
           "layout": "noBorders"
-        }
+        },
+        {
+          "style": "ws-head",
+          "table": {
+            "widths": ["*"],
+            "body": [
+              [  
+                {
+                  "text": "ഓരോ ജനനവും മരണവും രജിസ്റ്റർ ചെയ്തുവെന്ന് ഉറപ്പുവരുത്തുക.",
+                  "style": "footer"
+                }
+              ]
+            ]
+          },
+          "layout": "noBorders"
+        },
+        {
+          "style": "ws-head",
+          "table": {
+            "widths": ["*"],
+            "body": [
+              [  
+                {
+                  "text": "This certificate is computer generated and does not require any Seal/Signature in original
+                          The Govt. vide G.O.(Ms) No.202/2012/LSGD dated 25/07/2012 has approved this certificate as a valid document for all official purposes
+                          Authenticity of this certificate can be verified at www.cr.lsgkerala.gov.in. The Key Number is unique to each event.",
+                          Software developed and supported by Information Kerala Mission.
+                          Certificate printed before the last updated date is invalid
+                  "style": "footer"
+                }
+              ]
+            ]
+          },
+          "layout": "noBorders"
+        },
          
       ],
       "styles": {
