@@ -160,7 +160,7 @@
               {
                 "variable": "remarks",
                 "value": {
-                  "path": "$.remarks_en"
+                  "path": "$.remarksEn"
                 },
                 "type":"setEmpty"
               },
