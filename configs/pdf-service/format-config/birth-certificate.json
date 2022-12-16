@@ -5,7 +5,6 @@
         "font": "Cambay"
       },
       "content": [
-        
         {
           "style": "ws-head",
           "table": {
@@ -77,8 +76,7 @@
             ]
           },
           "layout": "noBorders" 
-        },
-        {
+        },{
           "style": "ws-head",
           "table": {
             "widths": ["*"],
@@ -87,7 +85,7 @@
                  {
                   "text": "ജനന സർട്ടിഫിക്കറ്റ്",
                   "style": "title-header"
-                }
+                },
                 {
                       "text": " ",
                       "width": "1%"
@@ -95,7 +93,7 @@
                 {
                   "text": "BIRTH CERTIFICATE",
                   "style": "title-header"
-                }
+                },
                 {
                       "text": " ",
                       "width": "1%"
@@ -178,8 +176,7 @@
                 {
                   "columns": [
                     {
-                      "text": ["This is to certify that the following information has been taken from the original record of birth which is the register for (local area/local
-body) Thiruvananthapuram Corporation of Taluk Thiruvananthapuram of District Thiruvananthapuram of State Kerala."],
+                      "text": "This is to certify that the following information has been taken from the original record of birth which is the register for (local area/localbody) Thiruvananthapuram Corporation of Taluk Thiruvananthapuram of District Thiruvananthapuram of State Kerala.",
                       "style": "rule-body_multiLang"
                     }
                   ]
@@ -233,8 +230,7 @@ body) Thiruvananthapuram Corporation of Taluk Thiruvananthapuram of District Thi
                   ]
                 }
               ],
-              [
-                {
+               [ {
                   "columns": [
                     {
                       "text": "മാതാവിന്റെ പേര്/NAME OF MOTHER: {{motherName}}",
@@ -250,10 +246,9 @@ body) Thiruvananthapuram Corporation of Taluk Thiruvananthapuram of District Thi
                       "style": "details-body"
                     }
                   ]
-                }
-              ],
-              [
-                {
+                }],
+             
+                             [ {
                   "columns": [
                    {
                       "text": "കുട്ടിയുടെ ജനന സമയത്ത് മാതാപിതാക്കളുടെ മേൽവിലാസം: {{childAddress}}",
@@ -287,7 +282,8 @@ body) Thiruvananthapuram Corporation of Taluk Thiruvananthapuram of District Thi
                     }
                   ]
                 }
-              ],
+              
+                ],
               [
                 {
                   "columns": [
@@ -295,7 +291,7 @@ body) Thiruvananthapuram Corporation of Taluk Thiruvananthapuram of District Thi
                       "text": "രജിസ്ട്രേഷൻ നമ്പർ/REGISTRATION NUMBER: {{registrationNo}}",
                       "width": "49%",
                       "style": "details-body"
-                    },
+                    }
                   ]
                 }
               ],
@@ -317,7 +313,7 @@ body) Thiruvananthapuram Corporation of Taluk Thiruvananthapuram of District Thi
                       "text": "നൽകുന്ന തീയതി/DATE OF ISSUE: {{issueDate}}",
                       "width": "49%",
                       "style": "details-body"
-                    },
+                    }
                   ]
                 }
               ],
@@ -340,7 +336,7 @@ body) Thiruvananthapuram Corporation of Taluk Thiruvananthapuram of District Thi
                   ]
                 }
               ]
-               
+                
             ]
           },
           "layout": "noBorders"
@@ -391,27 +387,21 @@ body) Thiruvananthapuram Corporation of Taluk Thiruvananthapuram of District Thi
             ]
           },
           "layout": "noBorders"
-        },
-        {
+        },{
           "style": "ws-head",
           "table": {
             "widths": ["*"],
             "body": [
               [  
                 {
-                  "text": "This certificate is computer generated and does not require any Seal/Signature in original
-                          The Govt. vide G.O.(Ms) No.202/2012/LSGD dated 25/07/2012 has approved this certificate as a valid document for all official purposes
-                          Authenticity of this certificate can be verified at www.cr.lsgkerala.gov.in. The Key Number is unique to each event.",
-                          Software developed and supported by Information Kerala Mission.
-                          Certificate printed before the last updated date is invalid
+                  "text": "This certificate is computer generated and does not require any Seal/Signature in original The Govt. vide G.O.(Ms) No.202/2012/LSGD dated 25/07/2012 has approved this certificate as a valid document for all official purposes Authenticity of this certificate can be verified at www.cr.lsgkerala.gov.in. The Key Number is unique to each event.,      Software developed and supported by Information Kerala Mission                    Certificate printed before the last updated date is invalid",
                   "style": "footer"
                 }
               ]
             ]
           },
           "layout": "noBorders"
-        },
-         
+        }
       ],
       "styles": {
         "pdf-header": {
