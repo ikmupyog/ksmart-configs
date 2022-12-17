@@ -16,11 +16,11 @@
                   {
                   "stack": [
                    {
-                      "text": "{{lbName}}",
+                      "text": "",
                       "style":"appendix-header-body"
                     },
                      {
-                      "text": "{{lbAddressWithPinCode}}",
+                      "text": "",
                       "style":"appendix-header-body"
                     },
                   ]
@@ -48,11 +48,11 @@
             "body": [
               [
                  {
-                  "text": "Certificate ID:{{certificateId}}",
+                  "text": "Certificate ID:",
                   "style": "title-header"
                 },
                 {
-                  "text": "Date{{approvalDate}}",
+                  "text": "Date",
                   "style": "title-header"
                 }
               ]
@@ -69,7 +69,7 @@
                 {
                   "columns": [
                     {
-                      "text": "This is to certify {{name}},{{address}}is residing for{{period}}in the building having unique building ID{{buildingId}} bearing building no{{buildingNo}}of ward{{ward}} of{{lbName}} owned by{{name}},{{address}} as per the records kept in this Office. ",
+                      "text": "This is to certify {{name}},{{address}}is residing forin the building having unique building IDbearing building noof ward of owned by{{name}},{{address}} as per the records kept in this Office. ",
                       "style": "rule-body_multiLang"
                     }
                   ]
@@ -304,4 +304,3 @@
       }
     }
   }
-
