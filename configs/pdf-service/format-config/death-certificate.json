@@ -1,36 +1,31 @@
 {
-    "key": "death-certificate",
-    "config": {
-      "defaultStyle": {
-        "font": "Cambay"
-      },
-      "content": [
-        
- 
- 
-        {
-          "style": "ws-head",
-          "table": {
-            "widths": ["*"],
-            "body": [
-              [
-                {
-                  "columns": [
-                    {
-                      "text": "This is to certify {{name}},{{address}}is residing forin the building having unique building IDbearing building noof ward of owned by{{name}},{{address}} as per the records kept in this Office. ",
-                      "style": "rule-body_multiLang"
-                    }
-                  ]
-                  
-                }
-              ]
+  "key": "death-certificate",
+  "config": {
+    "defaultStyle": {
+      "font": "Cambay"
+    },
+    "content": [
+      {
+        "style": "ws-head",
+        "table": {
+          "widths": [
+            "*"
+          ],
+          "body": [
+            [
+              {
+                "columns": [
+                  {
+                    "text": "This is to certify {{name}},{{address}}is residing forin the building having unique building IDbearing building noof ward of owned by{{name}},{{address}} as per the records kept in this Office. ",
+                    "style": "rule-body_multiLang"
+                  }
+                ]
+              }
             ]
-          },
-          "layout": "noBorders"
+          ]
         },
-       
-         
-      ],
-   
+        "layout": "noBorders"
+      }
+    ]
   }
-  }
+}
