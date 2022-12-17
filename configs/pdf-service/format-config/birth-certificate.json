@@ -171,7 +171,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "NAME OF FATHER: {{fatherName}}",
+                    "text": "{{father_name_label}}: {{fatherName}}",
                     "style": "details-body"
                   }
                 ]
