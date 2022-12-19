@@ -22,7 +22,7 @@
                      {
                       "text": "{{lbAddressWithPinCode}}",
                       "style":"appendix-header-body"
-                    },
+                    }
                   ]
                 },
               
@@ -31,10 +31,10 @@
                    {
                       "text": "Residential Certificate",
                       "style":"appendix-header-body"
-                    },
+                    }
                      
                   ]
-                },
+                }
               ]
             ]
           },
