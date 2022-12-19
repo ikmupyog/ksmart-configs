@@ -37,7 +37,7 @@
                   "path": "$.lbName"
                 },
                 "type": "setEmpty"
-              }
+              },
               {
                 "variable": "lbAddressWithPinCode",
                 "value": {
