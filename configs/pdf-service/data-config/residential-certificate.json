@@ -30,6 +30,20 @@
                   "path": "$.address"
                 },
                 "type": "setEmpty"
+              },
+              {
+                "variable": "lbName",
+                "value": {
+                  "path": "$.lbName"
+                },
+                "type": "setEmpty"
+              }
+              {
+                "variable": "lbAddressWithPinCode",
+                "value": {
+                  "path": "$.lbAddressWithPinCode"
+                },
+                "type": "setEmpty"
               }
             ]
           }
