@@ -16,7 +16,7 @@
                   {
                   "stack": [
                    {
-                      "text": "{{lbName}}",
+                      "text": "{{tenantId}}",
                       "style":"appendix-header-body"
                     },
                      {
@@ -41,25 +41,7 @@
           "layout": "noBorders"
         },
        
-        {
-          "style": "ws-head",
-          "table": {
-            "widths": ["*"],
-            "body": [
-              [
-                 {
-                  "text": "Certificate ID:{{certificateId}}",
-                  "style": "title-header"
-                },
-                {
-                  "text": "Date{{approvalDate}}",
-                  "style": "title-header"
-                }
-              ]
-            ]
-          },
-          "layout": "noBorders" 
-        },
+       
         {
           "style": "ws-head",
           "table": {
