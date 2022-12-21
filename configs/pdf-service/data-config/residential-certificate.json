@@ -38,6 +38,17 @@
                 },
                 "type": "setEmpty"
               },
+                {
+                "variable": "tenantName",
+                "value": {
+                  "path": "$.tenantId"
+                },
+                "localisation": {
+                  "required": true,
+                  "prefix": "TENANT_TENANTS",
+                  "module": "rainmaker-common"
+                }
+              },
               {
                 "variable": "lbAddressWithPinCode",
                 "value": {
