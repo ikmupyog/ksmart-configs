@@ -46,7 +46,7 @@
             "body": [
               [
                 {
-                  "text": "Name of Local Body issuing Certificate : {{tenantId}}",
+                  "text": "Name of Local Body issuing Certificate : {{tenantName}}",
                   "style": "title-header"
                 }
               ]
@@ -90,7 +90,23 @@
           },
           "layout": "noBorders"
         },
-     
+     {
+        "style": "ws-head",
+        "table": {
+          "widths": ["*"],
+          "body": [
+            [  
+              {
+                "image": "{{qr_code_image}}",
+                "width": 70,
+                "height": 70,
+                "style": "qr-code"
+              }
+            ]
+          ]
+        },
+        "layout": "noBorders"
+      },
     
         {
           "style": "ws-head",
