@@ -305,6 +305,7 @@ serviceMaps:
       - jsonPath: $.deathCertificateDtls.*.addressInfo.presentAddress.houeNameEn
       
       
+      
     - query: INSERT INTO public.eg_death_address_dtls(id, death_dtl_id, tenantid, addr_typeid, house_no, residence_assc_no, streetname_en, streetname_ml, locality_en, locality_ml, city_en, city_ml, ward_id, taluk_id, village_id, postoffice_id, pincode, district_id, state_id, country_id, taluk_name_en, taluk_name_ml, village_name_en, village_name_ml, postoffice_name_en, postoffice_name_ml, createdby, createdtime, lastmodifiedby, lastmodifiedtime, location_type, houename_ml, houename_en)
            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
       basePath: deathCertificateDtls.*.addressInfo.permanentAddress
