@@ -1,5 +1,5 @@
 serviceMaps:
-  serviceName: birth-death-services
+  serviceName: death-services
   mappings:   
       
   - version: 1.0
