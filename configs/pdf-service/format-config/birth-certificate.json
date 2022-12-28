@@ -510,7 +510,6 @@
       },
       "appendix-header-body-ml": {
         "color": "#000099",
-        "bold": true,
         "font": "noto-sans-malayalam-ui",
         "fontSize": 9,
         "fontWeight": 400,
