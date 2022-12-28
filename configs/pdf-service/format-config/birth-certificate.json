@@ -1,14 +1,20 @@
 {
   "key": "birth-certificate",
   "config": {
-    "defaultStyle": { 
-     
-      "families": ["Cambay","sans-serif"]
-    
+    "defaultStyle": {
+      "families": [{
+        "fontFamily":"noto-sans-malayalam-ui",
+        "fontFace": [
+          {
+            "fontFamily": "noto-sans-malayalam-ui",
+            "src": [ "https://fonts.gstatic.com/ea/notosansmalayalamui/v1/NotoSansMalayalamUI-Regular.woff2" ]
+          }
+        ]
+      },"Cambay","sans-serif"]
     },
     "content": [
-      
-        {
+
+      {
         "style": "ws-head",
         "table": {
           "widths": [
@@ -66,7 +72,7 @@
                   },
                   {
                     "text": "കേരള സർക്കാർ",
-                    "style": "appendix-header-body"
+                    "style": "appendix-header-body-ml"
                   },
                   {
                     "text": "{{deptUrbanAffairs}}",
@@ -117,7 +123,7 @@
             ]
           ]
         },
-        "layout": "noBorders" 
+        "layout": "noBorders"
       },
       {
         "style": "ws-head",
@@ -133,7 +139,7 @@
             ]
           ]
         },
-        "layout": "noBorders" 
+        "layout": "noBorders"
       },
       {
         "style": "ws-head",
@@ -168,7 +174,7 @@
                   }
                 ]
               }
-            ] 
+            ]
           ]
         },
         "layout": "noBorders"
@@ -323,7 +329,7 @@
                 ]
               }
             ]
-             
+
           ]
         },
         "layout": "noBorders"
@@ -333,7 +339,7 @@
         "table": {
           "widths": ["*"],
           "body": [
-            [  
+            [
               {
                 "image": "{{qr_code_image}}",
                 "width": 70,
@@ -350,7 +356,7 @@
         "table": {
           "widths": ["*"],
           "body": [
-            [  
+            [
               {
                 "text": "THIS IS A COMPUTER GENERATED CERTIFICATE.",
                 "style": "footer"
@@ -365,7 +371,7 @@
         "table": {
           "widths": ["*"],
           "body": [
-            [  
+            [
               {
                 "text": "THE GOVT. OF INDIA VIDE CIRCULAR NO. 1/12/2014-VS(CRS) DATED 27-JULY-2015 HAS APPROVED THIS CERTIFICATE AS A VALID LEGAL DOCUMENT FOR ALL OFFICIAL PURPOSES.",
                 "style": "footer"
@@ -380,7 +386,7 @@
         "table": {
           "widths": ["*"],
           "body": [
-            [  
+            [
               {
                 "text": "ENSURE REGISTRATION OF EVERY BIRTH AND DEATH.",
                 "style": "footer"
@@ -390,7 +396,7 @@
         },
         "layout": "noBorders"
       }
-       
+
     ],
     "styles": {
       "pdf-header": {
@@ -505,7 +511,7 @@
       "appendix-header-body-ml": {
         "color": "#000099",
         "bold": true,
-        "font": "
+        "font": "noto-sans-malayalam-ui",
         "fontSize": 9,
         "fontWeight": 400,
         "alignment": "center"
