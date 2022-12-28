@@ -2,7 +2,7 @@
   "key": "birth-certificate",
   "config": {
     "defaultStyle": {
-      "font-family": "Times New Roman", Times, "sans-serif";
+      "font-family": "sans-serif";
     },
     "content": [
       
