@@ -38,7 +38,7 @@
                 },
                 "type": "setEmpty"
               },
-                {
+              {
                 "variable": "tenantName",
                 "value": {
                   "path": "$.tenantId"
@@ -55,6 +55,14 @@
                   "path": "$.lbAddressWithPinCode"
                 },
                 "type": "setEmpty"
+              }
+            ]
+          },
+          {
+            "qrcodeConfig": [
+              {
+                "variable": "qr_code_image",
+                "value": "{{embeddedUrl}}"
               }
             ]
           }
