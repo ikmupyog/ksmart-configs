@@ -2,12 +2,17 @@
   "key": "birth-certificate",
   "config": {
     "defaultStyle": {
-      "families": [{
-        "fontFamily":"noto-sans-malayalam-ui",
+       "families": [{
+        "fontFamily": "\"Noto Sans Malayalam UI\", serif",
+        "name": "Noto Sans Malayalam UI",
+        "slug": "noto-sans-malayalam-ui",
         "fontFace": [
           {
-            "fontFamily": "noto-sans-malayalam-ui",
-            "src": [ "https://fonts.gstatic.com/ea/notosansmalayalamui/v1/NotoSansMalayalamUI-Regular.woff2" ]
+            "fontFamily": "Noto Sans Malayalam UI",
+            "fontWeight": "400",
+            "fontStyle": "normal",
+            "fontStretch": "normal",
+            "src": [ "https://fonts.googleapis.com/earlyaccess/notosansmalayalamui.css" ]
           }
         ]
       },"Cambay","sans-serif"]
