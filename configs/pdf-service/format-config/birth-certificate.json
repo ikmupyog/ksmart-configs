@@ -5,22 +5,40 @@
       "font": "Cambay"
     },
     "content": [
+      
       {
         "style": "ws-head",
         "table": {
-          "widths": [
-            "20%",
-            "60%",
-            "20%"
-          ],
+          "widths": ["20%", "60%", "20%"],
           "body": [
             [
               {
-                "stack": [
+                "stack": [ 
                   {
-                    "text": "{{keyNo}}",
+                    "text": "No .1",
                     "style": "appendix-header-serialNo"
-                  }
+                  } 
+                ]
+              },
+              {
+                "stack": [
+                  {
+                    "text": "GOVERNMENT OF KERALA",
+                    "style": "appendix-header-body"
+                  },
+                  {
+                    "text": "DEPARTMENT OF HEALTH AND FAMILY WELFARE",
+                    "style": "appendix-header-body",
+                    "margin": [0, 0, 0, 0]
+                  } 
+                ]
+              },
+              {
+                "stack": [ 
+                  {
+                    "text": "Form-5",
+                    "style": "appendix-header-formNo"
+                  } 
                 ]
               }
             ]
@@ -29,81 +47,6 @@
         "layout": "noBorders"
       },
       {
-        "style": "ws-head",
-        "table": {
-          "widths": [
-            "20%",
-            "60%",
-            "20%"
-          ],
-          "body": [
-            [
-              {
-                "stack": [
-                  {
-                    "image": "{{logokerala}}",
-                    "width": 70,
-                    "height": 70,
-                    "style": "qr-code"
-                  }
-                ]
-              },
-              {
-                "stack": [
-                  {
-                    "text": "{{PDF_BIRTH_FORM_NO_5}}",
-                    "style": "appendix-header-italic"
-                  },
-                  {
-                    "text": "{{rule8}}",
-                    "style": "main-body-style"
-                  },
-                  {
-                    "text": "{{govtOfKerala}}",
-                    "style": "appendix-header-body"
-                  },
-                  {
-                    "text": "{{govtOfKerala}}",
-                    "style": "appendix-header-body"
-                  },
-                  {
-                    "text": "{{deptUrbanAffairs}}",
-                    "style": "appendix-header-body",
-                    "margin": [
-                      0,
-                      0,
-                      0,
-                      0
-                    ]
-                  },
-                  {
-                    "text": "{{deptUrbanAffairsMl}}",
-                    "style": "appendix-header-body",
-                    "margin": [
-                      0,
-                      0,
-                      0,
-                      0
-                    ]
-                  }
-                ]
-              },
-              {
-                "stack": [
-                  {
-                    "image": "{{logobirth}}",
-                    "width": 70,
-                    "height": 70,
-                    "style": "qr-code"
-                  }
-                ]
-              }
-            ]
-          ]
-        },
-        "layout": "noBorders"
-      },
-       {
         "style": "ws-head",
         "table": {
           "widths": ["*"],
@@ -116,7 +59,7 @@
             ]
           ]
         },
-        "layout": "noBorders"
+        "layout": "noBorders" 
       },
       {
         "style": "ws-head",
@@ -132,7 +75,7 @@
             ]
           ]
         },
-        "layout": "noBorders"
+        "layout": "noBorders" 
       },
       {
         "style": "ws-head",
@@ -167,7 +110,7 @@
                   }
                 ]
               }
-            ]
+            ] 
           ]
         },
         "layout": "noBorders"
@@ -322,7 +265,7 @@
                 ]
               }
             ]
-
+             
           ]
         },
         "layout": "noBorders"
@@ -332,7 +275,7 @@
         "table": {
           "widths": ["*"],
           "body": [
-            [
+            [  
               {
                 "image": "{{qr_code_image}}",
                 "width": 70,
@@ -349,7 +292,7 @@
         "table": {
           "widths": ["*"],
           "body": [
-            [
+            [  
               {
                 "text": "THIS IS A COMPUTER GENERATED CERTIFICATE.",
                 "style": "footer"
@@ -364,7 +307,7 @@
         "table": {
           "widths": ["*"],
           "body": [
-            [
+            [  
               {
                 "text": "THE GOVT. OF INDIA VIDE CIRCULAR NO. 1/12/2014-VS(CRS) DATED 27-JULY-2015 HAS APPROVED THIS CERTIFICATE AS A VALID LEGAL DOCUMENT FOR ALL OFFICIAL PURPOSES.",
                 "style": "footer"
@@ -379,7 +322,7 @@
         "table": {
           "widths": ["*"],
           "body": [
-            [
+            [  
               {
                 "text": "ENSURE REGISTRATION OF EVERY BIRTH AND DEATH.",
                 "style": "footer"
@@ -389,7 +332,7 @@
         },
         "layout": "noBorders"
       }
-
+       
     ],
     "styles": {
       "pdf-header": {
@@ -497,13 +440,6 @@
       "appendix-header-body": {
         "color": "#000099",
         "bold": true,
-        "fontSize": 9,
-        "fontWeight": 400,
-        "alignment": "center"
-      },
-      "appendix-header-body-ml": {
-        "color": "#000099",
-        "font": "noto-sans-malayalam-ui",
         "fontSize": 9,
         "fontWeight": 400,
         "alignment": "center"
