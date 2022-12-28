@@ -1,9 +1,6 @@
 {
   "key": "birth-certificate",
   "config": {
-    "defaultStyle": {
-      "font-family": "sans-serif";
-    },
     "content": [
       
         {
