@@ -3,7 +3,9 @@
   "config": {
     "defaultStyle": {
       "families": [{
+         "fontFamily":"noto-sans-malayalam-ui",
           "fontFace": [
+            
           {
             "fontFamily": "noto-sans-malayalam-ui",
              "fontWeight": "400",
