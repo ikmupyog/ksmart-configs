@@ -3,19 +3,13 @@
   "config": {
     "defaultStyle": {
       "families": [{
-        "fontFamily": "\"Noto Sans Malayalam UI\", serif",
-        "name": "Noto Sans Malayalam UI",
-        "slug": "noto-sans-malayalam-ui",
-        "fontFace": [
+          "fontFace": [
           {
-            "fontFamily": "Noto Sans Malayalam UI",
-            "fontWeight": "400",
-            "fontStyle": "normal",
-            "fontStretch": "normal",
+            "fontFamily": "noto-sans-malayalam-ui",
             "src": [ "https://fonts.googleapis.com/earlyaccess/notosansmalayalamui.css" ]
           }
         ]
-      },"Cambay","sans-serif"]
+      },"noto-sans-malayalam-ui","Cambay","sans-serif"]
 
   },
     "content": [
