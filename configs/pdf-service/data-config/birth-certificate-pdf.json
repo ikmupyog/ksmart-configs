@@ -14,12 +14,12 @@
             "direct": [
               {
                 "variable": "logokerala",
-                "url":"https://raw.githubusercontent.com/egovernments/egov-web-app/master/web/rainmaker/dev-packages/egov-ui-kit-dev/src/assets/images/pblogo.png",
+                "url":"",
                 "type":"image"
               },
               {
                 "variable": "logobirth",
-                "url":"https://raw.githubusercontent.com/egovernments/egov-web-app/master/web/rainmaker/dev-packages/egov-ui-kit-dev/src/assets/images/pblogo.png",
+                "url":"",
                 "type":"image"
               },
               {
