@@ -2,7 +2,7 @@
   "key": "birth-certificate",
   "config": {
     "defaultStyle": {
-       "families": [{
+      "families": [{
         "fontFamily": "\"Noto Sans Malayalam UI\", serif",
         "name": "Noto Sans Malayalam UI",
         "slug": "noto-sans-malayalam-ui",
@@ -16,7 +16,8 @@
           }
         ]
       },"Cambay","sans-serif"]
-    },
+
+  },
     "content": [
 
       {
