@@ -1,8 +1,8 @@
 {
   "key": "birth-certificate",
   "config": {
-    "defaultStyle": {      
-      "families": ["Cambay","sans-serif","Noto Sans Malayalam UI"]
+    "defaultStyle": { 
+      "families": ["Cambay","sans-serif","https://fonts.googleapis.com/earlyaccess/notosansmalayalamui.css"]
     },
     "content": [
       
