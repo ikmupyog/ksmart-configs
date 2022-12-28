@@ -14,12 +14,12 @@
             "direct": [
               {
                 "variable": "logokerala",
-                "url":"",
+                "url":"https://raw.githubusercontent.com/egovernments/egov-web-app/master/web/rainmaker/dev-packages/egov-ui-kit-dev/src/assets/images/pblogo.png",
                 "type":"image"
               },
               {
                 "variable": "logobirth",
-                "url":"",
+                "url":"https://raw.githubusercontent.com/egovernments/egov-web-app/master/web/rainmaker/dev-packages/egov-ui-kit-dev/src/assets/images/pblogo.png",
                 "type":"image"
               },
               {
@@ -615,7 +615,7 @@
               {
                 "variable": "keyNo",
                 "value": {
-                  "path": "PDF_BIRTH_KEY_NO."
+                  "path": "PDF_BIRTH_KEY_NO"
                 },
                 "type": "label",
                 "localisation":{
@@ -651,7 +651,7 @@
               {
                 "variable": "validDocument",
                 "value": {
-                  "path": "PDF_BIRTH_VALID_DOCUMENT_FOR_ALL_OFFICIAL_PURPOSES."
+                  "path": "PDF_BIRTH_VALID_DOCUMENT_FOR_ALL_OFFICIAL_PURPOSES"
                 },
                 "type": "label",
                 "localisation":{
@@ -675,7 +675,7 @@
               {
                 "variable": "ikm",
                 "value": {
-                  "path": "PDF_BIRTH_SOFTWARE_BY_INFORMATION_KERALA_MISSION."
+                  "path": "PDF_BIRTH_SOFTWARE_BY_INFORMATION_KERALA_MISSION"
                 },
                 "type": "label",
                 "localisation":{
@@ -687,7 +687,7 @@
               {
                 "variable": "printedInvalid",
                 "value": {
-                  "path": "PDF_BIRTH_CERTIFICATE_PRINTED_BEFORE_THE_LAST_UPDATED_DATE_IS_INVALID."
+                  "path": "PDF_BIRTH_CERTIFICATE_PRINTED_BEFORE_THE_LAST_UPDATED_DATE_IS_INVALID"
                 },
                 "type": "label",
                 "localisation":{
@@ -699,7 +699,7 @@
               {
                 "variable": "updatedOn",
                 "value": {
-                  "path": "PDF_BIRTH_LAST_UPDATED_ON."
+                  "path": "PDF_BIRTH_LAST_UPDATED_ON"
                 },
                 "type": "label",
                 "localisation":{
