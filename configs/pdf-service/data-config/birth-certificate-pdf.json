@@ -501,8 +501,7 @@
                 "localisation":{
                   "required":true,
                   "prefix": null,
-                  "module":"rainmaker-pdf",
-                  "locale":"ml_IN"
+                  "module":"rainmaker-pdf"
                 }
               },
               {
