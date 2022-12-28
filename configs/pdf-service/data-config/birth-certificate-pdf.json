@@ -495,15 +495,14 @@
               {
                 "variable": "deptUrbanAffairsMl",
                 "value": {
-                  "path": "PDF_BIRTH_DEPARTMENT_OF_URBAN_AFFAIRS"
+                  "path": "PDF_BIRTH_DEPARTMENT_OF_URBAN_AFFAIRS_ML"
                 },
                 "type": "label",
                 "localisation":{
                   "required":true,
                   "prefix": null,
                   "module":"rainmaker-pdf",
-                  "locale":"ml_IN"
-                }
+                  "locale":"ml_IN"              }
               },
               {
                 "variable": "certify",
