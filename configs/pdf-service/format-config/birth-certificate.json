@@ -3,7 +3,7 @@
   "config": {
     "defaultStyle": { 
      
-      "families": ["Cambay","sans-serif","https://fonts.gstatic.com/ea/notosansmalayalamui/v1/NotoSansMalayalamUI-Regular.woff2"]
+      "families": ["Cambay","sans-serif"]
     
     },
     "content": [
