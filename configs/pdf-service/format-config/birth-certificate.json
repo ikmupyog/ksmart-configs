@@ -6,6 +6,9 @@
           "fontFace": [
           {
             "fontFamily": "noto-sans-malayalam-ui",
+             "fontWeight": "400",
+            "fontStyle": "normal",
+            "fontStretch": "normal",
             "src": [ "https://fonts.googleapis.com/earlyaccess/notosansmalayalamui.css" ]
           }
         ]
