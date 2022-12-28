@@ -2,7 +2,7 @@
   "key": "birth-certificate",
   "config": {
     "defaultStyle": {
-      "font": "Cambay"
+      "font": "sans serif"
     },
     "content": [
       {
@@ -43,8 +43,7 @@
                   {
                     "image": "{{logokerala}}",
                     "width": 70,
-                    "height": 70,
-                    "style": "qr-code"
+                    "height": 70
                   }
                 ]
               },
@@ -93,8 +92,7 @@
                   {
                     "image": "{{logobirth}}",
                     "width": 70,
-                    "height": 70,
-                    "style": "qr-code"
+                    "height": 70
                   }
                 ]
               }
