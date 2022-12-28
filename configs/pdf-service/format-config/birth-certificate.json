@@ -1,6 +1,9 @@
 {
   "key": "birth-certificate",
   "config": {
+    "defaultStyle": {
+      "font": "Cambay"
+    },
     "content": [
       
         {
