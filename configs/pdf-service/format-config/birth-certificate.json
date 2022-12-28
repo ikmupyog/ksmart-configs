@@ -2,7 +2,7 @@
   "key": "birth-certificate",
   "config": {
     "defaultStyle": {      
-      "families": ["Cambay","sans-serif","https://fonts.cdnfonts.com/css/meera"]
+      "families": ["Cambay","sans-serif","Noto Sans Malayalam UI"]
     },
     "content": [
       
