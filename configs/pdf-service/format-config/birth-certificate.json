@@ -121,17 +121,38 @@
       
       
      
-      {
+     {
         "style": "ws-head",
         "table": {
-          "widths": ["*"],
+          "widths": [
+            "*"
+          ],
           "body": [
             [
               {
-                "image": "{{qr_code_image}}",
-                "width": 70,
-                "height": 70,
-                "style": "qr-code"
+                "stack": [
+                  {
+                    "image": "{{qr_code_image}}",
+                    "width": 30,
+                    "height": 30
+                  }
+                ]
+              },
+              {
+                "stack": [
+                  {
+                    "text": "{{ensureRegistration}}",
+                    "style": "footerBold"
+                  },
+                  {
+                    "text": "{{ensureRegistrationMl}}",
+                    "style": "footerBold"
+                  },
+                  {
+                    "text": "{{computerGenerated}}",
+                    "style": "footer"
+                  }
+                ]
               }
             ]
           ]
@@ -141,42 +162,30 @@
       {
         "style": "ws-head",
         "table": {
-          "widths": ["*"],
+          "widths": [
+            "*"
+          ],
           "body": [
             [
               {
-                "text": "THIS IS A COMPUTER GENERATED CERTIFICATE.",
-                "style": "footer"
-              }
-            ]
-          ]
-        },
-        "layout": "noBorders"
-      },
-      {
-        "style": "ws-head",
-        "table": {
-          "widths": ["*"],
-          "body": [
-            [
-              {
-                "text": "THE GOVT. OF INDIA VIDE CIRCULAR NO. 1/12/2014-VS(CRS) DATED 27-JULY-2015 HAS APPROVED THIS CERTIFICATE AS A VALID LEGAL DOCUMENT FOR ALL OFFICIAL PURPOSES.",
-                "style": "footer"
-              }
-            ]
-          ]
-        },
-        "layout": "noBorders"
-      },
-      {
-        "style": "ws-head",
-        "table": {
-          "widths": ["*"],
-          "body": [
-            [
-              {
-                "text": "ENSURE REGISTRATION OF EVERY BIRTH AND DEATH.",
-                "style": "footer"
+                "columns": [
+                  {
+                    "text": "{{validDocument}}",
+                    "style": "footer"
+                  },
+                  {
+                    "text": "{{authenticity}}",
+                    "style": "footer"
+                  },
+                  {
+                    "text": "{{ikm}}",
+                    "style": "footer"
+                  },
+                  {
+                    "text": "{{printedInvalid}}",
+                    "style": "footer-red"
+                  }
+                ]
               }
             ]
           ]
