@@ -24,6 +24,33 @@
                   },
                   "type":"setEmpty"
                 },
+		{
+		  "variable": "tenant",
+		  "value": {
+			"path": "$.tenantId"
+		  },
+		  "type": "setEmpty",
+		  "localisation":{
+			"required":true,
+			"prefix": null,
+			"module":"rainmaker-common",
+			"locale":"en_IN"
+		  }
+		},
+
+		{
+		  "variable": "tenantMl",
+		  "value": {
+			"path": "$.tenantId"
+		  },
+		  "type": "setEmpty",
+		  "localisation":{
+			"required":true,
+			"prefix": null,
+			"module":"rainmaker-common",
+			"locale":"ml_IN"
+		  }
+		},
                 {
                   "variable": "name", 
                   "value": {
