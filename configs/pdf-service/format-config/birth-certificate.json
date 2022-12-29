@@ -201,23 +201,16 @@
                 "columns": [
                   {
                     "image": "{{qr_code_image}}",
-                    "width": 50,
-                    "height": 50,
+                    "width": 70,
+                    "height": 70,
                     "style": "qr-code"
                   },
-
-
-
-                        {
-                          "text": "{{ensureRegistration}}",
-                          "style": "footerBold"
-                        },
-                        {
-                          "text": "{{ensureRegistrationMl}}",
+                  
+                  {
+                          "text": "{{ensureRegistration}}\n{ensureRegistrationMl}}",
                           "style": "footerBold"
                         }
-
-
+                  
 
                 ]
               }
@@ -311,13 +304,13 @@
       },
       "footer": {
         "color": "#000000",
+        "alignment": "center"
+      },
+      "footer-red": {
+        "color": "#FF0000",
+        "fontSize": 9,
         "alignment": "center",
-        "margin": [
-          0,
-          30,
-          0,
-          0
-        ]
+        "font-style": "italic"
       },
       "body-font": {
         "color": "#000000",
