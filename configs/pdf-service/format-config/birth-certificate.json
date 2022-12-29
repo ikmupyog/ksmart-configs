@@ -117,17 +117,50 @@
           ]
         },
         "layout": "noBorders"
+      },{
+        "style": "ws-head",
+        "table": {
+          "widths": [
+            "*"
+          ],
+          "body": [
+            [
+              {
+                "columns": [
+                  {
+                    "text": "{{nameOfLb}} : {{tenant}}",
+                    "style": "title-header"
+                  },
+                  {
+                    "text": "{{nameOfLbMl}} : {{tenantMl}}",
+                    "style": "title-header"
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        "layout": "noBorders"
       },
       {
         "style": "ws-head",
         "table": {
-          "widths": ["*"],
+          "widths": [
+            "*"
+          ],
           "body": [
             [
               {
-                "text": "BIRTH CERTIFICATE",
-                "style": "title-header",
-                "decoration": "underline"
+                "columns": [
+                  {
+                    "text": "{{birthCertificate}}",
+                    "style": "title-header"
+                  },
+                  {
+                    "text": "{{birthCertificateMl}}",
+                    "style": "title-header"
+                  }
+                ]
               }
             ]
           ]
