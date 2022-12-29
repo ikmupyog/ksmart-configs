@@ -128,17 +128,62 @@
           "body": [
             [
               {
+                "columns": [
+                  {
+                    "text": "{{childName}} / {{childNameMl}}",
+                    "width": "39%",
+                    "style": "main-body-style"
+                  },
+                  {
+                    "text": "  :",
+                    "width": "1%"
+                  },
+                  {
+                    "text": "{{name}}",
+                    "style": "main-body-style"
+                  },
+               
+              {
+                "columns": [
+                  {
+                    "text": "{{registrationNoLabel}} / {{registrationNoLabelMl}}: {{registrationNo}}",
+                    "width": "49%",
+                    "style": "details-body"
+                  },
+                  {
+                    "text": " ",
+                    "width": "1%"
+                  },
+                  {
+                    "text": "{{registrationDateLabel}} / {{registrationDateLabelMl}} {{registration_date}}",
+                    "style": "details-body"
+                  }
+                ]
+              }
+            ]
+              }
+            ]
+          ]
+        }
+      },
+      
+      {
+        "style": "ws-head",
+        "table": {
+          "widths": [
+            "*"
+          ],
+          "body": [
+            [
+              {
                 "stack": [
                   {
                     "image": "{{qr_code_image}}",
                     "width": 30,
                     "height": 30,
                     "style": "qr-code"
-                  }
-                ]
-              },
-              {
-                "stack": [
+                  },
+
                   {
                     "text": "{{ensureRegistration}}",
                     "style": "footerBold"
@@ -158,7 +203,6 @@
         },
         "layout": "noBorders"
       },
-     
       {
         "style": "ws-head",
         "table": {
@@ -168,7 +212,7 @@
           "body": [
             [
               {
-                "columns": [
+                "stack": [
                   {
                     "text": "{{validDocument}}",
                     "style": "footer"
@@ -192,7 +236,6 @@
         },
         "layout": "noBorders"
       }
-
     ],
     "styles": {
       "pdf-header": {
