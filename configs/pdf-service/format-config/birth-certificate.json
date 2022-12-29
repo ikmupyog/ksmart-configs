@@ -2,7 +2,7 @@
   "key": "birth-certificate",
   "config": {
     "defaultStyle": {
-      "families": ["Cambay","sans-serif"]
+      "families": ["\"Times New Roman\"","sans-serif","noto-sans-malayalam-ui"]
 
     },
     "content": [
@@ -102,16 +102,16 @@
           "body": [
             [
               {
-                "columns": [
+                "stack": [
                   {
                     "text": "{{nameOfLb}} : {{tenant}}",
-                    "style": "title-header"
+                    "style": "body-font"
                   },
                   {
                     "text": "{{nameOfLbMl}} : {{tenantMl}}",
-                    "style": "title-header"
+                    "style": "body-font"
                   }
-                ]
+                  ]
               }
             ]
           ]
@@ -184,42 +184,21 @@
                     "style": "main-body-style"
                   }
                 ]
-              }
-            ]
-          ]
-        },
-        "layout": "noBorders"
-      },
-      {
-        "style": "ws-head",
-        "table": {
-          "widths": ["*"],
-          "body": [
-            [
+              },
               {
                 "columns": [
                   {
-                    "text": "Issued Under Section 12/17 of the Registration of Births and Deaths Act, 1969 and Rule8/13 the Testing Registration of Births and Deaths Rules,1999",
-                    "style": "rule-header"
-                  }
-                ]
-              }
-            ]
-          ]
-        },
-        "layout": "noBorders"
-      },
-      {
-        "style": "ws-head",
-        "table": {
-          "widths": ["*"],
-          "body": [
-            [
-              {
-                "columns": [
+                    "text": "{{childName}} / {{childNameMl}}",
+                    "width": "39%",
+                    "style": "main-body-style"
+                  },
                   {
-                    "text": ["This is to certify that the following information has been taken from the original record of birth which is the register for (local area/local body)TESTING of tahsil/block TEST of District TEST of the State of Testing"],
-                    "style": "rule-body_multiLang"
+                    "text": "  :",
+                    "width": "1%"
+                  },
+                  {
+                    "text": "{{name}}",
+                    "style": "main-body-style"
                   }
                 ]
               }
@@ -228,161 +207,8 @@
         },
         "layout": "noBorders"
       },
-      {
-        "style": "ws-head",
-        "table": {
-          "widths": ["*"],
-          "body": [
-            [
-              {
-                "columns": [
-                  {
-                    "text": "NAME: {{name}}",
-                    "width": "49%",
-                    "style": "details-body"
-                  },
-                  {
-                    "text": " ",
-                    "width": "1%"
-                  },
-                  {
-                    "text": "SEX: {{gender}}",
-                    "style": "details-body"
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "columns": [
-                  {
-                    "text": "DATE OF BIRTH: {{dob}}",
-                    "width": "49%",
-                    "style": "details-body"
-                  },
-                  {
-                    "text": " ",
-                    "width": "1%"
-                  },
-                  {
-                    "text": "PLACE OF BIRTH: {{placeOfBirth}}",
-                    "style": "details-body"
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "columns": [
-                  {
-                    "text": "NAME OF MOTHER: {{motherName}}",
-                    "width": "49%",
-                    "style": "details-body"
-                  },
-                  {
-                    "text": " ",
-                    "width": "1%"
-                  },
-                  {
-                    "text": "{{father_name_label}}: {{fatherName}}",
-                    "style": "details-body"
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "columns": [
-                  {
-                    "text": "ADDRESS OF PARENTS AT THE TIME OF BIRTH OF THE CHILD: {{childAddress}}",
-                    "width": "49%",
-                    "style": "details-body"
-                  },
-                  {
-                    "text": " ",
-                    "width": "1%"
-                  },
-                  {
-                    "text": "PERMANENT ADDRESS OF PARENTS: {{parentsAddress}}",
-                    "style": "details-body"
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "columns": [
-                  {
-                    "text": "REGISTRATION NUMBER: {{registrationNo}}",
-                    "width": "49%",
-                    "style": "details-body"
-                  },
-                  {
-                    "text": " ",
-                    "width": "1%"
-                  },
-                  {
-                    "text": "DATE OF REGISTRATION: {{registration_date}}",
-                    "style": "details-body"
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "columns": [
-                  {
-                    "text": "REMARKS (IF ANY): {{remarks}}",
-                    "width": "49%",
-                    "style": "details-body"
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "columns": [
-                  {
-                    "text": "DATE OF ISSUE: {{issueDate}}",
-                    "width": "49%",
-                    "style": "details-body"
-                  },
-                  {
-                    "text": " ",
-                    "width": "1%"
-                  },
-                  {
-                    "text": "Signature of the issuing authority :",
-                    "style": "details-body",
-                    "margin": [0, -15, 0, 0]
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "columns": [
-                  {
-                    "text": " ",
-                    "width": "49%"
-                  },
-                  {
-                    "text": " ",
-                    "width": "1%"
-                  },
-                  {
-                    "text": "Address of the issuing authority",
-                    "style": "details-body",
-                    "margin": [0, -5, 0, 0]
-                  }
-                ]
-              }
-            ]
-
-          ]
-        },
-        "layout": "noBorders"
-      },
+      
+     
       {
         "style": "ws-head",
         "table": {
@@ -502,6 +328,12 @@
           0
         ]
       },
+      "body-font": {
+        "color": "#000000",
+        "fontSize": 12,
+        "alignment": "center",
+        "margin": [0, -1, 0, 0]
+      },
       "title-header": {
         "color": "#000000",
         "bold": true,
@@ -566,15 +398,15 @@
         "margin": [0, 5, 0, 0]
       },
       "appendix-header-body": {
-        "color": "#000099",
+        "color": "#000000",
         "bold": true,
-        "fontSize": 9,
+        "fontSize": 8,
         "fontWeight": 400,
         "alignment": "center"
       },
       "appendix-header-body-ml": {
-        "color": "#000099",
-        "fontSize": 9,
+        "color": "#000000",
+        "fontSize": 8,
         "fontWeight": 400,
         "alignment": "center"
       },
