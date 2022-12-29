@@ -51,6 +51,32 @@
 			"locale":"ml_IN"
 		  }
 		},
+	       {
+		  "variable": "governmentEn",
+		  "value": {
+			"path": "PDF_BIRTH_GOVERNMENT_OF_KERALA"
+		  },
+		  "type": "label",
+		  "localisation":{
+			"required":true,
+			"prefix": null,
+			"module":"rainmaker-pdf",
+			"locale":"en_IN"
+		  }
+		},
+		{
+		  "variable": "governmentMl",
+		  "value": {
+			"path": "PDF_BIRTH_GOVERNMENT_OF_KERALA"
+		  },
+		  "type": "label",
+		  "localisation":{
+			"required":true,
+			"prefix": null,
+			"module":"rainmaker-pdf",
+			"locale":"ml_IN"
+		  }
+		},
                 {
                   "variable": "name", 
                   "value": {
