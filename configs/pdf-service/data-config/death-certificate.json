@@ -32,7 +32,7 @@
 		  "type": "setEmpty",
 		  "localisation":{
 			"required":true,
-			"prefix": null,
+			"prefix": "TENANT_TENANTS",
 			"module":"rainmaker-common",
 			"locale":"en_IN"
 		  }
@@ -46,7 +46,7 @@
 		  "type": "setEmpty",
 		  "localisation":{
 			"required":true,
-			"prefix": null,
+			"prefix": "TENANT_TENANTS",
 			"module":"rainmaker-common",
 			"locale":"ml_IN"
 		  }
