@@ -205,6 +205,20 @@
                 }
               },
 
+             {
+                "variable": "tenant",
+                "value": {
+                  "path": "$.tenantId"
+                },
+                "type": "setEmpty",
+                "localisation":{
+                  "required":true,
+                  "prefix": "TENANTS_TENANT_",
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+
               {
                 "variable": "tenantMl",
                 "value": {
@@ -213,7 +227,7 @@
                 "type": "setEmpty",
                 "localisation":{
                   "required":true,
-                  "prefix": null,
+                  "prefix": "TENANTS_TENANT_",
                   "module":"rainmaker-common",
                   "locale":"ml_IN"
                 }
