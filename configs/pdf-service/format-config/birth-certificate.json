@@ -119,7 +119,45 @@
         "layout": "noBorders"
       },
       
-      
+       {
+        "style": "ws-head",
+        "table": {
+          "widths": [
+            "*"
+          ],
+          "body": [
+            [
+              {
+                "stack": [
+                  {
+                    "image": "{{qr_code_image}}",
+                    "width": 30,
+                    "height": 30,
+                    "style": "qr-code"
+                  }
+                ]
+              },
+              {
+                "stack": [
+                  {
+                    "text": "{{ensureRegistration}}",
+                    "style": "footerBold"
+                  },
+                  {
+                    "text": "{{ensureRegistrationMl}}",
+                    "style": "footerBold"
+                  },
+                  {
+                    "text": "{{computerGenerated}}",
+                    "style": "footer"
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        "layout": "noBorders"
+      },
      
       {
         "style": "ws-head",
