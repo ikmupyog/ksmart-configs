@@ -1,9 +1,9 @@
 {
-    "key": "birth-certificate",
+    "key": "death-certificate",
     "DataConfigs": {
       "serviceName": "rainmaker-common",
       "version": "1.0.0",
-      "baseKeyPath": "$.BirthCertificate.*",
+      "baseKeyPath": "$.DeathCertificate.*",
       "entityIdPath":"$.id",
       "isCommonTableBorderRequired": true,
       "mappings": [
@@ -31,9 +31,9 @@
                   }
                 },
                 {
-                  "variable": "dob", 
+                  "variable": "dod", 
                   "value": {
-                    "path": "$.dateofbirth"
+                    "path": "$.dateofdeath"
                   },
                   "type": "date"
                 },
@@ -48,13 +48,6 @@
                   "variable": "registrationNo", 
                   "value": {
                     "path": "$.registrationno"
-                  },
-                  "type":"setEmpty"
-                },
-                {
-                  "variable": "tenantId", 
-                  "value": {
-                    "path": "$.tenantid"
                   },
                   "type":"setEmpty"
                 },
@@ -75,56 +68,56 @@
                 {
                   "variable": "fatherName", 
                   "value": {
-                    "path": "$.birthFatherInfo.fullName"
+                    "path": "$.deathFatherInfo.fullName"
                   },
                   "type":"setEmpty"
                 },
                 {
                   "variable": "motherName", 
                   "value": {
-                    "path": "$.birthMotherInfo.fullName"
+                    "path": "$.deathMotherInfo.fullName"
                   },
                   "type":"setEmpty"
                 },
                 {
                   "variable": "childAddress", 
                   "value": {
-                    "path": "$.birthPresentaddr.fullAddress"
+                    "path": "$.deathPresentaddr.fullAddress"
                   },
                   "type":"setEmpty"
                 },
                 {
                   "variable": "parentsAddress", 
                   "value": {
-                    "path": "$.birthPermaddr.fullAddress"
+                    "path": "$.deathPermaddr.fullAddress"
                   },
                   "type":"setEmpty"
                 },
                 {
                   "variable": "parentsCity", 
                   "value": {
-                    "path": "$.birthPermaddr.city"
+                    "path": "$.deathPermaddr.city"
                   },
                   "type":"setEmpty"
                 },
                 {
                   "variable": "parentsStreet", 
                   "value": {
-                    "path": "$.birthPermaddr.streetname"
+                    "path": "$.deathPermaddr.streetname"
                   },
                   "type":"setEmpty"
                 },
                 {
                   "variable": "parentsTehsil", 
                   "value": {
-                    "path": "$.birthPermaddr.tehsil"
+                    "path": "$.deathPermaddr.tehsil"
                   },
                   "type":"setEmpty"
                 },
                 {
                   "variable": "parentsDistrict", 
                   "value": {
-                    "path": "$.birthPermaddr.district"
+                    "path": "$.deathPermaddr.district"
                   },
                   "type":"setEmpty"
                 },
@@ -139,21 +132,21 @@
                 {
                   "variable": "fatherUid", 
                   "value": {
-                    "path": "$.birthFatherInfo.aadharno"
+                    "path": "$.deathFatherInfo.aadharno"
+                  },
+                  "type":"setEmpty"
+                },
+                {
+                  "variable": "motherUid", 
+                  "value": {
+                    "path": "$.deathMotherInfo.aadharno"
                   },
                   "type":"setEmpty"
                 },
                 {
                   "variable": "parentsState", 
                   "value": {
-                    "path": "$.birthPermaddr.state"
-                  },
-                  "type":"setEmpty"
-                },  
-                {
-                  "variable": "motherUid", 
-                  "value": {
-                    "path": "$.birthMotherInfo.aadharno"
+                    "path": "$.deathPermaddr.state"
                   },
                   "type":"setEmpty"
                 },
@@ -165,9 +158,9 @@
                   "type":"setEmpty"
                 },
                   {
-                    "variable": "placeOfBirth", 
+                    "variable": "placeOfDeath", 
                     "value": {
-                      "path": "$.placeofbirth"
+                      "path": "$.placeofdeath"
                     },
                     "type":"setEmpty"
                   },
@@ -186,7 +179,7 @@
                     },
                     "type":"setEmpty"
                   },
-                  {
+                   {
                     "variable": "cantonmentBoard",
                     "value": {
                       "path": "BND_MUNICIPAL_CORPORATION"
@@ -214,7 +207,7 @@
                   {
                     "variable": "dept_label",
                     "value": {
-                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_BIRTHCERIFICATE_DEPT"
+                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_DEATHCERIFICATE_DEPT"
                     },
                     "type": "label",
                     "localisation":{
@@ -229,7 +222,7 @@
                   {
                     "variable": "certificate_label",
                     "value": {
-                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_BIRTHCERIFICATE_CERTIFICATE_BIRTH"
+                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_DEATHCERIFICATE_CERTIFICATE_DEATH"
                     },
                     "type": "label",
                     "localisation":{
@@ -254,7 +247,7 @@
                   {
                     "variable": "rule1_label",
                     "value": {
-                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_BIRTHCERIFICATE_RULE_1"
+                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_DEATHCERIFICATE_RULE_1"
                     },
                     "type": "label",
                     "localisation":{
@@ -267,7 +260,7 @@
                   {
                     "variable": "rule2_label",
                     "value": {
-                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_BIRTHCERIFICATE_RULE_2"
+                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_DEATHCERIFICATE_RULE_2"
                     },
                     "type": "label",
                     "localisation":{
@@ -280,7 +273,7 @@
                   {
                     "variable": "name_label",
                     "value": {
-                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_BIRTHCERIFICATE_NAME"
+                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_DEATHCERIFICATE_NAME"
                     },
                     "type": "label",
                     "localisation":{
@@ -293,7 +286,7 @@
                   {
                     "variable": "gender_label",
                     "value": {
-                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_BIRTHCERIFICATE_GENDER"
+                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_DEATHCERIFICATE_GENDER"
                     },
                     "type": "label",
                     "localisation":{
@@ -306,7 +299,7 @@
                   {
                     "variable": "dob_label",
                     "value": {
-                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_BIRTHCERIFICATE_DOB"
+                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_DEATHCERIFICATE_DOB"
                     },
                     "type": "label",
                     "localisation":{
@@ -317,9 +310,9 @@
                   },
                    
                   {
-                    "variable": "pob_label",
+                    "variable": "pod_label",
                     "value": {
-                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_BIRTHCERIFICATE_POB"
+                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_DEATHCERIFICATE_POD"
                     },
                     "type": "label",
                     "localisation":{
@@ -332,7 +325,7 @@
                   {
                     "variable": "mother_name_label",
                     "value": {
-                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_BIRTHCERIFICATE_MOTHER_NAME"
+                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_DEATHCERIFICATE_MOTHER_NAME"
                     },
                     "type": "label",
                     "localisation":{
@@ -345,7 +338,7 @@
                   {
                     "variable": "father_name_label",
                     "value": {
-                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_BIRTHCERIFICATE_FATHER_NAME"
+                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_DEATHCERIFICATE_FATHER_NAME"
                     },
                     "type": "label",
                     "localisation":{
@@ -358,7 +351,7 @@
                   {
                     "variable": "mother_uid_label",
                     "value": {
-                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_BIRTHCERIFICATE_MOTHER_UID"
+                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_DEATHCERIFICATE_MOTHER_UID"
                     },
                     "type": "label",
                     "localisation":{
@@ -371,7 +364,7 @@
                   {
                     "variable": "father_uid_label",
                     "value": {
-                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_BIRTHCERIFICATE_FATHER_UID"
+                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_DEATHCERIFICATE_FATHER_UID"
                     },
                     "type": "label",
                     "localisation":{
@@ -384,7 +377,7 @@
                   {
                     "variable": "child_address_label",
                     "value": {
-                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_BIRTHCERIFICATE_ADDRESS_OF_CHILD_BIRTH"
+                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_DEATHCERIFICATE_ADDRESS_OF_CHILD_DEATH"
                     },
                     "type": "label",
                     "localisation":{
@@ -397,7 +390,7 @@
                   {
                     "variable": "parent_address_label",
                     "value": {
-                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_BIRTHCERIFICATE_PERMENENT_ADDRESS_OF_PARENT"
+                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_DEATHCERIFICATE_PERMENENT_ADDRESS_OF_PARENT"
                     },
                     "type": "label",
                     "localisation":{
@@ -410,7 +403,7 @@
                   {
                     "variable": "registration_label",
                     "value": {
-                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_BIRTHCERIFICATE_REGISTRATION_NUMBER"
+                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_DEATHCERIFICATE_REGISTRATION_NUMBER"
                     },
                     "type": "label",
                     "localisation":{
@@ -423,7 +416,7 @@
                   {
                     "variable": "registration_date_label",
                     "value": {
-                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_BIRTHCERIFICATE_REGISTRATION_DATE"
+                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_DEATHCERIFICATE_REGISTRATION_DATE"
                     },
                     "type": "label",
                     "localisation":{
@@ -436,7 +429,7 @@
                   {
                     "variable": "remarks_label",
                     "value": {
-                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_BIRTHCERIFICATE_REMARKS"
+                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_DEATHCERIFICATE_REMARKS"
                     },
                     "type": "label",
                     "localisation":{
@@ -449,7 +442,7 @@
                   {
                     "variable": "issue_date_label",
                     "value": {
-                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_BIRTHCERIFICATE_ISSUE_DATE"
+                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_DEATHCERIFICATE_ISSUE_DATE"
                     },
                     "type": "label",
                     "localisation":{
@@ -462,7 +455,7 @@
                   {
                     "variable": "issuing_authority_label",
                     "value": {
-                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_BIRTHCERIFICATE_ISSUING_AUTHORITY_NAME"
+                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_DEATHCERIFICATE_ISSUING_AUTHORITY_NAME"
                     },
                     "type": "label",
                     "localisation":{
@@ -475,7 +468,7 @@
                   {
                     "variable": "instruction1_label",
                     "value": {
-                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_BIRTHCERIFICATE_INSTRUCTION_1"
+                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_DEATHCERIFICATE_INSTRUCTION_1"
                     },
                     "type": "label",
                     "localisation":{
@@ -488,7 +481,7 @@
                   {
                     "variable": "instruction2_label",
                     "value": {
-                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_BIRTHCERIFICATE_INSTRUCTION_2"
+                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_DEATHCERIFICATE_INSTRUCTION_2"
                     },
                     "type": "label",
                     "localisation":{
@@ -501,7 +494,7 @@
                   {
                     "variable": "issuing_authority",
                     "value": {
-                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_BIRTHCERIFICATE_ISSUING_AUTHORITY"
+                      "path": "PDF_STATIC_LABEL_CONSOLIDATED_DEATHCERIFICATE_ISSUING_AUTHORITY"
                     },
                     "type": "label",
                     "localisation":{

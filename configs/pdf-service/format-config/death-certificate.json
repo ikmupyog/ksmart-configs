@@ -22,8 +22,12 @@
                 },
                 {
                   "stack": [
+					{
+                      "text": "കേരള സർക്കാർ",
+                      "style": "appendix-header-body"
+                    },
                     {
-                      "text": "GOVERNMENT OF PUNJAB",
+                      "text": "GOVERNMENT OF KERALA",
                       "style": "appendix-header-body"
                     },
                     {
@@ -53,7 +57,7 @@
             "body": [
               [
                 {
-                  "text": "Name of Local Body issuing Certificate : CANTONMENT BOARD TESTING",
+                  "text": "Name of Local Body issuing Certificate : {{tenant}}",
                   "style": "title-header"
                 }
               ]
@@ -77,6 +81,25 @@
           },
           "layout": "noBorders" 
         },
+		{
+          "style": "ws-head",
+          "table": {
+            "widths": ["*"],
+            "body": [
+              [
+                {
+                  "columns": [
+                    {
+                      "text": "(1969-ലെ ജനന-മരണ രജിസ്ട്രേഷൻ ആക്ടിലെ 12-ാം വകുപ്പും 1999-ലെ കേരള ജനന-മരണ രജിസ്ട്രേഷൻ ചട്ടങ്ങളിലെ  8-ാം ചട്ടവും അനുസരിച്ചു നൽകുന്നത് )",
+                      "style": "rule-header"
+                    }
+                  ]
+                }
+              ] 
+            ]
+          },
+          "layout": "noBorders"
+        },
         {
           "style": "ws-head",
           "table": {
@@ -86,12 +109,12 @@
                 {
                   "columns": [
                     {
-                      "text": "Issued Under Section 12/17 of the Registration of Births and Deaths Act, 1969 and Rule8/13 the Testing Registration of Births and Deaths Rules,1999",
+                      "text": "(Issued under Section 12 of the Registration of Births and Deaths Acts, 1969 and Rule 8 of the Kerala Registration of Births and Deaths Rules, 1999)",
                       "style": "rule-header"
                     }
                   ]
                 }
-              ]
+              ] 
             ]
           },
           "layout": "noBorders"
@@ -124,7 +147,145 @@
                 {
                   "columns": [
                     {
-                      "text": "NAME: {{name}}",
+                      "text": "പേര്/Name: {{name}}",
+                      "width": "49%",
+                      "style": "details-body"
+                    },
+                    {
+                      "text": " ",
+                      "width": "1%"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "columns": [
+                
+                    {
+                      "text": "ആൺ/പെൺ/Sex: {{gender}}",
+                      "width": "49%",
+                      "style": "details-body"
+                    },
+                    {
+                        "text": " ",
+                        "width": "1%"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "columns": [
+                    {
+                      "text": "മരണ തീയതി/Date of Death: {{dod}}",
+                      "width": "49%",
+                      "style": "details-body"
+                    },
+                    {
+                      "text": " ",
+                      "width": "1%"
+                    }
+                   
+                  ]
+                }
+              ],
+              [
+                {
+                  "columns": [
+                
+                    {
+                        "text": "മരണ സ്ഥലം/Place of Death: {{placeOfDeath}}",
+                        "width": "49%",
+                        "style": "details-body"
+                    },
+                    {
+                        "text": " ",
+                        "width": "1%"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "columns": [
+                    {
+                      "text": "അമ്മയുടെ പേര്/Name of Mother: {{motherName}}",
+                      "width": "49%",
+                      "style": "details-body"
+                    },
+                    {
+                      "text": " ",
+                      "width": "1%"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "columns": [              
+                    
+                    {
+                      "text": "പിതാവിന്റെ പേര്/ഭർത്താവിന്റെ പേര്/Name of Father/Husband: {{fatherorHusbandName}}",
+                      "width": "49%",
+                      "style": "details-body"
+                    },
+                    {
+                        "text": " ",
+                        "width": "1%"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "columns": [              
+                    
+                    {
+                      "text": "മരിച്ച വ്യക്തിയുടെ മരണ സമയത്തെ മേൽവിലാസം: {{deceasedPresentAddressml}}",
+                      "width": "49%",
+                      "style": "details-body"
+                    },
+                    {
+                        "text": " ",
+                        "width": "1%"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "columns": [
+                    {
+                      "text": "Address Of the deceased at the time of death: {{deceasedPresentAddressen}}",
+                      "width": "49%",
+                      "style": "details-body"
+                    },
+                    {
+                      "text": " ",
+                      "width": "1%"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "columns": [              
+                    
+                    {
+                      "text": "മരിച്ച വ്യക്തിയുടെ സ്ഥിരമായ  മേൽവിലാസം : {{deceasedPermanentAddressml}}",
+                      "width": "80%",
+                      "style": "details-body"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "columns": [            
+                    
+                    {
+                      "text": "Permanent address of the deceased : ",
                       "width": "49%",
                       "style": "details-body"
                     },
@@ -133,7 +294,7 @@
                       "width": "1%"
                     },
                     {
-                      "text": "SEX: {{gender}}",
+                      "text": "{{deceasedPermanentAddressen}}",
                       "style": "details-body"
                     }
                   ]
@@ -143,7 +304,7 @@
                 {
                   "columns": [
                     {
-                      "text": "DATE OF DEATH: {{dod}}",
+                      "text": "രജിസ്ട്രേഷൻ നമ്പർ/Registration Number : {{registrationNo}}",
                       "width": "49%",
                       "style": "details-body"
                     },
@@ -152,7 +313,7 @@
                       "width": "1%"
                     },
                     {
-                      "text": "PLACE OF DEATH: {{placeOfDeath}}",
+                      "text": "രജിസ്ട്രേഷൻ തീയതി/Date of Registration : {{registration_date}}",
                       "style": "details-body"
                     }
                   ]
@@ -162,64 +323,7 @@
                 {
                   "columns": [
                     {
-                      "text": "NAME OF MOTHER: {{motherName}}",
-                      "width": "49%",
-                      "style": "details-body"
-                    },
-                    {
-                      "text": " ",
-                      "width": "1%"
-                    },
-                    {
-                      "text": "NAME OF FATHER: {{fatherName}}",
-                      "style": "details-body"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "columns": [
-                    {
-                      "text": "ADDRESS OF DECEASED AT THE TIME OF DEATH OF THE CHILD: {{childAddress}}",
-                      "width": "49%",
-                      "style": "details-body"
-                    },
-                    {
-                      "text": " ",
-                      "width": "1%"
-                    },
-                    {
-                      "text": "PERMANENT ADDRESS OF THE DECEASED: {{parentsAddress}}",
-                      "style": "details-body"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "columns": [
-                    {
-                      "text": "REGISTRATION NUMBER: {{registrationNo}}",
-                      "width": "49%",
-                      "style": "details-body"
-                    },
-                    {
-                      "text": " ",
-                      "width": "1%"
-                    },
-                    {
-                      "text": "DATE OF REGISTRATION: {{registration_date}}",
-                      "style": "details-body"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "columns": [
-                    {
-                      "text": "REMARKS (IF ANY): {{remarks}}",
+                      "text": "അഭിപ്രായക്കുറിപ്പ് /Remarks (if any): {{remarks}}",
                       "width": "49%",
                       "style": "details-body"
                     }
@@ -230,7 +334,7 @@
                 {
                   "columns": [
                     {
-                      "text": "DATE OF ISSUE: {{issueDate}}",
+                      "text": "നൽകുന്ന തീയതി / Date of Issue : {{issueDate}}",
                       "width": "49%",
                       "style": "details-body"
                     },

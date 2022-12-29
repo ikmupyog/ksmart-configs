@@ -16,7 +16,41 @@
                   "variable": "logoImage",                        
                   "url":"https://raw.githubusercontent.com/egovernments/egov-web-app/master/web/rainmaker/dev-packages/egov-ui-kit-dev/src/assets/images/pblogo.png",
                   "type":"image"      
+                },				
+				{
+                  "variable": "localBodyName", 
+                  "value": {
+                    "path": "$.localBodyName"
+                  },
+                  "type":"setEmpty"
                 },
+		{
+		  "variable": "tenant",
+		  "value": {
+			"path": "$.tenantId"
+		  },
+		  "type": "setEmpty",
+		  "localisation":{
+			"required":true,
+			"prefix": null,
+			"module":"rainmaker-common",
+			"locale":"en_IN"
+		  }
+		},
+
+		{
+		  "variable": "tenantMl",
+		  "value": {
+			"path": "$.tenantId"
+		  },
+		  "type": "setEmpty",
+		  "localisation":{
+			"required":true,
+			"prefix": null,
+			"module":"rainmaker-common",
+			"locale":"ml_IN"
+		  }
+		},
                 {
                   "variable": "name", 
                   "value": {
@@ -25,74 +59,110 @@
                   "type":"setEmpty"
                 },
                 {
-                  "variable": "embeddedUrl", 
-                  "value": {
-                    "path": "$.embeddedUrl"
-                  }
+                    "variable": "gender", 
+                    "value": {
+                      "path": "$.gender"
+                    },
+                    "type":"setEmpty"
                 },
                 {
-                  "variable": "dod", 
-                  "value": {
-                    "path": "$.dateofdeath"
+                    "variable": "dod", 
+                    "value": {
+                      "path": "$.dateOfDeath"
+                    },
+                    "type": "date"
                   },
-                  "type": "date"
+                {
+                    "variable": "placeOfDeath", 
+                    "value": {
+                      "path": "$.placeofdeath"
+                    },
+                    "type":"setEmpty"
+                }, 
+                {
+                    "variable": "motherName", 
+                    "value": {
+                       "path": "$.motherName"
+                    },
+                    "type":"setEmpty"
                 },
                 {
-                  "variable": "gender", 
-                  "value": {
-                    "path": "$.genderStr"
-                  },
-                  "type":"setEmpty"
+                    "variable": "fatherorHusbandName", 
+                    "value": {
+                      "path": "$.maledependentname"
+                    },
+                    "type":"setEmpty"
                 },
                 {
-                  "variable": "registrationNo", 
-                  "value": {
-                    "path": "$.registrationno"
-                  },
-                  "type":"setEmpty"
+                    "variable": "deceasedPresentAddressml", 
+                    "value": {
+                      "path": "$.presentAddressFullMl"
+                    },
+                    "type":"setEmpty"
+                },
+                {
+                    "variable": "deceasedPresentAddressen", 
+                    "value": {
+                      "path": "$.presentAddressFullEn"
+                    },
+                    "type":"setEmpty"
+                },
+                {
+                    "variable": "deceasedPermanentAddressml", 
+                    "value": {
+                      "path": "$.permanentAddressFullMl"
+                    },
+                    "type":"setEmpty"
+                },	
+                {
+                    "variable": "deceasedPermanentAddressen", 
+                    "value": {
+                      "path": "$.permanentAddressFullEn"
+                    },
+                    "type":"setEmpty"
+                },
+                {
+                    "variable": "registrationNo", 
+                    "value": {
+                      "path": "$.registrationNo"
+                    },
+                    "type":"setEmpty"
                 },
                 {
                     "variable": "registration_date", 
                     "value": {
-                      "path": "$.dateofreport"
+                      "path": "$.registrationdate"
                     },
                     "type": "date"
-                  },
-                  {
+                },
+                {
+                    "variable": "issueDate", 
+                    "value": {
+                      "path": "$.dateofissue"
+                    },
+                    "type": "date"
+                },
+                {
                     "variable": "updatedOn", 
                     "value": {
                       "path": "$.dateofissue"
                     },
                     "type": "date"
-                  },
-                {
-                  "variable": "fatherName", 
-                  "value": {
-                    "path": "$.deathFatherInfo.fullName"
-                  },
-                  "type":"setEmpty"
                 },
                 {
-                  "variable": "motherName", 
-                  "value": {
-                    "path": "$.deathMotherInfo.fullName"
-                  },
-                  "type":"setEmpty"
+                    "variable": "issuingauthority", 
+                    "value": {
+                      "path": "$.issuingauthority"
+                    },
+                    "type": "setEmpty"
                 },
                 {
-                  "variable": "childAddress", 
+                  "variable": "embeddedUrl", 
                   "value": {
-                    "path": "$.deathPresentaddr.fullAddress"
-                  },
-                  "type":"setEmpty"
-                },
-                {
-                  "variable": "parentsAddress", 
-                  "value": {
-                    "path": "$.deathPermaddr.fullAddress"
-                  },
-                  "type":"setEmpty"
-                },
+                    "path": "$.embeddedUrl"
+                  }
+                },    
+
                 {
                   "variable": "parentsCity", 
                   "value": {
@@ -157,20 +227,8 @@
                   },
                   "type":"setEmpty"
                 },
-                  {
-                    "variable": "placeOfDeath", 
-                    "value": {
-                      "path": "$.placeofdeath"
-                    },
-                    "type":"setEmpty"
-                  },
-                  {
-                    "variable": "issueDate", 
-                    "value": {
-                      "path": "$.dateofissue"
-                    },
-                    "type": "date"
-                  },
+                  
+                  
                  
                   {
                     "variable": "certificateType", 
