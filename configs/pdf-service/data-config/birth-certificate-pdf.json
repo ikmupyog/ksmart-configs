@@ -19,7 +19,7 @@
               },
               {
                 "variable": "logobirth",
-                "url": "https://ulb-logos.s3.ap-south-1.amazonaws.com/birth_death_logo.jpg",
+                "url": "https://ulb-logos.s3.ap-south-1.amazonaws.com/birth_dath_logo.jpg",
                 "type":"image"
               },
               {
@@ -199,7 +199,6 @@
                 "type": "setEmpty",
                 "localisation":{
                   "required":true,
-                  "prefix": "TENANTS_TENANT_",
                   "module":"rainmaker-common",
                   "locale":"en_IN"
                 }
