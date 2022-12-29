@@ -111,15 +111,15 @@
                     "text": "{{nameOfLbMl}} : {{tenantMl}}",
                     "style": "body-font"
                   }
-                  ]
+                ]
               }
             ]
           ]
         },
         "layout": "noBorders"
       },
-      
-  {
+
+      {
         "style": "ws-head",
         "table": {
           "widths": [
@@ -150,7 +150,7 @@
                   {
                     "text": "{{childName}} / {{childNameMl}}",
                     "width": "39%",
-                    "style": "main-body-style"
+                    "style": "details-body"
                   },
                   {
                     "text": "  :",
@@ -158,11 +158,11 @@
                   },
                   {
                     "text": "{{name}}",
-                    "style": "main-body-style"
+                    "style": "details-body"
                   }
                 ]
               }
-              ],
+            ],
             [
               {
                 "columns": [
@@ -181,14 +181,14 @@
                   }
                 ]
               }
-              ]
-            
+            ]
+
           ]
         },
         "layout": "noBorders"
       },
 
-      
+
       {
         "style": "ws-head",
         "table": {
@@ -198,29 +198,30 @@
           "body": [
             [
               {
-                "stack": [
+                "columns": [
                   {
                     "image": "{{qr_code_image}}",
-                    "width": 30,
-                    "height": 30,
+                    "width": 50,
+                    "height": 50,
                     "style": "qr-code"
                   },
 
-                  {
-                    "text": "{{ensureRegistration}}",
-                    "style": "footerBold"
-                  },
-                  {
-                    "text": "{{ensureRegistrationMl}}",
-                    "style": "footerBold"
-                  },
-                  {
-                    "text": "{{computerGenerated}}",
-                    "style": "footer"
-                  }
+
+
+                        {
+                          "text": "{{ensureRegistration}}",
+                          "style": "footerBold"
+                        },
+                        {
+                          "text": "{{ensureRegistrationMl}}",
+                          "style": "footerBold"
+                        }
+
+
+
                 ]
               }
-            ]
+              ]
           ]
         },
         "layout": "noBorders"
@@ -235,6 +236,10 @@
             [
               {
                 "stack": [
+                  {
+                    "text": "{{computerGenerated}}",
+                    "style": "footer"
+                  },
                   {
                     "text": "{{validDocument}}",
                     "style": "footer"
@@ -306,7 +311,7 @@
       },
       "footer": {
         "color": "#000000",
-        "alignment": "left",
+        "alignment": "center",
         "margin": [
           0,
           30,
