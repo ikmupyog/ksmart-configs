@@ -70,22 +70,12 @@
                   {
                     "text": "{{deptUrbanAffairs}}",
                     "style": "appendix-header-body",
-                    "margin": [
-                      0,
-                      0,
-                      0,
-                      0
-                    ]
+                    "margin": [0, 0,  0, 0]
                   },
                   {
                     "text": "{{deptUrbanAffairsMl}}",
                     "style": "appendix-header-body",
-                    "margin": [
-                      0,
-                      0,
-                      0,
-                      0
-                    ]
+                    "margin":  [0, 0,  0, 0]
                   }
                 ]
               },
@@ -137,7 +127,7 @@
           "body": [
             [
               {
-                "columns": [
+                "stack": [
                   {
                     "text": "{{birthCertificate}}",
                     "style": "title-header"
@@ -145,24 +135,7 @@
                   {
                     "text": "{{birthCertificateMl}}",
                     "style": "title-header"
-                  }
-                ]
-              }
-            ]
-          ]
-        },
-        "layout": "noBorders"
-      },
-      {
-        "style": "ws-head",
-        "table": {
-          "widths": [
-            "*"
-          ],
-          "body": [
-            [
-              {
-                "columns": [
+                  },
                   {
                     "text": "{{issueUnderSection121969}}",
                     "style": "rule-header"
@@ -170,24 +143,7 @@
                   {
                     "text": "{{issueUnderSection121969ML}}",
                     "style": "rule-header"
-                  }
-                ]
-              }
-            ]
-          ]
-        },
-        "layout": "noBorders"
-      },
-      {
-        "style": "ws-head",
-        "table": {
-          "widths": [
-            "*"
-          ],
-          "body": [
-            [
-              {
-                "columns": [
+                  },
                   {
                     "text": "{{certify}}",
                     "style": "rule-body_multiLang"
@@ -198,11 +154,12 @@
                   }
                 ]
               }
-            ]
+              ]
           ]
         },
         "layout": "noBorders"
       },
+
       {
         "style": "ws-head",
         "table": {
@@ -230,7 +187,8 @@
               }
             ]
           ]
-        }
+        },
+        "layout": "noBorders"
       },
       {
         "style": "ws-head",
