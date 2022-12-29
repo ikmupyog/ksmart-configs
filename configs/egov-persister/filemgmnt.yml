@@ -72,7 +72,26 @@ serviceMaps:
       
       - jsonPath: $.ApplicantPersonals.*.auditDetails.lastModifiedBy
 
-      - jsonPath: $.ApplicantPersonals.*.auditDetails.lastModifiedTime      
+      - jsonPath: $.ApplicantPersonals.*.auditDetails.lastModifiedTime 
+      
+    - query: >
+        INSERT INTO eg_fm_applicantpersonal_child(id, applicantpersonalid, buildingnumber, relationofassessee, nameofoccupier,  relationofoccupier, durationofresidence) 
+        VALUES (?, ?, ?, ?, ?, ?, ?)
+      basePath: ApplicantPersonals.*.applicantChild
+      jsonMaps:
+      - jsonPath: $.ApplicantPersonals.*.applicantChild.id
+
+      - jsonPath: $.ApplicantPersonals.*.id
+      
+      - jsonPath: $.ApplicantPersonals.*.applicantChild.buildingNumber 
+      
+      - jsonPath: $.ApplicantPersonals.*.applicantChild.relationOfAssessee   
+      
+      - jsonPath: $.ApplicantPersonals.*.applicantChild.nameOfOccupier    
+      
+      - jsonPath: $.ApplicantPersonals.*.applicantChild.relationOfOccupier 
+    
+      - jsonPath: $.ApplicantPersonals.*.applicantChild.durationOfResidence     
  
       
     - query: >
@@ -119,11 +138,11 @@ serviceMaps:
       
       - jsonPath: $.ApplicantPersonals.*.id
       
-      - jsonPath: $.ApplicantPersonals.*.applicantDocuments.documenttypeId
+      - jsonPath: $.ApplicantPersonals.*.applicantDocuments.documentTypeId
 
       - jsonPath: $.ApplicantPersonals.*.applicantDocuments.documentNumber
      
-      - jsonPath: $.ApplicantPersonals.*.applicantDocuments.docexpiryDate              
+      - jsonPath: $.ApplicantPersonals.*.applicantDocuments.docExpiryDate              
        
       - jsonPath: $.ApplicantPersonals.*.auditDetails.createdBy
 
@@ -352,7 +371,6 @@ serviceMaps:
       
       - jsonPath: $.CommunicationFile.*.auditDetails.lastModifiedBy
 
-
       - jsonPath: $.CommunicationFile.*.auditDetails.lastModifiedTime   
       
   - version: 1.0
@@ -377,7 +395,41 @@ serviceMaps:
       - jsonPath: $.CommunicationFile.*.id          
 
       - jsonPath: $.CommunicationFile.*.auditDetails.lastModifiedTime    
+      
+  -  version: 1.0
+     description: Persists certificate details  in egov_filemgmnt database, eg_fm_certificatedetail table
+     fromTopic: save-fm-certificates
+     isTransaction: true
+     queryMaps:
+     - query: >
+        INSERT INTO eg_fm_certificatedetail(id, tenantid, businessservice, certificateno, certificatestatus, applicantpersonalid,filestoreid,dateofissue, createdby, createdtime, lastmodifiedby, lastmodifiedtime) 
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+       basePath: CertificateDetails.*
+       jsonMaps:
+       - jsonPath: $.CertificateDetails.*.id
+
+       - jsonPath: $.CertificateDetails.*.tenantId 
+      
+       - jsonPath: $.CertificateDetails.*.bussinessService 
+      
+       - jsonPath: $.CertificateDetails.*.certificateNo 
+      
+       - jsonPath: $.CertificateDetails.*.certificateStatus 
+      
+       - jsonPath: $.CertificateDetails.*.applicantPersonalId 
+       
+       - jsonPath: $.CertificateDetails.*.filestoreId 
+       
+       - jsonPath: $.CertificateDetails.*.dateofIssue 
+      
+       - jsonPath: $.CertificateDetails.*.auditDetails.createdBy
+
+       - jsonPath: $.CertificateDetails.*.auditDetails.createdTime
+      
+       - jsonPath: $.CertificateDetails.*.auditDetails.lastModifiedBy
+
+       - jsonPath: $.CertificateDetails.*.auditDetails.lastModifiedTime   
 
    
 
-   
+       
