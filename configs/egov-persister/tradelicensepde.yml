@@ -3,11 +3,11 @@ serviceMaps:
  mappings:
  - version: 1.0
    description: Persists tradeLicense details in EG_TL_TradeLicense  table
-   fromTopic: save-tl-tradelicense
+   fromTopic: savepde-tl-tradelicense
    isTransaction: true
    queryMaps:
 
-       - query: INSERT INTO eg_tl_tradelicense( id, accountid,tenantid,tradeName,licenseUnitNameMal,validfrom,validto,licensetype,applicationNumber, oldlicensenumber, propertyid, oldpropertyid, applicationdate, commencementdate, financialyear, action, status, createdby, lastmodifiedby, createdtime, lastmodifiedtime, businessservice, applicationtype, workflowcode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+       - query: INSERT INTO eg_tl_tradelicense( id, accountid,tenantid,tradeName,validfrom,validto,licensetype, financialyear, action, status, createdby, lastmodifiedby, createdtime, lastmodifiedtime, businessservice, applicationtype, workflowcode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
          basePath: Licenses.*
          jsonMaps:
           - jsonPath: $.Licenses.*.id
@@ -18,25 +18,11 @@ serviceMaps:
 
           - jsonPath: $.Licenses.*.tradeName
 
-          - jsonPath: $.Licenses.*.licenseUnitNameMal
-
           - jsonPath: $.Licenses.*.validFrom
 
           - jsonPath: $.Licenses.*.validTo
 
           - jsonPath: $.Licenses.*.licenseType
-
-          - jsonPath: $.Licenses.*.applicationNumber
-
-          - jsonPath: $.Licenses.*.oldLicenseNumber
-
-          - jsonPath: $.Licenses.*.propertyId
-
-          - jsonPath: $.Licenses.*.oldPropertyId
-
-          - jsonPath: $.Licenses.*.applicationDate
-
-          - jsonPath: $.Licenses.*.commencementDate
 
           - jsonPath: $.Licenses.*.financialYear
 
@@ -60,18 +46,12 @@ serviceMaps:
 
 
 
-       - query: INSERT INTO eg_tl_tradelicensedetail( id, surveyno, subownershipcategory, channel, additionaldetail, tradelicenseid,structureType,operationalArea,noOfEmployees,adhocExemption,adhocPenalty,adhocExemptionReason,adhocPenaltyReason,businesssector, capitalinvestment, enterprisetype, licenseunittype, licenseunitid, structureplacesubtype, customdetailtype, businessactivitydesc, licenseetype, createdby, lastmodifiedby, createdtime, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?, ?, ?, ?, ?, ?, ?, ?, ?,? );
+       - query: INSERT INTO eg_tl_tradelicensedetail( id, channel, tradelicenseid, structureType, businesssector, capitalinvestment, enterprisetype, createdby, lastmodifiedby, createdtime, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
          basePath: Licenses.*.tradeLicenseDetail
          jsonMaps:
           - jsonPath: $.Licenses.*.tradeLicenseDetail.id
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.surveyNo
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.subOwnerShipCategory
-
           - jsonPath: $.Licenses.*.tradeLicenseDetail.channel
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.additionalDetail
             type: JSON
 
             dbType: JSONB
@@ -80,35 +60,11 @@ serviceMaps:
 
           - jsonPath: $.Licenses.*.tradeLicenseDetail.structureType
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.operationalArea
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.noOfEmployees
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.adhocExemption
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.adhocPenalty
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.adhocExemptionReason
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.adhocPenaltyReason
-
           - jsonPath: $.Licenses.*.tradeLicenseDetail.businessSector
 
           - jsonPath: $.Licenses.*.tradeLicenseDetail.capitalInvestment
 
           - jsonPath: $.Licenses.*.tradeLicenseDetail.enterpriseType
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.licenseUnitType
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.licenseUnitId
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlaceSubtype
-          
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.customDetailType
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.businessActivityDesc
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.licenseeType
 
           - jsonPath: $.Licenses.*.auditDetails.createdBy
 
@@ -119,163 +75,23 @@ serviceMaps:
           - jsonPath: $.Licenses.*.auditDetails.lastModifiedTime
 
 
-
-       - query: INSERT INTO eg_tl_tradeunit( id, tenantid,active, tradetype, uom, uomvalue, tradelicensedetailid, createdby, lastmodifiedby, createdtime, lastmodifiedtime) VALUES (?,?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
-         basePath: Licenses.*.tradeLicenseDetail.tradeUnits.*
+       - query: INSERT INTO eg_tl_owner_pde(id, tenantid, active, tradelicensedetailid, ownername, ownertype) VALUES (?, ?, ?, ?, ?, ?);
+         basePath: Licenses.*.tradeLicenseDetail.ownersPde.*
          jsonMaps:
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.tradeUnits.*.id
+          - jsonPath: $.Licenses.*.tradeLicenseDetail.ownersPde.*.id
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.tradeUnits.*.tenantId
+          - jsonPath: $.Licenses.*.tradeLicenseDetail.ownersPde.*.tenantId
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.tradeUnits.*.active
+          - jsonPath: $.Licenses.*.tradeLicenseDetail.ownersPde.*.userActive
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.tradeUnits.*.tradeType
+          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.ownersPde[*].id)].tradeLicenseDetail.id
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.tradeUnits.*.uom
+          - jsonPath: $.Licenses.*.tradeLicenseDetail.ownersPde.*.name
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.tradeUnits.*.uomValue
+          - jsonPath: $.Licenses.*.tradeLicenseDetail.ownersPde.*.ownerType
 
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.tradeUnits[*].id)].tradeLicenseDetail.id
 
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.tradeUnits[*].id)].auditDetails.createdBy
-
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.tradeUnits[*].id)].auditDetails.lastModifiedBy
-
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.tradeUnits[*].id)].auditDetails.createdTime
-
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.tradeUnits[*].id)].auditDetails.lastModifiedTime
-
-
-
-       - query: INSERT INTO eg_tl_accessory( id, tenantid,active, accessoryCategory, uom, uomvalue, count, tradelicensedetailid, createdby, lastmodifiedby, createdtime, lastmodifiedtime) VALUES (?,?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
-         basePath: Licenses.*.tradeLicenseDetail.accessories.*
-         jsonMaps:
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.accessories.*.id
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.accessories.*.tenantId
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.accessories.*.active
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.accessories.*.accessoryCategory
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.accessories.*.uom
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.accessories.*.uomValue
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.accessories.*.count
-
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.accessories[*].id)].tradeLicenseDetail.id
-
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.accessories[*].id)].auditDetails.createdBy
-
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.accessories[*].id)].auditDetails.lastModifiedBy
-
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.accessories[*].id)].auditDetails.createdTime
-
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.accessories[*].id)].auditDetails.lastModifiedTime
-
-
-       - query: INSERT INTO eg_tl_owner( id,tenantid,active,institutionid, tradelicensedetailid, isprimaryowner, ownertype, ownershippercentage, relationship, ownername, aadharno, address, email, consentagreementplace, consentagreementdate, consentagreementenddate, createdby,lastmodifiedby, createdtime, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
-         basePath: Licenses.*.tradeLicenseDetail.owners.*
-         jsonMaps:
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.uuid
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.tenantId
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.userActive
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.institutionId
-
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.owners[*].id)].tradeLicenseDetail.id
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.isPrimaryOwner
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.ownerType
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.ownerShipPercentage
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.relationship
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.name
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.aadhaarNumber
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.permanentAddress
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.emailId
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.consentAgreementPlace
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.consentAgreementDate
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.consentAgreementEndDate
-
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.owners[*].id)].auditDetails.createdBy
-
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.owners[*].id)].auditDetails.lastModifiedBy
-
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.owners[*].id)].auditDetails.createdTime
-
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.owners[*].id)].auditDetails.lastModifiedTime
-
-
-
-       - query: INSERT INTO eg_tl_document_owner(id,tenantId,userid,active, tradeLicenseDetailId, documenttype, fileStoreId,documentuid, createdby, lastmodifiedby, createdtime, lastmodifiedtime) VALUES (?, ?, ? ,? ,?, ?, ?, ?, ?, ?, ?, ?);
-         basePath: Licenses.*.tradeLicenseDetail.owners.*.documents.*
-         jsonMaps:
-           - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.documents.*.id
-
-           - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.owners.*.documents[*].id)].tenantId
-
-           - jsonPath: $.Licenses.*.tradeLicenseDetail.owners[*][?({id} in @.documents[*].id)].uuid
-
-           - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.documents.*.active
-
-           - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.owners.*.documents[*].id)].tradeLicenseDetail.id
-
-           - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.documents.*.documentType
-
-           - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.documents.*.fileStoreId
-
-           - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.documents.*.documentUid
-
-           - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.owners.*.documents[*].id)].auditDetails.createdBy
-
-           - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.owners.*.documents[*].id)].auditDetails.lastModifiedBy
-
-           - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.owners.*.documents[*].id)].auditDetails.createdTime
-
-           - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.owners.*.documents[*].id)].auditDetails.lastModifiedTime
-
-
-
-       - query: INSERT INTO eg_tl_applicationdocument( id, tenantid, active, documenttype, tradecategorydetail, filestoreid, tradelicensedetailid, createdby, lastmodifiedby, createdtime, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
-         basePath: Licenses.*.tradeLicenseDetail.applicationDocuments.*
-         jsonMaps:
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.applicationDocuments.*.id
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.applicationDocuments.*.tenantId
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.applicationDocuments.*.active
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.applicationDocuments.*.documentType
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.applicationDocuments.*.tradecategorydetail
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.applicationDocuments.*.fileStoreId
-
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.applicationDocuments[*].id)].tradeLicenseDetail.id
-
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.applicationDocuments[*].id)].auditDetails.createdBy
-
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.applicationDocuments[*].id)].auditDetails.lastModifiedBy
-
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.applicationDocuments[*].id)].auditDetails.createdTime
-
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.applicationDocuments[*].id)].auditDetails.lastModifiedTime
-
-
-       - query: INSERT INTO eg_tl_address( id, tenantid, doorno,street,buildingName, latitude,longitude, addressid, addressnumber,locality, type, addressline1, addressline2, landmark, city, pincode, detail, tradelicensedetailid, zonalid, wardid, wardno, circledivisionid, contactno, email, createdby, lastmodifiedby, createdtime, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+       - query: INSERT INTO eg_tl_address( id, tenantid, doorno, tradelicensedetailid, zonalid, wardid, wardno, circledivisionid, createdby, lastmodifiedby, createdtime, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
          basePath: Licenses.*.tradeLicenseDetail.address
          jsonMaps:
           - jsonPath: $.Licenses.*.tradeLicenseDetail.address.id
@@ -283,34 +99,6 @@ serviceMaps:
           - jsonPath: $.Licenses.*.tradeLicenseDetail.address.tenantId
 
           - jsonPath: $.Licenses.*.tradeLicenseDetail.address.doorNo
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.address.street
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.address.buildingName
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.address.latitude
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.address.longitude
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.address.addressId
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.address.addressNumber
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.address.locality.code
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.address.type
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.address.addressline1
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.address.addressline2
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.address.landmark
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.address.city
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.address.pincode
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.address.detail
 
           - jsonPath: $.Licenses.*.tradeLicenseDetail.id
 
@@ -322,10 +110,6 @@ serviceMaps:
 
           - jsonPath: $.Licenses.*.tradeLicenseDetail.address.circleDivisionId
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.address.contactNo
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.address.email
-
           - jsonPath: $.Licenses.*.auditDetails.createdBy
 
           - jsonPath: $.Licenses.*.auditDetails.lastModifiedBy
@@ -335,69 +119,16 @@ serviceMaps:
           - jsonPath: $.Licenses.*.auditDetails.lastModifiedTime
 
 
-       - query: INSERT INTO eg_tl_institution(tenantId,active,id, tradelicensedetailid, name, type,designation, instituionname,contactno,organisationregistrationno,address,natureofinstitution,email, createdby, lastmodifiedby, createdtime, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ;
-         basePath: Licenses.*.tradeLicenseDetail.institution
-         jsonMaps:
-
-           - jsonPath: $.Licenses.*.tradeLicenseDetail.institution.tenantId
-
-           - jsonPath: $.Licenses.*.tradeLicenseDetail.institution.active
-
-           - jsonPath: $.Licenses.*.tradeLicenseDetail.institution.id
-
-           - jsonPath: $.Licenses.*.tradeLicenseDetail.id
-
-           - jsonPath: $.Licenses.*.tradeLicenseDetail.institution.name
-
-           - jsonPath: $.Licenses.*.tradeLicenseDetail.institution.type
-
-           - jsonPath: $.Licenses.*.tradeLicenseDetail.institution.designation
-
-           - jsonPath: $.Licenses.*.tradeLicenseDetail.institution.instituionName
-
-           - jsonPath: $.Licenses.*.tradeLicenseDetail.institution.contactNo
-
-           - jsonPath: $.Licenses.*.tradeLicenseDetail.institution.organisationRegistrationNo
-
-           - jsonPath: $.Licenses.*.tradeLicenseDetail.institution.address
-
-           - jsonPath: $.Licenses.*.tradeLicenseDetail.institution.natureOfInstitution 
-
-           - jsonPath: $.Licenses.*.tradeLicenseDetail.institution.email 
-
-           - jsonPath: $.Licenses.*.auditDetails.createdBy
-
-           - jsonPath: $.Licenses.*.auditDetails.lastModifiedBy
-
-           - jsonPath: $.Licenses.*.auditDetails.createdTime
-
-           - jsonPath: $.Licenses.*.auditDetails.lastModifiedTime
-
-
-       - query: INSERT INTO eg_tl_structureplacedetail(id, tenantid, blockno, surveyno, subdivisionno, partitionno, doorno, doorsub, buildingid, vehicleno, vesselno, tradelicensedetailid, active, createdby, lastmodifiedby, createdtime, lastmodifiedtime, isresurveyed) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?) ;
+       - query: INSERT INTO eg_tl_structureplacedetail(id, tenantid, doorno, doorsub, tradelicensedetailid, active, createdby, lastmodifiedby, createdtime, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ;
          basePath: Licenses.*.tradeLicenseDetail.structurePlace.*
          jsonMaps:
           - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.id
 
           - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.tenantId
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.blockNo
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.surveyNo
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.subDivisionNo
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.partitionNo
-
           - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.doorNo
 
           - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.doorNoSub
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.buildingId
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.vehicleNo
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.vesselNo
 
           - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.structurePlace[*].id)].tradeLicenseDetail.id
 
@@ -411,12 +142,11 @@ serviceMaps:
 
           - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.structurePlace[*].id)].auditDetails.lastModifiedTime
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.isResurveyed
 
 
  - version: 1.0
    description: Update tradeLicense details in EG_TL_TradeLicense  table
-   fromTopic: update-tl-tradelicense
+   fromTopic: updatepde-tl-tradelicense
    isTransaction: true
    queryMaps:
 
@@ -877,7 +607,7 @@ serviceMaps:
            - jsonPath: $.Licenses.*.tradeLicenseDetail.institution.email
 
 
-       - query: UPDATE eg_tl_structureplacedetail SET tenantid=?, blockno=?, surveyno=?, subdivisionno=?, partitionno=?, doorno=?, doorsub=?, buildingid=?, vehicleno=?, vesselno=?, tradelicensedetailid=?, active=?, createdby=?, lastmodifiedby=?, createdtime=?, lastmodifiedtime=?, isresurveyed=? WHERE id =?;
+       - query: UPDATE eg_tl_structureplacedetail SET tenantid=?, blockno=?, surveyno=?, subdivisionno=?, partitionno=?, doorno=?, doorsub=?, buildingid=?, vehicleno=?, vesselno=?, tradelicensedetailid=?, active=?, createdby=?, lastmodifiedby=?, createdtime=?, lastmodifiedtime=?, isresurveyed=?, waterplatform=? WHERE id =?;
          basePath: Licenses.*.tradeLicenseDetail.structurePlace
          jsonMaps:
           - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.tenantId
@@ -913,6 +643,8 @@ serviceMaps:
           - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.structurePlace[*].id)].auditDetails.lastModifiedTime
 
           - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.isResurveyed
+
+          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.waterPlatform
 
           - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.id
 
