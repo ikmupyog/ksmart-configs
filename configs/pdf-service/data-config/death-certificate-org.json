@@ -16,67 +16,7 @@
                   "variable": "logoImage",                        
                   "url":"https://raw.githubusercontent.com/egovernments/egov-web-app/master/web/rainmaker/dev-packages/egov-ui-kit-dev/src/assets/images/pblogo.png",
                   "type":"image"      
-                },				
-				{
-                  "variable": "localBodyName", 
-                  "value": {
-                    "path": "$.localBodyName"
-                  },
-                  "type":"setEmpty"
                 },
-		{
-		  "variable": "tenant",
-		  "value": {
-			"path": "$.tenantId"
-		  },
-		  "type": "setEmpty",
-		  "localisation":{
-			"required":true,
-			"prefix": "TENANT_TENANTS",
-			"module":"rainmaker-common",
-			"locale":"en_IN"
-		  }
-		},
-
-		{
-		  "variable": "tenantMl",
-		  "value": {
-			"path": "$.tenantId"
-		  },
-		  "type": "setEmpty",
-		  "localisation":{
-			"required":true,
-			"prefix": "TENANT_TENANTS",
-			"module":"rainmaker-common",
-			"locale":"ml_IN"
-		  }
-		},
-	       {
-		  "variable": "governmentEn",
-		  "value": {
-			"path": "PDF_BIRTH_GOVERNMENT_OF_KERALA"
-		  },
-		  "type": "label",
-		  "localisation":{
-			"required":true,
-			"prefix": null,
-			"module":"rainmaker-pdf",
-			"locale":"en_IN"
-		  }
-		},
-		{
-		  "variable": "governmentMl",
-		  "value": {
-			"path": "PDF_BIRTH_GOVERNMENT_OF_KERALA"
-		  },
-		  "type": "label",
-		  "localisation":{
-			"required":true,
-			"prefix": null,
-			"module":"rainmaker-pdf",
-			"locale":"ml_IN"
-		  }
-		},
                 {
                   "variable": "name", 
                   "value": {
@@ -85,110 +25,74 @@
                   "type":"setEmpty"
                 },
                 {
-                    "variable": "gender", 
-                    "value": {
-                      "path": "$.gender"
-                    },
-                    "type":"setEmpty"
+                  "variable": "embeddedUrl", 
+                  "value": {
+                    "path": "$.embeddedUrl"
+                  }
                 },
                 {
-                    "variable": "dod", 
-                    "value": {
-                      "path": "$.dateOfDeath"
-                    },
-                    "type": "date"
+                  "variable": "dod", 
+                  "value": {
+                    "path": "$.dateofdeath"
                   },
-                {
-                    "variable": "placeOfDeath", 
-                    "value": {
-                      "path": "$.placeofdeath"
-                    },
-                    "type":"setEmpty"
-                }, 
-                {
-                    "variable": "motherName", 
-                    "value": {
-                       "path": "$.motherName"
-                    },
-                    "type":"setEmpty"
+                  "type": "date"
                 },
                 {
-                    "variable": "fatherorHusbandName", 
-                    "value": {
-                      "path": "$.maledependentname"
-                    },
-                    "type":"setEmpty"
+                  "variable": "gender", 
+                  "value": {
+                    "path": "$.genderStr"
+                  },
+                  "type":"setEmpty"
                 },
                 {
-                    "variable": "deceasedPresentAddressml", 
-                    "value": {
-                      "path": "$.presentAddressFullMl"
-                    },
-                    "type":"setEmpty"
-                },
-                {
-                    "variable": "deceasedPresentAddressen", 
-                    "value": {
-                      "path": "$.presentAddressFullEn"
-                    },
-                    "type":"setEmpty"
-                },
-                {
-                    "variable": "deceasedPermanentAddressml", 
-                    "value": {
-                      "path": "$.permanentAddressFullMl"
-                    },
-                    "type":"setEmpty"
-                },	
-                {
-                    "variable": "deceasedPermanentAddressen", 
-                    "value": {
-                      "path": "$.permanentAddressFullEn"
-                    },
-                    "type":"setEmpty"
-                },
-                {
-                    "variable": "registrationNo", 
-                    "value": {
-                      "path": "$.registrationNo"
-                    },
-                    "type":"setEmpty"
+                  "variable": "registrationNo", 
+                  "value": {
+                    "path": "$.registrationno"
+                  },
+                  "type":"setEmpty"
                 },
                 {
                     "variable": "registration_date", 
                     "value": {
-                      "path": "$.registrationdate"
+                      "path": "$.dateofreport"
                     },
                     "type": "date"
-                },
-                {
-                    "variable": "issueDate", 
-                    "value": {
-                      "path": "$.dateofissue"
-                    },
-                    "type": "date"
-                },
-                {
+                  },
+                  {
                     "variable": "updatedOn", 
                     "value": {
                       "path": "$.dateofissue"
                     },
                     "type": "date"
-                },
+                  },
                 {
-                    "variable": "issuingauthority", 
-                    "value": {
-                      "path": "$.issuingauthority"
-                    },
-                    "type": "setEmpty"
-                },
-                {
-                  "variable": "embeddedUrl", 
+                  "variable": "fatherName", 
                   "value": {
-                    "path": "$.embeddedUrl"
-                  }
-                },    
-
+                    "path": "$.deathFatherInfo.fullName"
+                  },
+                  "type":"setEmpty"
+                },
+                {
+                  "variable": "motherName", 
+                  "value": {
+                    "path": "$.deathMotherInfo.fullName"
+                  },
+                  "type":"setEmpty"
+                },
+                {
+                  "variable": "childAddress", 
+                  "value": {
+                    "path": "$.deathPresentaddr.fullAddress"
+                  },
+                  "type":"setEmpty"
+                },
+                {
+                  "variable": "parentsAddress", 
+                  "value": {
+                    "path": "$.deathPermaddr.fullAddress"
+                  },
+                  "type":"setEmpty"
+                },
                 {
                   "variable": "parentsCity", 
                   "value": {
@@ -253,8 +157,20 @@
                   },
                   "type":"setEmpty"
                 },
-                  
-                  
+                  {
+                    "variable": "placeOfDeath", 
+                    "value": {
+                      "path": "$.placeofdeath"
+                    },
+                    "type":"setEmpty"
+                  },
+                  {
+                    "variable": "issueDate", 
+                    "value": {
+                      "path": "$.dateofissue"
+                    },
+                    "type": "date"
+                  },
                  
                   {
                     "variable": "certificateType", 
