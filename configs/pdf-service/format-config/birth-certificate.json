@@ -202,37 +202,7 @@
           ]
         },
         "layout": "noBorders"
-      },
-      {
-        "style": "ws-head",
-        "table": {
-          "widths": [
-            "*"
-          ],
-          "body": [
-            [
-              {
-                "columns": [
-                  {
-                    "text": "{{childName}} / {{childNameMl}}",
-                    "width": "39%",
-                    "style": "main-body-style"
-                  },
-                  {
-                    "text": "  :",
-                    "width": "1%"
-                  },
-                  {
-                    "text": "{{name}}",
-                    "style": "main-body-style"
-                  }
-                ]
-              }
-            ]
-          ]
-        }
-      },
-
+      }
       {
         "style": "ws-head",
         "table": {
@@ -292,68 +262,27 @@
           "body": [
             [
               {
-                "stack": [
-                  {
-                    "image": "{{qr_code_image}}",
-                    "width": 30,
-                    "height": 30
-                  }
-                ]
-              },
-              {
-                "stack": [
-                  {
-                    "text": "{{ensureRegistration}}",
-                    "style": "footerBold"
-                  },
-                  {
-                    "text": "{{ensureRegistrationMl}}",
-                    "style": "footerBold"
-                  },
-                  {
-                    "text": "{{computerGenerated}}",
-                    "style": "footer"
-                  }
-                ]
-              }
-            ]
-          ]
-        },
-        "layout": "noBorders"
-      },
-      {
-        "style": "ws-head",
-        "table": {
-          "widths": [
-            "*"
-          ],
-          "body": [
-            [
-              {
                 "columns": [
                   {
-                    "text": "{{validDocument}}",
-                    "style": "footer"
+                    "text": "{{childName}} / {{childNameMl}}",
+                    "width": "39%",
+                    "style": "main-body-style"
                   },
                   {
-                    "text": "{{authenticity}}",
-                    "style": "footer"
+                    "text": "  :",
+                    "width": "1%"
                   },
                   {
-                    "text": "{{ikm}}",
-                    "style": "footer"
-                  },
-                  {
-                    "text": "{{printedInvalid}}",
-                    "style": "footer-red"
+                    "text": "{{name}}",
+                    "style": "main-body-style"
                   }
                 ]
               }
             ]
           ]
-        },
-        "layout": "noBorders"
+        }
       }
+
     ],
     "styles": {
       "pdf-header": {
