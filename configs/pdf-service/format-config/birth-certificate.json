@@ -2,7 +2,7 @@
   "key": "birth-certificate",
   "config": {
     "defaultStyle": {
-      "families": ["TimesNewRoman","sans-serif","noto-sans-malayalam-ui"]
+      "families": ["Roboto","NotoSansMalayalam"]
 
     },
     "content": [
