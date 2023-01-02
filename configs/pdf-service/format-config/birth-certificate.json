@@ -167,7 +167,7 @@
                   {
                     "text": "{{childName}} ",
                     "width": "15%",
-                    "style": "details-bodyleft"
+                    "style": "details-bodyLeft"
                   },
                   {
                     "text": "  :",
