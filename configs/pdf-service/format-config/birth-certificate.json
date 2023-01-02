@@ -6,7 +6,8 @@
     },
     "watermark": {
       "opacity": 0.3,
-      "link":  "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg"
+      "link":  "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
+      "linkToPage": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg"
     },
     "content": [
       {
