@@ -268,19 +268,16 @@
         "fontSize": 9,
         "fontWeight": 400,
         "alignment": "center"
-      },
+      }},
       "main-body-style": {
         "color": "#000000",
-        "bold": true,
         "fontSize": 8,
-        "fontWeight": 400,
         "alignment": "center"
       },
       "main-body-style_ml": {
         "color": "#000000",
         "font": "NotoSansMalayalam",
         "fontSize": 8,
-        "fontWeight": 400,
         "alignment": "center"
       },
       "appendix-header-italic": {
