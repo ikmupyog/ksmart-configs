@@ -132,7 +132,7 @@
                   {
                     "text": "{{childName}} / {{childNameMl}}",
                     "width": "39%",
-                    "style": "main-body-style"
+                    "style": "main-body-style_ml"
                   },
                   {
                     "text": "  :",
@@ -207,14 +207,14 @@
                   },
 
                   {
-                    "text": "{{ensureRegistration}}\\n{{ensureRegistrationMl}}",
-                    "style": "footerBold"
-                  }
+                          "text": "{{ensureRegistration}}\\n{{ensureRegistrationMl}}",
+                          "style": "footerBold"
+                        }
 
 
                 ]
               }
-            ]
+              ]
           ]
         },
         "layout": "noBorders"
@@ -276,6 +276,14 @@
         "fontWeight": 400,
         "alignment": "center"
       },
+      "main-body-style_ml": {
+        "color": "#000000",
+        "font": "NotoSansMalayalam",
+        "fontSize": 8,
+        "fontWeight": 400,
+        "alignment": "center"
+      },
+
       "appendix-header-italic": {
         "color": "#000000",
         "bold": true,
