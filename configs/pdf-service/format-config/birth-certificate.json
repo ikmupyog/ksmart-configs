@@ -5,7 +5,7 @@
       "font": "Cambay"
     },
     "watermark": {
-      "text": "DIGIT UAT DIGIT UAT",
+      "text": "{{logokerala}}",
       "color": "gery",
       "opacity": 0.1,
       "bold": true,
