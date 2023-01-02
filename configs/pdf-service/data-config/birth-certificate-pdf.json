@@ -530,7 +530,7 @@
               {
                 "variable": "govtOfKeralaMl",
                 "value": {
-                  "path": "PDF_BIRTH_GOVERNMENT_OF_KERALA"
+                  "path": "PDF_BIRTH_GOVERNMENT_OF_KERALA_ML"
                 },
                 "type": "label",
                 "localisation": {
