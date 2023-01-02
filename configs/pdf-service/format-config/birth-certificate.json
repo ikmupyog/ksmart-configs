@@ -2,7 +2,7 @@
   "key": "birth-certificate",
   "config": {
     "defaultStyle": {
-      "font": "Cambay"
+      "families": ["Times","sans-serif","Meera"]
     },
     "watermark": {
       "text": "link",
