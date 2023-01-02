@@ -2,7 +2,7 @@
   "key": "birth-certificate",
   "config": {
     "defaultStyle": {
-      "families": ["Roboto","NotoSansMalayalam"]
+      "families": ["Times","sans-serif","NotoSansMalayalam"]
 
     },
     "content": [
@@ -262,6 +262,13 @@
         "fillColor": "#F2F2F2",
         "margin": [-70, -41, -81, 10]
       },
+      "appendix-header-body-ml": {
+        "color": "#000099",
+        "font": "NotoSansMalayalam",
+        "fontSize": 9,
+        "fontWeight": 400,
+        "alignment": "center"
+      },
       "main-body-style": {
         "color": "#000000",
         "bold": true,
@@ -384,12 +391,6 @@
       "appendix-header-body": {
         "color": "#000000",
         "bold": true,
-        "fontSize": 8,
-        "fontWeight": 400,
-        "alignment": "center"
-      },
-      "appendix-header-body-ml": {
-        "color": "#000000",
         "fontSize": 8,
         "fontWeight": 400,
         "alignment": "center"
