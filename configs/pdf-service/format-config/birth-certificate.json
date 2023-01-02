@@ -221,16 +221,10 @@
                     "height": 100,
                     "style": "qr-code"
                   },
-                  [
-                      {
-                        "text": "{{ensureRegistration}}",
-                        "style": "footerBold"
-                      },
-                      {
-                        "text": "{ensureRegistrationMl}}",
-                        "style": "footerBold"
-                      }
-                    ]
+                  {
+                    "text": "{{ensureRegistration}}",
+                    "style": "footerBold"
+                  }
                 ]
               }
             ]
