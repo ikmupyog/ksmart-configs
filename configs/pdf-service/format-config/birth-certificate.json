@@ -473,7 +473,7 @@
       "footer-red": {
         "color": "#FF0000",
         "fontSize": 9,
-        "alignment": "center",
+        "alignment": "center"
       },
       "body-font": {
         "color": "#000000",
