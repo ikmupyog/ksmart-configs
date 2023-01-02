@@ -130,9 +130,9 @@
               {
                 "columns": [
                   {
-                    "text": "{{childName}} / {{childNameMl}}",
+                    "text": "{{childNameMl}} / {{childName}} ",
                     "width": "39%",
-                    "style": "main-body-style_ml"
+                    "style": "main-body-style"
                   },
                   {
                     "text": "  :",
@@ -148,7 +148,7 @@
               {
                 "columns": [
                   {
-                    "text": "{{childName}} / {{childNameMl}}",
+                    "text": "{{childNameMl}} / {{childName}}",
                     "width": "39%",
                     "style": "details-body"
                   },
@@ -207,14 +207,14 @@
                   },
 
                   {
-                          "text": "{{ensureRegistration}}\\n{{ensureRegistrationMl}}",
-                          "style": "footerBold"
-                        }
+                    "text": "{{ensureRegistration}}\\n{{ensureRegistrationMl}}",
+                    "style": "footerBold"
+                  }
 
 
                 ]
               }
-              ]
+            ]
           ]
         },
         "layout": "noBorders"
@@ -283,7 +283,6 @@
         "fontWeight": 400,
         "alignment": "center"
       },
-
       "appendix-header-italic": {
         "color": "#000000",
         "bold": true,
