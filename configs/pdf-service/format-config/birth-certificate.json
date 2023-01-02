@@ -3,7 +3,7 @@
   "config": {
     "defaultStyle": {
       "font": "Cambay",
-       "font": "NotoSansMalayalam",
+       
       
     },
     "content": [
@@ -405,6 +405,7 @@
         "font": "NotoSansMalayalam",
         "fontSize": 9,
         "fontWeight": 400,
+        "font": "NotoSansMalayalam",
         "alignment": "center"
       },
       "main-body-style": {
