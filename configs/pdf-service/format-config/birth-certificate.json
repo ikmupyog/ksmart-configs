@@ -8,7 +8,7 @@
       "text": "IKM",
       "color": "gery",
       "opacity": 0.1,
-      "image":  "{{logokerala}}",
+      "link":  "{{logokerala}}",
       "italics": false
     },
     "content": [
