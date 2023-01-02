@@ -158,16 +158,16 @@
                   {
                     "text": "{{childNameMl}}",
                     "width": "15%",
-                    "style": "details-body"
+                    "style": "details-bodyRight"
                   },
                   {
-                    "text": " /",
+                    "text": "/",
                     "width": "1%"
                   },
                   {
                     "text": "{{childName}} ",
                     "width": "19%",
-                    "style": "details-body"
+                    "style": "details-bodyleft"
                   },
                   {
                     "text": "  :",
@@ -398,13 +398,28 @@
         "fontWeight": 400,
         "margin": [0, 0, 0, 0]
       },
+      "details-bodyRight": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 11,
+        "fontWeight": 400,
+        "margin": [0, 5, 5, 0],
+        "alignment": "right"
+      },
+      "details-bodyLeft": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 11,
+        "fontWeight": 400,
+        "margin": [0, 5, 5, 0],
+        "alignment": "left"
+      },
       "details-body": {
         "color": "#000000",
         "bold": false,
         "fontSize": 11,
         "fontWeight": 400,
         "margin": [0, 5, 5, 0],
-
         "alignment": "center"
      },
       "appendix-header-body": {
