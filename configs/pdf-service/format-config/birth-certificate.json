@@ -130,9 +130,18 @@
               {
                 "columns": [
                   {
-                    "text": "{{childNameMl}} / {{childName}} ",
-                    "width": "39%",
-                    "style": "main-body-style"
+                    "text": "{{childNameMl}}",
+                    "width": "15%",
+                    "style": "details-body"
+                  },
+                  {
+                    "text": " /",
+                    "width": "1%"
+                  },
+                  {
+                    "text": "{{childName}} ",
+                    "width": "19%",
+                    "style": "details-body"
                   },
                   {
                     "text": "  :",
@@ -140,7 +149,7 @@
                   },
                   {
                     "text": "{{name}}",
-                    "style": "main-body-style"
+                    "style": "details-body"
                   }
                 ]
               }],
@@ -390,8 +399,10 @@
         "bold": false,
         "fontSize": 11,
         "fontWeight": 400,
-        "margin": [0, 5, 0, 0]
-      },
+        "margin": [0, 5, 5, 0],
+
+        "alignment": "center"
+     },
       "appendix-header-body": {
         "color": "#000000",
         "bold": true,
