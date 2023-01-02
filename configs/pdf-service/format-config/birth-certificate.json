@@ -2,11 +2,7 @@
   "key": "birth-certificate",
   "config": {
     "defaultStyle": {
-      "families": [
-        "Times",
-        "sans-serif",
-        "NotoSansMalayalam"
-      ]
+      "font": "Cambay"
     },
     "content": [
       {
