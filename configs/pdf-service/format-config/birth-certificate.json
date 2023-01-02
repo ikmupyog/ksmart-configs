@@ -650,7 +650,6 @@
       },
       "pdf-application-no-value": {
         "fontSize": 12,
-        "font": "Roboto",
         "italics": true,
         "margin": [
           -18,
