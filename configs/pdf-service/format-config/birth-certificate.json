@@ -3,6 +3,7 @@
   "config": {
     "defaultStyle": {
       "families": [
+        "Roboto",
         "Cambay",
         "sans-serif",
         "NotoSansMalayalam"
