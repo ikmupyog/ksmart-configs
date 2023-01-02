@@ -2,8 +2,7 @@
   "key": "birth-certificate",
   "config": {
     "defaultStyle": {
-      "font": "Roboto",
-      "font": "Meera"
+      "font": "Cambay"
     },
     "watermark": {
       "text": "link",
@@ -412,7 +411,6 @@
         "color": "#000099",
         "fontName": "Meera",
         "fontSize": 9,
-        "fontWeight": 400,
         "alignment": "center"
       },
       "main-body-style": {
