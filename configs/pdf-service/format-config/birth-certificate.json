@@ -2,7 +2,7 @@
   "key": "birth-certificate",
   "config": {
     "defaultStyle": {
-      "families": ["Roboto","NotoSansMalayalam"]
+      "families": ["Times","sans-serif","NotoSansMalayalam"]
 
     },
     "content": [
@@ -132,7 +132,7 @@
                   {
                     "text": "{{childName}} / {{childNameMl}}",
                     "width": "39%",
-                    "style": "main-body-style"
+                    "style": "main-body-style_ml"
                   },
                   {
                     "text": "  :",
@@ -262,6 +262,13 @@
         "fillColor": "#F2F2F2",
         "margin": [-70, -41, -81, 10]
       },
+      "appendix-header-body-ml": {
+        "color": "#000099",
+        "font": "NotoSansMalayalam",
+        "fontSize": 9,
+        "fontWeight": 400,
+        "alignment": "center"
+      },
       "main-body-style": {
         "color": "#000000",
         "bold": true,
@@ -269,6 +276,14 @@
         "fontWeight": 400,
         "alignment": "center"
       },
+      "main-body-style_ml": {
+        "color": "#000000",
+        "font": "NotoSansMalayalam",
+        "fontSize": 8,
+        "fontWeight": 400,
+        "alignment": "center"
+      },
+
       "appendix-header-italic": {
         "color": "#000000",
         "bold": true,
