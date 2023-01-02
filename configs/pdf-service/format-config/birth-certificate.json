@@ -2,8 +2,12 @@
   "key": "birth-certificate",
   "config": {
     "defaultStyle": {
-      "font": "Cambay",
-      "font": "NotoSansMalayalam"
+      "font": "Cambay"
+    },
+    "watermark": {
+      "image": "{{logokerala}}",
+      "width": "100%",
+      "height": "100%"
     },
     "content": [
       {
