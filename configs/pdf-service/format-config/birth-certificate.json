@@ -3,8 +3,7 @@
   "config": {
     "defaultStyle": {
       "families": [
-        "Roboto",
-        "Cambay",
+        "Times",
         "sans-serif",
         "NotoSansMalayalam"
       ]
@@ -423,7 +422,6 @@
       },
       "appendix-header-italic": {
         "color": "#000000",
-        "italics": true,
         "fontSize": 9,
         "fontWeight": 400,
         "alignment": "center"
@@ -476,7 +474,6 @@
         "color": "#FF0000",
         "fontSize": 9,
         "alignment": "center",
-        "italics": true
       },
       "body-font": {
         "color": "#000000",
@@ -651,7 +648,6 @@
       },
       "pdf-application-no-value": {
         "fontSize": 12,
-        "italics": true,
         "margin": [
           -18,
           8,
