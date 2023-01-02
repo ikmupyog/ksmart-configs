@@ -404,7 +404,7 @@
       },
       "appendix-header-body-ml": {
         "color": "#000099",
-        "font": "Meera",
+        "fontName": "Meera",
         "fontSize": 9,
         "fontWeight": 400,
         "alignment": "center"
@@ -416,7 +416,7 @@
       },
       "main-body-style_ml": {
         "color": "#000000",
-        "font": "Meera",
+        "fontName": "Meera",
         "fontSize": 8,
         "alignment": "center"
       },
