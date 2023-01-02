@@ -8,11 +8,8 @@
       "text": "IKM",
       "color": "gery",
       "opacity": 0.1,
-      "bold": true,
-      "italics": false,
-      "content": [
-           "Test page of watermark.\n\n"
-      ]
+      "image":  "{{logokerala}}",
+      "italics": false
     },
     "content": [
       {
