@@ -2,7 +2,7 @@
   "key": "birth-certificate",
   "config": {
     "defaultStyle": {
-      "families": ["Times","sans-serif","Meera"]
+      "font": "Times"
     },
     "watermark": {
       "text": "link",
@@ -479,7 +479,7 @@
         "color": "#FF0000",
         "fontSize": 9,
         "alignment": "center",
-        "italics": true;
+        "italics": true
       },
       "body-font": {
         "color": "#000000",
