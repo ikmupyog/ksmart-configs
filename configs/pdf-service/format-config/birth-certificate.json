@@ -162,11 +162,11 @@
                   },
                   {
                     "text": "/",
-                    "width": "1%"
+                    "width": "5%"
                   },
                   {
                     "text": "{{childName}} ",
-                    "width": "19%",
+                    "width": "15%",
                     "style": "details-bodyleft"
                   },
                   {
