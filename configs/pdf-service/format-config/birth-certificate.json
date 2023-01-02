@@ -2,7 +2,8 @@
   "key": "birth-certificate",
   "config": {
     "defaultStyle": {
-      "font": "NotoSansMalayalam"
+      "font": "Roboto",
+      "font": "Meera"
     },
     "watermark": {
       "text": "link",
