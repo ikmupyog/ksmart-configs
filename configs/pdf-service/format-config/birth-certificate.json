@@ -105,11 +105,11 @@
                 "stack": [
                   {
                     "text": "{{nameOfLb}} : {{tenant}}",
-                    "style": "body-font"
+                    "style": "details-body"
                   },
                   {
                     "text": "{{nameOfLbMl}} : {{tenantMl}}",
-                    "style": "body-font"
+                    "style": "details-body"
                   }
                 ]
               }
@@ -200,8 +200,7 @@
             ]
 
           ]
-        },
-        "layout": "noBorders"
+        }
       },
 
 
@@ -223,7 +222,7 @@
                   },
                   {
                     "text": "{{ensureRegistration}}",
-                    "style": "footerBold"
+                    "style": "details-body"
                   }
                 ]
               }
@@ -244,19 +243,19 @@
                 "stack": [
                   {
                     "text": "{{computerGenerated}}",
-                    "style": "footer"
+                    "style": "details-body"
                   },
                   {
                     "text": "{{validDocument}}",
-                    "style": "footer"
+                    "style": "details-body"
                   },
                   {
                     "text": "{{authenticity}}",
-                    "style": "footer"
+                    "style": "details-body"
                   },
                   {
                     "text": "{{ikm}}",
-                    "style": "footer"
+                    "style": "details-body"
                   },
                   {
                     "text": "{{printedInvalid}}",
