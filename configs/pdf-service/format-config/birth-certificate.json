@@ -2,9 +2,8 @@
   "key": "birth-certificate",
   "config": {
     "defaultStyle": {
-      "font": "Cambay"
-       
-      
+      "font": "Cambay",
+      "font": "NotoSansMalayalam"
     },
     "content": [
       {
@@ -402,9 +401,9 @@
       },
       "appendix-header-body-ml": {
         "color": "#000099",
+        "font": "NotoSansMalayalam",
         "fontSize": 9,
         "fontWeight": 400,
-        "font": "NotoSansMalayalam",
         "alignment": "center"
       },
       "main-body-style": {
