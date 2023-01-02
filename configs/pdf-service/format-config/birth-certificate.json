@@ -5,8 +5,10 @@
       "font": "Cambay"
     },
     "watermark": {
-      "opacity": 0.3,
-      "style": "pdf-watermark"
+      "text": "link",
+      "link": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
+      "color": "gery",
+      "opacity": 0.1
     },
     "content": [
       {
@@ -473,7 +475,8 @@
       "footer-red": {
         "color": "#FF0000",
         "fontSize": 9,
-        "alignment": "center"
+        "alignment": "center",
+        "italics": true;
       },
       "body-font": {
         "color": "#000000",
