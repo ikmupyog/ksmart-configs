@@ -2,7 +2,9 @@
   "key": "birth-certificate",
   "config": {
     "defaultStyle": {
-      "font": "Cambay"
+      "font": "Cambay",
+       "font": "NotoSansMalayalam",
+      
     },
     "content": [
       {
