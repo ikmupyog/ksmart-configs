@@ -152,13 +152,21 @@
                     "style": "details-body"
                   }
                 ]
-              }],
-            [
+              }], [
               {
                 "columns": [
                   {
-                    "text": "{{childNameMl}} / {{childName}}",
-                    "width": "39%",
+                    "text": "{{childNameMl}}",
+                    "width": "15%",
+                    "style": "details-body"
+                  },
+                  {
+                    "text": " /",
+                    "width": "1%"
+                  },
+                  {
+                    "text": "{{childName}} ",
+                    "width": "19%",
                     "style": "details-body"
                   },
                   {
@@ -170,8 +178,7 @@
                     "style": "details-body"
                   }
                 ]
-              }
-            ],
+              }],
             [
               {
                 "columns": [
@@ -214,13 +221,19 @@
                     "height": 100,
                     "style": "qr-code"
                   },
-
                   {
-                    "text": "{{ensureRegistration}}\\n{{ensureRegistrationMl}}",
-                    "style": "footerBold"
+                      "columns": [
+                        {
+                          "text": "{{ensureRegistration}}",
+                          "style": "footerBold"
+                        },
+                        {
+                          "text": "{ensureRegistrationMl}}",
+                          "style": "footerBold"
+                        }
+                        ]
+
                   }
-
-
                 ]
               }
             ]
