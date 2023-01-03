@@ -143,7 +143,7 @@
           "body": [
             [
               {
-                "columns": [
+                "stack": [
                   {
                     "text": "{{birthCertificate}}",
                     "style": "title-header"
@@ -168,7 +168,7 @@
           "body": [
             [
               {
-                "columns": [
+                "stack": [
                   {
                     "text": "{{issueUnderSection121969}}",
                     "style": "rule-header"
@@ -193,14 +193,18 @@
           "body": [
             [
               {
-                "columns": [
+                "stack": [
                   {
                     "text": "{{certify}}",
                     "style": "rule-body_multiLang"
                   },
                   {
                     "text": "{{certifyMl}}",
-                    "style": "rule-body_multiLang"
+                    "style": "rule-body_multiLang",
+                  }
+                  {
+                    "text": "{{issueUnderSection12}}",
+                    "style": "rule-body_multiLang",
                   }
                 ]
               }
