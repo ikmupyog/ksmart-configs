@@ -195,6 +195,58 @@
                   }
                 },    
 
+		{
+			"variable": "form6",
+			"value": {
+			  "path": "PDF_DEATH_FORM_NO_6"
+			},
+			"type": "label",
+			"localisation":{
+			  "required":true,
+			  "prefix": null,
+			  "module":"rainmaker-pdf",
+			  "locale":"en_IN"
+			}
+		},
+	      {
+			"variable": "rule8",
+			"value": {
+			  "path": "PDF_BIRTH_LAST_RULE_8"
+			},
+			"type": "label",
+			"localisation":{
+			  "required":true,
+			  "prefix": null,
+			  "module":"rainmaker-pdf",
+			  "locale":"en_IN"
+			 }
+		},
+	  	 {
+			"variable": "deptUrbanAffairs",
+			"value": {
+			  "path": "PDF_BIRTH_DEPARTMENT_OF_URBAN_AFFAIRS"
+			},
+			"type": "label",
+			"localisation":{
+			  "required":true,
+			  "prefix": null,
+			  "module":"rainmaker-pdf",
+			  "locale":"en_IN"
+			}
+		  },
+		  {
+			"variable": "deptUrbanAffairsMl",
+			"value": {
+			  "path": "PDF_BIRTH_DEPARTMENT_OF_URBAN_AFFAIRS"
+			},
+			"type": "label",
+			"localisation":{
+			  "required":true,
+			  "prefix": null,
+			  "module":"rainmaker-pdf",
+			  "locale":"ml_IN"
+			}
+		},    
                 {
                   "variable": "parentsCity", 
                   "value": {
