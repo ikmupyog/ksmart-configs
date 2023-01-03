@@ -55,6 +55,36 @@
                   ]
                 },
 		{
+			"stack": [
+			  {
+				"text": "{{form6}}",
+				"style": "appendix-header-italic"
+			  },
+			  {
+				"text": "{{rule8}}",
+				"style": "main-body-style"
+			  },							  
+			  {
+				"text": "{{governmentMl}}",
+				"style": "appendix-header-body-ml"
+			  },
+			  {
+				"text": "{{governmentEn}}",
+				"style": "appendix-header-body"
+			  },
+			  {
+				"text": "{{deptUrbanAffairsMl}}",
+				"style": "appendix-header-body",
+				"margin": [0, 0, 0, 0]
+			  },
+			  {
+				"text": "{{deptUrbanAffairs}}",
+				"style": "appendix-header-body",
+				"margin": [0, 0, 0, 0]
+			  }
+			]
+		 },
+		{
 		"stack": [
 		   {
 			"image": "{{logodeath}}",
