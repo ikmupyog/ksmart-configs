@@ -20,6 +20,15 @@
                     } 
                   ]
                 },
+		{
+		 "stack": [
+		    {
+			"image": "{{logokerala}}",
+			"width": 70,
+			"height": 70
+		    }
+		  ]
+		},
                 {
                   "stack": [
 					{
@@ -45,10 +54,19 @@
                     } 
                   ]
                 },
+		{
+		"stack": [
+		   {
+			"image": "{{logodeath}}",
+			"width": 70,
+			"height": 70
+		   }
+		 ]
+		},
                 {
                   "stack": [ 
                     {
-                      "text": "Form-5",
+                      "text": "Form-6",
                       "style": "appendix-header-formNo"
                     } 
                   ]
