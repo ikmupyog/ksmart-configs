@@ -297,7 +297,7 @@
                 }
               },
               {
-                "variable": "placeOfBirth",
+                "variable": "placeOfBirthLabel",
                 "value": {
                   "path": "PDF_BIRTH_PLACE_OF_BIRTH"
                 },
@@ -307,6 +307,19 @@
                   "prefix": null,
                   "module":"rainmaker-pdf",
                   "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "placeOfBirthLabelMl",
+                "value": {
+                  "path": "PDF_BIRTH_PLACE_OF_BIRTH"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-pdf",
+                  "locale":"ml_IN"
                 }
               },
               {
@@ -323,6 +336,19 @@
                 }
               },
               {
+                "variable": "nameOfMotherMl",
+                "value": {
+                  "path": "PDF_BIRTH_NAME_OF_MOTHER"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-pdf",
+                  "locale":"ml_IN"
+                }
+              },
+              {
                 "variable": "nameOfFather",
                 "value": {
                   "path": "PDF_BIRTH_NAME_OF_FATHER"
@@ -333,6 +359,19 @@
                   "prefix": null,
                   "module":"rainmaker-pdf",
                   "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "nameOfFatherMl",
+                "value": {
+                  "path": "PDF_BIRTH_NAME_OF_FATHER"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-pdf",
+                  "locale":"ml_IN"
                 }
               },
               {
@@ -349,6 +388,19 @@
                 }
               },
               {
+                "variable": "presentAddressMl",
+                "value": {
+                  "path": "PDF_BIRTH_PRESENT_ADDRESS"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-pdf",
+                  "locale":"ml_IN"
+                }
+              },
+              {
                 "variable": "permanentAddress",
                 "value": {
                   "path": "PDF_BIRTH_PERMANENT_ADDRESS"
@@ -359,6 +411,19 @@
                   "prefix": null,
                   "module":"rainmaker-pdf",
                   "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "permanentAddressMl",
+                "value": {
+                  "path": "PDF_BIRTH_PERMANENT_ADDRESS"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-pdf",
+                  "locale":"ml_IN"
                 }
               },
               {
@@ -427,7 +492,33 @@
                 }
               },
               {
+                "variable": "remarksMl",
+                "value": {
+                  "path": "PDF_BIRTH_REMARKS"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-pdf",
+                  "locale":"ml_IN"
+                }
+              },
+              {
                 "variable": "dateOfIssue",
+                "value": {
+                  "path": "PDF_BIRTH_DATE_OF_ISSUE"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-pdf",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "dateOfIssueMl",
                 "value": {
                   "path": "PDF_BIRTH_DATE_OF_ISSUE"
                 },
@@ -450,6 +541,19 @@
                   "prefix": null,
                   "module":"rainmaker-pdf",
                   "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "addressOfIssuingAuthorityMl",
+                "value": {
+                  "path": "PDF_BIRTH_ADDRESS_OF_THE_ISSUING_AUTHORITY"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-pdf",
+                  "locale":"Ml_IN"
                 }
               },
               {
