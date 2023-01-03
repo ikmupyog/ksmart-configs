@@ -30,6 +30,13 @@
                 "type":"setEmpty"
               },
               {
+                "variable": "nameMl",
+                "value": {
+                  "path": "$.fullNameMl"
+                },
+                "type":"setEmpty"
+              },
+              {
                 "variable": "embeddedUrl",
                 "value": {
                   "path": "$.embeddedUrl"
@@ -52,21 +59,21 @@
               {
                 "variable": "registrationNo",
                 "value": {
-                  "path": "$.registrationNo"
+                  "path": "$.registrationno"
                 },
                 "type":"setEmpty"
               },
               {
                 "variable": "tenantId",
                 "value": {
-                  "path": "$.tenantId"
+                  "path": "$.tenantid"
                 },
                 "type":"setEmpty"
               },
               {
                 "variable": "registration_date",
                 "value": {
-                  "path": "$.dateOfReport"
+                  "path": "$.registrationDate"
                 },
                 "type": "date"
               },
@@ -85,6 +92,13 @@
                 "type":"setEmpty"
               },
               {
+                "variable": "fatherNameMl",
+                "value": {
+                  "path": "$.birthFatherInfo.fullNameMl"
+                },
+                "type":"setEmpty"
+              },
+              {
                 "variable": "motherName",
                 "value": {
                   "path": "$.birthMotherInfo.fullName"
@@ -92,9 +106,23 @@
                 "type":"setEmpty"
               },
               {
-                "variable": "childAddress",
+                "variable": "motherNameMl",
+                "value": {
+                  "path": "$.birthMotherInfo.fullNameMl"
+                },
+                "type":"setEmpty"
+              },
+              {
+                "variable": "presentAddress",
                 "value": {
                   "path": "$.birthPresentaddr.fullAddress"
+                },
+                "type":"setEmpty"
+              },
+              {
+                "variable": "presentAddressMl",
+                "value": {
+                  "path": "$.birthPresentaddr.fullAddressMl"
                 },
                 "type":"setEmpty"
               },
@@ -102,6 +130,13 @@
                 "variable": "parentsAddress",
                 "value": {
                   "path": "$.birthPermaddr.fullAddress"
+                },
+                "type":"setEmpty"
+              },
+              {
+                "variable": "parentsAddressMl",
+                "value": {
+                  "path": "$.birthPermaddr.fullAddressMl"
                 },
                 "type":"setEmpty"
               },
@@ -172,7 +207,7 @@
               {
                 "variable": "placeOfBirth",
                 "value": {
-                  "path": "$.placeofbirth"
+                  "path": "$.hospitalid"
                 },
                 "type":"setEmpty"
               },
@@ -194,7 +229,7 @@
               {
                 "variable": "tenant",
                 "value": {
-                  "path": "$.tenantId"
+                  "path": "$.tenantid"
                 },
                 "type": "setEmpty",
                 "localisation":{
@@ -207,7 +242,7 @@
               {
                 "variable": "tenantMl",
                 "value": {
-                  "path": "$.tenantId"
+                  "path": "$.tenantid"
                 },
                 "type": "setEmpty",
                 "localisation":{
@@ -234,14 +269,14 @@
               {
                 "variable": "childNameMl",
                 "value": {
-                  "path": "CS_COMMON_APPROVE"
+                  "path": "PDF_BIRTH_CHILD_NAME"
                 },
                 "type": "label",
                 "localisation":{
                   "required":true,
                   "prefix": null,
-                  "module":"rainmaker-common",
-                  "locale":"hi_IN"
+                  "module":"rainmaker-pdf",
+                  "locale":"ml_IN"
                 }
               },
               {
