@@ -12,12 +12,18 @@
           "mappings": [
             {
               "direct": [
-                {
-                  "variable": "logoImage",                        
-                  "url":"https://raw.githubusercontent.com/egovernments/egov-web-app/master/web/rainmaker/dev-packages/egov-ui-kit-dev/src/assets/images/pblogo.png",
+                
+		{
+                  "variable": "logokerala",                        
+                  "url":"https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
                   "type":"image"      
-                },				
-				{
+                },	
+		{
+			"variable": "logodeath",
+			"url": "https://ulb-logos.s3.ap-south-1.amazonaws.com/birth_death_logo.jpg",
+			"type":"image"
+		},		
+		{
                   "variable": "localBodyName", 
                   "value": {
                     "path": "$.localBodyName"
