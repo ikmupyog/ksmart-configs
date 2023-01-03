@@ -308,7 +308,7 @@
               {
                 "columns": [
                   {
-                    "text": "{{placeOfBirthMl}}",
+                    "text": "{{placeOfBirthLabelMl}}",
                     "width": "15%",
                     "style": "details-body"
                   },
@@ -317,7 +317,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{placeOfBirth}} ",
+                    "text": "{{placeOfBirthLabel}} ",
                     "width": "19%",
                     "style": "details-body"
                   },
@@ -336,7 +336,7 @@
               {
                 "columns": [
                   {
-                    "text": "{{nameOfMother}}",
+                    "text": "{{nameOfMotherMl}}",
                     "width": "15%",
                     "style": "details-body"
                   },
@@ -345,7 +345,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{nameOfMotherMl}} ",
+                    "text": "{{nameOfMother}} ",
                     "width": "19%",
                     "style": "details-body"
                   },
@@ -392,7 +392,63 @@
               {
                 "columns": [
                   {
-                    "text": "{{registrationNoLabel}} / {{registrationNoLabelMl}}: {{registrationNo}}",
+                    "text": "{{presentAddressMl}}",
+                    "width": "15%",
+                    "style": "details-body"
+                  },
+                  {
+                    "text": " /",
+                    "width": "1%"
+                  },
+                  {
+                    "text": "{{presentAddress}} ",
+                    "width": "19%",
+                    "style": "details-body"
+                  },
+                  {
+                    "text": "  :",
+                    "width": "1%"
+                  },
+                  {
+                    "text": "{{name}}",
+                    "style": "details-body"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "columns": [
+                  {
+                    "text": "{{permanentAddressMl}}",
+                    "width": "15%",
+                    "style": "details-body"
+                  },
+                  {
+                    "text": " /",
+                    "width": "1%"
+                  },
+                  {
+                    "text": "{{permanentAddress}} ",
+                    "width": "19%",
+                    "style": "details-body"
+                  },
+                  {
+                    "text": "  :",
+                    "width": "1%"
+                  },
+                  {
+                    "text": "{{name}}",
+                    "style": "details-body"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "columns": [
+                  {
+                    "text": "{{registrationNoLabelMl}} / {{registrationNoLabel}}: {{registrationNo}}",
                     "width": "49%",
                     "style": "details-body"
                   },
@@ -401,7 +457,82 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{registrationDateLabel}} / {{registrationDateLabelMl}} {{registration_date}}",
+                    "text": "{{registrationDateLabelMl}} / {{registrationDateLabel}} {{registration_date}}",
+                    "style": "details-body"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "columns": [
+                  {
+                    "text": "{{remarksMl}}",
+                    "width": "15%",
+                    "style": "details-body"
+                  },
+                  {
+                    "text": " /",
+                    "width": "1%"
+                  },
+                  {
+                    "text": "{{remarks}} ",
+                    "width": "19%",
+                    "style": "details-body"
+                  },
+                  {
+                    "text": "  :",
+                    "width": "1%"
+                  },
+                  {
+                    "text": "{{name}}",
+                    "style": "details-body"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "columns": [
+                  {
+                    "text": "{{dateOfIssueMl}} / {{dateOfIssue}}: {{registrationNo}}",
+                    "width": "49%",
+                    "style": "details-body"
+                  },
+                  {
+                    "text": " ",
+                    "width": "1%"
+                  },
+                  {
+                    "text": "{{updatedOn}} :{{registration_date}}",
+                    "style": "details-body"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "columns": [
+                  {
+                    "text": "{{addressOfIssuingAuthorityMl}}",
+                    "width": "15%",
+                    "style": "details-body"
+                  },
+                  {
+                    "text": " /",
+                    "width": "1%"
+                  },
+                  {
+                    "text": "{{addressOfIssuingAuthority}} ",
+                    "width": "19%",
+                    "style": "details-body"
+                  },
+                  {
+                    "text": "  :",
+                    "width": "1%"
+                  },
+                  {
+                    "text": "{{name}}",
                     "style": "details-body"
                   }
                 ]
