@@ -200,11 +200,11 @@
                   },
                   {
                     "text": "{{certifyMl}}",
-                    "style": "rule-body_multiLang",
-                  }
+                    "style": "rule-body_multiLang"
+                  },
                   {
                     "text": "{{issueUnderSection12}}",
-                    "style": "rule-body_multiLang",
+                    "style": "rule-body_multiLang"
                   }
                 ]
               }
