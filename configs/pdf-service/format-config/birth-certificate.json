@@ -681,11 +681,12 @@
       },
       "footer": {
         "color": "#000000",
-        "alignment": "center"
+        "alignment": "center",
+        "fontSize": 7
       },
       "footer-red": {
         "color": "#FF0000",
-        "fontSize": 9,
+        "fontSize": 7,
         "alignment": "center",
         "italics": true
       },
