@@ -151,6 +151,10 @@
                   {
                     "text": "{{birthCertificateMl}}",
                     "style": "title-header"
+                  },
+                  {
+                    "text": "{{issueUnderSection12}}",
+                    "style": "rule-body_multiLang"
                   }
                 ]
               }
@@ -196,15 +200,11 @@
                 "stack": [
                   {
                     "text": "{{certify}}",
-                    "style": "rule-body_multiLang"
+                    "style": "rule-header"
                   },
                   {
                     "text": "{{certifyMl}}",
-                    "style": "rule-body_multiLang"
-                  },
-                  {
-                    "text": "{{issueUnderSection12}}",
-                    "style": "rule-body_multiLang"
+                    "style": "rule-header"
                   }
                 ]
               }
@@ -620,7 +620,7 @@
       "rule-header": {
         "color": "#000000",
         "bold": false,
-        "fontSize": 10,
+        "fontSize": 8,
         "fontWeight": 400,
         "margin": [
           0,
@@ -656,7 +656,7 @@
       "rule-body_multiLang": {
         "color": "#000000",
         "bold": false,
-        "fontSize": 11,
+        "fontSize": 8,
         "fontWeight": 400,
         "margin": [
           0,
