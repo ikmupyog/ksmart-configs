@@ -64,16 +64,9 @@
                 "type":"setEmpty"
               },
               {
-                "variable": "tenantId",
+                "variable": "registrationDate",
                 "value": {
-                  "path": "$.tenantid"
-                },
-                "type":"setEmpty"
-              },
-              {
-                "variable": "registration_date",
-                "value": {
-                  "path": "$.registrationDate"
+                  "path": "$.registration_date"
                 },
                 "type": "date"
               },
@@ -176,13 +169,7 @@
                 "type": "date",
                 "format": "YYYY"
               },
-              {
-                "variable": "fatherUid",
-                "value": {
-                  "path": "$.birthFatherInfo.aadharNo"
-                },
-                "type":"setEmpty"
-              },
+
               {
                 "variable": "parentsState",
                 "value": {
@@ -190,13 +177,7 @@
                 },
                 "type":"setEmpty"
               },
-              {
-                "variable": "motherUid",
-                "value": {
-                  "path": "$.birthMotherInfo.aadharNo"
-                },
-                "type":"setEmpty"
-              },
+
               {
                 "variable": "remarks",
                 "value": {
@@ -215,6 +196,21 @@
                 "variable": "issueDate",
                 "value": {
                   "path": "$.dateofissue"
+                },
+                "type": "date"
+              },
+
+              {
+                "variable": "esignOfficer",
+                "value": {
+                  "path": "$.esign_user_code"
+                },
+                "type": "date"
+              },
+              {
+                "variable": "esignOfficerDesign",
+                "value": {
+                  "path": "$.esign_user_desig_code"
                 },
                 "type": "date"
               },
@@ -285,8 +281,7 @@
                   "path": "PDF_BIRTH_CHILD_SEX"
                 },
                 "type": "label",
-                "messages":{
-                 
+                "localisation":{
                   "required":true,
                   "prefix": null,
                   "module":"rainmaker-pdf",
@@ -300,7 +295,6 @@
                 },
                 "type": "label",
                 "localisation":{
-                  "code":"PDF_BIRTH_CHILD_SEX"
                   "required":true,
                   "prefix": null,
                   "module":"rainmaker-pdf",
@@ -412,7 +406,7 @@
                 }
               },
               {
-                "variable": "presentAddress",
+                "variable": "presentAddressLabel",
                 "value": {
                   "path": "PDF_BIRTH_PRESENT_ADDRESS"
                 },
@@ -425,7 +419,7 @@
                 }
               },
               {
-                "variable": "presentAddressMl",
+                "variable": "presentAddressLabelMl",
                 "value": {
                   "path": "PDF_BIRTH_PRESENT_ADDRESS"
                 },
@@ -438,7 +432,7 @@
                 }
               },
               {
-                "variable": "permanentAddress",
+                "variable": "permanentAddressLabel",
                 "value": {
                   "path": "PDF_BIRTH_PERMANENT_ADDRESS"
                 },
@@ -451,7 +445,7 @@
                 }
               },
               {
-                "variable": "permanentAddressMl",
+                "variable": "permanentAddressLabelMl",
                 "value": {
                   "path": "PDF_BIRTH_PERMANENT_ADDRESS"
                 },
@@ -516,7 +510,7 @@
                 }
               },
               {
-                "variable": "remarks",
+                "variable": "remarksLabel",
                 "value": {
                   "path": "PDF_BIRTH_REMARKS"
                 },
@@ -529,7 +523,7 @@
                 }
               },
               {
-                "variable": "remarksMl",
+                "variable": "remarksLabelMl",
                 "value": {
                   "path": "PDF_BIRTH_REMARKS"
                 },
