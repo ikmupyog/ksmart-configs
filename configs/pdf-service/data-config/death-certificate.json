@@ -70,8 +70,9 @@
 			"path": "PDF_BIRTH_GOVERNMENT_OF_KERALA"
 		  },
 		  "type": "label",
-		  "localisation":{
+		  "messages":{
 			"required":true,
+			 "code": "PDF_BIRTH_GOVERNMENT_OF_KERALA",
 			"prefix": null,
 			"module":"rainmaker-pdf",
 			"locale":"ml_IN"
