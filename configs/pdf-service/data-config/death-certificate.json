@@ -57,11 +57,10 @@
 			"path": "PDF_BIRTH_GOVERNMENT_OF_KERALA"
 		  },
 		  "type": "label",
-		  "messageSearchCriteria":{
+		  "localisation":{
 			"required":true,
 			"prefix": null,
-			"module":"rainmaker-pdf",
-			 "codes": ["PDF_BIRTH_GOVERNMENT_OF_KERALA"]
+			"module":"rainmaker-pdf",			 
 			"locale":"en_IN"
 		  }
 		},
