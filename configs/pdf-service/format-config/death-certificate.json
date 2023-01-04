@@ -178,13 +178,17 @@
                 {
                   "columns": [
                     {
-                      "text": "പേര്/Name: {{name}}",
+                      "text": "പേര്/Name",
                       "width": "49%",
                       "style": "details-body"
                     },
                     {
-                      "text": " ",
+                      "text": ": ",
                       "width": "1%"
+                    },
+                    {
+                      "text": "{{name}}",
+                      "style": "details-body"
                     }
                   ]
                 }
@@ -194,13 +198,17 @@
                   "columns": [
                 
                     {
-                      "text": "ആൺ/പെൺ/Sex: {{gender}}",
+                      "text": "ആൺ/പെൺ/Sex",
                       "width": "49%",
                       "style": "details-body"
                     },
                     {
-                        "text": " ",
+                        "text": ": ",
                         "width": "1%"
+                    },
+                    {
+                      "text": "{{gender}}",
+                      "style": "details-body"
                     }
                   ]
                 }
@@ -209,13 +217,17 @@
                 {
                   "columns": [
                     {
-                      "text": "മരണ തീയതി/Date of Death: {{dod}}",
+                      "text": "മരണ തീയതി/Date of Death",
                       "width": "49%",
                       "style": "details-body"
                     },
                     {
-                      "text": " ",
+                      "text": ": ",
                       "width": "1%"
+                    },
+                    {
+                      "text": "{{dod}}",
+                      "style": "details-body"
                     }
                    
                   ]
@@ -226,13 +238,17 @@
                   "columns": [
                 
                     {
-                        "text": "മരണ സ്ഥലം/Place of Death: {{placeOfDeath}}",
+                        "text": "മരണ സ്ഥലം/Place of Death",
                         "width": "49%",
                         "style": "details-body"
                     },
                     {
-                        "text": " ",
+                        "text": ": ",
                         "width": "1%"
+                    },
+                    {
+                      "text": "{{placeOfDeath}}",
+                      "style": "details-body"
                     }
                   ]
                 }
@@ -241,13 +257,17 @@
                 {
                   "columns": [
                     {
-                      "text": "അമ്മയുടെ പേര്/Name of Mother: {{motherName}}",
+                      "text": "അമ്മയുടെ പേര്/Name of Mother",
                       "width": "49%",
                       "style": "details-body"
                     },
                     {
-                      "text": " ",
+                      "text": ": ",
                       "width": "1%"
+                    },
+                    {
+                      "text": "{{motherName}}",
+                      "style": "details-body"
                     }
                   ]
                 }
@@ -257,13 +277,17 @@
                   "columns": [              
                     
                     {
-                      "text": "പിതാവിന്റെ പേര്/ഭർത്താവിന്റെ പേര്/Name of Father/Husband: {{fatherorHusbandName}}",
+                      "text": "പിതാവിന്റെ പേര്/ഭർത്താവിന്റെ പേര്/Name of Father/Husband",
                       "width": "49%",
                       "style": "details-body"
                     },
                     {
-                        "text": " ",
+                        "text": ": ",
                         "width": "1%"
+                    },
+                    {
+                      "text": "{{fatherorHusbandName}}",
+                      "style": "details-body"
                     }
                   ]
                 }
@@ -273,13 +297,17 @@
                   "columns": [              
                     
                     {
-                      "text": "മരിച്ച വ്യക്തിയുടെ മരണ സമയത്തെ മേൽവിലാസം: {{deceasedPresentAddressml}}",
+                      "text": "മരിച്ച വ്യക്തിയുടെ മരണ സമയത്തെ മേൽവിലാസം",
                       "width": "49%",
                       "style": "details-body"
                     },
                     {
-                        "text": " ",
+                        "text": ": ",
                         "width": "1%"
+                    },
+                    {
+                      "text": "{{deceasedPresentAddressml}}",
+                      "style": "details-body"
                     }
                   ]
                 }
@@ -288,13 +316,17 @@
                 {
                   "columns": [
                     {
-                      "text": "Address Of the deceased at the time of death: {{deceasedPresentAddressen}}",
+                      "text": "Address Of the deceased at the time of death",
                       "width": "49%",
                       "style": "details-body"
                     },
                     {
-                      "text": " ",
+                      "text": ": ",
                       "width": "1%"
+                    },
+                    {
+                      "text": "{{deceasedPresentAddressen}}",
+                      "style": "details-body"
                     }
                   ]
                 }
@@ -304,8 +336,16 @@
                   "columns": [              
                     
                     {
-                      "text": "മരിച്ച വ്യക്തിയുടെ സ്ഥിരമായ  മേൽവിലാസം : {{deceasedPermanentAddressml}}",
-                      "width": "80%",
+                      "text": "മരിച്ച വ്യക്തിയുടെ സ്ഥിരമായ  മേൽവിലാസം ",
+                      "width": "49%",
+                      "style": "details-body"
+                    },
+                    {
+                      "text": ": ",
+                      "width": "1%"
+                    },
+                    {
+                      "text": "{{deceasedPermanentAddressml}}",
                       "style": "details-body"
                     }
                   ]
