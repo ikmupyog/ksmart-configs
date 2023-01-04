@@ -35,8 +35,8 @@
 			  
 		   
 		    {
-                      "text": "{{governmentMl}}",
-                      "style": "appendix-header-body"
+                      "text": "{{governmentMl}}"
+                      
                     },
                     {
                       "text": "{{governmentEn}}",
