@@ -2,7 +2,7 @@
   "key": "birth-certificate",
   "config": {
     "defaultStyle": {
-      "font": "NotoSansMalayalam"
+      "font": "Cambay"
     },
     "watermark": {
       "text": "IKM DEMO",
