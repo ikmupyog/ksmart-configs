@@ -33,14 +33,7 @@
 			"style": "details-body"
 		  },
 			  
-		    {
-                      "text": "കേരള സർക്കാർ",
-                      "style": "appendix-header-body"
-                    },
-                    {
-                      "text": "GOVERNMENT OF KERALA",
-                      "style": "appendix-header-body"
-                    },
+		   
 		    {
                       "text": "{{governmentMl}}",
                       "style": "appendix-header-body"
@@ -49,11 +42,7 @@
                       "text": "{{governmentEn}}",
                       "style": "appendix-header-body"
                     },
-                    {
-                      "text": "DEPARTMENT OF HEALTH AND FAMILY WELFARE",
-                      "style": "appendix-header-body",
-                      "margin": [0, 0, 0, 0]
-                    },
+                    
 		   {
 			"text": "{{deptUrbanAffairsMl}}",
 			"style": "appendix-header-body",
@@ -98,7 +87,7 @@
             "body": [
               [
                 {
-                  "text": "Name of Local Body issuing Certificate : {{tenant}}",
+                  "text": "Name of Local Body issuing Certificate : {{localBodyName}}",
                   "style": "title-header"
                 }
               ]
