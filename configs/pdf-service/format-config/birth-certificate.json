@@ -2,7 +2,8 @@
   "key": "birth-certificate",
   "config": {
     "defaultStyle": {
-      "font": "Meera"
+      "font": "Meera",
+       "font": "Cambay"
     },
     "watermark": {
       "text": "IKM DEMO",
@@ -26,7 +27,7 @@
               {
                 "stack": [
                   {
-                    "text": "{{childNameMl}}/{childName}}"
+                    "text": "{{childNameMl}}/{{childName}}"
                   }
                 ]
               }
