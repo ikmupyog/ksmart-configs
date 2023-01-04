@@ -285,7 +285,8 @@
                   "path": "PDF_BIRTH_CHILD_SEX"
                 },
                 "type": "label",
-                "localisation":{
+                "messages":{
+                 
                   "required":true,
                   "prefix": null,
                   "module":"rainmaker-pdf",
@@ -299,6 +300,7 @@
                 },
                 "type": "label",
                 "localisation":{
+                  "code":"PDF_BIRTH_CHILD_SEX"
                   "required":true,
                   "prefix": null,
                   "module":"rainmaker-pdf",
