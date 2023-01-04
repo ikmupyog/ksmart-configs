@@ -12,18 +12,12 @@
           "mappings": [
             {
               "direct": [
-                
-		{
-                  "variable": "logokerala",                        
-                  "url":"https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
+                {
+                  "variable": "logoImage",                        
+                  "url":"https://raw.githubusercontent.com/egovernments/egov-web-app/master/web/rainmaker/dev-packages/egov-ui-kit-dev/src/assets/images/pblogo.png",
                   "type":"image"      
-                },	
-		{
-			"variable": "logodeath",
-			"url": "https://ulb-logos.s3.ap-south-1.amazonaws.com/birth_death_logo.jpg",
-			"type":"image"
-		},		
-		{
+                },				
+				{
                   "variable": "localBodyName", 
                   "value": {
                     "path": "$.localBodyName"
@@ -195,58 +189,6 @@
                   }
                 },    
 
-		{
-			"variable": "form6",
-			"value": {
-			  "path": "PDF_DEATH_FORM_NO_6"
-			},
-			"type": "label",
-			"localisation":{
-			  "required":true,
-			  "prefix": null,
-			  "module":"rainmaker-pdf",
-			  "locale":"en_IN"
-			}
-		},
-	      {
-			"variable": "rule8",
-			"value": {
-			  "path": "PDF_BIRTH_LAST_RULE_8"
-			},
-			"type": "label",
-			"localisation":{
-			  "required":true,
-			  "prefix": null,
-			  "module":"rainmaker-pdf",
-			  "locale":"en_IN"
-			 }
-		},
-	  	 {
-			"variable": "deptUrbanAffairs",
-			"value": {
-			  "path": "PDF_BIRTH_DEPARTMENT_OF_URBAN_AFFAIRS"
-			},
-			"type": "label",
-			"localisation":{
-			  "required":true,
-			  "prefix": null,
-			  "module":"rainmaker-pdf",
-			  "locale":"en_IN"
-			}
-		  },
-		  {
-			"variable": "deptUrbanAffairsMl",
-			"value": {
-			  "path": "PDF_BIRTH_DEPARTMENT_OF_URBAN_AFFAIRS"
-			},
-			"type": "label",
-			"localisation":{
-			  "required":true,
-			  "prefix": null,
-			  "module":"rainmaker-pdf",
-			  "locale":"ml_IN"
-			}
-		},    
                 {
                   "variable": "parentsCity", 
                   "value": {
