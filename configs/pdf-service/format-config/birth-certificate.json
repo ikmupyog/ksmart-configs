@@ -242,7 +242,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{name}}",
+                    "text": "{{name}} / {{nameMl}}",
                     "style": "details-body"
                   }
                 ]
@@ -354,7 +354,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{motherName}}",
+                    "text": "{{motherName}}/{{motherNameMl}}",
                     "style": "details-body"
                   }
                 ]
@@ -382,7 +382,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{fatherName}}",
+                    "text": "{{fatherName}}/{{fatherNameMl}}",
                     "style": "details-body"
                   }
                 ]
@@ -392,7 +392,7 @@
               {
                 "columns": [
                   {
-                    "text": "{{presentAddressMl}}",
+                    "text": "{{presentAddressLabelMl}}",
                     "width": "15%",
                     "style": "details-body"
                   },
@@ -401,7 +401,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{presentAddress}} ",
+                    "text": "{{presentAddressLabel}} ",
                     "width": "19%",
                     "style": "details-body"
                   },
@@ -410,7 +410,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{name}}",
+                    "text": "{{presentAddressMl}}/{{presentAddress}}",
                     "style": "details-body"
                   }
                 ]
@@ -420,7 +420,7 @@
               {
                 "columns": [
                   {
-                    "text": "{{permanentAddressMl}}",
+                    "text": "{{permanentAddressLabelMl}}",
                     "width": "15%",
                     "style": "details-body"
                   },
@@ -429,7 +429,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{permanentAddress}} ",
+                    "text": "{{permanentAddressLabel}} ",
                     "width": "19%",
                     "style": "details-body"
                   },
@@ -438,7 +438,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{name}}",
+                    "text": "{{presentAddressMl}}/{{parentsAddress}}",
                     "style": "details-body"
                   }
                 ]
@@ -457,7 +457,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{registrationDateLabelMl}} / {{registrationDateLabel}} {{registration_date}}",
+                    "text": "{{registrationDateLabelMl}} / {{registrationDateLabel}} {{registrationNo}}",
                     "style": "details-body"
                   }
                 ]
@@ -467,7 +467,7 @@
               {
                 "columns": [
                   {
-                    "text": "{{remarksMl}}",
+                    "text": "{{remarksLabelMl}}",
                     "width": "15%",
                     "style": "details-body"
                   },
@@ -476,7 +476,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{remarks}} ",
+                    "text": "{{remarksLabel}} ",
                     "width": "19%",
                     "style": "details-body"
                   },
