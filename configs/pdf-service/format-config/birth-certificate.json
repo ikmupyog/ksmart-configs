@@ -26,7 +26,7 @@
               {
                 "stack": [
                   {
-                    "text": "{{childNameMl}}/{{childSexMl}}"
+                    "text": "{{childNameMl}}/{{childName}}"
                   }
                 ]
               }
