@@ -100,15 +100,7 @@
                     "height": 70
                   }
                 ]
-              } ,
-		{
-                  "stack": [ 
-                    {
-                      "text": "Form-6",
-                      "style": "appendix-header-formNo"
-                    } 
-                  ]
-                }
+              } 
               
               ]
             ]
