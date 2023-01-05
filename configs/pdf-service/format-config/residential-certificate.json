@@ -8,39 +8,7 @@
       },
       "content": [
         
-        {
-          "style": "ws-head",
-          "table": {
-            "widths": ["20%", "60%", "20%"],
-            "body": [
-              [
-                {
-                  "stack": [ 
-                    {
-                      "text": "No .1",
-                      "style": "appendix-header-serialNo"
-                    } 
-                  ]
-                },
-                {
-                  "stack": [
-					{
-                      "text": "കേരള സർക്കാർ",
-                      "style": "appendix-header-body"
-                    },
-                    {
-                      "text": "GOVERNMENT OF KERALA",
-                      "style": "appendix-header-body"
-                    }
-                    
-                  ]
-                }
-                
-              ]
-            ]
-          },
-          "layout": "noBorders"
-        },
+        
         {
           "style": "ws-head",
           "table": {
@@ -48,7 +16,7 @@
             "body": [
               [
                 {
-                  "text": "Name of Local Body issuing Certificate : {{tenantName}}",
+                  "text": "  {{tenantName}} \n {{lbAddressWithPinCode}}",
                   "style": "title-header"
                 }
               ]
