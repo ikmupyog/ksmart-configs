@@ -4,7 +4,14 @@
       "defaultStyle": {
         "font": "Meera"
       },
-      
+      "watermark": {
+      "text": "IKM DEMO",
+      "color": "gery",
+      "opacity": 0.1,
+        "image": [
+        "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg"
+      ]
+        },
       "content": [
         
 	{
@@ -777,11 +784,7 @@
           "fillColor": "#F2F2F2",
           "margin": [-70, -41, -81, 0]
         }
-       "pdf-watermark": {
-         "image": "{{logokerala}}",
-             "width": 70,
-             "height": 70
-      }
+       
       }
     }
   }
