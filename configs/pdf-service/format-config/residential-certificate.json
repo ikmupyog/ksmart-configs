@@ -1,8 +1,10 @@
- {
+
+
+{
     "key": "residential-certificate",
     "config": {
       "defaultStyle": {
-        "font": "Meera"
+        "font": "Cambay"
       },
       "content": [
         
@@ -20,33 +22,55 @@
                     } 
                   ]
                 },
-		
                 {
                   "stack": [
-		  
-		   {
-			"text": "{{tenantName}}",
-			"style": "appendix-header-body"
-		   },
-			  
-		  {
-			"text": "{{lbAddressWithPinCode}}",
-			"style": "appendix-header-body"
-		   }
-			  
-		  
+					{
+                      "text": "കേരള സർക്കാർ",
+                      "style": "appendix-header-body"
+                    },
+                    {
+                      "text": "GOVERNMENT OF KERALA",
+                      "style": "appendix-header-body"
+                    }
                     
-		   
-		 
                   ]
                 }
-		  
-	        
                 
               ]
             ]
           },
           "layout": "noBorders"
+        },
+        {
+          "style": "ws-head",
+          "table": {
+            "widths": ["*"],
+            "body": [
+              [
+                {
+                  "text": "Name of Local Body issuing Certificate : {{tenantName}}",
+                  "style": "title-header"
+                }
+              ]
+            ]
+          },
+          "layout": "noBorders" 
+        },
+        {
+          "style": "ws-head",
+          "table": {
+            "widths": ["*"],
+            "body": [
+              [
+                {
+                  "text": "Residential CERTIFICATE",
+                  "style": "title-header",
+                  "decoration": "underline"
+                }
+              ]
+            ]
+          },
+          "layout": "noBorders" 
         },
         
         {
@@ -56,29 +80,10 @@
             "body": [
               [
                 {
-                  "text": "റസിഡൻഷ്യൽ സർട്ടിഫിക്കറ്റ്",
-                  "style": "title-header",
-                  "decoration": "underline"
-                }
-              ]
-            ]
-          },
-          "layout": "noBorders" 
-        },
-		 
-       
-       
-         {
-          "style": "ws-head",
-          "table": {
-            "widths": ["*"],
-            "body": [
-              [
-                {
                   "columns": [
                     {
-                      "text": "ശ്രീ /ശ്രീമതി ....{{name}}....{{address}}.. (കെട്ടിട ഉടമസ്ഥന്റെ പേര്,വിലാസം ) \nയുടെ ഉടമസ്ഥതയി ലുള്ള .......... ബിൽഡിംഗ് ഐഡിയിൽ\n.........വാർഡിൽ..........നമ്പർ കെട്ടിടത്തിൽ \nശ്രീ /ശ്രീമതി .................. (അപേക്ഷകന്റെ പേര്, മേൽവിലാസം )\n.............. (മാസം /വര്ഷം ) .........കാലയളവിൽ താമസിച്ചു വരുന്നു .",
-			    "style": "rule-body_multiLang"
+                      "text": "This is to certify {{name}} and {{address}} of the resident with suitable\nsalutation is residing for....... period ........in the building having unique building\nID......... bearing building no......of ward......... of LB name ............... owned by\nName and address of the building owner as per the records kept in this Office.",
+                      "style": "rule-body_multiLang"
                     }
                   ]
                 }
@@ -87,23 +92,8 @@
           },
           "layout": "noBorders"
         },
-        {
-          "style": "ws-head",
-          "table": {
-            "widths": ["*"],
-            "body": [
-              [  
-                {
-                  "image": "{{qr_code_image}}",
-                  "width": 70,
-                  "height": 70,
-                  "style": "qr-code"
-                }
-              ]
-            ]
-          },
-          "layout": "noBorders"
-        },
+   
+    
         {
           "style": "ws-head",
           "table": {
@@ -134,7 +124,7 @@
           },
           "layout": "noBorders"
         }
-       
+     
          
       ],
       "styles": {
@@ -344,18 +334,3 @@
       }
     }
   }
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-ksmart-configs/death-certificate.json at DEV · ikmupyog/ksmart-configs
