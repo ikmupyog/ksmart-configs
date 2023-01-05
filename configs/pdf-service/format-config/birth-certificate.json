@@ -64,7 +64,7 @@
 		   },
 		  {
 			"text": "{{rule8}}",
-			"style": "details-body"
+			"style": "appendix-header-body"
 		  },
 			  
 		   
@@ -124,6 +124,21 @@
               [
                 {
                   "text": "Name of Local Body issuing Certificate : Kochi Corporation",
+                  "style": "title-header"
+                }
+              ]
+            ]
+          },
+          "layout": "noBorders" 
+        },
+	       {
+          "style": "ws-head",
+          "table": {
+            "widths": ["*"],
+            "body": [
+              [
+                {
+                  "text": "സർട്ടിഫിക്കറ്റ് നൽകുന്ന തദ്ദേശസ്ഥാപനത്തിന്റെ പേര് : കൊച്ചി കോർപറേഷൻ ",
                   "style": "title-header"
                 }
               ]
