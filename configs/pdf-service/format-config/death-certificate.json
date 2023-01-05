@@ -12,14 +12,7 @@
             "widths": ["20%", "60%", "20%"],
             "body": [
               [
-                {
-                  "stack": [ 
-                    {
-                      "text": "No .1",
-                      "style": "appendix-header-serialNo"
-                    } 
-                  ]
-                },
+                
 		{
                 "stack": [
                   {
