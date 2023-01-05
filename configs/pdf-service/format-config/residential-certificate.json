@@ -135,41 +135,39 @@
           ]
         },
         "layout": "noBorders"
-      },
-      {
-        "style": "ws-head",
-        "table": {
-          "widths": [
-            "*"
-          ],
-          "body": [
-            [
-              {
-                "text": "THIS IS A COMPUTER GENERATED CERTIFICATE.",
-                "style": "receipt-footer"
-              }
-            ]
-          ]
-        },
-        "layout": "noBorders"
-      },
-      {
-        "style": "ws-head",
-        "table": {
-          "widths": [
-            "*"
-          ],
-          "body": [
-            [
-              {
-                "text": "THE GOVT. OF INDIA VIDE CIRCULAR NO. 1/12/2014-VS(CRS) DATED 27-JULY-2015 HAS APPROVED THIS CERTIFICATE AS A VALID LEGAL DOCUMENT FOR ALL OFFICIAL PURPOSES.",
-                "style": "receipt-footer"
-              }
-            ]
-          ]
-        },
-        "layout": "noBorders"
       }
+     
+     {
+          "style": "ws-head",
+          "table": {
+            "widths": ["*"],
+            "body": [
+              [  
+                {
+                  "text": "THIS IS A COMPUTER GENERATED CERTIFICATE.",
+                  "style": "receipt-footer"
+                }
+              ]
+            ]
+          },
+          "layout": "noBorders"
+        },
+        {
+          "style": "ws-head",
+          "table": {
+            "widths": ["*"],
+            "body": [
+              [  
+                {
+                  "text": "THE GOVT. OF INDIA VIDE CIRCULAR NO. 1/12/2014-VS(CRS) DATED 27-JULY-2015 HAS APPROVED THIS CERTIFICATE AS A VALID LEGAL DOCUMENT FOR ALL OFFICIAL PURPOSES.",
+                  "style": "receipt-footer"
+                }
+              ]
+            ]
+          },
+          "layout": "noBorders"
+        }
+     
     ],
     "styles": {
       "pdf-header": {
@@ -267,12 +265,22 @@
       "receipt-footer": {
         "color": "#484848",
         "fontSize": 8,
+         "top-margin": {
         "margin": [
-          30,
-          -20,
+          0,
+          10,
           0,
           0
         ]
+      },
+        "top-high-margin": {
+        "margin": [
+          0,
+          50,
+          0,
+          0
+        ]
+      }
       },
       "appendix-header-serialNo": {
         "color": "#000000",
