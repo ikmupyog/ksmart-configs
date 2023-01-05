@@ -9,9 +9,7 @@
         "style": "ws-head",
         "table": {
           "widths": [
-            "20%",
-            "60%",
-            "20%"
+             "*"
           ],
           "body": [
             [
@@ -19,22 +17,15 @@
                 "stack": [
                   {
                     "text": "{{tenantName}}",
-                    "style": "appendix-header-body"
+                    "style": "title-header"
                   },
                   {
                     "text": "{{lbAddressWithPinCode}}",
-                    "style": "details-body"
-                  }
-                ]
-              },
-              {
-                "stack": [
-                  {
-                    "text": "Form-6",
-                    "style": "appendix-header-formNo"
+                    "style": "title-header"
                   }
                 ]
               }
+               
             ]
           ]
         },
@@ -49,7 +40,7 @@
           "body": [
             [
               {
-                "text": "Residential CERTIFICATE",
+                "text": "റസിഡൻഷ്യൽ സർട്ടിഫിക്കറ്റ്",
                 "style": "title-header",
                 "decoration": "underline"
               }
@@ -58,6 +49,28 @@
         },
         "layout": "noBorders"
       },
+       {
+        "style": "ws-head",
+        "table": {
+          "widths": [
+            "*"
+          ],
+          "body": [
+            [
+              {
+                  "stack": [ 
+                    {
+                      "text": "സർട്ടിഫിക്കറ്റ് നമ്പർ:",
+                      "style": "appendix-header-body"
+                    } 
+                  ]
+                }
+            ]
+          ]
+        },
+        "layout": "noBorders"
+      },
+      
       {
         "style": "ws-head",
         "table": {
@@ -69,7 +82,7 @@
               {
                 "columns": [
                   {
-                    "text": "This is to certify {{name}} and {{address}} of the resident with suitable\nsalutation is residing for....... period ........in the building having unique building\nID......... bearing building no......of ward......... of LB name ............... owned by\nName and address of the building owner as per the records kept in this Office.",
+                    "text": "ശ്രീ /ശ്രീ മതി …………{{name}}  ,{{address}} ……….. (കെ ട്ടി ട ഉടമസ്ഥന്റെ പേര്,വിലാസം ) \nയുടെ ഉടമസ്ഥതയിലുള്ള ………. ബിൽഡിംഗ് ഐഡി യിൽ \n………വാർഡിൽ……….നമ്പർ കെട്ടിടത്തിൽ \nശ്രീ /ശ്രീ മതി ……………… (അപേക്ഷകന്റെ പേര്, മേൽവിലാസം )\n………….. (മാസം /വര്ഷം ) ………കാലയളവിൽ താമസിച്ചു വരുന്നു .",
                     "style": "rule-body_multiLang"
                   }
                 ]
