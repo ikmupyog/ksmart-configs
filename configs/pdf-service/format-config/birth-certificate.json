@@ -227,7 +227,7 @@
                       "width": "1%"
                     },
                     {
-                      "text": " {{name}} / {{nameMl}}",
+                      "text": "Unnimayakrishnan",
                       "style": "details-body"
                     }
                   ]
@@ -247,7 +247,7 @@
                         "width": "1%"
                     },
                     {
-                      "text": "{{gender}}",
+                      "text": "Femala",
                       "style": "details-body"
                     }
                   ]
@@ -266,7 +266,7 @@
                       "width": "1%"
                     },
                     {
-                      "text": "{{dob}}",
+                      "text": "",
                       "style": "details-body"
                     }
                    
@@ -287,7 +287,7 @@
                         "width": "1%"
                     },
                     {
-                      "text": "{{name}}",
+                      "text": "",
                       "style": "details-body"
                     }
                   ]
@@ -306,7 +306,7 @@
                       "width": "1%"
                     },
                     {
-                      "text": "{{motherNameMl}}/{{motherName}}",
+                      "text": "",
                       "style": "details-body"
                     }
                   ]
@@ -326,7 +326,7 @@
                         "width": "1%"
                     },
                     {
-                      "text": "{{fatherNameMl}}/{{fatherName}}",
+                      "text": "",
                       "style": "details-body"
                     }
                   ]
@@ -346,7 +346,7 @@
                         "width": "1%"
                     },
                     {
-                      "text": "{{presentAddressMl}}",
+                      "text": "",
                       "style": "details-body"
                     }
                   ]
@@ -365,7 +365,7 @@
                       "width": "1%"
                     },
                     {
-                      "text": "{{presentAddress}}",
+                      "text": "",
                       "style": "details-body"
                     }
                   ]
@@ -385,7 +385,7 @@
                       "width": "1%"
                     },
                     {
-                      "text": "{{presentAddressMl}}",
+                      "text": "",
                       "style": "details-body"
                     }
                   ]
@@ -405,7 +405,7 @@
                       "width": "1%"
                     },
                     {
-                      "text": "{{parentsAddress}}",
+                      "text": "",
                       "style": "details-body"
                     }
                   ]
@@ -415,7 +415,7 @@
                 {
                   "columns": [
                     {
-                      "text": "രജിസ്ട്രേഷൻ നമ്പർ/Registration Number : {{registrationNo}}",
+                      "text": "രജിസ്ട്രേഷൻ നമ്പർ/Registration Number :",
                       "width": "49%",
                       "style": "details-body"
                     },
@@ -424,7 +424,7 @@
                       "width": "1%"
                     },
                     {
-                      "text": "രജിസ്ട്രേഷൻ തീയതി/Date of Registration : {{dateofissue}}",
+                      "text": "രജിസ്ട്രേഷൻ തീയതി/Date of Registration :",
                       "style": "details-body"
                     }
                   ]
@@ -434,7 +434,7 @@
                 {
                   "columns": [
                     {
-                      "text": "അഭിപ്രായക്കുറിപ്പ് /Remarks (if any): {{remarks}}",
+                      "text": "അഭിപ്രായക്കുറിപ്പ് /Remarks (if any):",
                       "width": "49%",
                       "style": "details-body"
                     }
@@ -445,7 +445,7 @@
                 {
                   "columns": [
                     {
-                      "text": "നൽകുന്ന തീയതി / Date of Issue : {{dateofissue}}",
+                      "text": "നൽകുന്ന തീയതി / Date of Issue :",
                       "width": "49%",
                       "style": "details-body"
                     },
