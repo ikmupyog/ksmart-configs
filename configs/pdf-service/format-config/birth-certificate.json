@@ -5,13 +5,11 @@
         "font": "Meera"
       },
       "watermark": {
+      "image": "{{logokerala}}",
       "text": "IKM DEMO",
       "color": "gery",
       "opacity": 0.1,
-      "image": [
-        "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg"
-      ]
-    },
+          },
       "content": [
         
 	{
