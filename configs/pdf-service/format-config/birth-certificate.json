@@ -5,7 +5,7 @@
       "font": "Meera"
     },
     "watermark": {
-      "text": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
+      "image": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
       "color": "gery",
       "opacity": 0.1,
       "content": [
