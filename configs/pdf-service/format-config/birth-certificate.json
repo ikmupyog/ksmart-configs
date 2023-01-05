@@ -263,7 +263,7 @@
                         "width": "1%"
                     },
                     {
-                      "text": "xx",
+                      "text": "{{gender}}",
                       "style": "details-body"
                     }
                   ]
@@ -282,7 +282,7 @@
                       "width": "1%"
                     },
                     {
-                      "text": "yy",
+                      "text": "{{dob}}",
                       "style": "details-body"
                     }
                    
@@ -322,7 +322,7 @@
                       "width": "1%"
                     },
                     {
-                      "text": "qqq",
+                      "text": "{{motherNameMl}}/{{motherName}}",
                       "style": "details-body"
                     }
                   ]
@@ -342,7 +342,7 @@
                         "width": "1%"
                     },
                     {
-                      "text": "www",
+                      "text": "{{fatherNameMl}}/{{fatherName}}",
                       "style": "details-body"
                     }
                   ]
@@ -362,7 +362,7 @@
                         "width": "1%"
                     },
                     {
-                      "text": "www",
+                      "text": "{{presentAddressMl}}",
                       "style": "details-body"
                     }
                   ]
@@ -381,7 +381,7 @@
                       "width": "1%"
                     },
                     {
-                      "text": "www",
+                      "text": "{{presentAddress}}",
                       "style": "details-body"
                     }
                   ]
@@ -401,7 +401,7 @@
                       "width": "1%"
                     },
                     {
-                      "text": "wwd",
+                      "text": "{{presentAddressMl}}",
                       "style": "details-body"
                     }
                   ]
@@ -421,7 +421,7 @@
                       "width": "1%"
                     },
                     {
-                      "text": "fd",
+                      "text": "{{parentsAddress}}",
                       "style": "details-body"
                     }
                   ]
@@ -431,7 +431,7 @@
                 {
                   "columns": [
                     {
-                      "text": "രജിസ്ട്രേഷൻ നമ്പർ/Registration Number : 123123",
+                      "text": "രജിസ്ട്രേഷൻ നമ്പർ/Registration Number : {{registrationNo}}",
                       "width": "49%",
                       "style": "details-body"
                     },
@@ -440,7 +440,7 @@
                       "width": "1%"
                     },
                     {
-                      "text": "രജിസ്ട്രേഷൻ തീയതി/Date of Registration : 12122022",
+                      "text": "രജിസ്ട്രേഷൻ തീയതി/Date of Registration : {{dateofissue}}",
                       "style": "details-body"
                     }
                   ]
@@ -450,7 +450,7 @@
                 {
                   "columns": [
                     {
-                      "text": "അഭിപ്രായക്കുറിപ്പ് /Remarks (if any): jj",
+                      "text": "അഭിപ്രായക്കുറിപ്പ് /Remarks (if any): {{remarks}}",
                       "width": "49%",
                       "style": "details-body"
                     }
@@ -461,7 +461,7 @@
                 {
                   "columns": [
                     {
-                      "text": "നൽകുന്ന തീയതി / Date of Issue : yy",
+                      "text": "നൽകുന്ന തീയതി / Date of Issue : {{dateofissue}}",
                       "width": "49%",
                       "style": "details-body"
                     },
