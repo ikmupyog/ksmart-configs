@@ -131,24 +131,7 @@
           },
           "layout": "noBorders" 
         },
-        {
-          "style": "ws-head",
-          "table": {
-            "widths": ["*"],
-            "body": [
-              [
-		
-                {
-                  "text": "BIRTH CERTIFICATE",
-                  "style": "title-header",
-                  "decoration": "underline"
-                }
-		      
-              ]
-            ]
-          },
-          "layout": "noBorders" 
-        },
+        
 	{
           "style": "ws-head",
           "table": {
@@ -158,6 +141,24 @@
 		
                 {
                   "text": "ജനന സർട്ടിഫിക്കറ്റ് ",
+                  "style": "title-header",
+                 
+                }
+		      
+              ]
+            ]
+          },
+          "layout": "noBorders" 
+        },
+	  {
+          "style": "ws-head",
+          "table": {
+            "widths": ["*"],
+            "body": [
+              [
+		
+                {
+                  "text": "BIRTH CERTIFICATE",
                   "style": "title-header",
                   "decoration": "underline"
                 }
