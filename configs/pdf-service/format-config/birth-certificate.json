@@ -548,6 +548,21 @@
           },
           "layout": "noBorders"
         },
+	{
+          "style": "ws-head",
+          "table": {
+            "widths": ["*"],
+            "body": [
+              [  
+                {
+                  "text": "ഓരോ ജനനവും മരണവും രജിസ്റ്റർ ചെയ്തുവെന്ന് ഉറപ്പ് വരുത്തുക",
+                  "style": "footer"
+                }
+              ]
+            ]
+          },
+          "layout": "noBorders"
+        },
         {
           "style": "ws-head",
           "table": {
