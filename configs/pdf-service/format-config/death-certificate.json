@@ -92,16 +92,16 @@
 		  }
                   ]
                 },
-		  
-	        
-                {
-                  "stack": [ 
-                    {
-                      "text": "Form-6",
-                      "style": "appendix-header-formNo"
-                    } 
-                  ]
-                }
+		  {
+                "stack": [
+                  {
+                    "image": "{{logobirth}}",
+                    "width": 70,
+                    "height": 70
+                  }
+                ]
+              }        
+              
               ]
             ]
           },
@@ -382,12 +382,12 @@
                   "columns": [            
                     
                     {
-                      "text": "Permanent address of the deceased : ",
+                      "text": "Permanent address of the deceased  ",
                       "width": "49%",
                       "style": "details-body"
                     },
                     {
-                      "text": " ",
+                      "text": ": ",
                       "width": "1%"
                     },
                     {
