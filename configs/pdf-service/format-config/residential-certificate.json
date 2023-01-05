@@ -82,7 +82,7 @@
               {
                 "columns": [
                   {
-                    "text": "ശ്രീ /ശ്രീ മതി …………{{name}}  ,{{address}} ……….. (കെ ട്ടി ട ഉടമസ്ഥന്റെ പേര്,വിലാസം ) \nയുടെ ഉടമസ്ഥതയിലുള്ള ………. ബിൽഡിംഗ് ഐഡി യിൽ \n………വാർഡിൽ……….നമ്പർ കെട്ടിടത്തിൽ \nശ്രീ /ശ്രീ മതി ……………… (അപേക്ഷകന്റെ പേര്, മേൽവിലാസം )\n………….. (മാസം /വര്ഷം ) ………കാലയളവിൽ താമസിച്ചു വരുന്നു .",
+                    "text": "ശ്രീ /ശ്രീമതി {{name}}  ,{{address}}  (കെട്ടിട ഉടമസ്ഥന്റെ പേര്,വിലാസം )  യുടെ ഉടമസ്ഥതയിലുള്ള  ബിൽഡിംഗ് ഐഡി യിൽ  വാർഡിൽ നമ്പർ കെട്ടിടത്തിൽ ശ്രീ /ശ്രീമതി (അപേക്ഷകന്റെ പേര്, മേൽവിലാസം ) (മാസം /വര്ഷം ) കാലയളവിൽ താമസിച്ചു വരുന്നു .",
                     "style": "rule-body_multiLang"
                   }
                 ]
@@ -127,6 +127,13 @@
         "layout": "noBorders"
       }
     ],
+        "footer": [
+        {
+          "text": "Note:\n1. Payment received by cheque/demand draft shall be subject to realization.\n2. This document is not a proof of Property Ownership.\n3. This is a computer generated document, hence requires no signature.",
+          "style": "receipt-footer"
+        }
+      ],
+    
     "styles": {
       "pdf-header": {
         "fillColor": "#F2F2F2",
@@ -211,6 +218,16 @@
           -10
         ]
       },
+        "receipt-footer": {
+          "color": "#484848",
+          "fontSize": 8,
+          "margin": [
+            30,
+            -20,
+            0,
+            0
+          ]
+        },
       "appendix-header-serialNo": {
         "color": "#000000",
         "bold": false,
@@ -298,9 +315,15 @@
       "appendix-header-body": {
         "color": "#000099",
         "bold": true,
+        "alignment": "left",
         "fontSize": 9,
         "fontWeight": 400,
-        "alignment": "center"
+      "margin": [
+          -8,
+          0,
+          0,
+          5
+        ]
       },
       "receipt-value-down-sub": {
         "color": "#000000",
