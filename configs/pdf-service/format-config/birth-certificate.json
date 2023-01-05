@@ -137,11 +137,17 @@
             "widths": ["*"],
             "body": [
               [
-                {
-                  "text": "DEATH CERTIFICATE",
+		{
+                  "text": "ജനന സർട്ടിഫിക്കറ്റ് ",
                   "style": "title-header",
                   "decoration": "underline"
                 }
+                {
+                  "text": "BIRTH CERTIFICATE",
+                  "style": "title-header",
+                  "decoration": "underline"
+                }
+		      
               ]
             ]
           },
