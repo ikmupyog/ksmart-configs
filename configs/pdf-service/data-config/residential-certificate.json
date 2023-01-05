@@ -55,7 +55,15 @@
                   "path": "$.lbAddressWithPinCode"
                 },
                 "type": "setEmpty"
-              }
+              },
+               {
+                "qrcodeConfig": [
+                  {
+                      "variable": "qr_code_image",
+                      "value":"{{embeddedUrl}}"
+                  }
+                ]
+            }
             ]
           }
           
