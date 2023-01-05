@@ -142,7 +142,7 @@
                 {
                   "text": "ജനന സർട്ടിഫിക്കറ്റ് ",
                   "style": "title-header",
-                 
+                  "decoration": "underline"
                 }
 		      
               ]
