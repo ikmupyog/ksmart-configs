@@ -265,22 +265,15 @@
       "receipt-footer": {
         "color": "#484848",
         "fontSize": 8,
-         "top-margin": {
+       
         "margin": [
           0,
           10,
           0,
           0
         ]
-      },
-        "top-high-margin": {
-        "margin": [
-          0,
-          50,
-          0,
-          0
-        ]
-      }
+     
+      
       },
       "appendix-header-serialNo": {
         "color": "#000000",
