@@ -32,9 +32,7 @@
         "style": "ws-head",
         "table": {
           "widths": [
-            "20%",
-            "60%",
-            "20%"
+           "*"
           ],
           "body": [
             [
@@ -43,7 +41,8 @@
                   {
                     "image": "{{logokerala}}",
                     "width": 70,
-                    "height": 70
+                    "height": 70,
+                      "style": "logo-img"
                   }
                 ]
               }
@@ -215,6 +214,15 @@
       "qr-code": {
         "color": "#000000",
         "alignment": "left",
+        "margin": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "logo-img": {        
+        "alignment": "center",
         "margin": [
           0,
           0,
