@@ -72,7 +72,7 @@
 		{
 		  "variable": "governmentMl",
 		  "value": {
-			"path": "PDF_BIRTH_GOVERNMENT_OF_KERALA"
+			"path": "PDF_BIRTH_GOVERNMENT_OF_KERALA_ML"
 		  },
 		  "type": "label",
 		  "localisation":{
@@ -223,7 +223,7 @@
 		{
 			"variable": "deptUrbanAffairsMl",
 			"value": {
-			  "path": "PDF_BIRTH_DEPARTMENT_OF_URBAN_AFFAIRS"
+			  "path": "PDF_BIRTH_DEPARTMENT_OF_URBAN_AFFAIRS_ML"
 			},
 			"type": "label",
 			"localisation":{
