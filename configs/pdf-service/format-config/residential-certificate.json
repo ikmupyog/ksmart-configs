@@ -38,7 +38,7 @@
               {
                 "stack": [
                   {
-                    "text": "{{logo-header}}  {{tenantName}} ",
+                    "text": " {{tenantName}} ",
                     "style": "receipt-logo-header"
                   }
                 ],
