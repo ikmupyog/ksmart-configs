@@ -9,7 +9,54 @@
         "style": "ws-head",
         "table": {
           "widths": [
-             "*"
+            "20%",
+            "60%",
+            "20%"
+          ],
+          "body": [
+            [
+              {
+                "stack": [
+                  {
+                    "text": "KeyNo : 1",
+                    "style": "appendix-header-serialNo"
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        "layout": "noBorders"
+      },
+      {
+        "style": "ws-head",
+        "table": {
+          "widths": [
+            "20%",
+            "60%",
+            "20%"
+          ],
+          "body": [
+            [
+              {
+                "stack": [
+                  {
+                    "image": "{{logokerala}}",
+                    "width": 70,
+                    "height": 70
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        "layout": "noBorders"
+      },
+      {
+        "style": "ws-head",
+        "table": {
+          "widths": [
+            "*"
           ],
           "body": [
             [
@@ -25,7 +72,6 @@
                   }
                 ]
               }
-               
             ]
           ]
         },
@@ -49,7 +95,7 @@
         },
         "layout": "noBorders"
       },
-       {
+      {
         "style": "ws-head",
         "table": {
           "widths": [
@@ -58,19 +104,18 @@
           "body": [
             [
               {
-                  "stack": [ 
-                    {
-                      "text": "സർട്ടിഫിക്കറ്റ് നമ്പർ:",
-                      "style": "appendix-header-body"
-                    } 
-                  ]
-                }
+                "stack": [
+                  {
+                    "text": "സർട്ടിഫിക്കറ്റ് നമ്പർ:",
+                    "style": "appendix-header-body"
+                  }
+                ]
+              }
             ]
           ]
         },
         "layout": "noBorders"
       },
-      
       {
         "style": "ws-head",
         "table": {
@@ -127,8 +172,6 @@
         "layout": "noBorders"
       }
     ],
-       
-    
     "styles": {
       "pdf-header": {
         "fillColor": "#F2F2F2",
@@ -213,16 +256,16 @@
           -10
         ]
       },
-        "receipt-footer": {
-          "color": "#484848",
-          "fontSize": 8,
-          "margin": [
-            30,
-            -20,
-            0,
-            0
-          ]
-        },
+      "receipt-footer": {
+        "color": "#484848",
+        "fontSize": 8,
+        "margin": [
+          30,
+          -20,
+          0,
+          0
+        ]
+      },
       "appendix-header-serialNo": {
         "color": "#000000",
         "bold": false,
@@ -313,7 +356,7 @@
         "alignment": "left",
         "fontSize": 9,
         "fontWeight": 400,
-      "margin": [
+        "margin": [
           -8,
           0,
           0,
