@@ -107,6 +107,29 @@
           },
           "layout": "noBorders"
         },
+	  {
+		"style": "ws-head",
+		"table": {
+		  "widths": [
+		    "20%",
+		    "60%",
+		    "20%"
+		  ],
+		  "body": [
+		    [
+		      {
+			"stack": [
+			  {
+			    "text": "Form-6",
+			    "style": "appendix-header-formNo"
+			  }
+			]
+		      }
+		    ]
+		  ]
+		},
+		"layout": "noBorders"
+	 },
         {
           "style": "ws-head",
           "table": {
