@@ -8,8 +8,12 @@
       "text": "IKM DEMO",
       "color": "gery",
       "opacity": 0.1,
-	   "image": [
-        "{{logokerala}}"
+       [
+            {
+               "image": "{{logokerala}}",
+                 "width": 70,
+                 "height": 70
+              }
       ]
         },
       "content": [
@@ -123,7 +127,7 @@
             "body": [
               [
                 {
-                  "text": "Name of Local Body issuing Certificate : Kochin Corporation",
+                  "text": "Name of Local Body issuing Certificate : Kochi Corporation",
                   "style": "title-header"
                 }
               ]
@@ -215,7 +219,7 @@
                 {
                   "columns": [
                     {
-                      "text": ["This is to certify that the following information has been taken from the original death record which is registered in the death register of Local Registrar, Births & Deaths,  {{parentsCity}}, Block/ Police Station-  {{parentsStreet}} Tehsil- {{parentsTehsil}}  District -  {{parentsDistrict}} of  {{parentsState}} State of the Year - {{year}}"],
+                      "text": ["This is to certify that the following information has been taken from the original record of birth which is the register for (local area/localbody) Kochi Corporation of District Kollam of State Kerala."],
                       "style": "rule-body_multiLang"
                     }
                   ]
