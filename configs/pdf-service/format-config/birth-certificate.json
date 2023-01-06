@@ -201,11 +201,11 @@
               {
                 "stack": [
                   {
-                    "text": "{{certify}}",
+                    "text": "{{certify}} {{tenant}} {{lbtypecode}}  of Taluk  {{talukcode}}  of District {{distcode}} of State {{statecode}}.",
                     "style": "rule-header"
                   },
                   {
-                    "text": "{{certifyMl}}",
+                    "text": "താഴെ പറയുന്ന വിവരങ്ങൾ {{statecodeml}} സംസ്\u200Cഥാനത്തിലെ {{distcodeml}} ജില്ലയിലെ {{talukcodeml}}ൂക്കിലെ {{tenantMl}} {{lbtypecodeml}} {{certifyMl}}.",
                     "style": "rule-header"
                   }
                 ]
