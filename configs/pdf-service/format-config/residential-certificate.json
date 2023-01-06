@@ -52,11 +52,11 @@
 						[{
 							"stack": [{
 									"text": "{{tenantName}}",
-									"style": "title-header"
+									"style": "top-margin"
 								},
 								{
 									"text": "{{lbAddressWithPinCode}}",
-									"style": "title-header"
+									"style": "top-margin"
 								}
 							]
 						}]
@@ -119,6 +119,7 @@
 			
 
 		],
+		  "footer": "(function(currentPage, pageCount) { return currentPage.toString() + ' of ' + pageCount; })",
 		"styles": {
 			"pdf-header": {
 				"fillColor": "#F2F2F2",
@@ -129,6 +130,14 @@
 					10
 				]
 			},
+			"top-margin": {
+       				 "margin": [
+        				    0,
+          				    10,
+          				    0,
+         				    0
+					    ]
+				     },
 			"appendix-header": {
 				"color": "#000000",
 				"bold": true,
