@@ -550,7 +550,7 @@
 					],
 					"body": [
 						[{
-							"stack": [{
+							"background": [{
 								"image": "{{logokerala}}",
 								"width": 800,
 								"height": 800,
