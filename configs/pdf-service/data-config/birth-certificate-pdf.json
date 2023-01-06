@@ -230,8 +230,8 @@
                 "type": "setEmpty",
                 "localisation":{
                   "required":true,
-                  "module":"rainmaker-common",
-                  "locale":"en_IN"
+                  "prefix": "TENANTS_TENANT",
+                  "module":"rainmaker-common"
                 }
               },
 
@@ -243,9 +243,8 @@
                 "type": "setEmpty",
                 "localisation":{
                   "required":true,
-                  "prefix": "TENANTS_TENANT_",
-                  "module":"rainmaker-common",
-                  "locale":"ml_IN"
+                  "prefix": "TENANTS_TENANT",
+                  "module":"rainmaker-common"
                 }
               },
 
