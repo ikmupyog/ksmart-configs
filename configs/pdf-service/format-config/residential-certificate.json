@@ -100,6 +100,8 @@
 				},
 				"layout": "noBorders"
 			},
+			
+			
 			{
 				"style": "ws-head",
 				"table": {
@@ -116,7 +118,26 @@
 					]
 				},
 				"layout": "noBorders"
-			}
+			},
+			{
+				"style": "ws-head",
+				"table": {
+					"widths": [
+						"*"
+					],
+					"body": [
+						[{
+							"stack": [{
+								"image": "{{logokerala}}",
+								"width": 200,
+								"height": 200,
+								"style": "logo-img"
+							}]
+						}]
+					]
+				},
+				"layout": "noBorders"
+			},
 
 			
 			
@@ -302,14 +323,7 @@
 				]
 			},
 			"rule-body_multiLang": {
-				"background": {
-          
-              			"image": "{{logokerala}}",
-               			 "width": 800,
-              			"opacity": 0.05,
-             		 	"absolutePosition": { "x": "150", "y": "250" }
-    
-                      },
+				 
 				"color": "#000000",
 				"bold": false,
 				"fontSize": 11,
