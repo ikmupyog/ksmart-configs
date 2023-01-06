@@ -524,11 +524,11 @@
                       "stack": [
                         {
                           "text": "{{ensureRegistration}}",
-                          "style": "details-body-bottom"
+                          "style": "details-body-center-bottom"
                         },
                         {
                           "text": "{{ensureRegistrationMl}}",
-                          "style": "details-body-bottom"
+                          "style": "details-body-center-bottom"
                         }
                       ]
                     }
@@ -782,6 +782,18 @@
         "bold": false,
         "fontSize": 7,
         "alignment": "center"
+      },
+      "details-body-center-bottom": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 7,
+        "alignment": "center",
+        "margin": [
+          0,
+          0,
+          15,
+          5
+        ]
       },
       "appendix-header-body": {
         "color": "#000000",
