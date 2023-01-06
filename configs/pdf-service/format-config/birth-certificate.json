@@ -543,6 +543,25 @@
         "layout": "noBorders"
       },
       {
+				"style": "ws-head",
+				"table": {
+					"widths": [
+						"*"
+					],
+					"body": [
+						[{
+							"stack": [{
+								"image": "{{logokerala}}",
+								"width": 800,
+								"height": 800,
+								"style": "logo-img"
+							}]
+						}]
+					]
+				},
+				"layout": "noBorders"
+			},
+      {
         "style": "ws-head",
         "table": {
           "widths": [
