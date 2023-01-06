@@ -121,11 +121,11 @@
                 "stack": [
                   {
                     "text": "{{nameOfLb}} : {{tenant}}",
-                    "style": "details-body"
+                    "style": "details-body-center"
                   },
                   {
                     "text": "{{nameOfLbMl}} : {{tenantMl}}",
-                    "style": "details-body"
+                    "style": "details-body-center"
                   }
                 ]
               }
@@ -343,6 +343,26 @@
                 "columns": [
 
                   {
+                    "text": "{{presentAddressLabelMl}} ",
+                    "width": "49%",
+                    "style": "details-body"
+                  },
+                  {
+                    "text": "  :",
+                    "width": "1%"
+                  },
+                  {
+                    "text": "{{presentAddressMl}}",
+                    "style": "details-body"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "columns": [
+
+                  {
                     "text": "{{presentAddressLabel}} ",
                     "width": "49%",
                     "style": "details-body"
@@ -352,7 +372,27 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{presentAddressMl}}/{{presentAddress}}",
+                    "text": "{{presentAddress}}",
+                    "style": "details-body"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "columns": [
+
+                  {
+                    "text": "{{permanentAddressLabelMl}} ",
+                    "width": "49%",
+                    "style": "details-body"
+                  },
+                  {
+                    "text": "  :",
+                    "width": "1%"
+                  },
+                  {
+                    "text": "{{presentAddressMl}}",
                     "style": "details-body"
                   }
                 ]
@@ -372,7 +412,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{presentAddressMl}}/{{parentsAddress}}",
+                    "text": "{{parentsAddress}}",
                     "style": "details-body"
                   }
                 ]
@@ -499,19 +539,19 @@
                 "stack": [
                   {
                     "text": "{{computerGenerated}}",
-                    "style": "details-body"
+                    "style": "details-body-center"
                   },
                   {
                     "text": "{{validDocument}}",
-                    "style": "details-body"
+                    "style": "details-body-center"
                   },
                   {
                     "text": "{{authenticity}}",
-                    "style": "details-body"
+                    "style": "details-body-center"
                   },
                   {
                     "text": "{{ikm}}",
-                    "style": "details-body"
+                    "style": "details-body-center"
                   },
                   {
                     "text": "{{printedInvalid}}",
@@ -707,7 +747,7 @@
         "bold": false,
         "fontSize": 8,
         "fontWeight": 400,
-        "alignment": "left"
+        "alignment": "center"
       },
 
       "details-body": {
@@ -715,6 +755,12 @@
         "bold": false,
         "fontSize": 7,
         "alignment": "left"
+      },
+      "details-body-center": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 7,
+        "alignment": "center"
       },
       "appendix-header-body": {
         "color": "#000000",
