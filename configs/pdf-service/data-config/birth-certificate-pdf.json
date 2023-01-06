@@ -230,7 +230,7 @@
                 "type": "setEmpty",
                 "localisation":{
                   "required":true,
-                  "prefix": "TENANTS_TENANT",
+                  "prefix": "TENANT_TENANTS",
                   "module":"rainmaker-common"
                 }
               },
@@ -243,7 +243,7 @@
                 "type": "setEmpty",
                 "localisation":{
                   "required":true,
-                  "prefix": "TENANTS_TENANT",
+                  "prefix": "TENANT_TENANTS",
                   "module":"rainmaker-common"
                 }
               },
