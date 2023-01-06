@@ -52,7 +52,7 @@
               {
                 "variable": "gender",
                 "value": {
-                  "path": "$.genderStr"
+                  "path": "$.gender"
                 },
                 "type":"setEmpty"
               },
