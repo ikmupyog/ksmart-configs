@@ -536,7 +536,7 @@
         ]
       },
       "appendix-header-body-ml": {
-        "color": "#000099",
+        "color": "#000000",
         "fontSize": 9,
         "alignment": "center"
       },
@@ -707,30 +707,14 @@
         "bold": false,
         "fontSize": 8,
         "fontWeight": 400,
-        "margin": [
-          0,
-          0,
-          0,
-          0
-        ]
-      },
-      "details-bodyRight": {
-        "color": "#000000",
-        "bold": false,
-        "fontSize": 7,
-        "alignment": "right"
-      },
-      "details-bodyLeft": {
-        "color": "#000000",
-        "bold": false,
-        "fontSize": 7,
         "alignment": "left"
       },
+
       "details-body": {
         "color": "#000000",
         "bold": false,
         "fontSize": 7,
-        "alignment": "center"
+        "alignment": "left"
       },
       "appendix-header-body": {
         "color": "#000000",
