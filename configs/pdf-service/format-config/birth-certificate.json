@@ -518,10 +518,23 @@
                     "height": 100,
                     "style": "qr-code"
                   },
-                  {
-                    "text": "{{ensureRegistration}}",
-                    "style": "details-body"
-                  }
+
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "{{ensureRegistration}}",
+                          "style": "details-body"
+                        },
+                        {
+                          "text": "{{ensureRegistrationMl}}",
+                          "style": "details-body"
+                        }
+                      ]
+                    }
+                    ]
+
+
                 ]
               }
             ]
