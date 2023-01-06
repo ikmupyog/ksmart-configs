@@ -131,6 +131,11 @@
 				]
 			},
 			"top-margin": {
+				"color": "#000000",
+				"bold": true,
+				"fontSize": 9,
+				"fontWeight": 400,
+				"alignment": "center",
        				 "margin": [
         				    0,
           				    10,
@@ -202,12 +207,12 @@
 				"bold": true,
 				"fontSize": 14,
 				"alignment": "center",
-				"margin": [
-					20,
-					-1,
-					0,
-					0
-				]
+				 "margin": [
+        				    0,
+          				    10,
+          				    0,
+         				    0
+					    ]
 			},
 			"title-header_multiLang": {
 				"color": "#004d00",
