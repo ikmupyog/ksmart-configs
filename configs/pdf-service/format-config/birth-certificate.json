@@ -4,13 +4,11 @@
     "defaultStyle": {
       "font": "Meera"
     },
-    "background": {
-          
-              "image": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
-               "width": 200,
-               "height": 200
-              
-                      },
+  {
+  "background": 'simple text',
+
+            };
+
     "content": [
       {
         "style": "ws-head",
