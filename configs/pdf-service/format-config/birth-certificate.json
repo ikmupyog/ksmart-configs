@@ -225,7 +225,7 @@
                 "columns": [
                   {
                     "text": "{{childName}}",
-                    "width": "15%",
+                    "width": "49%",
                     "style": "details-body"
                   },
 
@@ -244,19 +244,10 @@
               {
                 "columns": [
                   {
-                    "text": "{{childSexMl}}",
-                    "width": "15%",
+                    "text": "{{childSex}}",
+                    "width": "49%",
                     "style": "details-body"
-                  },
-                  {
-                    "text": " /",
-                    "width": "1%"
-                  },
-                  {
-                    "text": "{{childSex}} ",
-                    "width": "19%",
-                    "style": "details-body"
-                  },
+                  }
                   {
                     "text": "  :",
                     "width": "1%"
@@ -271,18 +262,10 @@
             [
               {
                 "columns": [
-                  {
-                    "text": "{{dateOfBirthMl}}",
-                    "width": "15%",
-                    "style": "details-body"
-                  },
-                  {
-                    "text": " /",
-                    "width": "1%"
-                  },
+                 
                   {
                     "text": "{{dateOfBirth}} ",
-                    "width": "19%",
+                    "width": "49%",
                     "style": "details-body"
                   },
                   {
@@ -299,18 +282,10 @@
             [
               {
                 "columns": [
-                  {
-                    "text": "{{placeOfBirthLabelMl}}",
-                    "width": "15%",
-                    "style": "details-body"
-                  },
-                  {
-                    "text": " /",
-                    "width": "1%"
-                  },
+                  
                   {
                     "text": "{{placeOfBirthLabel}} ",
-                    "width": "19%",
+                    "width": "49%",
                     "style": "details-body"
                   },
                   {
@@ -327,18 +302,10 @@
             [
               {
                 "columns": [
-                  {
-                    "text": "{{nameOfMotherMl}}",
-                    "width": "15%",
-                    "style": "details-body"
-                  },
-                  {
-                    "text": " /",
-                    "width": "1%"
-                  },
+                  
                   {
                     "text": "{{nameOfMother}} ",
-                    "width": "19%",
+                    "width": "49%",
                     "style": "details-body"
                   },
                   {
@@ -356,17 +323,8 @@
               {
                 "columns": [
                   {
-                    "text": "{{nameOfFatherMl}}",
-                    "width": "15%",
-                    "style": "details-body"
-                  },
-                  {
-                    "text": " /",
-                    "width": "1%"
-                  },
-                  {
                     "text": "{{nameOfFather}} ",
-                    "width": "19%",
+                    "width": "49%",
                     "style": "details-body"
                   },
                   {
@@ -383,18 +341,10 @@
             [
               {
                 "columns": [
-                  {
-                    "text": "{{presentAddressLabelMl}}",
-                    "width": "15%",
-                    "style": "details-body"
-                  },
-                  {
-                    "text": " /",
-                    "width": "1%"
-                  },
+                  
                   {
                     "text": "{{presentAddressLabel}} ",
-                    "width": "19%",
+                    "width": "49%",
                     "style": "details-body"
                   },
                   {
@@ -411,18 +361,10 @@
             [
               {
                 "columns": [
-                  {
-                    "text": "{{permanentAddressLabelMl}}",
-                    "width": "15%",
-                    "style": "details-body"
-                  },
-                  {
-                    "text": " /",
-                    "width": "1%"
-                  },
+                  
                   {
                     "text": "{{permanentAddressLabel}} ",
-                    "width": "19%",
+                    "width": "49%",
                     "style": "details-body"
                   },
                   {
@@ -440,7 +382,7 @@
               {
                 "columns": [
                   {
-                    "text": "{{registrationNoLabelMl}} / {{registrationNoLabel}}: {{registrationNo}}",
+                    "text": "{{registrationNoLabel}}: {{registrationNo}}",
                     "width": "49%",
                     "style": "details-body"
                   },
@@ -449,7 +391,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{registrationDateLabelMl}} / {{registrationDateLabel}} {{registrationNo}}",
+                    "text": "{{registrationDateLabel}} {{registrationNo}}",
                     "style": "details-body"
                   }
                 ]
@@ -458,18 +400,10 @@
             [
               {
                 "columns": [
-                  {
-                    "text": "{{remarksLabelMl}}",
-                    "width": "15%",
-                    "style": "details-body"
-                  },
-                  {
-                    "text": " /",
-                    "width": "1%"
-                  },
+                  
                   {
                     "text": "{{remarksLabel}} ",
-                    "width": "19%",
+                    "width": "49%",
                     "style": "details-body"
                   },
                   {
@@ -487,7 +421,7 @@
               {
                 "columns": [
                   {
-                    "text": "{{dateOfIssueMl}} / {{dateOfIssue}}: {{dateofissue}}",
+                    "text": "{{dateOfIssue}}: {{dateofissue}}",
                     "width": "49%",
                     "style": "details-body"
                   },
@@ -505,18 +439,10 @@
             [
               {
                 "columns": [
-                  {
-                    "text": "{{addressOfIssuingAuthorityMl}}",
-                    "width": "15%",
-                    "style": "details-body"
-                  },
-                  {
-                    "text": " /",
-                    "width": "1%"
-                  },
+                
                   {
                     "text": "{{addressOfIssuingAuthority}} ",
-                    "width": "19%",
+                    "width": "49%",
                     "style": "details-body"
                   },
                   {
@@ -531,8 +457,7 @@
               }
             ]
           ]
-        },
-        "layout": "noBorders"
+        }
       },
       {
         "style": "ws-head",
