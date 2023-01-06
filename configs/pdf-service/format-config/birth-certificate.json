@@ -524,11 +524,11 @@
                       "stack": [
                         {
                           "text": "{{ensureRegistration}}",
-                          "style": "details-body"
+                          "style": "details-body-bottom"
                         },
                         {
                           "text": "{{ensureRegistrationMl}}",
-                          "style": "details-body"
+                          "style": "details-body-bottom"
                         }
                       ]
                     }
@@ -763,6 +763,12 @@
         "fontSize": 8,
         "fontWeight": 400,
         "alignment": "center"
+      },
+      "details-body-bottom": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 7,
+        "alignment": "bottom"
       },
 
       "details-body": {
