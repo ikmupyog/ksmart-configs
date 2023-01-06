@@ -12,6 +12,12 @@
         "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg"
       ]
     },
+    "background": {
+          "image": "{{logokerala}}",
+          "width": 200,
+          "opacity": 0.05,
+          "absolutePosition": { x: 150, y: 250 },
+        },
     "content": [
       {
         "style": "ws-head",
