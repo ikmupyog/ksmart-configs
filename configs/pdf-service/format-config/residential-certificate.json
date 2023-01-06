@@ -2,7 +2,8 @@
 	"key": "residential-certificate",
 	"config": {
 		"defaultStyle": {
-			"font": "Meera"
+			"font": "Meera",
+			"padding-top":10
 		},
 		"content": [{
 				"style": "ws-head",
@@ -133,7 +134,7 @@
 			"top-margin": {
 				"color": "#000000",
 				"bold": true,
-				"fontSize": 9,
+				"fontSize": 14,
 				"fontWeight": 400,
 				"alignment": "center",
        				 "margin": [
