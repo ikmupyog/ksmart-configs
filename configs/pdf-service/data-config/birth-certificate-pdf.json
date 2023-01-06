@@ -14,18 +14,25 @@
             "direct": [
               {
                 "variable": "logokerala",
-                "url":"https://ulb-logos.s3.ap-south-1.amazonaws.com/pathanamthitta/adoor.jpg",
+                "url":"https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
                 "type":"image"
               },
               {
                 "variable": "logobirth",
-                "url":"https://ulb-logos.s3.ap-south-1.amazonaws.com/pathanamthitta/adoor.jpg",
+                "url": "https://ulb-logos.s3.ap-south-1.amazonaws.com/birth_death_logo.jpg",
                 "type":"image"
               },
               {
                 "variable": "name",
                 "value": {
                   "path": "$.fullName"
+                },
+                "type":"setEmpty"
+              },
+              {
+                "variable": "nameMl",
+                "value": {
+                  "path": "$.fullNameMl"
                 },
                 "type":"setEmpty"
               },
@@ -52,21 +59,14 @@
               {
                 "variable": "registrationNo",
                 "value": {
-                  "path": "$.registrationNo"
+                  "path": "$.registrationno"
                 },
                 "type":"setEmpty"
               },
               {
-                "variable": "tenantId",
+                "variable": "registrationDate",
                 "value": {
-                  "path": "$.tenantId"
-                },
-                "type":"setEmpty"
-              },
-              {
-                "variable": "registration_date",
-                "value": {
-                  "path": "$.dateOfReport"
+                  "path": "$.registration_date"
                 },
                 "type": "date"
               },
@@ -80,28 +80,56 @@
               {
                 "variable": "fatherName",
                 "value": {
-                  "path": "$.birthFatherInfo.fullName"
+                  "path": "$.registerBirthFather.fullName"
+                },
+                "type":"setEmpty"
+              },
+              {
+                "variable": "fatherNameMl",
+                "value": {
+                  "path": "$.registerBirthFather.fullNameMl"
                 },
                 "type":"setEmpty"
               },
               {
                 "variable": "motherName",
                 "value": {
-                  "path": "$.birthMotherInfo.fullName"
+                  "path": "$.registerBirthMother.fullName"
                 },
                 "type":"setEmpty"
               },
               {
-                "variable": "childAddress",
+                "variable": "motherNameMl",
                 "value": {
-                  "path": "$.birthPresentaddr.fullAddress"
+                  "path": "$.registerBirthMother.fullNameMl"
+                },
+                "type":"setEmpty"
+              },
+              {
+                "variable": "presentAddress",
+                "value": {
+                  "path": "$.registerBirthPresent.fullAddress"
+                },
+                "type":"setEmpty"
+              },
+              {
+                "variable": "presentAddressMl",
+                "value": {
+                  "path": "$.registerBirthPresent.fullAddressMl"
                 },
                 "type":"setEmpty"
               },
               {
                 "variable": "parentsAddress",
                 "value": {
-                  "path": "$.birthPermaddr.fullAddress"
+                  "path": "$.registerBirthPermanent.fullAddress"
+                },
+                "type":"setEmpty"
+              },
+              {
+                "variable": "registerBirthPermanent",
+                "value": {
+                  "path": "$.birthPermaddr.fullAddressMl"
                 },
                 "type":"setEmpty"
               },
@@ -141,13 +169,7 @@
                 "type": "date",
                 "format": "YYYY"
               },
-              {
-                "variable": "fatherUid",
-                "value": {
-                  "path": "$.birthFatherInfo.aadharNo"
-                },
-                "type":"setEmpty"
-              },
+
               {
                 "variable": "parentsState",
                 "value": {
@@ -155,13 +177,7 @@
                 },
                 "type":"setEmpty"
               },
-              {
-                "variable": "motherUid",
-                "value": {
-                  "path": "$.birthMotherInfo.aadharNo"
-                },
-                "type":"setEmpty"
-              },
+
               {
                 "variable": "remarks",
                 "value": {
@@ -172,7 +188,7 @@
               {
                 "variable": "placeOfBirth",
                 "value": {
-                  "path": "$.placeofbirth"
+                  "path": "$.hospitalid"
                 },
                 "type":"setEmpty"
               },
@@ -180,6 +196,21 @@
                 "variable": "issueDate",
                 "value": {
                   "path": "$.dateofissue"
+                },
+                "type": "date"
+              },
+
+              {
+                "variable": "esignOfficer",
+                "value": {
+                  "path": "$.esign_user_code"
+                },
+                "type": "date"
+              },
+              {
+                "variable": "esignOfficerDesign",
+                "value": {
+                  "path": "$.esign_user_desig_code"
                 },
                 "type": "date"
               },
@@ -194,12 +225,11 @@
               {
                 "variable": "tenant",
                 "value": {
-                  "path": "$.tenantId"
+                  "path": "$.tenantid"
                 },
                 "type": "setEmpty",
                 "localisation":{
                   "required":true,
-                  "prefix": null,
                   "module":"rainmaker-common",
                   "locale":"en_IN"
                 }
@@ -208,12 +238,12 @@
               {
                 "variable": "tenantMl",
                 "value": {
-                  "path": "$.tenantId"
+                  "path": "$.tenantid"
                 },
                 "type": "setEmpty",
                 "localisation":{
                   "required":true,
-                  "prefix": null,
+                  "prefix": "TENANTS_TENANT_",
                   "module":"rainmaker-common",
                   "locale":"ml_IN"
                 }
@@ -235,7 +265,7 @@
               {
                 "variable": "childNameMl",
                 "value": {
-                  "path": "PDF_BIRTH_CHILD_NAME"
+                  "path": "PDF_BIRTH_CHILD_NAME_ML"
                 },
                 "type": "label",
                 "localisation":{
@@ -259,6 +289,19 @@
                 }
               },
               {
+                "variable": "childSexMl",
+                "value": {
+                  "path": "PDF_BIRTH_CHILD_SEX_ML"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-pdf",
+                  "locale":"ml_IN"
+                }
+              },
+              {
                 "variable": "dateOfBirth",
                 "value": {
                   "path": "PDF_BIRTH_DATE_OF_BIRTH"
@@ -272,7 +315,20 @@
                 }
               },
               {
-                "variable": "placeOfBirth",
+                "variable": "dateOfBirthMl",
+                "value": {
+                  "path": "PDF_BIRTH_DATE_OF_BIRTH_ML"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-pdf",
+                  "locale":"ml_IN"
+                }
+              },
+              {
+                "variable": "placeOfBirthLabel",
                 "value": {
                   "path": "PDF_BIRTH_PLACE_OF_BIRTH"
                 },
@@ -282,6 +338,19 @@
                   "prefix": null,
                   "module":"rainmaker-pdf",
                   "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "placeOfBirthLabelMl",
+                "value": {
+                  "path": "PDF_BIRTH_PLACE_OF_BIRTH_ML"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-pdf",
+                  "locale":"ml_IN"
                 }
               },
               {
@@ -298,6 +367,19 @@
                 }
               },
               {
+                "variable": "nameOfMotherMl",
+                "value": {
+                  "path": "PDF_BIRTH_NAME_OF_MOTHER_ML"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-pdf",
+                  "locale":"ml_IN"
+                }
+              },
+              {
                 "variable": "nameOfFather",
                 "value": {
                   "path": "PDF_BIRTH_NAME_OF_FATHER"
@@ -309,9 +391,22 @@
                   "module":"rainmaker-pdf",
                   "locale":"en_IN"
                 }
-                },
+              },
               {
-                "variable": "presentAddress",
+                "variable": "nameOfFatherMl",
+                "value": {
+                  "path": "PDF_BIRTH_NAME_OF_FATHER_ML"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-pdf",
+                  "locale":"ml_IN"
+                }
+              },
+              {
+                "variable": "presentAddressLabel",
                 "value": {
                   "path": "PDF_BIRTH_PRESENT_ADDRESS"
                 },
@@ -324,7 +419,20 @@
                 }
               },
               {
-                "variable": "permanentAddress",
+                "variable": "presentAddressLabelMl",
+                "value": {
+                  "path": "PDF_BIRTH_PRESENT_ADDRESS_ML"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-pdf",
+                  "locale":"ml_IN"
+                }
+              },
+              {
+                "variable": "permanentAddressLabel",
                 "value": {
                   "path": "PDF_BIRTH_PERMANENT_ADDRESS"
                 },
@@ -334,6 +442,19 @@
                   "prefix": null,
                   "module":"rainmaker-pdf",
                   "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "permanentAddressLabelMl",
+                "value": {
+                  "path": "PDF_BIRTH_PERMANENT_ADDRESS_ML"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-pdf",
+                  "locale":"ml_IN"
                 }
               },
               {
@@ -352,7 +473,7 @@
               {
                 "variable": "registrationNoLabelMl",
                 "value": {
-                  "path": "PDF_BIRTH_REGISTRATION_NUMBER"
+                  "path": "PDF_BIRTH_REGISTRATION_NUMBER_ML"
                 },
                 "type": "label",
                 "localisation":{
@@ -378,7 +499,7 @@
               {
                 "variable": "registrationDateLabelMl",
                 "value": {
-                  "path": "PDF_BIRTH_DATE_OF_REGISTRATION"
+                  "path": "PDF_BIRTH_DATE_OF_REGISTRATION_ML"
                 },
                 "type": "label",
                 "localisation":{
@@ -389,7 +510,7 @@
                 }
               },
               {
-                "variable": "remarks",
+                "variable": "remarksLabel",
                 "value": {
                   "path": "PDF_BIRTH_REMARKS"
                 },
@@ -402,9 +523,35 @@
                 }
               },
               {
+                "variable": "remarksLabelMl",
+                "value": {
+                  "path": "PDF_BIRTH_REMARKS_ML"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-pdf",
+                  "locale":"ml_IN"
+                }
+              },
+              {
                 "variable": "dateOfIssue",
                 "value": {
                   "path": "PDF_BIRTH_DATE_OF_ISSUE"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-pdf",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "dateOfIssueMl",
+                "value": {
+                  "path": "PDF_BIRTH_DATE_OF_ISSUE_ML"
                 },
                 "type": "label",
                 "localisation":{
@@ -428,6 +575,19 @@
                 }
               },
               {
+                "variable": "addressOfIssuingAuthorityMl",
+                "value": {
+                  "path": "PDF_BIRTH_ADDRESS_OF_THE_ISSUING_AUTHORITY_ML"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-pdf",
+                  "locale":"Ml_IN"
+                }
+              },
+              {
                 "variable": "ensureRegistration",
                 "value": {
                   "path": "PDF_BIRTH_ENSURE_REGISTRATION_OF_EVERY_BIRTH_AND_DEATH"
@@ -443,7 +603,7 @@
               {
                 "variable": "ensureRegistrationMl",
                 "value": {
-                  "path": "PDF_BIRTH_ENSURE_REGISTRATION_OF_EVERY_BIRTH_AND_DEATH"
+                  "path": "PDF_BIRTH_ENSURE_REGISTRATION_OF_EVERY_BIRTH_AND_DEATH_ML"
                 },
                 "type": "label",
                 "localisation":{
@@ -469,7 +629,7 @@
               {
                 "variable": "govtOfKeralaMl",
                 "value": {
-                  "path": "PDF_BIRTH_GOVERNMENT_OF_KERALA"
+                  "path": "PDF_BIRTH_GOVERNMENT_OF_KERALA_ML"
                 },
                 "type": "label",
                 "localisation":{
@@ -495,7 +655,7 @@
               {
                 "variable": "deptUrbanAffairsMl",
                 "value": {
-                  "path": "PDF_BIRTH_DEPARTMENT_OF_URBAN_AFFAIRS"
+                  "path": "PDF_BIRTH_DEPARTMENT_OF_URBAN_AFFAIRS_ML"
                 },
                 "type": "label",
                 "localisation":{
@@ -521,7 +681,7 @@
               {
                 "variable": "certifyMl",
                 "value": {
-                  "path": "PDF_BIRTH_THIS_IS_TO_CERTIFY_THAT"
+                  "path": "PDF_BIRTH_THIS_IS_TO_CERTIFY_THAT_ML"
                 },
                 "type": "label",
                 "localisation":{
@@ -573,7 +733,7 @@
               {
                 "variable": "issueUnderSection121969ML",
                 "value": {
-                  "path": "PDF_BIRTH_ISSUED_UNDER_SECTION_12_1969"
+                  "path": "PDF_BIRTH_ISSUED_UNDER_SECTION_12_1969_ML"
                 },
                 "type": "label",
                 "localisation":{
@@ -599,7 +759,7 @@
               {
                 "variable": "birthCertificateMl",
                 "value": {
-                  "path": "PDF_BIRTH_BIRTH_CERTIFICATE"
+                  "path": "PDF_BIRTH_BIRTH_CERTIFICATE_ML"
                 },
                 "type": "label",
                 "localisation":{
@@ -625,7 +785,7 @@
               {
                 "variable": "nameOfLbMl",
                 "value": {
-                  "path": "PDF_BIRTH_NAME_OF_LOCAL_GOVERNMENT_ISSUING_CERTIFICATE"
+                  "path": "PDF_BIRTH_NAME_OF_LOCAL_GOVERNMENT_ISSUING_CERTIFICATE_ML"
                 },
                 "type": "label",
                 "localisation":{
