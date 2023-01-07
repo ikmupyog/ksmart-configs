@@ -16,7 +16,7 @@
                     "body": [
                         [{
                                 "border": [false, false, false, false],
-                                "fillColor": '#5bc0de'
+                                "fillColor": "#5bc0de"
                                 
                             }]
                     ]
