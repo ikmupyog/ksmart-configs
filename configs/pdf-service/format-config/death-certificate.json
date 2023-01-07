@@ -288,7 +288,7 @@
                 {
                   "columns": [
                     {
-                      "text": ["This is to certify that the following information has been taken from the original death record which is registered in the death register of Local Registrar, Births & Deaths,  {{parentsCity}}, Block/ Police Station-  {{parentsStreet}} Tehsil- {{parentsTehsil}}  District -  {{parentsDistrict}} of  {{parentsState}} State of the Year – {{year}}"],
+                      "text": ["This is to certify that the following information has been taken from the original record of death which is the register for (local area/localbody) {{localBodyName}} of Taluk {{talukcode}} of District {{distcode}} of State Kerala."],
                       "style": "rule-body_multiLang"
                     }
                   ]
