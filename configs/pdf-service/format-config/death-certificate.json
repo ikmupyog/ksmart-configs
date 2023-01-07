@@ -138,10 +138,23 @@
             "widths": ["*"],
             "body": [
               [
-                {
-                  "text": "Name of Local Body issuing Certificate : {{localBodyName}}",
-                  "style": "rule-header"
-                }
+		{
+		"columns": [
+                    {
+                      "text": "Name of Local Body issuing Certificate ",
+                      "width": "49%",
+                      "style": "rule-header"
+                    },
+                    {
+                      "text": ": ",
+                      "width": "1%"
+                    },
+                    {
+                      "text": "{{localBodyName}}",
+                      "style": "rule-header"
+                    }
+                  ]
+		}
               ]
             ]
           },
