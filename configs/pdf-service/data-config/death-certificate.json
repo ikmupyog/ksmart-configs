@@ -253,6 +253,20 @@
 			  "module":"rainmaker-pdf",
 			  "locale":"en_IN"
 			}
+		  },
+		      
+		   {
+			"variable": "certifyAuthorityDetailsMl",
+			"value": {
+			  "path": "PDF_BIRTH_THIS_IS_TO_CERTIFY_THAT"
+			},
+			"type": "label",
+			"localisation":{
+			  "required":true,
+			  "prefix": null,
+			  "module":"rainmaker-pdf",
+			  "locale":"ml_IN"
+			}
 		  },  
 		      
                 {
