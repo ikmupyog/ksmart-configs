@@ -8,7 +8,23 @@
 		},
 		 	
 		"content": [
-			
+			{
+				"style": "img-head",
+				"table": {
+					"widths": [
+						"100%"
+					],
+					"body": [
+						[{
+							"stack": [{
+								 
+								"background":"https://ulb-logos.s3.ap-south-1.amazonaws.com/ernakulam/cochin.jpg"
+							}]
+						}]
+					]
+				},
+				"layout": "noBorders"
+			},
 			
 				
 				
@@ -499,14 +515,17 @@
 				]
 			},
 			 "noc-head": {
-				 
-      "margin": [
-        0,
-        40,
-        0,
-        1
-      ]
-    },
+
+				      "margin": [
+					0,
+					40,
+					0,
+					1
+				      ]
+				    },
+			"img-head":{
+				"width":"100%"
+			},
 			"pdf-head-qr-code": {
 				"fillColor": "#F2F2F2",
 				"margin": [
