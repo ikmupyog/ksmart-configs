@@ -18,8 +18,8 @@
 					"body": [
 						[{
 							"stack": [{
-								"image": "{{logokerala}}",
-								"border": [false, false, false, false],
+								"image": "{{logokerala}}"
+								
 								 
 								 
 							}]
