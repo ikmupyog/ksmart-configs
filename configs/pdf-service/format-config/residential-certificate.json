@@ -12,7 +12,7 @@
 				 {
                 "style":"background",
                 "table": {
-                    "widths":'*',
+                    "widths":"*",
                     "body": [
                         [{
                                 "border": [false, false, false, false],
