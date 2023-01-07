@@ -9,19 +9,25 @@
 		
 		"content": [
 			 
-				 {
-                "style":"header",
-                "table": {
-                    "widths":"*",
-                    "body": [
-                        [{
-                                "border": [false, false, false, false],
-                                "fillColor": "#5bc0de"
-                                
-                            }]
-                    ]
-                }
-            },
+		{
+				"style": "ws-head",
+				"table": {
+					"widths": [
+						"*"
+					],
+					"body": [
+						[{
+							"stack": [{
+								"image": "{{logokerala}}",
+								"border": [false, false, false, false],
+								 
+								 
+							}]
+						}]
+					]
+				},
+				"layout": "noBorders"
+			},
 				
 			      
 			{
