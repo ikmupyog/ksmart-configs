@@ -134,8 +134,7 @@
                     {
                       "text": "{{localBodyName}}",
                       "style": "details-body"
-                    }
-                }
+                    }                
               ]
             ]
           },
@@ -160,9 +159,7 @@
                     {
                       "text": "{{localBodyName}}",
                       "style": "details-body"
-                    }
-                }
-                }
+                    }                
               ]
             ]
           },
