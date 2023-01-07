@@ -9,7 +9,21 @@
 		 	
 		"content": [
 			
-			
+			{
+				"style": "ws-head",
+				"table": {
+					"widths": [
+						"*"
+					],
+					"body": [
+						[{
+							 "border": [false, false, false, false],
+                                			"fillColor": '#5bc0de'
+						}]
+					]
+				},
+				"layout": "noBorders"
+			},
 				
 				
 			      
