@@ -11,7 +11,7 @@
 			
 			
 				
-				"background-image":"{{logokerala}}"
+				
 			      
 			{
 				"style": "noc-head",
@@ -126,7 +126,7 @@
 				"layout": "noBorders"
 			}
 			
-			
+			"background-image":"{{logokerala}}"
 			
 
 		],
