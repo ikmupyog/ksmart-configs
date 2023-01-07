@@ -122,10 +122,23 @@
             "widths": ["*"],
             "body": [
               [
-                {
-                  "text": "സർട്ടിഫിക്കറ്റ് നൽകുന്ന തദ്ദേശസ്വയംഭരണ സ്ഥാപനത്തിന്റെ പേര് : {{localBodyName}}",
-                  "style": "rule-header"
-                }
+		{
+		"columns": [
+                    {
+                      "text": "സർട്ടിഫിക്കറ്റ് നൽകുന്ന തദ്ദേശസ്വയംഭരണ സ്ഥാപനത്തിന്റെ പേര് ",
+                      "width": "49%",
+                      "style": "rule-header"
+                    },
+                    {
+                      "text": " ",
+                      "width": "1%"
+                    },
+                    {
+                      "text": "{{localBodyName}}",
+                      "style": "rule-header"
+                    }
+                  ]
+		}                
               ]
             ]
           },
