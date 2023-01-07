@@ -84,7 +84,7 @@ serviceMaps:
 
           - jsonPath: $.Licenses.*.tradeLicenseDetail.ownersPde.*.tenantId
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.ownersPde.*.userActive
+          - jsonPath: $.Licenses.*.tradeLicenseDetail.ownersPde.*.active
 
           - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.ownersPde[*].id)].tradeLicenseDetail.id
 
