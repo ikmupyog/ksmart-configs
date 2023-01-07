@@ -8,7 +8,7 @@
 		},
 		 
 		"content": [
-		"background-image":"{{logokerala}}"
+		"background-image":"{{logokerala}}",
 			{
 				"style": "noc-head",
 				"table": {
