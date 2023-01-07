@@ -134,7 +134,7 @@
                       "width": "1%"
                     },
                     {
-                      "text": "{{localBodyName}}",
+                      "text": "{{localBodyNameMl}}",
                       "style": "rule-header"
                     }
                   ]
