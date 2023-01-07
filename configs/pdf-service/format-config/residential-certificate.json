@@ -3,12 +3,12 @@
 	"config": {
 		"defaultStyle": {
 			"font": "Meera",
-			"padding-top":10,
-			"background-image":"{{logokerala}}"
+			"padding-top":10
+			
 		},
 		 
 		"content": [
-		
+		"background-image":"{{logokerala}}"
 			{
 				"style": "noc-head",
 				"table": {
