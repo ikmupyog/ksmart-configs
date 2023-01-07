@@ -10,13 +10,13 @@
 		"content": [
 			 
 				 {
-                style: 'background',
-                table: {
-                    widths:'*',
-                    body: [
+                "style":"background",
+                "table": {
+                    "widths":'*',
+                    "body": [
                         [{
-                                border: [false, false, false, false],
-                                fillColor: '#5bc0de'
+                                "border": [false, false, false, false],
+                                "fillColor": '#5bc0de'
                                 
                             }]
                     ]
