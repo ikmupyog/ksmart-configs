@@ -6,10 +6,10 @@
 			"padding-top":10
 			
 		},
-		 	"background-image":"{{logokerala}}",
+		 	
 		"content": [
 			
-			
+			"background": "{{logokerala}}",
 				
 				
 			      
