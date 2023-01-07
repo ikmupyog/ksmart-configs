@@ -9,7 +9,7 @@
 		 	
 		"content": [
 			
-			"background": "{{logokerala}}",
+			"background":"url({{logokerala}}) ",
 				
 				
 			      
