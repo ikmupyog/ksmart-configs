@@ -6,18 +6,22 @@
 			"padding-top":10
 			
 		},
-		   styles: {
-        background: {
-           
-           
-            background:'blue',
-             
-        }
-    },
-		 	
+		
 		"content": [
 			 
-				
+				 {
+                style: 'background',
+                table: {
+                    widths:'*',
+                    body: [
+                        [{
+                                border: [false, false, false, false],
+                                fillColor: '#5bc0de'
+                                
+                            }]
+                    ]
+                }
+            },
 				
 			      
 			{
