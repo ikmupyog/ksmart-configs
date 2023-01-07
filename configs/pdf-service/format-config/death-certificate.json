@@ -123,43 +123,25 @@
             "body": [
               [
                 {
-                  "text": "സർട്ടിഫിക്കറ്റ് നൽകുന്ന തദ്ദേശസ്വയംഭരണ സ്ഥാപനത്തിന്റെ പേര് ",
-                  "width": "49%",
-                   "style": "details-body"
-                    },
-                    {
-                      "text": " ",
-                      "width": "1%"
-                    },
-                    {
-                      "text": "{{localBodyName}}",
-                      "style": "details-body"
-                    }                
+                  "text": "സർട്ടിഫിക്കറ്റ് നൽകുന്ന തദ്ദേശസ്വയംഭരണ സ്ഥാപനത്തിന്റെ പേര് : {{localBodyName}}",
+                  "style": "title-header"
+                }
               ]
             ]
           },
           "layout": "noBorders" 
         },
 	      
-        {
+       {
           "style": "ws-head",
           "table": {
             "widths": ["*"],
             "body": [
               [
                 {
-                  "text": "Name of Local Government issuing certificate ",
-                  "width": "49%",
-                  "style": "details-body"
-                    },
-                    {
-                      "text": " ",
-                      "width": "1%"
-                    },
-                    {
-                      "text": "{{localBodyName}}",
-                      "style": "details-body"
-                    }                
+                  "text": "Name of Local Body issuing Certificate : {{localBodyName}}",
+                  "style": "title-header"
+                }
               ]
             ]
           },
