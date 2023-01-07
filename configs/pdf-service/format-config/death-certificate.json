@@ -64,7 +64,7 @@
 		   },
 		  {
 			"text": "{{rule8}}",
-			"style": "details-body"
+			"style": "main-body-style"
 		  },
 			  
 		   
@@ -556,6 +556,11 @@
           "fontWeight": 400,
           "alignment": "center"
         },
+	"main-body-style": {
+        "color": "#000000",
+        "fontSize": 8,
+        "alignment": "center"
+         },
         "appendix-header-emblem": {
           "color": "#000000",
           "alignment": "center",
