@@ -259,6 +259,26 @@
           },
           "layout": "noBorders"
         },
+	{
+          "style": "ws-head",
+          "table": {
+            "widths": ["*"],
+            "body": [
+              [
+                {
+                  "columns": [
+                    {
+                      "text": ["താഴെ പറയുന്ന വിവരങ്ങൾ കേരള സംസ്‌ഥാനത്തിലെ {{distcodeml}}  ജില്ലയിലെ {{talukcodeml}}  താലൂക്കിലെ {{localBodyNameMl}} -ലെ ( തദേശസ്ഥാപനം) അസ്സൽ മരണ രജിസ്റ്ററിൽ നിന്ന് എടുത്തിട്ടുള്ളവയാണെന്ന് സാക്ഷ്യപ്പെടുത്തുന്നു."],
+                      "style": "rule-body_multiLang"
+                    }
+                  ]
+                }
+              ] 
+            ]
+          },
+          "layout": "noBorders"
+        },
+	      
         {
           "style": "ws-head",
           "table": {
