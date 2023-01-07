@@ -60,7 +60,7 @@
 		  
 		   {
 			"text": "{{form6}}",
-			"style": "appendix-header-body"
+			 "style": "appendix-header-italic"
 		   },
 		  {
 			"text": "{{rule8}}",
@@ -561,6 +561,13 @@
         "fontSize": 8,
         "alignment": "center"
          },
+	"appendix-header-italic": {
+        "color": "#000000",
+        "fontSize": 9,
+        "fontWeight": 400,
+        "alignment": "center"
+         },
+	      
         "appendix-header-emblem": {
           "color": "#000000",
           "alignment": "center",
