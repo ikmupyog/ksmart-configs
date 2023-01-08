@@ -31,6 +31,13 @@
                   "type":"setEmpty"
                 },
 		{
+                  "variable": "localBodyNameMl", 
+                  "value": {
+                    "path": "$.localBodyNameMl"
+                  },
+                  "type":"setEmpty"
+                },
+		{
 		  "variable": "tenant",
 		  "value": {
 			"path": "$.tenantId"
@@ -246,8 +253,7 @@
 			  "module":"rainmaker-pdf",
 			  "locale":"en_IN"
 			}
-		  },  
-		      
+		  }, 
                 {
                   "variable": "parentsCity", 
                   "value": {

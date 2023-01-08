@@ -122,10 +122,23 @@
             "widths": ["*"],
             "body": [
               [
-                {
-                  "text": "സർട്ടിഫിക്കറ്റ് നൽകുന്ന തദ്ദേശസ്വയംഭരണ സ്ഥാപനത്തിന്റെ പേര് : {{localBodyName}}",
-                  "style": "rule-header"
-                }
+		{
+		"columns": [
+                    {
+                      "text": "സർട്ടിഫിക്കറ്റ് നൽകുന്ന തദ്ദേശസ്വയംഭരണ സ്ഥാപനത്തിന്റെ പേര് ",
+                      "width": "49%",
+                      "style": "rule-header"
+                    },
+                    {
+                      "text": " ",
+                      "width": "1%"
+                    },
+                    {
+                      "text": "{{localBodyNameMl}}",
+                      "style": "rule-header"
+                    }
+                  ]
+		}                
               ]
             ]
           },
@@ -141,7 +154,7 @@
 		{
 		"columns": [
                     {
-                      "text": "Name of Local Body issuing Certificate ",
+                      "text": "Name of Local Government issuing certificate ",
                       "width": "49%",
                       "style": "rule-header"
                     },
@@ -246,6 +259,26 @@
           },
           "layout": "noBorders"
         },
+	{
+          "style": "ws-head",
+          "table": {
+            "widths": ["*"],
+            "body": [
+              [
+                {
+                  "columns": [
+                    {
+                      "text": ["താഴെ പറയുന്ന വിവരങ്ങൾ കേരള സംസ്‌ഥാനത്തിലെ {{distcodeml}}  ജില്ലയിലെ {{talukcodeml}}  താലൂക്കിലെ {{localBodyNameMl}} -ലെ ( തദേശസ്ഥാപനം) അസ്സൽ മരണ രജിസ്റ്ററിൽ നിന്ന് എടുത്തിട്ടുള്ളവയാണെന്ന് സാക്ഷ്യപ്പെടുത്തുന്നു."],
+                      "style": "rule-body_multiLang"
+                    }
+                  ]
+                }
+              ] 
+            ]
+          },
+          "layout": "noBorders"
+        },
+	      
         {
           "style": "ws-head",
           "table": {
@@ -255,7 +288,7 @@
                 {
                   "columns": [
                     {
-                      "text": ["This is to certify that the following information has been taken from the original death record which is registered in the death register of Local Registrar, Births & Deaths,  {{parentsCity}}, Block/ Police Station-  {{parentsStreet}} Tehsil- {{parentsTehsil}}  District -  {{parentsDistrict}} of  {{parentsState}} State of the Year – {{year}}"],
+                      "text": ["This is to certify that the following information has been taken from the original record of death which is the register for (local area/localbody) {{localBodyName}} of Taluk {{talukcode}} of District {{distcode}} of State Kerala."],
                       "style": "rule-body_multiLang"
                     }
                   ]
