@@ -80,14 +80,14 @@
               {
                 "variable": "fatherName",
                 "value": {
-                  "path": "$.registerBirthFather.fullName"
+                  "path": "$.registerBirthFather.father_fullname"
                 },
                 "type":"setEmpty"
               },
               {
                 "variable": "fatherNameMl",
                 "value": {
-                  "path": "$.registerBirthFather.fullNameMl"
+                  "path": "$.registerBirthFather.father_fullname_ml"
                 },
                 "type":"setEmpty"
               },
