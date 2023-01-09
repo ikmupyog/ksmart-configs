@@ -66,7 +66,7 @@
               {
                 "variable": "registrationDate",
                 "value": {
-                  "path": "$.registration_date"
+                  "path": "$.registration_date_str"
                 },
                 "type": "date"
               },
@@ -108,28 +108,28 @@
               {
                 "variable": "presentAddress",
                 "value": {
-                  "path": "$.registerBirthPresent.fullAddress"
+                  "path": "$.registerBirthPresent.presentAddress"
                 },
                 "type":"setEmpty"
               },
               {
                 "variable": "presentAddressMl",
                 "value": {
-                  "path": "$.registerBirthPresent.fullAddressMl"
-                },
-                "type":"setEmpty"
-              },
-              {
-                "variable": "parentsAddress",
-                "value": {
-                  "path": "$.registerBirthPermanent.fullAddress"
+                  "path": "$.registerBirthPresent.presentAddressMl"
                 },
                 "type":"setEmpty"
               },
               {
                 "variable": "registerBirthPermanent",
                 "value": {
-                  "path": "$.birthPermaddr.fullAddressMl"
+                  "path": "$.registerBirthPermanent.permanentAddressMl"
+                },
+                "type":"setEmpty"
+              },
+              {
+                "variable": "registerBirthPermanentMl",
+                "value": {
+                  "path": "$.registerBirthPermanent.permanentAddressMl"
                 },
                 "type":"setEmpty"
               },
