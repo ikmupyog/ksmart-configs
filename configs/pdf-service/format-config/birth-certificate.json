@@ -433,7 +433,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{registrationDateLabel}} {{registrationNo}}",
+                    "text": "{{registrationDateLabel}} {{registrationDate}}",
                     "style": "details-body"
                   }
                 ]
