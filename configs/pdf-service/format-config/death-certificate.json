@@ -550,8 +550,9 @@
                 {
                   "columns": [
                     {
-                      "text": "നൽകുന്ന അധികാരിയുടെ മേൽവിലാസം/Address of the issuing authority ",
-                      "width": "49%"
+                      "text": "നൽകുന്ന അധികാരിയുടെ മേൽവിലാസം/ Address of the issuing authority ",
+                      "width": "49%",
+		       "style": "details-body"
                     },
                     {
                       "text": ": ",
