@@ -45,7 +45,7 @@
               {
                 "variable": "dob",
                 "value": {
-                  "path": "$.dateOfBirth"
+                  "path": "$.dateofbirthstr"
                 },
                 "type": "date"
               },
@@ -181,7 +181,14 @@
               {
                 "variable": "remarks",
                 "value": {
-                  "path": "$.remarksEn"
+                  "path": "$.remarks_en"
+                },
+                "type":"setEmpty"
+              },
+              {
+                "variable": "remarksMl",
+                "value": {
+                  "path": "$.remarks_ml"
                 },
                 "type":"setEmpty"
               },
