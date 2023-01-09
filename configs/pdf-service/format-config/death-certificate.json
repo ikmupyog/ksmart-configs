@@ -15,6 +15,11 @@
       "content": [
         
 	{
+		{
+			"image": "{{logokerala}}",
+			"absolutePosition": {"x": 100, "y": 50}
+      		},
+	      
 		"style": "ws-head",
 		"table": {
 		  "widths": [
@@ -541,11 +546,6 @@
                     {
                       "text": " ",
                       "width": "1%"
-                    },
-                    {
-                      "text": "Signature of the issuing authority :",
-                      "style": "details-body",
-                      "margin": [0, -15, 0, 0]
                     }
                   ]
                 }
@@ -562,7 +562,7 @@
                       "width": "1%"
                     },
                     {
-                      "text": "Address of the issuing authority",
+                      "text": "നൽകുന്ന അധികാരിയുടെ മേൽവിലാസം/Address of the issuing authority : Registrar of Births and Deaths, {{localBodyName}}",
                       "style": "details-body",
                       "margin": [0, -5, 0, 0]
                     }
