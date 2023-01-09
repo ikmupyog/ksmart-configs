@@ -2,70 +2,186 @@
     "key": "death-certificate",
     "config": {
       "defaultStyle": {
-        "font": "Cambay"
+        "font": "Meera"
       },
+      "watermark": {
+      
+      "color": "gery",
+      "opacity": 0.1,
+      "image": "{{logokerala}}"
+    },
+   
+	    
       "content": [
         
+	{
+		"style": "ws-head",
+		"table": {
+		  "widths": [
+		    "20%",
+		    "60%",
+		    "20%"
+		  ],
+		  "body": [
+		    [
+		      {
+			"stack": [
+			  {
+			    "text": "KeyNo : 1",
+			    "style": "appendix-header-serialNo"
+			  }
+			]
+		      }
+		    ]
+		  ]
+		},
+		"layout": "noBorders"
+	 },
+	      
         {
           "style": "ws-head",
           "table": {
             "widths": ["20%", "60%", "20%"],
             "body": [
               [
-                {
-                  "stack": [ 
-                    {
-                      "text": "No .1",
-                      "style": "appendix-header-serialNo"
-                    } 
-                  ]
-                },
+                
+		{
+                "stack": [
+                  {
+                    "image": "{{logokerala}}",
+                    "width": 70,
+                    "height": 70
+                  }
+                ]
+               },
+		
                 {
                   "stack": [
-					{
-                      "text": "കേരള സർക്കാർ",
-                      "style": "appendix-header-body"
-                    },
-                    {
-                      "text": "GOVERNMENT OF KERALA",
-                      "style": "appendix-header-body"
-                    },
+		  
+		   {
+			"text": "{{form6}}",
+			 "style": "appendix-header-italic"
+		   },
+		  {
+			"text": "{{rule8}}",
+			"style": "main-body-style"
+		  },
+			  
+		   
 		    {
                       "text": "{{governmentMl}}",
                       "style": "appendix-header-body"
+                      
                     },
                     {
                       "text": "{{governmentEn}}",
                       "style": "appendix-header-body"
                     },
-                    {
-                      "text": "DEPARTMENT OF HEALTH AND FAMILY WELFARE",
-                      "style": "appendix-header-body",
-                      "margin": [0, 0, 0, 0]
-                    } 
+                    
+		   {
+			"text": "{{deptUrbanAffairsMl}}",
+			"style": "appendix-header-body",
+			"margin": [
+			  0,
+			  0,
+			  0,
+			  0
+			]
+		  },
+		  {
+			"text": "{{deptUrbanAffairs}}",
+			"style": "appendix-header-body",
+			"margin": [
+			  0,
+			  0,
+			  0,
+			  0
+			]
+		  }
                   ]
                 },
-                {
-                  "stack": [ 
-                    {
-                      "text": "Form-5",
-                      "style": "appendix-header-formNo"
-                    } 
-                  ]
-                }
+		  {
+                "stack": [
+                  {
+                    "image": "{{logodeath}}",
+                    "width": 70,
+                    "height": 70
+                  }
+                ]
+              } 
+              
               ]
             ]
           },
           "layout": "noBorders"
         },
-        {
+	 
+	{
+          "style": "ws-head",
+          "table": {
+            "widths": ["*"],
+            "body": [
+              [
+		{
+		"columns": [
+                    {
+                      "text": "സർട്ടിഫിക്കറ്റ് നൽകുന്ന തദ്ദേശസ്വയംഭരണ സ്ഥാപനത്തിന്റെ പേര് ",
+                      "width": "49%",
+                      "style": "rule-header"
+                    },
+                    {
+                      "text": " ",
+                      "width": "1%"
+                    },
+                    {
+                      "text": "{{localBodyNameMl}}",
+                      "style": "rule-header"
+                    }
+                  ]
+		}                
+              ]
+            ]
+          },
+          "layout": "noBorders" 
+        },
+	      
+       {
+          "style": "ws-head",
+          "table": {
+            "widths": ["*"],
+            "body": [
+              [
+		{
+		"columns": [
+                    {
+                      "text": "Name of Local Government issuing certificate ",
+                      "width": "49%",
+                      "style": "rule-header"
+                    },
+                    {
+                      "text": " ",
+                      "width": "1%"
+                    },
+                    {
+                      "text": "{{localBodyName}}",
+                      "style": "rule-header"
+                    }
+                  ]
+		}
+              ]
+            ]
+          },
+          "layout": "noBorders" 
+        },
+	      
+	 {
           "style": "ws-head",
           "table": {
             "widths": ["*"],
             "body": [
               [
                 {
-                  "text": "Name of Local Body issuing Certificate : {{tenant}}",
+                  "text": "മരണ സർട്ടിഫിക്കറ്റ്",
                   "style": "title-header"
                 }
               ]
@@ -73,6 +189,7 @@
           },
           "layout": "noBorders" 
         },
+	      
         {
           "style": "ws-head",
           "table": {
@@ -81,15 +198,30 @@
               [
                 {
                   "text": "DEATH CERTIFICATE",
-                  "style": "title-header",
-                  "decoration": "underline"
+                  "style": "title-header"
                 }
               ]
             ]
           },
           "layout": "noBorders" 
         },
-		{
+	 {
+          "style": "ws-head",
+          "table": {
+            "widths": ["*"],
+            "body": [
+              [
+                {
+                  "text": "(Issued Under Section 12)",
+                  "style": "main-body-style"
+                }
+              ]
+            ]
+          },
+          "layout": "noBorders" 
+        },
+	      
+	{
           "style": "ws-head",
           "table": {
             "widths": ["*"],
@@ -127,6 +259,26 @@
           },
           "layout": "noBorders"
         },
+	{
+          "style": "ws-head",
+          "table": {
+            "widths": ["*"],
+            "body": [
+              [
+                {
+                  "columns": [
+                    {
+                      "text": ["താഴെ പറയുന്ന വിവരങ്ങൾ കേരള സംസ്‌ഥാനത്തിലെ {{distcodeml}}  ജില്ലയിലെ {{talukcodeml}}  താലൂക്കിലെ {{localBodyNameMl}} -ലെ ( തദേശസ്ഥാപനം) അസ്സൽ മരണ രജിസ്റ്ററിൽ നിന്ന് എടുത്തിട്ടുള്ളവയാണെന്ന് സാക്ഷ്യപ്പെടുത്തുന്നു."],
+                      "style": "rule-body_multiLang"
+                    }
+                  ]
+                }
+              ] 
+            ]
+          },
+          "layout": "noBorders"
+        },
+	      
         {
           "style": "ws-head",
           "table": {
@@ -136,7 +288,7 @@
                 {
                   "columns": [
                     {
-                      "text": ["This is to certify that the following information has been taken from the original death record which is registered in the death register of Local Registrar, Births & Deaths,  {{parentsCity}}, Block/ Police Station-  {{parentsStreet}} Tehsil- {{parentsTehsil}}  District -  {{parentsDistrict}} of  {{parentsState}} State of the Year – {{year}}"],
+                      "text": ["This is to certify that the following information has been taken from the original record of death which is the register for (local area/localbody) {{localBodyName}} of Taluk {{talukcode}} of District {{distcode}} of State Kerala."],
                       "style": "rule-body_multiLang"
                     }
                   ]
@@ -155,13 +307,17 @@
                 {
                   "columns": [
                     {
-                      "text": "പേര്/Name: {{name}}",
+                      "text": "പേര്/Name",
                       "width": "49%",
                       "style": "details-body"
                     },
                     {
-                      "text": " ",
+                      "text": ": ",
                       "width": "1%"
+                    },
+                    {
+                      "text": "{{name}}",
+                      "style": "details-body"
                     }
                   ]
                 }
@@ -171,13 +327,17 @@
                   "columns": [
                 
                     {
-                      "text": "ആൺ/പെൺ/Sex: {{gender}}",
+                      "text": "ആൺ/പെൺ/Sex",
                       "width": "49%",
                       "style": "details-body"
                     },
                     {
-                        "text": " ",
+                        "text": ": ",
                         "width": "1%"
+                    },
+                    {
+                      "text": "{{gender}}",
+                      "style": "details-body"
                     }
                   ]
                 }
@@ -186,13 +346,17 @@
                 {
                   "columns": [
                     {
-                      "text": "മരണ തീയതി/Date of Death: {{dod}}",
+                      "text": "മരണ തീയതി/Date of Death",
                       "width": "49%",
                       "style": "details-body"
                     },
                     {
-                      "text": " ",
+                      "text": ": ",
                       "width": "1%"
+                    },
+                    {
+                      "text": "{{dod}}",
+                      "style": "details-body"
                     }
                    
                   ]
@@ -203,13 +367,17 @@
                   "columns": [
                 
                     {
-                        "text": "മരണ സ്ഥലം/Place of Death: {{placeOfDeath}}",
+                        "text": "മരണ സ്ഥലം/Place of Death",
                         "width": "49%",
                         "style": "details-body"
                     },
                     {
-                        "text": " ",
+                        "text": ": ",
                         "width": "1%"
+                    },
+                    {
+                      "text": "{{placeOfDeath}}",
+                      "style": "details-body"
                     }
                   ]
                 }
@@ -218,13 +386,17 @@
                 {
                   "columns": [
                     {
-                      "text": "അമ്മയുടെ പേര്/Name of Mother: {{motherName}}",
+                      "text": "അമ്മയുടെ പേര്/Name of Mother",
                       "width": "49%",
                       "style": "details-body"
                     },
                     {
-                      "text": " ",
+                      "text": ": ",
                       "width": "1%"
+                    },
+                    {
+                      "text": "{{motherName}}",
+                      "style": "details-body"
                     }
                   ]
                 }
@@ -234,13 +406,17 @@
                   "columns": [              
                     
                     {
-                      "text": "പിതാവിന്റെ പേര്/ഭർത്താവിന്റെ പേര്/Name of Father/Husband: {{fatherorHusbandName}}",
+                      "text": "പിതാവിന്റെ പേര്/ഭർത്താവിന്റെ പേര്/Name of Father/Husband",
                       "width": "49%",
                       "style": "details-body"
                     },
                     {
-                        "text": " ",
+                        "text": ": ",
                         "width": "1%"
+                    },
+                    {
+                      "text": "{{fatherorHusbandName}}",
+                      "style": "details-body"
                     }
                   ]
                 }
@@ -250,13 +426,17 @@
                   "columns": [              
                     
                     {
-                      "text": "മരിച്ച വ്യക്തിയുടെ മരണ സമയത്തെ മേൽവിലാസം: {{deceasedPresentAddressml}}",
+                      "text": "മരിച്ച വ്യക്തിയുടെ മരണ സമയത്തെ മേൽവിലാസം",
                       "width": "49%",
                       "style": "details-body"
                     },
                     {
-                        "text": " ",
+                        "text": ": ",
                         "width": "1%"
+                    },
+                    {
+                      "text": "{{deceasedPresentAddressml}}",
+                      "style": "details-body"
                     }
                   ]
                 }
@@ -265,13 +445,17 @@
                 {
                   "columns": [
                     {
-                      "text": "Address Of the deceased at the time of death: {{deceasedPresentAddressen}}",
+                      "text": "Address Of the deceased at the time of death",
                       "width": "49%",
                       "style": "details-body"
                     },
                     {
-                      "text": " ",
+                      "text": ": ",
                       "width": "1%"
+                    },
+                    {
+                      "text": "{{deceasedPresentAddressen}}",
+                      "style": "details-body"
                     }
                   ]
                 }
@@ -281,8 +465,16 @@
                   "columns": [              
                     
                     {
-                      "text": "മരിച്ച വ്യക്തിയുടെ സ്ഥിരമായ  മേൽവിലാസം : {{deceasedPermanentAddressml}}",
-                      "width": "80%",
+                      "text": "മരിച്ച വ്യക്തിയുടെ സ്ഥിരമായ  മേൽവിലാസം ",
+                      "width": "49%",
+                      "style": "details-body"
+                    },
+                    {
+                      "text": ": ",
+                      "width": "1%"
+                    },
+                    {
+                      "text": "{{deceasedPermanentAddressml}}",
                       "style": "details-body"
                     }
                   ]
@@ -293,12 +485,12 @@
                   "columns": [            
                     
                     {
-                      "text": "Permanent address of the deceased : ",
+                      "text": "Permanent address of the deceased  ",
                       "width": "49%",
                       "style": "details-body"
                     },
                     {
-                      "text": " ",
+                      "text": ": ",
                       "width": "1%"
                     },
                     {
@@ -458,6 +650,18 @@
           "fontWeight": 400,
           "alignment": "center"
         },
+	"main-body-style": {
+        "color": "#000000",
+        "fontSize": 8,
+        "alignment": "center"
+         },
+	"appendix-header-italic": {
+        "color": "#000000",
+        "fontSize": 9,
+        "fontWeight": 400,
+        "alignment": "center"
+         },
+	      
         "appendix-header-emblem": {
           "color": "#000000",
           "alignment": "center",
