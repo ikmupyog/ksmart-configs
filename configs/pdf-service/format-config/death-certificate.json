@@ -550,17 +550,16 @@
                 {
                   "columns": [
                     {
-                      "text": " ",
+                      "text": "നൽകുന്ന അധികാരിയുടെ മേൽവിലാസം/Address of the issuing authority ",
                       "width": "49%"
                     },
                     {
-                      "text": " ",
+                      "text": ": ",
                       "width": "1%"
                     },
                     {
-                      "text": "നൽകുന്ന അധികാരിയുടെ മേൽവിലാസം/Address of the issuing authority : Registrar of Births and Deaths, {{localBodyName}}",
-                      "style": "details-body",
-                      "margin": [0, -5, 0, 0]
+                      "text": "Registrar of Births and Deaths, {{localBodyName}}",
+                      "style": "details-body"                      
                     }
                   ]
                 }
