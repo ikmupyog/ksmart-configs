@@ -14,11 +14,7 @@
 	    
       "content": [
         
-	{
-		{
-			"image": "{{logokerala}}",
-			"absolutePosition": {"x": 100, "y": 50}
-      		},
+		{	
 	      
 		"style": "ws-head",
 		"table": {
