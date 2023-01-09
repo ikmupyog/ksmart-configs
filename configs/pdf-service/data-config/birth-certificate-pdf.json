@@ -212,14 +212,14 @@
                 "value": {
                   "path": "$.esign_user_code"
                 },
-                "type": "date"
+                "type": "setEmpty"
               },
               {
                 "variable": "esignOfficerDesign",
                 "value": {
                   "path": "$.esign_user_desig_code"
                 },
-                "type": "date"
+                "type": "setEmpty"
               },
 
               {
