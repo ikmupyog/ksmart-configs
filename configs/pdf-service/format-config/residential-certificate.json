@@ -6,15 +6,7 @@
 			"padding-top":10
 			
 		},
-		"background": {
-          
-              "image": "{{logokerala}}",
-                "width": 200,
-              "opacity": 0.05,
-              "absolutePosition": { "x": "150", "y": "250" }
-    
-                      },
-		 	
+	 
 		"content": [
 			 
 				
