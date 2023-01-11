@@ -14,7 +14,8 @@
 	    
       "content": [
         
-	{
+		{	
+	      
 		"style": "ws-head",
 		"table": {
 		  "widths": [
@@ -541,11 +542,6 @@
                     {
                       "text": " ",
                       "width": "1%"
-                    },
-                    {
-                      "text": "Signature of the issuing authority :",
-                      "style": "details-body",
-                      "margin": [0, -15, 0, 0]
                     }
                   ]
                 }
@@ -554,17 +550,17 @@
                 {
                   "columns": [
                     {
-                      "text": " ",
-                      "width": "49%"
+                      "text": "നൽകുന്ന അധികാരിയുടെ മേൽവിലാസം/ Address of the issuing authority ",
+                      "width": "49%",
+		       "style": "details-body"
                     },
                     {
-                      "text": " ",
+                      "text": ": ",
                       "width": "1%"
                     },
                     {
-                      "text": "Address of the issuing authority",
-                      "style": "details-body",
-                      "margin": [0, -5, 0, 0]
+                      "text": "Registrar of Births and Deaths, {{localBodyName}}",
+                      "style": "details-body"                      
                     }
                   ]
                 }
@@ -598,7 +594,7 @@
             "body": [
               [  
                 {
-                  "text": "THIS IS A COMPUTER GENERATED CERTIFICATE.",
+                  "text": "Ensure Registration of Every birth and death",
                   "style": "footer"
                 }
               ]
@@ -606,14 +602,14 @@
           },
           "layout": "noBorders"
         },
-        {
+	{
           "style": "ws-head",
           "table": {
             "widths": ["*"],
             "body": [
               [  
                 {
-                  "text": "THE GOVT. OF INDIA VIDE CIRCULAR NO. 1/12/2014-VS(CRS) DATED 27-JULY-2015 HAS APPROVED THIS CERTIFICATE AS A VALID LEGAL DOCUMENT FOR ALL OFFICIAL PURPOSES.",
+                  "text": "ഓരോ ജനനവും മരണവും രജിസ്റ്റർ ചെയ്തുവെന്ന് ഉറപ്പുവരുത്തുക",
                   "style": "footer"
                 }
               ]
@@ -621,22 +617,67 @@
           },
           "layout": "noBorders"
         },
-        {
+	{
           "style": "ws-head",
           "table": {
             "widths": ["*"],
             "body": [
               [  
                 {
-                  "text": "ENSURE REGISTRATION OF EVERY BIRTH AND DEATH.",
+                  "text": "This certificate is computer generated and does not require any Seal/Signature in original",
                   "style": "footer"
                 }
               ]
             ]
           },
           "layout": "noBorders"
-        }
-         
+        },
+	{
+          "style": "ws-head",
+          "table": {
+            "widths": ["*"],
+            "body": [
+              [  
+                {
+                  "text": "The Govt. vide G.O.(Ms) No.202/2012/LSGD dated 25/07/2012 has approved this certificate as a valid document for all official purposes",
+                  "style": "footer"
+                }
+              ]
+            ]
+          },
+          "layout": "noBorders"
+        },
+	{
+          "style": "ws-head",
+          "table": {
+            "widths": ["*"],
+            "body": [
+              [  
+                {
+                  "text": "Authenticity of this certificate can be verified at www.ksmart.lsgkerala.gov.in. The Key Number is unique to each event.",
+                  "style": "footer"
+                }
+              ]
+            ]
+          },
+          "layout": "noBorders"
+        },
+	{
+          "style": "ws-head",
+          "table": {
+            "widths": ["*"],
+            "body": [
+              [  
+                {
+                  "text": "Software developed and supported by Information Kerala Mission.",
+                  "style": "footer"
+                }
+              ]
+            ]
+          },
+          "layout": "noBorders"
+        }     
+   
       ],
       "styles": {
         "pdf-header": {

@@ -170,7 +170,7 @@
                 {
                     "variable": "registration_date", 
                     "value": {
-                      "path": "$.registrationdate"
+                      "path": "$.registrationDate"
                     },
                     "type": "date"
                 },
