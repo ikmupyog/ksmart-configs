@@ -114,7 +114,7 @@
                 {
                     "variable": "placeOfDeath", 
                     "value": {
-                      "path": "$.placeofdeath"
+                      "path": "$.deathPlace"
                     },
                     "type":"setEmpty"
                 }, 
