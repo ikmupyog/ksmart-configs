@@ -432,72 +432,14 @@ serviceMaps:
 
 
  - version: 1.0
-   description: Persists tradeLicense details in EG_TL_TradeLicense  table
-   fromTopic: update-tl-workflow
+   description: Update the status in eg_tl_tradelicense table and workflow tables
+   fromTopic: updatepde-tl-workflow
    isTransaction: true
    queryMaps:
 
-       - query: INSERT INTO eg_tl_tradelicense_audit SELECT * FROM eg_tl_tradelicense WHERE id = ?;
+       - query: UPDATE eg_tl_tradelicense SET issueddate=?, action = ?, status = ?,  lastmodifiedby = ?,  lastmodifiedtime = ? WHERE id=?;
          basePath: Licenses.*
          jsonMaps:
-          - jsonPath: $.Licenses.*.id
-
-
-
-       - query: INSERT INTO eg_tl_tradelicensedetail_audit SELECT * FROM eg_tl_tradelicensedetail WHERE id = ?;
-         basePath: Licenses.*.tradeLicenseDetail
-         jsonMaps:
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.id
-
-
-
-       - query: INSERT INTO eg_tl_verificationdocument( id, tenantid, active, documenttype, tradecategorydetail, filestoreid,tradelicensedetailid, createdby, lastmodifiedby, createdtime, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT (id) DO UPDATE SET active = ?,documenttype =?, tradecategorydetail =?, filestoreid =?, lastmodifiedby =?, lastmodifiedtime =?;
-         basePath: Licenses.*.tradeLicenseDetail.verificationDocuments.*
-         jsonMaps:
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.verificationDocuments.*.id
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.verificationDocuments.*.tenantId
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.verificationDocuments.*.active
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.verificationDocuments.*.documentType
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.verificationDocuments.*.tradecategorydetail
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.verificationDocuments.*.fileStoreId
-
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.verificationDocuments[*].id)].tradeLicenseDetail.id
-
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.verificationDocuments[*].id)].auditDetails.createdBy
-
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.verificationDocuments[*].id)].auditDetails.lastModifiedBy
-
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.verificationDocuments[*].id)].auditDetails.createdTime
-
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.verificationDocuments[*].id)].auditDetails.lastModifiedTime
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.verificationDocuments.*.active
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.verificationDocuments.*.documentType
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.verificationDocuments.*.tradecategorydetail
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.verificationDocuments.*.fileStoreId
-
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.verificationDocuments[*].id)].auditDetails.lastModifiedBy
-
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.verificationDocuments[*].id)].auditDetails.lastModifiedTime
-
-
-       - query: UPDATE eg_tl_tradelicense SET validfrom = ?, validto = ?, licenseNumber =?, issueddate = ?, action = ?, status = ?,  lastmodifiedby = ?,  lastmodifiedtime = ? WHERE id=?;
-         basePath: Licenses.*
-         jsonMaps:
-          - jsonPath: $.Licenses.*.validFrom
-
-          - jsonPath: $.Licenses.*.validTo
-
-          - jsonPath: $.Licenses.*.licenseNumber
-
           - jsonPath: $.Licenses.*.issuedDate
 
           - jsonPath: $.Licenses.*.action
@@ -510,16 +452,3 @@ serviceMaps:
 
           - jsonPath: $.Licenses.*.id
 
-
-       - query: UPDATE eg_tl_tradelicensedetail SET additionaldetail = ?,lastmodifiedby = ?,  lastmodifiedtime = ? WHERE id = ?;
-         basePath: Licenses.*.tradeLicenseDetail
-         jsonMaps:
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.additionalDetail
-            type: JSON
-            dbType: JSONB
-
-          - jsonPath: $.Licenses.*.auditDetails.lastModifiedBy
-
-          - jsonPath: $.Licenses.*.auditDetails.lastModifiedTime
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.id
