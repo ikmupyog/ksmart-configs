@@ -301,7 +301,7 @@
                   "columns": [
                     {
                       "text": "പേര്/Name",
-                      "width": "30%",
+                      "width": "35%",
                       "style": "details-body"
                     },
                     {
@@ -321,7 +321,7 @@
                 
                     {
                       "text": "ആൺ/പെൺ/Sex",
-                      "width": "30%",
+                      "width": "35%",
                       "style": "details-body"
                     },
                     {
@@ -340,7 +340,7 @@
                   "columns": [
                     {
                       "text": "മരണ തീയതി/Date of Death",
-                      "width": "30%",
+                      "width": "35%",
                       "style": "details-body"
                     },
                     {
@@ -361,7 +361,7 @@
                 
                     {
                         "text": "മരണ സ്ഥലം/Place of Death",
-                        "width": "30%",
+                        "width": "35%",
                         "style": "details-body"
                     },
                     {
@@ -380,7 +380,7 @@
                   "columns": [
                     {
                       "text": "അമ്മയുടെ പേര്/Name of Mother",
-                      "width": "30%",
+                      "width": "35%",
                       "style": "details-body"
                     },
                     {
@@ -400,7 +400,7 @@
                     
                     {
                       "text": "പിതാവിന്റെ പേര്/ഭർത്താവിന്റെ പേര്/Name of Father/Husband",
-                      "width": "30%",
+                      "width": "35%",
                       "style": "details-body"
                     },
                     {
@@ -420,7 +420,7 @@
                     
                     {
                       "text": "മരിച്ച വ്യക്തിയുടെ മരണ സമയത്തെ മേൽവിലാസം",
-                      "width": "30%",
+                      "width": "35%",
                       "style": "details-body"
                     },
                     {
@@ -439,7 +439,7 @@
                   "columns": [
                     {
                       "text": "Address Of the deceased at the time of death",
-                      "width": "30%",
+                      "width": "35%",
                       "style": "details-body"
                     },
                     {
@@ -459,7 +459,7 @@
                     
                     {
                       "text": "മരിച്ച വ്യക്തിയുടെ സ്ഥിരമായ  മേൽവിലാസം ",
-                      "width": "30%",
+                      "width": "35%",
                       "style": "details-body"
                     },
                     {
@@ -479,7 +479,7 @@
                     
                     {
                       "text": "Permanent address of the deceased  ",
-                      "width": "30%",
+                      "width": "35%",
                       "style": "details-body"
                     },
                     {
@@ -517,7 +517,7 @@
                   "columns": [
                     {
                       "text": "അഭിപ്രായക്കുറിപ്പ് /Remarks (if any): {{remarks}}",
-                      "width": "30%",
+                      "width": "35%",
                       "style": "details-body"
                     }
                   ]
@@ -528,7 +528,7 @@
                   "columns": [
                     {
                       "text": "നൽകുന്ന തീയതി / Date of Issue : {{issueDate}}",
-                      "width": "30%",
+                      "width": "35%",
                       "style": "details-body"
                     },
                     {
@@ -543,7 +543,7 @@
                   "columns": [
                     {
                       "text": "നൽകുന്ന അധികാരിയുടെ മേൽവിലാസം/ Address of the issuing authority ",
-                      "width": "30%",
+                      "width": "35%",
 		       "style": "details-body"
                     },
                     {
