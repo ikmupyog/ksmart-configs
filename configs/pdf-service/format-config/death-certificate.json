@@ -127,16 +127,12 @@
 		"columns": [
                     {
                       "text": "സർട്ടിഫിക്കറ്റ് നൽകുന്ന തദ്ദേശസ്വയംഭരണ സ്ഥാപനത്തിന്റെ പേര് ",
-                      "width": "49%",
-                      "style": "rule-header"
+                      "style": "details-body-center"
                     },
-                    {
-                      "text": " ",
-                      "width": "1%"
-                    },
+
                     {
                       "text": "{{localBodyNameMl}}",
-                      "style": "rule-header"
+                      "style": "details-body-center"
                     }
                   ]
 		}                
@@ -156,16 +152,12 @@
 		"columns": [
                     {
                       "text": "Name of Local Government issuing certificate ",
-                      "width": "49%",
-                      "style": "rule-header"
+                      "style": "details-body-center"
                     },
-                    {
-                      "text": " ",
-                      "width": "1%"
-                    },
+                    
                     {
                       "text": "{{localBodyName}}",
-                      "style": "rule-header"
+                      "style": "details-body-center"
                     }
                   ]
 		}
@@ -309,7 +301,7 @@
                   "columns": [
                     {
                       "text": "പേര്/Name",
-                      "width": "49%",
+                      "width": "39%",
                       "style": "details-body"
                     },
                     {
@@ -329,7 +321,7 @@
                 
                     {
                       "text": "ആൺ/പെൺ/Sex",
-                      "width": "49%",
+                      "width": "39%",
                       "style": "details-body"
                     },
                     {
@@ -348,7 +340,7 @@
                   "columns": [
                     {
                       "text": "മരണ തീയതി/Date of Death",
-                      "width": "49%",
+                      "width": "39%",
                       "style": "details-body"
                     },
                     {
@@ -369,7 +361,7 @@
                 
                     {
                         "text": "മരണ സ്ഥലം/Place of Death",
-                        "width": "49%",
+                        "width": "39%",
                         "style": "details-body"
                     },
                     {
@@ -388,7 +380,7 @@
                   "columns": [
                     {
                       "text": "അമ്മയുടെ പേര്/Name of Mother",
-                      "width": "49%",
+                      "width": "39%",
                       "style": "details-body"
                     },
                     {
@@ -408,7 +400,7 @@
                     
                     {
                       "text": "പിതാവിന്റെ പേര്/ഭർത്താവിന്റെ പേര്/Name of Father/Husband",
-                      "width": "49%",
+                      "width": "39%",
                       "style": "details-body"
                     },
                     {
@@ -428,7 +420,7 @@
                     
                     {
                       "text": "മരിച്ച വ്യക്തിയുടെ മരണ സമയത്തെ മേൽവിലാസം",
-                      "width": "49%",
+                      "width": "39%",
                       "style": "details-body"
                     },
                     {
@@ -447,7 +439,7 @@
                   "columns": [
                     {
                       "text": "Address Of the deceased at the time of death",
-                      "width": "49%",
+                      "width": "39%",
                       "style": "details-body"
                     },
                     {
@@ -467,7 +459,7 @@
                     
                     {
                       "text": "മരിച്ച വ്യക്തിയുടെ സ്ഥിരമായ  മേൽവിലാസം ",
-                      "width": "49%",
+                      "width": "39%",
                       "style": "details-body"
                     },
                     {
@@ -487,7 +479,7 @@
                     
                     {
                       "text": "Permanent address of the deceased  ",
-                      "width": "49%",
+                      "width": "39%",
                       "style": "details-body"
                     },
                     {
@@ -506,7 +498,7 @@
                   "columns": [
                     {
                       "text": "രജിസ്ട്രേഷൻ നമ്പർ/Registration Number : {{registrationNo}}",
-                      "width": "49%",
+                      "width": "39%",
                       "style": "details-body"
                     },
                     {
@@ -525,7 +517,7 @@
                   "columns": [
                     {
                       "text": "അഭിപ്രായക്കുറിപ്പ് /Remarks (if any): {{remarks}}",
-                      "width": "49%",
+                      "width": "39%",
                       "style": "details-body"
                     }
                   ]
@@ -536,7 +528,7 @@
                   "columns": [
                     {
                       "text": "നൽകുന്ന തീയതി / Date of Issue : {{issueDate}}",
-                      "width": "49%",
+                      "width": "39%",
                       "style": "details-body"
                     },
                     {
@@ -551,7 +543,7 @@
                   "columns": [
                     {
                       "text": "നൽകുന്ന അധികാരിയുടെ മേൽവിലാസം/ Address of the issuing authority ",
-                      "width": "49%",
+                      "width": "39%",
 		       "style": "details-body"
                     },
                     {
@@ -587,97 +579,8 @@
           },
           "layout": "noBorders"
         },
-        {
-          "style": "ws-head",
-          "table": {
-            "widths": ["*"],
-            "body": [
-              [  
-                {
-                  "text": "Ensure Registration of Every birth and death",
-                  "style": "details-body-center"
-                }
-              ]
-            ]
-          },
-          "layout": "noBorders"
-        },
-	{
-          "style": "ws-head",
-          "table": {
-            "widths": ["*"],
-            "body": [
-              [  
-                {
-                  "text": "ഓരോ ജനനവും മരണവും രജിസ്റ്റർ ചെയ്തുവെന്ന് ഉറപ്പുവരുത്തുക",
-                  "style": "details-body-center"
-                }
-              ]
-            ]
-          },
-          "layout": "noBorders"
-        },
-	{
-          "style": "ws-head",
-          "table": {
-            "widths": ["*"],
-            "body": [
-              [  
-                {
-                  "text": "This certificate is computer generated and does not require any Seal/Signature in original",
-                  "style": "details-body-center"
-                }
-              ]
-            ]
-          },
-          "layout": "noBorders"
-        },
-	{
-          "style": "ws-head",
-          "table": {
-            "widths": ["*"],
-            "body": [
-              [  
-                {
-                  "text": "The Govt. vide G.O.(Ms) No.202/2012/LSGD dated 25/07/2012 has approved this certificate as a valid document for all official purposes",
-                  "style": "details-body-center"
-                }
-              ]
-            ]
-          },
-          "layout": "noBorders"
-        },
-	{
-          "style": "ws-head",
-          "table": {
-            "widths": ["*"],
-            "body": [
-              [  
-                {
-                  "text": "Authenticity of this certificate can be verified at www.ksmart.lsgkerala.gov.in. The Key Number is unique to each event.",
-                  "style": "details-body-center"
-                }
-              ]
-            ]
-          },
-          "layout": "noBorders"
-        },
-	{
-          "style": "ws-head",
-          "table": {
-            "widths": ["*"],
-            "body": [
-              [  
-                {
-                  "text": "Software developed and supported by Information Kerala Mission.",
-                  "style": "details-body-center"
-                }
-              ]
-            ]
-          },
-          "layout": "noBorders"
-        },
-	      
+     
+	
 	{
         "style": "ws-head",
         "table": {
