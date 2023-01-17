@@ -756,9 +756,9 @@
         "italics": true
       },
         "appendix-header-body": {
-          "color": "#000099",
+          "color": "#000000",
           "bold": true,
-          "fontSize": 9,
+          "fontSize": 8,
           "fontWeight": 400,
           "alignment": "center"
         },
