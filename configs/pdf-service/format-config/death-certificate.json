@@ -681,16 +681,16 @@
           ]
         },
         "title-header": {
-          "color": "#004d00",
+          "color": "#000000",
           "bold": true,
-          "fontSize": 14,
+          "fontSize": 9,
           "alignment": "center",
           "margin": [0, -1, 0, 0]
         },
         "title-header_multiLang": {
-          "color": "#004d00",
+          "color": "#000000",
           "bold": true,
-          "fontSize": 15,
+          "fontSize": 12,
           "alignment": "center",
           "margin": [0, 0, 0, -10]
         },
