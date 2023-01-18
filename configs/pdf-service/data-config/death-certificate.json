@@ -100,7 +100,7 @@
                 {
                     "variable": "gender", 
                     "value": {
-                      "path": "$.gender"
+                      "path": "$.deceasedGender"
                     },
                     "type":"setEmpty"
                 },
