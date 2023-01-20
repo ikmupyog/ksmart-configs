@@ -739,7 +739,7 @@
         "details-body": {
           "color": "#000000",
           "bold": false,
-          "fontSize": 8,
+          "fontSize": 10,
           "fontWeight": 400,
           "margin": [0, 5, 0, 0]
         },
