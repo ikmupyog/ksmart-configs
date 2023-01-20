@@ -732,7 +732,7 @@
         "rule-body_multiLang": {
           "color": "#000000",
           "bold": false,
-          "fontSize": 8,
+          "fontSize": 10,
           "fontWeight": 400,
           "margin": [0, 0, 0, 0]
         },
