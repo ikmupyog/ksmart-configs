@@ -397,7 +397,7 @@ serviceMaps:
           - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.taxPdefinal[*].id)].tradeLicenseDetail.id
 
 
-       - query: INSERT INTO eg_tl_taxdetails_pde(id, tenantid, tradelicensedetailid, service, fromyear, fromperiod, toyear, toperiod, headcode, amount, active, createdby, lastmodifiedby, createdtime, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+       - query: INSERT INTO eg_tl_taxdetails_pde(id, tenantid, tradelicensedetailid, service, fromyear, fromperiod, toyear, toperiod, headcode, amount, active,firsthalfcur, secondhalfcur,  createdby, lastmodifiedby, createdtime, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?,?);
          basePath: Licenses.*.tradeLicenseDetail.taxPdefinal.*
          jsonMaps:
           - jsonPath: $.Licenses.*.tradeLicenseDetail.taxPdefinal.*.id
@@ -421,6 +421,10 @@ serviceMaps:
           - jsonPath: $.Licenses.*.tradeLicenseDetail.taxPdefinal.*.amount
 
           - jsonPath: $.Licenses.*.tradeLicenseDetail.taxPdefinal.*.active
+
+          - jsonPath: $.Licenses.*.tradeLicenseDetail.taxPdefinal.*.current
+
+          - jsonPath: $.Licenses.*.tradeLicenseDetail.taxPdefinal.*.current2
 
           - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.taxPdefinal[*].id)].auditDetails.createdBy
 
