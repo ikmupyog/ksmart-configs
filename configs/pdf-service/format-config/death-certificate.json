@@ -711,7 +711,7 @@
         "rule-header": {
           "color": "#000000",
           "bold": false,
-          "fontSize": 9,
+          "fontSize": 10,
           "fontWeight": 400,
           "margin": [0, 0, 0, 3]
         },
