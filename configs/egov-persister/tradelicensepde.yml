@@ -232,7 +232,7 @@ serviceMaps:
    isTransaction: true
    queryMaps:
 
-       - query: UPDATE eg_tl_tradelicense SET tradeName = ?, financialyear = ?, validfrom = ?, validto = ?, licensetype = ?, applicationnumber=? action = ?, status = ?,  lastmodifiedby = ?,  lastmodifiedtime = ?, businessservice=?,applicationtype=?, workflowcode=?  WHERE id=?;
+       - query: UPDATE eg_tl_tradelicense SET tradeName = ?, financialyear = ?, validfrom = ?, validto = ?, licensetype = ?, applicationnumber=?, action = ?, status = ?,  lastmodifiedby = ?,  lastmodifiedtime = ?, businessservice=?,applicationtype=?, workflowcode=?  WHERE id=?;
          basePath: Licenses.*
          jsonMaps:
           - jsonPath: $.Licenses.*.tradeName
