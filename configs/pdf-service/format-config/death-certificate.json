@@ -517,7 +517,7 @@
                   "columns": [
                     {
                       "text": "രജിസ്ട്രേഷൻ നമ്പർ/Registration Number : {{registrationNo}}",
-                      "width": "49%",
+                      "width": "59%",
                       "style": "details-body"
                     },
                     {
