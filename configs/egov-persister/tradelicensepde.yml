@@ -54,9 +54,6 @@ serviceMaps:
           - jsonPath: $.Licenses.*.tradeLicenseDetail.id
 
           - jsonPath: $.Licenses.*.tradeLicenseDetail.channel
-            type: JSON
-
-            dbType: JSONB
 
           - jsonPath: $.Licenses.*.id
 
