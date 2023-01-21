@@ -375,6 +375,25 @@
                   ]
                 }
               ],
+	     [
+                {
+                  "columns": [
+                    {
+                      "text": "ഭാര്യയുടെ പേര്/ഭർത്താവിന്റെ പേര്/Name of Wife/Husband",
+                      "width": "35%",
+                      "style": "details-body"
+                    },
+                    {
+                      "text": ": ",
+                      "width": "1%"
+                    },
+                    {
+                      "text": "{{spouseName}}",
+                      "style": "details-body"
+                    }
+                  ]
+                }
+              ],
               [
                 {
                   "columns": [
@@ -399,7 +418,7 @@
                   "columns": [              
                     
                     {
-                      "text": "പിതാവിന്റെ പേര്/ഭർത്താവിന്റെ പേര്/Name of Father/Husband",
+                      "text": "പിതാവിന്റെ പേര്/Name of Father",
                       "width": "35%",
                       "style": "details-body"
                     },
