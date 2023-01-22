@@ -464,20 +464,19 @@ serviceMaps:
 
           - jsonPath: $.Licenses.*.auditDetails.lastModifiedTime
 
-          - jsonPath: $.Licenses.*.id
-
           - jsonPath: $.Licenses.*.businessService
 
           - jsonPath: $.Licenses.*.applicationType
 
           - jsonPath: $.Licenses.*.workflowCode
 
+          - jsonPath: $.Licenses.*.id
+
 
        - query: INSERT INTO eg_tl_tradelicensedetail_audit SELECT * FROM eg_tl_tradelicensedetail WHERE id = ?;
          basePath: Licenses.*.tradeLicenseDetail
          jsonMaps:
           - jsonPath: $.Licenses.*.tradeLicenseDetail.id
-
 
 
        - query: UPDATE eg_tl_tradelicensedetail SET surveyno = ?, subownershipcategory = ?, channel = ?, additionaldetail = ?,operationalArea = ?,noOfEmployees = ?,structureType = ?,adhocExemption = ?,adhocPenalty = ?,adhocExemptionReason = ?,adhocPenaltyReason = ?, businesssector=?, capitalinvestment=?, enterprisetype=?, lastmodifiedby = ?,  lastmodifiedtime = ?,  licenseunittype = ?, licenseunitid = ?, structureplacesubtype = ?, customdetailtype = ?, businessactivitydesc = ?, licenseetype = ? WHERE id = ?;
@@ -878,43 +877,43 @@ serviceMaps:
 
 
        - query: UPDATE eg_tl_structureplacedetail SET tenantid=?, blockno=?, surveyno=?, subdivisionno=?, partitionno=?, doorno=?, doorsub=?, buildingid=?, vehicleno=?, vesselno=?, tradelicensedetailid=?, active=?, createdby=?, lastmodifiedby=?, createdtime=?, lastmodifiedtime=?, isresurveyed=? WHERE id =?;
-         basePath: Licenses.*.tradeLicenseDetail.structurePlace
+         basePath: Licenses.*.tradeLicenseDetail.structurePlace.*
          jsonMaps:
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.tenantId
+           - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.tenantId
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.blockNo
+           - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.blockNo
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.surveyNo
+           - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.surveyNo
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.subDivisionNo
+           - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.subDivisionNo
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.partitionNo
+           - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.partitionNo
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.doorNo
+           - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.doorNo
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.doorNoSub
+           - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.doorNoSub
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.buildingId
+           - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.buildingId
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.vehicleNo
+           - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.vehicleNo
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.vesselNo
+           - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.vesselNo
 
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.structurePlace[*].id)].tradeLicenseDetail.id
+           - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.structurePlace[*].id)].tradeLicenseDetail.id
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.active
+           - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.active
 
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.structurePlace[*].id)].auditDetails.createdBy
+           - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.structurePlace[*].id)].auditDetails.createdBy
 
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.structurePlace[*].id)].auditDetails.lastModifiedBy
+           - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.structurePlace[*].id)].auditDetails.lastModifiedBy
 
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.structurePlace[*].id)].auditDetails.createdTime
+           - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.structurePlace[*].id)].auditDetails.createdTime
 
-          - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.structurePlace[*].id)].auditDetails.lastModifiedTime
+           - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.structurePlace[*].id)].auditDetails.lastModifiedTime
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.isResurveyed
+           - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.isResurveyed
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.id
+           - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlace.*.id
 
 
  - version: 1.0

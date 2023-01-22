@@ -100,7 +100,7 @@
                 {
                     "variable": "gender", 
                     "value": {
-                      "path": "$.gender"
+                      "path": "$.deceasedGender"
                     },
                     "type":"setEmpty"
                 },
@@ -114,10 +114,17 @@
                 {
                     "variable": "placeOfDeath", 
                     "value": {
-                      "path": "$.placeofdeath"
+                      "path": "$.placeofDeath"
                     },
                     "type":"setEmpty"
-                }, 
+                },
+		{
+                    "variable": "spouseName", 
+                    "value": {
+                       "path": "$.spouseName"
+                    },
+                    "type":"setEmpty"
+                },
                 {
                     "variable": "motherName", 
                     "value": {
@@ -170,7 +177,7 @@
                 {
                     "variable": "registration_date", 
                     "value": {
-                      "path": "$.registrationdate"
+                      "path": "$.registrationDate"
                     },
                     "type": "date"
                 },
@@ -254,6 +261,99 @@
 			  "locale":"en_IN"
 			}
 		  }, 
+		      
+		{
+                "variable": "ensureRegistration",
+                "value": {
+                  "path": "PDF_BIRTH_ENSURE_REGISTRATION_OF_EVERY_BIRTH_AND_DEATH"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-pdf",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "ensureRegistrationMl",
+                "value": {
+                  "path": "PDF_BIRTH_ENSURE_REGISTRATION_OF_EVERY_BIRTH_AND_DEATH_ML"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-pdf",
+                  "locale":"ml_IN"
+                }
+              },
+		{
+                "variable": "computerGenerated",
+                "value": {
+                  "path": "PDF_BIRTH_COMPUTER_GENERATED"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-pdf",
+                  "locale":"en_IN"
+                }
+              },  
+		      
+	      {
+                "variable": "validDocument",
+                "value": {
+                  "path": "PDF_BIRTH_VALID_DOCUMENT_FOR_ALL_OFFICIAL_PURPOSES"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-pdf",
+                  "locale":"en_IN"
+                }
+              },
+		{
+                "variable": "authenticity",
+                "value": {
+                  "path": "PDF_BIRTH_AUTHENTICITY_OF_THIS_CERTIFICATE"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-pdf",
+                  "locale":"en_IN"
+                }
+              },
+		{
+                "variable": "ikm",
+                "value": {
+                  "path": "PDF_BIRTH_SOFTWARE_BY_INFORMATION_KERALA_MISSION"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-pdf",
+                  "locale":"en_IN"
+                }
+              },
+		{
+                "variable": "printedInvalid",
+                "value": {
+                  "path": "PDF_BIRTH_CERTIFICATE_PRINTED_BEFORE_THE_LAST_UPDATED_DATE_IS_INVALID"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-pdf",
+                  "locale":"en_IN"
+                }
+              },
                 {
                   "variable": "parentsCity", 
                   "value": {
