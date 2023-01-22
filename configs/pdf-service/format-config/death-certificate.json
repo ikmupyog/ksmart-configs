@@ -2,7 +2,7 @@
     "key": "death-certificate",
     "config": {
       "defaultStyle": {
-        "font": "Meera"
+        "font": "Thumba"
       },
       "watermark": {
       
@@ -14,7 +14,8 @@
 	    
       "content": [
         
-	{
+		{	
+	      
 		"style": "ws-head",
 		"table": {
 		  "widths": [
@@ -49,8 +50,8 @@
                 "stack": [
                   {
                     "image": "{{logokerala}}",
-                    "width": 70,
-                    "height": 70
+                    "width": 50,
+                    "height": 50
                   }
                 ]
                },
@@ -104,8 +105,8 @@
                 "stack": [
                   {
                     "image": "{{logodeath}}",
-                    "width": 70,
-                    "height": 70
+                    "width": 50,
+                    "height": 50
                   }
                 ]
               } 
@@ -126,13 +127,9 @@
 		"columns": [
                     {
                       "text": "സർട്ടിഫിക്കറ്റ് നൽകുന്ന തദ്ദേശസ്വയംഭരണ സ്ഥാപനത്തിന്റെ പേര് ",
-                      "width": "49%",
                       "style": "rule-header"
                     },
-                    {
-                      "text": " ",
-                      "width": "1%"
-                    },
+
                     {
                       "text": "{{localBodyNameMl}}",
                       "style": "rule-header"
@@ -155,13 +152,9 @@
 		"columns": [
                     {
                       "text": "Name of Local Government issuing certificate ",
-                      "width": "49%",
                       "style": "rule-header"
                     },
-                    {
-                      "text": " ",
-                      "width": "1%"
-                    },
+                    
                     {
                       "text": "{{localBodyName}}",
                       "style": "rule-header"
@@ -308,7 +301,7 @@
                   "columns": [
                     {
                       "text": "പേര്/Name",
-                      "width": "49%",
+                      "width": "35%",
                       "style": "details-body"
                     },
                     {
@@ -328,7 +321,7 @@
                 
                     {
                       "text": "ആൺ/പെൺ/Sex",
-                      "width": "49%",
+                      "width": "35%",
                       "style": "details-body"
                     },
                     {
@@ -347,7 +340,7 @@
                   "columns": [
                     {
                       "text": "മരണ തീയതി/Date of Death",
-                      "width": "49%",
+                      "width": "35%",
                       "style": "details-body"
                     },
                     {
@@ -368,7 +361,7 @@
                 
                     {
                         "text": "മരണ സ്ഥലം/Place of Death",
-                        "width": "49%",
+                        "width": "35%",
                         "style": "details-body"
                     },
                     {
@@ -382,12 +375,31 @@
                   ]
                 }
               ],
+	     [
+                {
+                  "columns": [
+                    {
+                      "text": "ഭാര്യയുടെ പേര്/ഭർത്താവിന്റെ പേര്/Name of Wife/Husband",
+                      "width": "35%",
+                      "style": "details-body"
+                    },
+                    {
+                      "text": ": ",
+                      "width": "1%"
+                    },
+                    {
+                      "text": "{{spouseName}}",
+                      "style": "details-body"
+                    }
+                  ]
+                }
+              ],
               [
                 {
                   "columns": [
                     {
                       "text": "അമ്മയുടെ പേര്/Name of Mother",
-                      "width": "49%",
+                      "width": "35%",
                       "style": "details-body"
                     },
                     {
@@ -406,8 +418,8 @@
                   "columns": [              
                     
                     {
-                      "text": "പിതാവിന്റെ പേര്/ഭർത്താവിന്റെ പേര്/Name of Father/Husband",
-                      "width": "49%",
+                      "text": "പിതാവിന്റെ പേര്/Name of Father",
+                      "width": "35%",
                       "style": "details-body"
                     },
                     {
@@ -427,7 +439,7 @@
                     
                     {
                       "text": "മരിച്ച വ്യക്തിയുടെ മരണ സമയത്തെ മേൽവിലാസം",
-                      "width": "49%",
+                      "width": "35%",
                       "style": "details-body"
                     },
                     {
@@ -446,7 +458,7 @@
                   "columns": [
                     {
                       "text": "Address Of the deceased at the time of death",
-                      "width": "49%",
+                      "width": "35%",
                       "style": "details-body"
                     },
                     {
@@ -466,7 +478,7 @@
                     
                     {
                       "text": "മരിച്ച വ്യക്തിയുടെ സ്ഥിരമായ  മേൽവിലാസം ",
-                      "width": "49%",
+                      "width": "35%",
                       "style": "details-body"
                     },
                     {
@@ -486,7 +498,7 @@
                     
                     {
                       "text": "Permanent address of the deceased  ",
-                      "width": "49%",
+                      "width": "35%",
                       "style": "details-body"
                     },
                     {
@@ -505,7 +517,7 @@
                   "columns": [
                     {
                       "text": "രജിസ്ട്രേഷൻ നമ്പർ/Registration Number : {{registrationNo}}",
-                      "width": "49%",
+                      "width": "59%",
                       "style": "details-body"
                     },
                     {
@@ -524,7 +536,7 @@
                   "columns": [
                     {
                       "text": "അഭിപ്രായക്കുറിപ്പ് /Remarks (if any): {{remarks}}",
-                      "width": "49%",
+                      "width": "35%",
                       "style": "details-body"
                     }
                   ]
@@ -535,17 +547,12 @@
                   "columns": [
                     {
                       "text": "നൽകുന്ന തീയതി / Date of Issue : {{issueDate}}",
-                      "width": "49%",
+                      "width": "35%",
                       "style": "details-body"
                     },
                     {
                       "text": " ",
                       "width": "1%"
-                    },
-                    {
-                      "text": "Signature of the issuing authority :",
-                      "style": "details-body",
-                      "margin": [0, -15, 0, 0]
                     }
                   ]
                 }
@@ -554,17 +561,17 @@
                 {
                   "columns": [
                     {
-                      "text": " ",
-                      "width": "49%"
+                      "text": "നൽകുന്ന അധികാരിയുടെ മേൽവിലാസം/ Address of the issuing authority ",
+                      "width": "35%",
+		       "style": "details-body"
                     },
                     {
-                      "text": " ",
+                      "text": ": ",
                       "width": "1%"
                     },
                     {
-                      "text": "Address of the issuing authority",
-                      "style": "details-body",
-                      "margin": [0, -5, 0, 0]
+                      "text": "Registrar of Births and Deaths, {{localBodyName}}",
+                      "style": "details-body"                      
                     }
                   ]
                 }
@@ -582,8 +589,8 @@
               [  
                 {
                   "image": "{{qr_code_image}}",
-                  "width": 70,
-                  "height": 70,
+                  "width": 50,
+                  "height": 50,
                   "style": "qr-code"
                 }
               ]
@@ -591,52 +598,54 @@
           },
           "layout": "noBorders"
         },
-        {
-          "style": "ws-head",
-          "table": {
-            "widths": ["*"],
-            "body": [
-              [  
-                {
-                  "text": "THIS IS A COMPUTER GENERATED CERTIFICATE.",
-                  "style": "footer"
-                }
-              ]
+     
+	
+	{
+        "style": "ws-head",
+        "table": {
+          "widths": [
+            "*"
+          ],
+          "body": [
+            [
+              {
+                "stack": [
+                  {
+                    "text": "{{ensureRegistration}}",
+                    "style": "details-body-center"
+                  },
+                  {
+                    "text": "{{ensureRegistrationMl}}",
+                    "style": "details-body-center"
+                  },
+                  {
+                    "text": "{{computerGenerated}}",
+                    "style": "details-body-center"
+                  },
+                  {
+                    "text": "{{validDocument}}",
+                    "style": "details-body-center"
+                  },
+                  {
+                    "text": "{{authenticity}}",
+                    "style": "details-body-center"
+                  },
+                  {
+                    "text": "{{ikm}}",
+                    "style": "details-body-center"
+                  },
+                  {
+                    "text": "{{printedInvalid}}",
+                    "style": "footer-red"
+                  }
+                ]
+              }
             ]
-          },
-          "layout": "noBorders"
+          ]
         },
-        {
-          "style": "ws-head",
-          "table": {
-            "widths": ["*"],
-            "body": [
-              [  
-                {
-                  "text": "THE GOVT. OF INDIA VIDE CIRCULAR NO. 1/12/2014-VS(CRS) DATED 27-JULY-2015 HAS APPROVED THIS CERTIFICATE AS A VALID LEGAL DOCUMENT FOR ALL OFFICIAL PURPOSES.",
-                  "style": "footer"
-                }
-              ]
-            ]
-          },
-          "layout": "noBorders"
-        },
-        {
-          "style": "ws-head",
-          "table": {
-            "widths": ["*"],
-            "body": [
-              [  
-                {
-                  "text": "ENSURE REGISTRATION OF EVERY BIRTH AND DEATH.",
-                  "style": "footer"
-                }
-              ]
-            ]
-          },
-          "layout": "noBorders"
-        }
-         
+        "layout": "noBorders"
+      }
+   
       ],
       "styles": {
         "pdf-header": {
@@ -691,16 +700,16 @@
           ]
         },
         "title-header": {
-          "color": "#004d00",
+          "color": "#000000",
           "bold": true,
-          "fontSize": 14,
+          "fontSize": 10,
           "alignment": "center",
           "margin": [0, -1, 0, 0]
         },
         "title-header_multiLang": {
-          "color": "#004d00",
+          "color": "#000000",
           "bold": true,
-          "fontSize": 15,
+          "fontSize": 12,
           "alignment": "center",
           "margin": [0, 0, 0, -10]
         },
@@ -742,19 +751,31 @@
         "rule-body_multiLang": {
           "color": "#000000",
           "bold": false,
-          "fontSize": 11,
+          "fontSize": 10,
           "fontWeight": 400,
           "margin": [0, 0, 0, 0]
         },
         "details-body": {
           "color": "#000000",
           "bold": false,
-          "fontSize": 11,
+          "fontSize": 10,
           "fontWeight": 400,
           "margin": [0, 5, 0, 0]
         },
+	"details-body-center": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 8,
+        "alignment": "center"
+      },
+	"footer-red": {
+        "color": "#FF0000",
+        "fontSize": 7,
+        "alignment": "center",
+        "italics": true
+      },
         "appendix-header-body": {
-          "color": "#000099",
+          "color": "#000000",
           "bold": true,
           "fontSize": 9,
           "fontWeight": 400,
