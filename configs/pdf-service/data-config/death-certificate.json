@@ -181,10 +181,17 @@
                     },
                     "type": "date"
                 },
+		 {
+                    "variable": "certificateNo", 
+                    "value": {
+                      "path": "$.certificateNo"
+                    },
+                    "type": "setEmpty"
+                },
                 {
                     "variable": "issueDate", 
                     "value": {
-                      "path": "$.dateofissue"
+                      "path": "$.certificateDate"
                     },
                     "type": "date"
                 },
