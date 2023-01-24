@@ -209,6 +209,37 @@
                     },
                     "type": "setEmpty"
                 },
+		 {
+                    "variable": "lbDistrictMl", 
+                    "value": {
+                      "path": "$.lbDistrictMl"
+                    },
+                    "type": "setEmpty"
+                },
+		      
+		{
+                    "variable": "lbDistrictEn", 
+                    "value": {
+                      "path": "$.lbDistrictEn"
+                    },
+                    "type": "setEmpty"
+                },
+		      
+		{
+                    "variable": "lbTalukEn", 
+                    "value": {
+                      "path": "$.lbTalukEn"
+                    },
+                    "type": "setEmpty"
+                },
+		 {
+                    "variable": "lbTalukMl", 
+                    "value": {
+                      "path": "$.lbTalukMl"
+                    },
+                    "type": "setEmpty"
+                },
+		      
                 {
                   "variable": "embeddedUrl", 
                   "value": {
