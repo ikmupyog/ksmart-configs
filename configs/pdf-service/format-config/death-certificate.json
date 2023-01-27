@@ -18,17 +18,13 @@
 	      
 		"style": "ws-head",
 		"table": {
-		  "widths": [
-		    "20%",
-		    "60%",
-		    "20%"
-		  ],
+		  "widths": ["*"],
 		  "body": [
 		    [
 		      {
 			"stack": [
 			  {
-			    "text": "KeyNo : 1",
+			    "text": "KeyNo : {{certificateNo}}",
 			    "style": "appendix-header-serialNo"
 			  }
 			]
@@ -261,7 +257,7 @@
                 {
                   "columns": [
                     {
-                      "text": ["താഴെ പറയുന്ന വിവരങ്ങൾ കേരള സംസ്‌ഥാനത്തിലെ {{distcodeml}}  ജില്ലയിലെ {{talukcodeml}}  താലൂക്കിലെ {{localBodyNameMl}} -ലെ ( തദേശസ്ഥാപനം) അസ്സൽ മരണ രജിസ്റ്ററിൽ നിന്ന് എടുത്തിട്ടുള്ളവയാണെന്ന് സാക്ഷ്യപ്പെടുത്തുന്നു."],
+                      "text": ["താഴെ പറയുന്ന വിവരങ്ങൾ കേരള സംസ്‌ഥാനത്തിലെ {{lbDistrictMl}}  ജില്ലയിലെ {{lbTalukMl}}  താലൂക്കിലെ {{localBodyNameMl}} -ലെ ( തദേശസ്ഥാപനം) അസ്സൽ മരണ രജിസ്റ്ററിൽ നിന്ന് എടുത്തിട്ടുള്ളവയാണെന്ന് സാക്ഷ്യപ്പെടുത്തുന്നു."],
                       "style": "rule-body_multiLang"
                     }
                   ]
@@ -281,7 +277,7 @@
                 {
                   "columns": [
                     {
-                      "text": ["This is to certify that the following information has been taken from the original record of death which is the register for (local area/localbody) {{localBodyName}} of Taluk {{talukcode}} of District {{distcode}} of State Kerala."],
+                      "text": ["This is to certify that the following information has been taken from the original record of death which is the register for (local area/localbody) {{localBodyName}} of Taluk {{lbTalukEn}} of District {{lbDistrictEn}} of State Kerala."],
                       "style": "rule-body_multiLang"
                     }
                   ]
@@ -517,7 +513,7 @@
                   "columns": [
                     {
                       "text": "രജിസ്ട്രേഷൻ നമ്പർ/Registration Number : {{registrationNo}}",
-                      "width": "49%",
+                      "width": "59%",
                       "style": "details-body"
                     },
                     {
