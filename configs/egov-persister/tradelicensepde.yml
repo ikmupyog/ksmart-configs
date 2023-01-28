@@ -429,7 +429,7 @@ serviceMaps:
    isTransaction: true
    queryMaps:
 
-       - query: UPDATE eg_tl_tradelicense SET issueddate=?, action = ?, status = ?,  lastmodifiedby = ?,  lastmodifiedtime = ? WHERE id=?;
+       - query: UPDATE eg_tl_tradelicense SET issueddate=?, action = ?, status = ?, assignee=?, lastmodifiedby = ?,  lastmodifiedtime = ? WHERE id=?;
          basePath: Licenses.*
          jsonMaps:
           - jsonPath: $.Licenses.*.issuedDate
@@ -437,6 +437,8 @@ serviceMaps:
           - jsonPath: $.Licenses.*.action
 
           - jsonPath: $.Licenses.*.status
+
+          - jsonPath: $.Licenses.*.assignUser
 
           - jsonPath: $.Licenses.*.auditDetails.lastModifiedBy
 
