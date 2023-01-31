@@ -229,7 +229,7 @@ serviceMaps:
    isTransaction: true
    queryMaps:
 
-       - query: UPDATE eg_tl_tradelicense SET tradeName = ?, financialyear = ?, validfrom = ?, validto = ?, licensetype = ?, applicationnumber=? action = ?, status = ?,  lastmodifiedby = ?,  lastmodifiedtime = ?, businessservice=?,applicationtype=?, workflowcode=?  WHERE id=?;
+       - query: UPDATE eg_tl_tradelicense SET tradeName = ?, financialyear = ?, validfrom = ?, validto = ?, licensetype = ?, applicationnumber=?, action = ?, status = ?,  lastmodifiedby = ?,  lastmodifiedtime = ?, businessservice=?,applicationtype=?, workflowcode=?  WHERE id=?;
          basePath: Licenses.*
          jsonMaps:
           - jsonPath: $.Licenses.*.tradeName
@@ -261,13 +261,10 @@ serviceMaps:
           - jsonPath: $.Licenses.*.id
 
 
-       - query: UPDATE eg_tl_tradelicensedetail SET channel = ?, structureType = ?, businesssector=?, capitalinvestment=?, enterprisetype=?, licenseetype=?, institutionid=?, lastmodifiedby = ?,  lastmodifiedtime = ?  WHERE id = ?;
+       - query: UPDATE eg_tl_tradelicensedetail SET channel = ?, structureType = ?, businesssector=?, capitalinvestment=?, enterprisetype=?, licenseetype=?, lastmodifiedby = ?,  lastmodifiedtime = ?  WHERE id = ?;
          basePath: Licenses.*.tradeLicenseDetail
          jsonMaps:
           - jsonPath: $.Licenses.*.tradeLicenseDetail.channel
-            type: JSON
-
-            dbType: JSONB
 
           - jsonPath: $.Licenses.*.tradeLicenseDetail.structureType
 
@@ -278,8 +275,6 @@ serviceMaps:
           - jsonPath: $.Licenses.*.tradeLicenseDetail.enterpriseType
 
           - jsonPath: $.Licenses.*.tradeLicenseDetail.licenseeType
-
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.institutionId
 
           - jsonPath: $.Licenses.*.auditDetails.lastModifiedBy
 
@@ -434,7 +429,7 @@ serviceMaps:
    isTransaction: true
    queryMaps:
 
-       - query: UPDATE eg_tl_tradelicense SET issueddate=?, action = ?, status = ?,  lastmodifiedby = ?,  lastmodifiedtime = ? WHERE id=?;
+       - query: UPDATE eg_tl_tradelicense SET issueddate=?, action = ?, status = ?, assignee=?, lastmodifiedby = ?,  lastmodifiedtime = ? WHERE id=?;
          basePath: Licenses.*
          jsonMaps:
           - jsonPath: $.Licenses.*.issuedDate
@@ -442,6 +437,8 @@ serviceMaps:
           - jsonPath: $.Licenses.*.action
 
           - jsonPath: $.Licenses.*.status
+
+          - jsonPath: $.Licenses.*.assignUser
 
           - jsonPath: $.Licenses.*.auditDetails.lastModifiedBy
 
