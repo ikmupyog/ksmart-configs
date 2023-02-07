@@ -132,35 +132,7 @@
                   "path": "$.registerBirthPermanent.permanentAddressMl"
                 },
                 "type":"setEmpty"
-              },
-              {
-                "variable": "parentsCity",
-                "value": {
-                  "path": "$.birthPermaddr.cityEn"
-                },
-                "type":"setEmpty"
-              },
-              {
-                "variable": "parentsStreet",
-                "value": {
-                  "path": "$.birthPermaddr.localityEn"
-                },
-                "type":"setEmpty"
-              },
-              {
-                "variable": "parentsTehsil",
-                "value": {
-                  "path": "$.birthPermaddr.talukId"
-                },
-                "type":"setEmpty"
-              },
-              {
-                "variable": "parentsDistrict",
-                "value": {
-                  "path": "$.birthPermaddr.districtId"
-                },
-                "type":"setEmpty"
-              },
+              }
               {
                 "variable": "year",
                 "value": {
@@ -193,9 +165,16 @@
                 "type":"setEmpty"
               },
               {
-                "variable": "placeOfBirth",
+                "variable": "placeOfBirthEn",
                 "value": {
-                  "path": "$.hospitalid"
+                  "path": "$.placeDetailsEn"
+                },
+                "type":"setEmpty"
+              },
+              {
+                "variable": "placeOfBirthMl",
+                "value": {
+                  "path": "$.placeDetailsMl"
                 },
                 "type":"setEmpty"
               },
@@ -205,15 +184,7 @@
                   "path": "$.dateofissue"
                 },
                 "type": "date"
-              },
-
-              {
-                "variable": "esignOfficer",
-                "value": {
-                  "path": "$.esign_user_code"
-                },
-                "type": "setEmpty"
-              },
+              },            
               {
                 "variable": "esignOfficerDesign",
                 "value": {
@@ -254,7 +225,102 @@
                   "module":"rainmaker-common"
                 }
               },
+              {
+                "variable": "lbtypecode",
+                "value": {
+                  "path": "$.tenantLbType"
+                },
+                "type": "setEmpty",
+                "localisation":{
+                  "required":true,
+                  "module":"rainmaker-pdf"
+                }
+              },
 
+              {
+                "variable": "lbtypecodeMll",
+                "value": {
+                  "path": "$.tenantLbType"
+                },
+                "type": "setEmpty",
+                "localisation":{
+                  "required":true,
+                  "postfix": "_ML",
+                  "module":"rainmaker-pdf"
+                }
+              },
+              {
+                "variable": "talukcode",
+                "value": {
+                  "path": "$.tenantTaluk"
+                },
+                "type": "setEmpty",
+                "localisation":{
+                  "required":true,
+                  "module":"rainmaker-pdf"
+                }
+              },
+
+              {
+                "variable": "talukcodeMl",
+                "value": {
+                  "path": "$.tenantTaluk"
+                },
+                "type": "setEmpty",
+                "localisation":{
+                  "required":true,
+                  "postfix": "_ML",
+                  "module":"rainmaker-pdf"
+                }
+              },
+              {
+                "variable": "distcode",
+                "value": {
+                  "path": "$.tenantDistrict"
+                },
+                "type": "setEmpty",
+                "localisation":{
+                  "required":true,
+                  "module":"rainmaker-pdf"
+                }
+              },
+
+              {
+                "variable": "distcodeMl",
+                "value": {
+                  "path": "$.tenantDistrict"
+                },
+                "type": "setEmpty",
+                "localisation":{
+                  "required":true,
+                  "postfix": "_ML",
+                  "module":"rainmaker-pdf"
+                }
+              },
+              {
+                "variable": "statecode",
+                "value": {
+                  "path": "$.tenantState"
+                },
+                "type": "setEmpty",
+                "localisation":{
+                  "required":true,
+                  "module":"rainmaker-pdf"
+                }
+              },
+
+              {
+                "variable": "statecodeMl",
+                "value": {
+                  "path": "$.tenantState"
+                },
+                "type": "setEmpty",
+                "localisation":{
+                  "required":true,
+                  "postfix": "_ML",
+                  "module":"rainmaker-pdf"
+                }
+              },
               {
                 "variable": "childName",
                 "value": {
