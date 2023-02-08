@@ -444,7 +444,7 @@
                 "columns": [
 
                   {
-                    "text": "{{remarksLabelMl}}/{{remarksLabel}} ",
+                    "text": "{{remarksLabel}} ",
                     "width": "49%",
                     "style": "details-body"
                   },
