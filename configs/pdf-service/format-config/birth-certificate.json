@@ -6,7 +6,7 @@
     },
     "watermark": {
       "text": "IKM DEMO",
-      "color": "gery",
+      "color": "grey",
       "opacity": 0.1,
       "content": [
         "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg"
@@ -444,7 +444,7 @@
                 "columns": [
 
                   {
-                    "text": "{{remarksLabelMl}}/{{remarksLabel}} ",
+                    "text": "{{remarksLabel}} ",
                     "width": "49%",
                     "style": "details-body"
                   },
@@ -481,6 +481,7 @@
             [
               {
                 "columns": [
+
                   {
                     "text": "{{addressOfIssuingAuthority}} ",
                     "width": "49%",
