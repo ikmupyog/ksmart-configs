@@ -444,8 +444,6 @@ serviceMaps:
        - query: UPDATE eg_tl_tradelicensedetail SET  ownershipcategory = ?, channel = ?, noOfEmployees = ?,structureType = ?, businesssector=?, capitalinvestment=?, enterprisetype=?, lastmodifiedby = ?,  lastmodifiedtime = ?,  structureplacesubtype = ?, customdetailtype = ?, businessactivitydesc = ?, licenseetype = ?, establishmentunitid=? WHERE id = ?;
          basePath: Licenses.*.tradeLicenseDetail
          jsonMaps:
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.surveyNo
-
           - jsonPath: $.Licenses.*.tradeLicenseDetail.ownershipCategory
 
           - jsonPath: $.Licenses.*.tradeLicenseDetail.channel
