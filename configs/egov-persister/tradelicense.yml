@@ -435,7 +435,7 @@ serviceMaps:
           - jsonPath: $.Licenses.*.id
 
 
-       - query: INSERT INTO eg_tl_tradelicensedetail(id, ownershipcategory, channel, tradelicenseid, createdby, lastmodifiedby, createdtime, lastmodifiedtime, noofemployees, structuretype, businesssector, capitalinvestment, enterprisetype, structureplacesubtype, businessactivitydesc, licenseetype, establishmentunitid, mig_num_appln_id) SELECT id, ownershipcategory, channel, tradelicenseid, createdby, lastmodifiedby, createdtime, lastmodifiedtime, noofemployees, structuretype, businesssector, capitalinvestment, enterprisetype, structureplacesubtype, businessactivitydesc, licenseetype, establishmentunitid, mig_num_appln_id FROM eg_tl_tradelicensedetail WHERE id = ?;
+       - query: INSERT INTO eg_tl_tradelicensedetail_audit(id, ownershipcategory, channel, tradelicenseid, createdby, lastmodifiedby, createdtime, lastmodifiedtime, noofemployees, structuretype, businesssector, capitalinvestment, enterprisetype, structureplacesubtype, businessactivitydesc, licenseetype, establishmentunitid, mig_num_appln_id) SELECT id, ownershipcategory, channel, tradelicenseid, createdby, lastmodifiedby, createdtime, lastmodifiedtime, noofemployees, structuretype, businesssector, capitalinvestment, enterprisetype, structureplacesubtype, businessactivitydesc, licenseetype, establishmentunitid, mig_num_appln_id FROM eg_tl_tradelicensedetail WHERE id = ?;
          basePath: Licenses.*.tradeLicenseDetail
          jsonMaps:
           - jsonPath: $.Licenses.*.tradeLicenseDetail.id
