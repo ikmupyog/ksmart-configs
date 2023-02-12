@@ -441,7 +441,7 @@ serviceMaps:
           - jsonPath: $.Licenses.*.tradeLicenseDetail.id
 
 
-       - query: UPDATE eg_tl_tradelicensedetail SET  ownershipcategory = ?, channel = ?, noOfEmployees = ?,structureType = ?, businesssector=?, capitalinvestment=?, enterprisetype=?, lastmodifiedby = ?,  lastmodifiedtime = ?,  structureplacesubtype = ?, customdetailtype = ?, businessactivitydesc = ?, licenseetype = ?, establishmentunitid=? WHERE id = ?;
+       - query: UPDATE eg_tl_tradelicensedetail SET  ownershipcategory = ?, channel = ?, noOfEmployees = ?,structureType = ?, businesssector=?, capitalinvestment=?, enterprisetype=?, lastmodifiedby = ?,  lastmodifiedtime = ?,  structureplacesubtype = ?, businessactivitydesc = ?, licenseetype = ?, establishmentunitid=? WHERE id = ?;
          basePath: Licenses.*.tradeLicenseDetail
          jsonMaps:
           - jsonPath: $.Licenses.*.tradeLicenseDetail.ownershipCategory
@@ -464,8 +464,6 @@ serviceMaps:
 
           - jsonPath: $.Licenses.*.tradeLicenseDetail.structurePlaceSubtype
           
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.customDetailType
-
           - jsonPath: $.Licenses.*.tradeLicenseDetail.businessActivityDesc
 
           - jsonPath: $.Licenses.*.tradeLicenseDetail.licenseeType
