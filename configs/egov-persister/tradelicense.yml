@@ -148,7 +148,7 @@ serviceMaps:
 
           - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.owners[*].id)].auditDetails.lastModifiedTime
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.nameLocal
+          - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.applicantNameLocal
 
           - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.careOf
 
@@ -536,7 +536,7 @@ serviceMaps:
 
           - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.owners[*].id)].auditDetails.lastModifiedTime
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.nameLocal
+          - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.applicantNameLocal
 
           - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.careOf
 
