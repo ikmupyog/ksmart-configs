@@ -121,21 +121,21 @@
 		{
                     "variable": "spouseName", 
                     "value": {
-                       "path": "$.familyInformationDeath.spouseName"
+                       "path": "$.FamilyInformationDeath.spouseName"
                     },
                     "type":"setEmpty"
                 },
                 {
                     "variable": "motherName", 
                     "value": {
-                       "path": "$.familyInformationDeath.motherName"
+                       "path": "$.FamilyInformationDeath.motherName"
                     },
                     "type":"setEmpty"
                 },
                 {
                     "variable": "fatherorHusbandName", 
                     "value": {
-                      "path": "$.familyInformationDeath.fatherName"
+                      "path": "$.FamilyInformationDeath.fatherName"
                     },
                     "type":"setEmpty"
                 },
