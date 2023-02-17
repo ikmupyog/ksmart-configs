@@ -134,12 +134,11 @@
                 "type":"setEmpty"
               },
               {
-                "variable": "year",
+                "variable": "currentDate",
                 "value": {
-                  "path": "$.dateOfReport"
+                  "path": "$.currentDate"
                 },
-                "type": "date",
-                "format": "YYYY"
+                "type": "setEmpty"
               },
 
               {
