@@ -197,7 +197,7 @@
                     "style": "rule-header"
                   },
                   {
-                    "text": "താഴെ പറയുന്ന വിവരങ്ങൾ {{statecodeMl}} സംസ്ഥാനത്തിലെ {{distcodeMl}} ജില്ലയിലെ {{talukcodeMl}}താലൂക്കിലെ  {{tenantMl}} {{lbtypecodeMl}} {{certifyMl}}.",
+                    "text": "താഴെ പറയുന്ന വിവരങ്ങൾ {{statecodeMl}} സംസ്ഥാനത്തിലെ {{distcodeMl}} ജില്ലയിലെ {{talukcodeMl}} താലൂക്കിലെ  {{tenantMl}} {{lbtypecodeMl}} {{certifyMl}}.",
                     "style": "rule-header"
                   }
                 ]
@@ -425,7 +425,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{registrationDateLabel}} {{registrationDate}}",
+                    "text": "{{registrationDateLabel}} {{registrationDateStr}}",
                     "style": "details-body"
                   }
                 ]
@@ -455,7 +455,7 @@
               {
                 "columns": [
                   {
-                    "text": "{{dateOfIssue}}: {{registrationDate}}",
+                    "text": "{{dateOfIssue}}: {{currentDate}}",
                     "width": "49%",
                     "style": "details-body"
                   },
@@ -464,7 +464,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{updatedOn}} :{{registrationDate}}",
+                    "text": "{{updatedOn}} :{{currentDate}}",
                     "style": "details-body"
                   }
                 ]
