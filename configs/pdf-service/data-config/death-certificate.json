@@ -26,21 +26,21 @@
 		{
                   "variable": "localBodyName", 
                   "value": {
-                    "path": "$.localBodyName"
+                    "path": "$.InformationDeath.localBodyName"
                   },
                   "type":"setEmpty"
                 },
 		{
                   "variable": "localBodyNameMl", 
                   "value": {
-                    "path": "$.localBodyNameMl"
+                    "path": "$.InformationDeath.localBodyNameMl"
                   },
                   "type":"setEmpty"
                 },
 		{
 		  "variable": "tenant",
 		  "value": {
-			"path": "$.tenantId"
+			"path": "$.InformationDeath.TenantId"
 		  },
 		  "type": "setEmpty",
 		  "localisation":{
@@ -54,7 +54,7 @@
 		{
 		  "variable": "tenantMl",
 		  "value": {
-			"path": "$.tenantId"
+			"path": "$.InformationDeath.tenantId"
 		  },
 		  "type": "setEmpty",
 		  "localisation":{
@@ -93,112 +93,112 @@
                 {
                   "variable": "name", 
                   "value": {
-                    "path": "$.fullName"
+                    "path": "$.InformationDeath.fullName"
                   },
                   "type":"setEmpty"
                 },
                 {
                     "variable": "gender", 
                     "value": {
-                      "path": "$.deceasedGender"
+                      "path": "$.InformationDeath.DeceasedGender"
                     },
                     "type":"setEmpty"
                 },
                 {
                     "variable": "dod", 
                     "value": {
-                      "path": "$.dateOfDeath"
+                      "path": "$.InformationDeath.DateOfDeath"
                     },
                     "type": "date"
                   },
                 {
                     "variable": "placeOfDeath", 
                     "value": {
-                      "path": "$.placeofDeath"
+                      "path": "$.InformationDeath.placeofDeath"
                     },
                     "type":"setEmpty"
                 },
 		{
                     "variable": "spouseName", 
                     "value": {
-                       "path": "$.spouseName"
+                       "path": "$.FamilyInformationDeath.spouseName"
                     },
                     "type":"setEmpty"
                 },
                 {
                     "variable": "motherName", 
                     "value": {
-                       "path": "$.motherName"
+                       "path": "$.FamilyInformationDeath.motherName"
                     },
                     "type":"setEmpty"
                 },
                 {
                     "variable": "fatherorHusbandName", 
                     "value": {
-                      "path": "$.maledependentname"
+                      "path": "$.FamilyInformationDeath.fatherName"
                     },
                     "type":"setEmpty"
                 },
                 {
                     "variable": "deceasedPresentAddressml", 
                     "value": {
-                      "path": "$.presentAddressFullMl"
+                      "path": "$.InformationDeath.presentAddressFullMl"
                     },
                     "type":"setEmpty"
                 },
                 {
                     "variable": "deceasedPresentAddressen", 
                     "value": {
-                      "path": "$.presentAddressFullEn"
+                      "path": "$.InformationDeath.presentAddressFullEn"
                     },
                     "type":"setEmpty"
                 },
                 {
                     "variable": "deceasedPermanentAddressml", 
                     "value": {
-                      "path": "$.permanentAddressFullMl"
+                      "path": "$.InformationDeath.permanentAddressFullMl"
                     },
                     "type":"setEmpty"
                 },	
                 {
                     "variable": "deceasedPermanentAddressen", 
                     "value": {
-                      "path": "$.permanentAddressFullEn"
+                      "path": "$.InformationDeath.permanentAddressFullEn"
                     },
                     "type":"setEmpty"
                 },
                 {
                     "variable": "registrationNo", 
                     "value": {
-                      "path": "$.registrationNo"
+                      "path": "$.InformationDeath.registrationNo"
                     },
                     "type":"setEmpty"
                 },
                 {
                     "variable": "registration_date", 
                     "value": {
-                      "path": "$.registrationDate"
+                      "path": "$.InformationDeath.RegistrationDate"
                     },
                     "type": "date"
                 },
 		 {
                     "variable": "certificateNo", 
                     "value": {
-                      "path": "$.certificateNo"
+                      "path": "$.InformationDeath.certificateNo"
                     },
                     "type": "setEmpty"
                 },
                 {
                     "variable": "issueDate", 
                     "value": {
-                      "path": "$.certificateDate"
+                      "path": "$.InformationDeath.certificateDate"
                     },
                     "type": "date"
                 },
                 {
                     "variable": "updatedOn", 
                     "value": {
-                      "path": "$.dateofissue"
+                      "path": "$.InformationDeath.dateofissue"
                     },
                     "type": "date"
                 },
@@ -212,7 +212,7 @@
 		 {
                     "variable": "lbDistrictMl", 
                     "value": {
-                      "path": "$.lbDistrictMl"
+                      "path": "$.InformationDeath.lbDistrictMl"
                     },
                     "type": "setEmpty"
                 },
@@ -220,7 +220,7 @@
 		{
                     "variable": "lbDistrictEn", 
                     "value": {
-                      "path": "$.lbDistrictEn"
+                      "path": "$.InformationDeath.lbDistrictEn"
                     },
                     "type": "setEmpty"
                 },
@@ -228,14 +228,14 @@
 		{
                     "variable": "lbTalukEn", 
                     "value": {
-                      "path": "$.lbTalukEn"
+                      "path": "$.InformationDeath.lbTalukEn"
                     },
                     "type": "setEmpty"
                 },
 		 {
                     "variable": "lbTalukMl", 
                     "value": {
-                      "path": "$.lbTalukMl"
+                      "path": "$.InformationDeath.lbTalukMl"
                     },
                     "type": "setEmpty"
                 },
@@ -243,7 +243,7 @@
                 {
                   "variable": "embeddedUrl", 
                   "value": {
-                    "path": "$.embeddedUrl"
+                    "path": "$.InformationDeath.embeddedUrl"
                   }
                 },    
 

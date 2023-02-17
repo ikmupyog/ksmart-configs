@@ -205,7 +205,7 @@
                     "style": "rule-header"
                   },
                   {
-                    "text": "???? ??????? ???????? {{statecodeml}} ????\u200C????????? {{distcodeml}} ????????? {{talukcodeml}}??????? {{tenantMl}} {{lbtypecodeml}} {{certifyMl}}.",
+                    "text": "???? ??????? ???????? {{statecodeMl}} ????????????? {{distcodeMl}} ????????? {{talukcodeMl}}??????? {{tenantMl}} {{lbtypecodeMl}} {{certifyMl}}.",
                     "style": "rule-header"
                   }
                 ]
@@ -295,7 +295,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{name}}",
+                    "text": "{{placeDetailsMl}}/{{placeOfBirthEn}}",
                     "style": "details-body"
                   }
                 ]
@@ -444,7 +444,7 @@
                 "columns": [
 
                   {
-                    "text": "{{remarksLabelMl}}/{{remarksLabel}} ",
+                    "text": "{{remarksLabel}} ",
                     "width": "49%",
                     "style": "details-body"
                   },
@@ -481,7 +481,6 @@
             [
               {
                 "columns": [
-
                   {
                     "text": "{{addressOfIssuingAuthority}} ",
                     "width": "49%",
@@ -492,7 +491,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{esignOfficer}} {{esignOfficerDesign}}",
+                    "text": "{{esignOfficerDesign}} {{tenant}} {{lbtypecode}} ",
                     "style": "details-body"
                   }
                 ]
@@ -855,6 +854,7 @@
         ]
       },
       "pdf-header-sub-text": {
+
         "color": "#484848",
         "fontSize": 15,
         "letterSpacing": 0.6
