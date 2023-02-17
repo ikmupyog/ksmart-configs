@@ -326,7 +326,7 @@
                   "required":true,
                   "module":"rainmaker-pdf"
                 }
-              },              
+              },
               {
                 "variable": "childName",
                 "value": {
