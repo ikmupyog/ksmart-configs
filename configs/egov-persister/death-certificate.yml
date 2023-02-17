@@ -7,14 +7,14 @@ serviceMaps:
       isTransaction: true
       queryMaps:
         - query: INSERT INTO public.eg_death_cert_request(
-                 id, deathcertificateno, createdby, createdtime, deathdtlid, filestoreid, lastmodifiedtime, lastmodifiedby, status, 
-                 embeddedurl, dateofissue, counter)
-                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+                 id, ack_no, createdby, createdtime, deathdtlid, filestoreid, lastmodifiedtime, lastmodifiedby, status, 
+                 embeddedurl, dateofissue, counter,certificate_no)
+                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
           basePath: deathCertificate
           jsonMaps:
             - jsonPath: $.deathCertificate.id
 
-            - jsonPath: $.deathCertificate.deathcertificateno
+            - jsonPath: $.deathCertificate.ackNo
 
             - jsonPath: $.deathCertificate.auditDetails.createdBy
 
@@ -38,24 +38,35 @@ serviceMaps:
 
             - jsonPath: $.deathCertificate.counter
 
+            - jsonPath: $.deathCertificate.deathcertificateno
+
         - query: INSERT INTO eg_death_cert_request_audit SELECT * FROM eg_death_cert_request WHERE id = ?;
           basePath: deathCertificate
           jsonMaps:
 
               - jsonPath: $.deathCertificate.id
-        - query: UPDATE public.eg_death_cert_request
-                SET  deathcertificateno=?, createdby=?, createdtime=?, deathdtlid=?, filestoreid=?, lastmodifiedtime=?, lastmodifiedby=?, 
-                status=?, embeddedurl=?, dateofissue=?
-                 WHERE id=?;
+
+    - version: 1.0
+      description: Persists death certificate details in eg_death_cert_request,eg_death_cert_request_audit table      
+      fromTopic: update-deathcertificate-topic
+      isTransaction: true   
+      queryMaps:       
+        - query: INSERT INTO eg_death_cert_request_audit SELECT * FROM eg_death_cert_request WHERE deathDtlId = ?;
           basePath: deathCertificate
           jsonMaps:
-            - jsonPath: $.deathCertificate.deathcertificateno
+              - jsonPath: $.deathCertificate.deathDtlId
+
+        - query: UPDATE public.eg_death_cert_request
+                SET  ack_no=?, createdby=?, createdtime=?, filestoreid=?, lastmodifiedtime=?, lastmodifiedby=?, 
+                status=?, embeddedurl=?, dateofissue=?, counter=?
+                 WHERE deathDtlId=?;
+          basePath: deathCertificate
+          jsonMaps:
+            - jsonPath: $.deathCertificate.ackNo
 
             - jsonPath: $.deathCertificate.auditDetails.createdBy
 
             - jsonPath: $.deathCertificate.auditDetails.createdTime
-
-            - jsonPath: $.deathCertificate.deathDtlId
 
             - jsonPath: $.deathCertificate.filestoreid
 
@@ -71,4 +82,6 @@ serviceMaps:
 
             - jsonPath: $.deathCertificate.dateofissue
 
-            - jsonPath: $.deathCertificate.id
+            - jsonPath: $.deathCertificate.counter
+
+            - jsonPath: $.deathCertificate.deathDtlId
