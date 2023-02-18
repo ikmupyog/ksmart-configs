@@ -96,7 +96,6 @@ serviceMaps:
           - jsonPath: $.Licenses.*.tradeLicenseDetail.establishmentUnitId
 
 
-
        - query: INSERT INTO eg_tl_tradeunit( id, tenantid,active, businesscategory, businesstype, businesssubtype, tradelicensedetailid, createdby, lastmodifiedby, createdtime, lastmodifiedtime) VALUES (?,?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
          basePath: Licenses.*.tradeLicenseDetail.tradeUnits.*
          jsonMaps:
@@ -380,6 +379,13 @@ serviceMaps:
 
           - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.ownerspremise[*].id)].auditDetails.lastModifiedTime
 
+       - query: UPDATE eg_tl_tradelicense SET renewalactive = ? WHERE mig_num_appln_id=?;
+         basePath: Licenses.*
+         jsonMaps:
+          - jsonPath: $.Licenses.*.renewalActive
+
+          - jsonPath: $.Licenses.*.oldApplicationNumber
+
 
  - version: 1.0
    description: Update tradeLicense details in EG_TL_TradeLicense  table
@@ -394,7 +400,7 @@ serviceMaps:
        - query: UPDATE eg_tl_tradelicense SET tradeName = ?, licenseunitnamelocal = ?, licenseNumber = ?,licensetype = ?, oldlicensenumber = ?, applicationdate = ?, commencementdate = ?, issueddate = ?, financialyear = ?, validfrom = ?, validto = ?, action = ?, status = ?,  lastmodifiedby = ?,  lastmodifiedtime = ?, businessservice=?,applicationtype=?, workflowcode=?, desiredlicenseperiod=?  WHERE id=?;
          basePath: Licenses.*
          jsonMaps:
-          - jsonPath: $.Licenses.*.tradeName
+          - jsonPath: $.Licenses.*.licenseUnitName
 
           - jsonPath: $.Licenses.*.licenseUnitNameLocal
 
@@ -841,7 +847,6 @@ serviceMaps:
          basePath: Licenses.*
          jsonMaps:
           - jsonPath: $.Licenses.*.id
-
 
 
        - query: INSERT INTO eg_tl_tradelicensedetail_audit(id, ownershipcategory, channel, tradelicenseid, createdby, lastmodifiedby, createdtime, lastmodifiedtime, noofemployees, structuretype, businesssector, capitalinvestment, enterprisetype, structureplacesubtype, businessactivitydesc, licenseetype, establishmentunitid, mig_num_appln_id) SELECT id, ownershipcategory, channel, tradelicenseid, createdby, lastmodifiedby, createdtime, lastmodifiedtime, noofemployees, structuretype, businesssector, capitalinvestment, enterprisetype, structureplacesubtype, businessactivitydesc, licenseetype, establishmentunitid, mig_num_appln_id FROM eg_tl_tradelicensedetail WHERE id = ?;
