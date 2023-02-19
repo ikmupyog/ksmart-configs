@@ -336,7 +336,7 @@
                 "localisation":{
                   "required":true,
                   "prefix": null,
-                  "module":"rainmaker-pdf",
+                  "module":"rainmaker-common",
                   "locale":"en_IN"
                 }
               },
