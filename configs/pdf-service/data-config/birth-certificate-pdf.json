@@ -57,6 +57,29 @@
                 "type":"setEmpty"
               },
               {
+                "variable": "genderMl",
+                "value": {
+                  "path": "$.tenantLbTypeMl"
+                },
+                "type": "setEmpty",
+                "localisation":{
+                  "required":true,
+                  "module":"rainmaker-common"
+                }
+              },
+              {
+                "variable": "gender",
+                "value": {
+                  "path": "$.gender"
+                },
+                "type":"setEmpty",
+                "localisation":{
+                  "required":true,
+                  "postfix": "_ML",
+                  "module":"rainmaker-common"
+                }
+              },
+              {
                 "variable": "registrationNo",
                 "value": {
                   "path": "$.registrationno"
