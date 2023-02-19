@@ -277,15 +277,15 @@ serviceMaps:
 
             - jsonPath: $.ChildDetails.*.AddressBirthDetails.houseNameNoMlPermanent
 
-            - jsonPath: $.ChildDetails.*.AddressBirthDetails.PermntOutsideIndiaLineoneEn
+            - jsonPath: $.ChildDetails.*.AddressBirthDetails.permntOutsideIndiaLineoneEn
 
-            - jsonPath: $.ChildDetails.*.AddressBirthDetails.PermntOutsideIndiaLineoneMl
+            - jsonPath: $.ChildDetails.*.AddressBirthDetails.permntOutsideIndiaLineoneMl
 
-            - jsonPath: $.ChildDetails.*.AddressBirthDetails.PermntOutsideIndiaLinetwoEn
+            - jsonPath: $.ChildDetails.*.AddressBirthDetails.permntOutsideIndiaLinetwoEn
 
-            - jsonPath: $.ChildDetails.*.AddressBirthDetails.PermntOutsideIndiaLinetwoMl
+            - jsonPath: $.ChildDetails.*.AddressBirthDetails.permntOutsideIndiaLinetwoMl
 
-            - jsonPath: $.ChildDetails.*.AddressBirthDetails.PermntOutsideIndiaprovinceEn
+            - jsonPath: $.ChildDetails.*.AddressBirthDetails.permntOutsideIndiaprovinceEn
 
             - jsonPath: $.ChildDetails.*.AddressBirthDetails.permntInKeralaAdrVillage
 
@@ -315,7 +315,7 @@ serviceMaps:
 
             - jsonPath: $.ChildDetails.*.auditDetails.lastModifiedBy
 
-            - jsonPath: $.ChildDetails.*.AddressBirthDetails.presentBioAdopt
+            - jsonPath: $.ChildDetails.*.AddressBirthDetails.bioAdoptPermanent
 
             - jsonPath: $.ChildDetails.*.AddressBirthDetails.res_asso_no_ml
 
@@ -337,7 +337,7 @@ serviceMaps:
 
             - jsonPath: $.ChildDetails.*.AddressBirthDetails.streetNameMlPermanent
 
-            - jsonPath: $.ChildDetails.*.AddressBirthDetails.PermanentOutsideIndiaPostCode
+            - jsonPath: $.ChildDetails.*.AddressBirthDetails.permanentOutsideIndiaPostCode
 
             - jsonPath: $.ChildDetails.*.ParentsDetails.fatherEmail
 
@@ -400,7 +400,7 @@ serviceMaps:
 
             - jsonPath: $.ChildDetails.*.auditDetails.lastModifiedBy
 
-            - jsonPath: $.ChildDetails.*.AddressBirthDetails.permanentBioAdopt
+            - jsonPath: $.ChildDetails.*.AddressBirthDetails.bioAdoptPresent
 
             - jsonPath: $.ChildDetails.*.AddressBirthDetails.res_asso_no_ml
 
