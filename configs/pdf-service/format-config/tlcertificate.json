@@ -2,557 +2,379 @@
   "key": "tlcertificate",
   "config": {
       "defaultStyle": {
-          "font": "Cambay"
+          "font": "Thumba"
            },
           "content": [
             {
-              "image": "{{qrCode}}",
-              "absolutePosition" : {
-                "x" : 480,
-                "y" : 5
-              },
-              "width": 100,
-              "height": 100
-            },
-             {
-               "style":"noc-head",
-               "table":{
-                 "widths":[
-                   "*"
-                 ],
-                 "body":[ 
-                      [
-                          {
-                              "image": "{{userpic}}",
-                              "width": 70,
-                              "height": 82,
-                              "alignment": "center",
-                               "margin": [
-                                      0,
-                                      10,
-                                      0,
-                                      10
+              "style": "ws-head",
+              "table": {
+                "widths": ["20%", "60%", "20%"],
+                "body": [
+                  [
+                    {
+                      "stack": [
+                        {
+                          "image": "{{logokerala}}",
+                          "width": 50,
+                          "height": 50
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "{{localbodyName}}",
+                          "style": "appendix-header-italic"
+                        },
+                        {
+                          "text": "Issued under Section 447 of the Kerala Municipality Act 1994 (20th Act of 1994)",
+                          "style": "main-body-style"
+                        },
+                        {
+                          "text": "IFTE & OS LICENCE",
+                          "style": "appendix-header-body"
+                        }
+                      ]
+                    },
+                    {
+                      "style": "ws-head",
+                      "table": {
+                        "widths": ["*"],
+                        "body": [
+                          [
+                            {
+                              "columns": [
+                                {
+                                  "text": "License No",
+                                  "width": "35%",
+                                  "style": "details-body"
+                                },
+                                {
+                                  "text": ": ",
+                                  "width": "1%"
+                                },
+                                {
+                                  "text": "{{licenseNumber}}",
+                                  "style": "details-body"
+                                }
                               ]
-                           }  
-                      ],
-                   [
-                     {
-                       "stack": [
-                         {
-                           "text":"{{municipal_corportaion}}",
-                           "style":"receipt-logo-header"
-                         },
-                         {
-                           "text":"{{ulb-address}}",
-                           "style":"receipt-logo-sub-header"
-                         },
-                         {
-                          "style": "noc-head",
-                          "table": {
-                            "widths": [
-                              "*",
-                              "*"
-                            ],
-                            "body": [
-                                [
-                                    {
-                                        "text": "{{corporation_contact}} : {{corporationContact}} ",
-                                        "style": "receipt-sub-address-sub-header"
-                                        
-                                    }
-                               ]
-                            ]
-                          },
-                          "layout": "noBorders"
+                            }
+                          ],
+                          [
+                            {
+                              "columns": [
+                            
+                                {
+                                  "text": "Licensing Unit",
+                                  "width": "35%",
+                                  "style": "details-body"
+                                },
+                                {
+                                    "text": ": ",
+                                    "width": "1%"
+                                },
+                                {
+                                  "text": "{{licenseUnitName}}",
+                                  "style": "details-body"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "columns": [
+                                {
+                                  "text": "മരണ തീയതി/Date of Death",
+                                  "width": "35%",
+                                  "style": "details-body"
+                                },
+                                {
+                                  "text": ": ",
+                                  "width": "1%"
+                                },
+                                {
+                                  "text": "{{dod}}",
+                                  "style": "details-body"
+                                }
+                               
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "columns": [
+                            
+                                {
+                                    "text": "മരണ സ്ഥലം/Place of Death",
+                                    "width": "35%",
+                                    "style": "details-body"
+                                },
+                                {
+                                    "text": ": ",
+                                    "width": "1%"
+                                },
+                                {
+                                  "text": "{{placeOfDeath}}",
+                                  "style": "details-body"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "columns": [
+                                {
+                                  "text": "ഭാര്യയുടെ പേര്/ഭർത്താവിന്റെ പേര്/Name of Wife/Husband",
+                                  "width": "35%",
+                                  "style": "details-body"
+                                },
+                                {
+                                  "text": ": ",
+                                  "width": "1%"
+                                },
+                                {
+                                  "text": "{{spouseName}}",
+                                  "style": "details-body"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "columns": [
+                                {
+                                  "text": "അമ്മയുടെ പേര്/Name of Mother",
+                                  "width": "35%",
+                                  "style": "details-body"
+                                },
+                                {
+                                  "text": ": ",
+                                  "width": "1%"
+                                },
+                                {
+                                  "text": "{{motherName}}",
+                                  "style": "details-body"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "columns": [              
+                                
+                                {
+                                  "text": "പിതാവിന്റെ പേര്/Name of Father",
+                                  "width": "35%",
+                                  "style": "details-body"
+                                },
+                                {
+                                    "text": ": ",
+                                    "width": "1%"
+                                },
+                                {
+                                  "text": "{{fatherorHusbandName}}",
+                                  "style": "details-body"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "columns": [              
+                                
+                                {
+                                  "text": "മരിച്ച വ്യക്തിയുടെ മരണ സമയത്തെ മേൽവിലാസം",
+                                  "width": "35%",
+                                  "style": "details-body"
+                                },
+                                {
+                                    "text": ": ",
+                                    "width": "1%"
+                                },
+                                {
+                                  "text": "{{deceasedPresentAddressml}}",
+                                  "style": "details-body"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "columns": [
+                                {
+                                  "text": "Address Of the deceased at the time of death",
+                                  "width": "35%",
+                                  "style": "details-body"
+                                },
+                                {
+                                  "text": ": ",
+                                  "width": "1%"
+                                },
+                                {
+                                  "text": "{{deceasedPresentAddressen}}",
+                                  "style": "details-body"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "columns": [              
+                                
+                                {
+                                  "text": "മരിച്ച വ്യക്തിയുടെ സ്ഥിരമായ  മേൽവിലാസം ",
+                                  "width": "35%",
+                                  "style": "details-body"
+                                },
+                                {
+                                  "text": ": ",
+                                  "width": "1%"
+                                },
+                                {
+                                  "text": "{{deceasedPermanentAddressml}}",
+                                  "style": "details-body"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "columns": [            
+                                
+                                {
+                                  "text": "Permanent address of the deceased  ",
+                                  "width": "35%",
+                                  "style": "details-body"
+                                },
+                                {
+                                  "text": ": ",
+                                  "width": "1%"
+                                },
+                                {
+                                  "text": "{{deceasedPermanentAddressen}}",
+                                  "style": "details-body"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "columns": [
+                                {
+                                  "text": "രജിസ്ട്രേഷൻ നമ്പർ/Registration Number : {{registrationNo}}",
+                                  "width": "59%",
+                                  "style": "details-body"
+                                },
+                                {
+                                  "text": " ",
+                                  "width": "1%"
+                                },
+                                {
+                                  "text": "രജിസ്ട്രേഷൻ തീയതി/Date of Registration : {{registration_date}}",
+                                  "style": "details-body"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "columns": [
+                                {
+                                  "text": "അഭിപ്രായക്കുറിപ്പ് /Remarks (if any): {{remarks}}",
+                                  "width": "35%",
+                                  "style": "details-body"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "columns": [
+                                {
+                                  "text": "നൽകുന്ന തീയതി / Date of Issue : {{issueDate}}",
+                                  "width": "35%",
+                                  "style": "details-body"
+                                },
+                                {
+                                  "text": " ",
+                                  "width": "1%"
+                                }
+                              ]
+                            }
+                          ],
+                          [
+                            {
+                              "columns": [
+                                {
+                                  "text": "നൽകുന്ന അധികാരിയുടെ മേൽവിലാസം/ Address of the issuing authority ",
+                                  "width": "35%",
+                                  "style": "details-body"
+                                },
+                                {
+                                  "text": ": ",
+                                  "width": "1%"
+                                },
+                                {
+                                  "text": "Registrar of Births and Deaths, {{localBodyName}}",
+                                  "style": "details-body"                      
+                                }
+                              ]
+                            }
+                          ]
+                           
+                        ]
+                      },
+                      "layout": "noBorders"
                     },
                     {
-                          "style": "noc-head",
-                          "table": {
-                            "widths": [
-                              "*",
-                              "*"
-                            ],
-                            "body": [
-                                [
-                                    {
-                                        "text": "{{corporation_website}} : {{corporationWebsite}}",
-                                        "style": "receipt-sub-website-sub-header"
-                                        
-                                    }
-                               ]
-                            ]
-                          },
-                          "layout": "noBorders"
-                    },
-                    {
-                          "style": "noc-head",
-                          "table": {
-                            "widths": [
-                              "*",
-                              "*"
-                            ],
-                            "body": [
-                                [
-                                    {
-                                        "text": "{{corporation_email}} : {{corporationEmail}}",
-                                        "style": "receipt-sub-email-sub-header"
-                                        
-                                    }
-                               ]
-                            ]
-                          },
-                          "layout": "noBorders"
+                      "style": "ws-head",
+                      "table": {
+                        "widths": ["*"],
+                        "body": [
+                          [  
+                            {
+                              "image": "{{qr_code_image}}",
+                              "width": 50,
+                              "height": 50,
+                              "style": "qr-code"
+                            }
+                          ]
+                        ]
+                      },
+                      "layout": "noBorders"
                     }
-                       ],
-                       "alignment":"left",
-                       "margin":[
-                         0,
-                         10,
-                         0,
-                         0
-                       ]
-                     }
-                   ],
-                   [
-                     {
-                       "stack": [
-                         {
-                                   "text":"{{trade_license_certifcate}}",
-                                   "style":"receipt-sub-logo-header"
-                         },
-                         {
-                               "style":"noc-head",
-                               "table":{
-                                 "widths":[
-                                   "35%",
-                                   "65%"
-                                 ],
-                                 "body":[
-                                     [
-                                         {
-                                             "text":"{{trade_license_no}}",
-                                             "style":"receipt-sub-logo-sub-header"
-                                         },
-                                         {
-                                             "text":"{{tradeLicenseNo}}",
-                                             "style":"receipt-sub-logo-sub-header"
-                                         }
-                                    ]
-                                 ]
-                               },
-                               "layout":"noBorders"
-                         },
-                         {
-                               "style":"noc-head",
-                               "table":{
-                                 "widths":[
-                                   "35%",
-                                   "65%"
-                                 ],
-                                 "body":[
-                                     [
-                                         {
-                                             "text":"{{application_no}}",
-                                             "style":"receipt-sub-logo-sub-header"
-                                         },
-                                         {
-                                             "text":"{{applicationNo}}",
-                                             "style":"receipt-sub-logo-sub-header"
-                                         }
-                                    ]
-                                 ]
-                               },
-                               "layout":"noBorders"
-                         },
-                                         {
-                               "style":"noc-head",
-                               "table":{
-                                 "widths":[
-                                   "35%",
-                                   "65%"
-                                 ],
-                                 "body":[
-                                     [
-                                         {
-                                             "text":"{{reciept_no}}",
-                                             "style":"receipt-sub-logo-sub-header"
-                                         },
-                                         {
-                                             "text":"{{recieptNo}}",
-                                             "style":"receipt-sub-logo-sub-header"
-                                         }
-                                    ]
-                                 ]
-                               },
-                               "layout":"noBorders"
-                         },
-                                         {
-                               "style":"noc-head",
-                               "table":{
-                                 "widths":[
-                                   "35%",
-                                   "65%"
-                                 ],
-                                 "body":[
-                                     [
-                                         {
-                                             "text":"{{financial_year}}",
-                                             "style":"receipt-sub-logo-sub-header"
-                                         },
-                                         {
-                                             "text":"{{financialYear}}",
-                                             "style":"receipt-sub-logo-sub-header"
-                                         }
-                                    ]
-                                 ]
-                               },
-                               "layout":"noBorders"
-                         },
-                                         {
-                               "style":"noc-head",
-                               "table":{
-                                 "widths":[
-                                   "35%",
-                                   "65%"
-                                 ],
-                                 "body":[
-                                     [
-                                         {
-                                             "text":"{{trade_name}}",
-                                             "style":"receipt-sub-logo-sub-header"
-                                         },
-                                         {
-                                             "text":"{{tradeName}}",
-                                             "style":"receipt-sub-logo-sub-header"
-                                         }
-                                    ]
-                                 ]
-                               },
-                               "layout":"noBorders"
-                         },
-                                         {
-                               "style":"noc-head",
-                               "table":{
-                                 "widths":[
-                                  "35%",
-                                   "65%"
-                                 ],
-                                 "body":[
-                                     [
-                                         {
-                                             "text":"{{trade_owner_name}}",
-                                             "style":"receipt-sub-logo-sub-header"
-                                         },
-                                         {
-                                             "text":"{{tradeOwnerName}}",
-                                             "style":"receipt-sub-logo-sub-header"
-                                         }
-                                    ]
-                                 ]
-                               },
-                               "layout":"noBorders"
-                         },
-                                         {
-                               "style":"noc-head",
-                               "table":{
-                                 "widths":[
-                                   "35%",
-                                   "65%"
-                                 ],
-                                 "body":[
-                                     [
-                                         {
-                                             "text":"{{trade_owner_contact}}",
-                                             "style":"receipt-sub-logo-sub-header"
-                                         },
-                                         {
-                                             "text":"{{tradeOwnerContact}}",
-                                             "style":"receipt-sub-logo-sub-header"
-                                         }
-                                    ]
-                                 ]
-                               },
-                               "layout":"noBorders"
-                         },
-                                         {
-                               "style":"noc-head",
-                               "table":{
-                                 "widths":[
-                                   "35%",
-                                   "65%"
-                                 ],
-                                 "body":[
-                                     [
-                                         {
-                                             "text":"{{trade_address}}",
-                                             "style":"receipt-sub-logo-sub-header"
-                                         },
-                                         {
-                                             "text":"{{tradeAddress}}, {{city}}",
-                                             "style":"receipt-sub-logo-sub-header"
-                                         }
-                                    ]
-                                 ]
-                               },
-                               "layout":"noBorders"
-                         },
-                         {
-                               "style":"noc-head",
-                               "table":{
-                                 "widths":[
-                                  "35%",
-                                   "65%"
-                                 ],
-                                 "body":[
-                                     [
-                                         {
-                                             "text":"{{trade_type}}",
-                                             "style":"receipt-sub-logo-sub-header"
-                                         },
-                                         {
-                                             "text":"{{tradeType}}",
-                                             "style":"receipt-sub-logo-sub-header"
-                                         }
-                                    ]
-                                 ]
-                               },
-                               "layout":"noBorders"
-                         },
-                         {
-                               "style":"noc-head",
-                               "table":{
-                                 "widths":[
-                                   "35%",
-                                   "65%"
-                                 ],
-                                 "body":[
-                                     [
-                                         {
-                                             "text":"{{accessories_label}}",
-                                             "style":"receipt-sub-logo-sub-header"
-                                         },
-                                         {
-                                             "text":"{{accessories}}",
-                                             "style":"receipt-sub-logo-sub-header"
-                                         }
-                                    ]
-                                 ]
-                               },
-                               "layout":"noBorders"
-                         },
-                         {
-                               "style":"noc-head",
-                               "table":{
-                                 "widths":[
-                                  "35%",
-                                   "65%"
-                                 ],
-                                 "body":[
-                                     [
-                                         {
-                                             "text":"{{trade_license_fee}}",
-                                             "style":"receipt-sub-logo-sub-header"
-                                         },
-                                         {
-                                             "text":"{{tradeLicenseFee}}",
-                                             "style":"receipt-sub-logo-sub-header"
-                                         }
-                                    ]
-                                 ]
-                               },
-                               "layout":"noBorders"
-                         },
-                         {
-                               "style":"noc-head",
-                               "table":{
-                                 "widths":[
-                                  "35%",
-                                   "65%"
-                                 ],
-                                 "body":[
-                                     [
-                                         {
-                                             "text":"{{license_issue_date}}",
-                                             "style":"receipt-sub-logo-sub-header"
-                                         },
-                                         {
-                                             "text":"{{licenseIssueDate}}",
-                                             "style":"receipt-sub-logo-sub-header"
-                                         }
-                                    ]
-                                 ]
-                               },
-                               "layout":"noBorders"
-                         },
-                         {
-                               "style":"noc-head",
-                               "table":{
-                                 "widths":[
-                                   "35%",
-                                   "65%"
-                                 ],
-                                 "body":[
-                                     [
-                                         {
-                                             "text":"{{license_validity}}",
-                                             "style":"receipt-sub-logo-sub-header"
-                                         },
-                                         {
-                                             "text":"{{licenseValidityFrom}} {{to}} {{licenseValidityTo}}",
-                                             "style":"receipt-sub-logo-sub-header"
-                                         }
-                                    ]
-                                 ]
-                               },
-                               "layout":"noBorders"
-                         }
-                       ],
-                       "alignment":"left",
-                       "margin":[
-                         0,
-                         10,
-                         0,
-                         0
-                       ]
-                     }
-                   ]
-                 ]
-               },
-               "layout":"noBorders"
-             },
-             {
-               "style":"receipt-approver",
-               "columns": [
-                 {
-                   "text":[
-                     {
-                       "text":"{{approved_by}} ",
-                       "bold": true
-                     },
-                     {
-                       "text":" {{approvedBy}}",
-                       "bold": false
-                     }
-                   ],
-                   "alignment":"left"
-                 },
-                 {
-                   "text":[
-                     {
-                       "text":"{{commissioner}}",
-                       "bold": true
-                     }
-                   ],
-                   "alignment":"right"
-                 }
-               ]
-             }
-           ],
-           "styles": {
-            "noc-head": {
-              "margin": [
-                -30,
-                -35,
-                0,
-                -2
-              ]
-            },
-             "receipt-approver": {
-              "color": "#000000",
-              "fontSize": 14,
-              "letterSpacing": 0.6,
-              "alignment": "center",
-              "margin": [
-                -10,
-                50,
-                0,
-                1
-              ]
-            },
-            "receipt-logo-header": {
-              "color": "#000000",
-              "fontSize": 20,
-              "letterSpacing": 0.74,
-              "alignment": "center",
-              "margin": [
-                0,
-                0,
-                0,
-                5
-              ]
-            },
-            "receipt-sub-logo-header": {
-              "color": "#000000",
-              "fontSize": 18,
-              "letterSpacing": 0.74,
-              "alignment": "center",
-              "margin": [
-                0,
-                5,
-                0,
-                5
-              ]
-            },
-            "receipt-logo-sub-header": {
-              "color": "#484848",
-              "fontSize": 14,
-              "letterSpacing": 0.6,
-              "alignment": "center",
-              "margin": [
-                0,
-                5,
-                0,
-                0
-              ]
-            },
-            "receipt-sub-logo-sub-header": {
-              "color": "#484848",
-              "fontSize": 14,
-              "letterSpacing": 0.6,
-              "alignment": "left",
-              "margin": [
-                50,
-                40,
-                0,
-                0
-              ]
-            },
-              "receipt-sub-address-sub-header": {
-              "color": "#484848",
-              "fontSize": 14,
-              "letterSpacing": 0.1,
-              "alignment": "right",
-              "margin": [
-                50,
-                30,
-                -90,
-                0
-              ]
-            },
-             "receipt-sub-website-sub-header": {
-              "color": "#484848",
-              "fontSize": 14,
-              "letterSpacing": 0.1,
-              "alignment": "right",
-              "margin": [
-                50,
-                30,
-                -120,
-                0
-              ]
-            },
-              "receipt-sub-email-sub-header": {
-              "color": "#484848",
-              "fontSize": 14,
-              "letterSpacing": 0.1,
-              "alignment": "right",
-              "margin": [
-                50,
-                30,
-                -110,
-                0
-              ]
+                  ]
+                ]
+              },
+              "layout": "noBorders"
             }
+          ],
+           "styles": {
+            "main-body-style": {
+              "color": "#000000",
+              "fontSize": 8,
+              "alignment": "center"
+               }
+          },
+          "appendix-header-italic": {
+            "color": "#000000",
+            "fontSize": 9,
+            "fontWeight": 400,
+            "alignment": "center"
+          },
+          "appendix-header-body": {
+            "color": "#000000",
+            "bold": true,
+            "fontSize": 9,
+            "fontWeight": 400,
+            "alignment": "center"
+          },
+          "details-body": {
+            "color": "#000000",
+            "bold": false,
+            "fontSize": 10,
+            "fontWeight": 400,
+            "margin": [0, 5, 0, 0]
           }
-         }
+        }
       }
