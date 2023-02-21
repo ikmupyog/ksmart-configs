@@ -75,11 +75,11 @@ serviceMaps:
 
             - jsonPath: $.ChildDetails.*.workflowcode
 
-            - jsonPath: $.ChildDetails.*.filenumber
+            - jsonPath: $.ChildDetails.*.fileNumber
 
-            - jsonPath: $.ChildDetails.*.file_date
+            - jsonPath: $.ChildDetails.*.fileDate
 
-            - jsonPath: $.ChildDetails.*.file_status
+            - jsonPath: $.ChildDetails.*.fileStatus7
 
             - jsonPath: $.ChildDetails.*.applicationNumber
 
@@ -89,7 +89,7 @@ serviceMaps:
 
             - jsonPath: $.ChildDetails.*.action
 
-            - jsonPath: $.ChildDetails.*.status
+            - jsonPath: $.ChildDetails.*.applicationStatus
 
             - jsonPath: $.ChildDetails.*.auditDetails.createdTime
 
@@ -277,15 +277,15 @@ serviceMaps:
 
             - jsonPath: $.ChildDetails.*.AddressBirthDetails.houseNameNoMlPermanent
 
-            - jsonPath: $.ChildDetails.*.AddressBirthDetails.PermntOutsideIndiaLineoneEn
+            - jsonPath: $.ChildDetails.*.AddressBirthDetails.permntOutsideIndiaLineoneEn
 
-            - jsonPath: $.ChildDetails.*.AddressBirthDetails.PermntOutsideIndiaLineoneMl
+            - jsonPath: $.ChildDetails.*.AddressBirthDetails.permntOutsideIndiaLineoneMl
 
-            - jsonPath: $.ChildDetails.*.AddressBirthDetails.PermntOutsideIndiaLinetwoEn
+            - jsonPath: $.ChildDetails.*.AddressBirthDetails.permntOutsideIndiaLinetwoEn
 
-            - jsonPath: $.ChildDetails.*.AddressBirthDetails.PermntOutsideIndiaLinetwoMl
+            - jsonPath: $.ChildDetails.*.AddressBirthDetails.permntOutsideIndiaLinetwoMl
 
-            - jsonPath: $.ChildDetails.*.AddressBirthDetails.PermntOutsideIndiaprovinceEn
+            - jsonPath: $.ChildDetails.*.AddressBirthDetails.permntOutsideIndiaprovinceEn
 
             - jsonPath: $.ChildDetails.*.AddressBirthDetails.permntInKeralaAdrVillage
 
@@ -305,7 +305,7 @@ serviceMaps:
 
             - jsonPath: $.ChildDetails.*.id
 
-            - jsonPath: $.ChildDetails.*.AddressBirthDetails.isPrsentAddress
+            - jsonPath: $.ChildDetails.*.AddressBirthDetails.isPrsentAddressInt
 
             - jsonPath: $.ChildDetails.*.auditDetails.createdTime
 
@@ -315,7 +315,7 @@ serviceMaps:
 
             - jsonPath: $.ChildDetails.*.auditDetails.lastModifiedBy
 
-            - jsonPath: $.ChildDetails.*.AddressBirthDetails.bio_adopt
+            - jsonPath: $.ChildDetails.*.AddressBirthDetails.bioAdoptPermanent
 
             - jsonPath: $.ChildDetails.*.AddressBirthDetails.res_asso_no_ml
 
@@ -337,7 +337,7 @@ serviceMaps:
 
             - jsonPath: $.ChildDetails.*.AddressBirthDetails.streetNameMlPermanent
 
-            - jsonPath: $.ChildDetails.*.AddressBirthDetails.PermanentOutsideIndiaPostCode
+            - jsonPath: $.ChildDetails.*.AddressBirthDetails.permanentOutsideIndiaPostCode
 
             - jsonPath: $.ChildDetails.*.ParentsDetails.fatherEmail
 
@@ -400,7 +400,7 @@ serviceMaps:
 
             - jsonPath: $.ChildDetails.*.auditDetails.lastModifiedBy
 
-            - jsonPath: $.ChildDetails.*.AddressBirthDetails.bio_adopt
+            - jsonPath: $.ChildDetails.*.AddressBirthDetails.bioAdoptPresent
 
             - jsonPath: $.ChildDetails.*.AddressBirthDetails.res_asso_no_ml
 
@@ -422,7 +422,7 @@ serviceMaps:
 
             - jsonPath: $.ChildDetails.*.AddressBirthDetails.streetNameMlPresent
 
-            - jsonPath: $.ChildDetails.*.AddressBirthDetails.ot_zipcode
+            - jsonPath: $.ChildDetails.*.AddressBirthDetails.presentInsideKeralaPincode
 
         - query: INSERT INTO public.eg_birth_statitical_information(id, weight_of_child, duration_of_pregnancy_in_week, nature_of_medical_attention, way_of_pregnancy,
             delivery_method, deliverytypeothers_en, deliverytypeothers_ml, religionid, father_nationalityid, father_educationid, father_education_subid,
@@ -566,8 +566,8 @@ serviceMaps:
         - query: UPDATE public.eg_birth_details SET  dateofbirth=?, timeofbirth=?, am_pm=?, firstname_en=?, firstname_ml=?,
             middlename_en=?, middlename_ml=?, lastname_en=?, lastname_ml=?, tenantid=?, gender=?, aadharno=?, esign_user_code=?,
             esign_user_desig_code=?, is_father_info_missing=?, is_mother_info_missing=?, is_born_outside=?, ot_passportno=?, ot_dateofarrival=?,
-            applicationtype=?, businessservice=?, workflowcode=?, fm_fileno=?,
-            file_date=?, file_status=?, applicationno=?, registrationno=?, registration_date=?, action=?, status=?,  lastmodifiedby=?,lastmodifiedtime=? WHERE id=?;
+            applicationtype=?, businessservice=?, workflowcode=?, fm_fileno=?, file_date=?, file_status=?, applicationno=?,  registrationno=?, 
+            registration_date=?, action=?, status=?,  lastmodifiedby=?, lastmodifiedtime=? WHERE id=?;
 
 
           basePath: ChildDetails.*
@@ -600,9 +600,9 @@ serviceMaps:
 
             - jsonPath: $.ChildDetails.*.esign_user_desig_code
 
-            - jsonPath: $.ChildDetails.*.is_father_info_missing
+            - jsonPath: $.ChildDetails.*.isfatherInfo
 
-            - jsonPath: $.ChildDetails.*.is_mother_info_missing
+            - jsonPath: $.ChildDetails.*.ismotherInfo
 
             - jsonPath: $.ChildDetails.*.is_born_outside
 
@@ -616,21 +616,21 @@ serviceMaps:
 
             - jsonPath: $.ChildDetails.*.workflowcode
 
-            - jsonPath: $.ChildDetails.*.fm_fileno
+            - jsonPath: $.ChildDetails.*.fileNumber
 
-            - jsonPath: $.ChildDetails.*.file_date
+            - jsonPath: $.ChildDetails.*.fileDate
 
-            - jsonPath: $.ChildDetails.*.file_status
+            - jsonPath: $.ChildDetails.*.fileStatus
 
-            - jsonPath: $.ChildDetails.*.applicationno
+            - jsonPath: $.ChildDetails.*.applicationNumber
 
-            - jsonPath: $.ChildDetails.*.registrationno
+            - jsonPath: $.ChildDetails.*.registrationNo
 
-            - jsonPath: $.ChildDetails.*.registration_date
+            - jsonPath: $.ChildDetails.*.registrationDate
 
             - jsonPath: $.ChildDetails.*.action
 
-            - jsonPath: $.ChildDetails.*.status
+            - jsonPath: $.ChildDetails.*.applicationStatus
 
             - jsonPath: $.ChildDetails.*.auditDetails.lastModifiedBy
 
