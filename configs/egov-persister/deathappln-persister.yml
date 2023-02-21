@@ -1114,3 +1114,7 @@ serviceMaps:
     #   - jsonPath: $.deathCertificateDtls.*.InformationDeath.TenantId
 
     #   - jsonPath: $.deathCertificateDtls.*.InitiatorDetails.InitiatorAddrTypeId             
+
+
+
+      
