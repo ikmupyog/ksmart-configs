@@ -92,7 +92,7 @@
                         "body": [
                           [  
                             {
-                              "image": "{{qr_code_image}}",
+                              "image": "{{qrCode}}",
                               "width": 50,
                               "height": 50,
                               "style": "qr-code"
