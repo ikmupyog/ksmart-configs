@@ -8,7 +8,7 @@
             {
               "style": "ws-head",
               "table": {
-                "widths": ["20%", "60%", "20%"],
+                "widths": ["*"],
                 "body": [
                   [
                     {
@@ -80,7 +80,6 @@
                               ]
                             }
                           ]
-                           
                         ]
                       },
                       "layout": "noBorders"
