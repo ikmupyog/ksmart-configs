@@ -84,7 +84,7 @@
                             {
                               "columns": [
                                 {
-                                  "text": "??? ?????/Date of Death",
+                                  "text": "മരണ തീയതി/Date of Death",
                                   "width": "35%",
                                   "style": "details-body"
                                 },
@@ -105,7 +105,7 @@
                               "columns": [
                             
                                 {
-                                    "text": "??? ?????/Place of Death",
+                                    "text": "മരണ സ്ഥലം/Place of Death",
                                     "width": "35%",
                                     "style": "details-body"
                                 },
@@ -124,7 +124,7 @@
                             {
                               "columns": [
                                 {
-                                  "text": "????????? ????/???????????? ????/Name of Wife/Husband",
+                                  "text": "ഭാര്യയുടെ പേര്/ഭർത്താവിന്റെ പേര്/Name of Wife/Husband",
                                   "width": "35%",
                                   "style": "details-body"
                                 },
@@ -143,7 +143,7 @@
                             {
                               "columns": [
                                 {
-                                  "text": "???????? ????/Name of Mother",
+                                  "text": "അമ്മയുടെ പേര്/Name of Mother",
                                   "width": "35%",
                                   "style": "details-body"
                                 },
@@ -163,7 +163,7 @@
                               "columns": [              
                                 
                                 {
-                                  "text": "?????????? ????/Name of Father",
+                                  "text": "പിതാവിന്റെ പേര്/Name of Father",
                                   "width": "35%",
                                   "style": "details-body"
                                 },
@@ -183,7 +183,7 @@
                               "columns": [              
                                 
                                 {
-                                  "text": "?????? ??????????? ??? ??????? ?????????",
+                                  "text": "മരിച്ച വ്യക്തിയുടെ മരണ സമയത്തെ മേൽവിലാസം",
                                   "width": "35%",
                                   "style": "details-body"
                                 },
@@ -222,7 +222,7 @@
                               "columns": [              
                                 
                                 {
-                                  "text": "?????? ??????????? ????????  ????????? ",
+                                  "text": "മരിച്ച വ്യക്തിയുടെ സ്ഥിരമായ  മേൽവിലാസം ",
                                   "width": "35%",
                                   "style": "details-body"
                                 },
@@ -261,7 +261,7 @@
                             {
                               "columns": [
                                 {
-                                  "text": "??????????? ?????/Registration Number : {{registrationNo}}",
+                                  "text": "രജിസ്ട്രേഷൻ നമ്പർ/Registration Number : {{registrationNo}}",
                                   "width": "59%",
                                   "style": "details-body"
                                 },
@@ -270,7 +270,7 @@
                                   "width": "1%"
                                 },
                                 {
-                                  "text": "??????????? ?????/Date of Registration : {{registration_date}}",
+                                  "text": "രജിസ്ട്രേഷൻ തീയതി/Date of Registration : {{registration_date}}",
                                   "style": "details-body"
                                 }
                               ]
@@ -280,7 +280,7 @@
                             {
                               "columns": [
                                 {
-                                  "text": "?????????????????? /Remarks (if any): {{remarks}}",
+                                  "text": "അഭിപ്രായക്കുറിപ്പ് /Remarks (if any): {{remarks}}",
                                   "width": "35%",
                                   "style": "details-body"
                                 }
@@ -291,7 +291,7 @@
                             {
                               "columns": [
                                 {
-                                  "text": "??????? ????? / Date of Issue : {{issueDate}}",
+                                  "text": "നൽകുന്ന തീയതി / Date of Issue : {{issueDate}}",
                                   "width": "35%",
                                   "style": "details-body"
                                 },
@@ -306,7 +306,7 @@
                             {
                               "columns": [
                                 {
-                                  "text": "??????? ??????????? ?????????/ Address of the issuing authority ",
+                                  "text": "നൽകുന്ന അധികാരിയുടെ മേൽവിലാസം/ Address of the issuing authority ",
                                   "width": "35%",
                                   "style": "details-body"
                                 },
