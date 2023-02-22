@@ -25,11 +25,19 @@
                         {
                           "text": "{{localbodyName}}",
                           "style": "appendix-header-italic"
-                        },
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [
                         {
                           "text": "Issued under Section 447 of the Kerala Municipality Act 1994 (20th Act of 1994)",
                           "style": "main-body-style"
-                        },
+                        }  
+                      ]
+                    },
+                    {
+                      "stack": [
                         {
                           "text": "IFTE & OS LICENCE",
                           "style": "appendix-header-body"
