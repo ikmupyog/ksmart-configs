@@ -84,23 +84,6 @@
                         ]
                       },
                       "layout": "noBorders"
-                    },
-                    {
-                      "style": "ws-head",
-                      "table": {
-                        "widths": ["*"],
-                        "body": [
-                          [  
-                            {
-                              "image": "{{qrCode}}",
-                              "width": 50,
-                              "height": 50,
-                              "style": "qr-code"
-                            }
-                          ]
-                        ]
-                      },
-                      "layout": "noBorders"
                     }
                   ]
                 ]
