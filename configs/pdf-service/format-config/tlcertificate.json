@@ -14,16 +14,6 @@
                     {
                       "stack": [
                         {
-                          "image": "{{logokerala}}",
-                          "width": 50,
-                          "height": 50,
-                          "style": "appendix-header-italic"
-                        }
-                      ]
-                    },
-                    {
-                      "stack": [
-                        {
                           "text": "{{localbodyName}}",
                           "style": "appendix-header-italic"
                         },
