@@ -41,32 +41,6 @@
                 ]
               },
               "layout": "noBorders"
-            },
-            {
-              "style": "ws-head",
-              "table": {
-                "widths": ["35%","1%","64%"],
-                "body": [
-                  [
-                    {
-                      "columns": [
-                        {
-                          "text": "License No",
-                          "style": "details-body"
-                        },
-                        {
-                          "text": ": "
-                        },
-                        {
-                          "text": "{{licenseNumber}}",
-                          "style": "details-body"
-                        }
-                      ]
-                    }
-                  ]
-                ]
-              },
-              "layout": "noBorders"
             }
           ],
           "styles": {
