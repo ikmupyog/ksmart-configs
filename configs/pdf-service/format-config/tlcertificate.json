@@ -45,19 +45,17 @@
             {
               "style": "ws-head",
               "table": {
-                "widths": ["*"],
+                "widths": ["35%","1%","64%"],
                 "body": [
                   [
                     {
                       "columns": [
                         {
                           "text": "License No",
-                          "width": "35%",
                           "style": "details-body"
                         },
                         {
-                          "text": ": ",
-                          "width": "1%"
+                          "text": ": "
                         },
                         {
                           "text": "{{licenseNumber}}",
