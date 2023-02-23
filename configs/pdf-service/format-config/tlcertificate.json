@@ -8,7 +8,7 @@
             {
               "style": "ws-head",
               "table": {
-                "widths": ["100%"],
+                "widths": ["*"],
                 "body": [
                   [
                     {
@@ -26,55 +26,6 @@
                           "style": "appendix-header-body"
                         }
                       ]
-                    },
-                    
-                    {
-                      "style": "ws-head",
-                      "table": {
-                        "widths": ["*"],
-                        "body": [
-                          [
-                            {
-                              "columns": [
-                                {
-                                  "text": "License No",
-                                  "width": "35%",
-                                  "style": "details-body"
-                                },
-                                {
-                                  "text": ": ",
-                                  "width": "1%"
-                                },
-                                {
-                                  "text": "{{licenseNumber}}",
-                                  "style": "details-body"
-                                }
-                              ]
-                            }
-                          ],
-                          [
-                            {
-                              "columns": [
-                            
-                                {
-                                  "text": "Licensing Unit",
-                                  "width": "35%",
-                                  "style": "details-body"
-                                },
-                                {
-                                    "text": ": ",
-                                    "width": "1%"
-                                },
-                                {
-                                  "text": "{{licenseUnitName}}",
-                                  "style": "details-body"
-                                }
-                              ]
-                            }
-                          ]
-                        ]
-                      },
-                      "layout": "noBorders"
                     }
                   ]
                 ]
