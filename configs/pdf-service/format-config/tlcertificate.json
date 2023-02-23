@@ -52,15 +52,13 @@
                       "columns": [
                         {
                           "text": "License No",
-                          "width": "35%",
                           "style": "details-body"
                         },
                         {
-                          "text": ": ",
-                          "width": "1%"
+                          "text": ": "
                         },
                         {
-                          "text": "hhbjbjb",
+                          "text": "{{licenseNumber}}",
                           "style": "details-body"
                         }
                       ]
