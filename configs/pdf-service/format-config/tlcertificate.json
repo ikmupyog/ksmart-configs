@@ -45,7 +45,7 @@
             {
               "style": "ws-head",
               "table": {
-                "widths": ["*"],
+                "widths": ["40%","20%","40%"],
                 "body": [
                   [
                     {
@@ -69,7 +69,7 @@
               "layout": "noBorders"
             }
           ],
-           "styles": {
+          "styles": {
             "main-body-style": {
               "color": "#000000",
               "fontSize": 8,
