@@ -65,26 +65,6 @@
                         }
                       ]
                     }
-                  ],
-                  [
-                    {
-                      "columns": [
-                    
-                        {
-                          "text": "Licensing Unit",
-                          "width": "35%",
-                          "style": "details-body"
-                        },
-                        {
-                            "text": ": ",
-                            "width": "1%"
-                        },
-                        {
-                          "text": "{{licenseUnitName}}",
-                          "style": "details-body"
-                        }
-                      ]
-                    }
                   ]
                 ]
               },
