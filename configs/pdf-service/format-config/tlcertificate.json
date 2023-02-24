@@ -15,7 +15,7 @@
                       "stack": [
                         {
                           "text": "{{localbodyName}}",
-                          "style": "appendix-header-italic"
+                          "style": "appendix-header"
                         },
                         {
                           "text": "Issued under Section 447 of the Kerala Municipality Act 1994 (20th Act of 1994)",
@@ -43,7 +43,7 @@
                         {
                           "text": "License No",
                           "style": "appendix-header-body",
-                          "widths":"35%"
+                          "widths":"25%"
                         },
                         {
                           "text": "{{licenseNumber}}",
@@ -57,7 +57,7 @@
                       "stack": [
                         {
                           "text": "1. Licensee Name and Address",
-                          "style": "appendix-header-body"
+                          "style": "header-body"
                         }
                       ]
                     }
@@ -67,7 +67,7 @@
                       "columns": [
                         {
                           "text": "Organisation Reg No.",
-                          "style": "appendix-header-body",
+                          "style": "header-body",
                           "widths":"35%"
                         },
                         {
@@ -82,7 +82,7 @@
                       "columns": [
                         {
                           "text": "Organisation Name",
-                          "style": "appendix-header-body",
+                          "style": "header-body",
                           "widths":"35%"
                         },
                         {
@@ -97,7 +97,7 @@
                       "columns": [
                         {
                           "text": "Address",
-                          "style": "appendix-header-body",
+                          "style": "header-body",
                           "widths":"35%"
                         },
                         {
@@ -112,7 +112,7 @@
                       "columns": [
                         {
                           "text": "Designation",
-                          "style": "appendix-header-body",
+                          "style": "header-body",
                           "widths":"35%"
                         },
                         {
@@ -127,7 +127,7 @@
                       "columns": [
                         {
                           "text": "Designated Person/Owners Name",
-                          "style": "appendix-header-body",
+                          "style": "header-body",
                           "widths":"35%"
                         },
                         {
@@ -142,7 +142,7 @@
                       "columns": [
                         {
                           "text": "Personal Address ",
-                          "style": "appendix-header-body",
+                          "style": "header-body",
                           "widths":"35%"
                         },
                         [
@@ -188,7 +188,7 @@
             "appendix-header": {
               "color": "#000000",
               "bold": true,
-              "fontSize": 9,
+              "fontSize": 14,
               "fontWeight": 400,
               "alignment": "center"
             },
@@ -544,6 +544,13 @@
                 -81,
                 0
               ]
+            },
+            "header-body": {
+              "color": "#000000",
+              "bold": true,
+              "fontSize": 11,
+              "fontWeight": 400,
+              "alignment": "left"
             }
           }
     }
