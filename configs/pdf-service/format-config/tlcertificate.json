@@ -24,19 +24,19 @@
                         {
                           "text": "IFTE & OS LICENCE",
                           "style": "appendix-header-body"
+                        }
+                      ]
+                    },
+                    {
+                      "columns": [
+                        {
+                          "text": "License No",
+                          "style": "appendix-header-body",
+                          "widths":"35%"
                         },
                         {
-                          "columns": [
-                            {
-                              "text": "License No",
-                              "style": "appendix-header-body",
-                              "widths":"35%"
-                            },
-                            {
-                              "text": "{{licenseNumber}}",
-                              "style": "appendix-header-body"
-                            }
-                          ]
+                          "text": "{{licenseNumber}}",
+                          "style": "appendix-header-body"
                         }
                       ]
                     }
