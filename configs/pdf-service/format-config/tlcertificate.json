@@ -41,7 +41,7 @@
                     {
                       "columns": [
                         {
-                          "text": "Licensee",
+                          "text": "License No",
                           "style": "details-body",
                           "widths":"35%"
                         },
@@ -50,25 +50,12 @@
                           "style": "details-body"
                         }
                       ]
-                    },
-                    {
-                      "columns": [
-                        {
-                          "text": "Licensing Unit ",
-                          "style": "details-body",
-                          "widths":"35%"
-                        },
-                        {
-                          "text": "{{licenseUnitName}}",
-                          "style": "details-body"
-                        }
-                      ]
                     }
                   ]
                 ]
               },
               "layout": "noBorders"
-            }
+            } 
           ],
           "styles": {
             "pdf-header": {
