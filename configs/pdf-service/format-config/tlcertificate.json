@@ -72,11 +72,11 @@
                       "stack": [
                         {
                           "text": "{{ownerDesignation}}",
-                          "style": "details-body"
+                          "style": "details-body-sub"
                         },
                         {
                           "text": "{{ownerHouseName}}",
-                          "style": "details-body"
+                          "style": "details-body-sub"
                         }
                       ]
                     }
@@ -261,6 +261,18 @@
               "fontWeight": 300,
               "margin": [
                 10,
+                10,
+                10,
+                10
+              ]
+            },
+            "details-body-sub": {
+              "color": "#000000",
+              "bold": false,
+              "fontSize": 11,
+              "fontWeight": 300,
+              "margin": [
+                200,
                 10,
                 10,
                 10
