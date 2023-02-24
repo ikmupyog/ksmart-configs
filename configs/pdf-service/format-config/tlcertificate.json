@@ -66,6 +66,20 @@
                         }
                       ]
                     }
+                  ],
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "{{ownerDesignation}}",
+                          "style": "details-body"
+                        },
+                        {
+                          "text": "{{ownerHouseName}}",
+                          "style": "details-body"
+                        }
+                      ]
+                    }
                   ]
                 ]
               },

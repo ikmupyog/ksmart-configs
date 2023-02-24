@@ -323,37 +323,37 @@
               }
             },
             {
-              "variable": "partitionNo",
+              "variable": "doorNo",
               "value": {
                 "path": "$.tradeLicenseDetail.structurePlace.*.doorNo"
               }
             },
             {
-              "variable": "partitionNo",
+              "variable": "doorNoSub",
               "value": {
                 "path": "$.tradeLicenseDetail.structurePlace.*.doorNoSub"
               }
             },
             {
-              "variable": "partitionNo",
+              "variable": "buildingId",
               "value": {
                 "path": "$.tradeLicenseDetail.structurePlace.*.buildingId"
               }
             },
             {
-              "variable": "partitionNo",
+              "variable": "stallNo",
               "value": {
                 "path": "$.tradeLicenseDetail.structurePlace.*.stallNo"
               }
             },
             {
-              "variable": "partitionNo",
+              "variable": "vehicleNo",
               "value": {
                 "path": "$.tradeLicenseDetail.structurePlace[0].vehicleNo"
               }
             },
             {
-              "variable": "partitionNo",
+              "variable": "vesselNo",
               "value": {
                 "path": "$.tradeLicenseDetail.structurePlace[0].vesselNo"
               }
