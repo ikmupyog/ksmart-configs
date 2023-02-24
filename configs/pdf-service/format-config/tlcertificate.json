@@ -24,6 +24,19 @@
                         {
                           "text": "IFTE & OS LICENCE",
                           "style": "appendix-header-body"
+                        },
+                        {
+                          "columns": [
+                            {
+                              "text": "License No",
+                              "style": "appendix-header-body",
+                              "widths":"35%"
+                            },
+                            {
+                              "text": "{{licenseNumber}}",
+                              "style": "appendix-header-body"
+                            }
+                          ]
                         }
                       ]
                     }
@@ -41,13 +54,9 @@
                     {
                       "columns": [
                         {
-                          "text": "License No",
+                          "text": "Licensee",
                           "style": "details-body",
                           "widths":"35%"
-                        },
-                        {
-                          "text": ": ",
-                          "widths":"1%"
                         },
                         {
                           "text": "{{licenseNumber}}",
@@ -59,7 +68,27 @@
                 ]
               },
               "layout": "noBorders"
-            } 
+            },
+            {
+              "style": "ws-head",
+              "table": {
+                "widths": ["*"],
+                "body": [
+                  [
+                    {
+                      "columns": [
+                        {
+                          "text": "[ലൈസൻസ് എടുക്കുന്ന വ്യക്തിയുടെ പേരും വിലാസവും] ",
+                          "style": "details-body",
+                          "widths":"35%"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              },
+              "layout": "noBorders"
+            }
           ],
           "styles": {
             "pdf-header": {
@@ -237,8 +266,8 @@
               "margin": [
                 10,
                 10,
-                0,
-                0
+                10,
+                10
               ]
             },
             "details-body-center": {
