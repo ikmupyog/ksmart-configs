@@ -43,7 +43,7 @@
                         {
                           "text": "License No",
                           "style": "appendix-header-body",
-                          "widths":"25%"
+                          "widths":"15%"
                         },
                         {
                           "text": "{{licenseNumber}}",
@@ -188,13 +188,13 @@
             "appendix-header": {
               "color": "#000000",
               "bold": true,
-              "fontSize": 14,
+              "fontSize": 20,
               "fontWeight": 400,
               "alignment": "center"
             },
             "main-body-style": {
               "color": "#000000",
-              "fontSize": 11,
+              "fontSize": 12,
               "alignment": "center"
             },
             "appendix-header-italic": {
@@ -370,7 +370,7 @@
             "appendix-header-body": {
               "color": "#000000",
               "bold": true,
-              "fontSize": 11,
+              "fontSize": 14,
               "fontWeight": 400,
               "alignment": "center"
             },
@@ -426,9 +426,9 @@
               "color": "#484848"
             },
             "pdf-header-text": {
-              "color": "#484848",
-              "fontSize": 20,
-              "bold": true,
+              "color": "#000000",
+              "fontSize": 17,
+              "fontWeight": 400,
               "letterSpacing": 0.74,
               "margin": [
                 0,
@@ -438,8 +438,8 @@
               ]
             },
             "pdf-header-sub-text": {
-              "color": "#484848",
-              "fontSize": 15,
+              "color": "#000000",
+              "fontSize": 14,
               "letterSpacing": 0.6
             },
             "pdf-application-no": {
