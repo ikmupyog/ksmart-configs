@@ -51,6 +51,21 @@
                         }
                       ]
                     }
+                  ],
+                  [
+                    {
+                      "columns": [
+                        {
+                          "text": "Licensee Name and Address",
+                          "style": "details-body",
+                          "widths":"35%"
+                        },
+                        {
+                          "text": "{{ownerName}}",
+                          "style": "details-body"
+                        }
+                      ]
+                    }
                   ]
                 ]
               },
