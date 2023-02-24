@@ -68,25 +68,6 @@
                 ]
               },
               "layout": "noBorders"
-            },
-            {
-              "style": "ws-head",
-              "table": {
-                "widths": ["*"],
-                "body": [
-                  [
-                    {
-                      "columns": [
-                        {
-                          "text": "[ലൈസൻസ് എടുക്കുന്ന വ്യക്തിയുടെ പേരും വിലാസവും]",
-                          "style": "details-body"
-                        }
-                      ]
-                    }
-                  ]
-                ]
-              },
-              "layout": "noBorders"
             }
           ],
           "styles": {
