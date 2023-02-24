@@ -80,15 +80,15 @@
             },
             "main-body-style": {
               "color": "#000000",
-              "fontSize": 8,
+              "fontSize": 11,
               "alignment": "center"
             },
             "appendix-header-italic": {
               "color": "#000000",
-              "fontSize": 12,
+              "fontSize": 14,
               "fontWeight": 400,
               "alignment": "center",
-              "bold": false
+              "bold": true
             },
             "appendix-header-emblem": {
               "color": "#000000",
@@ -220,7 +220,7 @@
             "rule-body_multiLang": {
               "color": "#000000",
               "bold": false,
-              "fontSize": 10,
+              "fontSize": 11,
               "fontWeight": 400,
               "margin": [
                 0,
@@ -232,11 +232,11 @@
             "details-body": {
               "color": "#000000",
               "bold": false,
-              "fontSize": 10,
-              "fontWeight": 400,
+              "fontSize": 11,
+              "fontWeight": 300,
               "margin": [
-                0,
-                5,
+                10,
+                10,
                 0,
                 0
               ]
@@ -244,7 +244,7 @@
             "details-body-center": {
               "color": "#000000",
               "bold": false,
-              "fontSize": 8,
+              "fontSize": 11,
               "alignment": "center"
             },
             "footer-red": {
@@ -256,7 +256,7 @@
             "appendix-header-body": {
               "color": "#000000",
               "bold": true,
-              "fontSize": 9,
+              "fontSize": 11,
               "fontWeight": 400,
               "alignment": "center"
             },
