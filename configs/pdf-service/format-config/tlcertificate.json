@@ -42,11 +42,36 @@
                       "columns": [
                         {
                           "text": "License No",
-                          "style": "details-body",
+                          "style": "appendix-header-body",
                           "widths":"35%"
                         },
                         {
                           "text": "{{licenseNumber}}",
+                          "style": "appendix-header-body"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "1. Licensee Name and Address",
+                          "style": "appendix-header-body"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "columns": [
+                        {
+                          "text": "Organisation Reg No.",
+                          "style": "appendix-header-body",
+                          "widths":"35%"
+                        },
+                        {
+                          "text": "{{organisationRegistrationNo}}",
                           "style": "details-body"
                         }
                       ]
@@ -56,8 +81,53 @@
                     {
                       "columns": [
                         {
-                          "text": "1. Licensee Name and Address",
-                          "style": "details-body",
+                          "text": "Organisation Name",
+                          "style": "appendix-header-body",
+                          "widths":"35%"
+                        },
+                        {
+                          "text": "{{institutionName}}",
+                          "style": "details-body"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "columns": [
+                        {
+                          "text": "Address",
+                          "style": "appendix-header-body",
+                          "widths":"35%"
+                        },
+                        {
+                          "text": "{{organisationAddress}}",
+                          "style": "details-body"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "columns": [
+                        {
+                          "text": "Designation",
+                          "style": "appendix-header-body",
+                          "widths":"35%"
+                        },
+                        {
+                          "text": "{{ownerDesignation}}",
+                          "style": "details-body"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "columns": [
+                        {
+                          "text": "Designated Person/Owners Name",
+                          "style": "appendix-header-body",
                           "widths":"35%"
                         },
                         {
@@ -69,72 +139,34 @@
                   ],
                   [
                     {
-                      "stack": [
-                        {
-                          "text": "{{ownerDesignation}}",
-                          "style": "details-body-sub"
-                        },
-                        {
-                          "text": "{{ownerHouseName}}",
-                          "style": "details-body-sub"
-                        },
-                        {
-                          "text": "{{ownerStreet}}",
-                          "style": "details-body-sub"
-                        },
-                        {
-                          "text": "{{ownerLocality}}",
-                          "style": "details-body-sub"
-                        },
-                        {
-                          "text": "{{ownerPostOffice}} - {{ownerPincode}}",
-                          "style": "details-body-sub"
-                        }
-                      ]
-                    }
-                  ],
-                  [
-                    {
                       "columns": [
                         {
-                          "text": "2. Licensing Unit Name and Address",
-                          "style": "details-body",
+                          "text": "Personal Address ",
+                          "style": "appendix-header-body",
                           "widths":"35%"
                         },
-                        {
-                          "text": "{{licenseUnitName}}",
-                          "style": "details-body"
-                        }
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "stack": [
-                        {
-                          "text": "{{wardNo}} / {{combainedDoorNo}}",
-                          "style": "details-body-sub"
-                        },
-                        {
-                          "text": "{{buildingName}}",
-                          "style": "details-body-sub"
-                        },
-                        {
-                          "text": "{{street}}",
-                          "style": "details-body-sub"
-                        },
-                        {
-                          "text": "{{locality}}",
-                          "style": "details-body-sub"
-                        },
-                        {
-                          "text": "{{landmark}}",
-                          "style": "details-body-sub"
-                        },
-                        {
-                          "text": "{{instPincode}} - {{pincode}}",
-                          "style": "details-body-sub"
-                        }
+                        [
+                          {
+                            "stack": [
+                              {
+                                "text": "{{ownerHouseName}}",
+                                "style": "details-body-sub"
+                              },
+                              {
+                                "text": "{{ownerStreet}}",
+                                "style": "details-body-sub"
+                              },
+                              {
+                                "text": "{{ownerLocality}}",
+                                "style": "details-body-sub"
+                              },
+                              {
+                                "text": "{{ownerPostOffice}} - {{ownerPincode}}",
+                                "style": "details-body-sub"
+                              }
+                            ]
+                          }
+                        ]
                       ]
                     }
                   ]

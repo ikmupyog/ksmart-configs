@@ -293,9 +293,45 @@
               }
             },
             {
-              "variable": "institution",
+              "variable": "institutionName",
               "value": {
-                "path": "$.tradeLicenseDetail.institution"
+                "path": "$.tradeLicenseDetail.institution.institutionName"
+              }
+            },
+            {
+              "variable": "institutionContactNo",
+              "value": {
+                "path": "$.tradeLicenseDetail.institution.contactNo"
+              }
+            },
+            {
+              "variable": "organisationRegistrationNo",
+              "value": {
+                "path": "$.tradeLicenseDetail.institution.organisationregistrationno"
+              }
+            },
+            {
+              "variable": "organisationAddress",
+              "value": {
+                "path": "$.tradeLicenseDetail.institution.address"
+              }
+            },
+            {
+              "variable": "natureOfInstitution",
+              "value": {
+                "path": "$.tradeLicenseDetail.institution.natureOfInstitution"
+              }
+            },
+            {
+              "variable": "institutinEmail",
+              "value": {
+                "path": "$.tradeLicenseDetail.institution.email"
+              }
+            },
+            {
+              "variable": "licenseUnitId",
+              "value": {
+                "path": "$.tradeLicenseDetail.institution.licenseUnitId"
               }
             },
             {
