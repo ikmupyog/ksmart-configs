@@ -77,6 +77,18 @@
                         {
                           "text": "{{ownerHouseName}}",
                           "style": "details-body-sub"
+                        },
+                        {
+                          "text": "{{street}}",
+                          "style": "details-body-sub"
+                        },
+                        {
+                          "text": "{{locality}}",
+                          "style": "details-body-sub"
+                        },
+                        {
+                          "text": "{{postOffice}} - {{pincode}}",
+                          "style": "details-body-sub"
                         }
                       ]
                     }
@@ -262,8 +274,8 @@
               "margin": [
                 10,
                 10,
-                10,
-                10
+                0,
+                0
               ]
             },
             "details-body-sub": {
@@ -272,10 +284,10 @@
               "fontSize": 11,
               "fontWeight": 300,
               "margin": [
-                200,
-                10,
-                10,
-                10
+                300,
+                0,
+                5,
+                0
               ]
             },
             "details-body-center": {
