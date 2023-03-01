@@ -65,14 +65,6 @@
                           "style": "pdf-header-text"
                         }
                       ]
-                    },
-                    {
-                      "stack": [
-                        {
-                          "text": "{{licenseUnitId}}  {{licenseUnitName}}",
-                          "style": "details-body"
-                        }
-                      ]
                     }
                   ],
                   [
