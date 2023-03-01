@@ -65,6 +65,14 @@
                           "style": "pdf-header-text"
                         }
                       ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "{{licenseUnitId}}  {{licenseUnitName}}",
+                          "style": "details-body"
+                        }
+                      ]
                     }
                   ],
                   [
@@ -155,19 +163,19 @@
                             "stack": [
                               {
                                 "text": "{{ownerHouseName}}",
-                                "style": "details-body-sub"
+                                "style": "details-body"
                               },
                               {
                                 "text": "{{ownerStreet}}",
-                                "style": "details-body-sub"
+                                "style": "details-body"
                               },
                               {
                                 "text": "{{ownerLocality}}",
-                                "style": "details-body-sub"
+                                "style": "details-body"
                               },
                               {
                                 "text": "{{ownerPostOffice}} - {{ownerPincode}}",
-                                "style": "details-body-sub"
+                                "style": "details-body"
                               }
                             ]
                           }
@@ -232,27 +240,27 @@
                             "stack": [
                               {
                                 "text": "{{wardNo}} / {{combainedDoorNo}}",
-                                "style": "details-body-sub"
+                                "style": "details-body"
                               },
                               {
                                 "text": "{{buildingName}}",
-                                "style": "details-body-sub"
+                                "style": "details-body"
                               },
                               {
                                 "text": "{{street}}",
-                                "style": "details-body-sub"
+                                "style": "details-body"
                               },
                               {
                                 "text": "{{locality}}",
-                                "style": "details-body-sub"
+                                "style": "details-body"
                               },
                               {
                                 "text": "{{landmark}}",
-                                "style": "details-body-sub"
+                                "style": "details-body"
                               },
                               {
                                 "text": "{{postOffice}} - {{instPincode}}",
-                                "style": "details-body-sub"
+                                "style": "details-body"
                               }
                             ]
                           }
@@ -375,7 +383,8 @@
                     }
                   ]
                 ]
-              }
+              },
+              "layout": "noBorders"
             },
             {
               "style": "ws-head",
@@ -728,7 +737,7 @@
               "letterSpacing": 0.74,
               "margin": [
                 0,
-                0,
+                -10,
                 0,
                 5
               ]
