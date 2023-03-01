@@ -291,36 +291,6 @@
                         }
                       ]
                     }
-                  ],
-                  [
-                    {
-                      "columns": [
-                        {
-                          "text": "Business Category",
-                          "style": "pdf-header-sub-text"
-                        }
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "columns": [
-                        {
-                          "text": "Type",
-                          "style": "pdf-header-sub-text"
-                        }
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "columns": [
-                        {
-                          "text": "Sub Type",
-                          "style": "pdf-header-sub-text"
-                        }
-                      ]
-                    }
                   ]
                 ]
               },
