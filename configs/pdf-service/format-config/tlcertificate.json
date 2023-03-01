@@ -280,7 +280,7 @@
             {
               "style": "ws-head",
               "table": {
-                "widths": ["10%","35%","35%"],
+                "widths": ["10%","30%","30%","30%"],
                 "body": [
                   [
                     {
@@ -303,6 +303,163 @@
                       "stack": [
                         {
                           "text": "Type",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "Sub Type",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "1",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "{{businessCategory}}",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "{{businessType}}",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "{{businessSubtype}}",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              },
+              "layout": "2px"
+            },
+            {
+              "style": "ws-head",
+              "table": {
+                "widths": ["*"],
+                "body": [
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "4",
+                          "style": "pdf-header-text-serialNo"
+                        },
+                        {
+                          "text": "Validation & Renewal",
+                          "style": "pdf-header-text"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              }
+            },
+            {
+              "style": "ws-head",
+              "table": {
+                "widths": ["10%","35%","10%","10%","35%"],
+                "body": [
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "License Issue Date",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "Period of Validity",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "License Renewal Date",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "Licensee Fee",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": " License issuing Authority",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "{{licenseIssueDate}}",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "{{licenseValidityFrom}}-{{licenseValidityTo}}",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "{{trade_license_fee}}",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "",
                           "style": "pdf-header-sub-text"
                         }
                       ]
