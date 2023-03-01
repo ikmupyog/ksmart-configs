@@ -280,7 +280,7 @@
             {
               "style": "ws-head",
               "table": {
-                "widths": ["100px"],
+                "widths": ["50%"],
                 "body": [
                   [
                     {
