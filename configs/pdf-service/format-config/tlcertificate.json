@@ -173,11 +173,159 @@
                         ]
                       ]
                     }
+                  ],
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "2",
+                          "style": "pdf-header-text-serialNo"
+                        },
+                        {
+                          "text": "Licensing Unit Name and Address",
+                          "style": "pdf-header-text"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "columns": [
+                        {
+                          "text": "Licensing Unit ID ",
+                          "style": "pdf-header-sub-text",
+                          "widths":"35%"
+                        },
+                        {
+                          "text": "{{licenseUnitId}}",
+                          "style": "details-body"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "columns": [
+                        {
+                          "text": "Licensing Unit Name",
+                          "style": "pdf-header-sub-text",
+                          "widths":"35%"
+                        },
+                        {
+                          "text": "{{licenseUnitName}}",
+                          "style": "details-body"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "columns": [
+                        {
+                          "text": "Location",
+                          "style": "pdf-header-sub-text",
+                          "widths":"35%"
+                        },
+                        [
+                          {
+                            "stack": [
+                              {
+                                "text": "{{wardNo}} / {{combainedDoorNo}}",
+                                "style": "details-body-sub"
+                              },
+                              {
+                                "text": "{{buildingName}}",
+                                "style": "details-body-sub"
+                              },
+                              {
+                                "text": "{{street}}",
+                                "style": "details-body-sub"
+                              },
+                              {
+                                "text": "{{locality}}",
+                                "style": "details-body-sub"
+                              },
+                              {
+                                "text": "{{landmark}}",
+                                "style": "details-body-sub"
+                              },
+                              {
+                                "text": "{{postOffice}} - {{instPincode}}",
+                                "style": "details-body-sub"
+                              }
+                            ]
+                          }
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "3",
+                          "style": "pdf-header-text-serialNo"
+                        },
+                        {
+                          "text": "Licensing Business Activity Details",
+                          "style": "pdf-header-text"
+                        }
+                      ]
+                    }
                   ]
                 ]
               },
               "layout": "noBorders"
-            } 
+            },
+            {
+              "style": "ws-head",
+              "table": {
+                "widths": ["100px","300px","300px","300px"],
+                "body": [
+                  [
+                    {
+                      "columns": [
+                        {
+                          "text": "Sl No",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "columns": [
+                        {
+                          "text": "Business Category",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "columns": [
+                        {
+                          "text": "Type",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "columns": [
+                        {
+                          "text": "Sub Type",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              },
+              "layout": "2px"
+            }
           ],
           "styles": {
             "pdf-header": {
