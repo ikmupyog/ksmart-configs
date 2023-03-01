@@ -57,7 +57,8 @@
                       "stack": [
                         {
                           "text": "1",
-                          "style": "pdf-header-text-serialNo"
+                          "style": "pdf-header-text-serialNo",
+                          "widths":"10%"
                         },
                         {
                           "text": "Licensee Name and Address",
