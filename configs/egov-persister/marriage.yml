@@ -7,7 +7,7 @@ serviceMaps:
       isTransaction: true
       queryMaps:
         - query: INSERT INTO public.eg_marriage_details(
-                 id, dateofmarriage, dateofreporting, districtid, lbtype, tenantid, placetype, placeothers, placeid, placename_en, 
+                 id, dateofmarriage, dateofreport, districtid, lbtype, tenantid, placetype, placeothers, placeid, placename_en, 
                  street_name_en, street_name_ml, placename_mal, ward_code, talukid, village_name, marriage_type, oth_marriage_type,
                  landmark, locality_en, locality_ml, othersspecify, applicationtype, businessservice, workflowcode, fileno, file_date, 
                  file_status, applicationnumber, registrationno, 
@@ -97,7 +97,7 @@ serviceMaps:
 
 
         - query: UPDATE public.eg_marriage_details
-                SET  dateofmarriage=?, dateofreporting=?, districtid=?, lbtype=?, tenantid=?, placetype=?, placeothers=?,
+                SET  dateofmarriage=?, dateofreport=?, districtid=?, lbtype=?, tenantid=?, placetype=?, placeothers=?,
                placeid=?, placename_en=?, street_name_en=?, street_name_ml=?, placename_mal=?, ward_code=?, talukid=?, village_name=?, 
                marriage_type=?, oth_marriage_type=?, landmark=?, locality_en=?, locality_ml=?, othersspecify=?, applicationtype=?, businessservice=?, 
                workflowcode=?, fileno=?, file_date=?, file_status=?, applicationnumber=?, registrationno=?, registration_date=?, action=?, status=?, 
