@@ -703,7 +703,16 @@
               ]
             }
           ]
+        },
+        {
+          "qrcodeConfig": [
+            {
+              "variable": "qrCode",
+              "value": "{{signedCertificateData}}"
+            }
+          ]
         }
+        
       ]
 
     }
