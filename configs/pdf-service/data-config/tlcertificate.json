@@ -10,12 +10,12 @@
       {
         "mappings": [
           {
-            "direct": [
+            "direct": [    
               {
-                  "variable": "logoImage",                        
-                  "url":"https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
-                  "type":"image"      
-              },
+                "variable": "logokerala",
+                "url":"https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
+                "type":"image"
+               },
               {
                 "variable": "tenant",
                 "value": {
@@ -293,9 +293,45 @@
               }
             },
             {
-              "variable": "institution",
+              "variable": "institutionName",
               "value": {
-                "path": "$.tradeLicenseDetail.institution"
+                "path": "$.tradeLicenseDetail.institution.institutionName"
+              }
+            },
+            {
+              "variable": "institutionContactNo",
+              "value": {
+                "path": "$.tradeLicenseDetail.institution.contactNo"
+              }
+            },
+            {
+              "variable": "organisationRegistrationNo",
+              "value": {
+                "path": "$.tradeLicenseDetail.institution.organisationregistrationno"
+              }
+            },
+            {
+              "variable": "organisationAddress",
+              "value": {
+                "path": "$.tradeLicenseDetail.institution.address"
+              }
+            },
+            {
+              "variable": "natureOfInstitution",
+              "value": {
+                "path": "$.tradeLicenseDetail.institution.natureOfInstitution"
+              }
+            },
+            {
+              "variable": "institutinEmail",
+              "value": {
+                "path": "$.tradeLicenseDetail.institution.email"
+              }
+            },
+            {
+              "variable": "licenseUnitId",
+              "value": {
+                "path": "$.tradeLicenseDetail.institution.licenseUnitId"
               }
             },
             {
@@ -323,37 +359,37 @@
               }
             },
             {
-              "variable": "partitionNo",
+              "variable": "doorNo",
               "value": {
                 "path": "$.tradeLicenseDetail.structurePlace.*.doorNo"
               }
             },
             {
-              "variable": "partitionNo",
+              "variable": "doorNoSub",
               "value": {
                 "path": "$.tradeLicenseDetail.structurePlace.*.doorNoSub"
               }
             },
             {
-              "variable": "partitionNo",
+              "variable": "buildingId",
               "value": {
                 "path": "$.tradeLicenseDetail.structurePlace.*.buildingId"
               }
             },
             {
-              "variable": "partitionNo",
+              "variable": "stallNo",
               "value": {
                 "path": "$.tradeLicenseDetail.structurePlace.*.stallNo"
               }
             },
             {
-              "variable": "partitionNo",
+              "variable": "vehicleNo",
               "value": {
                 "path": "$.tradeLicenseDetail.structurePlace[0].vehicleNo"
               }
             },
             {
-              "variable": "partitionNo",
+              "variable": "vesselNo",
               "value": {
                 "path": "$.tradeLicenseDetail.structurePlace[0].vesselNo"
               }
@@ -640,87 +676,46 @@
         {
           "externalAPI": [     
             { 
-                "path": "http://egov-mdms-service:8080/egov-mdms-service/v1/_get",
-                "queryParam": "moduleName=tenant&masterName=tenants&tenantId=kl&filter=%5B?(@.code=='{$.tenantId}')%5D",
-                "apiRequest": null,
-                "responseMapping":[
-                  {             
-                    "variable":"ulb-address",
-                    "value":"$.MdmsRes.tenant.tenants[0].address"
-                  },
-                  {
-                    "variable":"corporationContact",
-                    "value":"$.MdmsRes.tenant.tenants[0].contactNumber"
-                  },
-                  {
-                    "variable":"corporationWebsite",
-                    "value":"$.MdmsRes.tenant.tenants[0].domainUrl"
-                  },
-                  {
-                    "variable":"corporationEmail",
-                    "value":"$.MdmsRes.tenant.tenants[0].emailId"
-                  },
-                  {
-                    "variable":"localbodyName",
-                    "value":"$.MdmsRes.tenant.tenants[0].name"
-                  }
-                ]
-            },
-            {
-              "path": "http://collection-services:8080/collection-services/payments/TL/_search",
-              "queryParam": "tenantId=$.tenantId,consumerCodes=$.applicationNumber,businessServices=TL",
+              "path": "https://ksmart-dev.lsgkerala.gov.in/egov-mdms-service/v1/_get",
+              "queryParam": "moduleName=tenant&masterName=tenants&tenantId=kl&filter=%5B?(@.code=='{$.tenantId}')%5D",
               "apiRequest": null,
               "responseMapping":[
-                {            
-                  "variable":"tradeLicenseFee",
-                  "value":"$.Payments[0].totalDue"
+                {             
+                  "variable":"ulb-address",
+                  "value":"$.MdmsRes.tenant.tenants[0].address"
                 },
-                {            
-                  "variable":"recieptNo",
-                  "value":"$.Payments[0].paymentDetails[0].receiptNumber"
+                {
+                  "variable":"corporationContact",
+                  "value":"$.MdmsRes.tenant.tenants[0].contactNumber"
+                },
+                {
+                  "variable":"corporationWebsite",
+                  "value":"$.MdmsRes.tenant.tenants[0].domainUrl"
+                },
+                {
+                  "variable":"corporationEmail",
+                  "value":"$.MdmsRes.tenant.tenants[0].emailId"
+                },
+                {
+                  "variable":"localbodyName",
+                  "value":"$.MdmsRes.tenant.tenants[0].name"
                 }
-
               ]
-          },
-          { 
-            "path": "http://egov-filestore:8080/filestore/v1/files/url",
-            "queryParam": "tenantId=kl,fileStoreIds=$.tradeLicenseDetail.applicationDocuments[?(@.documentType== 'OWNERPHOTO')].fileStoreId",
-            "apiRequest": null,
-            "requesttype": "GET",
-            "responseMapping":[
-              {             
-                "variable":"userpic",
-                "value":"$.fileStoreIds[0].url",
-                "type": "image"
-              }
-            ]
-        },  
-        {
-          "path": "http://egov-workflow-v2.egov:8080/egov-workflow-v2/egov-wf/process/_search",
-          "queryParam": "businessIds=$.applicationNumber,history=true,tenantId=$.tenantId",
-          "apiRequest": null,
-          "responseMapping":[
-            {            
-              "variable":"approvedBy",
-              "value":"$.ProcessInstances[?(@.action == 'APPROVE')].assigner.name"
             }
-
           ]
-      }
+        },
+        {
+          "qrcodeConfig": [
+            {
+              "variable": "qrCode",
+              "value": "{{signedCertificateData}}"
+            }
+          ]
+        }
         
-     ]
-   },
-   {
-     "qrcodeConfig": [
-       {
-         "variable": "qrCode",
-         "value": "{{signedCertificateData}}"
-       }
-     ]
-   }
- ]
+      ]
 
-}
-]
+    }
+  ]
 }
 }
