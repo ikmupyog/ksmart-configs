@@ -520,19 +520,9 @@
             {
               "style": "ws-head",
               "table": {
-                "widths": ["50%","50%"],
+                "widths": ["*"],
                 "body": [
                   [
-                    {
-                      "stack": [
-                        {
-                          "image": "{{qrCode}}",
-                          "width": 50,
-                          "height": 50,
-                          "style": "qr-code"
-                        }
-                      ]
-                    },
                     {
                       "stack": [
                         {

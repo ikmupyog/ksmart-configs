@@ -456,6 +456,12 @@
                 "type": "date"
             },
             {
+              "variable": "signedCertificateData",
+              "value": {
+                "path": "$.signedCertificate"
+              }
+            },
+            {
               "variable": "to",
               "value": {
                 "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_TO"
@@ -703,16 +709,7 @@
               ]
             }
           ]
-        },
-        {
-          "qrcodeConfig": [
-            {
-              "variable": "qrCode",
-              "value": "{{signedCertificateData}}"
-            }
-          ]
         }
-        
       ]
 
     }
