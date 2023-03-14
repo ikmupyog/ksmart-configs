@@ -38,19 +38,21 @@
                 "widths": ["*"],
                 "body": [
                   [
-                    {
-                      "columns": [
-                        {
-                          "text": "License No",
-                          "style": "appendix-header-body",
-                          "widths":"10%"
-                        },
-                        {
-                          "text": "{{licenseNumber}}",
-                          "style": "appendix-header-body"
-                        }
-                      ]
-                    }
+                    [
+                      {
+                        "stack": [
+                          {
+                            "text": "License No",
+                            "style": "appendix-header-body",
+                            "widths":"40%"
+                          },
+                          {
+                            "text": "{{licenseNumber}}",
+                            "style": "appendix-header-body"
+                          }
+                        ]
+                      }
+                    ]
                   ],
                   [
                     {
@@ -63,7 +65,7 @@
                               "stack": [
                                 {
                                   "text": "1. Licensee Name and Address",
-                                  "style": "pdf-header-text",
+                                  "style": "appendix-header-body",
                                   "widths":"40%"
                                 }
                               ]
@@ -75,20 +77,8 @@
                                   "style": "details-body"
                                 },
                                 {
-                                  "text": "{{ownerHouseName}}",
-                                  "style": "details-body"
-                                },
-                                {
-                                  "text": "{{ownerStreet}}",
-                                  "style": "details-body"
-                                },
-                                {
-                                  "text": "{{ownerLocality}}",
-                                  "style": "details-body"
-                                },
-                                {
-                                  "text": "{{ownerPostOffice}} - {{ownerPincode}}",
-                                  "style": "details-body"
+                                  "text": "{{ownerHouseName}}, {{ownerStreet}}, {{ownerLocality}}, {{ownerPostOffice}} - {{ownerPincode}}",
+                                  "style": "details-body-border"
                                 }
                               ]
                             }
@@ -100,190 +90,23 @@
                   ],
                   [
                     {
-                      "columns": [
-                        {
-                          "text": "Organisation Reg No.",
-                          "style": "pdf-header-sub-text",
-                          "widths":"35%"
-                        },
-                        {
-                          "text": "{{organisationRegistrationNo}}",
-                          "style": "details-body"
-                        }
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "columns": [
-                        {
-                          "text": "Organisation Name",
-                          "style": "pdf-header-sub-text",
-                          "widths":"35%"
-                        },
-                        {
-                          "text": "{{institutionName}}",
-                          "style": "details-body"
-                        }
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "columns": [
-                        {
-                          "text": "Address",
-                          "style": "pdf-header-sub-text",
-                          "widths":"35%"
-                        },
-                        {
-                          "text": "{{organisationAddress}}",
-                          "style": "details-body"
-                        }
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "columns": [
-                        {
-                          "text": "Designation",
-                          "style": "pdf-header-sub-text",
-                          "widths":"35%"
-                        },
-                        {
-                          "text": "{{ownerDesignation}}",
-                          "style": "details-body"
-                        }
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "columns": [
-                        {
-                          "text": "Designated Person/Owners Name",
-                          "style": "pdf-header-sub-text",
-                          "widths":"35%"
-                        },
-                        {
-                          "text": "{{ownerName}}",
-                          "style": "details-body"
-                        }
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "columns": [
-                        {
-                          "text": "Personal Address ",
-                          "style": "pdf-header-sub-text",
-                          "widths":"35%"
-                        },
-                        [
-                          {
-                            "stack": [
-                              {
-                                "text": "{{ownerHouseName}}",
-                                "style": "details-body"
-                              },
-                              {
-                                "text": "{{ownerStreet}}",
-                                "style": "details-body"
-                              },
-                              {
-                                "text": "{{ownerLocality}}",
-                                "style": "details-body"
-                              },
-                              {
-                                "text": "{{ownerPostOffice}} - {{ownerPincode}}",
-                                "style": "details-body"
-                              }
-                            ]
-                          }
-                        ]
-                      ]
-                    }
-                  ],
-                  [
-                    {
                       "stack": [
                         {
                           "text": "2. Licensing Unit Name and Address",
-                          "style": "pdf-header-text"
+                          "style": "appendix-header-body"
                         }
                       ]
-                    }
-                  ],
-                  [
+                    },
                     {
-                      "columns": [
+                      "stack": [
                         {
-                          "text": "Licensing Unit ID ",
-                          "style": "pdf-header-sub-text",
-                          "widths":"35%"
-                        },
-                        {
-                          "text": "{{licenseUnitId}}",
+                          "text": "{{licenseUnitId}} - {{licenseUnitName}}",
                           "style": "details-body"
-                        }
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "columns": [
-                        {
-                          "text": "Licensing Unit Name",
-                          "style": "pdf-header-sub-text",
-                          "widths":"35%"
                         },
                         {
-                          "text": "{{licenseUnitName}}",
-                          "style": "details-body"
+                          "text": "{{wardNo}} / {{combainedDoorNo}}, {{buildingName}}, {{street}}, {{locality}}, {{landmark}}, {{postOffice}} - {{instPincode}}",
+                          "style": "details-body-border"
                         }
-                      ]
-                    }
-                  ],
-                  [
-                    {
-                      "columns": [
-                        {
-                          "text": "Location",
-                          "style": "pdf-header-sub-text",
-                          "widths":"35%"
-                        },
-                        [
-                          {
-                            "stack": [
-                              {
-                                "text": "{{wardNo}} / {{combainedDoorNo}}",
-                                "style": "details-body"
-                              },
-                              {
-                                "text": "{{buildingName}}",
-                                "style": "details-body"
-                              },
-                              {
-                                "text": "{{street}}",
-                                "style": "details-body"
-                              },
-                              {
-                                "text": "{{locality}}",
-                                "style": "details-body"
-                              },
-                              {
-                                "text": "{{landmark}}",
-                                "style": "details-body"
-                              },
-                              {
-                                "text": "{{postOffice}} - {{instPincode}}",
-                                "style": "details-body"
-                              }
-                            ]
-                          }
-                        ]
                       ]
                     }
                   ],
@@ -291,12 +114,8 @@
                     {
                       "stack": [
                         {
-                          "text": "3",
-                          "style": "pdf-header-text-serialNo"
-                        },
-                        {
-                          "text": "Licensing Business Activity Details",
-                          "style": "pdf-header-text"
+                          "text": "3. Licensing Business Activity Details",
+                          "style": "appendix-header-body"
                         }
                       ]
                     }
@@ -391,12 +210,8 @@
                     {
                       "stack": [
                         {
-                          "text": "4",
-                          "style": "pdf-header-text-serialNo"
-                        },
-                        {
-                          "text": "Validation & Renewal",
-                          "style": "pdf-header-text"
+                          "text": "4. Validation & Renewal",
+                          "style": "appendix-header-body"
                         }
                       ]
                     }
@@ -501,9 +316,12 @@
             {
               "style": "ws-head",
               "table": {
-                "widths": ["*"],
+                "widths": ["50%","50%"],
                 "body": [
                   [
+                    {
+
+                    },
                     {
                       "stack": [
                         {
@@ -520,9 +338,12 @@
             {
               "style": "ws-head",
               "table": {
-                "widths": ["*"],
+                "widths": ["50%","50%"],
                 "body": [
                   [
+                    {
+
+                    },
                     {
                       "stack": [
                         {
@@ -736,6 +557,19 @@
                 10,
                 0
               ]
+            },
+            "details-body-border": {
+              "color": "#000000",
+              "bold": false,
+              "fontSize": 11,
+              "fontWeight": 300,
+              "margin": [
+                10,
+                0,
+                10,
+                0
+              ],
+              "border":"2px"
             },
             "details-body-center": {
               "color": "#000000",
