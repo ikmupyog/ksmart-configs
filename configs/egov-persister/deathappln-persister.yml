@@ -14,223 +14,223 @@ serviceMaps:
                  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ,?, ?, ?, ?, ?, ?, ?, ? ,? ,? ,? ,? , ? ,? ,? ,? ,?);
 
 
-        basePath: deathCertificateDtls.*
-        jsonMaps:
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.Id
+          basePath: deathCertificateDtls.*
+          jsonMaps:
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.Id
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.RegistrationUnit
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.RegistrationUnit
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.TenantId
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.TenantId
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DateOfDeath
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DateOfDeath
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.TimeOfDeath
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.TimeOfDeath
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.TimeOfDeathUnit
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.TimeOfDeathUnit
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlace
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlace
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceType
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceType
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceInstId
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceInstId
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeceasedFirstNameEn
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeceasedFirstNameEn
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeceasedFirstNameMl
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeceasedFirstNameMl
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeceasedMiddleNameEn
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeceasedMiddleNameEn
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeceasedMiddleNameMl
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeceasedMiddleNameMl
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeceasedLastNameEn
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeceasedLastNameEn
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeceasedLastNameMl
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeceasedLastNameMl
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeceasedAadharNotAvailable
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeceasedAadharNotAvailable
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeceasedAadharNumber
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeceasedAadharNumber
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeceasedGender
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeceasedGender
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.Age
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.Age
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.AgeUnit
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.AgeUnit
 
-        - jsonPath: $.deathCertificateDtls.*.InformantDetails.InformantNameEn
+          - jsonPath: $.deathCertificateDtls.*.InformantDetails.InformantNameEn
 
-        - jsonPath: $.deathCertificateDtls.*.InformantDetails.InformantAadharSubmitted
+          - jsonPath: $.deathCertificateDtls.*.InformantDetails.InformantAadharSubmitted
 
-        - jsonPath: $.deathCertificateDtls.*.InformantDetails.InformantAadharNo
+          - jsonPath: $.deathCertificateDtls.*.InformantDetails.InformantAadharNo
 
-        - jsonPath: $.deathCertificateDtls.*.InformantDetails.InformantMobileNo
+          - jsonPath: $.deathCertificateDtls.*.InformantDetails.InformantMobileNo
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.GeneralRemarks
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.GeneralRemarks
 
-        - jsonPath: $.deathCertificateDtls.*.applicationStatus
+          - jsonPath: $.deathCertificateDtls.*.applicationStatus
 
-        - jsonPath: $.deathCertificateDtls.*.AuditDetails.createdBy
+          - jsonPath: $.deathCertificateDtls.*.AuditDetails.createdBy
 
-        - jsonPath: $.deathCertificateDtls.*.AuditDetails.createdTime
+          - jsonPath: $.deathCertificateDtls.*.AuditDetails.createdTime
 
-        - jsonPath: $.deathCertificateDtls.*.AuditDetails.lastModifiedBy
+          - jsonPath: $.deathCertificateDtls.*.AuditDetails.lastModifiedBy
 
-        - jsonPath: $.deathCertificateDtls.*.AuditDetails.lastModifiedTime
+          - jsonPath: $.deathCertificateDtls.*.AuditDetails.lastModifiedTime
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.registrationNo
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.registrationNo
 
-        - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.FatherNameEn
+          - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.FatherNameEn
 
-        - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.FatherNameMl
+          - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.FatherNameMl
 
-        - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.FatherAadharNo
+          - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.FatherAadharNo
 
-        - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.MotherNameEn
+          - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.MotherNameEn
 
-        - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.MotherNameMl
+          - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.MotherNameMl
 
-        - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.MotherAadharNo
+          - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.MotherAadharNo
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.VehicleHospitalEn
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.VehicleHospitalEn
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.VehicleFromplaceMl
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.VehicleFromplaceMl
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.VehicleFromplaceEn
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.VehicleFromplaceEn
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.VehicleToPlaceMl
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.VehicleToPlaceMl
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.VehicleToPlaceEn
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.VehicleToPlaceEn
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.VehicleNumber
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.VehicleNumber
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceWardId
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceWardId
 
-        - jsonPath: $.deathCertificateDtls.*.InformantDetails.DeathSignedOfficerDesignation
+          - jsonPath: $.deathCertificateDtls.*.InformantDetails.DeathSignedOfficerDesignation
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeceasedIdproofType
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeceasedIdproofType
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathApplicationNo
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathApplicationNo
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.fileNo
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.fileNo
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathACKNo
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathACKNo
 
-        - jsonPath: $.deathCertificateDtls.*.workflowcode
+          - jsonPath: $.deathCertificateDtls.*.workflowcode
 
-        - jsonPath: $.deathCertificateDtls.*.businessService
+          - jsonPath: $.deathCertificateDtls.*.businessService
 
-        - jsonPath: $.deathCertificateDtls.*.action
+          - jsonPath: $.deathCertificateDtls.*.action
 
-        - jsonPath: $.deathCertificateDtls.*.Comment
+          - jsonPath: $.deathCertificateDtls.*.Comment
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.RegistrationDate
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.RegistrationDate
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.registrationNoID
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.registrationNoID
 
-        - jsonPath: $.deathCertificateDtls.*.applicationType
+          - jsonPath: $.deathCertificateDtls.*.applicationType
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeceasedIdproofNo
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeceasedIdproofNo
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.VehicleFirstHaltEn
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.VehicleFirstHaltEn
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.VehicleFirstHaltMl
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.VehicleFirstHaltMl
 
-        - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.FatherUnavailable
+          - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.FatherUnavailable
 
-        - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.MotherUnavailable
+          - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.MotherUnavailable
 
-        - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.SpouseNameEn
+          - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.SpouseNameEn
 
-        - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.SpouseNameML
+          - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.SpouseNameML
 
-        - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.SpouseUnavailable
+          - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.SpouseUnavailable
 
-        - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.SpouseAadhaar
+          - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.SpouseAadhaar
 
-        - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.SpouseType
+          - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.SpouseType
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.funcionUID
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.funcionUID
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.ackNoID
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.ackNoID
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.ApplicationDate
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.ApplicationDate
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceLocalityEn
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceLocalityEn
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceLocalityMl
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceLocalityMl
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceStreetEn
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceStreetEn
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceStreetMl
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceStreetMl
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceCountry
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceCountry
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceState
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceState
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceDistrict
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceDistrict
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceCity
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceCity
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceRemarksEn
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceRemarksEn
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceRemarksMl
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceRemarksMl
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.PlaceOfBurialEn
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.PlaceOfBurialEn
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.PlaceOfBurialMl    
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.PlaceOfBurialMl    
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceHomeLocalityEn
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceHomeLocalityEn
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceHomeLocalityMl
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceHomeLocalityMl
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceHomeStreetNameEn
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceHomeStreetNameEn
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceHomeStreetNameMl
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceHomeStreetNameMl
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceHomeHoueNameEn
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceHomeHoueNameEn
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceHomeHoueNameMl
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceHomeHoueNameMl
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceHomePostofficeId
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceHomePostofficeId
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceHomePincode
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceHomePincode
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceHomeWardId
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceHomeWardId
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceHomeTalukId
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathPlaceHomeTalukId
 
-        - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.FamilyMobileNo
+          - jsonPath: $.deathCertificateDtls.*.FamilyInformationDeath.FamilyMobileNo
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.FamilyEmailId   
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.FamilyEmailId   
 
-        - jsonPath: $.deathCertificateDtls.*.Initiator.InitiatorRelation
+          - jsonPath: $.deathCertificateDtls.*.Initiator.InitiatorRelation
 
-        - jsonPath: $.deathCertificateDtls.*.Initiator.InitiatorName
+          - jsonPath: $.deathCertificateDtls.*.Initiator.InitiatorName
 
-        - jsonPath: $.deathCertificateDtls.*.Initiator.InitiatorAadhaarSubmitted
+          - jsonPath: $.deathCertificateDtls.*.Initiator.InitiatorAadhaarSubmitted
 
-        - jsonPath: $.deathCertificateDtls.*.Initiator.InitiatorAadhaar
+          - jsonPath: $.deathCertificateDtls.*.Initiator.InitiatorAadhaar
 
-        - jsonPath: $.deathCertificateDtls.*.Initiator.InitiatorMobile      
+          - jsonPath: $.deathCertificateDtls.*.Initiator.InitiatorMobile      
 
-        - jsonPath: $.deathCertificateDtls.*.assignuser 
+          - jsonPath: $.deathCertificateDtls.*.assignuser 
 
-        - jsonPath: $.deathCertificateDtls.*.InformantDetails.InformantAddress
+          - jsonPath: $.deathCertificateDtls.*.InformantDetails.InformantAddress
 
-        - jsonPath: $.deathCertificateDtls.*.Initiator.InitiatorAddress
+          - jsonPath: $.deathCertificateDtls.*.Initiator.InitiatorAddress
 
-        - jsonPath: $.deathCertificateDtls.*.Initiator.IsDeclarationInitiator
+          - jsonPath: $.deathCertificateDtls.*.Initiator.IsDeclarationInitiator
 
-        - jsonPath: $.deathCertificateDtls.*.InformantDetails.IsDeclarationInformant
+          - jsonPath: $.deathCertificateDtls.*.InformantDetails.IsDeclarationInformant
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathDateUnavailable
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeathDateUnavailable
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DateOfDeath1
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DateOfDeath1
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.TimeOfDeath1 
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.TimeOfDeath1 
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.TimeOfDeathUnit1    
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.TimeOfDeathUnit1    
 
-        - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeceasedUnIdentified  
+          - jsonPath: $.deathCertificateDtls.*.InformationDeath.DeceasedUnIdentified  
 
 
 
