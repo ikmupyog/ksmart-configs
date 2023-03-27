@@ -1,0 +1,180 @@
+serviceMaps:
+  serviceName: marriage-services
+  mappings:
+    - version: 1.0
+      description: Persists save marriage details in marriage  table
+      fromTopic: save-marriage-application-topic
+      isTransaction: true
+      queryMaps:
+        - query: INSERT INTO public.eg_marriage_details(
+                 id, dateofmarriage, dateofreporting, districtid, lbtype, tenantid, placetype, placeothers, placeid, placename_en, 
+                 street_name_en, street_name_ml, placename_mal, ward_code, talukid, village_name, marriage_type, oth_marriage_type,
+                 landmark, locality_en, locality_ml, othersspecify, applicationtype, businessservice, workflowcode, fileno, file_date, 
+                 file_status, applicationnumber, registrationno, 
+                 registration_date, action, status, createdtime, createdby, lastmodifiedtime, lastmodifiedby)
+                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+          basePath: MarriageDetails.*
+          jsonMaps:
+            - jsonPath: $.MarriageDetails.*.id
+
+            - jsonPath: $.MarriageDetails.*.marraigeDOM
+
+            - jsonPath: $.MarriageDetails.*.marraigeDOR
+
+            - jsonPath: $.MarriageDetails.*.districtid
+
+            - jsonPath: $.MarriageDetails.*.lbtype
+
+            - jsonPath: $.MarriageDetails.*.tenantid
+
+            - jsonPath: $.MarriageDetails.*.marraigePlacetype
+
+            - jsonPath: $.MarriageDetails.*.marriagePlaceothers
+
+            - jsonPath: $.MarriageDetails.*.placeid
+
+            - jsonPath: $.MarriageDetails.*.placename_en
+
+            - jsonPath: $.MarriageDetails.*.marriageStreetEn
+
+            - jsonPath: $.MarriageDetails.*.marriageStreetMal
+
+            - jsonPath: $.MarriageDetails.*.placename_mal
+
+            - jsonPath: $.MarriageDetails.*.ward_code
+
+            - jsonPath: $.MarriageDetails.*.talukid
+
+            - jsonPath: $.MarriageDetails.*.village_name
+
+            - jsonPath: $.MarriageDetails.*.marriage_type
+
+            - jsonPath: $.MarriageDetails.*.oth_marriage_type
+
+            - jsonPath: $.MarriageDetails.*.marriageLandmark
+
+            - jsonPath: $.MarriageDetails.*.marriageLocalityEn
+
+            - jsonPath: $.MarriageDetails.*.marriageLocalityMal
+
+            - jsonPath: $.MarriageDetails.*.marraigeType
+
+            - jsonPath: $.MarriageDetails.*.applicationtype
+
+            - jsonPath: $.MarriageDetails.*.businessservice
+
+            - jsonPath: $.MarriageDetails.*.workflowcode
+
+            - jsonPath: $.MarriageDetails.*.fileno
+
+            - jsonPath: $.MarriageDetails.*.marraigeFileDate
+
+            - jsonPath: $.MarriageDetails.*.marraigeFileStatus
+
+            - jsonPath: $.MarriageDetails.*.applicationnumber
+
+            - jsonPath: $.MarriageDetails.*.registrationno
+
+            - jsonPath: $.MarriageDetails.*.registration_date
+
+            - jsonPath: $.MarriageDetails.*.marraigeAction
+
+            - jsonPath: $.MarriageDetails.*.marraigeStatus
+
+            - jsonPath: $.MarriageDetails.*.auditDetails.createdTime
+
+            - jsonPath: $.MarriageDetails.*.auditDetails.createdBy
+
+            - jsonPath: $.MarriageDetails.*.auditDetails.lastModifiedTime
+
+            - jsonPath: $.MarriageDetails.*.auditDetails.lastModifiedBy
+
+    - version: 1.0
+      description: Persists save marriage details in marriage  table
+      fromTopic: update-marriage-application-topic
+      isTransaction: true
+      queryMaps:
+
+
+        - query: UPDATE public.eg_marriage_details
+                SET  dateofmarriage=?, dateofreporting=?, districtid=?, lbtype=?, tenantid=?, placetype=?, placeothers=?,
+               placeid=?, placename_en=?, street_name_en=?, street_name_ml=?, placename_mal=?, ward_code=?, talukid=?, village_name=?, 
+               marriage_type=?, oth_marriage_type=?, landmark=?, locality_en=?, locality_ml=?, othersspecify=?, applicationtype=?, businessservice=?, 
+               workflowcode=?, fileno=?, file_date=?, file_status=?, applicationnumber=?, registrationno=?, registration_date=?, action=?, status=?, 
+               lastmodifiedtime=?, lastmodifiedby=?
+               WHERE id=?;
+
+          basePath: MarriageDetails.*
+          jsonMaps:
+
+              - jsonPath: $.MarriageDetails.*.marraigeDOM
+
+              - jsonPath: $.MarriageDetails.*.marraigeDOR
+
+              - jsonPath: $.MarriageDetails.*.districtid
+
+              - jsonPath: $.MarriageDetails.*.lbtype
+
+              - jsonPath: $.MarriageDetails.*.tenantid
+
+              - jsonPath: $.MarriageDetails.*.marraigePlacetype
+
+              - jsonPath: $.MarriageDetails.*.marriagePlaceothers
+
+              - jsonPath: $.MarriageDetails.*.placeid
+
+              - jsonPath: $.MarriageDetails.*.placename_en
+
+              - jsonPath: $.MarriageDetails.*.marriageStreetEn
+
+              - jsonPath: $.MarriageDetails.*.marriageStreetMal
+
+              - jsonPath: $.MarriageDetails.*.placename_mal
+
+              - jsonPath: $.MarriageDetails.*.ward_code
+
+              - jsonPath: $.MarriageDetails.*.talukid
+
+              - jsonPath: $.MarriageDetails.*.village_name
+
+              - jsonPath: $.MarriageDetails.*.marriage_type
+
+              - jsonPath: $.MarriageDetails.*.oth_marriage_type
+
+              - jsonPath: $.MarriageDetails.*.marriageLandmark
+
+              - jsonPath: $.MarriageDetails.*.marriageLocalityEn
+
+              - jsonPath: $.MarriageDetails.*.marriageLocalityMal
+
+              - jsonPath: $.MarriageDetails.*.marraigeType
+
+              - jsonPath: $.MarriageDetails.*.applicationtype
+
+              - jsonPath: $.MarriageDetails.*.businessservice
+
+              - jsonPath: $.MarriageDetails.*.workflowcode
+
+              - jsonPath: $.MarriageDetails.*.fileno
+
+              - jsonPath: $.MarriageDetails.*.marraigeFileDate
+
+              - jsonPath: $.MarriageDetails.*.marraigeFileStatus
+
+              - jsonPath: $.MarriageDetails.*.applicationnumber
+
+              - jsonPath: $.MarriageDetails.*.registrationno
+
+              - jsonPath: $.MarriageDetails.*.registration_date
+
+              - jsonPath: $.MarriageDetails.*.marraigeAction
+
+              - jsonPath: $.MarriageDetails.*.marraigeStatus
+
+             
+
+              - jsonPath: $.MarriageDetails.*.auditDetails.lastModifiedTime
+
+              - jsonPath: $.MarriageDetails.*.auditDetails.lastModifiedBy
+
+              - jsonPath: $.MarriageDetails.*.id
