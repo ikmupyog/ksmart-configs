@@ -47,15 +47,7 @@
                   }
                 ]
               },
-              {
-                "stack": [
-                  {
-                    "water mark": "KSMART DEMO",
-                    "width": 70,
-                    "height": 70
-                  }
-                ]
-              },
+              
               {
                 "stack": [
                   {
@@ -146,6 +138,7 @@
             [
               {
                 "stack": [
+                  
                   {
                     "text": "{{birthCertificateMl}}",
                     "style": "title-header"
