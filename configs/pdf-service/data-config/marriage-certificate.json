@@ -1,0 +1,86 @@
+{
+    "key": "marriage-certificate",
+    "DataConfigs": {
+        "serviceName": "rainmaker-common",
+        "version": "1.0.0",
+        "baseKeyPath": "$.MarriageCertificate.*",
+        "entityIdPath": "$.id",
+        "isCommonTableBorderRequired": true,
+        "mappings": [
+            {
+                "topic": "common-pdf-generation-3",
+                "mappings": [
+                    {
+                        "direct": [
+                            {
+                                "variable": "logokerala",
+                                "url": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
+                                "type": "image"
+                            },
+                            {
+                                "variable": "tenant",
+                                "value": {
+                                    "path": "$.MarriageCertificate.tenantId"
+                                },
+                                "type": "setEmpty",
+                                "localisation": {
+                                    "required": true,
+                                    "prefix": "TENANT_TENANTS",
+                                    "module": "rainmaker-common",
+                                    "locale": "en_IN"
+                                }
+                            },
+                            {
+                                "variable": "tenantMl",
+                                "value": {
+                                    "path": "$.MarriageCertificate.tenantId"
+                                },
+                                "type": "setEmpty",
+                                "localisation": {
+                                    "required": true,
+                                    "prefix": "TENANT_TENANTS",
+                                    "module": "rainmaker-common",
+                                    "locale": "ml_IN"
+                                }
+                            },
+                            {
+                                "variable": "governmentEn",
+                                "value": {
+                                    "path": "PDF_BIRTH_GOVERNMENT_OF_KERALA"
+                                },
+                                "type": "label",
+                                "localisation": {
+                                    "required": true,
+                                    "prefix": null,
+                                    "module": "rainmaker-common",
+                                    "locale": "en_IN"
+                                }
+                            },
+                            {
+                                "variable": "governmentMl",
+                                "value": {
+                                    "path": "PDF_BIRTH_GOVERNMENT_OF_KERALA_ML"
+                                },
+                                "type": "label",
+                                "localisation": {
+                                    "required": true,
+                                    "prefix": null,
+                                    "module": "rainmaker-common",
+                                    "locale": "ml_IN"
+                                }
+                            }
+                                                   ]
+                    },
+                    {
+                        "qrcodeConfig": [
+                            {
+                                "variable": "qr_code_image",
+                                "value": "{{embeddedUrl}}"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
