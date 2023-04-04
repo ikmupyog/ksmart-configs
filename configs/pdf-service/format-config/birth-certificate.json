@@ -5,12 +5,12 @@
       "font": "Meera"
     },
     "watermark": {
-            "text": "KSMART DEMO",
-            "color": "gery",
-            "opacity": 0.1,
-            "bold": true,
-            "italics": false
-        },
+      "text": "KSMART DEMO",
+      "color": "gery",
+      "opacity": 0.1,
+      "bold": true,
+      "italics": false
+    },
     "content": [
       {
         "style": "ws-head",
@@ -27,6 +27,15 @@
                   {
                     "text": "{{keyNo}}: {{keyAckNo}}",
                     "style": "appendix-header-serialNo"
+                  }
+                ]
+              },
+              {
+                "stack": [
+                  {
+                    "image": "{{ashoka}}",
+                    "width": 70,
+                    "height": 70
                   }
                 ]
               }
@@ -54,7 +63,7 @@
                   }
                 ]
               },
-              
+
               {
                 "stack": [
                   {
@@ -145,7 +154,7 @@
             [
               {
                 "stack": [
-                  
+
                   {
                     "text": "{{birthCertificateMl}}",
                     "style": "title-header"
