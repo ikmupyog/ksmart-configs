@@ -3,7 +3,7 @@
   "DataConfigs": {
     "serviceName": "rainmaker-common",
     "version": "1.0.0",
-    "baseKeyPath": "$.Nac.BirthCertificate.*",
+    "baseKeyPath": "$.NacBirthCertificate.*",
     "entityIdPath": "$.id",
     "isCommonTableBorderRequired": true,
     "mappings": [
@@ -13,192 +13,61 @@
           {
             "direct": [
               {
-                "variable": "applicantNameEn",
-                "value": {
-                  "path": "$.applicantNameEn"
-                },
-                "type": "setEmpty"
+                "variable": "logokerala",
+                "url": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
+                "type": "image"
               },
               {
-                "variable": "careOf",
-                "value": {
-                  "path": "$.careOf"
-                },
-                "type": "setEmpty"
+                "variable": "logobirth",
+                "url": "https://ulb-logos.s3.ap-south-1.amazonaws.com/birth_death_logo.jpg",
+                "type": "image"
               },
               {
-                "variable": "period",
+                "variable": "form5",
                 "value": {
-                  "path": "$.period"
-                },
-                "type": "date",
-                "format": "YYYY"
-              },
-              {
-                "variable": "localAreaEn",
-                "value": {
-                  "path": "$.localAreaEn"
-                },
-                "type": "setEmpty"
-              },
-              {
-                "variable": "village",
-                "value": {
-                  "path": "$.village"
-                },
-                "type": "setEmpty"
-              },
-              {
-                "variable": "Taluk",
-                "value": {
-                  "path": "$.Taluk"
-                },
-                "type": "setEmpty"
-              },
-              {
-                "variable": "district",
-                "value": {
-                  "path": "$.district"
-                },
-                "type": "setEmpty"
-              },
-              {
-                "variable": "state",
-                "value": {
-                  "path": "$.state"
-                },
-                "type": "setEmpty"
-              },
-              {
-                "variable": "childName",
-                "value": {
-                  "path": "$.childFullNameEn"
-                },
-                "type": "setEmpty"
-              },
-              {
-                "variable": "motherName",
-                "value": {
-                  "path": "$.motherFullNameEn"
-                },
-                "type": "setEmpty"
-              },
-              {
-                "variable": "form10",
-                "value": {
-                  "path": "PDF_NAC_BIRTH_FORM_NO_10"
+                  "path": "PDF_BIRTH_FORM_NO_5"
                 },
                 "type": "label",
-                "localisation":{
-                  "required":true,
+                "localisation": {
+                  "required": true,
                   "prefix": null,
-                  "module":"rainmaker-pdf",
-                  "locale":"en_IN"
+                  "module": "rainmaker-pdf",
+                  "locale": "en_IN"
                 }
               },
               {
-                "variable": "rule13",
+                "variable": "rule8",
                 "value": {
-                  "path": "PDF_NAC_BIRTH_LAST_RULE_13"
+                  "path": "PDF_BIRTH_LAST_RULE_8"
                 },
                 "type": "label",
-                "localisation":{
-                  "required":true,
+                "localisation": {
+                  "required": true,
                   "prefix": null,
-                  "module":"rainmaker-pdf",
-                  "locale":"en_IN"
+                  "module": "rainmaker-pdf",
+                  "locale": "en_IN"
                 }
               },
               {
-                "variable": "nacBirthCertificate",
+                "variable": "govtOfKerala",
                 "value": {
-                  "path": "PDF_NAC_BIRTH_BIRTH_CERTIFICATE"
+                  "path": "PDF_BIRTH_GOVERNMENT_OF_KERALA"
                 },
                 "type": "label",
-                "localisation":{
-                  "required":true,
+                "localisation": {
+                  "required": true,
                   "prefix": null,
-                  "module":"rainmaker-pdf",
-                  "locale":"en_IN"
+                  "module": "rainmaker-pdf",
+                  "locale": "en_IN"
                 }
               },
               {
-                "variable": "issueUnderSection17",
-                "value": {
-                  "path": "PDF_NAC_BIRTH_ISSUED_UNDER_SECTION_17"
-                },
-                "type": "label",
-                "localisation":{
-                  "required":true,
-                  "prefix": null,
-                  "module":"rainmaker-pdf",
-                  "locale":"en_IN"
-                }
-              },
-              {
-                "variable": "registrationBirths&DeathsAct",
-                "value": {
-                  "path": "PDF_NAC_BIRTH_BIRTH_REGISTRATION_ACT"
-                },
-                "type": "label",
-                "localisation":{
-                  "required":true,
-                  "prefix": null,
-                  "module":"rainmaker-pdf",
-                  "locale":"en_IN"
-                }
-              },
-              {
-                "variable": "certify",
-                "value": {
-                  "path": "PDF_NAC_BIRTH_THIS_IS_TO_CERTIFY_THAT"
-                },
-                "type": "label",
-                "localisation":{
-                  "required":true,
-                  "prefix": null,
-                  "module":"rainmaker-pdf",
-                  "locale":"en_IN"
-                }
-              },
-              {
-                "variable": "applicantNameEn",
-                "value": {
-                  "path": "$.applicantNameEn"
-                },
-                "type": "label",
-                "localisation":{
-                  "required":true,
-                  "prefix": null,
-                  "module":"rainmaker-pdf",
-                  "locale":"en_IN"
-                }
-              },
-              {
-                "variable": "careOf",
-                "value": {
-                  "path": "$.careOf"
-                },
-                "type": "label",
-                "localisation":{
-                  "required":true,
-                  "prefix": null,
-                  "module":"rainmaker-pdf",
-                  "locale":"en_IN"
-                }
-              },
-              {
-                "variable": "period",
-                "value": {
-                  "path": "$.period"
-                },
-                "type": "label",
-                "localisation":{
-                  "required":true,
-                  "prefix": null,
-                  "module":"rainmaker-pdf",
-                  "locale":"en_IN"
-                }
+                "qrcodeConfig": [
+                  {
+                    "variable": "qr_code_image",
+                    "value": "$.embeddedUrl"
+                  }
+                ]
               }
             ]
           }
