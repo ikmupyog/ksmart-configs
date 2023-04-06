@@ -7,7 +7,7 @@ serviceMaps:
    isTransaction: true
    queryMaps:
 
-       - query: INSERT INTO eg_tl_tradelicense( id, accountid,tenantid,tradeName,licenseunitnamelocal,validfrom,validto,licensetype,applicationNumber, oldlicensenumber, applicationdate, commencementdate, financialyear, action, status, createdby, lastmodifiedby, createdtime, lastmodifiedtime, businessservice, applicationtype, workflowcode, desiredlicenseperiod) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+       - query: INSERT INTO eg_tl_tradelicense( id, accountid,tenantid,tradeName,licenseunitnamelocal,validfrom,validto,licensetype,applicationNumber, oldlicensenumber, applicationdate, commencementdate, financialyear, action, status, createdby, lastmodifiedby, createdtime, lastmodifiedtime, businessservice, applicationtype, workflowcode, desiredlicenseperiod,mig_num_appln_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
          basePath: Licenses.*
          jsonMaps:
           - jsonPath: $.Licenses.*.id
@@ -56,6 +56,8 @@ serviceMaps:
 
           - jsonPath: $.Licenses.*.desiredLicensePeriod
 
+          - jsonPath: $.Licenses.*.oldApplicationNumber
+
 
 
        - query: INSERT INTO eg_tl_tradelicensedetail( id, ownershipcategory, channel, tradelicenseid,structureType,noOfEmployees,businesssector, capitalinvestment, enterprisetype, structureplacesubtype, businessactivitydesc, licenseetype, createdby, lastmodifiedby, createdtime, lastmodifiedtime, establishmentunitid) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?, ?, ? );
@@ -94,7 +96,6 @@ serviceMaps:
           - jsonPath: $.Licenses.*.auditDetails.lastModifiedTime
 
           - jsonPath: $.Licenses.*.tradeLicenseDetail.establishmentUnitId
-
 
 
        - query: INSERT INTO eg_tl_tradeunit( id, tenantid,active, businesscategory, businesstype, businesssubtype, tradelicensedetailid, createdby, lastmodifiedby, createdtime, lastmodifiedtime) VALUES (?,?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
@@ -380,6 +381,13 @@ serviceMaps:
 
           - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.ownerspremise[*].id)].auditDetails.lastModifiedTime
 
+       - query: UPDATE eg_tl_tradelicense SET renewalactive = ? WHERE applicationNumber=?;
+         basePath: Licenses.*
+         jsonMaps:
+          - jsonPath: $.Licenses.*.renewalActive
+
+          - jsonPath: $.Licenses.*.oldApplicationNumber
+
 
  - version: 1.0
    description: Update tradeLicense details in EG_TL_TradeLicense  table
@@ -394,7 +402,7 @@ serviceMaps:
        - query: UPDATE eg_tl_tradelicense SET tradeName = ?, licenseunitnamelocal = ?, licenseNumber = ?,licensetype = ?, oldlicensenumber = ?, applicationdate = ?, commencementdate = ?, issueddate = ?, financialyear = ?, validfrom = ?, validto = ?, action = ?, status = ?,  lastmodifiedby = ?,  lastmodifiedtime = ?, businessservice=?,applicationtype=?, workflowcode=?, desiredlicenseperiod=?  WHERE id=?;
          basePath: Licenses.*
          jsonMaps:
-          - jsonPath: $.Licenses.*.tradeName
+          - jsonPath: $.Licenses.*.licenseUnitName
 
           - jsonPath: $.Licenses.*.licenseUnitNameLocal
 
@@ -568,7 +576,7 @@ serviceMaps:
 
           - jsonPath: $.Licenses[*][?({id} in @.tradeLicenseDetail.owners[*].id)].auditDetails.lastModifiedTime
 
-          - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.nameLocal
+          - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.applicantNameLocal
 
           - jsonPath: $.Licenses.*.tradeLicenseDetail.owners.*.careOf
 
@@ -841,7 +849,6 @@ serviceMaps:
          basePath: Licenses.*
          jsonMaps:
           - jsonPath: $.Licenses.*.id
-
 
 
        - query: INSERT INTO eg_tl_tradelicensedetail_audit(id, ownershipcategory, channel, tradelicenseid, createdby, lastmodifiedby, createdtime, lastmodifiedtime, noofemployees, structuretype, businesssector, capitalinvestment, enterprisetype, structureplacesubtype, businessactivitydesc, licenseetype, establishmentunitid, mig_num_appln_id) SELECT id, ownershipcategory, channel, tradelicenseid, createdby, lastmodifiedby, createdtime, lastmodifiedtime, noofemployees, structuretype, businesssector, capitalinvestment, enterprisetype, structureplacesubtype, businessactivitydesc, licenseetype, establishmentunitid, mig_num_appln_id FROM eg_tl_tradelicensedetail WHERE id = ?;

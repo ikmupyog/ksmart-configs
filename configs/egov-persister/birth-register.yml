@@ -9,8 +9,9 @@
           - query: INSERT INTO public.eg_register_birth_details(id, dateofreport, dateofbirth, timeofbirth, am_pm, firstname_en, firstname_ml, middlename_en,
               middlename_ml, lastname_en, lastname_ml, tenantid, gender, remarks_en, remarks_ml, aadharno, createdtime, createdby, lastmodifiedtime,
               lastmodifiedby, esign_user_code, esign_user_desig_code, is_adopted, is_abandoned, is_multiple_birth, is_father_info_missing,
-              is_mother_info_missing, no_of_alive_birth, ot_passportno, registrationno, registration_status, registration_date)
-              VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+              is_mother_info_missing, no_of_alive_birth, ot_passportno, registrationno, registration_status, registration_date,
+              is_born_outside, ot_dateofarrival, ack_no, applicationid, applicationtype)
+              VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?,?,?,?);
             basePath: RegisterBirthDetails.*
             jsonMaps:
               - jsonPath: $.RegisterBirthDetails.*.id
@@ -71,11 +72,36 @@
 
               - jsonPath: $.RegisterBirthDetails.*.ot_passportno
 
-              - jsonPath: $.RegisterBirthDetails.*.registrationno
+              - jsonPath: $.RegisterBirthDetails.*.registration_no
 
               - jsonPath: $.RegisterBirthDetails.*.registration_status
 
               - jsonPath: $.RegisterBirthDetails.*.registration_date
+
+              - jsonPath: $.RegisterBirthDetails.*.is_born_outside
+
+              - jsonPath: $.RegisterBirthDetails.*.childArrivalDate
+
+              - jsonPath: $.RegisterBirthDetails.*.ack_no
+
+              - jsonPath: $.RegisterBirthDetails.*.applicationId
+
+              - jsonPath: $.RegisterBirthDetails.*.applicationType
+
+
+          - query: UPDATE public.eg_birth_details SET  registrationno=?, registration_date=?,  lastmodifiedby=?, lastmodifiedtime=? WHERE id=?;
+
+            basePath: RegisterBirthDetails.*
+            jsonMaps:
+              - jsonPath: $.RegisterBirthDetails.*.registration_no
+
+              - jsonPath: $.RegisterBirthDetails.*.registration_date
+
+              - jsonPath: $.RegisterBirthDetails.*.auditDetails.lastModifiedBy
+
+              - jsonPath: $.RegisterBirthDetails.*.auditDetails.lastModifiedTime
+
+              - jsonPath: $.RegisterBirthDetails.*.applicationId
 
           - query: INSERT INTO public.eg_register_birth_father_information(id, firstname_en, firstname_ml, middlename_en, middlename_ml, lastname_en, lastname_ml, aadharno, ot_passportno, 
                   emailid, mobileno, createdtime, createdby, lastmodifiedtime, lastmodifiedby, birthdtlid, bio_adopt) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
@@ -160,7 +186,7 @@
               ho_housename_en, ho_housename_ml, ho_villageid, ho_talukid, ho_districtid, 
               ho_stateid, ho_poid, ho_pinno, ho_countryid, ward_id, oth_details_en, oth_details_ml, institution_type_id, institution_id,
               auth_officer_id, auth_officer_desig_id, oth_auth_officer_name, oth_auth_officer_desig, informantsname_en, informantsname_ml,
-              informantsaddress_en, informantsaddress_ml, informants_mobileno, informants_aadhaar_no,ho_doorno, ho_subno, vehicle_haltplace, vehicle_hospitalid, informant_addressline2,createdtime, createdby,
+              informantsaddress_en, informantsaddress_ml, informants_mobileno, informants_aadhaar_no,ho_doorno, ho_subno, vehicle_haltplace_en, vehicle_hospitalid, informant_addressline2,createdtime, createdby,
               lastmodifiedtime, lastmodifiedby) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 
               ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
             basePath: RegisterBirthDetails.*.registerBirthPlace
@@ -271,7 +297,7 @@
 
               - jsonPath: $.RegisterBirthDetails.*.auditDetails.lastModifiedBy
 
-          - query: INSERT INTO public.eg_register_birth_permanent_address(id, resdnce_addr_type, buildingno, houseno, res_asso_no, housename_en, housename_ml, ot_address1_en, ot_address1_ml,
+          - query: INSERT INTO public.eg_register_birth_permanent_address(id, resdnce_addr_type, buildingno, houseno, res_asso_no, housename_no_en, housename_no_ml, ot_address1_en, ot_address1_ml,
                   ot_address2_en, ot_address2_ml, villageid, tenantid, talukid, districtid,
                   stateid, poid, pinno, ot_state_region_province_en, ot_state_region_province_ml, countryid, createdby, createdtime,
                   lastmodifiedby, lastmodifiedtime, birthdtlid, same_as_present, bio_adopt, res_asso_no_ml, taluk_name, village_name, ward_code, doorno, subno, ot_zipcode)
@@ -348,7 +374,7 @@
 
               - jsonPath: $.BirthDetails.*.birthPermanent.ot_zipcode
 
-          - query: INSERT INTO public.eg_register_birth_present_address(id, resdnce_addr_type, buildingno, houseno, res_asso_no, housename_en, housename_ml, ot_address1_en, ot_address1_ml,
+          - query: INSERT INTO public.eg_register_birth_present_address(id, resdnce_addr_type, buildingno, houseno, res_asso_no, housename_no_en, housename_no_ml, ot_address1_en, ot_address1_ml,
                   ot_address2_en, ot_address2_ml, villageid, tenantid, talukid, districtid,
                   stateid, poid, pinno, ot_state_region_province_en, ot_state_region_province_ml, countryid, createdby, createdtime,
                   lastmodifiedby, lastmodifiedtime, birthdtlid, bio_adopt, res_asso_no_ml, taluk_name, village_name, ward_code, doorno, subno, ot_zipcode)
@@ -969,3 +995,4 @@
               - jsonPath: $.RegisterBirthDetails.*.auditDetails.lastModifiedBy
 
               - jsonPath: $.RegisterBirthDetails.*.id
+
