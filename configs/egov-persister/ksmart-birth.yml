@@ -574,11 +574,11 @@ serviceMaps:
 
             - jsonPath: $.ChildDetails.*.esign_user_desig_code
 
-            - jsonPath: $.ChildDetails.*.is_multiple_birth
+            - jsonPath: $.ChildDetails.*.is_multiple_birth            
 
-            - jsonPath: $.ChildDetails.*.isfatherInfo
+            - jsonPath: $.ChildDetails.*.ParentsDetails.isfatherInfo
 
-            - jsonPath: $.ChildDetails.*.ismotherInfo
+            - jsonPath: $.ChildDetails.*.ParentsDetails.ismotherInfo
 
             - jsonPath: $.ChildDetails.*.no_of_alive_birth
 
