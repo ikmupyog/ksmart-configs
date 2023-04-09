@@ -1,6 +1,6 @@
 SearchDefinitions:
- moduleName: tl-services
- summary: Trade License Services Inbox API
+ moduleName: birth-services
+ summary: Birth Services Inbox API
  version: 1.0.0
  definitions:
  - name: inboxtlsearch
