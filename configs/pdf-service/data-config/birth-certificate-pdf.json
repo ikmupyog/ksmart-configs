@@ -35,10 +35,10 @@
 
               {
                 "variable": "logotenant",
-                "url": {
+                "value": {
                   "path": "$.tenantLogoUrl"
                 },
-                "type":"image"
+                "type":"setEmpty"
               },
               {
                 "variable": "name",
