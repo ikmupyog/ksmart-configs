@@ -16,9 +16,9 @@
         "style": "ws-head",
         "table": {
           "widths": [
-            "20%",
+            "50%",
             "60%",
-            "20%"
+            "50%"
           ],
           "body": [
             [
@@ -33,9 +33,17 @@
               {
                 "stack": [
                   {
-                    "image": "{{ashoka}}",
-                    "width": 70,
-                    "height": 70
+                    "image": "{{logoindia}}",
+                    "width": 40,
+                    "height": 40
+                  }
+                ]
+              },
+              {
+                "stack": [
+                  {
+                    "text": "Government of India",
+                    "style": "appendix-header-italic"
                   }
                 ]
               }
@@ -107,7 +115,7 @@
               {
                 "stack": [
                   {
-                    "image": "{{logobirth}}",
+                    "image": "{{logotenant}}",
                     "width": 70,
                     "height": 70
                   }
@@ -129,11 +137,11 @@
               {
                 "stack": [
                   {
-                    "text": "{{nameOfLbMl}} : {{tenantMl}}",
+                    "text": "{{nameOfLbMl}} : {{tenantMl}} {{  lbtypecodeMl}}",
                     "style": "details-body-center"
                   },
                   {
-                    "text": "{{nameOfLb}} : {{tenant}}",
+                    "text": "{{nameOfLb}} : {{tenant}} {{  lbtypecode}}",
                     "style": "details-body-center"
                   }
 
@@ -246,7 +254,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{name}} / {{nameMl}}",
+                    "text": "{{nameMl}} / {{name}}",
                     "style": "details-body"
                   }
                 ]
@@ -265,7 +273,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{genderMl}}/ {{genderEn}}",
+                    "text": "{{genderMl}}/ {{gender}}",
                     "style": "details-body"
                   }
                 ]
@@ -285,7 +293,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{dob}} /{{dobInWords}} ",
+                    "text": "{{dateofbirth}} /{{dobInWords}} ",
                     "style": "details-body"
                   }
                 ]
@@ -473,7 +481,7 @@
               {
                 "columns": [
                   {
-                    "text": "{{dateOfIssue}}: {{currentDate}}",
+                    "text": "{{dateOfIssue}}: {{currentDateLong}}",
                     "width": "49%",
                     "style": "details-body"
                   },
@@ -961,7 +969,7 @@
         ]
       },
       "pdf-watermark": {
-        "link": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg"
+        "link": "{{watermark}}"
       }
     }
   }

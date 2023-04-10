@@ -1,0 +1,123 @@
+{
+  "key": "nac-death-certificate",
+  "DataConfigs": {
+    "serviceName": "rainmaker-common",
+    "version": "1.0.0",
+    "baseKeyPath": "$.NacBirthCertificate.*",
+    "entityIdPath":"$.id",
+    "isCommonTableBorderRequired": true,
+    "mappings": [
+      {
+        "topic": "common-pdf-generation-3",
+        "mappings": [
+          {
+            "direct": [
+              {
+                "variable": "form10",
+                "value": {
+                  "path": "$.form10"
+                }
+              },
+              {
+                "variable": "rule13",
+                "value": {
+                  "path": "$.rule13"
+                }
+              },
+              {
+                "variable": "nac",
+                "value": {
+                  "path": "$.nac"
+                }
+              },
+              {
+                "variable": "issueUnderSection171969",
+                "value": {
+                  "path": "$.issueUnderSection171969"
+                }
+              },
+              {
+                "variable": "certify",
+                "value": {
+                  "path": "$.certify"
+                }
+              },
+              {
+                "variable": "careOf",
+                "value": {
+                  "path": "$.careOf"
+                }
+              },
+              {
+                "variable": "period",
+                "value": {
+                  "path": "$.period"
+                }
+              },
+              {
+                "variable": "applicantNameEn",
+                "value": {
+                  "path": "$.applicantNameEn"
+                }
+              },
+              {
+                "variable": "localAreaEn",
+                "value": {
+                  "path": "$.localAreaEn"
+                }
+              },
+              {
+                "variable": "tehsil",
+                "value": {
+                  "path": "$.tehsil"
+                }
+              },
+              {
+                "variable": "district",
+                "value": {
+                  "path": "$.district"
+                }
+              },
+              {
+                "variable": "state",
+                "value": {
+                  "path": "$.state"
+                }
+              },
+              {
+                "variable": "childName",
+                "value": {
+                  "path": "$.childName"
+                }
+              },
+              {
+                "variable": "motherName",
+                "value": {
+                  "path": "$.motherName"
+                }
+              },
+              {
+                "variable": "date",
+                "value": {
+                  "path": "$.date"
+                }
+              },
+              {
+                "variable": "signature",
+                "value": {
+                  "path": "$.signature"
+                }
+              },
+              {
+                "variable": "seal",
+                "value": {
+                  "path": "$.seal"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

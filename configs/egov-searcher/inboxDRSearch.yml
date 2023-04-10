@@ -1,0 +1,145 @@
+SearchDefinitions:
+ moduleName: death-services
+ summary: Death Services Inbox API
+ version: 1.0.0
+ definitions:
+ - name: inboxDRSearch
+   query:
+    baseQuery: Select row_to_json(result) from
+          ( select DISTINCT(dt.ack_no) as applicationnumber,dt.createdtime as createdtime from eg_death_dtls as dt
+          LEFT OUTER JOIN eg_death_address_dtls presentaddr ON dt.id = presentaddr.death_dtl_id  AND presentaddr.addr_typeid='P' 
+          LEFT OUTER JOIN eg_death_address_dtls permanentaddr ON dt.id = permanentaddr.death_dtl_id  ANDpermanentaddr.addr_typeid='R'
+          LEFT OUTER JOIN eg_death_statistical_dtls stat  ON dt.id = stat.death_dtl_id
+          INNER JOIN eg_wf_processinstance_v2 pi ON pi.businessid = dt.ack_no
+          LEFT JOIN eg_wf_assignee_v2 assg ON pi.id = assg.processinstanceid
+          $where
+          AND assg.createdtimepi.createdtime IN (select max(createdtime) from eg_wf_processinstance_v2 wf  
+          where wf.businessid = dt.ack_no  GROUP BY wf.businessid)
+          order by dt.ack_no asc 
+          ) result    
+
+    groupBy:
+    orderBy:
+   searchParams:
+    condition: AND
+    params:
+    - name: dt.tenantid
+      isMandatory: true
+      jsonPath: $.searchCriteria.tenantId
+    - name: dt.death_place_ward_id
+      isMandatory: false
+      jsonPath: $.searchCriteria.DeathPlaceWardId
+    - name: assg.assignee
+      isMandatory: false
+      jsonPath: $.searchCriteria.assignee
+    - name: pi.status
+      isMandatory: false
+      jsonPath: $.searchCriteria.applicationStatus
+    - name: dt.ack_no
+      isMandatory: false
+      jsonPath: $.searchCriteria.DeathACKNo
+    - name: pi.businessservice
+      isMandatory: false
+      jsonPath: $.searchCriteria.businessService
+   
+    pagination:
+      noOfRecords: $.searchCriteria.noOfRecords
+      offset: $.searchCriteria.offset
+
+   output:
+    jsonFormat: {"ResponseInfo": {},"DeathApplications": []}
+    outJsonPath: $.DeathApplications
+    responseInfoPath: $.ResponseInfo
+
+ - name: inboxdeathsearchcount
+   query:
+    baseQuery: SELECT row_to_json(TotalCount) from (SELECT COUNT(result) from
+          (
+          select DISTINCT(dt.ack_no) as applicationnumber,dt.createdtime as createdtime from eg_death_dtls as dt
+          LEFT OUTER JOIN eg_death_address_dtls presentaddr ON dt.id = presentaddr.death_dtl_id  AND presentaddr.addr_typeid='P'
+          LEFT OUTER JOIN eg_death_address_dtls permanentaddr ON dt.id = permanentaddr.death_dtl_id  ANDpermanentaddr.addr_typeid='R'
+          LEFT OUTER JOIN eg_death_statistical_dtls stat  ON dt.id = stat.death_dtl_id
+          INNER JOIN eg_wf_processinstance_v2 pi ON pi.businessid = dt.ack_no
+          LEFT JOIN eg_wf_assignee_v2 assg ON pi.id = assg.processinstanceid
+          $where
+          AND pi.createdtime IN (select max(createdtime) from eg_wf_processinstance_v2 wf where 
+          wf.businessid = dt.ack_no GROUP BY wf.businessid)
+          order by dt.ack_no asc
+          ) result) TotalCount
+    groupBy:
+    orderBy:
+   searchParams:
+    condition: AND
+    params:
+    - name: dt.tenantid
+      isMandatory: true
+      jsonPath: $.searchCriteria.tenantId
+    - name: dt.death_place_ward_id
+      isMandatory: false
+      jsonPath: $.searchCriteria.DeathPlaceWardId
+    - name: assg.assignee
+      isMandatory: false
+      jsonPath: $.searchCriteria.assignee
+    - name: pi.status
+      isMandatory: false
+      jsonPath: $.searchCriteria.applicationStatus
+    - name: dt.ack_no
+      isMandatory: false
+      jsonPath: $.searchCriteria.DeathACKNo
+    - name: pi.businessservice
+      isMandatory: false
+      jsonPath: $.searchCriteria.businessService
+    pagination:
+      noOfRecords: $.searchCriteria.noOfRecords
+      offset: $.searchCriteria.offset  
+
+   output:
+    jsonFormat: {"ResponseInfo": {},"TotalCount": {}}
+    outJsonPath: $.TotalCount
+    responseInfoPath: $.ResponseInfo
+
+ - name: inboxdeathsearchdesc
+   query:
+    baseQuery: Select row_to_json(result) from
+          ( select DISTINCT(dt.ack_no) as applicationnumber,dt.createdtime as createdtime from eg_death_dtls as dt
+          LEFT OUTER JOIN eg_death_address_dtls presentaddr ON dt.id = presentaddr.death_dtl_id  AND presentaddr.addr_typeid='P' 
+          LEFT OUTER JOIN eg_death_address_dtls permanentaddr ON dt.id = permanentaddr.death_dtl_id  ANDpermanentaddr.addr_typeid='R'
+          LEFT OUTER JOIN eg_death_statistical_dtls stat  ON dt.id = stat.death_dtl_id
+          INNER JOIN eg_wf_processinstance_v2 pi ON pi.businessid = dt.ack_no
+          LEFT JOIN eg_wf_assignee_v2 assg ON pi.id = assg.processinstanceid
+          $where
+          AND assg.createdtimepi.createdtime IN (select max(createdtime) from eg_wf_processinstance_v2 wf  
+          where wf.businessid = dt.ack_no  GROUP BY wf.businessid)
+          order by dt.ack_no desc $pagination 
+          ) result
+    groupBy:
+    orderBy:
+   searchParams:
+    condition: AND
+    params:
+    - name: dt.tenantid
+      isMandatory: true
+      jsonPath: $.searchCriteria.tenantId
+    - name: dt.death_place_ward_id
+      isMandatory: false
+      jsonPath: $.searchCriteria.DeathPlaceWardId
+    - name: assg.assignee
+      isMandatory: false
+      jsonPath: $.searchCriteria.assignee
+    - name: pi.status
+      isMandatory: false
+      jsonPath: $.searchCriteria.applicationStatus
+    - name: dt.ack_no
+      isMandatory: false
+      jsonPath: $.searchCriteria.DeathACKNo
+    - name: pi.businessservice
+      isMandatory: false
+      jsonPath: $.searchCriteria.businessService
+    pagination:
+      noOfRecords: $.searchCriteria.noOfRecords
+      offset: $.searchCriteria.offset 
+
+   output:
+    jsonFormat: {"ResponseInfo": {},"DeathApplications": []}
+    outJsonPath: $.DeathApplications
+    responseInfoPath: $.ResponseInfo

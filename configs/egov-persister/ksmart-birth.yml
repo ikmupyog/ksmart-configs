@@ -574,7 +574,7 @@ serviceMaps:
 
             - jsonPath: $.ChildDetails.*.esign_user_desig_code
 
-            - jsonPath: $.ChildDetails.*.is_multiple_birth            
+            - jsonPath: $.ChildDetails.*.is_multiple_birth
 
             - jsonPath: $.ChildDetails.*.ParentsDetails.isfatherInfo
 
