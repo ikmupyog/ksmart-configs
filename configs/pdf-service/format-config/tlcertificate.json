@@ -43,12 +43,12 @@
                         "stack": [
                           {
                             "text": "License No",
-                            "style": "appendix-header-body",
+                            "style": "pdf-header-sub-text",
                             "widths":"40%"
                           },
                           {
                             "text": "{{licenseNumber}}",
-                            "style": "appendix-header-body"
+                            "style": "pdf-header-sub-text"
                           }
                         ]
                       }
@@ -65,7 +65,7 @@
                               "stack": [
                                 {
                                   "text": "1. Licensee Name and Address",
-                                  "style": "appendix-header-body",
+                                  "style": "pdf-header-sub-text",
                                   "widths":"40%"
                                 }
                               ]
@@ -99,7 +99,7 @@
                               "stack": [
                                 {
                                   "text": "2. Licensing Unit Name and Address",
-                                  "style": "appendix-header-body",
+                                  "style": "pdf-header-sub-text",
                                   "widths":"40%"
                                 }
                               ]
@@ -112,7 +112,7 @@
                                 },
                                 {
                                   "text": "{{address}}",
-                                  "style": "details-body"
+                                  "style": "details-body-border"
                                 }
                               ]
                             }
@@ -121,13 +121,22 @@
                       },
                       "layout": "noBorders"
                     }
-                  ],
+                  ]
+                ]
+              },
+              "layout": "noBorders"
+            },
+            {
+              "style": "ws-head",
+              "table": {
+                "widths": ["*"],
+                "body": [
                   [
                     {
                       "stack": [
                         {
                           "text": "3. Licensing Business Activity Details",
-                          "style": "appendix-header-body"
+                          "style": "pdf-header-sub-text"
                         }
                       ]
                     }
@@ -135,6 +144,83 @@
                 ]
               },
               "layout": "noBorders"
+            },
+            {
+              "style": "ws-head",
+              "table": {
+                "widths": ["10%","30%","30%","30%"],
+                "body": [
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "Sl No",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "Business Category",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "Type",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "Sub Type",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "1",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "{{businessCategory}}",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "{{businessType}}",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "{{businessSubtype}}",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              },
+              "layout": "2px"
             }
           ],
           "styles": {
