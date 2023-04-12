@@ -73,7 +73,7 @@
                             {
                               "stack": [
                                 {
-                                  "text": "{{ownerName}}  {{ownerCareOf}} / {{ownerCareOfName}}",
+                                  "text": "{{ownerName}}  {{ownerCareOf}}  {{ownerCareOfName}}",
                                   "style": "details-body"
                                 },
                                 {
