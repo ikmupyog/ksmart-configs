@@ -209,66 +209,6 @@
               }
             },
             {
-              "variable": "blockNo",
-              "value": {
-                "path": "$.tradeLicenseDetail.structurePlace[0].blockNo"
-              }
-            },
-            {
-              "variable": "surveyNo",
-              "value": {
-                "path": "$.tradeLicenseDetail.structurePlace[0].surveyNo"
-              }
-            },
-            {
-              "variable": "subDivisionNo",
-              "value": {
-                "path": "$.tradeLicenseDetail.structurePlace[0].subDivisionNo"
-              }
-            },
-            {
-              "variable": "partitionNo",
-              "value": {
-                "path": "$.tradeLicenseDetail.structurePlace[0].partitionNo"
-              }
-            },
-            {
-              "variable": "doorNo",
-              "value": {
-                "path": "$.tradeLicenseDetail.structurePlace.*.doorNo"
-              }
-            },
-            {
-              "variable": "doorNoSub",
-              "value": {
-                "path": "$.tradeLicenseDetail.structurePlace.*.doorNoSub"
-              }
-            },
-            {
-              "variable": "buildingId",
-              "value": {
-                "path": "$.tradeLicenseDetail.structurePlace.*.buildingId"
-              }
-            },
-            {
-              "variable": "stallNo",
-              "value": {
-                "path": "$.tradeLicenseDetail.structurePlace.*.stallNo"
-              }
-            },
-            {
-              "variable": "vehicleNo",
-              "value": {
-                "path": "$.tradeLicenseDetail.structurePlace[0].vehicleNo"
-              }
-            },
-            {
-              "variable": "vesselNo",
-              "value": {
-                "path": "$.tradeLicenseDetail.structurePlace[0].vesselNo"
-              }
-            },
-            {
               "variable": "businessSector",
               "value": {
                 "path": "$.tradeLicenseDetail.businessSector"
