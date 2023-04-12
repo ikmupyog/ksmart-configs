@@ -163,34 +163,34 @@
             {
               "variable": "businessCategory",
               "value": {
-                "path": "$.tradeLicenseDetail.tradeUnits.*.businessCategory"
+                "path": "$.tradeLicenseDetail.tradeUnits[0].businessCategory"
               },
               "localisation":{
                 "required":true,
                 "prefix": null,
-                "module": "tl"
+                "module": "rainmaker-tl"
               }
             },
             {
               "variable": "businessType",
               "value": {
-                "path": "$.tradeLicenseDetail.tradeUnits.*.businessType"
+                "path": "$.tradeLicenseDetail.tradeUnits[0].businessType"
               },
               "localisation":{
                 "required":true,
                 "prefix": null,
-                "module": "tl"
+                "module": "rainmaker-tl"
               }
             },
             {
               "variable": "businessSubtype",
               "value": {
-                "path": "$.tradeLicenseDetail.tradeUnits.*.businessSubtype"
+                "path": "$.tradeLicenseDetail.tradeUnits[0].businessSubtype"
               },
               "localisation":{
                 "required":true,
                 "prefix": null,
-                "module": "tl"
+                "module": "rainmaker-tl"
               }
             },
             {
