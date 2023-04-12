@@ -31,6 +31,98 @@
                 ]
               },
               "layout": "noBorders"
+            },
+            {
+              "style": "ws-head",
+              "table": {
+                "widths": ["*"],
+                "body": [
+                  [
+                    [
+                      {
+                        "stack": [
+                          {
+                            "text": "License No",
+                            "style": "appendix-header-body",
+                            "widths":"40%"
+                          },
+                          {
+                            "text": "{{licenseNumber}}",
+                            "style": "appendix-header-body"
+                          }
+                        ]
+                      }
+                    ]
+                  ],
+                  [
+                    {
+                      "style": "ws-head",
+                      "table": {
+                        "widths": ["50%","50%"],
+                        "body": [
+                          [
+                            {
+                              "stack": [
+                                {
+                                  "text": "1. Licensee Name and Address",
+                                  "style": "appendix-header-body",
+                                  "widths":"40%"
+                                }
+                              ]
+                            },
+                            {
+                              "stack": [
+                                {
+                                  "text": "{{ownerName}}  {{ownerCareOf}}  {{ownerCareOfName}}",
+                                  "style": "details-body"
+                                },
+                                {
+                                  "text": "{{ownerDesignation}}, {{owneraddress}}",
+                                  "style": "details-body-border"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      },
+                      "layout": "noBorders"
+                    }
+                  ],
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "2. Licensing Unit Name and Address",
+                          "style": "appendix-header-body"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "{{licenseUnitId}} - {{licenseUnitName}}",
+                          "style": "details-body"
+                        },
+                        {
+                          "text": "{{address}}",
+                          "style": "details-body-border"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "3. Licensing Business Activity Details",
+                          "style": "appendix-header-body"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              },
+              "layout": "noBorders"
             }
           ],
           "styles": {
