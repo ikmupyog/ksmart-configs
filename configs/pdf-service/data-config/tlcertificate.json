@@ -164,18 +164,33 @@
               "variable": "businessCategory",
               "value": {
                 "path": "$.tradeLicenseDetail.tradeUnits.*.businessCategory"
+              },
+              "localisation":{
+                "required":true,
+                "prefix": null,
+                "module": "rainmaker-tl"
               }
             },
             {
               "variable": "businessType",
               "value": {
                 "path": "$.tradeLicenseDetail.tradeUnits.*.businessType"
+              },
+              "localisation":{
+                "required":true,
+                "prefix": null,
+                "module": "rainmaker-tl"
               }
             },
             {
               "variable": "businessSubtype",
               "value": {
                 "path": "$.tradeLicenseDetail.tradeUnits.*.businessSubtype"
+              },
+              "localisation":{
+                "required":true,
+                "prefix": null,
+                "module": "rainmaker-tl"
               }
             },
             {
