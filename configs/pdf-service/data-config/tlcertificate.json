@@ -628,6 +628,12 @@
                     "prefix": null,
                     "module":"rainmaker-common"
                  }
+              }, 
+              {
+                "variable": "signedCertificateData",
+                "value": {
+                  "path": "$.signedCertificate"
+                }
               },
               {
                   "variable": "license_issue_date",
