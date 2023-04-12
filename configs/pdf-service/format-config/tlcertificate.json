@@ -96,6 +96,14 @@
                           "style": "appendix-header-body"
                         }
                       ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "{{licenseUnitId}} - {{licenseUnitName}}",
+                          "style": "details-body"
+                        }
+                      ]
                     }
                   ],
                   [
