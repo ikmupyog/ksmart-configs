@@ -87,6 +87,26 @@
                       },
                       "layout": "noBorders"
                     }
+                  ],
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "2. Licensing Unit Name and Address",
+                          "style": "appendix-header-body"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "3. Licensing Business Activity Details",
+                          "style": "appendix-header-body"
+                        }
+                      ]
+                    }
                   ]
                 ]
               },
