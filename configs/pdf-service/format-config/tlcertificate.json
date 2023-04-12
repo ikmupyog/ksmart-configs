@@ -73,11 +73,11 @@
                             {
                               "stack": [
                                 {
-                                  "text": "{{ownerName}}",
+                                  "text": "{{ownerName}}  {{ownerCareOf}} / {{ownerCareOfName}}",
                                   "style": "details-body"
                                 },
                                 {
-                                  "text": "{{ownerHouseName}}, {{ownerStreet}}, {{ownerLocality}}, {{ownerPostOffice}} - {{ownerPincode}}",
+                                  "text": "{{ownerDesignation}}, {{owneraddress}}",
                                   "style": "details-body-border"
                                 }
                               ]
@@ -104,7 +104,7 @@
                           "style": "details-body"
                         },
                         {
-                          "text": "{{wardNo}} / {{combainedDoorNo}}, {{buildingName}}, {{street}}, {{locality}}, {{landmark}}, {{postOffice}} - {{instPincode}}",
+                          "text": "{{address}}",
                           "style": "details-body-border"
                         }
                       ]
