@@ -90,20 +90,36 @@
                   ],
                   [
                     {
-                      "stack": [
-                        {
-                          "text": "2. Licensing Unit Name and Address",
-                          "style": "appendix-header-body"
-                        }
-                      ]
-                    },
-                    {
-                      "stack": [
-                        {
-                          "text": "{{licenseUnitId}} - {{licenseUnitName}}",
-                          "style": "details-body"
-                        }
-                      ]
+                      "style": "ws-head",
+                      "table": {
+                        "widths": ["50%","50%"],
+                        "body": [
+                          [
+                            {
+                              "stack": [
+                                {
+                                  "text": "2. Licensing Unit Name and Address",
+                                  "style": "appendix-header-body",
+                                  "widths":"40%"
+                                }
+                              ]
+                            },
+                            {
+                              "stack": [
+                                {
+                                  "text": "{{licenseUnitId}} - {{licenseUnitName}}",
+                                  "style": "details-body"
+                                },
+                                {
+                                  "text": "{{address}}",
+                                  "style": "details-body"
+                                }
+                              ]
+                            }
+                          ]
+                        ]
+                      },
+                      "layout": "noBorders"
                     }
                   ],
                   [
