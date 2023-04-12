@@ -168,7 +168,7 @@
               "localisation":{
                 "required":true,
                 "prefix": null,
-                "module": "rainmaker-tl"
+                "module": "tl"
               }
             },
             {
@@ -179,7 +179,7 @@
               "localisation":{
                 "required":true,
                 "prefix": null,
-                "module": "rainmaker-tl"
+                "module": "tl"
               }
             },
             {
@@ -190,7 +190,7 @@
               "localisation":{
                 "required":true,
                 "prefix": null,
-                "module": "rainmaker-tl"
+                "module": "tl"
               }
             },
             {
