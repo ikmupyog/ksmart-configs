@@ -5,20 +5,20 @@
       "font": "Meera"
     },
     "watermark": {
-            "text": "KSMART DEMO",
-            "color": "gery",
-            "opacity": 0.1,
-            "bold": true,
-            "italics": false
-        },
+      "text": "KSMART DEMO",
+      "color": "gery",
+      "opacity": 0.1,
+      "bold": true,
+      "italics": false
+    },
     "content": [
       {
         "style": "ws-head",
         "table": {
           "widths": [
-            "20%",
+            "50%",
             "60%",
-            "20%"
+            "50%"
           ],
           "body": [
             [
@@ -27,6 +27,23 @@
                   {
                     "text": "{{keyNo}}: {{keyAckNo}}",
                     "style": "appendix-header-serialNo"
+                  }
+                ]
+              },
+              {
+                "stack": [
+                  {
+                    "image": "{{logoindia}}",
+                    "width": 40,
+                    "height": 40
+                  }
+                ]
+              },
+              {
+                "stack": [
+                  {
+                    "text": "Government of India",
+                    "style": "appendix-header-italic"
                   }
                 ]
               }
@@ -54,7 +71,7 @@
                   }
                 ]
               },
-              
+
               {
                 "stack": [
                   {
@@ -98,7 +115,7 @@
               {
                 "stack": [
                   {
-                    "image": "{{logobirth}}",
+                    "image": "{{logotenant}}",
                     "width": 70,
                     "height": 70
                   }
@@ -120,11 +137,11 @@
               {
                 "stack": [
                   {
-                    "text": "{{nameOfLbMl}} : {{tenantMl}}",
+                    "text": "{{nameOfLbMl}} : {{tenantMl}} {{  lbtypecodeMl}}",
                     "style": "details-body-center"
                   },
                   {
-                    "text": "{{nameOfLb}} : {{tenant}}",
+                    "text": "{{nameOfLb}} : {{tenant}} {{  lbtypecode}}",
                     "style": "details-body-center"
                   }
 
@@ -145,7 +162,7 @@
             [
               {
                 "stack": [
-                  
+
                   {
                     "text": "{{birthCertificateMl}}",
                     "style": "title-header"
@@ -237,7 +254,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{name}} / {{nameMl}}",
+                    "text": "{{nameMl}} / {{name}}",
                     "style": "details-body"
                   }
                 ]
@@ -256,7 +273,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{genderMl}}/ {{genderEn}}",
+                    "text": "{{genderMl}}/ {{gender}}",
                     "style": "details-body"
                   }
                 ]
@@ -276,7 +293,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{dob}} /{{dobInWords}} ",
+                    "text": "{{dateofbirth}} /{{dobInWords}} ",
                     "style": "details-body"
                   }
                 ]
@@ -464,7 +481,7 @@
               {
                 "columns": [
                   {
-                    "text": "{{dateOfIssue}}: {{currentDate}}",
+                    "text": "{{dateOfIssue}}: {{currentDateLong}}",
                     "width": "49%",
                     "style": "details-body"
                   },
@@ -952,7 +969,7 @@
         ]
       },
       "pdf-watermark": {
-        "link": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg"
+        "link": "{{watermark}}"
       }
     }
   }

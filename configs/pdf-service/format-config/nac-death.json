@@ -1,0 +1,193 @@
+{
+  "key": "nac-death-certificate",
+  "config": {
+    "defaultStyle": {
+      "font": "Cambay"
+
+    },
+    "watermark": {
+      "text": "IKM DEMO",
+      "color": "gery",
+      "opacity": 0.1,
+      "bold": true,
+      "italics": false
+    },
+    "content": [
+      {
+        "style": "nac-head",
+        "table": {
+          "widths": [
+           "*"
+          ],
+          "body": [
+            [
+              {
+                "stack": [
+                  {
+                    "text": "{{form10}}{{rule13}}",
+                    "style": "appendix-header-body"
+                  },
+                  {
+                    "text": "{{nac}}",
+                    "style": "main-body-style"
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        "layout": "noBorders"
+      },
+      {
+        "style": "nac-sub-head",
+        "table": {
+          "widths": [
+            "*"
+          ],
+          "body": [
+            [
+              {
+                "stack": [
+                  {
+                    "text": "{{issueUnderSection171969}}",
+                    "style": "rule-header"
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        "layout": "noBorders"
+      },
+      {
+        "style": "nac-sub-head",
+        "table": {
+          "widths": [
+            "*"
+          ],
+          "body": [
+            [
+              {
+                "stack": [
+                  {
+                    "text": "{{certify}} a search has been made on the request of Shri./Smt./Kum {{applicantNameEn}} son/wife/daughter of {{careOf}} in the registration records for the year (s) {{period}} relating to (Local area) {{localAreaEn}} of(Tehsil) {{Tehsil}} of (District) {{district}} of (State) {{state}} and found that the event relating to the death of {{childName}} Son / daughter of {{motherName}} was not registered.",
+                    "style": "details-body-center"
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        "layout": "noBorders"
+      },
+      {
+        "style": "nac-sub-head",
+        "table": {
+          "widths": [
+            "*"
+          ],
+          "body": [
+            [
+              {
+                "stack": [
+                  {
+                    "text": "Date {{date}}",
+                    "style": "details-body-left"
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        "layout": "noBorders"
+      },
+      {
+        "style": "nac-sub-head",
+        "table": {
+          "widths": [
+            "*"
+          ],
+          "body": [
+            [
+              {
+                "stack": [
+                  {
+                    "text": "Signature of issuing authority {{signature}}",
+                    "style": "details-body-right"
+                  },
+                  {
+                    "text": "Seal {{seal}}",
+                    "style": "details-body-right"
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        "layout": "noBorders"
+      }
+    ],
+    "styles": {
+      "nac-head": {
+        "margin": [
+          -25,
+          -30,
+          0,
+          1
+        ]
+      },
+      "appendix-header-body": {
+        "color": "#000000",
+        "fontSize": 10,
+        "letterSpacing": 0.74,
+        "alignment": "center",
+        "padding-top": "0%"
+      },
+      "main-body-style": {
+        "color": "#000000",
+        "fontSize": 10,
+        "alignment": "center",
+        "letterSpacing": 0.74,
+        "padding-top": "0%",
+        "margin": [
+          0,
+          0,
+          0,
+          3
+        ]
+      },
+      "rule-header": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 10,
+        "alignment": "center",
+        "letterSpacing": 0.74,
+        "padding-top": "0%",
+        "margin": [
+          0,
+          0,
+          0,
+          3
+        ]
+      },
+      "details-body-center": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 13
+      },
+      "details-body-left": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 13,
+        "alignment": "left",
+        "padding-top": "20%"
+      },
+      "details-body-right": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 13,
+        "alignment": "right"
+      }
+    }
+  }
+}

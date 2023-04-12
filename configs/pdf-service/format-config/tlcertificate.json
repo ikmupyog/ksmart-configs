@@ -32,90 +32,158 @@
               },
               "layout": "noBorders"
             },
+          {
+            "style": "ws-head",
+            "table": {
+              "widths": ["*"],
+              "body": [
+                [
+                  {
+                    "style": "ws-head",
+                    "table": {
+                    "widths": ["70%","30%"],
+                    "body": [
+                        [
+                          {
+                            "style": "ws-head",
+                            "table": {
+                              "widths": ["*"],
+                              "body": [
+                                [
+                                  {
+                                    "style": "ws-head",
+                                    "table": {
+                                    "widths": ["50%","50%"],
+                                    "body": [
+                                        [
+                                          {
+                                            "stack": [
+                                              {
+                                                "text": "License No",
+                                                "style": "pdf-header-sub-text",
+                                                "widths":"40%"
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "stack": [
+                                              {
+                                                "text": "{{licenseNumber}}",
+                                                "style": "pdf-header-sub-text"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      ]
+                                    },
+                                    "layout": "noBorders"
+                                  }
+                                ],
+                                [
+                                  {
+                                    "style": "ws-head",
+                                    "table": {
+                                      "widths": ["50%","50%"],
+                                      "body": [
+                                        [
+                                          {
+                                            "stack": [
+                                              {
+                                                "text": "1. Licensee Name and Address",
+                                                "style": "pdf-header-sub-text",
+                                                "widths":"40%"
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "stack": [
+                                              {
+                                                "text": "{{ownerName}}  {{ownerCareOf}}  {{ownerCareOfName}}",
+                                                "style": "details-body"
+                                              },
+                                              {
+                                                "text": "{{ownerDesignation}}, {{owneraddress}}",
+                                                "style": "details-body-border"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      ]
+                                    },
+                                    "layout": "noBorders"
+                                  }
+                                ],
+                                [
+                                  {
+                                    "style": "ws-head",
+                                    "table": {
+                                      "widths": ["50%","50%"],
+                                      "body": [
+                                        [
+                                          {
+                                            "stack": [
+                                              {
+                                                "text": "2. Licensing Unit Name and Address",
+                                                "style": "pdf-header-sub-text",
+                                                "widths":"40%"
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "stack": [
+                                              {
+                                                "text": "{{licenseUnitId}} - {{licenseUnitName}}",
+                                                "style": "details-body"
+                                              },
+                                              {
+                                                "text": "{{address}}",
+                                                "style": "details-body-border"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      ]
+                                    },
+                                    "layout": "noBorders"
+                                  }
+                                ]
+                              ]
+                            },
+                            "layout": "noBorders"
+                          },
+                          {
+                            "image": "{{userpic}}",
+                            "width": 70,
+                            "height": 82,
+                            "alignment": "center",
+                             "margin": [
+                                    0,
+                                    10,
+                                    0,
+                                    10
+                            ]
+                         }  
+                        ]
+                      ]
+                    },
+                    "layout": "noBorders"
+                  }
+                ]
+              ]
+            }
+          },
+            
             {
               "style": "ws-head",
               "table": {
                 "widths": ["*"],
                 "body": [
                   [
-                    [
-                      {
-                        "stack": [
-                          {
-                            "text": "License No",
-                            "style": "appendix-header-body",
-                            "widths":"40%"
-                          },
-                          {
-                            "text": "{{licenseNumber}}",
-                            "style": "appendix-header-body"
-                          }
-                        ]
-                      }
-                    ]
-                  ],
-                  [
-                    {
-                      "style": "ws-head",
-                      "table": {
-                        "widths": ["50%","50%"],
-                        "body": [
-                          [
-                            {
-                              "stack": [
-                                {
-                                  "text": "1. Licensee Name and Address",
-                                  "style": "appendix-header-body",
-                                  "widths":"40%"
-                                }
-                              ]
-                            },
-                            {
-                              "stack": [
-                                {
-                                  "text": "{{ownerName}}",
-                                  "style": "details-body"
-                                },
-                                {
-                                  "text": "{{ownerHouseName}}, {{ownerStreet}}, {{ownerLocality}}, {{ownerPostOffice}} - {{ownerPincode}}",
-                                  "style": "details-body-border"
-                                }
-                              ]
-                            }
-                          ]
-                        ]
-                      },
-                      "layout": "noBorders"
-                    }
-                  ],
-                  [
-                    {
-                      "stack": [
-                        {
-                          "text": "2. Licensing Unit Name and Address",
-                          "style": "appendix-header-body"
-                        }
-                      ]
-                    },
-                    {
-                      "stack": [
-                        {
-                          "text": "{{licenseUnitId}} - {{licenseUnitName}}",
-                          "style": "details-body"
-                        },
-                        {
-                          "text": "{{wardNo}} / {{combainedDoorNo}}, {{buildingName}}, {{street}}, {{locality}}, {{landmark}}, {{postOffice}} - {{instPincode}}",
-                          "style": "details-body-border"
-                        }
-                      ]
-                    }
-                  ],
-                  [
                     {
                       "stack": [
                         {
                           "text": "3. Licensing Business Activity Details",
-                          "style": "appendix-header-body"
+                          "style": "pdf-header-sub-text"
                         }
                       ]
                     }
@@ -211,7 +279,7 @@
                       "stack": [
                         {
                           "text": "4. Validation & Renewal",
-                          "style": "appendix-header-body"
+                          "style": "pdf-header-sub-text"
                         }
                       ]
                     }
@@ -223,13 +291,13 @@
             {
               "style": "ws-head",
               "table": {
-                "widths": ["10%","35%","10%","10%","35%"],
+                "widths": ["15%","25%","20%","20%","25%"],
                 "body": [
                   [
                     {
                       "stack": [
                         {
-                          "text": "License Issue Date",
+                          "text": "Issue Date",
                           "style": "pdf-header-sub-text"
                         }
                       ]
@@ -245,7 +313,7 @@
                     {
                       "stack": [
                         {
-                          "text": "License Renewal Date",
+                          "text": "Renewal Date",
                           "style": "pdf-header-sub-text"
                         }
                       ]
@@ -261,7 +329,7 @@
                     {
                       "stack": [
                         {
-                          "text": " License issuing Authority",
+                          "text": " Issuing Authority",
                           "style": "pdf-header-sub-text"
                         }
                       ]
@@ -549,8 +617,9 @@
             "details-body": {
               "color": "#000000",
               "bold": false,
-              "fontSize": 11,
+              "fontSize": 13,
               "fontWeight": 300,
+              "lineHeight": 2,
               "margin": [
                 10,
                 0,
@@ -561,7 +630,7 @@
             "details-body-border": {
               "color": "#000000",
               "bold": false,
-              "fontSize": 11,
+              "fontSize": 13,
               "fontWeight": 300,
               "margin": [
                 10,

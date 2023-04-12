@@ -16,7 +16,7 @@ serviceMaps:
 
           - jsonPath: $.Licenses.*.tenantId
 
-          - jsonPath: $.Licenses.*.tradeName
+          - jsonPath: $.Licenses.*.licenseUnitName
 
           - jsonPath: $.Licenses.*.validFrom
 
@@ -232,7 +232,7 @@ serviceMaps:
        - query: UPDATE eg_tl_tradelicense SET tradeName = ?, financialyear = ?, validfrom = ?, validto = ?, licensetype = ?, applicationnumber=?, action = ?, status = ?,  lastmodifiedby = ?,  lastmodifiedtime = ?, businessservice=?,applicationtype=?, workflowcode=?  WHERE id=?;
          basePath: Licenses.*
          jsonMaps:
-          - jsonPath: $.Licenses.*.tradeName
+          - jsonPath: $.Licenses.*.licenseUnitName
 
           - jsonPath: $.Licenses.*.financialYear
 
