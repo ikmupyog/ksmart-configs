@@ -35,28 +35,36 @@
             {
               "style": "ws-head",
               "table": {
-                "widths": ["50%","50%"],
+                "widths": ["*"],
                 "body": [
                   [
-                    [
-                      {
-                        "stack": [
-                          {
-                            "text": "License No",
-                            "style": "pdf-header-sub-text",
-                            "widths":"40%"
-                          }
-                        ]
-                      },
-                      {
-                        "stack": [
-                          {
-                            "text": "{{licenseNumber}}",
-                            "style": "pdf-header-sub-text"
-                          }
+                    {
+                      "style": "ws-head",
+                      "table": {
+                      "widths": ["50%","50%"],
+                      "body": [
+                          [
+                            {
+                              "stack": [
+                                {
+                                  "text": "License No",
+                                  "style": "pdf-header-sub-text",
+                                  "widths":"40%"
+                                }
+                              ]
+                            },
+                            {
+                              "stack": [
+                                {
+                                  "text": "{{licenseNumber}}",
+                                  "style": "pdf-header-sub-text"
+                                }
+                              ]
+                            }
+                          ]
                         ]
                       }
-                    ]
+                    }
                   ],
                   [
                     {
