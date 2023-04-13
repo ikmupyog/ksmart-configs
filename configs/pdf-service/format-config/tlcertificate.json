@@ -416,7 +416,7 @@
             {
               "style": "ws-head",
               "table": {
-                "widths": ["50%","50%"],
+                "widths": ["40%","30%","30%"],
                 "body": [
                   [
                     {
@@ -436,6 +436,34 @@
                       "stack": [
                         {
                           "text": "Name     {{approvedBy}}",
+                          "style": "pdf-header-sub-text"
+                        },
+                        {
+                          "text": "Designation",
+                          "style": "pdf-header-sub-text"
+                        },
+                        {
+                          "text": "Office",
+                          "style": "pdf-header-sub-text"
+                        },
+                        {
+                          "text": "Digital Signature ",
+                          "style": "pdf-header-sub-text"
+                        },
+                        {
+                          "text": "Time Stamp, Date",
+                          "style": "pdf-header-sub-text"
+                        },
+                        {
+                          "text": "Office Seal",
+                          "style": "pdf-header-sub-text"
+                        } 
+                      ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "{{approvedBy}}",
                           "style": "pdf-header-sub-text"
                         },
                         {
