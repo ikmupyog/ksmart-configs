@@ -59,8 +59,8 @@
                 "stack": [
                   {
                     "image": "{{logokerala}}",
-                    "width": 40,
-                    "height": 40
+                    "width": 50,
+                    "height": 50
                   }
                 ]
               },
@@ -115,8 +115,8 @@
                 "stack": [
                   {
                     "image": "{{logotenant}}",
-                    "width": 40,
-                    "height": 40
+                    "width": 50,
+                    "height": 50
                   }
                 ]
               }
@@ -195,11 +195,11 @@
               {
                 "stack": [
                   {
-                    "text": "{{issueUnderSection121969}}",
+                    "text": "{{issueUnderSection121969ML}}",
                     "style": "rule-header"
                   },
                   {
-                    "text": "{{issueUnderSection121969ML}}",
+                    "text": "{{issueUnderSection121969}}",
                     "style": "rule-header"
                   }
                 ]
@@ -220,11 +220,11 @@
               {
                 "stack": [
                   {
-                    "text": "{{certify}} {{tenant}} {{lbtypecode}}  of Taluk  {{talukcode}}  of District {{distcode}} of State {{statecode}}.",
+                    "text": "താഴെ പറയുന്ന വിവരങ്ങൾ {{statecodeMl}} സംസ്ഥാനത്തിലെ {{distcodeMl}} ജില്ലയിലെ {{talukcodeMl}} താലൂക്കിലെ  {{tenantMl}} {{lbtypecodeMl}} {{certifyMl}}.",
                     "style": "rule-header"
                   },
                   {
-                    "text": "താഴെ പറയുന്ന വിവരങ്ങൾ {{statecodeMl}} സംസ്ഥാനത്തിലെ {{distcodeMl}} ജില്ലയിലെ {{talukcodeMl}} താലൂക്കിലെ  {{tenantMl}} {{lbtypecodeMl}} {{certifyMl}}.",
+                    "text": "{{certify}} {{tenant}} {{lbtypecode}}  of Taluk  {{talukcode}}  of District {{distcode}} of State {{statecode}}.",
                     "style": "rule-header"
                   }
                 ]
@@ -534,54 +534,40 @@
                     "width": 45,
                     "height": 45,
                     "style": "qr-code"
-                  }
-                ]
-              }
-            ]
-          ]
-        },
-        "layout": "noBorders"
-      },
-      {
-        "style": "ws-head",
-        "table": {
-          "widths": [
-            "*"
-          ],
-          "body": [
-            [
-              {
-                "stack": [
-                  {
-                    "text": "{{ensureRegistration}}",
-                    "style": "details-body-center-bottom"
                   },
                   {
-                    "text": "{{ensureRegistrationMl}}",
-                    "style": "details-body-center-bottom"
-                  },
-                  {
-                    "text": "{{computerGenerated}}",
-                    "style": "details-body-center-bottom"
-                  },
-                  {
-                    "text": "{{validDocument}}",
-                    "style": "details-body-center-bottom"
-                  },
-                  {
-                    "text": "{{authenticity}}",
-                    "style": "details-body-center-bottom"
-                  },
-                  {
-                    "text": "{{ikm}}",
-                    "italics": true,
-                    "style": "details-body-center-bottom"
-                  },
-                  {
-                    "text": "{{printedInvalid}}",
-                    "italics": true,
-
-                    "style": "footer-red"
+                    "stack": [
+                      {
+                        "text": "{{ensureRegistration}}",
+                        "style": "details-body-center-bottom"
+                      },
+                      {
+                        "text": "{{ensureRegistrationMl}}",
+                        "style": "details-body-center-bottom"
+                      },
+                      {
+                        "text": "{{computerGenerated}}",
+                        "style": "details-body-center-bottom"
+                      },
+                      {
+                        "text": "{{validDocument}}",
+                        "style": "details-body-center-bottom"
+                      },
+                      {
+                        "text": "{{authenticity}}",
+                        "style": "details-body-center-bottom"
+                      },
+                      {
+                        "text": "{{ikm}}",
+                        "italics": true,
+                        "style": "details-body-center-bottom"
+                      },
+                      {
+                        "text": "{{printedInvalid}}",
+                        "italics": true,
+                        "style": "footer-red"
+                      }
+                    ]
                   }
                 ]
               }
