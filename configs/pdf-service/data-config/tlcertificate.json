@@ -543,6 +543,22 @@
                 }
     
               ]
+            },
+            {
+              "path": "http://collection-services:8080/collection-services/payments/TL/_search",
+              "queryParam": "tenantId=$.tenantId,consumerCodes=$.applicationNumber,businessServices=TL",
+              "apiRequest": null,
+              "responseMapping":[
+                {            
+                  "variable":"tradeLicenseFee",
+                  "value":"$.Payments[0].totalDue"
+                },
+                {            
+                  "variable":"recieptNo",
+                  "value":"$.Payments[0].paymentDetails[0].receiptNumber"
+                }
+
+              ]
             }  
           ]
         },

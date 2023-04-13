@@ -303,7 +303,7 @@
                     {
                       "stack": [
                         {
-                          "text": "Licensee Fee",
+                          "text": "{{trade_license_fee}}",
                           "style": "pdf-header-sub-text"
                         }
                       ]
@@ -345,7 +345,7 @@
                     {
                       "stack": [
                         {
-                          "text": "{{trade_license_fee}}",
+                          "text": "{{tradeLicenseFee}}",
                           "style": "pdf-header-sub-text"
                         }
                       ]
@@ -416,7 +416,7 @@
             {
               "style": "ws-head",
               "table": {
-                "widths": ["40%","30%","30%"],
+                "widths": ["60%","20%","20%"],
                 "body": [
                   [
                     {
@@ -435,7 +435,7 @@
                     {
                       "stack": [
                         {
-                          "text": "Name     {{approvedBy}}",
+                          "text": "Name",
                           "style": "pdf-header-sub-text"
                         },
                         {
