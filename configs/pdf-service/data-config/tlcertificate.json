@@ -441,12 +441,6 @@
                  }
               }, 
               {
-                "variable": "signedCertificateData",
-                "value": {
-                  "path": "$.signedCertificate"
-                }
-              },
-              {
                   "variable": "license_issue_date",
                   "value": {
                     "path": "PDF_STATIC_LABEL_CONSOLIDATED_TLCERTIFICATE_LICENSE_ISSUE_DATE"
@@ -537,7 +531,43 @@
                   "type": "image"
                 }
               ]
+            },  
+            {
+              "path": "http://egov-workflow-v2.egov:8080/egov-workflow-v2/egov-wf/process/_search",
+              "queryParam": "businessIds=$.applicationNumber,history=true,tenantId=$.tenantId",
+              "apiRequest": null,
+              "responseMapping":[
+                {            
+                  "variable":"approvedBy",
+                  "value":"$.ProcessInstances[?(@.action == 'APPROVE')].assigner.name"
+                }
+    
+              ]
+            },
+            {
+              "path": "http://collection-services:8080/collection-services/payments/TL/_search",
+              "queryParam": "tenantId=$.tenantId,consumerCodes=$.applicationNumber,businessServices=TL",
+              "apiRequest": null,
+              "responseMapping":[
+                {            
+                  "variable":"tradeLicenseFee",
+                  "value":"$.Payments[0].totalDue"
+                },
+                {            
+                  "variable":"recieptNo",
+                  "value":"$.Payments[0].paymentDetails[0].receiptNumber"
+                }
+
+              ]
             }  
+          ]
+        },
+        {
+          "qrcodeConfig": [
+            {
+              "variable": "qrCode",
+              "value": "{{signedCertificateData}}"
+            }
           ]
         }
       ]

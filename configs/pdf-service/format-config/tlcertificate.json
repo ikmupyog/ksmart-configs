@@ -32,7 +32,35 @@
               },
               "layout": "noBorders"
             },
-          {
+            {
+              "style": "ws-head",
+              "table": {
+                "widths": ["50%","50%"],
+                "body": [
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "License No",
+                          "style": "appendix-header-body",
+                          "widths":"40%"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "{{licenseNumber}}",
+                          "style": "appendix-header-body"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              },
+              "layout": "noBorders"
+            },   
+            {
             "style": "ws-head",
             "table": {
               "widths": ["*"],
@@ -49,36 +77,6 @@
                             "table": {
                               "widths": ["*"],
                               "body": [
-                                [
-                                  {
-                                    "style": "ws-head",
-                                    "table": {
-                                    "widths": ["50%","50%"],
-                                    "body": [
-                                        [
-                                          {
-                                            "stack": [
-                                              {
-                                                "text": "License No",
-                                                "style": "pdf-header-sub-text",
-                                                "widths":"40%"
-                                              }
-                                            ]
-                                          },
-                                          {
-                                            "stack": [
-                                              {
-                                                "text": "{{licenseNumber}}",
-                                                "style": "pdf-header-sub-text"
-                                              }
-                                            ]
-                                          }
-                                        ]
-                                      ]
-                                    },
-                                    "layout": "noBorders"
-                                  }
-                                ],
                                 [
                                   {
                                     "style": "ws-head",
@@ -102,7 +100,7 @@
                                                 "style": "details-body"
                                               },
                                               {
-                                                "text": "{{ownerDesignation}}, {{owneraddress}}",
+                                                "text": "{{owneraddress}}",
                                                 "style": "details-body-border"
                                               }
                                             ]
@@ -132,7 +130,7 @@
                                           {
                                             "stack": [
                                               {
-                                                "text": "{{licenseUnitId}} - {{licenseUnitName}}",
+                                                "text": "{{licenseUnitName}}",
                                                 "style": "details-body"
                                               },
                                               {
@@ -170,7 +168,8 @@
                   }
                 ]
               ]
-            }
+            },
+            "layout": "noBorders"
           },
             
             {
@@ -291,7 +290,7 @@
             {
               "style": "ws-head",
               "table": {
-                "widths": ["15%","25%","20%","20%","25%"],
+                "widths": ["15%","25%","15%","20%","25%"],
                 "body": [
                   [
                     {
@@ -321,7 +320,7 @@
                     {
                       "stack": [
                         {
-                          "text": "Licensee Fee",
+                          "text": "{{trade_license_fee}}",
                           "style": "pdf-header-sub-text"
                         }
                       ]
@@ -347,7 +346,7 @@
                     {
                       "stack": [
                         {
-                          "text": "{{licenseValidityFrom}}-{{licenseValidityTo}}",
+                          "text": "{{licenseValidityFrom}} - {{licenseValidityTo}}",
                           "style": "pdf-header-sub-text"
                         }
                       ]
@@ -363,7 +362,7 @@
                     {
                       "stack": [
                         {
-                          "text": "{{trade_license_fee}}",
+                          "text": "{{tradeLicenseFee}}",
                           "style": "pdf-header-sub-text"
                         }
                       ]
@@ -384,7 +383,21 @@
             {
               "style": "ws-head",
               "table": {
-                "widths": ["50%","50%"],
+                "widths": ["*"],
+                "body": [
+                  [
+                    {
+
+                    }
+                  ]
+                ]
+              },
+              "layout": "noBorders"
+            },
+            {
+              "style": "ws-head",
+              "table": {
+                "widths": ["40%","60%"],
                 "body": [
                   [
                     {
@@ -406,16 +419,68 @@
             {
               "style": "ws-head",
               "table": {
-                "widths": ["50%","50%"],
+                "widths": ["*"],
                 "body": [
                   [
                     {
 
+                    }
+                  ]
+                ]
+              },
+              "layout": "noBorders"
+            },
+            {
+              "style": "ws-head",
+              "table": {
+                "widths": ["60%","20%","20%"],
+                "body": [
+                  [
+                    {
+                      "stack": [
+                        {
+                          "image": "{{qrCode}}",
+                          "absolutePosition" : {
+                            "x" : 48,
+                            "y" : 440
+                          },
+                          "width": 60,
+                          "height": 60
+                        }
+                      ]
                     },
                     {
                       "stack": [
                         {
                           "text": "Name",
+                          "style": "pdf-header-sub-text"
+                        },
+                        {
+                          "text": "Designation",
+                          "style": "pdf-header-sub-text"
+                        },
+                        {
+                          "text": "Office",
+                          "style": "pdf-header-sub-text"
+                        },
+                        {
+                          "text": "Digital Signature ",
+                          "style": "pdf-header-sub-text"
+                        },
+                        {
+                          "text": "Time Stamp, Date",
+                          "style": "pdf-header-sub-text"
+                        },
+                        {
+                          "text": "Office Seal",
+                          "style": "pdf-header-sub-text"
+                        } 
+                      ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "{{approvedBy}}",
                           "style": "pdf-header-sub-text"
                         },
                         {
