@@ -117,7 +117,7 @@
                                                 "style": "details-body"
                                               },
                                               {
-                                                "text": "{{ownerDesignation}}, {{owneraddress}}",
+                                                "text": "{{owneraddress}}",
                                                 "style": "details-body-border"
                                               }
                                             ]
@@ -147,7 +147,7 @@
                                           {
                                             "stack": [
                                               {
-                                                "text": "{{licenseUnitId}} - {{licenseUnitName}}",
+                                                "text": "{{licenseUnitName}}",
                                                 "style": "details-body"
                                               },
                                               {
@@ -459,7 +459,7 @@
                     {
                       "stack": [
                         {
-                          "text": "Name {{approvedBy}}",
+                          "text": "Name     {{approvedBy}}",
                           "style": "pdf-header-sub-text"
                         },
                         {
