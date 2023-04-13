@@ -24,13 +24,13 @@
                             },
                             {
                                 "variable": "groomPhoto",
-                                "url": "https://ulb-logos.s3.ap-south-1.amazonaws.com/cochin/cochin.jpg",
+                                "url": "https://ikm-rainmaker.s3.ap-south-1.amazonaws.com/crmarriage/kl.attingal/2023/fcafeb31-0a1f-4dad-9409-6c718732ef3a/groom.jpg",
                                 "type": "image"
                             },
                             
                             {
                                 "variable": "bridePhoto",
-                                "url":"https://ulb-logos.s3.ap-south-1.amazonaws.com/cochin/cochin.jpg",
+                                "url":"https://ikm-rainmaker.s3.ap-south-1.amazonaws.com/crmarriage/kl.attingal/2023/fcafeb31-0a1f-4dad-9409-6c718732ef3a/bride.jpg",
                                 "type": "image"
                             },
                             
