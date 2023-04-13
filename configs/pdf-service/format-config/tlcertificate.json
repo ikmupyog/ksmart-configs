@@ -27,6 +27,21 @@
                         }
                       ]
                     }
+                  ],
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "License No",
+                          "style": "appendix-header-body",
+                          "widths":"40%"
+                        },
+                        {
+                          "text": "{{licenseNumber}}",
+                          "style": "appendix-header-body"
+                        }
+                      ]
+                    }
                   ]
                 ]
               },
@@ -385,7 +400,20 @@
             {
               "style": "ws-head",
               "table": {
-                "widths": ["30%","70%"],
+                "widths": ["*"],
+                "body": [
+                  [
+                    {
+
+                    }
+                  ]
+                ]
+              }
+            },
+            {
+              "style": "ws-head",
+              "table": {
+                "widths": ["40%","60%"],
                 "body": [
                   [
                     {
@@ -403,6 +431,19 @@
                 ]
               },
               "layout": "noBorders"
+            },
+            {
+              "style": "ws-head",
+              "table": {
+                "widths": ["*"],
+                "body": [
+                  [
+                    {
+
+                    }
+                  ]
+                ]
+              }
             },
             {
               "style": "ws-head",
@@ -443,7 +484,8 @@
                     }
                   ]
                 ]
-              }
+              },
+              "layout": "noBorders"
             }
           ],
           "styles": {
