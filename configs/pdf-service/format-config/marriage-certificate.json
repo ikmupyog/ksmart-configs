@@ -7,9 +7,16 @@
       "watermark": {
           "color": "gery",
           "opacity": 0.1,
-          "text" : "K-SMART",
-          "image": "{{logokerala}}"
+          
+          "link": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
+          "image": "src/images/kerala_logo.jpeg"
       },
+      "background":{"color": "gery",
+      "opacity": 0.1,"image":"src/images/kerala_logo.jpeg",
+      "width": 500,
+       "height": 500,
+      "absolutePosition": {"x": 50, "y": 200}
+    },
       "content": [
           {
               "style": "ws-head",
@@ -80,6 +87,7 @@
                               {
                                 "text": "CERTIFICATE OF MARRIAGE",
                                 "style": "appendix-header-body",
+                                "decoration": "underline",
                                 "margin": [
                                   0,
                                   0,
@@ -198,7 +206,7 @@
                                     {
                                         "text": "Husband Details",
                                         "style": "column-headertext-italics-normal",
-                                        "text-decoration": "underline",
+                                        "decoration": "underline",
                                         "margin": [
                                             0,
                                             0,
@@ -243,7 +251,7 @@
                                     "style": "details-body"
                                 },
                                 {
-                                    "text": "{{marriagePlacenameEn}},{{marriageStreetEn}},{{marriageTalukID}},{{marriageVillageName}},{{marriageLandmark}},{{marriageLocalityEn}}",
+                                    "text": "{{marriagePlaceFullAddress}}",
                                     "style": "details-body"
                                 }
                                 ],
@@ -265,7 +273,7 @@
                                     {
                                         "text": "Wife Details",
                                         "style": "column-headertext-italics-normal",
-                                        "text-decoration": "underline"
+                                        "decoration": "underline"
                                     },{
                                     "image": "{{bridePhoto}}",
                                     "width": 70,
@@ -1214,14 +1222,14 @@
             "color": "#000000",
             "bold": true,
             "italics": true,
-            "fontSize": 12,
+            "fontSize": 11,
             "fontWeight": "300",
             "underline":true,
-            "text-decoration": "underline"
+            "decoration": "underline"
             
           },
           "header-center-detail-text":{
-            "fontSize": 12,
+            "fontSize": 11,
             "fontWeight": "400",
             "italics": true,
             "bold":true

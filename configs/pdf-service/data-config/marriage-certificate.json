@@ -23,14 +23,26 @@
                                 "type": "image"
                             },
                             {
+                                "variable": "groomPhoto1",
+                                "url": "https://ulb-logos.s3.ap-south-1.amazonaws.com/cochin/cochin.jpg",
+                                "type": "image"
+                            },
+                            
+                            {
+                                "variable": "bridePhoto1",
+                                "url":"https://ulb-logos.s3.ap-south-1.amazonaws.com/cochin/cochin.jpg",
+                                "type": "image"
+                            },
+                            {
                                 "variable": "groomPhoto",
-                                "url": "https://ikm-rainmaker.s3.ap-south-1.amazonaws.com/crmarriage/kl.attingal/2023/fcafeb31-0a1f-4dad-9409-6c718732ef3a/groom.jpg",
+                                
+                                "value": {"path":"$.marriageRegistryDetails.WitnessDetails.groomUrl"},
                                 "type": "image"
                             },
                             
                             {
                                 "variable": "bridePhoto",
-                                "url":"https://ikm-rainmaker.s3.ap-south-1.amazonaws.com/crmarriage/kl.attingal/2023/fcafeb31-0a1f-4dad-9409-6c718732ef3a/bride.jpg",
+                                "value": {"path":"$.marriageRegistryDetails.WitnessDetails.brideUrl"},
                                 "type": "image"
                             },
                             
