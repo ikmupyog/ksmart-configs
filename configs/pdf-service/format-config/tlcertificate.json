@@ -307,7 +307,7 @@
             {
               "style": "ws-head",
               "table": {
-                "widths": ["15%","25%","20%","20%","25%"],
+                "widths": ["15%","25%","15%","20%","25%"],
                 "body": [
                   [
                     {
@@ -408,7 +408,8 @@
                     }
                   ]
                 ]
-              }
+              },
+              "layout": "noBorders"
             },
             {
               "style": "ws-head",
@@ -443,7 +444,8 @@
                     }
                   ]
                 ]
-              }
+              },
+              "layout": "noBorders"
             },
             {
               "style": "ws-head",
@@ -457,7 +459,7 @@
                     {
                       "stack": [
                         {
-                          "text": "Name",
+                          "text": "Name {{approvedBy}}",
                           "style": "pdf-header-sub-text"
                         },
                         {
