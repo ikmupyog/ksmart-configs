@@ -441,12 +441,6 @@
                  }
               }, 
               {
-                "variable": "signedCertificateData",
-                "value": {
-                  "path": "$.signedCertificate"
-                }
-              },
-              {
                   "variable": "license_issue_date",
                   "value": {
                     "path": "PDF_STATIC_LABEL_CONSOLIDATED_TLCERTIFICATE_LICENSE_ISSUE_DATE"
@@ -550,6 +544,14 @@
     
               ]
             }  
+          ]
+        },
+        {
+          "qrcodeConfig": [
+            {
+              "variable": "qrCode",
+              "value": "{{signedCertificateData}}"
+            }
           ]
         }
       ]

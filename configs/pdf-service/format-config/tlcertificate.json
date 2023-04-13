@@ -420,7 +420,17 @@
                 "body": [
                   [
                     {
-
+                      "stack": [
+                        {
+                          "image": "{{qrCode}}",
+                          "absolutePosition" : {
+                            "x" : 100,
+                            "y" : 480
+                          },
+                          "width": 50,
+                          "height": 50
+                        }
+                      ]
                     },
                     {
                       "stack": [
