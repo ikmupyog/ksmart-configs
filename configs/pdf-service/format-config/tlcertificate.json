@@ -170,7 +170,8 @@
                   }
                 ]
               ]
-            }
+            },
+            "layout": "noBorders"
           },
             
             {
@@ -347,7 +348,7 @@
                     {
                       "stack": [
                         {
-                          "text": "{{licenseValidityFrom}}-{{licenseValidityTo}}",
+                          "text": "{{licenseValidityFrom}} - {{licenseValidityTo}}",
                           "style": "pdf-header-sub-text"
                         }
                       ]
@@ -384,7 +385,7 @@
             {
               "style": "ws-head",
               "table": {
-                "widths": ["50%","50%"],
+                "widths": ["30%","70%"],
                 "body": [
                   [
                     {
@@ -442,8 +443,7 @@
                     }
                   ]
                 ]
-              },
-              "layout": "noBorders"
+              }
             }
           ],
           "styles": {
