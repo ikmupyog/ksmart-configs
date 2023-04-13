@@ -34,8 +34,8 @@
                 "stack": [
                   {
                     "image": "{{logoindia}}",
-                    "width": 35,
-                    "height": 35
+                    "width": 30,
+                    "height": 30
                   }
                 ]
               }
@@ -50,6 +50,7 @@
           "widths": [
             "20%",
             "60%",
+            "20%",
             "20%"
           ],
           "body": [
@@ -67,10 +68,10 @@
               {
                 "stack": [
               {
-                "text": "Government of India",
+                "text": "GOVERNMENT OF INDIA",
                 "style": "pdf-header",
-                "width": 35,
-                "height": 35
+                "width": 30,
+                "height": 30
               },
                   {
                     "text": "{{form5}}",
@@ -530,8 +531,8 @@
                 "columns": [
                   {
                     "image": "{{qr_code_image}}",
-                    "width": 50,
-                    "height": 50,
+                    "width": 45,
+                    "height": 45,
                     "style": "qr-code"
                   }
                 ]
@@ -593,7 +594,7 @@
     "styles": {
       "pdf-header": {
         "fillColor": "#000000",
-        "fontSize": 12,
+        "fontSize": 10,
         "bold": true,
         "letterSpacing": 0.74,
         "alignment": "center",
@@ -606,7 +607,7 @@
       },
       "appendix-header-body-ml": {
         "color": "#000000",
-        "fontSize": 12,
+        "fontSize": 11,
         "alignment": "center"
       },
       "main-body-style": {
@@ -774,7 +775,7 @@
       "rule-body_multiLang": {
         "color": "#000000",
         "bold": false,
-        "fontSize": 10,
+        "fontSize": 9,
         "fontWeight": 400,
         "alignment": "center"
       },
@@ -788,7 +789,7 @@
       "details-body": {
         "color": "#000000",
         "bold": false,
-        "fontSize": 10,
+        "fontSize": 9,
         "alignment": "left"
       },
       "details-body-bold": {
@@ -806,7 +807,7 @@
       "details-body-center-bottom": {
         "color": "#000000",
         "italics": true,
-        "fontSize": 8,
+        "fontSize": 7,
         "alignment": "center",
         "margin": [
           0,
@@ -818,7 +819,7 @@
       "appendix-header-body": {
         "color": "#000000",
         "bold": true,
-        "fontSize": 11,
+        "fontSize": 10,
         "fontWeight": 400,
         "alignment": "center"
       },
