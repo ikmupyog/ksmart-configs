@@ -11,8 +11,10 @@
       "link": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
       "image": "src/images/kerala_logo.jpeg"
     },
-    "background":{"color": "gery",
-      "opacity": 0.1,"image":"src/images/kerala_logo.jpeg",
+    "background":{
+      "color": "gery",
+      "opacity": 0.1,
+      "image": "src/images/kerala_logo.jpeg",
       "width": 500,
       "height": 500,
       "absolutePosition": {"x": 50, "y": 200}
@@ -40,8 +42,8 @@
                 "stack": [
                   {
                     "image": "{{logoindia}}",
-                    "width": 30,
-                    "height": 30
+                    "width": 20,
+                    "height": 28
                   }
                 ]
               }
@@ -73,12 +75,12 @@
 
               {
                 "stack": [
-              {
-                "text": "GOVERNMENT OF INDIA",
-                "style": "pdf-header",
-                "width": 30,
-                "height": 30
-              },
+                  {
+                    "text": "GOVERNMENT OF INDIA",
+                    "style": "pdf-header",
+                    "width": 30,
+                    "height": 30
+                  },
                   {
                     "text": "{{form5}}",
                     "style": "appendix-header-italic"
@@ -119,8 +121,9 @@
               },
               {
                 "stack": [
-                  {
-                    "image": "{{logotenant}}",
+                  {"color": "gery",
+                    "opacity": 0.1,
+                    "image": "{{logobirth}}",
                     "width": 50,
                     "height": 50
                   }
