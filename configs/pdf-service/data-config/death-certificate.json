@@ -12,25 +12,30 @@
           "mappings": [
             {
               "direct": [
+                {
+                  "variable": "logoindia",
+                  "url":"https://ulb-logos.s3.ap-south-1.amazonaws.com/Lion_emblem.png",
+                  "type":"image"
+                },
 		
-		{
+		          {
                 "variable": "logokerala",
                 "url":"https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
                 "type":"image"
                },
-		{
+		          {
                 "variable": "logodeath",
                 "url": "https://ulb-logos.s3.ap-south-1.amazonaws.com/birth_death_logo.jpg",
                 "type":"image"
                 },
-		{
+		          {
                   "variable": "localBodyName", 
                   "value": {
                     "path": "$.InformationDeath.localBodyName"
                   },
                   "type":"setEmpty"
                 },
-		{
+		          {
                   "variable": "localBodyNameMl", 
                   "value": {
                     "path": "$.InformationDeath.localBodyNameMl"
@@ -110,6 +115,13 @@
                       "path": "$.InformationDeath.DateOfDeath"
                     },
                     "type": "date"
+                  },
+                  {
+                    "variable": "dodInWords", 
+                    "value": {
+                      "path": "$.InformationDeath.dateOfDeathInWords"
+                    },
+                    "type": "setEmpty"
                   },
                 {
                     "variable": "placeOfDeath", 
@@ -191,14 +203,14 @@
                 {
                     "variable": "issueDate", 
                     "value": {
-                      "path": "$.InformationDeath.certificateDate"
+                      "path": "$.InformationDeath.dateofissue"
                     },
                     "type": "date"
                 },
                 {
                     "variable": "updatedOn", 
                     "value": {
-                      "path": "$.InformationDeath.dateofissue"
+                      "path": "$.AuditDetails.lastModifiedTime"
                     },
                     "type": "date"
                 },
@@ -449,14 +461,7 @@
                   },
                   "type":"setEmpty"
                 },
-                {
-                  "variable": "remarks", 
-                  "value": {
-                    "path": "$.remarks"
-                  },
-                  "type":"setEmpty"
-                },
-                  
+                               
                   
                  
                   {

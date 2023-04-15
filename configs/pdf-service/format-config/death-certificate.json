@@ -2,16 +2,25 @@
     "key": "death-certificate",
     "config": {
       "defaultStyle": {
-        "font": "Thumba"
+        "font": "Meera"
       },
-     "watermark": {
+    
+    "watermark": {
       "text": "KSMART DEMO",
       "color": "gery",
       "opacity": 0.1,
       "bold": true,
-      "italics": false
-    },
+      "italics": false,
       
+      "link": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
+      "image": "src/images/kerala_logo.jpeg"
+  },
+  "background":{"color": "gery",
+  "opacity": 0.1,"image":"src/images/kerala_logo.jpeg",
+  "width": 500,
+   "height": 500,
+  "absolutePosition": {"x": 50, "y": 200}
+},
 	    
       "content": [
         
@@ -19,17 +28,30 @@
 	      
 		"style": "ws-head",
 		"table": {
-		  "widths": ["*"],
+      "widths": [
+        "48%",
+        "20%",
+        "20%"
+      ],
 		  "body": [
 		    [
 		      {
-			"stack": [
-			  {
-			    "text": "KeyNo : {{certificateNo}}",
-			    "style": "appendix-header-serialNo"
-			  }
-			]
-		      }
+            "stack": [
+              {
+                "text": "KeyNo : {{certificateNo}}",
+                "style": "appendix-header-serialNo"
+              }
+            ]
+		      },
+          {
+            "stack": [
+              {
+                "image": "{{logoindia}}",
+                "width": 20,
+                "height": 28
+              }
+            ]
+          }
 		    ]
 		  ]
 		},
@@ -43,30 +65,29 @@
             "body": [
               [
                 
-		{
-                "stack": [
-                  {
-                    "image": "{{logokerala}}",
-                    "width": 50,
-                    "height": 50
-                  }
-                ]
-               },
+                {
+                  "stack": [
+                    {
+                      "image": "{{logokerala}}",
+                      "width": 50,
+                      "height": 50
+                    }
+                  ]
+                },
 		
                 {
                   "stack": [
 		  
-		   {
-			"text": "{{form6}}",
-			 "style": "appendix-header-italic"
-		   },
-		  {
-			"text": "{{rule8}}",
-			"style": "main-body-style"
-		  },
-			  
+                    {
+                    "text": "{{form6}}",
+                    "style": "appendix-header-italic"
+                    },
+                    {
+                    "text": "{{rule8}}",
+                    "style": "main-body-style"
+                    },                            
 		   
-		    {
+		               {
                       "text": "{{governmentMl}}",
                       "style": "appendix-header-body"
                       
@@ -101,6 +122,8 @@
 		  {
                 "stack": [
                   {
+                    "color": "gery",
+                    "opacity": 0.3,
                     "image": "{{logodeath}}",
                     "width": 50,
                     "height": 50
@@ -345,7 +368,7 @@
                       "width": "1%"
                     },
                     {
-                      "text": "{{dod}}",
+                      "text": "{{dod}} ({{dodInWords}})",
                       "style": "details-body"
                     }
                    
@@ -528,17 +551,7 @@
                   ]
                 }
               ],
-              [
-                {
-                  "columns": [
-                    {
-                      "text": "അഭിപ്രായക്കുറിപ്പ് /Remarks (if any): {{remarks}}",
-                      "width": "35%",
-                      "style": "details-body"
-                    }
-                  ]
-                }
-              ],
+              
               [
                 {
                   "columns": [
@@ -550,6 +563,11 @@
                     {
                       "text": " ",
                       "width": "1%"
+                    },
+                    {
+                      "text": "Last Updated on : {{updatedOn}}",
+                      "width": "35%",
+                      "style": "details-body"
                     }
                   ]
                 }
@@ -583,66 +601,55 @@
           "table": {
             "widths": ["*"],
             "body": [
-              [  
+              [
+                {
+                  "columns": [  
                 {
                   "image": "{{qr_code_image}}",
                   "width": 50,
                   "height": 50,
                   "style": "qr-code"
+                },
+                {
+                  "stack": [
+                    {
+                      "text": "{{ensureRegistration}}",
+                      "style": "details-body-center"
+                    },
+                    {
+                      "text": "{{ensureRegistrationMl}}",
+                      "style": "details-body-center"
+                    },
+                    {
+                      "text": "{{computerGenerated}}",
+                      "style": "details-body-center"
+                    },
+                    {
+                      "text": "{{validDocument}}",
+                      "style": "details-body-center"
+                    },
+                    {
+                      "text": "{{authenticity}}",
+                      "style": "details-body-center"
+                    },
+                    {
+                      "text": "{{ikm}}",
+                      "style": "details-body-center"
+                    },
+                    {
+                      "text": "{{printedInvalid}}",
+                      "style": "footer-red"
+                    }
+                  ]
                 }
               ]
+            }
+              ]              
             ]
           },
           "layout": "noBorders"
-        },
-     
-	
-	{
-        "style": "ws-head",
-        "table": {
-          "widths": [
-            "*"
-          ],
-          "body": [
-            [
-              {
-                "stack": [
-                  {
-                    "text": "{{ensureRegistration}}",
-                    "style": "details-body-center"
-                  },
-                  {
-                    "text": "{{ensureRegistrationMl}}",
-                    "style": "details-body-center"
-                  },
-                  {
-                    "text": "{{computerGenerated}}",
-                    "style": "details-body-center"
-                  },
-                  {
-                    "text": "{{validDocument}}",
-                    "style": "details-body-center"
-                  },
-                  {
-                    "text": "{{authenticity}}",
-                    "style": "details-body-center"
-                  },
-                  {
-                    "text": "{{ikm}}",
-                    "style": "details-body-center"
-                  },
-                  {
-                    "text": "{{printedInvalid}}",
-                    "style": "footer-red"
-                  }
-                ]
-              }
-            ]
-          ]
-        },
-        "layout": "noBorders"
-      }
-   
+      }   
+	  
       ],
       "styles": {
         "pdf-header": {
