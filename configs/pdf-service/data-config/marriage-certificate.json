@@ -155,7 +155,7 @@
                             {
                                 "variable": "ackNo",
                                 "value": {
-                                    "path": "$.marriageRegistryDetails.certificateNo"
+                                    "path": "$.marriageRegistryDetails.applicationNumber"
                                 },
                                 "type": "setEmpty"
                             },
@@ -168,6 +168,15 @@
                                 "type": "date"
                                 
                             },
+                            {
+                                "variable": "dateOfIssueInWords",
+                                "value": {
+                                    "path": "$.dateOfIssue"
+                                },
+                                "type": "date"
+                                
+                            },
+                            
                             {
                                 "variable": "marriageDOM",
                                 "value": {
@@ -221,6 +230,14 @@
                                 "variable": "marriagePlaceFullAddress",
                                 "value": {
                                     "path": "$.marriagePlaceFullAddr"
+                                },
+                                "type": "setEmpty"
+                            },
+                            
+                            {
+                                "variable": "groomNRIAddress",
+                                "value": {
+                                    "path": "$.groomNRIAddress"
                                 },
                                 "type": "setEmpty"
                             },
