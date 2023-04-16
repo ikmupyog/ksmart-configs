@@ -548,10 +548,6 @@
                 }
               },
               {
-                "variable": "ensureRegistrationNew",
-                "value":" '\"' {{ ensureRegistrationNew }}'\"' "
-              },
-              {
                 "variable": "ensureRegistrationMl",
                 "value": {
                   "path": "PDF_BIRTH_ENSURE_REGISTRATION_OF_EVERY_BIRTH_AND_DEATH_ML"
