@@ -355,9 +355,8 @@
                         "style":"table-column-text-value",
                         "width": "40%"
                       }
-                    ],"margin":[
-                        0,0,10,0
-                    ]}],[{
+                    ],"style":"margin-right5"
+                    }],[{
                     "columns": [
                         {
                             "text": "Nationality",
@@ -377,9 +376,7 @@
                             
                             "width": "40%"
                           }
-                      ],"margin":[
-                        0,0,10,0
-                    ]}],[{
+                      ],"style":"margin-right5"}],[{
                       "columns": [
                           {
                               "text": "Age and Date of Birth",
@@ -399,9 +396,7 @@
                               
                               "width": "40%"
                             }
-                        ],"margin":[
-                            0,0,10,0
-                        ]}],[{
+                        ],"style":"margin-right5"}],[{
                         "columns": [
                             {
                                 "text": "Permanent Address",
@@ -421,9 +416,7 @@
                                 
                                 "width": "40%"
                               }
-                          ],"margin":[
-                            0,3,10,0
-                        ]}],[{
+                          ],"style":"margin-right5"}],[{
                           "columns": [
                               {
                                   "text": "Father Name",
@@ -443,9 +436,7 @@
                                   
                                   "width": "40%"
                                 }
-                            ],"margin":[
-                                0,0,10,0
-                            ]}],[{
+                            ],"style":"margin-right5"}],[{
                             "columns": [
                                 {
                                     "text": "Mother Name",
@@ -464,9 +455,7 @@
                                     "style":"table-column-text-value",
                                     "width": "40%"
                                   }
-                              ],"margin":[
-                                0,0,10,0
-                            ]}],[{
+                              ],"style":"margin-right5"}],[{
                               "columns": [
                                   {
                                       "text": "Guardian",
@@ -485,9 +474,7 @@
                                       "style":"table-column-text-value",
                                       "width": "40%"
                                     }
-                                ],"margin":[
-                                    0,0,10,0
-                                ]
+                                ],"style":"margin-right5"
                   }
                 ],[{
                     "columns": [
@@ -603,13 +590,13 @@
                             "style" : "table-text-value",
                             "bold" :true,
                             "alignment":"left",
-                            "width": "29%"
+                            "width": "39%"
                           },
                           {
                             "text": "Date of Registration",
                             "style" : "table-text-value",
                             "alignment":"right",
-                            "width": "29%"
+                            "width": "19%"
                           },{
                             "text": ":",
                             "alignment":"right",
@@ -625,7 +612,7 @@
                           }
                       ],
                       "margin":[
-                        0,20,20,0
+                        0,20,0,0
                     ]
         }
       ],[{
@@ -732,7 +719,7 @@
           },
 
           {
-            "text": "LastUpdatedon25/09/2020(10:50)",
+            "text": "Last Updated on {{lastUpdatedDateTime}}",
             "style" : "table-text-value",
             "alignment":"left",
             "width": "39%"
@@ -1296,7 +1283,15 @@
             "margin": [
                 2,
                 0,
-                2,
+                8,
+                0
+            ]
+          },
+          "margin-right5":{
+            "margin": [
+                0,
+                0,
+                0,
                 0
             ]
           },
