@@ -5,16 +5,16 @@
       "font": "Meera"
     },
     "watermark": {
-      "color": "gery",
+      "color": "grey",
       "opacity": 0.1,
 
-      "link": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
-      "image": "src/images/kerala_logo.jpeg"
+      "link": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala-emblem.png",
+      "image": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala-emblem.png"
     },
     "background":{
-      "color": "gery",
+      "color": "grey",
       "opacity": 0.1,
-      "image": "src/images/kerala_logo.jpeg",
+      "image": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala-emblem.png",
       "width": 500,
       "height": 500,
       "absolutePosition": {"x": 50, "y": 200}
@@ -122,7 +122,7 @@
               {
                 "stack": [
                   {"color": "gery",
-                    "opacity": 0.1,
+                    "opacity": 0.3,
                     "image": "{{logobirth}}",
                     "width": 50,
                     "height": 50
@@ -801,8 +801,9 @@
       },
       "details-body-center-bottom": {
         "color": "#000000",
+        "font": "Times",
         "italics": true,
-        "fontSize": 7,
+        "fontSize": 6,
         "alignment": "center",
         "margin": [
           0,
