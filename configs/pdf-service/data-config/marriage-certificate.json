@@ -11,6 +11,21 @@
                 "topic": "common-pdf-generation-3",
                 "mappings": [
                     {
+                        "externalAPI": [
+                            {
+                              "path": "https://ksmart-dev.lsgkerala.gov.in/egov-mdms-service/v1/_get",
+                              "queryParam": "moduleName=tenant&masterName=tenants&tenantId=kl&filter=%5B?(@.code=='{$.tenantid}')%5D",
+                              "apiRequest": null,
+                              "responseMapping": [
+                               
+                                {
+                                  "variable": "logotenant",
+                                  "value": "$.MdmsRes.tenant.tenants[0].logoId",
+                                  "type":"image"
+                                }
+                              ]
+                            }
+                          ],
                         "direct": [
                             {
                                 "variable": "logokerala",
@@ -23,14 +38,26 @@
                                 "type": "image"
                             },
                             {
+                                "variable": "groomPhoto1",
+                                "url": "https://ulb-logos.s3.ap-south-1.amazonaws.com/cochin/cochin.jpg",
+                                "type": "image"
+                            },
+                            
+                            {
+                                "variable": "bridePhoto1",
+                                "url":"https://ulb-logos.s3.ap-south-1.amazonaws.com/cochin/cochin.jpg",
+                                "type": "image"
+                            },
+                            {
                                 "variable": "groomPhoto",
-                                "url": "https://ikm-rainmaker.s3.ap-south-1.amazonaws.com/crmarriage/kl.attingal/2023/fcafeb31-0a1f-4dad-9409-6c718732ef3a/groom.jpg",
+                                
+                                "value": {"path":"$.marriageRegistryDetails.WitnessDetails.groomUrl"},
                                 "type": "image"
                             },
                             
                             {
                                 "variable": "bridePhoto",
-                                "url":"https://ikm-rainmaker.s3.ap-south-1.amazonaws.com/crmarriage/kl.attingal/2023/fcafeb31-0a1f-4dad-9409-6c718732ef3a/bride.jpg",
+                                "value": {"path":"$.marriageRegistryDetails.WitnessDetails.brideUrl"},
                                 "type": "image"
                             },
                             
@@ -143,7 +170,7 @@
                             {
                                 "variable": "ackNo",
                                 "value": {
-                                    "path": "$.marriageRegistryDetails.certificateNo"
+                                    "path": "$.marriageRegistryDetails.applicationNumber"
                                 },
                                 "type": "setEmpty"
                             },
@@ -156,6 +183,15 @@
                                 "type": "date"
                                 
                             },
+                            {
+                                "variable": "dateOfIssueInWords",
+                                "value": {
+                                    "path": "$.dateOfIssue"
+                                },
+                                "type": "date"
+                                
+                            },
+                            
                             {
                                 "variable": "marriageDOM",
                                 "value": {
@@ -209,6 +245,14 @@
                                 "variable": "marriagePlaceFullAddress",
                                 "value": {
                                     "path": "$.marriagePlaceFullAddr"
+                                },
+                                "type": "setEmpty"
+                            },
+                            
+                            {
+                                "variable": "groomNRIAddress",
+                                "value": {
+                                    "path": "$.groomNRIAddress"
                                 },
                                 "type": "setEmpty"
                             },
@@ -403,6 +447,15 @@
                                     "path": "$.groomFullName"
                                 },
                                 "type": "setEmpty"
+                            },
+                            {
+                                "variable": "lastUpdatedDateTime",
+                                "value": {
+                                    "path": "$.dateOfIssue"
+                                },
+                                "type": "date",
+                                "format" : "DD/MM/YYYY HH:mm:ss"
+                                
                             }
                             
                             
