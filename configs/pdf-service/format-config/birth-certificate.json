@@ -44,8 +44,14 @@
                 "stack": [
                   {
                     "image": "{{logoindia}}",
-                    "width": 20,
-                    "height": 28
+                    "width": 25,
+                    "height": 33,
+                    "margin": [
+                      10,
+                      10,
+                      10,
+                      10
+                    ]
                   }
                 ]
               }
@@ -70,7 +76,14 @@
                   {
                     "image": "{{logotenant}}",
                     "width": 50,
-                    "height": 50
+                    "height": 50,
+                    "margin": [
+                      20,
+                      0,
+                      0,
+                      0
+                    ]
+
                   }
                 ]
               },
@@ -127,7 +140,13 @@
                     "opacity": 0.3,
                     "image": "{{logobirth}}",
                     "width": 50,
-                    "height": 50
+                    "height": 50,
+                    "margin": [
+                      40,
+                      0,
+                      0,
+                      0
+                    ]
                   }
                 ]
               }
@@ -670,7 +689,7 @@
       },
       "footer-red": {
         "color": "#FF0000",
-        "fontSize": 7,
+        "fontSize": 6,
         "font": "Times",
         "alignment": "center",
         "italics": true
