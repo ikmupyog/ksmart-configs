@@ -5,16 +5,18 @@
       "font": "Meera"
     },
     "watermark": {
+      "text": "KSMART DEMO",
+      "bold": true,
       "color": "gery",
       "opacity": 0.1,
 
       "link": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
-      "image": "src/images/kerala_logo.jpeg"
+      "image": "src/images/kerala-government.png"
     },
     "background":{
       "color": "gery",
       "opacity": 0.1,
-      "image": "src/images/kerala_logo.jpeg",
+      "image": "src/images/kerala-government.png",
       "width": 500,
       "height": 500,
       "absolutePosition": {"x": 50, "y": 200}
@@ -66,7 +68,7 @@
               {
                 "stack": [
                   {
-                    "image": "{{logokerala}}",
+                    "image": "{{logotenant}}",
                     "width": 50,
                     "height": 50
                   }
@@ -178,7 +180,7 @@
                   },
                   {
                     "text": "{{birthCertificate}}",
-                    "style": "title-header",
+                    "style": "title-header-Times",
                     "bold": true
                   },
 
@@ -552,7 +554,7 @@
                       },
                       {
                         "text": "{{ensureRegistrationMl}}",
-                        "style": "details-body-center-bottom"
+                        "style": "details-body-center-bottomML"
                       },
                       {
                         "text": "{{computerGenerated}}",
@@ -669,12 +671,26 @@
       "footer-red": {
         "color": "#FF0000",
         "fontSize": 7,
+        "font": "Times",
         "alignment": "center",
         "italics": true
       },
       "body-font": {
         "color": "#000000",
         "fontSize": 14,
+        "alignment": "center",
+        "margin": [
+          0,
+          -1,
+          0,
+          0
+        ]
+      },
+      "title-header-Times": {
+        "color": "#000000",
+        "bold": true,
+        "fontSize": 10,
+        "font": "Times",
         "alignment": "center",
         "margin": [
           0,
@@ -798,6 +814,18 @@
         "bold": false,
         "fontSize": 10,
         "alignment": "center"
+      },
+      "details-body-center-bottomML": {
+        "color": "#000000",
+        "italics": true,
+        "fontSize": 6,
+        "alignment": "center",
+        "margin": [
+          0,
+          0,
+          15,
+          5
+        ]
       },
       "details-body-center-bottom": {
         "color": "#000000",
