@@ -5,20 +5,28 @@
       "font": "Meera"
     },
     "watermark": {
-      "text": "KSMART DEMO",
       "color": "gery",
       "opacity": 0.1,
-      "bold": true,
-      "italics": false
+
+      "link": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
+      "image": "src/images/kerala_logo.jpeg"
+    },
+    "background":{
+      "color": "gery",
+      "opacity": 0.1,
+      "image": "src/images/kerala_logo.jpeg",
+      "width": 500,
+      "height": 500,
+      "absolutePosition": {"x": 50, "y": 200}
     },
     "content": [
       {
         "style": "ws-head",
         "table": {
           "widths": [
-            "20%",
-            "60%",
-            "20%"
+            "46%",
+            "46%",
+            "100%"
           ],
           "body": [
             [
@@ -33,9 +41,9 @@
               {
                 "stack": [
                   {
-                    "image": "{{ashoka}}",
-                    "width": 70,
-                    "height": 70
+                    "image": "{{logoindia}}",
+                    "width": 20,
+                    "height": 28
                   }
                 ]
               }
@@ -50,6 +58,7 @@
           "widths": [
             "20%",
             "60%",
+            "20%",
             "20%"
           ],
           "body": [
@@ -58,14 +67,20 @@
                 "stack": [
                   {
                     "image": "{{logokerala}}",
-                    "width": 70,
-                    "height": 70
+                    "width": 50,
+                    "height": 50
                   }
                 ]
               },
 
               {
                 "stack": [
+                  {
+                    "text": "GOVERNMENT OF INDIA",
+                    "style": "pdf-header",
+                    "width": 30,
+                    "height": 30
+                  },
                   {
                     "text": "{{form5}}",
                     "style": "appendix-header-italic"
@@ -106,10 +121,11 @@
               },
               {
                 "stack": [
-                  {
+                  {"color": "gery",
+                    "opacity": 0.3,
                     "image": "{{logobirth}}",
-                    "width": 70,
-                    "height": 70
+                    "width": 50,
+                    "height": 50
                   }
                 ]
               }
@@ -133,7 +149,7 @@
                     "style": "details-body-center"
                   },
                   {
-                    "text": "{{nameOfLb}} : {{tenant}}",
+                    "text": "{{nameOfLb}} : {{tenant}} {{  lbtypecode}}",
                     "style": "details-body-center"
                   }
 
@@ -157,11 +173,13 @@
 
                   {
                     "text": "{{birthCertificateMl}}",
-                    "style": "title-header"
+                    "style": "title-header",
+                    "bold": true
                   },
                   {
                     "text": "{{birthCertificate}}",
-                    "style": "title-header"
+                    "style": "title-header",
+                    "bold": true
                   },
 
                   {
@@ -186,11 +204,11 @@
               {
                 "stack": [
                   {
-                    "text": "{{issueUnderSection121969}}",
+                    "text": "{{issueUnderSection121969ML}}",
                     "style": "rule-header"
                   },
                   {
-                    "text": "{{issueUnderSection121969ML}}",
+                    "text": "{{issueUnderSection121969}}",
                     "style": "rule-header"
                   }
                 ]
@@ -211,11 +229,11 @@
               {
                 "stack": [
                   {
-                    "text": "{{certify}} {{tenant}} {{lbtypecode}}  of Taluk  {{talukcode}}  of District {{distcode}} of State {{statecode}}.",
+                    "text": "താഴെ പറയുന്ന വിവരങ്ങൾ {{statecodeMl}} സംസ്ഥാനത്തിലെ {{distcodeMl}} ജില്ലയിലെ {{talukcodeMl}} താലൂക്കിലെ  {{tenantMl}} {{lbtypecodeMl}} {{certifyMl}}.",
                     "style": "rule-header"
                   },
                   {
-                    "text": "താഴെ പറയുന്ന വിവരങ്ങൾ {{statecodeMl}} സംസ്ഥാനത്തിലെ {{distcodeMl}} ജില്ലയിലെ {{talukcodeMl}} താലൂക്കിലെ  {{tenantMl}} {{lbtypecodeMl}} {{certifyMl}}.",
+                    "text": "{{certify}} {{tenant}} {{lbtypecode}}  of Taluk  {{talukcode}}  of District {{distcode}} of State {{statecode}}.",
                     "style": "rule-header"
                   }
                 ]
@@ -246,7 +264,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{name}} / {{nameMl}}",
+                    "text": "{{nameMl}} / {{name}}",
                     "style": "details-body"
                   }
                 ]
@@ -265,7 +283,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{genderMl}}/ {{genderEn}}",
+                    "text": "{{genderMl}}/ {{gender}}",
                     "style": "details-body"
                   }
                 ]
@@ -286,7 +304,7 @@
                   },
                   {
                     "text": "{{dob}} /{{dobInWords}} ",
-                    "style": "details-body"
+                    "style": "details-body-bold"
                   }
                 ]
               }
@@ -305,7 +323,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{placeOfBirthMl}}/{{placeOfBirthEn}}",
+                    "text": "{{placeOfBirthMl}}/{{placeOfBirthEn}}{{hospitalMainPlace}}",
                     "style": "details-body"
                   }
                 ]
@@ -434,27 +452,7 @@
               {
                 "columns": [
                   {
-                    "text": "{{registrationNoLabel}}: {{registrationNo}}",
-                    "width": "49%",
-                    "style": "details-body"
-                  },
-                  {
-                    "text": " ",
-                    "width": "1%"
-                  },
-                  {
-                    "text": "{{registrationDateLabel}} {{registrationDateStr}}",
-                    "style": "details-body"
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "columns": [
-
-                  {
-                    "text": "{{remarksLabel}} ",
+                    "text": "{{registrationNoLabel}} ",
                     "width": "49%",
                     "style": "details-body"
                   },
@@ -463,7 +461,26 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{remarksMl}}/{{remarks}}",
+                    "text": "{{registrationNo}}",
+                    "style": "details-body"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "columns": [
+                  {
+                    "text": "{{registrationDateLabel}} ",
+                    "width": "49%",
+                    "style": "details-body"
+                  },
+                  {
+                    "text": "  :",
+                    "width": "1%"
+                  },
+                  {
+                    "text": "{{registrationDate}}",
                     "style": "details-body"
                   }
                 ]
@@ -482,7 +499,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{updatedOn}} :{{currentDate}}",
+                    "text": "{{updatedOn}} :{{updatedDate}}",
                     "style": "details-body"
                   }
                 ]
@@ -523,54 +540,43 @@
                 "columns": [
                   {
                     "image": "{{qr_code_image}}",
-                    "width": 100,
-                    "height": 100,
+                    "width": 45,
+                    "height": 45,
                     "style": "qr-code"
-                  }
-                ]
-              }
-            ]
-          ]
-        },
-        "layout": "noBorders"
-      },
-      {
-        "style": "ws-head",
-        "table": {
-          "widths": [
-            "*"
-          ],
-          "body": [
-            [
-              {
-                "stack": [
-                  {
-                    "text": "{{ensureRegistration}}",
-                    "style": "details-body-center"
                   },
                   {
-                    "text": "{{ensureRegistrationMl}}",
-                    "style": "details-body-center"
-                  },
-                  {
-                    "text": "{{computerGenerated}}",
-                    "style": "details-body-center"
-                  },
-                  {
-                    "text": "{{validDocument}}",
-                    "style": "details-body-center"
-                  },
-                  {
-                    "text": "{{authenticity}}",
-                    "style": "details-body-center"
-                  },
-                  {
-                    "text": "{{ikm}}",
-                    "style": "details-body-center"
-                  },
-                  {
-                    "text": "{{printedInvalid}}",
-                    "style": "footer-red"
+                    "stack": [
+                      {
+                        "text": "{{ensureRegistration}}",
+                        "style": "details-body-center-bottom"
+                      },
+                      {
+                        "text": "{{ensureRegistrationMl}}",
+                        "style": "details-body-center-bottom"
+                      },
+                      {
+                        "text": "{{computerGenerated}}",
+                        "style": "details-body-center-bottom"
+                      },
+                      {
+                        "text": "{{validDocument}}",
+                        "style": "details-body-center-bottom"
+                      },
+                      {
+                        "text": "{{authenticity}}",
+                        "style": "details-body-center-bottom"
+                      },
+                      {
+                        "text": "{{ikm}}",
+                        "italics": true,
+                        "style": "details-body-center-bottom"
+                      },
+                      {
+                        "text": "{{printedInvalid}}",
+                        "italics": true,
+                        "style": "footer-red"
+                      }
+                    ]
                   }
                 ]
               }
@@ -582,17 +588,21 @@
     ],
     "styles": {
       "pdf-header": {
-        "fillColor": "#F2F2F2",
+        "fillColor": "#000000",
+        "fontSize": 10,
+        "bold": true,
+        "letterSpacing": 0.74,
+        "alignment": "center",
         "margin": [
-          -70,
-          -41,
-          -81,
-          10
+          0,
+          -10,
+          0,
+          0
         ]
       },
       "appendix-header-body-ml": {
         "color": "#000000",
-        "fontSize": 12,
+        "fontSize": 11,
         "alignment": "center"
       },
       "main-body-style": {
@@ -658,7 +668,7 @@
       },
       "footer-red": {
         "color": "#FF0000",
-        "fontSize": 10,
+        "fontSize": 7,
         "alignment": "center",
         "italics": true
       },
@@ -760,7 +770,7 @@
       "rule-body_multiLang": {
         "color": "#000000",
         "bold": false,
-        "fontSize": 10,
+        "fontSize": 9,
         "fontWeight": 400,
         "alignment": "center"
       },
@@ -774,7 +784,13 @@
       "details-body": {
         "color": "#000000",
         "bold": false,
-        "fontSize": 10,
+        "fontSize": 9,
+        "alignment": "left"
+      },
+      "details-body-bold": {
+        "color": "#000000",
+        "bold": true,
+        "fontSize": 11,
         "alignment": "left"
       },
       "details-body-center": {
@@ -785,8 +801,9 @@
       },
       "details-body-center-bottom": {
         "color": "#000000",
-        "bold": false,
-        "fontSize": 10,
+        "font": "Times",
+        "italics": true,
+        "fontSize": 6,
         "alignment": "center",
         "margin": [
           0,
@@ -798,7 +815,7 @@
       "appendix-header-body": {
         "color": "#000000",
         "bold": true,
-        "fontSize": 11,
+        "fontSize": 10,
         "fontWeight": 400,
         "alignment": "center"
       },
@@ -961,7 +978,7 @@
         ]
       },
       "pdf-watermark": {
-        "link": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg"
+        "link": "{{watermark}}"
       }
     }
   }

@@ -11,15 +11,38 @@
         "topic": "common-pdf-generation-3",
         "mappings": [
           {
+            "externalAPI": [
+              {
+                "path": "https://ksmart-dev.lsgkerala.gov.in/egov-mdms-service/v1/_get",
+                "queryParam": "moduleName=tenant&masterName=tenants&tenantId=kl&filter=%5B?(@.code=='{$.tenantid}')%5D",
+                "apiRequest": null,
+                "responseMapping": [
+                  {
+                    "variable": "tenantMl",
+                    "value": "$.MdmsRes.tenant.tenants[0].city.localName"
+                  },
+                  {
+                    "variable": "logotenant",
+                    "value": "$.MdmsRes.tenant.tenants[0].logoId",
+                    "type":"image"
+                  }
+                ]
+              }
+            ],
             "direct": [
               {
-                "variable": "ashoka",
+                "variable": "logoindia",
                 "url":"https://ulb-logos.s3.ap-south-1.amazonaws.com/Lion_emblem.png",
                 "type":"image"
               },
               {
                 "variable": "logokerala",
                 "url":"https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
+                "type":"image"
+              },
+              {
+                "variable": "watermark",
+                "url": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
                 "type":"image"
               },
               {
@@ -50,16 +73,16 @@
               {
                 "variable": "dob",
                 "value": {
-                  "path": "$.dateofbirthstr"
+                  "path": "$.dateofbirth"
                 },
-                "type": "date"
+                "type": "date",
+                "format": "DD/MM/YYYY"
               },
               {
                 "variable": "dobInWords",
                 "value": {
                   "path": "$.dateofbirthWord"
-                },
-                "type": "date"
+                }
               },
               {
                 "variable": "gender",
@@ -69,7 +92,9 @@
                 "type":"setEmpty",
                 "localisation":{
                   "required":true,
-                  "module":"rainmaker-common"
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
                 }
               },
               {
@@ -80,7 +105,8 @@
                 "type": "setEmpty",
                 "localisation":{
                   "required":true,
-                  "module":"rainmaker-common"
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
                 }
               },
 
@@ -94,14 +120,14 @@
               {
                 "variable": "registrationDate",
                 "value": {
-                  "path": "$.registrationDateStr"
+                  "path": "$.registrationDate"
                 },
                 "type": "date"
               },
               {
-                "variable": "updatedOn",
+                "variable": "updatedDate",
                 "value": {
-                  "path": "$.dateofissue"
+                  "path": "$.updatingDate"
                 },
                 "type": "date"
               },
@@ -164,9 +190,9 @@
               {
                 "variable": "currentDate",
                 "value": {
-                  "path": "$.currentDate"
+                  "path": "$.currentDateLong"
                 },
-                "type": "setEmpty"
+                "type": "date"
               },
 
               {
@@ -205,13 +231,7 @@
                 },
                 "type":"setEmpty"
               },
-              {
-                "variable": "issueDate",
-                "value": {
-                  "path": "$.dateofissue"
-                },
-                "type": "date"
-              },
+
               {
                 "variable": "registar",
                 "value": {
@@ -248,19 +268,7 @@
                 }
               },
 
-              {
-                "variable": "tenantMl",
-                "value": {
-                  "path": "$.tenantid"
-                },
-                "type": "setEmpty",
-                "localisation":{
-                  "required":true,
-                  "prefix": "TENANT_TENANTS_ML",
-                  "module":"rainmaker-common",
-                  "locale":"en_IN"
-                }
-              },
+
               {
                 "variable": "lbtypecode",
                 "value": {
@@ -413,9 +421,35 @@
                 }
               },
               {
+                "variable": "presentAddressLabelMl",
+                "value": {
+                  "path": "PDF_BIRTH_PRESENT_ADDRESS_ML"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
                 "variable": "permanentAddressLabel",
                 "value": {
                   "path": "PDF_BIRTH_PERMANENT_ADDRESS"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "permanentAddressLabelMl",
+                "value": {
+                  "path": "PDF_BIRTH_PERMANENT_ADDRESS_ML"
                 },
                 "type": "label",
                 "localisation":{
@@ -517,6 +551,19 @@
                 }
               },
               {
+                "variable": "ensureRegistrationMl",
+                "value": {
+                  "path": "PDF_BIRTH_ENSURE_REGISTRATION_OF_EVERY_BIRTH_AND_DEATH_ML"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
                 "variable": "govtOfKerala",
                 "value": {
                   "path": "PDF_BIRTH_GOVERNMENT_OF_KERALA"
@@ -533,6 +580,19 @@
                 "variable": "deptUrbanAffairs",
                 "value": {
                   "path": "PDF_BIRTH_DEPARTMENT_OF_URBAN_AFFAIRS"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "deptUrbanAffairsMl",
+                "value": {
+                  "path": "PDF_BIRTH_DEPARTMENT_OF_URBAN_AFFAIRS_ML"
                 },
                 "type": "label",
                 "localisation":{
@@ -595,9 +655,35 @@
                 }
               },
               {
+                "variable": "issueUnderSection121969ML",
+                "value": {
+                  "path": "PDF_BIRTH_ISSUED_UNDER_SECTION_12_1969_ML"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
                 "variable": "birthCertificate",
                 "value": {
                   "path": "PDF_BIRTH_BIRTH_CERTIFICATE"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "birthCertificateMl",
+                "value": {
+                  "path": "PDF_BIRTH_BIRTH_CERTIFICATE_ML"
                 },
                 "type": "label",
                 "localisation":{
@@ -743,7 +829,7 @@
             "qrcodeConfig": [
               {
                 "variable": "qr_code_image",
-                "value":"$.embeddedUrl"
+                "value":"{{embeddedUrl}}"
               }
             ]
           }

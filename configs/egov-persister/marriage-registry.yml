@@ -10,8 +10,8 @@ serviceMaps:
                   id, dateofmarriage, dateofreporting, districtid, lbtype, tenantid, placetype, placeid, placename_en, placename_ml, housenameno_en, 
                   housenameno_ml, street_name_en, street_name_ml, ward_code, talukid, village_name, marriage_type, oth_marriage_type, landmark, locality_en,
                   locality_ml, applicationnumber, registrationno, registration_date, registration_status, createdtime, createdby,
-                  lastmodifiedtime, lastmodifiedby)
-                  VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? );
+                  lastmodifiedtime, lastmodifiedby,module_code,brideurl, groomurl, imageuuid, bride_filestoreid, groom_filestoreid, bride_expired, groom_expired, is_backward,certificateno)
+                  VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?,?,?,?,?,?,?,?,? ,?);
           basePath: MarriageDetails.*
           jsonMaps:
             - jsonPath: $.MarriageDetails.*.id
@@ -64,7 +64,7 @@ serviceMaps:
 
             # - jsonPath: $.MarriageDetails.*.workflowCode
 
-            - jsonPath: $.MarriageDetails.*.applicationnumber
+            - jsonPath: $.MarriageDetails.*.applicationNumber
 
             - jsonPath: $.MarriageDetails.*.registrationno
 
@@ -81,6 +81,39 @@ serviceMaps:
             - jsonPath: $.MarriageDetails.*.AuditDetails.lastModifiedTime
 
             - jsonPath: $.MarriageDetails.*.AuditDetails.lastModifiedBy
+
+            - jsonPath: $.MarriageDetails.*.moduleCode
+
+            - jsonPath: $.MarriageDetails.*.WitnessDetails.brideUrl
+
+            - jsonPath: $.MarriageDetails.*.WitnessDetails.groomUrl
+
+            - jsonPath: $.MarriageDetails.*.WitnessDetails.imageUuid
+
+            - jsonPath: $.MarriageDetails.*.WitnessDetails.brideFilestoreId
+
+            - jsonPath: $.MarriageDetails.*.WitnessDetails.groomFilestoreId
+
+            - jsonPath: $.MarriageDetails.*.WitnessDetails.brideExpired
+
+            - jsonPath: $.MarriageDetails.*.WitnessDetails.groomExpired
+
+            - jsonPath: $.MarriageDetails.*.WitnessDetails.isBackward
+
+            - jsonPath: $.MarriageDetails.*.certificateNo
+
+        - query: UPDATE eg_marriage_details SET registrationno = ? ,registration_date = ? 
+            WHERE applicationnumber = ? AND tenantid = ?
+          
+          basePath: MarriageDetails.*
+          jsonMaps:
+            - jsonPath: $.MarriageDetails.*.registrationno
+
+            - jsonPath: $.MarriageDetails.*.registration_date
+
+            - jsonPath: $.MarriageDetails.*.applicationNumber
+
+            - jsonPath: $.MarriageDetails.*.marriageTenantid
 
 
         - query: INSERT INTO public.eg_register_marriage_bride_groom_details(
@@ -241,9 +274,9 @@ serviceMaps:
             - jsonPath: $.MarriageDetails.*.AuditDetails.lastModifiedBy
 
         - query: INSERT INTO public.eg_register_marriage_witness_details(
-                  id, aadharno, name_en, name_ml, age, address_en,address_ml, mobile, is_esigned, marriageid, createdtime, createdby, 
-                  lastmodifiedtime, lastmodifiedby, serial_no)
-                  VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? , ?);
+            id, aadharno, name_en, name_ml, age, address_en, address_ml, mobile, is_esigned, marriageid, createdtime, createdby,
+            lastmodifiedtime, lastmodifiedby, serial_no, tenantid)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?);
           basePath: MarriageDetails.*.WitnessDetails
           jsonMaps:
 
@@ -259,7 +292,7 @@ serviceMaps:
 
             - jsonPath: $.MarriageDetails.*.WitnessDetails.witness1AddresSEn
 
-            - jsonPath: $.MarriageDetails.*.WitnessDetails.witness1AddressMl
+            - jsonPath: $.MarriageDetails.*.WitnessDetails.witness1NameMl
 
             - jsonPath: $.MarriageDetails.*.WitnessDetails.witness1Mobile
 
@@ -267,20 +300,24 @@ serviceMaps:
 
             - jsonPath: $.MarriageDetails.*.id
 
-            - jsonPath: $.MarriageDetails.*.AuditDetails.createdTime
+            - jsonPath: $.MarriageDetails.*.auditDetails.createdTime
 
-            - jsonPath: $.MarriageDetails.*.AuditDetails.createdBy
+            - jsonPath: $.MarriageDetails.*.auditDetails.createdBy
 
-            - jsonPath: $.MarriageDetails.*.AuditDetails.lastModifiedTime
+            - jsonPath: $.MarriageDetails.*.auditDetails.lastModifiedTime
 
-            - jsonPath: $.MarriageDetails.*.AuditDetails.lastModifiedBy
+            - jsonPath: $.MarriageDetails.*.auditDetails.lastModifiedBy
 
             - jsonPath: $.MarriageDetails.*.WitnessDetails.serial_no1
 
+            - jsonPath: $.MarriageDetails.*.marriageTenantid
+
+
+
         - query: INSERT INTO public.eg_register_marriage_witness_details(
-                id, aadharno, name_en, name_ml, age, address_en, address_ml, mobile, is_esigned, marriageid, createdtime, createdby,
-                lastmodifiedtime, lastmodifiedby, serial_no)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            id, aadharno, name_en, name_ml, age, address_en, address_ml, mobile, is_esigned, marriageid, createdtime, createdby,
+            lastmodifiedtime, lastmodifiedby, serial_no, tenantid)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
           basePath: MarriageDetails.*.WitnessDetails
           jsonMaps:
             - jsonPath: $.MarriageDetails.*.WitnessDetails.witnessId2
@@ -303,15 +340,17 @@ serviceMaps:
 
             - jsonPath: $.MarriageDetails.*.id
 
-            - jsonPath: $.MarriageDetails.*.AuditDetails.createdTime
+            - jsonPath: $.MarriageDetails.*.auditDetails.createdTime
 
-            - jsonPath: $.MarriageDetails.*.AuditDetails.createdBy
+            - jsonPath: $.MarriageDetails.*.auditDetails.createdBy
 
-            - jsonPath: $.MarriageDetails.*.AuditDetails.lastModifiedTime
+            - jsonPath: $.MarriageDetails.*.auditDetails.lastModifiedTime
 
-            - jsonPath: $.MarriageDetails.*.AuditDetails.lastModifiedBy
+            - jsonPath: $.MarriageDetails.*.auditDetails.lastModifiedBy
 
             - jsonPath: $.MarriageDetails.*.WitnessDetails.serial_no2
+
+            - jsonPath: $.MarriageDetails.*.marriageTenantid
 
         - query :  INSERT INTO public.eg_register_marriage_present_address_details(
                   id, housename_en, housename_ml, villageid, village_name, talukid, taluk_name, ward_code, locality_en, locality_ml,
@@ -617,6 +656,63 @@ serviceMaps:
             - jsonPath: $.MarriageDetails.*.GroomAddressDetails.permntOutsideKeralaPincode
 
             - jsonPath: $.MarriageDetails.*.GroomAddressDetails.permntOutsideKeralaPostOfficeMl            
+
+    - version: 1.0
+      description: Persists save marriage certificate details in marriage certificate table
+      fromTopic: save-marriagecertificate-topic
+      isTransaction: true
+      queryMaps:
+        - query: INSERT INTO public.eg_marriage_certificate
+                  (id, registrationno, registrydetailsid, filestoreid, status,embeddedurl, dateofissue, tenantid, createdtime, createdby, lastmodifiedtime, lastmodifiedby)
+                  VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?);
+          basePath: marriageCertificate
+          jsonMaps:
+            - jsonPath: $.marriageCertificate.id
+
+            - jsonPath: $.marriageCertificate.registrationno
+
+            - jsonPath: $.marriageCertificate.marriageRegistryDetails.id
+
+            - jsonPath: $.marriageCertificate.filestoreid
+
+            - jsonPath: $.marriageCertificate.certificateStatus
+
+            - jsonPath: $.marriageCertificate.embeddedUrl
+
+            - jsonPath: $.marriageCertificate.dateOfIssue
+
+            - jsonPath: $.marriageCertificate.marriageRegistryDetails.marriageTenantid
+
+            - jsonPath: $.marriageCertificate.AuditDetails.createdTime
+
+            - jsonPath: $.marriageCertificate.AuditDetails.createdBy
+
+            - jsonPath: $.marriageCertificate.AuditDetails.lastModifiedTime
+
+            - jsonPath: $.marriageCertificate.AuditDetails.lastModifiedBy
+
+    - version: 1.0
+      description: Persists update marriage certificate details in marriage certificate table
+      fromTopic: update-marriagecertificate-topic
+      isTransaction: true
+      queryMaps:
+        - query: UPDATE public.eg_marriage_certificate
+            set filestoreid=? , embeddedurl=?, dateofissue=?, lastmodifiedtime=?, lastmodifiedby=? where id=? and registrydetailsid=?;
+          basePath: marriageCertificate
+          jsonMaps:
+            - jsonPath: $.marriageCertificate.filestoreid
+
+            - jsonPath: $.marriageCertificate.embeddedUrl
+
+            - jsonPath: $.marriageCertificate.dateOfIssue
+
+            - jsonPath: $.marriageCertificate.AuditDetails.lastModifiedTime
+
+            - jsonPath: $.marriageCertificate.AuditDetails.lastModifiedBy
+
+            - jsonPath: $.marriageCertificate.id
+
+            - jsonPath: $.marriageCertificate.marriageRegistryId
 
 
 

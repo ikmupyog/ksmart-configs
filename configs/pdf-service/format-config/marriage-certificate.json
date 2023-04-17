@@ -2,13 +2,21 @@
   "key": "marriage-certificate",
   "config": {
       "defaultStyle": {
-          "font": "Thumba"
+          "font": "Times"
       },
       "watermark": {
           "color": "gery",
           "opacity": 0.1,
-          "image": "{{logokerala}}"
+          
+          "link": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
+          "image": "src/images/kerala_logo.jpeg"
       },
+      "background":{"color": "gery",
+      "opacity": 0.1,"image":"src/images/kerala-government-seeklogo-1.png",
+      "width": 550,
+       "height": 400,
+      "absolutePosition": {"x": 20, "y": 200}
+    },
       "content": [
           {
               "style": "ws-head",
@@ -21,7 +29,7 @@
                           {
                               "stack": [
                                   {
-                                      "text": "KeyNo : ##certificateNo##",
+                                      "text": "KeyNo : {{ackNo}}",
                                       "style": "appendix-header-serialNo"
                                   }
                               ]
@@ -29,7 +37,8 @@
                       ]
                   ]
               },
-              "layout": "noBorders"
+              "layout": "noBorders",
+              "margin":[0,-10,0,0]
           },
           {
               "style": "ws-head",
@@ -45,227 +54,756 @@
                               "stack": [
                                   {
                                       "image": "{{logokerala}}",
-                                      "width": 50,
-                                      "height": 50
+                                      "width": 90,
+                                      "height": 70
                                   }
                               ]
                           },
                           {
+                            "stack": [
+                                {"text":[{
+                                "text": "FORM No.IV",
+                                "style": "main-header-bold"
+                              },
+                              {
+                                "text": "{{SeeRule11}}",
+                                "style": "sub-header-italic"
+                              }]},
+                              {
+                                "text": "{{governmentEn}}",
+                                "style": "main-header2-bold"
+                              },
+                              
+                              {
+                                "text": "LOCAL SELF GOVERNMENT DEPARTMENT",
+                                "style": "main-header3-normal",
+                                "margin": [
+                                  0,
+                                  0,
+                                  0,
+                                  0
+                                ]
+                              },
+                              {
+                                "text": "CERTIFICATE OF MARRIAGE",
+                                "style": "main-header4-bold",
+                                "decoration": "underline",
+                                "margin": [
+                                  0,
+                                  0,
+                                  0,
+                                  0
+                                ]
+                              }
+                            ]
+                            ,"alignment":"center"
+                          },
+                          {
+                            "stack": [
+                              {
+                                "image": "{{logolocalbody}}",
+                                "width": 60,
+                                "height": 60
+                                
+                              }
+                            ],"alignment":"right"
+                          }
+                      ]
+                  ]
+              },
+              "layout": "noBorders"
+          },
+
+          {
+              "style": "ws-head",
+              "table": {
+                  "widths": [
+                      "*"
+                  ],
+                  "body": [
+                      [
+                          {
                               "stack": [
                                   {
-                                      "text": "##form6##",
-                                      "style": "appendix-header-italic"
-                                  },
-                                  {
-                                      "text": "##rule8##",
+                                      "text": "Issued under rule 11(1) of the Kerala Registration of Marriages (Common) Rules,2008",
                                       "style": "main-body-style"
-                                  },
-                                  {
-                                      "text": "{{governmentMl}}",
-                                      "style": "appendix-header-body"
-                                  },
-                                  {
-                                      "text": "{{governmentEn}}",
-                                      "style": "appendix-header-body"
-                                  },
-                                  {
-                                      "text": "##deptUrbanAffairsMl##",
-                                      "style": "appendix-header-body",
-                                      "margin": [
-                                          0,
-                                          0,
-                                          0,
-                                          0
-                                      ]
-                                  },
-                                  {
-                                      "text": "##deptUrbanAffairs##",
-                                      "style": "appendix-header-body",
-                                      "margin": [
-                                          0,
-                                          0,
-                                          0,
-                                          0
-                                      ]
                                   }
                               ]
+                          }
+                      ]
+                  ]
+              },
+              "layout": "noBorders",
+              "margin":[0,-10,0,0]
+          },
+          {
+            "style": "ws-head",
+            "table": {
+                "widths": [
+                    
+                        "30%",
+                        "70%"
+                        
+                    
+                ],
+                
+                "body": [
+                    
+                    [
+                        {
+                            "columns": [
+                                {
+                                    "text": "Certificate No.",
+                                    "style" : "table-text-label-normal"
+                                    
+                                  },
+                
+                                  {
+                                    "text": "{{certificateNo}}",
+                                   
+                                    "style":"table-column-text-value"
+                                  }
+                                ]}]]},
+                                "layout": "noBorders"},
+        {
+            "style": "ws-head",
+            "table": {
+                "widths": [
+                    "*"
+                ],
+                "body": [
+                    [
+                        {
+                            "stack": [
+                                {
+                                    "text": "This is to certify that the following information has been taken from the Register of Marriages (Common) maintained in FormNo.III in the Office of the Local Registrar of {{tenant}} (Local body (auto fill))",
+                                    
+                                    "style": "paragraph-1"
+                                }
+                               
+                            ]
+                        }
+                    ]
+                ]
+            },
+            "layout": "noBorders"
+        },
+        {
+            "style": "ws-head",
+            "table": {
+                "widths": [
+                    
+                        "25%",
+                        "50%",
+                        "25%"
+                        
+                    
+                ],
+                
+                "body": [
+                    
+                    [
+                        {
+                            "columns": [
+                                { "stack":[
+                                    {
+                                        "text": "Husband Details",
+                                        "style": "column-headertext-italics-normal",
+                                        "decoration": "underline",
+                                        "margin": [
+                                            0,
+                                            0,
+                                            0,
+                                            0
+                                          ]
+                                    },
+                                    {
+                                    "image": "{{groomPhoto}}",
+                                    "width": 70,
+                                    "height": 70
+                                }
+                                ],"alignment" : "center"
+                                
+                                }
+                            ]},{ 
+                                
+                            "columns": [
+                                
+                                { 
+                                     "stack":[
+                                    {
+                                    "text": "Date of Marriage  : ",
+                                    "style": "column-text-normal"
+                                    },
+                                    {
+                                        "text": "Place of Marriage  : ",
+                                    "style": "column-text-normal"
+                                    }
+
+                                ],"alignment": "right",
+                                "width":"40%",
+                                "margin":[ 
+                                            1,
+                                        0,
+                                        1,
+                                        0]
+                                },
+                                { "stack":[
+                                    {
+                                    "text": "{{marriageDOM}}",
+                                    "style": "details-body"
+                                },
+                                {
+                                    "text": "{{marriagePlaceFullAddress}}",
+                                    "style": "details-body"
+                                }
+                                ],
+                                "width":"60%",
+                                "margin":[ 
+                                            1,
+                                        0,
+                                        1,
+                                        0]
+                            }
+                                ],
+                                "margin":[ 
+                                    0,
+                                10,
+                                0,
+                                0]
+                                },{"columns": [
+                                {"stack":[
+                                    {
+                                        "text": "Wife Details",
+                                        "style": "column-headertext-italics-normal",
+                                        "decoration": "underline"
+                                    },{
+                                    "image": "{{bridePhoto}}",
+                                    "width": 70,
+                                    "height": 70
+                                }],"alignment" : "center"
+                                , "margin":[ 
+                                5,
+                            0,
+                            5,
+                            0]
+                                }
+                            
+
+                       
+                               
+                            ]
+                        }
+                    ]
+                ]
+            },
+            "layout": "noBorders",
+            "margin":[ 
+                    20,
+                0,
+                20,
+                0]
+        },
+         
+          
+          
+          
+          {
+              "style": "ws-head",
+              "table": {
+                  "widths": [
+                      "*"
+                  ],
+                  "body": [
+                      [
+                          {
+                              "stack": [ {"text" : "Details of Parties to the Marriage (as on the date of marriage)" ,
+                              "style": "header-center-detail-text"
+                            }
+                              ]
+                          }
+                      ]
+                  ]
+              },
+              "layout": "noBorders",
+              "alignment" : "center"
+          },
+         
+        {
+            "style": "ws-head",
+            "table": {
+              "widths": [
+                "*"
+              ],
+              "body": [
+                [
+                  {
+                    "columns": [
+                      {
+                        "text": "Name( In Bold Caps)",
+                        "style" : "table-text-label",
+                         "width": "20%"
+                      },
+    
+                      {
+                        "text": "{{groomFullName}}",
+                        "width": "40%",
+                        "style":"table-column-text-value"
+                      },
+                      {
+                        "text": "{{brideFullName}}",
+                        "style":"table-column-text-value",
+                        "width": "40%"
+                      }
+                    ],"style":"margin-right5"
+                    }],[{
+                    "columns": [
+                        {
+                            "text": "Nationality",
+                            "style" : "table-text-label-normal",
+                            "width": "20%"
+                            
+                          },
+        
+                          {
+                            "text": "{{GroomCountry}}",
+                            "style":"table-column-text-value",
+                            "width": "40%"
                           },
                           {
-                              "stack": [
-                                  {
-                                      "image": "{{logodeath}}",
-                                      "width": 50,
-                                      "height": 50
-                                  }
-                              ]
+                            "text": "{{BrideCountry}}",
+                            "style":"table-column-text-value",
+                            
+                            "width": "40%"
                           }
-                      ]
-                  ]
-              },
-              "layout": "noBorders"
-          },
-          {
-              "style": "ws-head",
-              "table": {
-                  "widths": [
-                      "*"
-                  ],
-                  "body": [
-                      [
+                      ],"style":"margin-right5"}],[{
+                      "columns": [
                           {
-                              "columns": [
+                              "text": "Age and Date of Birth",
+                              "style" : "table-text-label-normal",
+                              "width": "20%"
+                              
+                            },
+          
+                            {
+                              "text": "{{GroomAge}}, {{groomDOB}}",
+                              "style":"table-column-text-value",
+                              "width": "40%"
+                            },
+                            {
+                              "text": "{{BrideAge}}, {{brideDOB}}",
+                              "style":"table-column-text-value",
+                              
+                              "width": "40%"
+                            }
+                        ],"style":"margin-right5"}],[{
+                        "columns": [
+                            {
+                                "text": "Permanent Address",
+                                "style" : "table-text-label-normal",
+                                "width": "20%"
+                                
+                              },
+            
+                              {
+                                "text": "{{groomPermntFullAddr}}",
+                                "style":"table-column-text-value",
+                                "width": "40%"
+                              },
+                              {
+                                "text": "{{bridePermntFullAddr}}",
+                                "style":"table-column-text-value",
+                                
+                                "width": "40%"
+                              }
+                          ],"style":"margin-right5"}],[{
+                          "columns": [
+                              {
+                                  "text": "Father Name",
+                                  "style" : "table-text-label-normal",
+                                  "width": "20%"
+                                  
+                                },
+              
+                                {
+                                  "text": "{{groomFatherNameEn}}",
+                                  "style":"table-column-text-value",
+                                  "width": "40%"
+                                },
+                                {
+                                  "text": "{{brideFatherNameEn}}",
+                                  "style":"table-column-text-value",
+                                  
+                                  "width": "40%"
+                                }
+                            ],"style":"margin-right5"}],[{
+                            "columns": [
+                                {
+                                    "text": "Mother Name",
+                                    "style" : "table-text-label-normal",
+                                    "width": "20%"
+                                    
+                                  },
+                
                                   {
-                                      "text": "സർട്ടിഫിക്കറ്റ് നൽകുന്ന തദ്ദേശസ്വയംഭരണ സ്ഥാപനത്തിന്റെ പേര് ",
-                                      "style": "rule-header"
+                                    "text": "{{groomMotherNameEn}}",
+                                    "style":"table-column-text-value",
+                                    "width": "40%"
                                   },
                                   {
-                                      "text": "##localBodyNameMl##",
-                                      "style": "rule-header"
+                                    "text": "{{brideMotherNameEn}}",
+                                    "style":"table-column-text-value",
+                                    "width": "40%"
                                   }
-                              ]
-                          }
-                      ]
-                  ]
-              },
-              "layout": "noBorders"
-          },
-          {
-              "style": "ws-head",
-              "table": {
-                  "widths": [
-                      "*"
-                  ],
-                  "body": [
-                      [
-                          {
+                              ],"style":"margin-right5"}],[{
                               "columns": [
                                   {
-                                      "text": "Name of Local Government issuing certificate ",
-                                      "style": "rule-header"
-                                  },
-                                  {
-                                      "text": "##localBodyName##",
-                                      "style": "rule-header"
-                                  }
-                              ]
+                                      "text": "Guardian",
+                                      "style" : "table-text-label-normal",
+                                      "width": "20%"
+                                      
+                                    },
+                  
+                                    {
+                                      "text": "{{groomGuardiannameEn}}",
+                                      "style":"table-column-text-value",
+                                      "width": "40%"
+                                    },
+                                    {
+                                      "text": "{{brideGuardiannameEn}}",
+                                      "style":"table-column-text-value",
+                                      "width": "40%"
+                                    }
+                                ],"style":"margin-right5"
+                  }
+                ],[{
+                    "columns": [
+                        {
+                            "text": "Where Husband is NRI",
+                            "style" : "table-text-label-red",
+                            "width": "*",
+                            "margin":[
+                                0,20,10,0
+                            ]
+                            
                           }
                       ]
-                  ]
+        }
+      ],[{
+        "columns": [
+            {
+                "text": "a) Address",
+                "style" : "table-text-label-red",
+                "width": "20%"
+                
+              },{
+                "text": ":",
+                "style" : "table-text-label-red",
+                "width": "1%"
               },
-              "layout": "noBorders"
+
+              {
+                "text": "{{groomNRIAddress}}",
+                "style" : "table-text-label-red",
+                "width": "39%"
+              },
+              {
+                "text": "",
+                "style" : "table-text-label-red",
+                "width": "40%"
+              }
+          ],"margin":[
+            0,0,0,0
+        ]
+        }
+        ]   ,[{
+            "columns": [
+                {
+                    "text": "b) Security Number",
+                    "style" : "table-text-label-red",
+                    "width": "20%"
+                    
+                  },{
+                    "text": ":",
+                    "style" : "table-text-label-red",
+                    "width": "1%"
+                  },
+    
+                  {
+                    "text": "{{groomSocialSecurityNo}}",
+                    "style" : "table-text-label-red",
+                    "width": "39%"
+                  },
+                  {
+                    "text": "",
+                    "style" : "{{brideSocialSecurityNo}}",
+                    "width": "40%"
+                  }
+              ],"margin":[
+                0,0,0,0
+            ]
+            }
+            ]   ,[{
+                "columns": [
+                    {
+                        "text": "c) Passport Number",
+                        "style" : "table-text-label-red",
+                        "width": "20%"
+                        
+                      },{
+                        "text": ":",
+                        "style" : "table-text-label-red",
+                        "width": "1%"
+                      },
+        
+                      {
+                        "text": "{{groomPassPortNumber}}",
+                        "style" : "table-text-label-red",
+                        "width": "39%"
+                      },
+                      {
+                        "text": "{{bridePassPortNumber}}",
+                        "style" : "table-text-label-red",
+                        "width": "40%"
+                      }
+                  ],"margin":[
+                    0,0,0,0
+                ]
+                }
+                ]   ,[{
+                    "columns": [
+                        {
+                            "text": "Registration No.",
+                            "style" : "table-text-value",
+                            "width": "20%",
+                            "alignment":"left"
+                            
+                          },
+                          {
+                            "text": ":",
+                            "width": "1%",
+                            "alignment":"left"
+                          },
+        
+                          {
+                            "text": "{{registrationno}}",
+                            "style" : "table-text-value",
+                            "bold" :true,
+                            "alignment":"left",
+                            "width": "39%"
+                          },
+                          {
+                            "text": "Date of Registration",
+                            "style" : "table-text-value",
+                            "alignment":"right",
+                            "width": "19%"
+                          },{
+                            "text": ":",
+                            "alignment":"right",
+                            "width": "1%"
+                          },
+        
+                          {
+                            "text": "{{registration_date}}",
+                            "style" : "table-text-value",
+                            "alignment":"left",
+                            "bold" :true,
+                            "width": "20%"
+                          }
+                      ],
+                      "margin":[
+                        0,20,0,0
+                    ]
+        }
+      ],[{
+        "columns": [
+            {
+                "text": "Date of Issue",
+                "style" : "table-text-value",
+                "width": "20%",
+                "alignment":"left"
+                
+              },
+              {
+                "text": ":",
+                "width": "1%",
+                "alignment":"left"
+              },
+
+              {
+                "text": "{{dateOfIssue}}",
+                "style" : "table-text-value",
+                "alignment":"left",
+                "width": "29%"
+              },
+              {
+                "text": "",
+                "style" : "table-text-value",
+                "alignment":"right",
+                "width": "20%"
+              },{
+                "text": "",
+                "alignment":"left",
+                "width": "1%"
+              },
+
+              {
+                "text": "",
+                "style" : "table-text-value",
+                "alignment":"left",
+                "width": "29%"
+              }
+          ],
+          "margin":[
+            0,0,0,0
+        ]
+}
+],
+[{
+    "columns": [
+        {
+            "text": "",
+            "style" : "table-text-value",
+            "width": "20%",
+            "alignment":"left"
+            
           },
           {
-              "style": "ws-head",
-              "table": {
-                  "widths": [
-                      "*"
-                  ],
-                  "body": [
-                      [
-                          {
-                              "text": "മരണ സർട്ടിഫിക്കറ്റ്",
-                              "style": "title-header"
-                          }
-                      ]
-                  ]
-              },
-              "layout": "noBorders"
+            "text": ":",
+            "width": "1%",
+            "alignment":"left"
+          },
+
+          {
+            "text": "{{dateOfIssueInWords}}",
+            "style" : "table-text-value",
+            "alignment":"left",
+            "width": "29%"
           },
           {
-              "style": "ws-head",
-              "table": {
-                  "widths": [
-                      "*"
-                  ],
-                  "body": [
-                      [
-                          {
-                              "text": "CERTIFICATE OF MARRIAGE",
-                              "style": "title-header"
-                          }
-                      ]
-                  ]
-              },
-              "layout": "noBorders"
+            "text": "",
+            "style" : "table-text-value",
+            "alignment":"right",
+            "width": "20%"
+          },{
+            "text": "",
+            "alignment":"left",
+            "width": "1%"
           },
+
           {
-              "style": "ws-head",
-              "table": {
-                  "widths": [
-                      "*"
-                  ],
-                  "body": [
-                      [
-                          {
-                              "text": "[Issued under rule 11(1) of the Kerala Registration of Marriages (Common) Rules,2008]",
-                              "style": "main-body-style"
-                          }
-                      ]
-                  ]
-              },
-              "layout": "noBorders"
-          },
-          
-          {
-              "style": "ws-head",
-              "table": {
-                  "widths": [
-                      "*"
-                  ],
-                  "body": [
-                      [
-                          {
-                              "columns": [
-                                  {
-                                      "text": [
-                                          "This is to certify that the following information has been taken from the original record of death which is the register for (local area/localbody) {{localBodyName}} of Taluk {{lbTalukEn}} of District {{lbDistrictEn}} of State Kerala."
-                                      ],
-                                      "style": "rule-body_multiLang"
-                                  }
-                              ]
-                          }
-                      ]
-                  ]
-              },
-              "layout": "noBorders"
-          },
-          
-          {
-              "style": "ws-head",
-              "table": {
-                  "widths": [
-                      "*"
-                  ],
-                  "body": [
-                      [
-                          {
-                              "image": "##qr_code_image##",
-                              "width": 50,
-                              "height": 50,
-                              "style": "qr-code"
-                          }
-                      ]
-                  ]
-              },
-              "layout": "noBorders"
-          },
-          {
-              "style": "ws-head",
-              "table": {
-                  "widths": [
-                      "*"
-                  ],
-                  "body": [
-                      [
-                          {
-                              "stack": [
-                              ]
-                          }
-                      ]
-                  ]
-              },
-              "layout": "noBorders"
+            "text": "",
+            "style" : "table-text-value",
+            "alignment":"left",
+            "width": "29%"
           }
+      ],
+      "margin":[
+        0,0,0,0
+    ]
+}
+],
+[{
+    "columns": [
+        {
+            "text": "",
+            "style" : "table-text-value",
+            "width": "20%",
+            "alignment":"left"
+            
+          },
+          {
+            "text": "",
+            "width": "1%",
+            "alignment":"left"
+          },
+
+          {
+            "text": "Last Updated on {{lastUpdatedDateTime}}",
+            "style" : "table-text-value",
+            "alignment":"left",
+            "width": "39%"
+          },
+          {
+            "text": "Local Registrar of Marriages(Common)",
+            "style" : "table-text-value",
+            "alignment":"right",
+            "width": "40%"
+          }
+      ],
+      "margin":[
+        0,0,0,0
+    ]
+}
+],
+[{
+    "columns": [
+        
+          {
+            "text": "{{tenant}} ( Municipality)",
+            "style" : "table-text-value",
+            "alignment":"right",
+            "width": "*"
+          }
+      ],
+      "margin":[
+        0,0,0,0
+    ]
+}
+]
+            ]},
+            "layout": "noBorders"}
+
+            ,{
+                "style": "ws-head",
+                "table": {
+                  "widths": [
+                    "*"
+                  ],
+                  "body": [
+                    [
+                      {
+                        "columns": [
+                          {
+                            "image": "{{qr_code_image}}",
+                            "width": 80,
+                            "height": 80,
+                            "style": "qr-code",
+                            "alignment":"left"
+                          }
+                        ]
+                      }
+                    ]
+                  ]
+                },
+                "layout": "noBorders"
+              },
+            {
+                "style": "ws-head",
+                "table": {
+                    "widths": [
+                        "*"
+                    ],
+                    "body": [
+                        [
+                            {
+                                "stack": [ {"text" : "This certificate is computer generated and does not require any Seal/Signature in original. The Govt.videG.O.(P)6/2013/LawDated09/10/2013 has approved this certificate as a valid document for all official purposes The authenticity of this certificate can be verified at https://citizen.lsgkerala.gov.in. The Key Number is unique to each event.Software developed and supported by Information Kerala Mission." ,
+                                "style": "footer-black"
+                              },{"text" : "Certificate printed before the last updated date is invalid" ,
+                              "style": "footer-red"
+                            }
+                                ],
+                                "margin":[
+                                  0,20,20,0
+                              ]
+                            }
+                        ]
+                    ]
+                },
+                "layout": "noBorders",
+                "alignment" : "center"
+            }
+
       ],
       "styles": {
           "pdf-header": {
@@ -287,7 +825,8 @@
           "main-body-style": {
               "color": "#000000",
               "fontSize": 8,
-              "alignment": "center"
+              "alignment": "center",
+              "italics":true
           },
           "appendix-header-italic": {
               "color": "#000000",
@@ -295,6 +834,42 @@
               "fontWeight": 400,
               "alignment": "center"
           },
+          "main-header-bold": {
+              "color": "#000000",
+              "fontSize": 11,
+              "fontWeight": 400,
+              "alignment": "center"
+          },
+          "main-header2-bold": {
+            "color": "#000000",
+            "bold": true,
+            "fontSize": 12,
+            "fontWeight": 400,
+            "alignment": "center"
+        },
+        "main-header3-normal": {
+          "color": "#000000",
+          "bold": false,
+          "fontSize": 10,
+          "fontWeight": 200,
+          "alignment": "center"
+      }
+      ,
+        "main-header4-bold": {
+          "color": "#000000",
+          "bold": true,
+          "fontSize": 12,
+          "fontWeight": 500,
+          "font": "Times",
+          "alignment": "center"
+      },
+          "sub-header-italic": {
+            "color": "#000000",
+            "fontSize": 10,
+            "fontWeight": 200,
+            "alignment": "center",
+            "italics":true
+        },
           "appendix-header-emblem": {
               "color": "#000000",
               "alignment": "center",
@@ -457,7 +1032,12 @@
               "fontSize": 7,
               "alignment": "center",
               "italics": true
-          },
+          }, "footer-black": {
+            "color": "black",
+            "fontSize": 7,
+            "alignment": "center",
+            "italics": true
+        },
           "appendix-header-body": {
               "color": "#000000",
               "bold": true,
@@ -623,6 +1203,108 @@
                   -81,
                   0
               ]
+          },
+          "paragraph-1": {
+            "color": "rgba(0, 0, 0, 0.94)",
+              "fontSize": 10,
+              
+              "alignment": "left",
+              "italics": true,
+              "margin": [
+                  20,
+                  0,
+                  20,
+                  0
+              ]
+          },
+          "column-text-normal": {
+            "color": "#000000",
+            "bold": false,
+            "fontSize": 10,
+            "fontWeight": "normal",
+            "margin": [
+                0,
+                5,
+                0,
+                0
+            ]
+            
+          },
+          "column-headertext-normal": {
+            "color": "#000000",
+            "bold": false,
+            "fontSize": 10,
+            "fontWeight": "Bold"
+            
+          }
+          ,
+          "column-headertext-italics-normal": {
+            "color": "#000000",
+            "bold": true,
+            "italics": true,
+            "fontSize": 11,
+            "fontWeight": "300",
+            "underline":true,
+            "decoration": "underline"
+            
+          },
+          "header-center-detail-text":{
+            "fontSize": 11,
+            "fontWeight": "400",
+            "italics": true,
+            "bold":true
+          },
+          "table-text-label":{
+            "fontSize": 10,
+            "fontWeight": "200",
+            "italics": false,
+            "bold":true,
+            "alignment": "left"
+          },
+          "table-text-label-red":{
+            "color": "red",
+            "fontSize": 10,
+            "fontWeight": "200",
+            "italics": false,
+            "bold":false,
+            "alignment": "left"
+          }
+          ,
+          "table-text-label-normal":{
+            "fontSize": 10,
+            "fontWeight": "200",
+            "italics": false,
+            "bold":false,
+            "alignment": "left"
+          },
+          "table-column-text-value":{
+            "fontSize" : 10,
+            "fontWeight": "100",
+            "margin": [
+                2,
+                0,
+                8,
+                0
+            ]
+          },
+          "margin-right5":{
+            "margin": [
+                0,
+                0,
+                0,
+                0
+            ]
+          },
+          
+          "table-text-value":{
+            "fontSize": 10,
+            "fontWeight": "200",
+            "italics": false,
+            "bold":false,
+            "alignment": "left"
+          },
+          "pdf-watermark": {
+            "link": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg"
           }
       }
   }
