@@ -14,6 +14,10 @@
                     {
                       "stack": [
                         {
+                          "text": "{{tenantlogo}}",
+                          "style": "appendix-header"
+                        },
+                        {
                           "text": "{{localbodyName}}",
                           "style": "appendix-header"
                         },
