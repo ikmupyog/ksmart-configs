@@ -406,12 +406,12 @@
                               },
             
                               {
-                                "text": "{{groomPermntFullAddr}}",
+                                "text": "{{groomFullAddress}}",
                                 "style":"table-column-text-value",
                                 "width": "40%"
                               },
                               {
-                                "text": "{{bridePermntFullAddr}}",
+                                "text": "{{brideFullAddress}}",
                                 "style":"table-column-text-value",
                                 
                                 "width": "40%"
@@ -1283,7 +1283,7 @@
             "margin": [
                 2,
                 0,
-                8,
+                10,
                 0
             ]
           },
@@ -1291,7 +1291,7 @@
             "margin": [
                 0,
                 0,
-                0,
+                5,
                 0
             ]
           },
