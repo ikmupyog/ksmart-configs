@@ -516,6 +516,11 @@
                 {
                   "variable":"localbodyName",
                   "value":"$.MdmsRes.tenant.tenants[0].name"
+                },
+                {
+                  "variable":"logo",
+                  "url":"$.MdmsRes.tenant.tenants[0].logoId",
+                  "type":"image"
                 }
               ]
             },

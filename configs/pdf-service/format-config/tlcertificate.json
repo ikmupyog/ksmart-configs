@@ -2,7 +2,7 @@
   "key": "tlcertificate",
   "config": {
       "defaultStyle": {
-          "font": "Thumba"
+          "font": "Cambay"
            },
           "content": [[
             {
@@ -13,6 +13,10 @@
                   [
                     {
                       "stack": [
+                        {
+                          "text": "{{logo}}",
+                          "style": "appendix-header"
+                        },
                         {
                           "text": "{{localbodyName}}",
                           "style": "appendix-header"
@@ -515,6 +519,7 @@
               "style": "ws-head",
               "table": {
                 "widths": ["*"],
+                "height" : ["*"],
                 "body": [
                   [
                     {
@@ -532,7 +537,7 @@
                           "style": "pdf-header-sub-text"
                         },
                         {
-                          "text": "3.  സ്ഥാപനത്തിന്‍റെ ബോര്‍ഡില്‍ സ്ഥലനാമം ഇംഗ്ലീഷിലും മലയാളത്തിലും രേഖപ്പെടുത്തേണ്ടാതാണ്.",
+                          "text": "3.  സ്ഥാപനത്തിന്‍റെ ബോര്‍ഡില്‍ സ്ഥലനാമം ഇംഗ്ലീഷിലും മലയാളത്തിലും രേഖപ്പെടുത്തേണ്ടതാണ്.",
                           "style": "pdf-header-sub-text"
                         },
                         {
@@ -604,7 +609,7 @@
             }
           ] 
         ],
-		  "footer": "(function(currentPage, pageCount) { return currentPage.toString() + ' of ' + pageCount; })",
+		    "footer": "(function(currentPage, pageCount) { return currentPage.toString() + ' of ' + pageCount; })",
           "styles": {
             "pdf-header": {
               "fillColor": "#F2F2F2",
