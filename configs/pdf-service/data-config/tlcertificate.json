@@ -519,10 +519,7 @@
                 },
                 {
                   "variable":"tenantlogo",
-                  "url":
-                  {
-                    "path" : "$.MdmsRes.tenant.tenants[0].logoId"
-                  },
+                  "url": "\"$.MdmsRes.tenant.tenants[0].logoId\"",
                   "type":"image"
                 }
               ]
