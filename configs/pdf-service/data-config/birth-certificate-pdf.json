@@ -92,7 +92,9 @@
                 "type":"setEmpty",
                 "localisation":{
                   "required":true,
-                  "module":"rainmaker-common"
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
                 }
               },
               {
@@ -103,7 +105,8 @@
                 "type": "setEmpty",
                 "localisation":{
                   "required":true,
-                  "module":"rainmaker-common"
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
                 }
               },
 
@@ -564,6 +567,19 @@
                 "variable": "govtOfKerala",
                 "value": {
                   "path": "PDF_BIRTH_GOVERNMENT_OF_KERALA"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "govtOfKeralaMl",
+                "value": {
+                  "path": "PDF_BIRTH_GOVERNMENT_OF_KERALA_ML"
                 },
                 "type": "label",
                 "localisation":{
