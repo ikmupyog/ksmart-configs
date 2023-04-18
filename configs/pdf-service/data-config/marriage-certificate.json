@@ -1,462 +1,451 @@
 {
-    "key": "marriage-certificate",
-    "DataConfigs": {
-        "serviceName": "rainmaker-common",
-        "version": "1.0.0",
-        "baseKeyPath": "$.MarriageCertificate.*",
-        "entityIdPath": "$.id",
-        "isCommonTableBorderRequired": true,
+  "key": "marriage-certificate",
+  "DataConfigs": {
+    "serviceName": "rainmaker-common",
+    "version": "1.0.0",
+    "baseKeyPath": "$.MarriageCertificate.*",
+    "entityIdPath": "$.id",
+    "isCommonTableBorderRequired": true,
+    "mappings": [
+      {
+        "topic": "common-pdf-generation-3",
         "mappings": [
-            {
-                "topic": "common-pdf-generation-3",
-                "mappings": [
-                    {
-                        "direct": [
-                            {
-                                "variable": "logokerala",
-                                "url": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
-                                "type": "image"
-                            },
-                            {
-                                "variable": "logolocalbody",
-                                "url": "https://ulb-logos.s3.ap-south-1.amazonaws.com/cochin/cochin.jpg",
-                                "type": "image"
-                            },
-                            {
-                                "variable": "groomPhoto1",
-                                "url": "https://ulb-logos.s3.ap-south-1.amazonaws.com/cochin/cochin.jpg",
-                                "type": "image"
-                            },
-                            
-                            {
-                                "variable": "bridePhoto1",
-                                "url":"https://ulb-logos.s3.ap-south-1.amazonaws.com/cochin/cochin.jpg",
-                                "type": "image"
-                            },
-                            {
-                                "variable": "groomPhoto",
-                                
-                                "value": {"path":"$.marriageRegistryDetails.WitnessDetails.groomUrl"},
-                                "type": "image"
-                            },
-                            
-                            {
-                                "variable": "bridePhoto",
-                                "value": {"path":"$.marriageRegistryDetails.WitnessDetails.brideUrl"},
-                                "type": "image"
-                            },
-                            
-                            {
-                                "variable" : "seeRule11",
-                                "value": {"path": "PDF_MARRIAGE_SEERULE11_1"},
-                                "type": "label",
-                                "localisation": {
-                                    "required": true,
-                                    "prefix": null,
-                                    "module": "rainmaker-common",
-                                    "locale": "en_IN"
-                                }
-                            },
-                            {
-                                "variable" : "formNoIV",
-                                "value": {"path": "PDF_MARRIAGE_FORM_NO_IV"},
-                                "type": "label",
-                                "localisation": {
-                                    "required": true,
-                                    "prefix": null,
-                                    "module": "rainmaker-common",
-                                    "locale": "en_IN"
-                                }
-                            },
-                            {
-                                "variable" : "IssuedUnder",
-                                "value": {"path": "PDF_MARRIAGE_ISSUED_UNDER"},
-                                "type": "label",
-                                "localisation": {
-                                    "required": true,
-                                    "prefix": null,
-                                    "module": "rainmaker-common",
-                                    "locale": "en_IN"
-                                }
-                            },
-                            
-                            {
-                                "variable": "tenant",
-                                "value": {
-                                    "path": "$.marriageRegistryDetails.marriageTenantid"
-                                },
-                                "type": "setEmpty",
-                                "localisation": {
-                                    "required": true,
-                                    "prefix": "TENANT_TENANTS",
-                                    "module": "rainmaker-common",
-                                    "locale": "en_IN"
-                                }
-                            },
-                            {
-                                "variable": "tenantMl",
-                                "value": {
-                                    "path": "$.marriageRegistryDetails.tenantId"
-                                },
-                                "type": "setEmpty",
-                                "localisation": {
-                                    "required": true,
-                                    "prefix": "TENANT_TENANTS",
-                                    "module": "rainmaker-common",
-                                    "locale": "ml_IN"
-                                }
-                            },
-                            {
-                                "variable": "governmentEn",
-                                "value": {
-                                    "path": "PDF_BIRTH_GOVERNMENT_OF_KERALA"
-                                },
-                                "type": "label",
-                                "localisation": {
-                                    "required": true,
-                                    "prefix": null,
-                                    "module": "rainmaker-common",
-                                    "locale": "en_IN"
-                                }
-                            },
-                            {
-                                "variable": "governmentMl",
-                                "value": {
-                                    "path": "PDF_BIRTH_GOVERNMENT_OF_KERALA_ML"
-                                },
-                                "type": "label",
-                                "localisation": {
-                                    "required": true,
-                                    "prefix": null,
-                                    "module": "rainmaker-common",
-                                    "locale": "ml_IN"
-                                }
-                            },
-                            {
-                                "variable": "form4",
-                                "value": {
-                                    "path": "PDF_BIRTH_GOVERNMENT_OF_KERALA_ML"
-                                },
-                                "type": "label",
-                                "localisation": {
-                                    "required": true,
-                                    "prefix": null,
-                                    "module": "rainmaker-common",
-                                    "locale": "ml_IN"
-                                }
-                            },
-                            {
-                                "variable": "certificateNo",
-                                "value": {
-                                    "path": "$.marriageRegistryDetails.certificateNo"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "ackNo",
-                                "value": {
-                                    "path": "$.marriageRegistryDetails.applicationNumber"
-                                },
-                                "type": "setEmpty"
-                            },
-                            
-                            {
-                                "variable": "dateOfIssue",
-                                "value": {
-                                    "path": "$.dateOfIssue"
-                                },
-                                "type": "date"
-                                
-                            },
-                            {
-                                "variable": "dateOfIssueInWords",
-                                "value": {
-                                    "path": "$.dateOfIssue"
-                                },
-                                "type": "date"
-                                
-                            },
-                            
-                            {
-                                "variable": "marriageDOM",
-                                "value": {
-                                    "path": "$.marriageRegistryDetails.marriageDOM"
-                                },
-                                "type": "date"
-                            },
-                            {
-                                "variable": "marriagePlacenameEn",
-                                "value": {
-                                    "path": "$.marriageRegistryDetails.marriagePlacenameEn"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "marriageStreetEn",
-                                "value": {
-                                    "path": "$.marriageRegistryDetails.marriageStreetEn"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "marriageTalukID",
-                                "value": {
-                                    "path": "$.marriageRegistryDetails.marriageTalukID"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "marriageVillageName",
-                                "value": {
-                                    "path": "$.marriageRegistryDetails.marriageVillageName"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "marriageLandmark",
-                                "value": {
-                                    "path": "$.marriageRegistryDetails.marriageLandmark"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "marriageLocalityEn",
-                                "value": {
-                                    "path": "$.marriageRegistryDetails.marriageLocalityEn"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "marriagePlaceFullAddress",
-                                "value": {
-                                    "path": "$.marriagePlaceFullAddr"
-                                },
-                                "type": "setEmpty"
-                            },
-                            
-                            {
-                                "variable": "groomNRIAddress",
-                                "value": {
-                                    "path": "$.groomNRIAddress"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "groomFullAddress",
-                                "value": {
-                                    "path": "$.groomPermntFullAddr"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "brideFullAddress",
-                                "value": {
-                                    "path": "$.bridePermntFullAddr"
-                                },
-                                "type": "setEmpty"
-                            },{
-                                "variable": "GroomFirstName",
-                                "value":{
-                                    "path" : "$.marriageRegistryDetails.GroomDetails.groomFirstnameEn"
-                                },
-                                "type": "setEmpty"
-                            },{
-                                "variable": "GroomMiddleName",
-                                "value":{
-                                    "path" : "$.marriageRegistryDetails.GroomDetails.groomMiddlenameEn"
-                                },
-                                "type": "setEmpty"
-                            },{
-                                "variable": "GroomLastName",
-                                "value":{
-                                    "path" : "$.marriageRegistryDetails.GroomDetails.groomLastnameEn"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "BrideFirstName",
-                                "value":{
-                                    "path" : "$.marriageRegistryDetails.BrideDetails.brideFirstnameEn"
-                                },
-                                "type": "setEmpty"
-                            },{
-                                "variable": "BrideMiddleName",
-                                "value":{
-                                    "path" : "$.marriageRegistryDetails.BrideDetails.brideMiddlenameEn"
-                                },
-                                "type": "setEmpty"
-                            },{
-                                "variable": "BrideLastName",
-                                "value":{
-                                    "path" : "$.marriageRegistryDetails.BrideDetails.brideLastnameEn"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "BrideCountry",
-                                "value":{
-                                    "path" : "$.marriageRegistryDetails.BrideAddressDetails.countryIdPermanent"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "GroomCountry",
-                                "value":{
-                                    "path" : "$.marriageRegistryDetails.GroomAddressDetails.countryIdPermanent"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "BrideAge",
-                                "value":{
-                                    "path" : "$.marriageRegistryDetails.BrideDetails.brideAge"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "GroomAge",
-                                "value":{
-                                    "path" : "$.marriageRegistryDetails.GroomDetails.groomAge"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "brideDOB",
-                                "value":{
-                                    "path" : "$.marriageRegistryDetails.BrideDetails.brideDOB"
-                                },
-                                "type": "date"
-                            },
-                            {
-                                "variable": "groomDOB",
-                                "value":{
-                                    "path" : "$.marriageRegistryDetails.GroomDetails.groomDOB"
-                                },
-                                "type": "date"
-                            },
-                            {
-                                "variable": "groomPermntFullAddr",
-                                "value":{
-                                    "path" : "$.groomPermntFullAddr"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "bridePermntFullAddr",
-                                "value":{
-                                    "path" : "$.bridePermntFullAddr"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "brideFatherNameEn",
-                                "value":{
-                                    "path" : "$.marriageRegistryDetails.BrideDetails.brideFathernameEn"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "groomFatherNameEn",
-                                "value":{
-                                    "path" : "$.marriageRegistryDetails.GroomDetails.groomFathernameEn"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "brideMotherNameEn",
-                                "value":{
-                                    "path" : "$.marriageRegistryDetails.BrideDetails.brideMothernameEn"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "groomMotherNameEn",
-                                "value":{
-                                    "path" : "$.marriageRegistryDetails.GroomDetails.groomMothernameEn"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "brideGuardiannameEn",
-                                "value":{
-                                    "path" : "$.marriageRegistryDetails.BrideDetails.brideGuardiannameEn"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "groomGuardiannameEn",
-                                "value":{
-                                    "path" : "$.marriageRegistryDetails.GroomDetails.groomGuardiannameEn"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "bridePassPortNumber",
-                                "value":{
-                                    "path" : "$.marriageRegistryDetails.BrideDetails.bridePassportNo"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "groomPassPortNumber",
-                                "value":{
-                                    "path" : "$.marriageRegistryDetails.GroomDetails.groomPassportNo"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "registrationno",
-                                "value": {
-                                    "path": "$.marriageRegistryDetails.registrationno"
-                                },
-                                "type": "setEmpty"
-                            },
-                            
-                            {
-                                "variable": "registration_date",
-                                "value": {
-                                    "path": "$.marriageRegistryDetails.registration_date"
-                                },
-                                "type": "date"
-                            },
-                            {
-                                "variable": "brideFullName",
-                                "value": {
-                                    "path": "$.brideFullName"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "groomFullName",
-                                "value": {
-                                    "path": "$.groomFullName"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "lastUpdatedDateTime",
-                                "value": {
-                                    "path": "$.dateOfIssue"
-                                },
-                                "type": "date",
-                                "format" : "DD/MM/YYYY HH:mm:ss"
-                                
-                            }
-                            
-                            
-                                                   ]
-                    },
-                    {
-                        "qrcodeConfig": [
-                            {
-                                "variable": "qr_code_image",
-                                "value": "$.embeddedUrl"
-                            }
-                            
-                        ]
-                    }
-                ]
-            }
+          {
+            "direct": [
+              {
+                "variable": "logokerala",
+                "url": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
+                "type": "image"
+              },
+              {
+                "variable": "logolocalbody",
+                "url": "https://ulb-logos.s3.ap-south-1.amazonaws.com/cochin/cochin.jpg",
+                "type": "image"
+              },
+              {
+                "variable": "groomPhoto1",
+                "url": "https://ulb-logos.s3.ap-south-1.amazonaws.com/cochin/cochin.jpg",
+                "type": "image"
+              },
+
+              {
+                "variable": "bridePhoto1",
+                "url":"https://ulb-logos.s3.ap-south-1.amazonaws.com/cochin/cochin.jpg",
+                "type": "image"
+              },
+
+
+              {
+                "variable" : "seeRule11",
+                "value": {"path": "PDF_MARRIAGE_SEERULE11_1"},
+                "type": "label",
+                "localisation": {
+                  "required": true,
+                  "prefix": null,
+                  "module": "rainmaker-common",
+                  "locale": "en_IN"
+                }
+              },
+              {
+                "variable" : "formNoIV",
+                "value": {"path": "PDF_MARRIAGE_FORM_NO_IV"},
+                "type": "label",
+                "localisation": {
+                  "required": true,
+                  "prefix": null,
+                  "module": "rainmaker-common",
+                  "locale": "en_IN"
+                }
+              },
+              {
+                "variable" : "IssuedUnder",
+                "value": {"path": "PDF_MARRIAGE_ISSUED_UNDER"},
+                "type": "label",
+                "localisation": {
+                  "required": true,
+                  "prefix": null,
+                  "module": "rainmaker-common",
+                  "locale": "en_IN"
+                }
+              },
+
+              {
+                "variable": "tenant",
+                "value": {
+                  "path": "$.marriageRegistryDetails.marriageTenantid"
+                },
+                "type": "setEmpty",
+                "localisation": {
+                  "required": true,
+                  "prefix": "TENANT_TENANTS",
+                  "module": "rainmaker-common",
+                  "locale": "en_IN"
+                }
+              },
+              {
+                "variable": "tenantMl",
+                "value": {
+                  "path": "$.marriageRegistryDetails.tenantId"
+                },
+                "type": "setEmpty",
+                "localisation": {
+                  "required": true,
+                  "prefix": "TENANT_TENANTS",
+                  "module": "rainmaker-common",
+                  "locale": "ml_IN"
+                }
+              },
+              {
+                "variable": "governmentEn",
+                "value": {
+                  "path": "PDF_BIRTH_GOVERNMENT_OF_KERALA"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": true,
+                  "prefix": null,
+                  "module": "rainmaker-common",
+                  "locale": "en_IN"
+                }
+              },
+              {
+                "variable": "governmentMl",
+                "value": {
+                  "path": "PDF_BIRTH_GOVERNMENT_OF_KERALA_ML"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": true,
+                  "prefix": null,
+                  "module": "rainmaker-common",
+                  "locale": "ml_IN"
+                }
+              },
+              {
+                "variable": "form4",
+                "value": {
+                  "path": "PDF_BIRTH_GOVERNMENT_OF_KERALA_ML"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": true,
+                  "prefix": null,
+                  "module": "rainmaker-common",
+                  "locale": "ml_IN"
+                }
+              },
+              {
+                "variable": "certificateNo",
+                "value": {
+                  "path": "$.marriageRegistryDetails.certificateNo"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "ackNo",
+                "value": {
+                  "path": "$.marriageRegistryDetails.applicationNumber"
+                },
+                "type": "setEmpty"
+              },
+
+              {
+                "variable": "dateOfIssue",
+                "value": {
+                  "path": "$.dateOfIssue"
+                },
+                "type": "date"
+
+              },
+              {
+                "variable": "dateOfIssueInWords",
+                "value": {
+                  "path": "$.dateOfIssue"
+                },
+                "type": "date"
+
+              },
+
+              {
+                "variable": "marriageDOM",
+                "value": {
+                  "path": "$.marriageRegistryDetails.marriageDOM"
+                },
+                "type": "date"
+              },
+              {
+                "variable": "marriagePlacenameEn",
+                "value": {
+                  "path": "$.marriageRegistryDetails.marriagePlacenameEn"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "marriageStreetEn",
+                "value": {
+                  "path": "$.marriageRegistryDetails.marriageStreetEn"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "marriageTalukID",
+                "value": {
+                  "path": "$.marriageRegistryDetails.marriageTalukID"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "marriageVillageName",
+                "value": {
+                  "path": "$.marriageRegistryDetails.marriageVillageName"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "marriageLandmark",
+                "value": {
+                  "path": "$.marriageRegistryDetails.marriageLandmark"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "marriageLocalityEn",
+                "value": {
+                  "path": "$.marriageRegistryDetails.marriageLocalityEn"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "marriagePlaceFullAddress",
+                "value": {
+                  "path": "$.marriagePlaceFullAddr"
+                },
+                "type": "setEmpty"
+              },
+
+              {
+                "variable": "groomNRIAddress",
+                "value": {
+                  "path": "$.groomNRIAddress"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "groomFullAddress",
+                "value": {
+                  "path": "$.groomPermntFullAddr"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "brideFullAddress",
+                "value": {
+                  "path": "$.bridePermntFullAddr"
+                },
+                "type": "setEmpty"
+              },{
+                "variable": "GroomFirstName",
+                "value":{
+                  "path" : "$.marriageRegistryDetails.GroomDetails.groomFirstnameEn"
+                },
+                "type": "setEmpty"
+              },{
+                "variable": "GroomMiddleName",
+                "value":{
+                  "path" : "$.marriageRegistryDetails.GroomDetails.groomMiddlenameEn"
+                },
+                "type": "setEmpty"
+              },{
+                "variable": "GroomLastName",
+                "value":{
+                  "path" : "$.marriageRegistryDetails.GroomDetails.groomLastnameEn"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "BrideFirstName",
+                "value":{
+                  "path" : "$.marriageRegistryDetails.BrideDetails.brideFirstnameEn"
+                },
+                "type": "setEmpty"
+              },{
+                "variable": "BrideMiddleName",
+                "value":{
+                  "path" : "$.marriageRegistryDetails.BrideDetails.brideMiddlenameEn"
+                },
+                "type": "setEmpty"
+              },{
+                "variable": "BrideLastName",
+                "value":{
+                  "path" : "$.marriageRegistryDetails.BrideDetails.brideLastnameEn"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "BrideCountry",
+                "value":{
+                  "path" : "$.marriageRegistryDetails.BrideAddressDetails.countryIdPermanent"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "GroomCountry",
+                "value":{
+                  "path" : "$.marriageRegistryDetails.GroomAddressDetails.countryIdPermanent"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "BrideAge",
+                "value":{
+                  "path" : "$.marriageRegistryDetails.BrideDetails.brideAge"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "GroomAge",
+                "value":{
+                  "path" : "$.marriageRegistryDetails.GroomDetails.groomAge"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "brideDOB",
+                "value":{
+                  "path" : "$.marriageRegistryDetails.BrideDetails.brideDOB"
+                },
+                "type": "date"
+              },
+              {
+                "variable": "groomDOB",
+                "value":{
+                  "path" : "$.marriageRegistryDetails.GroomDetails.groomDOB"
+                },
+                "type": "date"
+              },
+              {
+                "variable": "groomPermntFullAddr",
+                "value":{
+                  "path" : "$.groomPermntFullAddr"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "bridePermntFullAddr",
+                "value":{
+                  "path" : "$.bridePermntFullAddr"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "brideFatherNameEn",
+                "value":{
+                  "path" : "$.marriageRegistryDetails.BrideDetails.brideFathernameEn"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "groomFatherNameEn",
+                "value":{
+                  "path" : "$.marriageRegistryDetails.GroomDetails.groomFathernameEn"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "brideMotherNameEn",
+                "value":{
+                  "path" : "$.marriageRegistryDetails.BrideDetails.brideMothernameEn"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "groomMotherNameEn",
+                "value":{
+                  "path" : "$.marriageRegistryDetails.GroomDetails.groomMothernameEn"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "brideGuardiannameEn",
+                "value":{
+                  "path" : "$.marriageRegistryDetails.BrideDetails.brideGuardiannameEn"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "groomGuardiannameEn",
+                "value":{
+                  "path" : "$.marriageRegistryDetails.GroomDetails.groomGuardiannameEn"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "bridePassPortNumber",
+                "value":{
+                  "path" : "$.marriageRegistryDetails.BrideDetails.bridePassportNo"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "groomPassPortNumber",
+                "value":{
+                  "path" : "$.marriageRegistryDetails.GroomDetails.groomPassportNo"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "registrationno",
+                "value": {
+                  "path": "$.marriageRegistryDetails.registrationno"
+                },
+                "type": "setEmpty"
+              },
+
+              {
+                "variable": "registration_date",
+                "value": {
+                  "path": "$.marriageRegistryDetails.registration_date"
+                },
+                "type": "date"
+              },
+              {
+                "variable": "brideFullName",
+                "value": {
+                  "path": "$.brideFullName"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "groomFullName",
+                "value": {
+                  "path": "$.groomFullName"
+                },
+                "type": "setEmpty"
+              },
+              {
+                "variable": "lastUpdatedDateTime",
+                "value": {
+                  "path": "$.dateOfIssue"
+                },
+                "type": "date",
+                "format" : "DD/MM/YYYY HH:mm:ss"
+
+              }
+
+
+            ]
+          },
+          {
+            "qrcodeConfig": [
+              {
+                "variable": "qr_code_image",
+                "value": "$.embeddedUrl"
+              }
+
+            ]
+          }
         ]
-    }
+      }
+    ]
+  }
 }
