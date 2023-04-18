@@ -50,8 +50,6 @@
                 "url": "https://ulb-logos.s3.ap-south-1.amazonaws.com/birth_death_logo.jpg",
                 "type":"image"
               },
-
-
               {
                 "variable": "name",
                 "value": {
@@ -94,7 +92,9 @@
                 "type":"setEmpty",
                 "localisation":{
                   "required":true,
-                  "module":"rainmaker-common"
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
                 }
               },
               {
@@ -105,7 +105,8 @@
                 "type": "setEmpty",
                 "localisation":{
                   "required":true,
-                  "module":"rainmaker-common"
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
                 }
               },
 
@@ -576,6 +577,19 @@
                 }
               },
               {
+                "variable": "govtOfKeralaMl",
+                "value": {
+                  "path": "PDF_BIRTH_GOVERNMENT_OF_KERALA_ML"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
                 "variable": "deptUrbanAffairs",
                 "value": {
                   "path": "PDF_BIRTH_DEPARTMENT_OF_URBAN_AFFAIRS"
@@ -828,8 +842,7 @@
             "qrcodeConfig": [
               {
                 "variable": "qr_code_image",
-                "value":"$.embeddedUrl",
-                "type":"image"
+                "value":"{{embeddedUrl}}"
               }
             ]
           }
