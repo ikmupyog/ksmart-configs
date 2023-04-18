@@ -2,7 +2,7 @@
   "key": "tlcertificate",
   "config": {
       "defaultStyle": {
-          "font": "Cambay"
+          "font": "BalooBhaina2"
            },
           "content": [[
             {
@@ -13,6 +13,10 @@
                   [
                     {
                       "stack": [
+                        {
+                          "text": "{{tenantlogo}}",
+                          "style": "appendix-header"
+                        },
                         {
                           "text": "{{localbodyName}}",
                           "style": "appendix-header"
