@@ -14,10 +14,6 @@
                     {
                       "stack": [
                         {
-                          "text": "{{logo}}",
-                          "style": "appendix-header"
-                        },
-                        {
                           "text": "{{localbodyName}}",
                           "style": "appendix-header"
                         },
