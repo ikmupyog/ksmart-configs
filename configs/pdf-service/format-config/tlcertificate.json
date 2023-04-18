@@ -12,11 +12,21 @@
                 "body": [
                   [
                     {
+                      "image": "{{tenantlogo}}",
+                      "width": 70,
+                      "height": 82,
+                      "alignment": "center",
+                        "margin": [
+                              0,
+                              10,
+                              0,
+                              10
+                      ]
+                    }  
+                  ],
+                  [
+                    {
                       "stack": [
-                        {
-                          "text": "{{tenantlogo}}",
-                          "style": "appendix-header"
-                        },
                         {
                           "text": "{{localbodyName}}",
                           "style": "appendix-header"
