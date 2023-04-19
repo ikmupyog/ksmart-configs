@@ -528,24 +528,7 @@
             {
               "pageBreak": "before"
             },
-            {
-              "style": "ws-head",
-              "table": {
-                "widths": ["*"],
-                "body": [
-                  [
-                    {
-                      "stack": [
-                        {
-                          "text": "ലൈസന്‍സ് നിബന്ധനകള്‍",
-                          "style": "appendix-header"
-                        }
-                      ]
-                    }
-                  ]
-                ]
-              }
-            },
+           
             {
               "style": "ws-head",
               "table": {
