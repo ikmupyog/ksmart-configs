@@ -678,7 +678,9 @@
               "fontSize": 14,
               "fontWeight": 400,
               "alignment": "center",
-              "bold": true
+              "bold": true,
+              "decoration": "underline",
+              "decorationColor": "#484848"
             },
             "appendix-header-emblem": {
               "color": "#000000",
