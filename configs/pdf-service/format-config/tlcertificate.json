@@ -2,16 +2,14 @@
   "key": "tlcertificate",
   "config": {
       "defaultStyle": {
-          "font": "Meera"
+          "font": "Thumba"
            },
           "content": [
             {
               "style": "ws-head",
               "table": {
                 "widths": [
-                  60,
-                  "*",
-                  120
+                  "*"
                 ],
                 "body": [
                   [
@@ -20,8 +18,7 @@
                         {
                           "image": "{{logoImage}}",
                           "width": 50,
-                          "height": 61.25,
-                          "alignment":"center"
+                          "height": 61.25
                         },
                         {
                           "text": "{{localbodyName}}",
