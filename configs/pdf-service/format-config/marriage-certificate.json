@@ -1292,8 +1292,8 @@
             "alignment": "left"
           }
          
-      }
-  },
-  "footer": "(function(currentPage, pageCount) { return currentPage.toString() + ' of ' + pageCount; })"
+      },
+      "footer": "(function(currentPage, pageCount) { return [{'columns': [{'text': currentPage.toString() + ' of ' + pageCount ,'alignment':'center'}]}] })"
+  }
 
 }
