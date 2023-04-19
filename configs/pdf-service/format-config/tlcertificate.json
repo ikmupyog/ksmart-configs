@@ -539,33 +539,32 @@
                         {
                           "text": "ലൈസന്‍സ് നിബന്ധനകള്‍",
                           "style": "appendix-header"
-                        },
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              }
+            },
+            {
+              "style": "ws-head",
+              "table": {
+                "widths": ["3%","97%"],
+                "body": [
+                  [
+                    {
+                      "stack": [
                         {
-                          "style": "ws-head",
-                          "table": {
-                            "widths": ["3%","97%"],
-                            "body": [
-                              [
-                                {
-                                  "stack": [
-                                    {
-                                      "text": "1.",
-                                      "style": "pdf-header-sub-text"
-                                    }
-                                  ]
-                                },
-                                {
-                                  "stack": [ 
-                                    {
-                                      "text": "കേരളാ മുനിസിപ്പാലിറ്റീസ് ആക്ടിലെ ലൈസന്‍സ് സംബന്ധിച്ചുള്ള വ്യവസ്ഥകളും മറ്റു പൊതു വ്യവസ്ഥകളും അതത് സമയങ്ങളിലെ  ചട്ടങ്ങളും, നഗരസഭയുടെ ബൈലോയിലെ നിബന്ധനകളും ഉത്തരവുകളും   ലൈസന്‍സി പാലിക്കേണ്ടതാണ്.",
-                                      "style": "pdf-header-sub-text"
-                                    }
-                                  ]
-                                }
-                              ]
-                            ]
-                          },
-                          "layout": "noBorders"
+                          "text": "1.",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [ 
+                        {
+                          "text": "കേരളാ മുനിസിപ്പാലിറ്റീസ് ആക്ടിലെ ലൈസന്‍സ് സംബന്ധിച്ചുള്ള വ്യവസ്ഥകളും മറ്റു പൊതു വ്യവസ്ഥകളും അതത് സമയങ്ങളിലെ  ചട്ടങ്ങളും, നഗരസഭയുടെ ബൈലോയിലെ നിബന്ധനകളും ഉത്തരവുകളും   ലൈസന്‍സി പാലിക്കേണ്ടതാണ്.",
+                          "style": "pdf-header-sub-text"
                         }
                       ]
                     }
@@ -573,7 +572,7 @@
                 ]
               },
               "layout": "noBorders"
-            }
+            }      
         ],
 		    "footer": "(function(currentPage, pageCount) { return currentPage.toString() + ' of ' + pageCount; })",
           "styles": {
