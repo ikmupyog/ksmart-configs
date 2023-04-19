@@ -38,7 +38,7 @@
                         },
                         {
                           "text": "IFTE & OS LICENCE",
-                          "style": "appendix-header-body"
+                          "style": "tl-logo-sub-header"
                         }
                       ],
                       "alignment": "center"
@@ -118,8 +118,7 @@
                                               "stack": [
                                                 {
                                                   "text": "1. Licensee Name and Address",
-                                                  "style": "tl-table-value",
-                                                  "widths":"40%"
+                                                  "style": "tl-table-value"
                                                 }
                                               ]
                                             },
@@ -152,8 +151,7 @@
                                               "stack": [
                                                 {
                                                   "text": "2. Licensing Unit Name and Address",
-                                                  "style": "tl-table-value",
-                                                  "widths":"40%"
+                                                  "style": "tl-table-value"
                                                 }
                                               ]
                                             },
@@ -230,7 +228,7 @@
                       "stack": [
                         {
                           "text": "Sl No",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table-value"
                         }
                       ]
                     },
@@ -238,7 +236,7 @@
                       "stack": [
                         {
                           "text": "Business Category",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table-value"
                         }
                       ]
                     },
@@ -246,7 +244,7 @@
                       "stack": [
                         {
                           "text": "Type",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table-value"
                         }
                       ]
                     },
@@ -254,7 +252,7 @@
                       "stack": [
                         {
                           "text": "Sub Type",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table-value"
                         }
                       ]
                     }
@@ -264,7 +262,7 @@
                       "stack": [
                         {
                           "text": "1",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table-value"
                         }
                       ]
                     },
@@ -272,7 +270,7 @@
                       "stack": [
                         {
                           "text": "{{businessCategory}}",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table"
                         }
                       ]
                     },
@@ -280,7 +278,7 @@
                       "stack": [
                         {
                           "text": "{{businessType}}",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table"
                         }
                       ]
                     },
@@ -288,7 +286,7 @@
                       "stack": [
                         {
                           "text": "{{businessSubtype}}",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table"
                         }
                       ]
                     }
@@ -326,7 +324,7 @@
                       "stack": [
                         {
                           "text": "Issue Date",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table-value"
                         }
                       ]
                     },
@@ -334,7 +332,7 @@
                       "stack": [
                         {
                           "text": "Period of Validity",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table-value"
                         }
                       ]
                     },
@@ -342,7 +340,7 @@
                       "stack": [
                         {
                           "text": "Renewal Date",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table-value"
                         }
                       ]
                     },
@@ -350,7 +348,7 @@
                       "stack": [
                         {
                           "text": "{{trade_license_fee}}",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table-value"
                         }
                       ]
                     },
@@ -358,7 +356,7 @@
                       "stack": [
                         {
                           "text": " Issuing Authority",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table-value"
                         }
                       ]
                     }
@@ -384,7 +382,7 @@
                       "stack": [
                         {
                           "text": "",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table"
                         }
                       ]
                     },
@@ -436,7 +434,7 @@
                       "stack": [
                         {
                           "text": "Signed and sealed as authorized by Licensing Authority",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table"
                         }
                       ]
                     }
@@ -470,8 +468,8 @@
                         {
                           "image": "{{qrCode}}",
                           "absolutePosition" : {
-                            "x" : 48,
-                            "y" : 440
+                            "x" : 46,
+                            "y" : 500
                           },
                           "width": 60,
                           "height": 60
@@ -482,27 +480,27 @@
                       "stack": [
                         {
                           "text": "Name",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table-value"
                         },
                         {
                           "text": "Designation",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table-value"
                         },
                         {
                           "text": "Office",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table-value"
                         },
                         {
                           "text": "Digital Signature ",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table-value"
                         },
                         {
                           "text": "Time Stamp, Date",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table-value"
                         },
                         {
                           "text": "Office Seal",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table-value"
                         } 
                       ]
                     },
@@ -510,27 +508,27 @@
                       "stack": [
                         {
                           "text": "{{approvedBy}}",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table"
                         },
                         {
                           "text": "Designation",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table"
                         },
                         {
                           "text": "Office",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table"
                         },
                         {
                           "text": "Digital Signature ",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table"
                         },
                         {
                           "text": "Time Stamp, Date",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table"
                         },
                         {
                           "text": "Office Seal",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table"
                         } 
                       ]
                     }
@@ -538,6 +536,21 @@
                 ]
               },
               "layout": "noBorders"
+            },
+            {
+              "canvas": [
+                {
+                  "type": "line",
+                  "x1": -40,
+                  "y1": 30,
+                  "x2": 700,
+                  "y2": 30,
+                  "dash": {
+                    "length": 10,
+                    "space": 5
+                  }
+                }
+              ]
             },
             {
               "text": "Footer Text Here ......",
@@ -660,6 +673,12 @@
                 0,
                 5
               ]
+            },
+            "tl-logo-sub-header": {
+              "color": "#484848",
+              "fontFamily": "Roboto",
+              "fontSize": 13,
+              "letterSpacing": 0.6
             },
             "appendix-header": {
               "color": "#000000",
