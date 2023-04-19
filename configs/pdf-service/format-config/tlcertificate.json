@@ -461,8 +461,8 @@
                         {
                           "image": "{{qrCode}}",
                           "style":"qr-image",
-                          "width":50,
-                          "height":50
+                          "width":60,
+                          "height":60
                         }
                       ]
                     },
@@ -1260,8 +1260,8 @@
               "bold": true,
               "letterSpacing": 0.74,
               "margin": [
-                20,
-                -10,
+                15,
+                0,
                 0,
                 5
               ]
