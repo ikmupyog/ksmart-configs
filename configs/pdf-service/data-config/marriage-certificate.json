@@ -10,29 +10,37 @@
             {
                 "topic": "common-pdf-generation-3",
                 "mappings": [
+                    
                     {
+                        "externalAPI": [
+                            {
+                              "path": "https://ksmart-dev.lsgkerala.gov.in/egov-mdms-service/v1/_get",
+                              "queryParam": "moduleName=tenant&masterName=tenants&tenantId=kl&filter=%5B?(@.code=='{$.marriageRegistryDetails.marriageTenantid}')%5D",
+                              "apiRequest": null,
+                              "responseMapping": [
+                                {
+                                  "variable": "tenantMl",
+                                  "value": "$.MdmsRes.tenant.tenants[0].city.localName"
+                                },
+                                {
+                                    "variable": "tenantEn",
+                                    "value": "$.MdmsRes.tenant.tenants[0].city.name"
+                                  },
+                                {
+                                  "variable": "logotenant",
+                                  "value": "$.MdmsRes.tenant.tenants[0].logoId",
+                                  "type":"image"
+                                }
+                              ]
+                            }
+                          ],
                         "direct": [
                             {
                                 "variable": "logokerala",
                                 "url": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
                                 "type": "image"
                             },
-                            {
-                                "variable": "logolocalbody",
-                                "url": "https://ulb-logos.s3.ap-south-1.amazonaws.com/cochin/cochin.jpg",
-                                "type": "image"
-                            },
-                            {
-                                "variable": "groomPhoto1",
-                                "url": "https://ulb-logos.s3.ap-south-1.amazonaws.com/cochin/cochin.jpg",
-                                "type": "image"
-                            },
                             
-                            {
-                                "variable": "bridePhoto1",
-                                "url":"https://ulb-logos.s3.ap-south-1.amazonaws.com/cochin/cochin.jpg",
-                                "type": "image"
-                            },
                             {
                                 "variable": "groomPhoto",
                                 
@@ -92,6 +100,13 @@
                                     "module": "rainmaker-common",
                                     "locale": "en_IN"
                                 }
+                            },
+                            {
+                                "variable": "marriageLBtype",
+                                "value": {
+                                    "path": "$.lbType"
+                                }
+                                
                             },
                             {
                                 "variable": "tenantMl",

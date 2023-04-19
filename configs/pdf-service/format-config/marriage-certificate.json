@@ -4,13 +4,6 @@
       "defaultStyle": {
           "font": "Times"
       },
-      "watermark": {
-          "color": "gery",
-          "opacity": 0.1,
-          
-          "link": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
-          "image": "src/images/kerala_logo.jpeg"
-      },
       "background":{"color": "gery",
       "opacity": 0.1,"image":"src/images/kerala-government-seeklogo-1.png",
       "width": 550,
@@ -66,7 +59,7 @@
                                 "style": "main-header-bold"
                               },
                               {
-                                "text": "{{SeeRule11}}",
+                                "text": "SeeRule11",
                                 "style": "sub-header-italic"
                               }]},
                               {
@@ -101,7 +94,7 @@
                           {
                             "stack": [
                               {
-                                "image": "{{logolocalbody}}",
+                                "image": "{{logotenant}}",
                                 "width": 60,
                                 "height": 60
                                 
@@ -176,7 +169,7 @@
                         {
                             "stack": [
                                 {
-                                    "text": "This is to certify that the following information has been taken from the Register of Marriages (Common) maintained in FormNo.III in the Office of the Local Registrar of {{tenant}} (Local body (auto fill))",
+                                    "text": "This is to certify that the following information has been taken from the Register of Marriages (Common) maintained in FormNo.III in the Office of the Local Registrar of {{tenantEn}}",
                                     
                                     "style": "paragraph-1"
                                 }
@@ -740,7 +733,7 @@
     "columns": [
         
           {
-            "text": "{{tenant}} ( Municipality)",
+            "text": "{{tenantEn}}",
             "style" : "table-text-value",
             "alignment":"right",
             "width": "*"
@@ -903,16 +896,7 @@
                   0
               ]
           },
-          "footer": {
-              "color": "#000000",
-              "alignment": "left",
-              "margin": [
-                  0,
-                  0,
-                  0,
-                  0
-              ]
-          },
+          
           "title-header": {
               "color": "#000000",
               "bold": true,
@@ -1302,10 +1286,10 @@
             "italics": false,
             "bold":false,
             "alignment": "left"
-          },
-          "pdf-watermark": {
-            "link": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg"
           }
+         
       }
-  }
+  },
+  "footer": "(function(currentPage, pageCount) { return currentPage.toString() + ' of ' + pageCount; })"
+
 }
