@@ -59,7 +59,7 @@
                       "stack": [
                         {
                           "text": "License No",
-                          "style": "appendix-header-body",
+                          "style": "tl-table-value",
                           "widths":"40%"
                         }
                       ],
@@ -75,7 +75,7 @@
                       "stack": [
                         {
                           "text": "{{licenseNumber}}",
-                          "style": "appendix-header-body"
+                          "style": "tl-table"
                         }
                       ]
                     }
@@ -112,7 +112,7 @@
                                               "stack": [
                                                 {
                                                   "text": "1. Licensee Name and Address",
-                                                  "style": "pdf-header-sub-text",
+                                                  "style": "tl-table-value",
                                                   "widths":"40%"
                                                 }
                                               ]
@@ -121,11 +121,11 @@
                                               "stack": [
                                                 {
                                                   "text": "{{ownerName}}  {{ownerCareOf}}  {{ownerCareOfName}}",
-                                                  "style": "details-body"
+                                                  "style": "tl-table"
                                                 },
                                                 {
                                                   "text": "{{owneraddress}}",
-                                                  "style": "details-body-border"
+                                                  "style": "tl-table"
                                                 }
                                               ]
                                             }
@@ -146,7 +146,7 @@
                                               "stack": [
                                                 {
                                                   "text": "2. Licensing Unit Name and Address",
-                                                  "style": "pdf-header-sub-text",
+                                                  "style": "tl-table-value",
                                                   "widths":"40%"
                                                 }
                                               ]
@@ -155,11 +155,11 @@
                                               "stack": [
                                                 {
                                                   "text": "{{licenseUnitName}}",
-                                                  "style": "details-body"
+                                                  "style": "tl-table"
                                                 },
                                                 {
                                                   "text": "{{address}}",
-                                                  "style": "details-body-border"
+                                                  "style": "tl-table"
                                                 }
                                               ]
                                             }
@@ -205,7 +205,7 @@
                       "stack": [
                         {
                           "text": "3. Licensing Business Activity Details",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table-value"
                         }
                       ]
                     }
@@ -301,7 +301,7 @@
                       "stack": [
                         {
                           "text": "4. Validation & Renewal",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table-value"
                         }
                       ]
                     }
@@ -362,7 +362,7 @@
                       "stack": [
                         {
                           "text": "{{licenseIssueDate}}",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table"
                         }
                       ]
                     },
@@ -370,7 +370,7 @@
                       "stack": [
                         {
                           "text": "{{licenseValidityFrom}} - {{licenseValidityTo}}",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table"
                         }
                       ]
                     },
@@ -386,7 +386,7 @@
                       "stack": [
                         {
                           "text": "{{tradeLicenseFee}}",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table"
                         }
                       ]
                     },
@@ -394,7 +394,7 @@
                       "stack": [
                         {
                           "text": "",
-                          "style": "pdf-header-sub-text"
+                          "style": "tl-table"
                         }
                       ]
                     }
@@ -1071,6 +1071,30 @@
               "bold": true,
               "color": "#000000",
               "alignment": "right"
+            },
+            "tl-table": {
+              "color": "#484848",
+              "bold": true,
+              "fontSize": 12,
+              "fontWeight": 400,
+              "margin": [
+                -30,
+                5,
+                0,
+                0
+              ]
+            },
+            "tl-table-value": {
+              "color": "#000000",
+              "bold": true,
+              "fontSize": 12,
+              "fontWeight": 500,
+              "margin": [
+                8,
+                5,
+                0,
+                0
+              ]
             }
           }
     }
