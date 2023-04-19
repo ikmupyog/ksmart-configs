@@ -1259,6 +1259,7 @@
               "fontSize": 14,
               "bold": true,
               "letterSpacing": 0.74,
+              "fontWeight": 500,
               "margin": [
                 15,
                 0,
@@ -1278,7 +1279,8 @@
               "color": "#484848",
               "fontFamily": "Roboto",
               "fontSize": 13,
-              "letterSpacing": 0.6
+              "letterSpacing": 0.6,
+              "fontWeight": 500
             },
             "appendix-header": {
               "color": "#000000",
@@ -1719,6 +1721,18 @@
               "margin": [
                 8,
                 5,
+                0,
+                0
+              ]
+            },
+            "tl-table-value-center": {
+              "color": "#000000",
+              "bold": true,
+              "fontSize": 12,
+              "fontWeight": 500,
+              "margin": [
+                8,
+                10,
                 0,
                 0
               ]
