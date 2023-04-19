@@ -2,7 +2,7 @@
   "key": "tlcertificate",
   "config": {
       "defaultStyle": {
-          "font": "Thumba"
+          "font": "Meera"
            },
           "content": [
             {
@@ -18,7 +18,7 @@
                         {
                           "image": "{{logoImage}}",
                           "width": 50,
-                          "height": 61.25
+                          "height": 59.25
                         },
                         {
                           "text": "{{localbodyName}}",
