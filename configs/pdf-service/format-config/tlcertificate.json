@@ -4,7 +4,7 @@
       "defaultStyle": {
           "font": "BalooBhaina2"
            },
-          "content": [[
+          "content": [
             {
               "style": "ws-head",
               "table": {
@@ -515,21 +515,6 @@
               "layout": "noBorders"
             },
             {
-              "canvas": [
-                {
-                  "type": "line",
-                  "x1": -40,
-                  "y1": 30,
-                  "x2": 700,
-                  "y2": 30,
-                  "dash": {
-                    "length": 10,
-                    "space": 5
-                  }
-                }
-              ]
-            },
-            {
               "text": "{{acknowledgement_for}}",
               "style": "footer-header",
               "pageBreak": "before"
@@ -626,7 +611,6 @@
               },
               "layout": "noBorders"
             }
-          ] 
         ],
 		    "footer": "(function(currentPage, pageCount) { return currentPage.toString() + ' of ' + pageCount; })",
           "styles": {
