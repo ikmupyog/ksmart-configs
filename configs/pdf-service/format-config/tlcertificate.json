@@ -588,9 +588,7 @@
             "appendix-header": {
               "color": "#000000",
               "bold": true,
-              "decoration": "underline",
-              "fontSize": 20,
-              "decorationColor": "#484848"
+              "fontSize": 20
             },
             "main-body-style": {
               "color": "#000000",
