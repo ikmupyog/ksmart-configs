@@ -434,7 +434,7 @@
                       "stack": [
                         {
                           "text": "Signed and sealed as authorized by Licensing Authority",
-                          "style": "tl-table"
+                          "style": "tl-table-value"
                         }
                       ]
                     }
@@ -469,7 +469,7 @@
                           "image": "{{qrCode}}",
                           "absolutePosition" : {
                             "x" : 46,
-                            "y" : 700
+                            "y" : 475
                           },
                           "width": 60,
                           "height": 60
@@ -536,21 +536,6 @@
                 ]
               },
               "layout": "noBorders"
-            },
-            {
-              "canvas": [
-                {
-                  "type": "line",
-                  "x1": -40,
-                  "y1": 30,
-                  "x2": 700,
-                  "y2": 30,
-                  "dash": {
-                    "length": 10,
-                    "space": 5
-                  }
-                }
-              ]
             },
             {
               "text": "Footer Text Here ......",
@@ -1103,9 +1088,9 @@
               "fontSize": 12,
               "fontWeight": 400,
               "margin": [
-                -30,
                 5,
-                15,
+                5,
+                0,
                 0
               ]
             },
