@@ -134,8 +134,7 @@
             "table": {
                 "widths": [
                     
-                        "30%",
-                        "70%"
+                       "*"
                         
                     
                 ],
@@ -147,17 +146,22 @@
                             "columns": [
                                 {
                                     "text": "Certificate No.",
-                                    "style" : "table-text-label-normal"
+                                    "style" : "table-text-label-normal",
+                                    "alignment":"left",
+                                    "width": "13%"
                                     
                                   },
                 
                                   {
                                     "text": "{{certificateNo}}",
                                    
-                                    "style":"table-column-text-value"
+                                    "style":"table-column-text-value",
+                                    "alignment":"left",
+                                    "width": "87%"
                                   }
-                                ]}]]},
-                                "layout": "noBorders"},
+                                ],"alignment":"left"}]]},
+                                "layout": "noBorders",
+                              "alignment":"left"},
         {
             "style": "ws-head",
             "table": {
