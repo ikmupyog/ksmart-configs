@@ -526,7 +526,7 @@
               "layout": "noBorders"
             },
             {
-              "text": "Footer Text Here ......",
+              "text": "",
               "style": "footer-header",
               "pageBreak": "before"
             },
@@ -552,7 +552,7 @@
             {
               "style": "ws-head",
               "table": {
-                "widths": ["2%","98%"],
+                "widths": ["3%","97%"],
                 "body": [
                   [
                     {
@@ -883,6 +883,11 @@
               "layout": "noBorders"
             },
             {
+              "text": "",
+              "style": "footer-header",
+              "pageBreak": "before"
+            },
+            {
               "style": "ws-head",
               "table": {
                 "widths": ["*"],
@@ -891,75 +896,340 @@
                     {
                       "stack": [
                         {
-                          "text": "1.  കേരളാ മുനിസിപ്പാലിറ്റീസ് ആക്ടിലെ ലൈസന്‍സ് സംബന്ധിച്ചുള്ള വ്യവസ്ഥകളും മറ്റു പൊതു വ്യവസ്ഥകളും അതത് സമയങ്ങളിലെ  ചട്ടങ്ങളും, നഗരസഭയുടെ ബൈലോയിലെ നിബന്ധനകളും ഉത്തരവുകളും   ലൈസന്‍സി പാലിക്കേണ്ടതാണ്.",
-                          "style": "pdf-header-sub-text"
-                        },
+                          "text": "Terms and Conditions of Licence",
+                          "style": "appendix-header"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              },
+              "layout": "noBorders"
+            },
+            {
+              "style": "ws-head",
+              "table": {
+                "widths": ["3%","97%"],
+                "body": [
+                  [
+                    {
+                      "stack": [
                         {
-                          "text": "2.  ലൈസന്‍സ് സര്‍ട്ടിഫിക്കറ്റ് സ്ഥാപനത്തില്‍ പ്രദര്‍ശിപ്പിച്ചിരിക്കേണ്ടതാണ്.",
+                          "text": "1.",
                           "style": "pdf-header-sub-text"
-                        },
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [ 
                         {
-                          "text": "3.  സ്ഥാപനത്തിന്‍റെ ബോര്‍ഡില്‍ സ്ഥലനാമം ഇംഗ്ലീഷിലും മലയാളത്തിലും രേഖപ്പെടുത്തേണ്ടതാണ്.",
+                          "text": "The licensee shall comply with the licence provisions of the Kerala Municipalities Act and other general provisions, regulations, and orders from time to time and the bylaws of the municipality.",
                           "style": "pdf-header-sub-text"
-                        },
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "stack": [
                         {
-                          "text": "4.  സ്ഥാപനവും പരിസരവും ശുചിയായി സൂക്ഷിക്കേണ്ടതാണ്.",
+                          "text": "2.",
                           "style": "pdf-header-sub-text"
-                        },
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [ 
                         {
-                          "text": "5.  സ്ഥാപനത്തില്‍ ഉണ്ടാകുന്ന മാലിന്യങ്ങള്‍ തരം തിരിച്ചു സൂക്ഷിക്കേണ്ടതും ജൈവ മാലിന്യങ്ങള്‍ സംസ്കരിക്കുന്നതിന് സ്വന്തമായി സംവിധാനങ്ങള്‍ ഒരുക്കുകയോ നഗരസഭ ഏര്‍പ്പെടുത്തുന്ന ഏജന്‍സിക്ക് കൈമാറുകയോ ചെയ്യേണ്ടതും, അജൈവ മാലിന്യങ്ങള്‍ ഹരിത കര്‍മ്മ സേനയ്ക്കോ, നഗരസഭ ഏര്‍പ്പെടുത്തുന്ന മറ്റു ഏജന്‍സിക്കോ കൈമാറെണ്ടതുമാണ്.  ",
+                          "text": "The licence certificate should be displayed in the establishment.",
                           "style": "pdf-header-sub-text"
-                        },
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "stack": [
                         {
-                          "text": "6.  മനുഷ്യോപയോഗത്തിനുള്ള ഭക്ഷണ പദാര്‍ത്ഥങ്ങളില്‍ മായം ചേര്‍ക്കുകയോ, മനുഷ്യാരോഗ്യത്തിനു ഹാനികരമായതും പഴകിയതും മനുഷ്യോപയോഗ യോഗ്യമല്ലാത്തതുമായ ഭക്ഷണ പദാര്‍ത്ഥങ്ങള്‍ വില്പ്പനയ്ക്കായി സൂക്ഷിക്കുകയോ,  മാലിന്യങ്ങള്‍ കലരുന്ന വിധത്തില്‍ അനാരോഗ്യകരമായ സാഹചര്യത്തില്‍ ഭക്ഷണ പദാര്‍ത്ഥങ്ങള്‍ സൂക്ഷിക്കുകയോ ചെയ്യാന്‍ പാടില്ലാത്തതാണ്.",
+                          "text": "3.",
                           "style": "pdf-header-sub-text"
-                        },
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [ 
                         {
-                          "text": "7.  ഭക്ഷണ പദാര്‍ത്ഥങ്ങള്‍ കൈകാര്യം ചെയ്യുന്നവര്‍ക്ക് നിര്‍ബന്ധമായും ഹെല്‍ത്ത്‌ കാര്‍ഡ്‌ ഉണ്ടായിരിക്കേണ്ടതാണ്.",
+                          "text": "The place name should be written in English and Malayalam on the board of the institution.",
                           "style": "pdf-header-sub-text"
-                        },
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "stack": [
                         {
-                          "text": "8.  പകര്‍ച്ചവ്യാധികള്‍ പിടിപെട്ടവരെ സ്ഥാപനത്തില്‍ ജോലിക്കായി നിയോഗിക്കാന്‍ പാടില്ലാത്തതാണ്. ",
+                          "text": "4.",
                           "style": "pdf-header-sub-text"
-                        },
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [ 
                         {
-                          "text": "9.  നിരോധിത പ്ലാസ്റ്റിക്‌ ഉത്പന്നങ്ങള്‍ സ്ഥാപനത്തില്‍ സൂക്ഷിക്കുകയോ വില്‍ക്കുകയോ ചെയ്യാന്‍  പാടില്ലാത്തതാണ്.",
+                          "text": "The establishment and premises should be kept clean.",
                           "style": "pdf-header-sub-text"
-                        },
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "stack": [
                         {
-                          "text": "10. ജീവനക്കാര്‍ക്കും പൊതുജനങ്ങള്‍ക്കും പ്രാഥമിക ആവശ്യങ്ങള്‍ക്കുള്ള നിയമപരമായ സൗകര്യങ്ങള്‍ സ്ഥാപനത്തില്‍ ഏര്‍പ്പെടുത്തേണ്ടതാണ്.",
+                          "text": "5.",
                           "style": "pdf-header-sub-text"
-                        },
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [ 
                         {
-                          "text": "11.  സെക്രട്ടറിയോ സെക്രട്ടറി ചുമതലപെടുത്തുന്ന ഉദ്യോഗസ്ഥനോ ഏതു സമയത്തും സ്ഥാപനം പരിശോധിക്കുന്നതിനു  സൗകര്യം ഒരുക്കേണ്ടതാണ്.",
+                          "text": "The waste generated in the institution should be kept separately and should have waste management facilities for processing organic waste and liquid waste or hand it over to the agency appointed by the municipality, and the inorganic waste should be handed over to Haritha Karma Sena or any other agency appointed by the municipality.",
                           "style": "pdf-header-sub-text"
-                        },
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "stack": [
                         {
-                          "text": "12.  വിദ്യാഭ്യാസ സ്ഥാപനങ്ങള്‍ക്ക് നൂറു വാര ചുറ്റളവിൽ  പുകയില ഉത്പന്നങ്ങള്‍ വില്‍ക്കാന്‍ പാടില്ലാത്തതാണ്. പുകയില നിരോധന നിയമ (COTPA 2003) പ്രകാരമുള്ള എല്ലാ നിബന്ധനകളും ലൈസന്‍സി പാലിക്കേണ്ടതാണ്. ",
+                          "text": "6.",
                           "style": "pdf-header-sub-text"
-                        },
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [ 
                         {
-                          "text": "13.  മലിനീകരണ നിയന്ത്രണ ബോര്‍ഡിന്റെയും മറ്റു ഏജന്‍സികളുടെയും ഡിപ്പാര്‍ട്ട് മെന്റുകളുടെയും അനുമതികളില്‍ നിര്‍ദ്ദേശിച്ചിട്ടുള്ള വ്യവസ്ഥകള്‍ പാലിച്ചു മാത്രമേ സ്ഥാപനം പ്രവര്‍ത്തിപ്പിക്കുവാന്‍ പാടുള്ളൂ. ",
+                          "text": "Adulteration of food for human consumption, storage of food injurious to human health, Storage of stale food for sale that are unfit for human consumption and storage of food in unsanitary conditions resulting in contamination of food, shall not be done.",
                           "style": "pdf-header-sub-text"
-                        },
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "stack": [
                         {
-                          "text": "14.  ലൈസന്‍സ് അനുവദിക്കുന്നതിനായി സമര്‍പ്പിച്ചിട്ടുള്ള വിവിധ ഡിപ്പാര്‍ട്ടുമെന്റുകളുടെ നിരാക്ഷേപ പത്രങ്ങള്‍, അനുമതികള്‍ എന്നിവ യഥാസമയം പുതുക്കേണ്ടത് ലൈസന്‍സിയുടെ ഉത്തരവാദിത്വം ആയിരിക്കുന്നതും അപ്രകാരം പ്രവര്‍ത്തിക്കാത്ത പക്ഷം ലൈസന്‍സിനു നിയമ സാധുത ഉണ്ടായിരിക്കുന്നതുമല്ല.",
+                          "text": "7.",
                           "style": "pdf-header-sub-text"
-                        },
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [ 
                         {
-                          "text": "15. ലൈസന്‍സ് നഗരസഭയുടെ അനുമതി ഇല്ലാതെ കൈമാറ്റം ചെയ്യാന്‍ പാടുള്ളതല്ല",
+                          "text": "Food handlers must have a health card.",
                           "style": "pdf-header-sub-text"
-                        },
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "stack": [
                         {
-                          "text": "16. ലൈസന്‍സ് അവസാനിക്കുന്ന തീയതിക്ക് മുപ്പത് ദിവസത്തിന് മുന്പായി ലൈസന്‍സ് പുതുക്കുന്നതിനുള്ള അപേക്ഷ ഓണ്‍ലൈന്‍ ആയി സമര്‍പ്പിക്കേണ്ടതാണ്.",
+                          "text": "8.",
                           "style": "pdf-header-sub-text"
-                        },
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [ 
                         {
-                          "text": "17. കാലാകാലങ്ങളിൽ കേന്ദ്ര-സംസ്ഥാന പ്രാദേശിക ഗവൺമെൻറ് ഏർപ്പെടുത്തുന്ന നിരോധനങ്ങളും നിയമങ്ങളും നിർദേശങ്ങളും  ലൈസൻസി അനുസരിക്കേണ്ടതാണ്.",
+                          "text": "Persons suffering from infectious diseases should not be employed in the establishment.",
                           "style": "pdf-header-sub-text"
-                        },
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "stack": [
                         {
-                          "text": "18. ലൈസന്‍സ് വ്യവസ്ഥകള്‍ ലംഘിക്കുന്ന പക്ഷം കേരളാ മുനിസിപ്പാലിറ്റീസ് ആക്ട്‌ സെക്ഷന്‍ 447 പ്രകാരവും മറ്റു ബന്ധപ്പെട്ട വകുപ്പുകള്‍ പ്രകാരവും സ്ഥാപനത്തിന്റെ പ്രവര്‍ത്തനം നിര്‍ത്തി വയ്ക്കുന്നതിനോ ആയതു പരിഹരിക്കുന്നതിന് ആവശ്യമായ നടപടികള്‍ സ്വീകരിക്കുന്നതിനോ സെക്രട്ടറി ആവശ്യപ്പെടുന്ന പക്ഷം ആയതു ലൈസന്‍സി അനുസരിക്കേണ്ടാതാണ്. അല്ലാത്തപക്ഷം സ്ഥാപനം ഡിപ്പാര്‍ട്ട്മെന്റല്‍ ആയി അടച്ചു പൂട്ടുന്നതാണ്.കൂടാതെ പ്രോസിക്യൂഷൻ നടപടിക്ക് വിധേയൻ ആകുന്നതിനോ  സെക്രട്ടറി ചുമത്തുന്ന പിഴ ഒടുക്കുന്നതിനോ  ലൈസന്‍സി ബാധ്യസ്ഥൻ ആയിരിക്കുന്നതാണ്.",
+                          "text": "9.",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [ 
+                        {
+                          "text": "Prohibited plastic products shall not be kept or sold in the establishment.",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "10.",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [ 
+                        {
+                          "text": "Legal facilities for the basic needs of employees and the public should be provided in the institution.",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "11.",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [ 
+                        {
+                          "text": "The Secretary or an officer deputed by the Secretary shall facilitate the inspection of the establishment at any time.",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "12.",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [ 
+                        {
+                          "text": "Tobacco products should not be sold within 100 yards of educational institutions. The licensee shall comply with all the provisions of the Cigarette and Other Tobacco Products (Prohibition of Advertisement and Regulation of trade and Commerce, Production Supply and Distribution) Act 2003.",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "13.",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [ 
+                        {
+                          "text": "The establishment shall be operated only by the conditions prescribed in the consent of the Pollution Control Board and other agencies and departments.",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "14.",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [ 
+                        {
+                          "text": "It shall be the responsibility of the licensee to renew the consents and approvals of various departments submitted for the grant of licence in time and failure to do so the licence shall not be valid.",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "15.",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [ 
+                        {
+                          "text": "The licence is not transferable without the permission of the municipality.",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "16.",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [ 
+                        {
+                          "text": "Application for renewal of licence should be submitted online at least thirty days before the date of expiry of the licence.",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "17.",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [ 
+                        {
+                          "text": "The licensee shall comply with the prohibitions, rules and instructions imposed by the Central, State, Local governments from time to time.",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "18.",
+                          "style": "pdf-header-sub-text"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [ 
+                        {
+                          "text": "The violation of licence conditions will invite departmental action forcing closure of establishment/business unit and cancellation of the licensee and will be liable to undergo prosecution procedures or pay the fine imposed by the Secretary under Section 447 of the Kerala Municipalities Act and other relevant sections.",
                           "style": "pdf-header-sub-text"
                         }
                       ]
