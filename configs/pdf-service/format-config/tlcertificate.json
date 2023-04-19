@@ -515,11 +515,6 @@
               "layout": "noBorders"
             },
             {
-              "text": "Footer Text Type Here...",
-              "style": "footer-header",
-              "pageBreak": "before"
-            },
-            {
               "style": "ws-head",
               "table": {
                 "widths": ["*"],
