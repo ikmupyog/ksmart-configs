@@ -13,7 +13,9 @@
             "direct": [    
               {
                 "variable": "tenantlogo",
-                "url":"$.tenantlogo",
+                "url":{
+                  "path": "$.tenantlogo"
+                  },
                 "type":"image"
                },
               {
