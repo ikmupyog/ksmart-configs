@@ -543,7 +543,7 @@
                         {
                           "style": "ws-head",
                           "table": {
-                            "widths": ["2%","98%"],
+                            "widths": ["3%","97%"],
                             "body": [
                               [
                                 {
@@ -618,8 +618,7 @@
               "bold": true,
               "decoration": "underline",
               "fontSize": 20,
-              "fontWeight": 400,
-              "alignment": "center"
+              "decorationColor": "#484848"
             },
             "main-body-style": {
               "color": "#000000",
