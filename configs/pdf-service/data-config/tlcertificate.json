@@ -10,14 +10,7 @@
       {
         "mappings": [
           {
-            "direct": [    
-              {
-                "variable": "tenantlogo",
-                "url":{
-                  "path": "$.tenantlogo"
-                  },
-                "type":"image"
-               },
+            "direct": [   
               {
                 "variable": "tenant",
                 "value": {
@@ -275,6 +268,18 @@
               }
             },
             {
+              "variable": "acknowledgement_for",
+              "value": {
+                "path": "PDF_STATIC_LABEL_CONSOLIDATED_BILL_ACKNOWLEDGEMENT"
+              },
+              "type": "label",
+              "localisation": {
+                "required": true,
+                "prefix": null,
+                "module": "rainmaker-common"
+              }
+            },
+            {
               "variable": "to",
               "value": {
                 "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_TO"
@@ -518,6 +523,11 @@
                 {
                   "variable":"localbodyName",
                   "value":"$.MdmsRes.tenant.tenants[0].name"
+                },
+                {
+                  "variable": "logoImage",
+                  "value": "$.MdmsRes.tenant.tenants[0].logoId",
+                  "type": "image"
                 }
               ]
             },

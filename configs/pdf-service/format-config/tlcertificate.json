@@ -12,19 +12,10 @@
                 "body": [
                   [
                     {
-                      "image": "{{tenantlogo}}",
-                      "width": 70,
-                      "height": 82,
-                      "alignment": "center",
-                        "margin": [
-                              0,
-                              10,
-                              0,
-                              10
-                      ]
-                    }  
-                  ],
-                  [
+                      "image": "{{logoImage}}",
+                      "width": 50,
+                      "height": 61.25
+                    },
                     {
                       "stack": [
                         {
@@ -522,9 +513,27 @@
                 ]
               },
               "layout": "noBorders"
-            }
-          ],
-          [
+            },
+            {
+              "canvas": [
+                {
+                  "type": "line",
+                  "x1": -40,
+                  "y1": 30,
+                  "x2": 700,
+                  "y2": 30,
+                  "dash": {
+                    "length": 10,
+                    "space": 5
+                  }
+                }
+              ]
+            },
+            {
+              "text": "{{acknowledgement_for}}",
+              "style": "footer-header",
+              "pageBreak": "before"
+            },
             {
               "style": "ws-head",
               "table": {
