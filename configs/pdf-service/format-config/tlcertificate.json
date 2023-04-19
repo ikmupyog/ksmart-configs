@@ -424,7 +424,7 @@
             {
               "style": "ws-head",
               "table": {
-                "widths": ["40%","60%"],
+                "widths": ["30%","70%"],
                 "body": [
                   [
                     {
@@ -469,7 +469,7 @@
                           "image": "{{qrCode}}",
                           "absolutePosition" : {
                             "x" : 46,
-                            "y" : 475
+                            "y" : 485
                           },
                           "width": 60,
                           "height": 60
