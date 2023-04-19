@@ -268,18 +268,6 @@
               }
             },
             {
-              "variable": "acknowledgement_for",
-              "value": {
-                "path": "PDF_STATIC_LABEL_CONSOLIDATED_BILL_ACKNOWLEDGEMENT"
-              },
-              "type": "label",
-              "localisation": {
-                "required": true,
-                "prefix": null,
-                "module": "rainmaker-common"
-              }
-            },
-            {
               "variable": "to",
               "value": {
                 "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_TO"

@@ -515,7 +515,7 @@
               "layout": "noBorders"
             },
             {
-              "text": "{{acknowledgement_for}}",
+              "text": "Footer Text Type Here...",
               "style": "footer-header",
               "pageBreak": "before"
             },
@@ -996,6 +996,49 @@
                 -81,
                 0
               ]
+            },
+            "qr-text": {
+              "fontSize": 12,
+              "margin": [
+                40,
+                0,
+                0,
+                0
+              ],
+              "color": "#484848",
+              "alignment": "left"
+            },
+            "qr-image": {
+              "margin": [
+                -40,
+                -1,
+                -3,
+                0
+              ],
+              "color": "#484848",
+              "alignment": "right"
+            },
+            "footer-header": {
+              "margin": [
+                0,
+                15,
+                0,
+                -40
+              ],
+              "bold": true,
+              "color": "#000000",
+              "alignment": "center"
+            },
+            "footer-bottom": {
+              "margin": [
+                0,
+                50,
+                0,
+                0
+              ],
+              "bold": true,
+              "color": "#000000",
+              "alignment": "right"
             }
           }
     }
