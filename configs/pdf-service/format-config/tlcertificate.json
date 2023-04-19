@@ -15,7 +15,6 @@
                 ],
                 "body": [
                   [
-                    
                     {
                       "stack": [
                         {
@@ -23,11 +22,7 @@
                           "width": 50,
                           "height": 61.25,
                           "alignment":"center"
-                        }
-                      ]
-                    },
-                    {
-                      "stack": [
+                        },
                         {
                           "text": "{{localbodyName}}",
                           "style": "tl-logo-header"
