@@ -18,7 +18,8 @@
                         {
                           "image": "{{logoImage}}",
                           "width": 50,
-                          "height": 59.25
+                          "height": 59.25,
+                          "style": "tl-logo-image"
                         },
                         {
                           "text": "{{localbodyName}}",
@@ -639,6 +640,14 @@
               "fontSize": 14,
               "bold": true,
               "letterSpacing": 0.74,
+              "margin": [
+                5,
+                -10,
+                0,
+                5
+              ]
+            },
+            "tl-logo-image":{
               "margin": [
                 0,
                 -10,
