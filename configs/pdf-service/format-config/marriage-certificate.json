@@ -1281,7 +1281,7 @@
           },
           
           "table-text-value":{
-            "fontSize": 20,
+            "fontSize": 10,
             "fontWeight": "200",
             "italics": false,
             "bold":false,
