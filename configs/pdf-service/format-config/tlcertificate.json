@@ -15,16 +15,22 @@
                 ],
                 "body": [
                   [
+                    
                     {
-                      "image": "{{logoImage}}",
-                      "width": 50,
-                      "height": 61.25
+                      "stack": [
+                        {
+                          "image": "{{logoImage}}",
+                          "width": 50,
+                          "height": 61.25,
+                          "alignment":"center"
+                        }
+                      ]
                     },
                     {
                       "stack": [
                         {
                           "text": "{{localbodyName}}",
-                          "style": "appendix-header"
+                          "style": "tl-logo-header"
                         },
                         {
                           "text": "Issued under Section 447 of the Kerala Municipality Act 1994 (20th Act of 1994)",
@@ -34,7 +40,8 @@
                           "text": "IFTE & OS LICENCE",
                           "style": "appendix-header-body"
                         }
-                      ]
+                      ],
+                      "alignment": "center"
                     }
                   ]
                 ]
@@ -47,6 +54,7 @@
                 "widths": ["50%","50%"],
                 "body": [
                   [
+                    
                     {
                       "stack": [
                         {
@@ -54,6 +62,13 @@
                           "style": "appendix-header-body",
                           "widths":"40%"
                         }
+                      ],
+                      "alignment": "left",
+                      "margin": [
+                        0,
+                        10,
+                        0,
+                        0
                       ]
                     },
                     {
@@ -519,6 +534,11 @@
               "layout": "noBorders"
             },
             {
+              "text": "Footer Text Here ......",
+              "style": "footer-header",
+              "pageBreak": "before"
+            },
+            {
               "style": "ws-head",
               "table": {
                 "widths": ["*"],
@@ -620,6 +640,19 @@
                 -41,
                 -81,
                 10
+              ]
+            },
+            "tl-logo-header": {
+              "color": "#484848",
+              "fontFamily": "Roboto",
+              "fontSize": 14,
+              "bold": true,
+              "letterSpacing": 0.74,
+              "margin": [
+                0,
+                -10,
+                0,
+                5
               ]
             },
             "appendix-header": {
@@ -783,7 +816,7 @@
             "details-body": {
               "color": "#000000",
               "bold": false,
-              "fontSize": 13,
+              "fontSize": 12,
               "fontWeight": 300,
               "lineHeight": 2,
               "margin": [
@@ -796,7 +829,7 @@
             "details-body-border": {
               "color": "#000000",
               "bold": false,
-              "fontSize": 13,
+              "fontSize": 12,
               "fontWeight": 300,
               "margin": [
                 10,
@@ -902,7 +935,7 @@
             },
             "pdf-header-sub-text": {
               "color": "#000000",
-              "fontSize": 14,
+              "fontSize": 12,
               "letterSpacing": 0.6
             },
             "pdf-application-no": {
