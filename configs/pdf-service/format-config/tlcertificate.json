@@ -1104,9 +1104,9 @@
               "fontWeight": 400,
               "margin": [
                 -30,
-                10,
+                5,
                 0,
-                0
+                10
               ]
             },
             "tl-table-value": {
