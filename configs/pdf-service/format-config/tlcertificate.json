@@ -469,7 +469,7 @@
                           "image": "{{qrCode}}",
                           "absolutePosition" : {
                             "x" : 46,
-                            "y" : 500
+                            "y" : 700
                           },
                           "width": 60,
                           "height": 60
@@ -1104,7 +1104,7 @@
               "fontWeight": 400,
               "margin": [
                 -30,
-                5,
+                10,
                 0,
                 0
               ]
