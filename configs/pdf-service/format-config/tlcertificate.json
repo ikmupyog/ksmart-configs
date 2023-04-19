@@ -1032,6 +1032,514 @@
                 ]
               },
               "layout": "noBorders"
+            },
+            {
+              "pageBreak": "before"
+            },
+            {
+              "style": "ws-head",
+              "table": {
+                "widths": ["*"],
+                "body": [
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "Terms and Conditions of Licence",
+                          "style": "appendix-header"
+                        },
+                        {
+                          "style": "ws-head",
+                          "table": {
+                            "widths": ["2%","98%"],
+                            "body": [
+                              [
+                                {
+                                  "stack": [
+                                    {
+                                      "text": "1.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "stack": [ 
+                                    {
+                                      "text": "The licensee shall comply with the licence provisions of the Kerala Municipalities Act and other general provisions, regulations, and orders from time to time and the bylaws of the municipality.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          },
+                          "layout": "noBorders"
+                        },
+                        {
+                          "style": "ws-head",
+                          "table": {
+                            "widths": ["2%","98%"],
+                            "body": [
+                              [
+                                {
+                                  "stack": [
+                                    {
+                                      "text": "2.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "stack": [ 
+                                    {
+                                      "text": "The licence certificate should be displayed in the establishment.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          },
+                          "layout": "noBorders"
+                        },
+                        {
+                          "style": "ws-head",
+                          "table": {
+                            "widths": ["2%","98%"],
+                            "body": [
+                              [
+                                {
+                                  "stack": [
+                                    {
+                                      "text": "3.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "stack": [ 
+                                    {
+                                      "text": "The place name should be written in English and Malayalam on the board of the institution.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          },
+                          "layout": "noBorders"
+                        },
+                        {
+                          "style": "ws-head",
+                          "table": {
+                            "widths": ["2%","98%"],
+                            "body": [
+                              [
+                                {
+                                  "stack": [
+                                    {
+                                      "text": "4.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "stack": [ 
+                                    {
+                                      "text": "The establishment and premises should be kept clean.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          },
+                          "layout": "noBorders"
+                        },
+                        {
+                          "style": "ws-head",
+                          "table": {
+                            "widths": ["2%","98%"],
+                            "body": [
+                              [
+                                {
+                                  "stack": [
+                                    {
+                                      "text": "5.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "stack": [ 
+                                    {
+                                      "text": "The waste generated in the institution should be kept separately and should have waste management facilities for processing organic waste and liquid waste or hand it over to the agency appointed by the municipality, and the inorganic waste should be handed over to Haritha Karma Sena or any other agency appointed by the municipality.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          },
+                          "layout": "noBorders"
+                        },
+                        {
+                          "style": "ws-head",
+                          "table": {
+                            "widths": ["2%","98%"],
+                            "body": [
+                              [
+                                {
+                                  "stack": [
+                                    {
+                                      "text": "6.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "stack": [ 
+                                    {
+                                      "text": "Adulteration of food for human consumption, storage of food injurious to human health, Storage of stale food for sale that are unfit for human consumption and storage of food in unsanitary conditions resulting in contamination of food, shall not be done.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          },
+                          "layout": "noBorders"
+                        },
+                        {
+                          "style": "ws-head",
+                          "table": {
+                            "widths": ["2%","98%"],
+                            "body": [
+                              [
+                                {
+                                  "stack": [
+                                    {
+                                      "text": "7.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "stack": [ 
+                                    {
+                                      "text": "Food handlers must have a health card.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          },
+                          "layout": "noBorders"
+                        },
+                        {
+                          "style": "ws-head",
+                          "table": {
+                            "widths": ["2%","98%"],
+                            "body": [
+                              [
+                                {
+                                  "stack": [
+                                    {
+                                      "text": "8.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "stack": [ 
+                                    {
+                                      "text": "Persons suffering from infectious diseases should not be employed in the establishment.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          },
+                          "layout": "noBorders"
+                        },
+                        {
+                          "style": "ws-head",
+                          "table": {
+                            "widths": ["2%","98%"],
+                            "body": [
+                              [
+                                {
+                                  "stack": [
+                                    {
+                                      "text": "9.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "stack": [ 
+                                    {
+                                      "text": "Prohibited plastic products shall not be kept or sold in the establishment.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          },
+                          "layout": "noBorders"
+                        },
+                        {
+                          "style": "ws-head",
+                          "table": {
+                            "widths": ["2%","98%"],
+                            "body": [
+                              [
+                                {
+                                  "stack": [
+                                    {
+                                      "text": "10.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "stack": [ 
+                                    {
+                                      "text": "Legal facilities for the basic needs of employees and the public should be provided in the institution.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          },
+                          "layout": "noBorders"
+                        },
+                        {
+                          "style": "ws-head",
+                          "table": {
+                            "widths": ["2%","98%"],
+                            "body": [
+                              [
+                                {
+                                  "stack": [
+                                    {
+                                      "text": "11.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "stack": [ 
+                                    {
+                                      "text": "The Secretary or an officer deputed by the Secretary shall facilitate the inspection of the establishment at any time.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          },
+                          "layout": "noBorders"
+                        },
+                        {
+                          "style": "ws-head",
+                          "table": {
+                            "widths": ["2%","98%"],
+                            "body": [
+                              [
+                                {
+                                  "stack": [
+                                    {
+                                      "text": "12.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "stack": [ 
+                                    {
+                                      "text": "Tobacco products should not be sold within 100 yards of educational institutions. The licensee shall comply with all the provisions of the Cigarette and Other Tobacco Products (Prohibition of Advertisement and Regulation of trade and Commerce, Production Supply and Distribution) Act 2003.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          },
+                          "layout": "noBorders"
+                        },
+                        {
+                          "style": "ws-head",
+                          "table": {
+                            "widths": ["2%","98%"],
+                            "body": [
+                              [
+                                {
+                                  "stack": [
+                                    {
+                                      "text": "13.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "stack": [ 
+                                    {
+                                      "text": "The establishment shall be operated only by the conditions prescribed in the consent of the Pollution Control Board and other agencies and departments.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          },
+                          "layout": "noBorders"
+                        },
+                        {
+                          "style": "ws-head",
+                          "table": {
+                            "widths": ["2%","98%"],
+                            "body": [
+                              [
+                                {
+                                  "stack": [
+                                    {
+                                      "text": "14.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "stack": [ 
+                                    {
+                                      "text": "It shall be the responsibility of the licensee to renew the consents and approvals of various departments submitted for the grant of licence in time and failure to do so the licence shall not be valid.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          },
+                          "layout": "noBorders"
+                        },
+                        {
+                          "style": "ws-head",
+                          "table": {
+                            "widths": ["2%","98%"],
+                            "body": [
+                              [
+                                {
+                                  "stack": [
+                                    {
+                                      "text": "15.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "stack": [ 
+                                    {
+                                      "text": "The licence is not transferable without the permission of the municipality.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          },
+                          "layout": "noBorders"
+                        },
+                        {
+                          "style": "ws-head",
+                          "table": {
+                            "widths": ["2%","98%"],
+                            "body": [
+                              [
+                                {
+                                  "stack": [
+                                    {
+                                      "text": "16.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "stack": [ 
+                                    {
+                                      "text": "Application for renewal of licence should be submitted online at least thirty days before the date of expiry of the licence.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          },
+                          "layout": "noBorders"
+                        },
+                        {
+                          "style": "ws-head",
+                          "table": {
+                            "widths": ["2%","98%"],
+                            "body": [
+                              [
+                                {
+                                  "stack": [
+                                    {
+                                      "text": "17.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "stack": [ 
+                                    {
+                                      "text": "The licensee shall comply with the prohibitions, rules and instructions imposed by the Central, State, Local governments from time to time.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          },
+                          "layout": "noBorders"
+                        },
+                        {
+                          "style": "ws-head",
+                          "table": {
+                            "widths": ["2%","98%"],
+                            "body": [
+                              [
+                                {
+                                  "stack": [
+                                    {
+                                      "text": "18.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "stack": [ 
+                                    {
+                                      "text": "The violation of licence conditions will invite departmental action forcing closure of establishment/business unit and cancellation of the licensee and will be liable to undergo prosecution procedures or pay the fine imposed by the Secretary under Section 447 of the Kerala Municipalities Act and other relevant sections.",
+                                      "style": "pdf-header-sub-text"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          },
+                          "layout": "noBorders"
+                        }
+                      ]
+                    }
+                  ]
+                ]
+              },
+              "layout": "noBorders"
             }
         ],
 		    "footer": "(function(currentPage, pageCount) { return currentPage.toString() + ' of ' + pageCount; })",
@@ -1075,7 +1583,7 @@
             "appendix-header": {
               "color": "#000000",
               "bold": true,
-              "underline":"true",
+              "decoration": "underline",
               "fontSize": 20,
               "fontWeight": 400,
               "alignment": "center"
