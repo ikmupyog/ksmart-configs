@@ -94,7 +94,7 @@
                           {
                             "stack": [
                               {
-                                "image": "{{logolocalbody}}",
+                                "image": "{{logotenant}}",
                                 "width": 60,
                                 "height": 60
                                 
@@ -169,7 +169,7 @@
                         {
                             "stack": [
                                 {
-                                    "text": "This is to certify that the following information has been taken from the Register of Marriages (Common) maintained in FormNo.III in the Office of the Local Registrar of {{tenant}} (Local body (auto fill))",
+                                    "text": "This is to certify that the following information has been taken from the Register of Marriages (Common) maintained in FormNo.III in the Office of the Local Registrar of {{tenantEn}}",
                                     
                                     "style": "paragraph-1"
                                 }
@@ -733,7 +733,7 @@
     "columns": [
         
           {
-            "text": "{{tenant}} ( Municipality)",
+            "text": "{{tenantEn}}",
             "style" : "table-text-value",
             "alignment":"right",
             "width": "*"
@@ -896,16 +896,7 @@
                   0
               ]
           },
-          "footer": {
-              "color": "#000000",
-              "alignment": "left",
-              "margin": [
-                  0,
-                  0,
-                  0,
-                  0
-              ]
-          },
+          
           "title-header": {
               "color": "#000000",
               "bold": true,
@@ -1290,7 +1281,7 @@
           },
           
           "table-text-value":{
-            "fontSize": 10,
+            "fontSize": 20,
             "fontWeight": "200",
             "italics": false,
             "bold":false,
@@ -1298,5 +1289,7 @@
           }
          
       }
-  }
+  },
+  "footer": "(function(currentPage, pageCount) { return currentPage.toString() + ' of ' + pageCount; })"
+
 }
