@@ -186,9 +186,9 @@
                             {
                                 "variable": "dateOfIssueInWords",
                                 "value": {
-                                    "path": "$.dateOfIssue"
+                                    "path": "$.dateOfIssueInWords"
                                 },
-                                "type": "date"
+                                "type": "setEmpty"
                                 
                             },
                             
