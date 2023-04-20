@@ -59,7 +59,7 @@
                                 "style": "main-header-bold"
                               },
                               {
-                                "text": "SeeRule11",
+                                "text": "{{seeRule11}}",
                                 "style": "sub-header-italic"
                               }]},
                               {
