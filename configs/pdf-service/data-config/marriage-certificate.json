@@ -456,6 +456,12 @@
                                 "type": "date",
                                 "format" : "DD/MM/YYYY HH:mm:ss"
                                 
+                            },
+                            {
+                                "variable": "embeddedUrl",
+                                "value": {
+                                    "path": "$.embeddedUrl"
+                                }
                             }
                             
                             
@@ -465,7 +471,8 @@
                         "qrcodeConfig": [
                             {
                                 "variable": "qr_code_image",
-                                "value": "$.embeddedUrl"
+                                "value":  "{{embeddedUrl}}"
+                                
                             }
                             
                         ]

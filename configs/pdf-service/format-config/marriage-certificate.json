@@ -217,8 +217,8 @@
                                     },
                                     {
                                     "image": "{{groomPhoto}}",
-                                    "width": 70,
-                                    "height": 70
+                                    "width": 90,
+                                    "height": 90
                                 }
                                 ],"alignment" : "center"
                                 
@@ -277,8 +277,8 @@
                                         "decoration": "underline"
                                     },{
                                     "image": "{{bridePhoto}}",
-                                    "width": 70,
-                                    "height": 70
+                                    "width": 90,
+                                    "height": 90
                                 }],"alignment" : "center"
                                 , "margin":[ 
                                 5,
@@ -324,7 +324,12 @@
                   ]
               },
               "layout": "noBorders",
-              "alignment" : "center"
+              "alignment" : "center",
+              "margin":[ 
+                    0,
+                5,
+                0,
+                5]
           },
          
         {
