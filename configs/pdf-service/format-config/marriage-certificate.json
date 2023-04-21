@@ -7,8 +7,8 @@
       "background":{"color": "gery",
       "opacity": 0.1,"image":"src/images/kerala-government-seeklogo-1.png",
       "width": 550,
-       "height": 400,
-      "absolutePosition": {"x": 20, "y": 200}
+       
+      "absolutePosition": {"x": 20, "y": 180}
     },
       "content": [
           {
@@ -162,7 +162,7 @@
                                 ],"alignment":"left"}]]},
                                 "layout": "noBorders",
                               "alignment":"left",
-                            "margin":[5,5]},
+                            "margin":[5,5,5,5]},
         {
             "style": "ws-head",
             "table": {
@@ -212,7 +212,7 @@
                                             0,
                                             0,
                                             0,
-                                            0
+                                            5
                                           ]
                                     },
                                     {
@@ -274,7 +274,13 @@
                                     {
                                         "text": "Wife Details",
                                         "style": "column-headertext-italics-normal",
-                                        "decoration": "underline"
+                                        "decoration": "underline",
+                                        "margin": [
+                                          0,
+                                          0,
+                                          0,
+                                          5
+                                        ]
                                     },{
                                     "image": "{{bridePhoto}}",
                                     "width": 90,
@@ -679,9 +685,9 @@
 
           {
             "text": "{{dateOfIssueInWords}}",
-            "style" : "table-text-value",
+            "style" : "table-text-value-dateword",
             "alignment":"left",
-            "width": "49%"
+            "width": "45%"
           },
           {
             "text": "",
@@ -698,7 +704,7 @@
             "text": "",
             "style" : "table-text-value",
             "alignment":"left",
-            "width": "9%"
+            "width": "13%"
           }
       ],
       "margin":[
@@ -1310,8 +1316,15 @@
             "italics": false,
             "bold":false,
             "alignment": "left"
+          },
+          "table-text-value-dateword":{
+
+            "fontSize": 9,
+            "fontWeight": "200",
+            "italics": false,
+            "bold":false,
+            "alignment": "left"
           }
-         
       },
       "footer": "(function(currentPage, pageCount) { return [{'columns': [{'text': currentPage.toString() + ' of ' + pageCount ,'alignment':'center'}]}] })"
   }
