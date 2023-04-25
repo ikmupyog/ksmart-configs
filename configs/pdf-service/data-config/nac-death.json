@@ -1,9 +1,9 @@
 {
-  "key": "nac-death-certificate",
+  "key": "death-naccertificate",
   "DataConfigs": {
     "serviceName": "rainmaker-common",
     "version": "1.0.0",
-    "baseKeyPath": "$.NacBirthCertificate.*",
+    "baseKeyPath": "$.DeathNACCertificate.*",
     "entityIdPath":"$.id",
     "isCommonTableBorderRequired": true,
     "mappings": [
@@ -15,67 +15,220 @@
               {
                 "variable": "form10",
                 "value": {
-                  "path": "$.form10"
+                  "path": "PDF_NAC_FORM_10"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
                 }
               },
               {
                 "variable": "rule13",
                 "value": {
-                  "path": "$.rule13"
+                  "path": "PDF_NAC_RULE_13"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
                 }
               },
               {
-                "variable": "nac",
+                "variable": "nac-death",
                 "value": {
-                  "path": "$.nac"
+                  "path": "PDF_NAC_DEATH_CERTIFICATE"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
                 }
               },
               {
                 "variable": "issueUnderSection171969",
                 "value": {
-                  "path": "$.issueUnderSection171969"
+                  "path": "PDF_NAC_ISSUED_UNDER_SECTION_17_1969"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
                 }
               },
               {
                 "variable": "certify",
                 "value": {
-                  "path": "$.certify"
+                  "path": "PDF_NAC_CERTIFY"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+
+              },
+              {
+                "variable": "son/wife",
+                "value": {
+                  "path": "PDF_NAC_SON_WIFE_DAUGHTER"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "registration-year",
+                "value": {
+                  "path": "PDF_NAC_REGISTRATION_YEAR"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "relating-to",
+                "value": {
+                  "path": "PDF_NAC_LOCALAREA"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "of-tehsil",
+                "value": {
+                  "path": "PDF_NAC_TEHSIL"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "of-district",
+                "value": {
+                  "path": "PDF_NAC_DISTRICT"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "of-state",
+                "value": {
+                  "path": "PDF_NAC_STATE"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "event-death",
+                "value": {
+                  "path": "PDF_NAC_EVENT_DEATH"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "son-daughter",
+                "value": {
+                  "path": "PDF_NAC_SON_DAUGHTER"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "not-registered",
+                "value": {
+                  "path": "PDF_NAC_NOT_REGISTERED"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
                 }
               },
               {
                 "variable": "careOf",
                 "value": {
-                  "path": "$.careOf"
+                  "path": "$.InformationDeath.FatherNameEn"
                 }
               },
               {
                 "variable": "period",
                 "value": {
-                  "path": "$.period"
+                  "path": "$.InformationDeath.period"
                 }
               },
               {
                 "variable": "applicantNameEn",
                 "value": {
-                  "path": "$.applicantNameEn"
+                  "path": "$.DeathApplicantDtls.ApplicantName"
                 }
               },
               {
                 "variable": "localAreaEn",
                 "value": {
-                  "path": "$.localAreaEn"
+                  "path": "$.InformationDeath.DeathPlaceLocalityEn"
                 }
               },
               {
                 "variable": "tehsil",
                 "value": {
-                  "path": "$.tehsil"
+                  "path": "$.InformationDeath.lbTalukEn"
                 }
               },
               {
                 "variable": "district",
                 "value": {
-                  "path": "$.district"
+                  "path": "$.InformationDeath.lbDistrictEn"
                 }
               },
               {
@@ -85,15 +238,80 @@
                 }
               },
               {
-                "variable": "childName",
+                "variable": "fName",
                 "value": {
-                  "path": "$.childName"
+                  "path": "$.InformationDeath.DeceasedFirstNameEn"
+                }
+              },
+              {
+                "variable": "MName",
+                "value": {
+                  "path": "$.InformationDeath.DeceasedMiddleNameEn"
+                }
+              },
+              {
+                "variable": "LName",
+                "value": {
+                  "path": "$.InformationDeath.DeceasedLastNameEn"
                 }
               },
               {
                 "variable": "motherName",
                 "value": {
-                  "path": "$.motherName"
+                  "path": "$.InformationDeath.MotherNameEn"
+                }
+              },
+              {
+                "variable": "date-en",
+                "value": {
+                  "path": "PDF_NAC_DATE"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "signature-en",
+                "value": {
+                  "path": "PDF_NAC_SIGNATURE"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "localBodyName", 
+                "value": {
+                  "path": "$.InformationDeath.localBodyName"
+                },
+                "type":"setEmpty"
+              },
+              {
+                "variable": "issueDate", 
+                "value": {
+                  "path": "$.InformationDeath.dateofissue"
+                },
+                "type": "date"
+            },
+              {
+                "variable": "seal-en",
+                "value": {
+                  "path": "PDF_NAC_SEAL"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
                 }
               },
               {
