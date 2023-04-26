@@ -1,0 +1,243 @@
+{
+  "key": "death-niacertificate",
+  "config": {
+    "defaultStyle": {
+      "font": "Cambay",
+      "width": "max-content",
+      "height": "max-content"
+    },
+    "watermark": {
+      "text": "IKM DEMO",
+      "color": "grey",
+      "opacity": 0.1,
+      "bold": false,
+      "italics": false
+    },
+    "content": [
+      {
+        "style": "ws-head",
+        "table": {
+          "widths": [
+            "*"
+          ],
+          "body": [
+            [
+              {
+                "stack": [
+                  {
+                    "text": "{{nia}}",
+                    "style": "main-body-style"
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        "layout": "noBorders"
+      },
+      {
+        "style": "nia-body",
+        "table": {
+          "widths": [
+            "*"
+          ],
+          "body": [
+            [
+              {
+                "stack": [
+                  {
+                    "text": "{{certify}}",
+                    "style": "details-body-line1"
+                  },
+                  {
+                    "text": "{{enquiry}} {{applicantNameEn}} {{relating-to-death}} {{application-no}} {{application}} {{death-date}} {{date-of-death}} {{name-of-deceased}} {{FName}} {{MName}} {{LName}} {{son-daughter}} {{fatherName}} and {{motherName}} {{address}} {{address-en}} {{place}} {{place-of-death}}",
+                    "style": "details-body-center"
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        "layout": "noBorders"
+      },
+
+      {
+        "style": "nia-bottom-left",
+        "table": {
+          "widths": [
+            "*"
+          ],
+          "body": [
+            [
+              {
+                "stack": [
+                 {
+                    "text": "{{date-en}} {{issueDate}}",
+                    "style": "details-body-left"
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        "layout": "noBorders"
+      },
+      {
+        "style": "nia-bottom-right",
+        "table": {
+          "widths": [
+            "*"
+          ],
+          "body": [
+            [
+              {
+                "stack": [
+                  {
+                    "text": "{{signature-en}}",
+                    "style": "details-body-right-up"
+                  },
+                  {
+                    "text": "Registrar of Births and Deaths, {{localBodyName}}",
+                    "style": "details-body-right-downn"
+                  },
+                  {
+                    "text": "{{seal-en}} {{seal}}",
+                    "style": "details-body-right-down"
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        "layout": "noBorders"
+      }
+    ],
+    "styles": {
+      "nia-body": {
+        "margin": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "nia-bottom-left": {
+        "margin": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "details-body-line1": {
+        "margin": [
+          120,
+          50,
+          0,
+          0
+        ]
+      },
+      "nia-bottom-right": {
+        "margin": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "appendix-header-body": {
+        "color": "#000000",
+        "fontSize": 10,
+        "letterSpacing": 0.74,
+        "alignment": "center",
+        "fontWeight": 400,
+        "margin": 0
+      },
+      "main-body-style": {
+        "color": "#000000",
+        "fontSize": 13,
+        "alignment": "center",
+        "letterSpacing": 0.74,
+        "margin": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "rule-header": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 10,
+        "alignment": "center",
+        "letterSpacing": 0.74,
+        "margin": [
+          0,
+          0,
+          0,
+          20
+        ]
+      },
+      "details-body-center": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 13,
+        "paragraph": true,
+        "margin": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "details-body-left": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 13,
+        "alignment": "left",
+        "margin": [
+          10,
+          20,
+          0,
+          0
+        ]
+      },
+      "details-body-right-up": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 13,
+        "alignment": "right",
+        "margin": [
+          70,
+          -25,
+          0,
+          0
+        ]
+      },
+      "details-body-right-down": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 13,
+        "alignment": "right",
+        "margin": [
+          20,
+          0,
+          142,
+          0
+        ]
+      },
+      "details-body-right-downn": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 13,
+        "alignment": "right",
+        "margin": [
+          20,
+          0,
+          5,
+          0
+        ]
+      }
+    }
+  }
+}
