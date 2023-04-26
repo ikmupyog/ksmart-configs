@@ -11,27 +11,6 @@
         "topic": "common-pdf-generation-3",
         "mappings": [
           {
-            "externalAPI": [
-              {
-                "path": "https://ksmart-dev.lsgkerala.gov.in/egov-mdms-service/v1/_get",
-                "queryParam": "moduleName=tenant&masterName=tenants&tenantId=kl&filter=%5B?(@.code=='{$.tenantid}')%5D",
-                "apiRequest": null,
-                "responseMapping": [
-                  {
-                    "variable": "tehsil",
-                    "value": "$.MdmsRes.tenant.tenants[0].city.ddrName"
-                  },
-                  {
-                    "variable": "district",
-                    "value": "$.MdmsRes.tenant.tenants[0].city.districtName"
-                  },
-                  {
-                    "variable": "state",
-                    "value": "$.MdmsRes.tenant.tenants[0].city.regionName"
-                  }
-                ]
-              }
-            ],
             "direct": [
               {
                 "variable": "form10",
@@ -252,6 +231,24 @@
                 }
               },
               {
+                "variable": "tehsil",
+                "value": {
+                  "path": "$.tenantTaluk"
+                }
+              },
+              {
+                "variable": "district",
+                "value": {
+                  "path": "$.tenantDistrict"
+                }
+              },
+              {
+                "variable": "state",
+                "value": {
+                  "path": "$.tenantState"
+                }
+              },
+              {
                 "variable": "date-en",
                 "value": {
                   "path": "PDF_NAC_DATE"
@@ -293,13 +290,7 @@
               {
                 "variable": "date",
                 "value": {
-                  "path": "$.date"
-                }
-              },
-              {
-                "variable": "signature",
-                "value": {
-                  "path": "$.signature"
+                  "path": "$.currentDate"
                 }
               },
               {
