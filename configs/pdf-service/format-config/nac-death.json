@@ -13,6 +13,30 @@
       "italics": false
     },
     "content": [
+      {	
+	      
+        "style": "ws-head",
+        "table": {
+          "widths": [
+            "48%",
+            "20%",
+            "20%"
+          ],
+          "body": [
+            [
+              {
+                "stack": [
+                  {
+                    "text": "KeyNo : {{certificateNo}}",
+                    "style": "appendix-header-serialNo"
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        "layout": "noBorders"
+       },
       {
         "style": "ws-head",
         "table": {
@@ -230,6 +254,19 @@
           20,
           0,
           142,
+          0
+        ]
+      },
+      "appendix-header-serialNo": {
+        "color": "#000000",
+        "bold": true,
+        "italics": true,
+        "font": "Times",
+        "fontSize": 8,
+        "margin": [
+          0,
+          -5,
+          0,
           0
         ]
       },
