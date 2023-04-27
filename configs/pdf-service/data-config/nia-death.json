@@ -213,7 +213,7 @@
               {
                 "variable": "place",
                 "value": {
-                  "path": "$.InformationDeath.DeathPlace"
+                  "path": "$.InformationDeath.placeofDeath"
                 }
               },
               {
