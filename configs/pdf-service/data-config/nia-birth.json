@@ -1,0 +1,269 @@
+{
+  "key": "nia-birth-certificate",
+  "DataConfigs": {
+    "serviceName": "rainmaker-common",
+    "version": "1.0.0",
+    "baseKeyPath": "$.NacCertificate.*",
+    "entityIdPath":"$.id",
+    "isCommonTableBorderRequired": true,
+    "mappings": [
+      {
+        "topic": "common-pdf-generation-3",
+        "mappings": [
+          {
+            "direct": [
+              {
+                "variable": "nia",
+                "value": {
+                  "path": "PDF_NIA_CERTIFICATE"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "certify",
+                "value": {
+                  "path": "PDF_NIA_CERTIFY"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "enquiry",
+                "value": {
+                  "path": "PDF_NIA_CERTIFY_ENQUIRY"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "applicantNameEn",
+                "value": {
+                  "path": "$.applicantnameen"
+                }
+              },
+              {
+                "variable": "relating-to-birth",
+                "value": {
+                  "path": "PDF_NIA_RELATING_TO_THE_BIRTH"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "application",
+                "value": {
+                  "path": "PDF_NIA_APPLICATION"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "date-of-birth",
+                "value": {
+                  "path": "PDF_NIA_DATE_OF_BIRTH"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "name-child",
+                "value": {
+                  "path": "PDF_NIA_NAME_OF_CHILD"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "address-en",
+                "value": {
+                  "path": "PDF_NIA_ADDRESS"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "place-of-birth",
+                "value": {
+                  "path": "PDF_NIA_DETAILS_BIRTH"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "son-daughter",
+                "value": {
+                  "path": "PDF_NAC_SON_DAUGHTER"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "not-registered",
+                "value": {
+                  "path": "PDF_NAC_NOT_REGISTERED"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "application-no",
+                "value": {
+                  "path": "$.ackNo"
+                }
+              },
+              {
+                "variable": "birth-date",
+                "value": {
+                  "path": "$.dateofbirth"
+                }
+              },
+              {
+                "variable": "name-of-child",
+                "value": {
+                  "path": "$.childnameen"
+                }
+              },
+              {
+                "variable": "fatherName",
+                "value": {
+                  "path": "$.fathernameen"
+                }
+              },
+              {
+                "variable": "motherName",
+                "value": {
+                  "path": "$.mothernameen"
+                }
+              },
+              {
+                "variable": "address",
+                "value": {
+                  "path": "$.permAddress"
+                }
+              },
+              {
+                "variable": "place",
+                "value": {
+                  "path": "$.birthplaceen"
+                }
+              },
+              {
+                "variable": "date-en",
+                "value": {
+                  "path": "PDF_NAC_DATE"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "signature-en",
+                "value": {
+                  "path": "PDF_NAC_SIGNATURE"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "seal-en",
+                "value": {
+                  "path": "PDF_NAC_SEAL"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "date",
+                "value": {
+                  "path": "$.currentDate"
+                }
+              },
+              {
+                "variable": "signature",
+                "value": {
+                  "path": "$.signature"
+                }
+              },
+              {
+                "variable": "seal",
+                "value": {
+                  "path": "$.seal"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
