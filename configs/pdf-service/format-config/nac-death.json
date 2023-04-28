@@ -1,5 +1,5 @@
 {
-  "key": "nac-death-certificate",
+  "key": "death-naccertificate",
   "config": {
     "defaultStyle": {
       "font": "Cambay"
@@ -7,14 +7,38 @@
     },
     "watermark": {
       "text": "IKM DEMO",
-      "color": "gery",
+      "color": "grey",
       "opacity": 0.1,
-      "bold": true,
+      "bold": false,
       "italics": false
     },
     "content": [
+      {	
+	      
+        "style": "ws-head",
+        "table": {
+          "widths": [
+            "48%",
+            "20%",
+            "20%"
+          ],
+          "body": [
+            [
+              {
+                "stack": [
+                  {
+                    "text": "KeyNo : {{certificateNo}}",
+                    "style": "appendix-header-serialNo"
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        "layout": "noBorders"
+       },
       {
-        "style": "nac-head",
+        "style": "ws-head",
         "table": {
           "widths": [
            "*"
@@ -28,29 +52,14 @@
                     "style": "appendix-header-body"
                   },
                   {
-                    "text": "{{nac}}",
-                    "style": "main-body-style"
-                  }
-                ]
-              }
-            ]
-          ]
-        },
-        "layout": "noBorders"
-      },
-      {
-        "style": "nac-sub-head",
-        "table": {
-          "widths": [
-            "*"
-          ],
-          "body": [
-            [
-              {
-                "stack": [
+                    "text": "{{nac-death}}",
+                    "style": "main-body-style",
+                    "margin": 0
+                  },
                   {
                     "text": "{{issueUnderSection171969}}",
-                    "style": "rule-header"
+                    "style": "rule-header",
+                    "margin": 0
                   }
                 ]
               }
@@ -60,7 +69,7 @@
         "layout": "noBorders"
       },
       {
-        "style": "nac-sub-head",
+        "style": "nac-body",
         "table": {
           "widths": [
             "*"
@@ -70,7 +79,17 @@
               {
                 "stack": [
                   {
-                    "text": "{{certify}} a search has been made on the request of Shri./Smt./Kum {{applicantNameEn}} son/wife/daughter of {{careOf}} in the registration records for the year (s) {{period}} relating to (Local area) {{localAreaEn}} of(Tehsil) {{Tehsil}} of (District) {{district}} of (State) {{state}} and found that the event relating to the death of {{childName}} Son / daughter of {{motherName}} was not registered.",
+                    "text": "{{certify}}",
+                    "style": "details-body-center",
+                    "margin": [
+                      58,
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "text": "{{applicantNameEn}} {{son/wife}} {{careOf}} {{registration-year}} {{period}} {{relating-to}} {{localAreaEn}} {{of-tehsil}} {{tehsil}} {{of-district}} {{district}} {{of-state}} Kerala {{event-death}} {{fName}} {{MName}} {{LName}} {{son-daughter}} {{motherName}} {{not-registered}}",
                     "style": "details-body-center"
                   }
                 ]
@@ -81,7 +100,7 @@
         "layout": "noBorders"
       },
       {
-        "style": "nac-sub-head",
+        "style": "nac-bottom-left",
         "table": {
           "widths": [
             "*"
@@ -91,7 +110,7 @@
               {
                 "stack": [
                   {
-                    "text": "Date {{date}}",
+                    "text": "{{date-en}} {{issueDate}}",
                     "style": "details-body-left"
                   }
                 ]
@@ -102,7 +121,7 @@
         "layout": "noBorders"
       },
       {
-        "style": "nac-sub-head",
+        "style": "nac-bottom-right",
         "table": {
           "widths": [
             "*"
@@ -112,12 +131,17 @@
               {
                 "stack": [
                   {
-                    "text": "Signature of issuing authority {{signature}}",
-                    "style": "details-body-right"
+                    "text": "{{signature-en}}",
+                    "style": "details-body-right-up"
+                  },
+                 
+                  {
+                    "text": "Registrar of Births and Deaths, {{localBodyName}}",
+                    "style": "details-body-right-downn"
                   },
                   {
-                    "text": "Seal {{seal}}",
-                    "style": "details-body-right"
+                    "text": "{{seal-en}}",
+                    "style": "details-body-right-down"
                   }
                 ]
               }
@@ -128,12 +152,28 @@
       }
     ],
     "styles": {
-      "nac-head": {
+      "nac-body": {
         "margin": [
-          -25,
-          -30,
+          0,
+          0,
           0,
           1
+        ]
+      },
+      "nac-bottom-left": {
+        "margin": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "nac-bottom-right": {
+        "margin": [
+          0,
+          0,
+          0,
+          0
         ]
       },
       "appendix-header-body": {
@@ -141,19 +181,19 @@
         "fontSize": 10,
         "letterSpacing": 0.74,
         "alignment": "center",
-        "padding-top": "0%"
+        "fontWeight": 400,
+        "margin": 0
       },
       "main-body-style": {
         "color": "#000000",
         "fontSize": 10,
         "alignment": "center",
         "letterSpacing": 0.74,
-        "padding-top": "0%",
         "margin": [
           0,
           0,
           0,
-          3
+          0
         ]
       },
       "rule-header": {
@@ -162,31 +202,85 @@
         "fontSize": 10,
         "alignment": "center",
         "letterSpacing": 0.74,
-        "padding-top": "0%",
         "margin": [
           0,
           0,
           0,
-          3
+          20
         ]
       },
       "details-body-center": {
         "color": "#000000",
         "bold": false,
-        "fontSize": 13
+        "fontSize": 13,
+        "paragraph": true,
+        "margin": [
+          0,
+          0,
+          0,
+          0
+        ]
       },
       "details-body-left": {
         "color": "#000000",
         "bold": false,
         "fontSize": 13,
         "alignment": "left",
-        "padding-top": "20%"
+        "margin": [
+          10,
+          20,
+          0,
+          0
+        ]
       },
-      "details-body-right": {
+      "details-body-right-up": {
         "color": "#000000",
         "bold": false,
         "fontSize": 13,
-        "alignment": "right"
+        "alignment": "right",
+        "margin": [
+          70,
+          -25,
+          0,
+          0
+        ]
+      },
+      "details-body-right-down": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 13,
+        "alignment": "right",
+        "margin": [
+          20,
+          0,
+          142,
+          0
+        ]
+      },
+      "appendix-header-serialNo": {
+        "color": "#000000",
+        "bold": true,
+        "italics": true,
+        "font": "Times",
+        "fontSize": 8,
+        "margin": [
+          0,
+          -5,
+          0,
+          0
+        ]
+      },
+      "details-body-right-downn": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 13,
+        "alignment": "right",
+        "margin": [
+          20,
+          0,
+          5,
+          0
+        ]
       }
     }
   }

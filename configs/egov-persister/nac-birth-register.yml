@@ -8,57 +8,70 @@ serviceMaps:
       queryMaps:
         - query: INSERT INTO public.eg_birth_nac_registry(id, registrationno, birthdetailsid, applicant_name_en, care_of_applicant_name_en, child_name_en, mother_name_en, dateofbirth, birth_place_en,
             birth_districtid, birth_stateid, birth_villageid, birth_talukid, createdby, createdtime, lastmodifiedtime, lastmodifiedby, applicationtype, filestoreid, status, additionaldetail,
-            embeddedurl, dateofissue, tenantid, certificateno)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?,?);
-          basePath: NacBirthCertificate.*
+            embeddedurl, dateofissue, tenantid, certificateno,dateofreport,ack_no,registration_date,registration_status,father_name_en,perm_address)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?,?,?,?,?,?,?, ?, ?);
+          basePath: RegisterNac.*
           jsonMaps:
-            - jsonPath: $.NacBirthCertificate.*.id
+            - jsonPath: $.RegisterNac.*.id
 
-            - jsonPath: $.NacBirthCertificate.*.registrationno
+            - jsonPath: $.RegisterNac.*.registrationno
 
-            - jsonPath: $.NacBirthCertificate.*.birthdetailsid
+            - jsonPath: $.RegisterNac.*.birthdetailsid
 
-            - jsonPath: $.NacBirthCertificate.*.applicant_name_en
+            - jsonPath: $.RegisterNac.*.applicantnameen
 
-            - jsonPath: $.NacBirthCertificate.*.care_of_applicant_name_en
+            - jsonPath: $.RegisterNac.*.careofapplicantnameen
 
-            - jsonPath: $.NacBirthCertificate.*.child_name_en
+            - jsonPath: $.RegisterNac.*.childnameen
 
-            - jsonPath: $.NacBirthCertificate.*.mother_name_en
+            - jsonPath: $.RegisterNac.*.mothernameen
 
-            - jsonPath: $.NacBirthCertificate.*.dateofbirth
+            - jsonPath: $.RegisterNac.*.dateofbirth
 
-            - jsonPath: $.NacBirthCertificate.*.birth_place_en
+            - jsonPath: $.RegisterNac.*.birthplaceen
 
-            - jsonPath: $.NacBirthCertificate.*.birth_districtid
+            - jsonPath: $.RegisterNac.*.birthdistrictid
 
-            - jsonPath: $.NacBirthCertificate.*.birth_villageid
+            - jsonPath: $.RegisterNac.*.birthvillageid
 
-            - jsonPath: $.NacBirthCertificate.*.birth_stateid
+            - jsonPath: $.RegisterNac.*.birthstateid
 
-            - jsonPath: $.NacBirthCertificate.*.birth_talukid
+            - jsonPath: $.RegisterNac.*.birthtalukid
 
-            - jsonPath: $.NacBirthCertificate.*.createdby
+            - jsonPath: $.RegisterNac.*.auditDetails.createdBy
 
-            - jsonPath: $.NacBirthCertificate.*.createdtime
+            - jsonPath: $.RegisterNac.*.auditDetails.createdTime
 
-            - jsonPath: $.NacBirthCertificate.*.lastmodifiedtime
+            - jsonPath: $.RegisterNac.*.auditDetails.lastModifiedTime
 
-            - jsonPath: $.NacBirthCertificate.*.lastmodifiedby
+            - jsonPath: $.RegisterNac.*.auditDetails.lastModifiedBy  
 
-            - jsonPath: $.NacBirthCertificate.*.applicationtype
+            - jsonPath: $.RegisterNac.*.applicationtype
 
-            - jsonPath: $.NacBirthCertificate.*.filestoreid
+            - jsonPath: $.RegisterNac.*.filestoreid
 
-            - jsonPath: $.NacBirthCertificate.*.status
+            - jsonPath: $.RegisterNac.*.status
 
-            - jsonPath: $.NacBirthCertificate.*.additionaldetail
+            - jsonPath: $.RegisterNac.*.additionaldetail
 
-            - jsonPath: $.NacBirthCertificate.*.embeddedurl
+            - jsonPath: $.RegisterNac.*.embeddedurl
 
-            - jsonPath: $.NacBirthCertificate.*.dateofissue
+            - jsonPath: $.RegisterNac.*.dateofissue
 
-            - jsonPath: $.NacBirthCertificate.*.tenantid
+            - jsonPath: $.RegisterNac.*.tenantid
 
-            - jsonPath: $.NacBirthCertificate.*.certificateno
+            - jsonPath: $.RegisterNac.*.certificateno
+            
+            - jsonPath: $.RegisterNac.*.dateofreport
+            
+            - jsonPath: $.RegisterNac.*.ack_no
+            
+            - jsonPath: $.RegisterNac.*.registration_date
+            
+            - jsonPath: $.RegisterNac.*.registration_status
+            
+            - jsonPath: $.RegisterNac.*.fathernameen
+            
+            - jsonPath: $.RegisterNac.*.permenantAddDetails
+
 
