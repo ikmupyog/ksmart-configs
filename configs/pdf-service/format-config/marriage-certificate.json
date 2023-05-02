@@ -7,8 +7,8 @@
       "background":{"color": "gery",
       "opacity": 0.1,"image":"src/images/kerala-government-seeklogo-1.png",
       "width": 550,
-       "height": 400,
-      "absolutePosition": {"x": 20, "y": 200}
+       
+      "absolutePosition": {"x": 20, "y": 180}
     },
       "content": [
           {
@@ -59,7 +59,7 @@
                                 "style": "main-header-bold"
                               },
                               {
-                                "text": "SeeRule11",
+                                "text": "{{seeRule11}}",
                                 "style": "sub-header-italic"
                               }]},
                               {
@@ -134,8 +134,7 @@
             "table": {
                 "widths": [
                     
-                        "30%",
-                        "70%"
+                       "*"
                         
                     
                 ],
@@ -147,17 +146,23 @@
                             "columns": [
                                 {
                                     "text": "Certificate No.",
-                                    "style" : "table-text-label-normal"
+                                    "style" : "table-text-label-normal",
+                                    "alignment":"left",
+                                    "width": "13%"
                                     
                                   },
                 
                                   {
                                     "text": "{{certificateNo}}",
                                    
-                                    "style":"table-column-text-value"
+                                    "style":"table-column-text-value",
+                                    "alignment":"left",
+                                    "width": "87%"
                                   }
-                                ]}]]},
-                                "layout": "noBorders"},
+                                ],"alignment":"left"}]]},
+                                "layout": "noBorders",
+                              "alignment":"left",
+                            "margin":[5,5,5,5]},
         {
             "style": "ws-head",
             "table": {
@@ -207,13 +212,13 @@
                                             0,
                                             0,
                                             0,
-                                            0
+                                            5
                                           ]
                                     },
                                     {
                                     "image": "{{groomPhoto}}",
-                                    "width": 70,
-                                    "height": 70
+                                    "width": 90,
+                                    "height": 90
                                 }
                                 ],"alignment" : "center"
                                 
@@ -226,11 +231,11 @@
                                      "stack":[
                                     {
                                     "text": "Date of Marriage  : ",
-                                    "style": "column-text-normal"
+                                    "style": "column-text-bold"
                                     },
                                     {
                                         "text": "Place of Marriage  : ",
-                                    "style": "column-text-normal"
+                                    "style": "column-text-bold"
                                     }
 
                                 ],"alignment": "right",
@@ -269,11 +274,17 @@
                                     {
                                         "text": "Wife Details",
                                         "style": "column-headertext-italics-normal",
-                                        "decoration": "underline"
+                                        "decoration": "underline",
+                                        "margin": [
+                                          0,
+                                          0,
+                                          0,
+                                          5
+                                        ]
                                     },{
                                     "image": "{{bridePhoto}}",
-                                    "width": 70,
-                                    "height": 70
+                                    "width": 90,
+                                    "height": 90
                                 }],"alignment" : "center"
                                 , "margin":[ 
                                 5,
@@ -293,7 +304,7 @@
             "layout": "noBorders",
             "margin":[ 
                     20,
-                0,
+                5,
                 20,
                 0]
         },
@@ -319,7 +330,12 @@
                   ]
               },
               "layout": "noBorders",
-              "alignment" : "center"
+              "alignment" : "center",
+              "margin":[ 
+                    0,
+                5,
+                0,
+                5]
           },
          
         {
@@ -669,15 +685,15 @@
 
           {
             "text": "{{dateOfIssueInWords}}",
-            "style" : "table-text-value",
+            "style" : "table-text-value-dateword",
             "alignment":"left",
-            "width": "29%"
+            "width": "45%"
           },
           {
             "text": "",
             "style" : "table-text-value",
             "alignment":"right",
-            "width": "20%"
+            "width": "10%"
           },{
             "text": "",
             "alignment":"left",
@@ -688,7 +704,7 @@
             "text": "",
             "style" : "table-text-value",
             "alignment":"left",
-            "width": "29%"
+            "width": "13%"
           }
       ],
       "margin":[
@@ -829,6 +845,7 @@
           },
           "main-header-bold": {
               "color": "#000000",
+              "bold":true,
               "fontSize": 11,
               "fontWeight": 400,
               "alignment": "center"
@@ -1214,6 +1231,19 @@
             ]
             
           },
+          "column-text-bold": {
+            "color": "#000000",
+            "bold": true,
+            "fontSize": 10,
+            "fontWeight": "normal",
+            "margin": [
+                0,
+                5,
+                0,
+                0
+            ]
+            
+          },
           "column-headertext-normal": {
             "color": "#000000",
             "bold": false,
@@ -1286,10 +1316,17 @@
             "italics": false,
             "bold":false,
             "alignment": "left"
+          },
+          "table-text-value-dateword":{
+
+            "fontSize": 9,
+            "fontWeight": "200",
+            "italics": false,
+            "bold":false,
+            "alignment": "left"
           }
-         
-      }
-  },
-  "footer": "(function(currentPage, pageCount) { return currentPage.toString() + ' of ' + pageCount; })"
+      },
+      "footer": "(function(currentPage, pageCount) { return [{'columns': [{'text': currentPage.toString() + ' of ' + pageCount ,'alignment':'center'}]}] })"
+  }
 
 }

@@ -3,7 +3,7 @@
   "DataConfigs": {
     "serviceName": "rainmaker-common",
     "version": "1.0.0",
-    "baseKeyPath": "$.NacBirthCertificate.*",
+    "baseKeyPath": "$.NacCertificate.*",
     "entityIdPath": "$.id",
     "isCommonTableBorderRequired": true,
     "mappings": [
@@ -13,61 +13,291 @@
           {
             "direct": [
               {
-                "variable": "logokerala",
-                "url": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
-                "type": "image"
-              },
-              {
-                "variable": "logobirth",
-                "url": "https://ulb-logos.s3.ap-south-1.amazonaws.com/birth_death_logo.jpg",
-                "type": "image"
-              },
-              {
-                "variable": "form5",
+                "variable": "form10",
                 "value": {
-                  "path": "PDF_BIRTH_FORM_NO_5"
+                  "path": "PDF_NAC_FORM_10"
                 },
                 "type": "label",
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-pdf",
+                  "module": "rainmaker-common",
                   "locale": "en_IN"
                 }
               },
               {
-                "variable": "rule8",
+                "variable": "rule13",
                 "value": {
-                  "path": "PDF_BIRTH_LAST_RULE_8"
+                  "path": "PDF_NAC_RULE_13"
                 },
                 "type": "label",
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-pdf",
+                  "module": "rainmaker-common",
                   "locale": "en_IN"
                 }
               },
               {
-                "variable": "govtOfKerala",
+                "variable": "nac-birth",
                 "value": {
-                  "path": "PDF_BIRTH_GOVERNMENT_OF_KERALA"
+                  "path": "PDF_NAC_BIRTH_CERTIFICATE"
                 },
                 "type": "label",
                 "localisation": {
                   "required": true,
                   "prefix": null,
-                  "module": "rainmaker-pdf",
+                  "module": "rainmaker-common",
                   "locale": "en_IN"
                 }
               },
               {
-                "qrcodeConfig": [
-                  {
-                    "variable": "qr_code_image",
-                    "value": "$.embeddedUrl"
-                  }
-                ]
+                "variable": "issueUnderSection171969",
+                "value": {
+                  "path": "PDF_NAC_ISSUED_UNDER_SECTION_17_1969"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": true,
+                  "prefix": null,
+                  "module": "rainmaker-common",
+                  "locale": "en_IN"
+                }
+              },
+              {
+                "variable": "certify",
+                "value": {
+                  "path": "PDF_NAC_CERTIFY"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": true,
+                  "prefix": null,
+                  "module": "rainmaker-common",
+                  "locale": "en_IN"
+                }
+              },
+              {
+                "variable": "son/wife",
+                "value": {
+                  "path": "PDF_NAC_SON_WIFE_DAUGHTER"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": true,
+                  "prefix": null,
+                  "module": "rainmaker-common",
+                  "locale": "en_IN"
+                }
+              },
+              {
+                "variable": "registration-year",
+                "value": {
+                  "path": "PDF_NAC_REGISTRATION_YEAR"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": true,
+                  "prefix": null,
+                  "module": "rainmaker-common",
+                  "locale": "en_IN"
+                }
+              },
+              {
+                "variable": "relating-to",
+                "value": {
+                  "path": "PDF_NAC_LOCALAREA"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": true,
+                  "prefix": null,
+                  "module": "rainmaker-common",
+                  "locale": "en_IN"
+                }
+              },
+              {
+                "variable": "of-tehsil",
+                "value": {
+                  "path": "PDF_NAC_TEHSIL"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": true,
+                  "prefix": null,
+                  "module": "rainmaker-common",
+                  "locale": "en_IN"
+                }
+              },
+              {
+                "variable": "of-district",
+                "value": {
+                  "path": "PDF_NAC_DISTRICT"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": true,
+                  "prefix": null,
+                  "module": "rainmaker-common",
+                  "locale": "en_IN"
+                }
+              },
+              {
+                "variable": "of-state",
+                "value": {
+                  "path": "PDF_NAC_STATE"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": true,
+                  "prefix": null,
+                  "module": "rainmaker-common",
+                  "locale": "en_IN"
+                }
+              },
+              {
+                "variable": "event-birth",
+                "value": {
+                  "path": "PDF_NAC_EVENT_BIRTH"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": true,
+                  "prefix": null,
+                  "module": "rainmaker-common",
+                  "locale": "en_IN"
+                }
+              },
+              {
+                "variable": "son-daughter",
+                "value": {
+                  "path": "PDF_NAC_SON_DAUGHTER"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": true,
+                  "prefix": null,
+                  "module": "rainmaker-common",
+                  "locale": "en_IN"
+                }
+              },
+              {
+                "variable": "not-registered",
+                "value": {
+                  "path": "PDF_NAC_NOT_REGISTERED"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": true,
+                  "prefix": null,
+                  "module": "rainmaker-common",
+                  "locale": "en_IN"
+                }
+              },
+              {
+                "variable": "careOf",
+                "value": {
+                  "path": "$.careofapplicantnameen"
+                }
+              },
+              {
+                "variable": "period",
+                "value": {
+                  "path": "$.period"
+                }
+              },
+              {
+                "variable": "applicantNameEn",
+                "value": {
+                  "path": "$.applicantnameen"
+                }
+              },
+              {
+                "variable": "localAreaEn",
+                "value": {
+                  "path": "$.birthplaceen"
+                }
+              },
+              {
+                "variable": "childName",
+                "value": {
+                  "path": "$.childnameen"
+                }
+              },
+              {
+                "variable": "motherName",
+                "value": {
+                  "path": "$.mothernameen"
+                }
+              },
+              {
+                "variable": "tehsil",
+                "value": {
+                  "path": "$.tenantTaluk"
+                }
+              },
+              {
+                "variable": "district",
+                "value": {
+                  "path": "$.tenantDistrict"
+                }
+              },
+              {
+                "variable": "state",
+                "value": {
+                  "path": "$.tenantState"
+                }
+              },
+              {
+                "variable": "date-en",
+                "value": {
+                  "path": "PDF_NAC_DATE"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": true,
+                  "prefix": null,
+                  "module": "rainmaker-common",
+                  "locale": "en_IN"
+                }
+              },
+              {
+                "variable": "signature-en",
+                "value": {
+                  "path": "PDF_NAC_SIGNATURE"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": true,
+                  "prefix": null,
+                  "module": "rainmaker-common",
+                  "locale": "en_IN"
+                }
+              },
+              {
+                "variable": "seal-en",
+                "value": {
+                  "path": "PDF_NAC_SEAL"
+                },
+                "type": "label",
+                "localisation": {
+                  "required": true,
+                  "prefix": null,
+                  "module": "rainmaker-common",
+                  "locale": "en_IN"
+                }
+              },
+              {
+                "variable": "date",
+                "value": {
+                  "path": "$.currentDate"
+                }
+              },
+              {
+                "variable": "seal",
+                "value": {
+                  "path": "$.seal"
+                }
               }
             ]
           }

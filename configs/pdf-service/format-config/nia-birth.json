@@ -1,9 +1,10 @@
 {
-  "key": "death-naccertificate",
+  "key": "nia-birth-certificate",
   "config": {
     "defaultStyle": {
-      "font": "Cambay"
-
+      "font": "Cambay",
+      "width": "max-content",
+      "height": "max-content"
     },
     "watermark": {
       "text": "IKM DEMO",
@@ -13,53 +14,19 @@
       "italics": false
     },
     "content": [
-      {	
-	      
-        "style": "ws-head",
-        "table": {
-          "widths": [
-            "48%",
-            "20%",
-            "20%"
-          ],
-          "body": [
-            [
-              {
-                "stack": [
-                  {
-                    "text": "KeyNo : {{certificateNo}}",
-                    "style": "appendix-header-serialNo"
-                  }
-                ]
-              }
-            ]
-          ]
-        },
-        "layout": "noBorders"
-       },
       {
         "style": "ws-head",
         "table": {
           "widths": [
-           "*"
+            "*"
           ],
           "body": [
             [
               {
                 "stack": [
                   {
-                    "text": "{{form10}}{{rule13}}",
-                    "style": "appendix-header-body"
-                  },
-                  {
-                    "text": "{{nac-death}}",
-                    "style": "main-body-style",
-                    "margin": 0
-                  },
-                  {
-                    "text": "{{issueUnderSection171969}}",
-                    "style": "rule-header",
-                    "margin": 0
+                    "text": "{{nia}}",
+                    "style": "main-body-style"
                   }
                 ]
               }
@@ -69,7 +36,7 @@
         "layout": "noBorders"
       },
       {
-        "style": "nac-body",
+        "style": "nia-body",
         "table": {
           "widths": [
             "*"
@@ -80,16 +47,10 @@
                 "stack": [
                   {
                     "text": "{{certify}}",
-                    "style": "details-body-center",
-                    "margin": [
-                      58,
-                      0,
-                      0,
-                      0
-                    ]
+                    "style": "details-body-line1"
                   },
                   {
-                    "text": "{{applicantNameEn}} {{son/wife}} {{careOf}} {{registration-year}} {{period}} {{relating-to}} {{localAreaEn}} {{of-tehsil}} {{tehsil}} {{of-district}} {{district}} {{of-state}} Kerala {{event-death}} {{fName}} {{MName}} {{LName}} {{son-daughter}} {{motherName}} {{not-registered}}",
+                    "text": "{{enquiry}} {{applicantNameEn}} {{relating-to-birth}} {{application-no}} {{application}} {{birth-date}} {{date-of-birth}} {{name-of-child}} {{name-child}} {{son-daughter}} {{fatherName}} and {{motherName}} {{address}} {{address-en}} {{place}} {{place-of-birth}}",
                     "style": "details-body-center"
                   }
                 ]
@@ -99,8 +60,9 @@
         },
         "layout": "noBorders"
       },
+
       {
-        "style": "nac-bottom-left",
+        "style": "nia-bottom-left",
         "table": {
           "widths": [
             "*"
@@ -110,7 +72,7 @@
               {
                 "stack": [
                   {
-                    "text": "{{date-en}} {{issueDate}}",
+                    "text": "{{date-en}} {{date}}",
                     "style": "details-body-left"
                   }
                 ]
@@ -121,7 +83,7 @@
         "layout": "noBorders"
       },
       {
-        "style": "nac-bottom-right",
+        "style": "nia-bottom-right",
         "table": {
           "widths": [
             "*"
@@ -134,13 +96,12 @@
                     "text": "{{signature-en}}",
                     "style": "details-body-right-up"
                   },
-                 
                   {
-                    "text": "Registrar of Births and Deaths, {{localBodyName}}",
+                    "text": "Registrar of Births and Deaths, {{place}}",
                     "style": "details-body-right-downn"
                   },
                   {
-                    "text": "{{seal-en}}",
+                    "text": "{{seal-en}} {{seal}}",
                     "style": "details-body-right-down"
                   }
                 ]
@@ -152,7 +113,7 @@
       }
     ],
     "styles": {
-      "nac-body": {
+      "nia-body": {
         "margin": [
           0,
           0,
@@ -160,7 +121,7 @@
           1
         ]
       },
-      "nac-bottom-left": {
+      "nia-bottom-left": {
         "margin": [
           0,
           0,
@@ -168,7 +129,15 @@
           0
         ]
       },
-      "nac-bottom-right": {
+      "details-body-line1": {
+        "margin": [
+          120,
+          50,
+          0,
+          0
+        ]
+      },
+      "nia-bottom-right": {
         "margin": [
           0,
           0,
@@ -186,7 +155,7 @@
       },
       "main-body-style": {
         "color": "#000000",
-        "fontSize": 10,
+        "fontSize": 13,
         "alignment": "center",
         "letterSpacing": 0.74,
         "margin": [
@@ -254,19 +223,6 @@
           20,
           0,
           142,
-          0
-        ]
-      },
-      "appendix-header-serialNo": {
-        "color": "#000000",
-        "bold": true,
-        "italics": true,
-        "font": "Times",
-        "fontSize": 8,
-        "margin": [
-          0,
-          -5,
-          0,
           0
         ]
       },
