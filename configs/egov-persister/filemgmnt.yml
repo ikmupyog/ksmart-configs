@@ -578,7 +578,7 @@ serviceMaps:
      - query: >
          INSERT INTO eg_fm_certificatedetail(id, tenantid, businessservice, certificateno, certificatestatus, applicantpersonalid
            , filestoreid, dateofissue, createdby, createdtime, lastmodifiedby, lastmodifiedtime) 
-         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ;
 
        basePath: CertificateDetails.*
        jsonMaps:
@@ -608,270 +608,499 @@ serviceMaps:
 
   - version: 1.0
     description: Persists arising file  details in egov_filemgmnt database, eg_fm_arisingfile table
-    fromTopic: save-fm-arisingfiledetails
+    fromTopic: save-fm-arisingfile
     isTransaction: true
     queryMaps:
-      - query: INSERT INTO public.eg_fm_arisingfile(id, tenantid, filenumber, filecode, filearisingmode, filearisingdate, financialyear, workflowcode, businessservice, assignee, action, filestatus, createdby, createdtime, lastmodifiedby, lastmodifiedtime)VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
-        basePath: ArisingFile.*
-        jsonMaps:
-        - jsonPath: $.ArisingFile.*.id
+    - query: >
+        INSERT INTO public.eg_fm_arisingfile(id, tenantid, filecode, filearisingmode, filearisingdate, financialyear, 
+        workflowcode, businessservice, assignee, action, filestatus, createdby, createdtime, lastmodifiedby, lastmodifiedtime,
+        serviceid, subject, applicationdetails)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ;
+        
+      basePath: ArisingFile
+      jsonMaps:
+      - jsonPath: $.ArisingFile.id
 
-        - jsonPath: $.ArisingFile.*.tenantId 
+      - jsonPath: $.ArisingFile.tenantId   
+            
+      - jsonPath: $.ArisingFile.fileCode 
+    
+      - jsonPath: $.ArisingFile.fileArisingMode 
+    
+      - jsonPath: $.ArisingFile.fileArisingDate 
+     
+      - jsonPath: $.ArisingFile.year
       
-        - jsonPath: $.ArisingFile.*.fileNumber 
+      - jsonPath: $.ArisingFile.workflowCode
       
-        - jsonPath: $.ArisingFile.*.fileCode 
+      - jsonPath: $.ArisingFile.businessService
       
-        - jsonPath: $.ArisingFile.*.fileArisingMode 
+      - jsonPath: $.ArisingFile.assignee
       
-        - jsonPath: $.ArisingFile.*.fileArisingDate 
-       
-        - jsonPath: $.ArisingFile.*.Year
-        
-        - jsonPath: $.ArisingFile.*. workflowCode
-        
-        - jsonPath: $.ArisingFile.*. businessService
-        
-        - jsonPath: $.ArisingFile.*.assignee
-        
-        - jsonPath: $.ArisingFile.*.action
-        
-        - jsonPath: $.ArisingFile.*.fileStatus
-        
-        - jsonPath: $.ArisingFile.*.auditDetails.createdBy
+      - jsonPath: $.ArisingFile.action
+      
+      - jsonPath: $.ArisingFile.fileStatus      
+             
+      - jsonPath: $.ArisingFile.auditDetails.createdBy
 
-        - jsonPath: $.ArisingFile.*.auditDetails.createdTime
-        
-        - jsonPath: $.ArisingFile.*.auditDetails.lastModifiedBy
+      - jsonPath: $.ArisingFile.auditDetails.createdTime
+      
+      - jsonPath: $.ArisingFile.auditDetails.lastModifiedBy
 
-        - jsonPath: $.ArisingFile.*.auditDetails.lastModifiedTime      
+      - jsonPath: $.ArisingFile.auditDetails.lastModifiedTime       
+      
+      - jsonPath: $.ArisingFile.serviceId
+
+      - jsonPath: $.ArisingFile.title
+
+      - jsonPath: $.ArisingFile.description
+
+    - query: >
+        INSERT INTO public.eg_fm_arisingfileapplicantdetails(id, tenantid, arisingfileid, filecode, applicanttype, firstname, 
+        middlename, lastname, mobileno, whatsappno, emailid, wardno, doorno, doorsubno, streetname, localplace, mainplace, 
+        city, pincode, documenttypeid, documentno, documentfilestoreid, institutionname, officername, designation, 
+        createdby, createdtime, lastmodifiedby, lastmodifiedtime, housename)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ;
+         
+      basePath: ArisingFile.arisingFileApplicant
+      jsonMaps:
+      - jsonPath: $.ArisingFile.arisingFileApplicant.id
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.tenantId
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.arisingFileId
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.fileCode
+      
+      - jsonPath: $.ArisingFile.arisingFileApplicant.applicantType
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.firstName
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.middleName
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.lastName
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.mobileNo
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.whatsappNo
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.emailId
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.wardNo
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.doorNo
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.doorSubNo           
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.streetName
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.localPlace
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.mainPlace
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.cityName
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.pinCode
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.documentTypeId
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.documentNumber
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.documentFileStoreId
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.institutionName
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.officerName
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.designation
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.auditDetails.createdBy
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.auditDetails.createdTime
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.auditDetails.lastModifiedBy
+
+      - jsonPath: $.ArisingFile.arisingFileApplicant.auditDetails.lastModifiedTime 
+      
+      - jsonPath: $.ArisingFile.arisingFileApplicant.houseName          
 
   - version: 1.0
     description: Update arising file  details in egov_filemgmnt database, eg_fm_arisingfile table
-    fromTopic: update-fm-arisingfiledetails
+    fromTopic: update-fm-arisingfile
     isTransaction: true
     queryMaps:
-        - query: UPDATE public.eg_fm_arisingfile  SET  filenumber=?, filearisingmode=?, filearisingdate=?, financialyear=?, workflowcode=?, businessservice=?, assignee=?, action=?, filestatus=? WHERE filecode = ?;
-          basePath: ArisingFile.*
-          jsonMaps:
+    - query: UPDATE public.eg_fm_arisingfile  SET  filearisingmode=?, filearisingdate=?, financialyear=?, workflowcode=?, businessservice=?, assignee=?, action=?, filestatus=? WHERE filecode = ?;
+      basePath: arisingFile
+      jsonMaps:
+      - jsonPath: $.arisingFile.fileArisingMode
 
-            - jsonPath: $.ArisingFile.*.fileNumber
+      - jsonPath: $.arisingFile.fileArisingDate
 
-            - jsonPath: $.ArisingFile.*.fileArisingMode
+      - jsonPath: $.arisingFile.year
 
-            - jsonPath: $.ArisingFile.*.fileArisingDate
+      - jsonPath: $.arisingFile.workflowCode
 
-            - jsonPath: $.ArisingFile.*.Year
+      - jsonPath: $.arisingFile.businessService
 
-            - jsonPath: $.ArisingFile.*. workflowCode
+      - jsonPath: $.arisingFile.assignee
 
-            - jsonPath: $.ArisingFile.*. businessService
+      - jsonPath: $.arisingFile.action
 
-            - jsonPath: $.ArisingFile.*.assignee
+      - jsonPath: $.arisingFile.fileStatus
 
-            - jsonPath: $.ArisingFile.*.action
-
-            - jsonPath: $.ArisingFile.*.fileStatus
-
-            - jsonPath: $.ArisingFile.*.fileCode
-
+      - jsonPath: $.arisingFile.fileCode
 
   - version: 1.0
     description: Save drafting details in egov_filemgmnt database, eg_fm_drafting table
-    fromTopic: save_fm_drafting
+    fromTopic: save-fm-draftfile
     isTransaction: true
     queryMaps:
-      - query: INSERT INTO public.eg_fm_drafting(id, tenantid, businessservice, modulename, filecode, drafttype, drafttext, assigner, filestoreid, status, createdby, createdtime, lastmodifiedby, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
-        basePath: Drafting.*
-        jsonMaps:
+    - query: INSERT INTO public.eg_fm_drafting(id, tenantid, businessservice, modulename, filecode, drafttype, drafttext, assigner, filestoreid, status, createdby, createdtime, lastmodifiedby, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+      basePath: DraftFiles.*
+      jsonMaps:
+      - jsonPath: $.DraftFiles.*.uuid
 
-          - jsonPath: $.Drafting.*.uuid
+      - jsonPath: $.DraftFiles.*.tenantId
 
-          - jsonPath: $.Drafting.*.tenantId
+      - jsonPath: $.DraftFiles.*.businessService
 
-          - jsonPath: $.Drafting.*.businessService
+      - jsonPath: $.DraftFiles.*.moduleName
 
-          - jsonPath: $.Drafting.*.moduleName
+      - jsonPath: $.DraftFiles.*.fileCode
 
-          - jsonPath: $.Drafting.*.fileCode
+      - jsonPath: $.DraftFiles.*.draftType
 
-          - jsonPath: $.Drafting.*.draftType
+      - jsonPath: $.DraftFiles.*.draftText
 
-          - jsonPath: $.Drafting.*.draftText
+      - jsonPath: $.DraftFiles.*.assigner
 
-          - jsonPath: $.Drafting.*.assigner
+      - jsonPath: $.DraftFiles.*.fileStoreId
 
-          - jsonPath: $.Drafting.*.fileStoreId
+      - jsonPath: $.DraftFiles.*.status
 
-          - jsonPath: $.Drafting.*.status
+      - jsonPath: $.DraftFiles.*.auditDetails.createdy
 
-          - jsonPath: $.Drafting.*.auditDetails.createdBy
+      - jsonPath: $.DraftFiles.*.auditDetails.createdTime
 
-          - jsonPath: $.Drafting.*.auditDetails.createdTime
+      - jsonPath: $.DraftFiles.*.auditDetails.lastModifiedBy
 
-          - jsonPath: $.Drafting.*.auditDetails.lastModifiedBy
+      - jsonPath: $.DraftFiles.*.auditDetails.lastModifiedTime
 
-          - jsonPath: $.Drafting.*.auditDetails.lastModifiedTime
-          
-  - version: 1.0
+  - version: 1.0B
     description: Update draft Text  in egov_filemgmnt database, eg_fm_drafting
-    fromTopic: update_fm_drafting
+    fromTopic: update-fm-draftfile
     isTransaction: true
     queryMaps:
-      - query: UPDATE public.eg_fm_drafting  SET  drafttext=?   WHERE filecode =? AND drafttype = ? AND assigner = ? ;
-        basePath: Drafting.*
-        jsonMaps:
+    - query: UPDATE public.eg_fm_drafting  SET  drafttext=?   WHERE filecode =? AND drafttype = ? AND assigner = ? ;
+      basePath: DraftFiles.*
+      jsonMaps:
+      - jsonPath: $.DraftFiles.*.draftText
 
+      - jsonPath: $.DraftFiles.*.fileCode
 
-          - jsonPath: $.Drafting.*.draftText
+      - jsonPath: $.DraftFiles.*.draftType
 
-          - jsonPath: $.Drafting.*.fileCode
-
-          - jsonPath: $.Drafting.*.draftType
-
-          - jsonPath: $.Drafting.*.assigner
+      - jsonPath: $.DraftFiles.*.assigner
 
   - version: 1.0
     description: Update drafting status  in egov_filemgmnt database, eg_fm_drafting
-    fromTopic: update_fm_draftingstatus
+    fromTopic: update-fm-draftfilestatus
     isTransaction: true
     queryMaps:
-      - query: UPDATE public.eg_fm_drafting  SET  status=?   WHERE filecode =? AND drafttype = ? AND assigner = ? ;
-        basePath: Drafting.*
-        jsonMaps:
-          - jsonPath: $.Drafting.*.status
+    - query: UPDATE public.eg_fm_drafting  SET  status=?   WHERE filecode =? AND drafttype = ? AND assigner = ? ;
+      basePath: DraftFiles.*
+      jsonMaps:
+      - jsonPath: $.DraftFiles.*.status
 
-          - jsonPath: $.Drafting.*.fileCode
+      - jsonPath: $.DraftFiles.*.fileCode
 
-          - jsonPath: $.Drafting.*.draftType
+      - jsonPath: $.DraftFiles.*.draftType
 
-          - jsonPath: $.Drafting.*.assigner
+      - jsonPath: $.DraftFiles.*.assigner
+          
   - version: 1.0
     description: Save Enquiry  in egov_filemgmnt database, eg_fm_enquiry
-    fromTopic: save_fm_enquiry
+    fromTopic: save-fm-enquiry
     isTransaction: true
     queryMaps:
-      - query: INSERT INTO public.eg_fm_enquiry(id, tenantid, businessservice, modulename, filecode, latitude, longitude, assigner, status, imagefilestoreid, createdby, createdtime, lastmodifiedby, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
-        basePath: Enquiry.*
-        jsonMaps:
-          - jsonPath: $.Enquiry.*.uuid
+    - query: INSERT INTO public.eg_fm_enquiry(id, tenantid, businessservice, modulename, filecode, latitude, longitude, assigner, status, imagefilestoreid, createdby, createdtime, lastmodifiedby, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+      basePath: Enquiry.*
+      jsonMaps:
+      - jsonPath: $.Enquiry.*.uuid
 
-          - jsonPath: $.Enquiry.*.tenantId
+      - jsonPath: $.Enquiry.*.tenantId
 
-          - jsonPath: $.Enquiry.*.businessService
+      - jsonPath: $.Enquiry.*.businessService
 
-          - jsonPath: $.Enquiry.*.moduleName
+      - jsonPath: $.Enquiry.*.moduleName
 
-          - jsonPath: $.Enquiry.*.fileCode
+      - jsonPath: $.Enquiry.*.fileCode
 
-          - jsonPath: $.Enquiry.*.latitude
+      - jsonPath: $.Enquiry.*.latitude
 
-          - jsonPath: $.Enquiry.*.longitude
+      - jsonPath: $.Enquiry.*.longitude
 
-          - jsonPath: $.Enquiry.*.assigner
+      - jsonPath: $.Enquiry.*.assigner
 
-          - jsonPath: $.Enquiry.*.status
+      - jsonPath: $.Enquiry.*.status
 
-          - jsonPath: $.Enquiry.*.imageFileStoreId
+      - jsonPath: $.Enquiry.*.imageFileStoreId
 
-          - jsonPath: $.Enquiry.*.auditDetails.createdBy
+      - jsonPath: $.Enquiry.*.auditDetails.createdBy
 
-          - jsonPath: $.Enquiry.*.auditDetails.createdTime
+      - jsonPath: $.Enquiry.*.auditDetails.createdTime
 
-          - jsonPath: $.Enquiry.*.auditDetails.lastModifiedBy
+      - jsonPath: $.Enquiry.*.auditDetails.lastModifiedBy
 
-          - jsonPath: $.Enquiry.*.auditDetails.lastModifiedTime
-
+      - jsonPath: $.Enquiry.*.auditDetails.lastModifiedTime
 
   - version: 1.0
-    description: Persists draft processInstanceFromRequest details in eg_wf_processinstance_v2  table
-    fromTopic: save-fm-draftprocessinstance
+    description: Insert Module Master details in egov_filemgmnt database, eg_fm_modulemaster table
+    fromTopic: save-fm-modulemaster
     isTransaction: true
     queryMaps:
-
-    - query: INSERT INTO eg_wf_processinstance_v2(id,tenantid,businessservice,businessid,modulename,action,comment, assigner, statesla,businessservicesla, previousstatus, createdby, lastmodifiedby, createdtime, lastmodifiedtime, rating) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
-      basePath: ProcessInstances.*
+    - query: >
+        INSERT INTO public.eg_fm_modulemaster(id, tenantid, modulecode, modulenameeng, 
+        modulenamemal, status, createdby, createdtime, lastmodifiedby, lastmodifiedtime)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+      basePath: ModuleDetails
       jsonMaps:
+      - jsonPath: $.ModuleDetails.id
 
-      - jsonPath: $.ProcessInstances.*.id
+      - jsonPath: $.ModuleDetails.tenantId
 
-      - jsonPath: $.ProcessInstances.*.tenantId
+      - jsonPath: $.ModuleDetails.moduleCode
 
-      - jsonPath: $.ProcessInstances.*.businessService
+      - jsonPath: $.ModuleDetails.moduleNameEnglish
 
-      - jsonPath: $.ProcessInstances.*.businessId
+      - jsonPath: $.ModuleDetails.moduleNameMalayalam
 
-      - jsonPath: $.ProcessInstances.*.moduleName
+      - jsonPath: $.ModuleDetails.status
 
-      - jsonPath: $.ProcessInstances.*.action
+      - jsonPath: $.ModuleDetails.auditDetails.createdBy
 
-      - jsonPath: $.ProcessInstances.*.comment
+      - jsonPath: $.ModuleDetails.auditDetails.createdTime
 
-      - jsonPath: $.ProcessInstances.*.assigner
+      - jsonPath: $.ModuleDetails.auditDetails.lastModifiedBy
 
-      - jsonPath: $.ProcessInstances.*.stateSla
+      - jsonPath: $.ModuleDetails.auditDetails.lastModifiedTime
 
-      - jsonPath: $.ProcessInstances.*.businesssServiceSla
-
-      - jsonPath: $.ProcessInstances.*.previousStatus
-
-      - jsonPath: $.ProcessInstances.*.auditDetails.createdBy
-
-      - jsonPath: $.ProcessInstances.*.auditDetails.lastModifiedBy
-
-      - jsonPath: $.ProcessInstances.*.auditDetails.createdTime
-
-      - jsonPath: $.ProcessInstances.*.auditDetails.lastModifiedTime
-
-      - jsonPath: $.ProcessInstances.*.rating
-
-
-    - query: INSERT INTO eg_wf_document_v2( id, tenantid, active, documenttype, documentuid, processinstanceid, filestoreid, createdby, lastmodifiedby, createdtime, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
-      basePath: ProcessInstances.*.documents.*
+  - version: 1.0
+    description: Update Module Master in egov_filemgmnt database, eg_fm_modulemaster
+    fromTopic: update-fm-modulemaster
+    isTransaction: true
+    queryMaps:
+    - query: >
+             UPDATE public.eg_fm_modulemaster SET modulenameeng=?, modulenamemal=? 
+             WHERE modulecode= ?;
+      basePath: ModuleDetails
       jsonMaps:
+      - jsonPath: $.ModuleDetails.moduleNameEnglish
 
-      - jsonPath: $.ProcessInstances.documents.*.id
+      - jsonPath: $.ModuleDetails.moduleNameMalayalam
 
-      - jsonPath: $.ProcessInstances.documents.*.tenantId
+      - jsonPath: $.ModuleDetails.moduleCode
 
-      - jsonPath: $.ProcessInstances.documents.*.active
-
-      - jsonPath: $.ProcessInstances.documents.*.documentType
-
-      - jsonPath: $.ProcessInstances.documents.*.documentUid
-
-      - jsonPath: $.ProcessInstances[*][?({id} in @.documents[*].id)].id
-
-      #- jsonPath: $.ProcessInstances.*.id
-
-      - jsonPath: $.ProcessInstances.documents.*.fileStoreId
-
-      - jsonPath: $.ProcessInstances.documents.*.auditDetails.createdBy
-
-      - jsonPath: $.ProcessInstances.documents.*.auditDetails.lastModifiedBy
-
-      - jsonPath: $.ProcessInstances.documents.*.auditDetails.createdTime
-
-      - jsonPath: $.ProcessInstances.documents.*.auditDetails.lastModifiedTime
-
-
-    - query: INSERT INTO eg_wf_assignee_v2(processinstanceid, tenantid, assignee, createdby, lastmodifiedby, createdtime, lastmodifiedtime) VALUES (?, ?, ?, ?, ?, ?, ?);
-      basePath: ProcessInstances.*.assignes.*
+  - version: 1.0
+    description: Delete Module Master in egov_filemgmnt database, eg_fm_modulemaster
+    fromTopic: delete-fm-modulemaster
+    isTransaction: true
+    queryMaps:
+    - query: >
+          UPDATE public.eg_fm_modulemaster SET status=?
+          WHERE moduleCode= ?;
+      basePath: ModuleDetails
       jsonMaps:
+      - jsonPath: $.ModuleDetails.status
 
-      - jsonPath: $.ProcessInstances[*][?({uuid} in @.assignes[*].uuid)].id
+      - jsonPath: $.ModuleDetails.moduleCode
 
-      - jsonPath: $.ProcessInstances[*][?({uuid} in @.assignes[*].uuid)].tenantId
+  - version: 1.0
+    description: Insert MajorFunction Master details in egov_filemgmnt database, eg_fm_majorfunctionmaster table
+    fromTopic: save-fm-mfmaster
+    isTransaction: true
+    queryMaps:
+    - query: >
+            INSERT INTO public.eg_fm_majorfunctionmaster(id, tenantid, mfcode, moduleid, mfnameeng,
+            mfnamemal, createdby, createdtime, lastmodifiedby, lastmodifiedtime, status)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
 
-      - jsonPath: $.ProcessInstances.*.assignes.*.uuid
+      basePath: MajorFunctionDetails
+      jsonMaps:
+      - jsonPath: $.MajorFunctionDetails.id
 
-      - jsonPath: $.ProcessInstances[*][?({uuid} in @.assignes[*].uuid)].auditDetails.createdBy
+      - jsonPath: $.MajorFunctionDetails.tenantId
 
-      - jsonPath: $.ProcessInstances[*][?({uuid} in @.assignes[*].uuid)].auditDetails.lastModifiedBy
+      - jsonPath: $.MajorFunctionDetails.majorFunctionCode
 
-      - jsonPath: $.ProcessInstances[*][?({uuid} in @.assignes[*].uuid)].auditDetails.createdTime
+      - jsonPath: $.MajorFunctionDetails.moduleId
 
-      - jsonPath: $.ProcessInstances[*][?({uuid} in @.assignes[*].uuid)].auditDetails.lastModifiedTime
+      - jsonPath: $.MajorFunctionDetails.majorFunctionNameEnglish
 
+      - jsonPath: $.MajorFunctionDetails.majorFunctionNameMalayalam
 
+      - jsonPath: $.MajorFunctionDetails.auditDetails.createdBy
 
+      - jsonPath: $.MajorFunctionDetails.auditDetails.createdTime
+
+      - jsonPath: $.MajorFunctionDetails.auditDetails.lastModifiedBy
+
+      - jsonPath: $.MajorFunctionDetails.auditDetails.lastModifiedTime
+
+      - jsonPath: $.MajorFunctionDetails.status
+
+  - version: 1.0
+    description: Update MajorFunction Master in egov_filemgmnt database, eg_fm_majorfunctionmaster
+    fromTopic: update-fm-mfmaster
+    isTransaction: true
+    queryMaps:
+    - query: >
+          UPDATE public.eg_fm_majorfunctionmaster SET mfnameeng=?, mfnamemal=? 
+          WHERE mfcode= ?;
+      basePath: MajorFunctionDetails
+      jsonMaps:
+      - jsonPath: $.MajorFunctionDetails.majorFunctionNameEnglish
+
+      - jsonPath: $.MajorFunctionDetails.majorFunctionNameMalayalam
+
+      - jsonPath: $.MajorFunctionDetails.majorFunctionCode
+
+  - version: 1.0
+    description: Delete MajorFunction Master in egov_filemgmnt database, eg_fm_majorfunctionmaster
+    fromTopic: delete-fm-mfmaster
+    isTransaction: true
+    queryMaps:
+    - query: >
+            UPDATE public.eg_fm_majorfunctionmaster SET status=?  WHERE mfcode= ?;
+      basePath: MajorFunctionDetails
+      jsonMaps:
+      - jsonPath: $.MajorFunctionDetails.status
+
+      - jsonPath: $.MajorFunctionDetails.majorFunctionCode
+
+  - version: 1.0
+    description: Insert Service Master details in egov_filemgmnt database, eg_fm_servicemaster table
+    fromTopic: save-fm-servicemaster
+    isTransaction: true
+    queryMaps:
+    - query: >
+            INSERT INTO public.eg_fm_servicemaster(	id, tenantid, servicecode, sfid, servicenameeng,
+            servicenamemal, createdby, createdtime, lastmodifiedby, lastmodifiedtime, status)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+      basePath: ServiceDetails
+      jsonMaps:
+      - jsonPath: $.ServiceDetails.id
+
+      - jsonPath: $.ServiceDetails.tenantId
+
+      - jsonPath: $.ServiceDetails.serviceCode
+
+      - jsonPath: $.ServiceDetails.subFunctionId
+
+      - jsonPath: $.ServiceDetails.serviceNameEnglish
+
+      - jsonPath: $.ServiceDetails.serviceNameMalayalam
+
+      - jsonPath: $.ServiceDetails.auditDetails.createdBy
+
+      - jsonPath: $.ServiceDetails.auditDetails.createdTime
+
+      - jsonPath: $.ServiceDetails.auditDetails.lastModifiedBy
+
+      - jsonPath: $.ServiceDetails.auditDetails.lastModifiedTime
+
+      - jsonPath: $.ServiceDetails.status
+
+  - version: 1.0
+    description: Update Service Master in egov_filemgmnt database, eg_fm_servicemaster
+    fromTopic: update-fm-servicemaster
+    isTransaction: true
+    queryMaps:
+    - query: >
+            UPDATE public.eg_fm_servicemaster SET servicenameeng=?, servicenamemal=?
+            WHERE servicecode= ?;
+      basePath: ServiceDetails
+      jsonMaps:
+      - jsonPath: $.ServiceDetails.serviceNameEnglish
+
+      - jsonPath: $.ServiceDetails.serviceNameMalayalam
+
+      - jsonPath: $.ServiceDetails.serviceCode
+
+  - version: 1.0
+    description: Delete Service Master in egov_filemgmnt database, eg_fm_servicemaster
+    fromTopic: delete-fm-servicemaster
+    isTransaction: true
+    queryMaps:
+    - query: >
+            UPDATE public.eg_fm_servicemaster SET status=?  WHERE servicecode= ?;
+      basePath: ServiceDetails
+      jsonMaps:
+      - jsonPath: $.ServiceDetails.status
+
+      - jsonPath: $.ServiceDetails.serviceCode
+
+  - version: 1.0
+    description: Insert Subfunction Master in egov_filemgmnt database, eg_fm_subfunctionmaster
+    fromTopic: save-fm-sfmaster
+    isTransaction: true
+    queryMaps:
+    - query: >
+            INSERT INTO public.eg_fm_subfunctionmaster(id, tenantid, sfcode, mfid, 
+            sfnameeng, sfnamemal, createdby, createdtime, lastmodifiedby, lastmodifiedtime, status) 
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+      basePath: SubFunctionDetails
+      jsonMaps:
+      - jsonPath: $.SubFunctionDetails.id
+
+      - jsonPath: $.SubFunctionDetails.tenantId
+
+      - jsonPath: $.SubFunctionDetails.subFunctionCode
+
+      - jsonPath: $.SubFunctionDetails.majorFunctionId
+
+      - jsonPath: $.SubFunctionDetails.subFunctionNameEnglish
+
+      - jsonPath: $.SubFunctionDetails.subFunctionNameMalayalam
+
+      - jsonPath: $.SubFunctionDetails.auditDetails.createdBy
+
+      - jsonPath: $.SubFunctionDetails.auditDetails.createdTime
+
+      - jsonPath: $.SubFunctionDetails.auditDetails.lastModifiedBy
+
+      - jsonPath: $.SubFunctionDetails.auditDetails.lastModifiedTime
+
+      - jsonPath: $.SubFunctionDetails.status
+
+  - version: 1.0
+    description: Update SubFunction Master in egov_filemgmnt database, eg_fm_subfunctionmaster
+    fromTopic: update-fm-sfmaster
+    isTransaction: true
+    queryMaps:
+    - query: >
+          UPDATE eg_fm_subfunctionmaster SET sfnameeng=?, sfnamemal=?
+          WHERE sfcode= ?;
+      basePath: SubFunctionDetails
+      jsonMaps:
+      - jsonPath: $.SubFunctionDetails.subFunctionNameEnglish
+
+      - jsonPath: $.SubFunctionDetails.subFunctionNameMalayalam
+
+      - jsonPath: $.SubFunctionDetails.subFunctionCode
+
+  - version: 1.0
+    description: Delete Subfunction Master in egov_filemgmnt database, eg_fm_subfunctionmaster
+    fromTopic: delete-fm-sfmaster
+    isTransaction: true
+    queryMaps:
+    - query: >
+          UPDATE eg_fm_subfunctionmaster SET status=?  WHERE sfcode= ?;
+      basePath: SubFunctionDetails
+      jsonMaps:
+      - jsonPath: $.SubFunctionDetails.status
+
+      - jsonPath: $.SubFunctionDetails.subFunctionCode
+
+ 
