@@ -10,6 +10,7 @@
        
       "absolutePosition": {"x": 20, "y": 180}
     },
+    "pageMargins": [40, 40, 40, 60],
       "content": [
           {
               "style": "ws-head",
@@ -335,7 +336,7 @@
                     0,
                 5,
                 0,
-                5]
+                10]
           },
          
         {
@@ -425,7 +426,7 @@
                                 
                                 "width": "40%"
                               }
-                          ],"style":"margin-right5"}],[{
+                          ],"style":"margin-address"}],[{
                           "columns": [
                               {
                                   "text": "Father Name",
@@ -775,43 +776,51 @@
                         "columns": [
                           {
                             "image": "{{qr_code_image}}",
-                            "width": 80,
-                            "height": 80,
+                            "width": 45,
+                            "height": 45,
                             "style": "qr-code",
                             "alignment":"left"
-                          }
-                        ]
+                          },
+                          {
+                            "stack": [
+                             
+                              {
+                                "text": "{{computerGenerated}}",
+                                "style": "footer-black"
+                              },
+                              {
+                                "text": "{{validDocument}}",
+                                "style": "footer-black"
+                              },
+                              {
+                                "text": "{{authenticity}}",
+                                "style": "footer-black"
+                              },
+                              {
+                                "text": "{{ikm}}",
+                                "italics": true,
+                                "style": "footer-black"
+                              },
+                              {
+                                "text": "{{printedInvalid}}",
+                                "italics": true,
+                                "style": "footer-red"
+                              } 
+                            ]
+                            }
+        
+                        ],"margin": [
+                          0,
+                          10,
+                          0,
+                          0
+                      ]
                       }
                     ]
                   ]
                 },
                 "layout": "noBorders"
-              },
-            {
-                "style": "ws-head",
-                "table": {
-                    "widths": [
-                        "*"
-                    ],
-                    "body": [
-                        [
-                            {
-                                "stack": [ {"text" : "This certificate is computer generated and does not require any Seal/Signature in original. The Govt.videG.O.(P)6/2013/LawDated09/10/2013 has approved this certificate as a valid document for all official purposes The authenticity of this certificate can be verified at https://citizen.lsgkerala.gov.in. The Key Number is unique to each event.Software developed and supported by Information Kerala Mission." ,
-                                "style": "footer-black"
-                              },{"text" : "Certificate printed before the last updated date is invalid" ,
-                              "style": "footer-red"
-                            }
-                                ],
-                                "margin":[
-                                  0,20,20,0
-                              ]
-                            }
-                        ]
-                    ]
-                },
-                "layout": "noBorders",
-                "alignment" : "center"
-            }
+              }
 
       ],
       "styles": {
@@ -1030,14 +1039,20 @@
           },
           "footer-red": {
               "color": "#FF0000",
-              "fontSize": 7,
+              "fontSize": 8,
               "alignment": "center",
               "italics": true
           }, "footer-black": {
             "color": "black",
-            "fontSize": 7,
+            "fontSize": 8,
             "alignment": "center",
-            "italics": true
+            "italics": true,
+            "margin": [
+              0,
+              0,
+              15,
+              5
+            ]
         },
           "appendix-header-body": {
               "color": "#000000",
@@ -1309,6 +1324,14 @@
                 0
             ]
           },
+          "margin-address":{
+            "margin": [
+                0,
+                0,
+                5,
+                10
+            ]
+          },
           
           "table-text-value":{
             "fontSize": 10,
@@ -1326,7 +1349,7 @@
             "alignment": "left"
           }
       },
-      "footer": "(function(currentPage, pageCount) { return [{'columns': [{'text': currentPage.toString() + ' of ' + pageCount ,'alignment':'center'}]}] })"
+      "footer": "(function(currentPage, pageCount) { return {'style': 'ws-head','table': {'widths': ['*'],'body': [[{'stack': [{'text': currentPage.toString() + ' of ' + pageCount ,'alignment':'center','style':'footer-black'}]}]]},'layout': 'noBorders','alignment' : 'center','margin':[  80,0,80,20  ]   } })"
   }
 
 }
