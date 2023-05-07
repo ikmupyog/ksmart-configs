@@ -44,10 +44,16 @@
             {
               "style": "ws-head",
               "table": {
-                "widths": ["50%","50%"],
+                "widths": ["5%","45%","50%"],
                 "body": [
                   [
-                    
+                    {
+                      "stack": [
+                        {
+
+                        }
+                      ]
+                    },
                     {
                       "stack": [
                         {
@@ -56,13 +62,7 @@
                           "widths":"40%"
                         }
                       ],
-                      "alignment": "left",
-                      "margin": [
-                        0,
-                        10,
-                        0,
-                        0
-                      ]
+                      "alignment": "left"
                     },
                     {
                       "stack": [
@@ -70,12 +70,6 @@
                           "text": "{{licenseNumber}}",
                           "style": "tl-table"
                         }
-                      ],
-                      "margin": [
-                        0,
-                        10,
-                        0,
-                        0
                       ]
                     }
                   ]
@@ -104,13 +98,21 @@
                                     {
                                       "style": "ws-head",
                                       "table": {
-                                        "widths": ["50%","50%"],
+                                        "widths": ["5%","45%","50%"],
                                         "body": [
                                           [
                                             {
                                               "stack": [
                                                 {
-                                                  "text": "1. Licensee Name and Address",
+                                                  "text": "1.",
+                                                  "style": "tl-table-value"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "stack": [
+                                                {
+                                                  "text": "Licensee Name and Address",
                                                   "style": "tl-table-value"
                                                 }
                                               ]
@@ -137,13 +139,21 @@
                                     {
                                       "style": "ws-head",
                                       "table": {
-                                        "widths": ["50%","50%"],
+                                        "widths": ["5%","45%","50%"],
                                         "body": [
                                           [
                                             {
                                               "stack": [
                                                 {
-                                                  "text": "2. Licensing Unit Name and Address",
+                                                  "text": "2.",
+                                                  "style": "tl-table-value"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "stack": [
+                                                {
+                                                  "text": "Licensing Unit Name and Address",
                                                   "style": "tl-table-value"
                                                 }
                                               ]
@@ -195,13 +205,21 @@
             {
               "style": "ws-head",
               "table": {
-                "widths": ["*"],
+                "widths": ["5%","95%"],
                 "body": [
                   [
                     {
                       "stack": [
                         {
-                          "text": "3. Licensing Business Activity Details",
+                          "text": "3.",
+                          "style": "tl-table-value"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "Licensing Business Activity Details",
                           "style": "tl-table-value"
                         }
                       ]
@@ -291,13 +309,21 @@
             {
               "style": "ws-head",
               "table": {
-                "widths": ["*"],
+                "widths": ["5%","95%"],
                 "body": [
                   [
                     {
                       "stack": [
                         {
-                          "text": "4. Validation & Renewal",
+                          "text": "4.",
+                          "style": "tl-table-value"
+                        }
+                      ]
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "Validation & Renewal",
                           "style": "tl-table-value"
                         }
                       ]
@@ -1254,12 +1280,12 @@
               ]
             },
             "tl-logo-header": {
-              "color": "#484848",
+              "color": "#0f0f0f",
               "fontFamily": "Roboto",
               "fontSize": 14,
               "bold": true,
               "letterSpacing": 0.74,
-              "fontWeight": 500,
+              "fontWeight": 700,
               "margin": [
                 15,
                 0,
@@ -1276,7 +1302,7 @@
               ]
             },
             "tl-logo-sub-header": {
-              "color": "#484848",
+              "color": "#0f0f0f",
               "fontFamily": "Roboto",
               "fontSize": 13,
               "letterSpacing": 0.6,
@@ -1292,7 +1318,8 @@
             "main-body-style": {
               "color": "#000000",
               "fontSize": 12,
-              "alignment": "center"
+              "alignment": "center",
+              "italics": true
             },
             "appendix-header-italic": {
               "color": "#000000",
@@ -1576,7 +1603,7 @@
                 0,
                 0
               ],
-              "color": "#484848"
+              "color": "#0f0f0f"
             },
             "pdf-card-title": {
               "fontSize": 11,
@@ -1587,19 +1614,19 @@
                 8,
                 8
               ],
-              "color": "#484848",
+              "color": "#0f0f0f",
               "fontWeight": 500
             },
             "pdf-card-no-title": {
               "fontSize": 11,
               "bold": true,
-              "color": "#484848",
+              "color": "#0f0f0f",
               "fontWeight": 500
             },
             "pdf-table-card-white": {
               "fillColor": "white",
               "fontSize": 7,
-              "color": "#484848",
+              "color": "#0f0f0f",
               "margin": [
                 -20,
                 -2,
@@ -1610,7 +1637,7 @@
             "pdf-table-card": {
               "fillColor": "#F2F2F2",
               "fontSize": 7,
-              "color": "#484848",
+              "color": "#0f0f0f",
               "margin": [
                 -20,
                 -2,
@@ -1666,7 +1693,7 @@
                 0,
                 0
               ],
-              "color": "#484848",
+              "color": "#0f0f0f",
               "alignment": "left"
             },
             "qr-image": {
@@ -1676,7 +1703,7 @@
                 0,
                 0
               ],
-              "color": "#484848",
+              "color": "#0f0f0f",
               "alignment": "left"
             },
             "footer-header": {
@@ -1702,10 +1729,10 @@
               "alignment": "right"
             },
             "tl-table": {
-              "color": "#484848",
+              "color": "#0f0f0f",
               "bold": true,
               "fontSize": 12,
-              "fontWeight": 400,
+              "fontWeight": 600,
               "margin": [
                 5,
                 5,
