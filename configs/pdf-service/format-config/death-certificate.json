@@ -68,28 +68,41 @@
                 {
                   "stack": [
                     {
-                      "image": "{{logokerala}}",
+                      "image": "{{logotenant}}",
                       "width": 50,
-                      "height": 50
+                      "height": 50,
+                      "color": "grey",
+                      "opacity": 0.3,
+                      "margin": [
+                      20,
+                      0,
+                      0,
+                      0
+                    ]
                     }
                   ]
                 },
 		
                 {
                   "stack": [
-		  
+                    {
+                      "text": "GOVERNMENT OF INDIA",
+                      "style": "appendix-header-body",
+                      "width": 30,
+                      "height": 30
+                    },
                     {
                     "text": "{{form6}}",
                     "style": "appendix-header-italic"
                     },
                     {
                     "text": "{{rule8}}",
-                    "style": "main-body-style"
+                    "style": "rule-body_multiLang"
                     },                            
 		   
 		               {
                       "text": "{{governmentMl}}",
-                      "style": "appendix-header-body"
+                      "style": "appendix-header-body-ml"
                       
                     },
                     {
@@ -99,7 +112,7 @@
                     
 		   {
 			"text": "{{deptUrbanAffairsMl}}",
-			"style": "appendix-header-body",
+			"style": "appendix-header-body-ml",
 			"margin": [
 			  0,
 			  0,
@@ -143,49 +156,24 @@
             "widths": ["*"],
             "body": [
               [
-		{
-		"columns": [
-                    {
-                      "text": "സർട്ടിഫിക്കറ്റ് നൽകുന്ന തദ്ദേശസ്വയംഭരണ സ്ഥാപനത്തിന്റെ പേര് ",
-                      "style": "rule-header"
-                    },
-
+                {
+                "stack": [
                     {
                       "text": "{{localBodyNameMl}}",
-                      "style": "rule-header"
-                    }
-                  ]
-		}                
-              ]
-            ]
-          },
-          "layout": "noBorders" 
-        },
-	      
-       {
-          "style": "ws-head",
-          "table": {
-            "widths": ["*"],
-            "body": [
-              [
-		{
-		"columns": [
-                    {
-                      "text": "Name of Local Government issuing certificate ",
-                      "style": "rule-header"
+                      "style": "details-body-center-ml"
                     },
-                    
                     {
                       "text": "{{localBodyName}}",
-                      "style": "rule-header"
+                      "style": "details-body-center-bold"
                     }
                   ]
-		}
+	            	}                
               ]
             ]
           },
           "layout": "noBorders" 
-        },
+        },	      
+       
 	      
 	 {
           "style": "ws-head",
@@ -211,7 +199,7 @@
               [
                 {
                   "text": "DEATH CERTIFICATE",
-                  "style": "title-header"
+                  "style": "title-header-Times"
                 }
               ]
             ]
@@ -226,7 +214,7 @@
               [
                 {
                   "text": "(Issued Under Section 12)",
-                  "style": "main-body-style"
+                  "style": "rule-body_multiLang"
                 }
               ]
             ]
@@ -244,7 +232,7 @@
                   "columns": [
                     {
                       "text": "(1969-ലെ ജനന-മരണ രജിസ്ട്രേഷൻ ആക്ടിലെ 12-ാം വകുപ്പും 1999-ലെ കേരള ജനന-മരണ രജിസ്ട്രേഷൻ ചട്ടങ്ങളിലെ  8-ാം ചട്ടവും അനുസരിച്ചു നൽകുന്നത് )",
-                      "style": "rule-header"
+                      "style": "rule-header-ml"
                     }
                   ]
                 }
@@ -282,7 +270,7 @@
                   "columns": [
                     {
                       "text": ["താഴെ പറയുന്ന വിവരങ്ങൾ കേരള സംസ്‌ഥാനത്തിലെ {{lbDistrictMl}}  ജില്ലയിലെ {{lbTalukMl}}  താലൂക്കിലെ {{localBodyNameMl}} -ലെ ( തദേശസ്ഥാപനം) അസ്സൽ മരണ രജിസ്റ്ററിൽ നിന്ന് എടുത്തിട്ടുള്ളവയാണെന്ന് സാക്ഷ്യപ്പെടുത്തുന്നു."],
-                      "style": "rule-body_multiLang"
+                      "style": "rule-header-ml"
                     }
                   ]
                 }
@@ -302,7 +290,7 @@
                   "columns": [
                     {
                       "text": ["This is to certify that the following information has been taken from the original record of death which is the register for (local area/localbody) {{localBodyName}} of Taluk {{lbTalukEn}} of District {{lbDistrictEn}} of State Kerala."],
-                      "style": "rule-body_multiLang"
+                      "style": "rule-header"
                     }
                   ]
                 }
@@ -340,7 +328,7 @@
                   "columns": [
                 
                     {
-                      "text": "ആൺ/പെൺ/Sex",
+                      "text": "ലിംഗം/Sex",
                       "width": "35%",
                       "style": "details-body"
                     },
@@ -369,7 +357,7 @@
                     },
                     {
                       "text": "{{dod}} ({{dodInWords}})",
-                      "style": "details-body"
+                      "style": "details-body-bold"
                     }
                    
                   ]
@@ -479,7 +467,7 @@
                     {
                       "text": "Address Of the deceased at the time of death",
                       "width": "35%",
-                      "style": "details-body"
+                      "style": "details-body-times"
                     },
                     {
                       "text": ": ",
@@ -487,7 +475,7 @@
                     },
                     {
                       "text": "{{deceasedPresentAddressen}}",
-                      "style": "details-body"
+                      "style": "details-body-times"
                     }
                   ]
                 }
@@ -519,7 +507,7 @@
                     {
                       "text": "Permanent address of the deceased  ",
                       "width": "35%",
-                      "style": "details-body"
+                      "style": "details-body-times"
                     },
                     {
                       "text": ": ",
@@ -527,7 +515,7 @@
                     },
                     {
                       "text": "{{deceasedPermanentAddressen}}",
-                      "style": "details-body"
+                      "style": "details-body-times"
                     }
                   ]
                 }
@@ -586,7 +574,7 @@
                     },
                     {
                       "text": "Registrar of Births and Deaths, {{localBodyName}}",
-                      "style": "details-body"                      
+                      "style": "details-body-times"                      
                     }
                   ]
                 }
@@ -614,27 +602,27 @@
                   "stack": [
                     {
                       "text": "{{ensureRegistration}}",
-                      "style": "details-body-center"
+                      "style": "details-body-center-bottom-bold"
                     },
                     {
                       "text": "{{ensureRegistrationMl}}",
-                      "style": "details-body-center"
+                      "style": "details-body-center-bottomML"
                     },
                     {
                       "text": "{{computerGenerated}}",
-                      "style": "details-body-center"
+                      "style": "details-body-center-bottom"
                     },
                     {
                       "text": "{{validDocument}}",
-                      "style": "details-body-center"
+                      "style": "details-body-center-bottom"
                     },
                     {
                       "text": "{{authenticity}}",
-                      "style": "details-body-center"
+                      "style": "details-body-center-bottom"
                     },
                     {
                       "text": "{{ikm}}",
-                      "style": "details-body-center"
+                      "style": "details-body-center-bottom"
                     },
                     {
                       "text": "{{printedInvalid}}",
@@ -663,15 +651,18 @@
           "fontWeight": 400,
           "alignment": "center"
         },
-	"main-body-style": {
+	    "main-body-style": {
         "color": "#000000",
         "fontSize": 8,
         "alignment": "center"
          },
-	"appendix-header-italic": {
+	    "appendix-header-italic": {
         "color": "#000000",
-        "fontSize": 9,
+        "fontSize": 8,
+        "bold": true,
         "fontWeight": 400,
+        "italics": true,
+        "font": "Times",
         "alignment": "center"
          },
 	      
@@ -719,10 +710,16 @@
         },
         "appendix-header-serialNo": {
           "color": "#000000",
-          "bold": false,
-          "fontSize": 8,
-          "fontWeight": 400,
-          "margin": [0, -5, 0, 0]
+        "bold": true,
+        "italics": true,
+        "font": "Times",
+        "fontSize": 8,
+        "margin": [
+          0,
+          -5,
+          0,
+          0
+        ]
         },
         "appendix-header-formNo": {
           "color": "#000000",
@@ -732,6 +729,17 @@
           "margin": [20, -5, 0, 0]
         },
         "rule-header": {
+          "color": "#000000",
+          "fontSize": 8,
+          "font": "Times",
+          "margin": [
+            0,
+            0,
+            0,
+            2
+          ]
+        },
+        "rule-header-ml": {
           "color": "#000000",
           "bold": false,
           "fontSize": 10,
@@ -755,9 +763,9 @@
         "rule-body_multiLang": {
           "color": "#000000",
           "bold": false,
-          "fontSize": 10,
-          "fontWeight": 400,
-          "margin": [0, 0, 0, 0]
+          "font": "Times",
+          "fontSize": 8,
+          "alignment": "center"
         },
         "details-body": {
           "color": "#000000",
@@ -774,14 +782,22 @@
       },
 	"footer-red": {
         "color": "#FF0000",
-        "fontSize": 7,
+        "fontSize": 6,
+        "font": "Times",
         "alignment": "center",
         "italics": true
       },
-        "appendix-header-body": {
+      "appendix-header-body": {
           "color": "#000000",
           "bold": true,
-          "fontSize": 9,
+          "fontSize": 8,
+          "font": "Times",
+          "alignment": "center"
+        },
+      "appendix-header-body-ml": {
+          "color": "#000000",
+          "bold": true,
+          "fontSize": 11,
           "fontWeight": 400,
           "alignment": "center"
         },
@@ -875,10 +891,89 @@
           "color": "rgba(0, 0, 0, 0.87)",
           "margin": [0, 0, 0, 1]
         },
+        "details-body-center-ml": {
+          "color": "#000000",
+          "fontSize": 9,
+          "fontWeight": 400,
+          "alignment": "center"
+        },
+        "details-body-center-bold": {
+          "color": "#000000",
+          "bold": true,
+          "fontSize": 8,
+          "fontWeight": 100,
+          "font": "Times",
+          "alignment": "center"
+        },
+        "title-header-Times": {
+          "color": "#000000",
+          "bold": true,
+          "fontSize": 10,
+          "font": "Times",
+          "alignment": "center",
+          "margin": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        "details-body-center-bottom-bold": {
+          "color": "#000000",
+          "font": "Times",
+          "bold": true,
+          "fontSize": 6,
+          "alignment": "center",
+          "margin": [
+            0,
+            0,
+            15,
+            5
+          ]
+        },
+        "details-body-center-bottomML": {
+          "color": "#000000",
+          "italics": true,
+          "fontSize": 6,
+          "alignment": "center",
+          "margin": [
+            0,
+            0,
+            15,
+            5
+          ]
+        },
+        "details-body-center-bottom": {
+          "color": "#000000",
+          "font": "Times",
+          "italics": true,
+          "fontSize": 6,
+          "alignment": "center",
+          "margin": [
+            0,
+            0,
+            15,
+            5
+          ]
+        },
+        "details-body-bold": {
+          "color": "#000000",
+          "bold": true,
+          "fontSize": 7,
+          "font": "Times",
+          "alignment": "left"
+        },
+        "details-body-times": {
+          "color": "#000000",
+          "font": "Times",
+          "fontSize": 9,
+          "alignment": "left"
+        },
         "pdf-head-qr-code": {
           "fillColor": "#F2F2F2",
           "margin": [-70, -41, -81, 0]
         }
-      }
+      },
+      "footer": "(function(currentPage, pageCount) { return [{'columns': [{'text': currentPage.toString() + ' of ' + pageCount ,'alignment':'center'}]}] })"
     }
   }
