@@ -206,21 +206,7 @@
           },
           "layout": "noBorders" 
         },
-	 {
-          "style": "ws-head",
-          "table": {
-            "widths": ["*"],
-            "body": [
-              [
-                {
-                  "text": "(Issued Under Section 12)",
-                  "style": "rule-body_multiLang"
-                }
-              ]
-            ]
-          },
-          "layout": "noBorders" 
-        },
+	 
 	      
 	{
           "style": "ws-head",
@@ -231,7 +217,7 @@
                 {
                   "columns": [
                     {
-                      "text": "(1969-ലെ ജനന-മരണ രജിസ്ട്രേഷൻ ആക്ടിലെ 12-ാം വകുപ്പും 1999-ലെ കേരള ജനന-മരണ രജിസ്ട്രേഷൻ ചട്ടങ്ങളിലെ  8-ാം ചട്ടവും അനുസരിച്ചു നൽകുന്നത് )",
+                      "text": "(1969-ലെ ജനന-മരണ രജിസ്ട്രേഷൻ ആക്ടിലെ 12/17-ാം വകുപ്പും 1999-ലെ കേരള ജനന-മരണ രജിസ്ട്രേഷൻ ചട്ടങ്ങളിലെ  8/13-ാം ചട്ടവും അനുസരിച്ചു നൽകുന്നത് )",
                       "style": "rule-header-ml"
                     }
                   ]
@@ -250,7 +236,7 @@
                 {
                   "columns": [
                     {
-                      "text": "(Issued under Section 12 of the Registration of Births and Deaths Acts, 1969 and Rule 8 of the Kerala Registration of Births and Deaths Rules, 1999)",
+                      "text": "(Issued under Section 12/17 of the Registration of Births and Deaths Acts, 1969 and Rule 8/13 of the Kerala Registration of Births and Deaths Rules, 1999)",
                       "style": "rule-header"
                     }
                   ]
