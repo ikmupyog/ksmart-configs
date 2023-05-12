@@ -3,7 +3,7 @@
   "config": {
     "defaultStyle": {
       "font": "Meera"
-    },
+    },configs/pdf-service/format-config/birth-certificate.json
     "watermark": {
       "text": "KSMART DEMO",
       "bold": true,
