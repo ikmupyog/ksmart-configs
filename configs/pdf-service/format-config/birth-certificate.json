@@ -1077,5 +1077,7 @@
       }
     }
   },
-  "footer": "(function(currentPage, pageCount) { return [{'columns': [{'text': currentPage.toString() + ' of ' + pageCount ,'alignment':'center'}]}] })"
+  ,
+  "footer": "(function(currentPage, pageCount) { return {'style': 'ws-head','table': {'widths': ['*'],'body': [[{'stack': [{'text': currentPage.toString() + ' of ' + pageCount ,'alignment':'center','style':'footer-black'}]}]]},'layout': 'noBorders','alignment' : 'center','margin':[  80,0,80,20  ]   } })"
+
 }
