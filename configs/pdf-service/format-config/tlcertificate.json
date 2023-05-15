@@ -1307,7 +1307,7 @@
               "bold": true,
               "font": "Times",
               "fontSize": 12,
-              "letterSpacing": 0.6,
+              "letterSpacing": 0.74,
               "fontWeight": 400
             },
             "appendix-header": {
@@ -1321,7 +1321,7 @@
               "color": "#000000",
               "bold": true,
               "font": "Times",
-              "fontSize": 13,
+              "fontSize": 11,
               "alignment": "center"
             },
             "appendix-header-italic": {
@@ -1736,7 +1736,7 @@
               "font" : "Times",
               "bold": true,
               "fontSize": 12,
-              "fontWeight": 600,
+              "fontWeight": 400,
               "margin": [
                 5,
                 5,
@@ -1747,9 +1747,8 @@
             "tl-table-value": {
               "color": "#000000",
               "font" : "Times",
-              "bold": true,
               "fontSize": 12,
-              "fontWeight": 500,
+              "fontWeight": 200,
               "margin": [
                 8,
                 5,
