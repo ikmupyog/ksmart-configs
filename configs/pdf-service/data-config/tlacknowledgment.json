@@ -1,0 +1,307 @@
+{
+  "key": "tlacknowledgment",
+  "DataConfigs": {
+    "serviceName": "rainmaker-common",
+    "version": "1.0.0",
+    "baseKeyPath": "$.Licenses.*",
+    "entityIdPath":"$.id",
+    "isCommonTableBorderRequired": true,
+    "mappings": [
+      {
+        "mappings": [
+          {
+            "direct": [   
+              {
+                "variable": "tenant",
+                "value": {
+                "path": "$.tenantId"
+                },
+                "type": "setEmpty",
+                "localisation":{
+                "required":true,
+                "prefix": "TENANT_TENANTS",
+                "module":"rainmaker-common",
+                "locale":"en_IN"
+                }
+              },
+          
+              {
+                "variable": "tenantMl",
+                "value": {
+                "path": "$.tenantId"
+                },
+                "type": "setEmpty",
+                "localisation":{
+                "required":true,
+                "prefix": "TENANT_TENANTS",
+                "module":"rainmaker-common",
+                "locale":"ml_IN"
+                }
+              },
+              {
+                  "variable": "applicationNo",
+                  "value": {
+                    "path": "$.applicationNumber"
+                  }
+              },
+              {
+                "variable": "applicationDate",
+                "value": {
+                  "path": "$.applicationDate"
+                }
+              },
+            {
+              "variable": "address",
+              "value": {
+                "path": "$.tradeLicenseDetail.address"
+              }
+            },
+			{
+              "variable": "attachments",
+              "value": {
+                "path": "$.tradeLicenseDetail.applicationDocuments"
+              }
+            },
+            {
+              "variable": "signedCertificateData",
+              "value": {
+                "path": "$.signedCertificate"
+              }
+            },
+            {
+              "variable": "to",
+              "value": {
+                "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_TO"
+              },
+              "type": "label",
+              "localisation":{
+                "required":true,
+                "prefix": null,
+                "module":"rainmaker-common"
+             }
+            },
+              {
+                  "variable": "municipal_corportaion",
+                  "value": {
+                    "path": "PDF_STATIC_LABEL_CONSOLIDATED_TLCERTIFICATE_MUNICIPAL_CORPORATION"
+                  },
+                  "type": "label",
+                  "localisation":{
+                    "required":true,
+                    "prefix": null,
+                    "module":"rainmaker-common"
+                 }
+              },
+              {
+                  "variable": "corporation_contact",
+                  "value": {
+                    "path": "PDF_STATIC_LABEL_CONSOLIDATED_TLCERTIFICATE_LICENSE_CORPORATION_CONTACT"
+                  },
+                  "type": "label",
+                  "localisation":{
+                    "required":true,
+                    "prefix": null,
+                    "module":"rainmaker-common"
+                 }
+              },
+              {
+                  "variable": "corporation_website",
+                  "value": {
+                    "path": "PDF_STATIC_LABEL_CONSOLIDATED_TLCERTIFICATE_LICENSE_CORPORATION_WEBSITE"
+                  },
+                  "type": "label",
+                  "localisation":{
+                    "required":true,
+                    "prefix": null,
+                    "module":"rainmaker-common"
+                 }
+              },
+              {
+                  "variable": "corporation_email",
+                  "value": {
+                    "path": "PDF_STATIC_LABEL_CONSOLIDATED_TLCERTIFICATE_LICENSE_CORPORATION_EMAIL"
+                  },
+                  "type": "label",
+                  "localisation":{
+                    "required":true,
+                    "prefix": null,
+                    "module":"rainmaker-common"
+                 }
+              },
+              {
+                  "variable": "trade_license_certifcate",
+                  "value": {
+                    "path": "PDF_STATIC_LABEL_CONSOLIDATED_TLCERTIFICATE_LICENSE_CERTIFICATE"
+                  },
+                  "type": "label",
+                  "localisation":{
+                    "required":true,
+                    "prefix": null,
+                    "module":"rainmaker-common"
+                 }
+              },
+              {
+                  "variable": "trade_license_no",
+                  "value": {
+                    "path": "PDF_STATIC_LABEL_CONSOLIDATED_TLCERTIFICATE_LICENSE_NO"
+                  },
+                  "type": "label",
+                  "localisation":{
+                    "required":true,
+                    "prefix": null,
+                    "module":"rainmaker-common"
+                 }
+              },
+              {
+                  "variable": "application_no",
+                  "value": {
+                    "path": "PDF_STATIC_LABEL_CONSOLIDATED_TLCERTIFICATE_APPLICATION_NO"
+                  },
+                  "type": "label",
+                  "localisation":{
+                    "required":true,
+                    "prefix": null,
+                    "module":"rainmaker-common"
+                 }
+              },
+              {
+                  "variable": "reciept_no",
+                  "value": {
+                    "path": "PDF_STATIC_LABEL_CONSOLIDATED_TLCERTIFICATE_RECIEPT_NO"
+                  },
+                  "type": "label",
+                  "localisation":{
+                    "required":true,
+                    "prefix": null,
+                    "module":"rainmaker-common"
+                 }
+              },
+              {
+                  "variable": "trade_name",
+                  "value": {
+                    "path": "PDF_STATIC_LABEL_CONSOLIDATED_TLCERTIFICATE_TRADE_NAME"
+                  },
+                  "type": "label",
+                  "localisation":{
+                    "required":true,
+                    "prefix": null,
+                    "module":"rainmaker-common"
+                 }
+              },
+              {
+                  "variable": "approved_by",
+                  "value": {
+                    "path": "PDF_STATIC_LABEL_CONSOLIDATED_TLCERTIFICATE_APPROVED_BY"
+                  },
+                  "type": "label",
+                  "localisation":{
+                    "required":true,
+                    "prefix": null,
+                    "module":"rainmaker-common"
+                 }
+              },
+              {
+                  "variable": "commissioner",
+                  "value": {
+                    "path": "PDF_STATIC_LABEL_CONSOLIDATED_TLCERTIFICATE_COMMISSIONER"
+                  },
+                  "type": "label",
+                  "localisation":{
+                    "required":true,
+                    "prefix": null,
+                    "module":"rainmaker-common"
+                 }
+              }
+          ]
+        },
+        {
+          "externalAPI": [     
+            { 
+              "path": "https://ksmart-dev.lsgkerala.gov.in/egov-mdms-service/v1/_get",
+              "queryParam": "moduleName=tenant&masterName=tenants&tenantId=kl&filter=%5B?(@.code=='{$.tenantId}')%5D",
+              "apiRequest": null,
+              "responseMapping":[
+                {             
+                  "variable":"ulb-address",
+                  "value":"$.MdmsRes.tenant.tenants[0].address"
+                },
+                {
+                  "variable":"corporationContact",
+                  "value":"$.MdmsRes.tenant.tenants[0].contactNumber"
+                },
+                {
+                  "variable":"corporationWebsite",
+                  "value":"$.MdmsRes.tenant.tenants[0].domainUrl"
+                },
+                {
+                  "variable":"corporationEmail",
+                  "value":"$.MdmsRes.tenant.tenants[0].emailId"
+                },
+                {
+                  "variable":"localbodyName",
+                  "value":"$.MdmsRes.tenant.tenants[0].name"
+                },
+                {
+                  "variable": "logoImage",
+                  "value": "$.MdmsRes.tenant.tenants[0].logoId",
+                  "type": "image"
+                }
+              ]
+            },
+            { 
+              "path": "http://egov-filestore:8080/filestore/v1/files/url",
+              "queryParam": "tenantId=kl,fileStoreIds=$.tradeLicenseDetail.applicationDocuments[?(@.documentType== 'OWNERPHOTO')].fileStoreId",
+              "apiRequest": null,
+              "requesttype": "GET",
+              "responseMapping":[
+                {             
+                  "variable":"userpic",
+                  "value":"$.fileStoreIds[0].url",
+                  "type": "image"
+                }
+              ]
+            },  
+            {
+              "path": "http://egov-workflow-v2.egov:8080/egov-workflow-v2/egov-wf/process/_search",
+              "queryParam": "businessIds=$.applicationNumber,history=true,tenantId=$.tenantId",
+              "apiRequest": null,
+              "responseMapping":[
+                {            
+                  "variable":"approvedBy",
+                  "value":"$.ProcessInstances[?(@.action == 'APPROVE')].assigner.name"
+                }
+    
+              ]
+            },
+            {
+              "path": "http://collection-services:8080/collection-services/payments/TL/_search",
+              "queryParam": "tenantId=$.tenantId,consumerCodes=$.applicationNumber,businessServices=TL",
+              "apiRequest": null,
+              "responseMapping":[
+                {            
+                  "variable":"tradeLicenseFee",
+                  "value":"$.Payments[0].totalDue"
+                },
+                {            
+                  "variable":"recieptNo",
+                  "value":"$.Payments[0].paymentDetails[0].receiptNumber"
+                }
+
+              ]
+            }  
+          ]
+        },
+        {
+          "qrcodeConfig": [
+            {
+              "variable": "qrCode",
+              "value": "{{signedCertificateData}}"
+            }
+          ]
+        }
+      ]
+
+    }
+  ]
+}
+}

@@ -1281,7 +1281,7 @@
             },
             "tl-logo-header": {
               "color": "#0f0f0f",
-              "fontFamily": "Roboto",
+			  "font": "Times",
               "fontSize": 14,
               "bold": true,
               "letterSpacing": 0.74,
@@ -1303,7 +1303,7 @@
             },
             "tl-logo-sub-header": {
               "color": "#0f0f0f",
-              "fontFamily": "Roboto",
+              "font": "Times",
               "fontSize": 13,
               "letterSpacing": 0.6,
               "fontWeight": 500
