@@ -27,6 +27,7 @@
                         },
                         {
                           "text": "Issued under Section 447 of the Kerala Municipality Act 1994 (20th Act of 1994)",
+                          "italics": true,
                           "style": "main-body-style"
                         },
                         {
@@ -1302,6 +1303,7 @@
             },
             "tl-logo-sub-header": {
               "color": "#0f0f0f",
+              "font": "Times",
               "fontSize": 13,
               "letterSpacing": 0.6,
               "fontWeight": 500
@@ -1316,8 +1318,7 @@
             "main-body-style": {
               "color": "#000000",
               "fontSize": 12,
-              "alignment": "center",
-              "italics": true
+              "alignment": "center"
             },
             "appendix-header-italic": {
               "color": "#000000",
