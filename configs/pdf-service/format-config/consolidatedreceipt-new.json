@@ -1,0 +1,338 @@
+{
+  "key": "consolidatedreceipt",
+  "config": {
+    "defaultStyle": {
+      "font": "Cambay"
+    },
+    "content": [
+      {
+        "style": "ws-head",
+        "table": {
+          "widths": [
+            "*"
+          ],
+          "body": [
+            [
+              {
+                "stack": [
+                  {
+                    "text": "Receipt",
+                    "style": "receipt-main-header"
+                  },
+                  {
+                    "image": "{{logotenant}}",
+                    "width": 70,
+                    "height": 70,
+                    "alignment": "centre",
+                    "style": "receipt-logo-header"
+                  },
+                  {
+                    "image": "{{qr_code_image}}",
+                    "width": 70,
+                    "height": 70,
+                    "style": "qr-code"
+                  },
+                  {
+                    "text": "{{tenantEn}}",
+                    "style": "receipt-header"
+                  },
+                  {
+                    "text": "Type Of Service : {{typeOfService}}",
+                    "style": "receipt-service-header"
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        "layout": "noBorders"
+      },
+      {
+        "style": "payment-table",
+        "fillColor": "#eeeeee",
+        "table": {
+          "widths": [500,500],
+          "body": [
+            [
+            {
+              "text": "{{receipt_no}}: {{receiptNo}}                                                            Date :{{receiptDate}} ",
+              "style": "receipt-table-value",
+              "border": [
+                true,
+                true,
+                true,
+                false
+              ]
+            }
+            ],
+            [
+              {
+                "fillColor": "#eeeeee",
+                "margin": [
+                  10,30,0,30
+                ],
+                "border": [
+                  true,
+                  false,
+                  true,
+                  true
+                ],
+                "table": {
+                  "widths": [30,230,90,95],
+                  "body": [
+                    [
+                      "Sl No",
+                      "Payer ID",
+                      "{{payer_name}}",
+                      "{{payer_contact}}"
+                    ],
+                    [
+                      "{{slNo}}",
+                      "{{consumerID}}",
+                      "{{payerName}}",
+                      "{{payerContact}}"
+                    ]
+                  ]
+                },
+                "layout": {
+                  "hLineColor": "#858181",
+                  "vLineColor": "#858181"
+                }
+              }
+            ]
+          ]
+        },
+        "layout": {}
+      },
+      {
+        "style": "next-payment-table",
+        "fillColor": "#eeeeee",
+        "table": {
+          "widths": [500,500],
+          "body": [
+            [
+              {
+                "text": "{{payment_mode}}: Online          Instrument: Digital           {{transaction_id}}: {{transactionID}} ",
+                "style": "receipt-table-value",
+                "border": [
+                  true,
+                  true,
+                  true,
+                  false
+                ]
+              }
+            ],
+            [
+              {
+                "fillColor": "#eeeeee",
+                "margin": [
+                  10,30,10,30
+                ],
+                "border": [
+                  true,
+                  false,
+                  true,
+                  false
+                ],
+                "table": {
+                  "widths": [30,70,70,70,140,45],
+                  "body": [
+                    [
+                      "Sl No",
+                      "Budget Code",
+                      "Head Code",
+                      "Head Name",
+                      "Financial Year",
+                      "Amount"
+                    ],
+                    [
+                      "{{slNo}}",
+                      "{{budgetCode}}",
+                      "{{headCode}}",
+                      "cr",
+                      "{{fromPeriod}} to {{toPeriod}}",
+                      "{{dueAmount}}"
+                    ]
+                  ]
+                },
+               "layout": {
+                 "hLineColor": "#858181",
+                 "vLineColor": "#858181"
+            }
+              }
+            ],
+            [
+              {
+                "text": "{{total_bill_amount}}:  {{dueAmount}}                 {{paid_amount}}: {{paidAmount}}                 Balance/Advance: {{pendingAmount}} ",
+                "style": "receipt-table-value",
+                "border": [
+                  true,
+                  false,
+                  true,
+                  true
+                ]
+              }
+            ]
+          ]
+        },
+        "layout": {}
+      },
+      {
+        "style": "bottom-payment-table",
+        "fillColor": "#fceae8",
+        "table": {
+          "widths": [500,500],
+          "body": [
+            [
+              {
+                "text": "Generated By:  {{user-name}}                                                          LB Secretary: {{commissioner/eo}}",
+                "style": "receipt-bottom-value",
+                "border-width": "thin",
+                "border": [
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              }
+            ]
+          ]
+        },
+        "layout": {}
+      },
+      {
+        "style": "no-signature",
+        "text": "{{no_signature}}"
+      }
+    ],
+    "styles": {
+      "receipt-main-header": {
+        "color": "#000000",
+        "fontSize": 16,
+        "bold": true,
+        "letterSpacing": 0.74,
+        "alignment": "center",
+        "margin": [
+          45,
+          -20,
+          45,
+          0
+        ]
+      },
+      "receipt-logo-header": {
+        "color": "#000000",
+        "alignment": "center",
+        "margin": [
+          220,
+          -2,
+          35,
+          0
+        ]
+      },
+      "qr-code": {
+        "color": "#000000",
+        "alignment": "right",
+        "margin": [
+          45,
+          -105,
+          -20,
+          0
+        ]
+      },
+      "receipt-header": {
+        "color": "#000000",
+        "fontSize": 14,
+        "bold": true,
+        "letterSpacing": 0.74,
+        "alignment": "center",
+        "margin": [
+          45,
+          40,
+          45,
+          0
+        ]
+      },
+      "receipt-service-header": {
+        "fontSize": 10,
+        "bold": true,
+        "letterSpacing": 0.74,
+        "alignment": "left",
+        "margin": [
+          5,
+          0,
+          0,
+          0
+        ]
+      },
+      "receipt-table-value": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 12,
+        "margin": [
+          5,
+          10,
+          0,
+          0
+        ]
+      },
+      "receipt-table": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 12
+      },
+      "payment-table": {
+        "fontSize": 12,
+        "color": "#000000",
+        "margin": [
+          5,
+          5,
+          -45,
+          -8
+        ]
+      },
+      "next-payment-table": {
+        "fontSize": 12,
+        "color": "#000000",
+        "margin": [
+          5,
+          28,
+          -45,
+          -8
+        ]
+      },
+      "bottom-payment-table": {
+        "fontSize": 12,
+        "color": "#000000",
+        "margin": [
+          5,
+          28,
+          -45,
+          -8
+        ]
+      },
+      "no-signature": {
+        "fontSize": 12,
+        "alignment": "center",
+        "margin": [
+          0,
+          35,
+          0,
+          0
+        ],
+        "color": "#484848"
+      },
+      "receipt-bottom-value": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 12,
+        "margin": [
+          5,
+          5,
+          0,
+          0
+        ]
+      }
+
+    }
+  }
+}
