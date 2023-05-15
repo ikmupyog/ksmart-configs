@@ -1282,6 +1282,7 @@
             },
             "tl-logo-header": {
               "color": "#0f0f0f",
+              "fontFamily": "Roboto",
               "fontSize": 14,
               "bold": true,
               "letterSpacing": 0.74,
@@ -1303,7 +1304,7 @@
             },
             "tl-logo-sub-header": {
               "color": "#0f0f0f",
-              "font": "Times",
+              "fontFamily": "Roboto",
               "fontSize": 13,
               "letterSpacing": 0.6,
               "fontWeight": 500
@@ -1554,7 +1555,7 @@
             },
             "pdf-application-no-value": {
               "fontSize": 12,
-              "font": "Times",
+              "font": "Roboto",
               "italics": true,
               "margin": [
                 -18,

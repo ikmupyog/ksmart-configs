@@ -38,7 +38,37 @@
                 "locale":"ml_IN"
                 }
               },
+              {
+                  "variable": "applicationNo",
+                  "value": {
+                    "path": "$.applicationNumber"
+                  }
+              },
+            {
+              "variable": "address",
+              "value": {
+                "path": "$.tradeLicenseDetail.address"
+              }
+            },
             
+            {
+              "variable": "signedCertificateData",
+              "value": {
+                "path": "$.signedCertificate"
+              }
+            },
+            {
+              "variable": "to",
+              "value": {
+                "path": "PDF_STATIC_LABEL_CONSOLIDATED_RECEIPT_TO"
+              },
+              "type": "label",
+              "localisation":{
+                "required":true,
+                "prefix": null,
+                "module":"rainmaker-common"
+             }
+            },
               {
                   "variable": "municipal_corportaion",
                   "value": {
@@ -98,6 +128,79 @@
                     "prefix": null,
                     "module":"rainmaker-common"
                  }
+              },
+              {
+                  "variable": "trade_license_no",
+                  "value": {
+                    "path": "PDF_STATIC_LABEL_CONSOLIDATED_TLCERTIFICATE_LICENSE_NO"
+                  },
+                  "type": "label",
+                  "localisation":{
+                    "required":true,
+                    "prefix": null,
+                    "module":"rainmaker-common"
+                 }
+              },
+              {
+                  "variable": "application_no",
+                  "value": {
+                    "path": "PDF_STATIC_LABEL_CONSOLIDATED_TLCERTIFICATE_APPLICATION_NO"
+                  },
+                  "type": "label",
+                  "localisation":{
+                    "required":true,
+                    "prefix": null,
+                    "module":"rainmaker-common"
+                 }
+              },
+              {
+                  "variable": "reciept_no",
+                  "value": {
+                    "path": "PDF_STATIC_LABEL_CONSOLIDATED_TLCERTIFICATE_RECIEPT_NO"
+                  },
+                  "type": "label",
+                  "localisation":{
+                    "required":true,
+                    "prefix": null,
+                    "module":"rainmaker-common"
+                 }
+              },
+              {
+                  "variable": "financial_year",
+                  "value": {
+                    "path": "PDF_STATIC_LABEL_CONSOLIDATED_TLCERTIFICATE_FINANCIAL_YEAR"
+                  },
+                  "type": "label",
+                  "localisation":{
+                    "required":true,
+                    "prefix": null,
+                    "module":"rainmaker-common"
+                 }
+              },
+              
+              {
+                  "variable": "approved_by",
+                  "value": {
+                    "path": "PDF_STATIC_LABEL_CONSOLIDATED_TLCERTIFICATE_APPROVED_BY"
+                  },
+                  "type": "label",
+                  "localisation":{
+                    "required":true,
+                    "prefix": null,
+                    "module":"rainmaker-common"
+                 }
+              },
+              {
+                  "variable": "commissioner",
+                  "value": {
+                    "path": "PDF_STATIC_LABEL_CONSOLIDATED_TLCERTIFICATE_COMMISSIONER"
+                  },
+                  "type": "label",
+                  "localisation":{
+                    "required":true,
+                    "prefix": null,
+                    "module":"rainmaker-common"
+                 }
               }
           ]
         },
@@ -135,6 +238,19 @@
                 }
               ]
             },
+            { 
+              "path": "http://egov-filestore:8080/filestore/v1/files/url",
+              "queryParam": "tenantId=kl,fileStoreIds=$.tradeLicenseDetail.applicationDocuments[?(@.documentType== 'OWNERPHOTO')].fileStoreId",
+              "apiRequest": null,
+              "requesttype": "GET",
+              "responseMapping":[
+                {             
+                  "variable":"userpic",
+                  "value":"$.fileStoreIds[0].url",
+                  "type": "image"
+                }
+              ]
+            },  
             {
               "path": "http://egov-workflow-v2.egov:8080/egov-workflow-v2/egov-wf/process/_search",
               "queryParam": "businessIds=$.applicationNumber,history=true,tenantId=$.tenantId",
@@ -146,8 +262,23 @@
                 }
     
               ]
-            }
-            
+            },
+            {
+              "path": "http://collection-services:8080/collection-services/payments/TL/_search",
+              "queryParam": "tenantId=$.tenantId,consumerCodes=$.applicationNumber,businessServices=TL",
+              "apiRequest": null,
+              "responseMapping":[
+                {            
+                  "variable":"tradeLicenseFee",
+                  "value":"$.Payments[0].totalDue"
+                },
+                {            
+                  "variable":"recieptNo",
+                  "value":"$.Payments[0].paymentDetails[0].receiptNumber"
+                }
+
+              ]
+            }  
           ]
         },
         {

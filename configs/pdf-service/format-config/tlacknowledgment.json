@@ -8,9 +8,7 @@
 			{
 			  "style": "ws-head",
 			  "table": {
-				"widths": [
-				  "50%","50%"
-				],
+				"widths": [ "50%","50%"],
 				"body": [
 				  [
 					{
@@ -39,7 +37,347 @@
 				]
 			  },
 			  "layout": "noBorders"
-			}
+			},	
+            {
+              "style": "ws-head",
+              "table": {
+                "widths": [
+                  "*"
+                ],
+                "body": [
+                  [
+                    {
+                      "stack": [
+                        {
+                          "image": "{{logoImage}}",
+                          "width": 50,
+                          "height": 59.25,
+                          "style": "tl-logo-image"
+                        },
+                        {
+                          "text": "{{localbodyName}}",
+                          "style": "tl-logo-header"
+                        }
+                      ],
+                      "alignment": "center"
+                    }
+                  ]
+                ]
+              },
+              "layout": "noBorders"
+            },
+            {
+              "style": "ws-head",
+              "table": {
+                "widths": ["*"],
+                "body": [
+                  [
+                    {
+                      "stack": [
+                        {
+                          "text": "Acknowledgment Receipt",
+                          "style": "tl-table-value"
+                        }
+                      ],
+                      "alignment": "center"
+                    }
+                  ]
+                ]
+              },
+              "layout": "noBorders"
+            },   
+            {
+              "style": "ws-head",
+              "table": {
+                "widths": ["*"],
+                "body": [
+                  [
+                    {
+                      "style": "ws-head",
+                      "table": {
+                      "widths": ["85%","15%"],
+                      "body": [
+                          [
+                            {
+                              "style": "ws-head",
+                              "table": {
+                                "widths": ["*"],
+                                "body": [
+                                  [
+                                    {
+                                      "style": "ws-head",
+                                      "table": {
+                                        "widths": ["45%","55%"],
+                                        "body": [
+                                          [
+                                            {
+                                              "stack": [
+                                                {
+                                                  "text": "Name of Service ",
+                                                  "style": "tl-table-value"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "stack": [
+                                                {
+                                                  "text": "IFTE & OS License",
+                                                  "style": "tl-table"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        ]
+                                      },
+                                      "layout": "noBorders"
+                                    }
+                                  ],
+                                  [
+                                    {
+                                      "style": "ws-head",
+                                      "table": {
+                                        "widths": ["45%","55%"],
+                                        "body": [
+                                          [
+                                            {
+                                              "stack": [
+                                                {
+                                                  "text": "e-File No",
+                                                  "style": "tl-table-value"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "stack": [
+                                                {
+                                                  "text": "{{applicationNo}}",
+                                                  "style": "tl-table"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        ]
+                                      },
+                                      "layout": "1px"
+                                    }
+                                  ],
+								  [
+                                    {
+                                      "style": "ws-head",
+                                      "table": {
+                                        "widths": ["45%","55%"],
+                                        "body": [
+                                          [
+                                            {
+                                              "stack": [
+                                                {
+                                                  "text": "e-File Date",
+                                                  "style": "tl-table-value"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "stack": [
+                                                {
+                                                  "text": "{{applicationDate}}",
+                                                  "style": "tl-table"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        ]
+                                      },
+                                      "layout": "1px"
+                                    }
+                                  ],
+								  [
+                                    {
+                                      "style": "ws-head",
+                                      "table": {
+                                        "widths": ["45%","55%"],
+                                        "body": [
+                                          [
+                                            {
+                                              "stack": [
+                                                {
+                                                  "text": "Mode of e-Filing",
+                                                  "style": "tl-table-value"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "stack": [
+                                                {
+                                                  "text": "Self",
+                                                  "style": "tl-table"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        ]
+                                      },
+                                      "layout": "1px"
+                                    }
+                                  ],
+								  [
+                                    {
+                                      "style": "ws-head",
+                                      "table": {
+                                        "widths": ["45%","55%"],
+                                        "body": [
+                                          [
+                                            {
+                                              "stack": [
+                                                {
+                                                  "text": "Applicant Details",
+                                                  "style": "tl-table-value"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "stack": [
+                                                {
+                                                  "text": "{{name}}",
+                                                  "style": "tl-table"
+                                                },
+												{
+                                                  "text": "{{address}}",
+                                                  "style": "tl-table"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        ]
+                                      },
+                                      "layout": "1px"
+                                    }
+                                  ],
+								  [
+                                    {
+                                      "style": "ws-head",
+                                      "table": {
+                                        "widths": ["45%","55%"],
+                                        "body": [
+                                          [
+                                            {
+                                              "stack": [
+                                                {
+                                                  "text": "Attachment(s)",
+                                                  "style": "tl-table-value"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "stack": [
+                                                {
+                                                  "text": "",
+                                                  "style": "tl-table"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        ]
+                                      },
+                                      "layout": "1px"
+                                    }
+                                  ],
+								  [
+                                    {
+                                      "style": "ws-head",
+                                      "table": {
+                                        "widths": ["45%","55%"],
+                                        "body": [
+                                          [
+                                            {
+                                              "stack": [
+                                                {
+                                                  "text": "Service Delivery Date",
+                                                  "style": "tl-table-value"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "stack": [
+                                                {
+                                                  "text": "",
+                                                  "style": "tl-table"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        ]
+                                      },
+                                      "layout": "1px"
+                                    }
+                                  ]
+                                ]
+                              },
+                              "layout": "1px"
+                            }
+                          ]
+                        ]
+                      },
+                      "layout": "noBorders"
+                    }
+                  ]
+                ]
+              },
+              "layout": "noBorders"
+            }
+            {
+              "style": "ws-head",
+              "table": {
+                "widths": ["30%","70%"],
+                "body": [
+                  [
+                    {
+						"stack": [
+                        {
+                          "text": "Date",
+                          "style": "tl-table-value"
+                        }
+                      ],
+					  "alignment":"left"
+                    },
+                    {
+                      "stack": [
+                        {
+                          "text": "Secretary",
+                          "style": "tl-table-value"
+                        }
+                      ],
+					  "alignment":"right"
+                    }
+                  ]
+                ]
+              },
+              "layout": "noBorders"
+            },
+            {
+              "style": "ws-head",
+              "table": {
+                "widths": ["*"],
+                "body": [
+                  [
+                    {
+						"stack": [
+                        {
+                          "text": "{{localbodyName}}",
+                          "style": "tl-table-value"
+                        }
+                      ],
+					  "alignment": "right"
+                    },
+                  ]
+                ]
+              },
+              "layout": "noBorders"
+            },
+            {
+              "text": "Note: This is a system generated acknowledgement and does not need any signature",
+              "style": "footer-header",
+              "pageBreak": "before"
+            }
         ],
 		    "footer": "(function(currentPage, pageCount) { return currentPage.toString() + ' of ' + pageCount; })",
           "styles": {
