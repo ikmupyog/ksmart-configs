@@ -11,81 +11,12 @@
 				"widths": [ "50%","50%"],
 				"body": [
 				  [
-					{
-					  "stack": [
-						{
-						  "image": "{{logoImage}}",
-						  "width": 50,
-						  "height": 59.25,
-						  "style": "tl-logo-image"
-						}
-					  ],
-					  "alignment": "center"
-					},
-					{
-                      "stack": [
-                        {
-                          "image": "{{qrCode}}",
-                          "style":"qr-image",
-                          "width":60,
-                          "height":60
-                        }
-                      ],
-					  "alignment": "right"
-                    }
+					
 				  ]
 				]
 			  },
 			  "layout": "noBorders"
-			},	
-            {
-              "style": "ws-head",
-              "table": {
-                "widths": [
-                  "*"
-                ],
-                "body": [
-                  [
-                    {
-                      "stack": [
-                        {
-                          "image": "{{logoImage}}",
-                          "width": 50,
-                          "height": 59.25,
-                          "style": "tl-logo-image"
-                        },
-                        {
-                          "text": "{{localbodyName}}",
-                          "style": "tl-logo-header"
-                        }
-                      ],
-                      "alignment": "center"
-                    }
-                  ]
-                ]
-              },
-              "layout": "noBorders"
-            },
-            {
-              "style": "ws-head",
-              "table": {
-                "widths": ["*"],
-                "body": [
-                  [
-                    {
-                      "stack": [
-                        {
-                          "text": "Acknowledgment Receipt",
-                          "style": "tl-table-value"
-                        }
-                      ],
-                      "alignment": "center"
-                    }
-                  ]
-                ]
-              },
-              "layout": "noBorders"
-            }
+			}
         ],
 		    "footer": "(function(currentPage, pageCount) { return currentPage.toString() + ' of ' + pageCount; })",
           "styles": {
