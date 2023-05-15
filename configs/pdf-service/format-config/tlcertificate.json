@@ -319,7 +319,7 @@
                       "stack": [
                         {
                           "text": "4.",
-                          "style": "tl-table"
+                          "style": "tl-table-value"
                         }
                       ]
                     },
@@ -327,7 +327,7 @@
                       "stack": [
                         {
                           "text": "Validation & Renewal",
-                          "style": "tl-table"
+                          "style": "tl-table-value"
                         }
                       ]
                     }
@@ -1327,9 +1327,8 @@
             },
             "main-body-style": {
               "color": "#000000",
-              "bold": true,
               "font": "Times",
-              "fontSize": 11,
+              "fontSize": 10,
               "alignment": "center",
               "margin": [
                 15,
