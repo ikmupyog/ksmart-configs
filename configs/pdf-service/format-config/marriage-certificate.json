@@ -367,11 +367,13 @@
                       {
                         "text": "{{groomFullName}}",
                         "width": "40%",
-                        "style":"table-column-text-value"
+                        "style":"table-column-text-value",
+                        "bold":true
                       },
                       {
                         "text": "{{brideFullName}}",
                         "style":"table-column-text-value",
+                        "bold":true,
                         "width": "40%"
                       }
                     ],"style":"margin-right5"
