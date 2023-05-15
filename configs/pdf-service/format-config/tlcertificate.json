@@ -1281,7 +1281,6 @@
             },
             "tl-logo-header": {
               "color": "#0f0f0f",
-			  "font": "Times",
               "fontSize": 14,
               "bold": true,
               "letterSpacing": 0.74,
@@ -1303,7 +1302,6 @@
             },
             "tl-logo-sub-header": {
               "color": "#0f0f0f",
-              "font": "Times",
               "fontSize": 13,
               "letterSpacing": 0.6,
               "fontWeight": 500
@@ -1555,7 +1553,7 @@
             },
             "pdf-application-no-value": {
               "fontSize": 12,
-              "font": "Roboto",
+              "font": "Times",
               "italics": true,
               "margin": [
                 -18,
