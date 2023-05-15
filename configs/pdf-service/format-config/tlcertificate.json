@@ -27,6 +27,7 @@
                         },
                         {
                           "text": "Issued under Section 447 of the Kerala Municipality Act 1994 (20th Act of 1994)",
+                          "italics": true,
                           "style": "main-body-style"
                         },
                         {
@@ -1271,7 +1272,7 @@
 		    "footer": "(function(currentPage, pageCount) { return currentPage.toString() + ' of ' + pageCount; })",
           "styles": {
             "pdf-header": {
-              "fillColor": "#F2F2F2",
+              "fillColor": "#000000",
               "margin": [
                 -70,
                 -41,
@@ -1280,8 +1281,8 @@
               ]
             },
             "tl-logo-header": {
-              "color": "#0f0f0f",
-              "fontFamily": "Roboto",
+              "color": "#000000",
+              "font": "Times",
               "fontSize": 14,
               "bold": true,
               "letterSpacing": 0.74,
@@ -1302,11 +1303,12 @@
               ]
             },
             "tl-logo-sub-header": {
-              "color": "#0f0f0f",
-              "fontFamily": "Roboto",
-              "fontSize": 13,
+              "color": "#000000",
+              "bold": true,
+              "font": "Times",
+              "fontSize": 12,
               "letterSpacing": 0.6,
-              "fontWeight": 500
+              "fontWeight": 400
             },
             "appendix-header": {
               "color": "#000000",
@@ -1317,9 +1319,10 @@
             },
             "main-body-style": {
               "color": "#000000",
-              "fontSize": 12,
-              "alignment": "center",
-              "italics": true
+              "bold": true,
+              "font": "Times",
+              "fontSize": 13,
+              "alignment": "center"
             },
             "appendix-header-italic": {
               "color": "#000000",
@@ -1555,7 +1558,7 @@
             },
             "pdf-application-no-value": {
               "fontSize": 12,
-              "font": "Roboto",
+              "font": "Times",
               "italics": true,
               "margin": [
                 -18,
@@ -1729,7 +1732,8 @@
               "alignment": "right"
             },
             "tl-table": {
-              "color": "#0f0f0f",
+              "color": "#000000",
+              "font" : "Times",
               "bold": true,
               "fontSize": 12,
               "fontWeight": 600,
@@ -1742,6 +1746,7 @@
             },
             "tl-table-value": {
               "color": "#000000",
+              "font" : "Times",
               "bold": true,
               "fontSize": 12,
               "fontWeight": 500,
