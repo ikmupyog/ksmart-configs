@@ -109,17 +109,9 @@
                                     {
                                       "style": "ws-head",
                                       "table": {
-                                        "widths": ["5%","45%","50%"],
+                                        "widths": ["45%","55%"],
                                         "body": [
                                           [
-                                            {
-                                              "stack": [
-                                                {
-                                                  "text": "1.",
-                                                  "style": "tl-table-value"
-                                                }
-                                              ]
-                                            },
                                             {
                                               "stack": [
                                                 {
@@ -132,10 +124,6 @@
                                               "stack": [
                                                 {
                                                   "text": "IFTE & OS License",
-                                                  "style": "tl-table"
-                                                },
-                                                {
-                                                  "text": "{{owneraddress}}",
                                                   "style": "tl-table"
                                                 }
                                               ]
@@ -251,6 +239,10 @@
                                             {
                                               "stack": [
                                                 {
+                                                  "text": "{{name}}",
+                                                  "style": "tl-table"
+                                                },
+												{
                                                   "text": "{{address}}",
                                                   "style": "tl-table"
                                                 }
