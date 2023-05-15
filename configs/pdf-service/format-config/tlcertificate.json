@@ -45,7 +45,7 @@
             {
               "style": "ws-head",
               "table": {
-                "widths": ["5%","45%","50%"],
+                "widths": ["4%","30%","66%"],
                 "body": [
                   [
                     {
@@ -1308,7 +1308,13 @@
               "font": "Times",
               "fontSize": 12,
               "letterSpacing": 0.74,
-              "fontWeight": 400
+              "fontWeight": 400,
+              "margin": [
+                15,
+                0,
+                0,
+                5
+              ]
             },
             "appendix-header": {
               "color": "#000000",
