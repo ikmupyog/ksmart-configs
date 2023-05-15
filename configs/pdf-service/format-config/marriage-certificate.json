@@ -65,7 +65,7 @@
                           {
                             "stack": [
                                 {"text":[{
-                                "text": "FORM No.IV",
+                                "text": "{{formNoIV}}",
                                 "style": "main-header-bold"
                               },
                               {
@@ -128,7 +128,7 @@
                           {
                               "stack": [
                                   {
-                                      "text": "Issued under rule 11(1) of the Kerala Registration of Marriages (Common) Rules,2008",
+                                      "text": "{{IssuedUnder}}",
                                       "style": "main-body-style"
                                   }
                               ]
@@ -359,7 +359,7 @@
                   {
                     "columns": [
                       {
-                        "text": "Name( In Bold Caps)",
+                        "text": "Name",
                         "style" : "table-text-label",
                          "width": "20%"
                       },
