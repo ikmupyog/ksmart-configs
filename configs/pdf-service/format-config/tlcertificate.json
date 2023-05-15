@@ -1272,7 +1272,7 @@
 		    "footer": "(function(currentPage, pageCount) { return currentPage.toString() + ' of ' + pageCount; })",
           "styles": {
             "pdf-header": {
-              "fillColor": "#F2F2F2",
+              "fillColor": "#000000",
               "margin": [
                 -70,
                 -41,
@@ -1281,7 +1281,7 @@
               ]
             },
             "tl-logo-header": {
-              "color": "#0f0f0f",
+              "color": "#000000",
               "font": "Times",
               "fontSize": 14,
               "bold": true,
@@ -1303,11 +1303,12 @@
               ]
             },
             "tl-logo-sub-header": {
-              "color": "#0f0f0f",
+              "color": "#000000",
+              "bold": true,
               "font": "Times",
-              "fontSize": 13,
+              "fontSize": 12,
               "letterSpacing": 0.6,
-              "fontWeight": 500
+              "fontWeight": 400
             },
             "appendix-header": {
               "color": "#000000",
@@ -1318,7 +1319,9 @@
             },
             "main-body-style": {
               "color": "#000000",
-              "fontSize": 12,
+              "bold": true,
+              "font": "Times",
+              "fontSize": 13,
               "alignment": "center"
             },
             "appendix-header-italic": {
@@ -1729,7 +1732,8 @@
               "alignment": "right"
             },
             "tl-table": {
-              "color": "#0f0f0f",
+              "color": "#000000",
+              "font" : "Times",
               "bold": true,
               "fontSize": 12,
               "fontWeight": 600,
@@ -1742,6 +1746,7 @@
             },
             "tl-table-value": {
               "color": "#000000",
+              "font" : "Times",
               "bold": true,
               "fontSize": 12,
               "fontWeight": 500,
