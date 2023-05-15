@@ -91,7 +91,7 @@
                             {
                                 "variable": "tenant",
                                 "value": {
-                                    "path": "$.marriageRegistryDetails.marriageTenantid"
+                                    "path": "$.marriageRegistryDetails.tenantId"
                                 },
                                 "type": "setEmpty",
                                 "localisation": {
@@ -160,6 +160,7 @@
                                     "locale": "ml_IN"
                                 }
                             },
+                            
                             {
                                 "variable": "certificateNo",
                                 "value": {
@@ -199,48 +200,10 @@
                                 },
                                 "type": "date"
                             },
-                            {
-                                "variable": "marriagePlacenameEn",
-                                "value": {
-                                    "path": "$.marriageRegistryDetails.marriagePlacenameEn"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "marriageStreetEn",
-                                "value": {
-                                    "path": "$.marriageRegistryDetails.marriageStreetEn"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "marriageTalukID",
-                                "value": {
-                                    "path": "$.marriageRegistryDetails.marriageTalukID"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "marriageVillageName",
-                                "value": {
-                                    "path": "$.marriageRegistryDetails.marriageVillageName"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "marriageLandmark",
-                                "value": {
-                                    "path": "$.marriageRegistryDetails.marriageLandmark"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "marriageLocalityEn",
-                                "value": {
-                                    "path": "$.marriageRegistryDetails.marriageLocalityEn"
-                                },
-                                "type": "setEmpty"
-                            },
+                           
+                           
+                          
+                          
                             {
                                 "variable": "marriagePlaceFullAddress",
                                 "value": {
@@ -463,7 +426,85 @@
                                     "path": "$.embeddedUrl"
                                 }
                             }
-                            
+                            ,
+                            {
+                                "variable": "computerGenerated",
+                                "value": {
+                                  "path": "PDF_BIRTH_COMPUTER_GENERATED"
+                                },
+                                "type": "label",
+                                "localisation":{
+                                  "required":true,
+                                  "prefix": null,
+                                  "module":"rainmaker-common",
+                                  "locale":"en_IN"
+                                }
+                              },
+                              {
+                                "variable": "validDocument",
+                                "value": {
+                                  "path": "PDF_BIRTH_VALID_DOCUMENT_FOR_ALL_OFFICIAL_PURPOSES"
+                                },
+                                "type": "label",
+                                "localisation":{
+                                  "required":true,
+                                  "prefix": null,
+                                  "module":"rainmaker-common",
+                                  "locale":"en_IN"
+                                }
+                              },
+                              {
+                                "variable": "authenticity",
+                                "value": {
+                                  "path": "PDF_BIRTH_AUTHENTICITY_OF_THIS_CERTIFICATE"
+                                },
+                                "type": "label",
+                                "localisation":{
+                                  "required":true,
+                                  "prefix": null,
+                                  "module":"rainmaker-common",
+                                  "locale":"en_IN"
+                                }
+                              },
+                              {
+                                "variable": "ikm",
+                                "value": {
+                                  "path": "PDF_BIRTH_SOFTWARE_BY_INFORMATION_KERALA_MISSION"
+                                },
+                                "type": "label",
+                                "localisation":{
+                                  "required":true,
+                                  "prefix": null,
+                                  "module":"rainmaker-common",
+                                  "locale":"en_IN"
+                                }
+                              },
+                              {
+                                "variable": "printedInvalid",
+                                "value": {
+                                  "path": "PDF_BIRTH_CERTIFICATE_PRINTED_BEFORE_THE_LAST_UPDATED_DATE_IS_INVALID"
+                                },
+                                "type": "label",
+                                "localisation":{
+                                  "required":true,
+                                  "prefix": null,
+                                  "module":"rainmaker-common",
+                                  "locale":"en_IN"
+                                }
+                              },
+                              {
+                                "variable": "updatedOn",
+                                "value": {
+                                  "path": "PDF_BIRTH_LAST_UPDATED_ON"
+                                },
+                                "type": "label",
+                                "localisation":{
+                                  "required":true,
+                                  "prefix": null,
+                                  "module":"rainmaker-common",
+                                  "locale":"en_IN"
+                                }
+                              }
                             
                                                    ]
                     },

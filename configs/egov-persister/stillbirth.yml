@@ -19,7 +19,7 @@ serviceMaps:
 
             - jsonPath: $.StillBirthChildDetails.*.childDOB
 
-            - jsonPath: $.StillBirthChildDetails.*.birthDateTime
+            - jsonPath: $.StillBirthChildDetails.*.birthTime
 
             - jsonPath: $.StillBirthChildDetails.*.am_pm
 
@@ -329,7 +329,7 @@ serviceMaps:
 
             - jsonPath: $.StillBirthChildDetails.*.AddressBirthDetails.streetNameMlPermanent
 
-            - jsonPath: $.StillBirthChildDetails.*.AddressBirthDetails.permanentOutsideIndiaPostCode
+            - jsonPath: $.StillBirthChildDetails.*.AddressBirthDetails.pinNoPermanent
 
             - jsonPath: $.StillBirthChildDetails.*.StillBirthParentsDetails.fatherEmail
 
@@ -376,7 +376,7 @@ serviceMaps:
 
             - jsonPath: $.StillBirthChildDetails.*.AddressBirthDetails.presentInsideKeralaPostOffice
 
-            - jsonPath: $.StillBirthChildDetails.*.AddressBirthDetails.presentInsideKeralaPincode
+            - jsonPath: $.StillBirthChildDetails.*.AddressBirthDetails.pinNoPresent
 
             - jsonPath: $.StillBirthChildDetails.*.AddressBirthDetails.countryIdPresent
 
@@ -394,7 +394,7 @@ serviceMaps:
 
             - jsonPath: $.StillBirthChildDetails.*.AddressBirthDetails.presentOutsideKeralaTaluk
 
-            - jsonPath: $.StillBirthChildDetails.*.AddressBirthDetails.villageNamePresent
+            - jsonPath: $.StillBirthChildDetails.*.AddressBirthDetails.presentOutsideKeralaVillage
 
             - jsonPath: $.StillBirthChildDetails.*.AddressBirthDetails.presentWardNo
 
@@ -534,13 +534,18 @@ serviceMaps:
 
             - jsonPath: $.StillBirthChildDetails.*.auditDetails.lastModifiedBy
 
-            - jsonPath: $.StillBirthChildDetails.*.auditDetails.lastModifiedTime
+            - jsonPath: $.StillBirthStillBirthChildDetails.*.auditDetails.lastModifiedTime
 
     - version: 1.0
       description: Persists update birth details in eg_birth_details  table
       fromTopic: update-still-birth-application-topic
       isTransaction: true
       queryMaps:
+        - query:  INSERT INTO eg_birth_details_audit SELECT * FROM eg_birth_details WHERE id = ?;
+
+          basePath: StillBirthChildDetails.*
+          jsonMaps:
+            - jsonPath: $.StillBirthChildDetails.*.id
 
         - query: UPDATE public.eg_birth_details SET dateofbirth=?, timeofbirth=?, am_pm=?, firstname_en=?, firstname_ml=?, middlename_en=?, middlename_ml=?,
             lastname_en=?, lastname_ml=?, tenantid=?, gender=?, aadharno=?, esign_user_code=?, esign_user_desig_code=?,
@@ -554,7 +559,7 @@ serviceMaps:
           jsonMaps:
             - jsonPath: $.StillBirthChildDetails.*.childDOB
 
-            - jsonPath: $.StillBirthChildDetails.*.birthDateTime
+            - jsonPath: $.StillBirthChildDetails.*.birthTime
 
             - jsonPath: $.StillBirthChildDetails.*.am_pm
 
@@ -622,6 +627,12 @@ serviceMaps:
 
             - jsonPath: $.StillBirthChildDetails.*.auditDetails.lastModifiedTime
 
+            - jsonPath: $.StillBirthChildDetails.*.id
+
+        - query: INSERT INTO eg_birth_place_audit SELECT * FROM eg_birth_place WHERE birthdtlid = ?;
+
+          basePath: StillBirthChildDetails.*
+          jsonMaps:
             - jsonPath: $.StillBirthChildDetails.*.id
 
         - query: UPDATE public.eg_birth_place SET placeofbirthid=?, hospitalid=?, public_place_id=?, institution_type_id=?, institution_id=?, vehicletypeid=?, vehicle_registration_no=?,
@@ -729,14 +740,20 @@ serviceMaps:
 
             - jsonPath: $.StillBirthChildDetails.*.id
 
+        - query: INSERT INTO eg_birth_father_information_audit SELECT * FROM eg_birth_father_information WHERE birthdtlid = ?;
+
+          basePath: StillBirthChildDetails.*
+          jsonMaps:
+            - jsonPath: $.StillBirthChildDetails.*.id
+
 
         - query: UPDATE public.eg_birth_father_information SET firstname_en=?, firstname_ml=?, aadharno=?, ot_passportno=?,  lastmodifiedtime=?, lastmodifiedby=? WHERE birthdtlid=?;
           basePath: StillBirthChildDetails.*.StillBirthParentsDetails
           jsonMaps:
 
-            - jsonPath: $.StillBirthChildDetails.*.StillBirthParentsDetails.firstname_en
+            - jsonPath: $.StillBirthChildDetails.*.StillBirthParentsDetails.fatherFirstNameEn
 
-            - jsonPath: $.StillBirthChildDetails.*.StillBirthParentsDetails.firstname_ml
+            - jsonPath: $.StillBirthChildDetails.*.StillBirthParentsDetails.fatherFirstNameMl
 
             - jsonPath: $.StillBirthChildDetails.*.StillBirthParentsDetails.fatherAadhar
 
@@ -746,6 +763,12 @@ serviceMaps:
 
             - jsonPath: $.StillBirthChildDetails.*.auditDetails.lastModifiedBy
 
+            - jsonPath: $.StillBirthChildDetails.*.id
+
+        - query: INSERT INTO eg_birth_mother_information_audit SELECT * FROM eg_birth_mother_information WHERE birthdtlid = ?;
+
+          basePath: StillBirthChildDetails.*
+          jsonMaps:
             - jsonPath: $.StillBirthChildDetails.*.id
 
         - query: UPDATE public.eg_birth_mother_information SET firstname_en=?, firstname_ml=?,  aadharno=?, ot_passportno=?,  lastmodifiedtime=?, lastmodifiedby=? WHERE birthdtlid=?;
@@ -765,6 +788,12 @@ serviceMaps:
 
             - jsonPath: $.StillBirthChildDetails.*.auditDetails.lastModifiedBy
 
+            - jsonPath: $.StillBirthChildDetails.*.id
+
+        - query: INSERT INTO eg_birth_permanent_address_audit SELECT * FROM eg_birth_permanent_address WHERE birthdtlid = ?;
+
+          basePath: StillBirthChildDetails.*
+          jsonMaps:
             - jsonPath: $.StillBirthChildDetails.*.id
 
 
@@ -839,6 +868,12 @@ serviceMaps:
 
             - jsonPath: $.StillBirthChildDetails.*.id
 
+        - query: INSERT INTO eg_birth_present_address_audit SELECT * FROM eg_birth_present_address WHERE birthdtlid = ?;
+
+          basePath: StillBirthChildDetails.*
+          jsonMaps:
+            - jsonPath: $.StillBirthChildDetails.*.id
+
 
         - query: UPDATE public.eg_birth_present_address SET housename_no_en=?, housename_no_ml=?, ot_address1_en=?,
             ot_address1_ml=?, ot_address2_en=?, ot_address2_ml=?, ot_state_region_province_en=?, ot_state_region_province_ml=?, villageid=?, tenantid=?,
@@ -903,6 +938,12 @@ serviceMaps:
 
             - jsonPath: $.StillBirthChildDetails.*.AddressBirthDetails.presentOutsideKeralaPostOfficeMl
 
+            - jsonPath: $.StillBirthChildDetails.*.id
+
+        - query: INSERT INTO eg_birth_statitical_information_audit SELECT * FROM eg_birth_statitical_information WHERE birthdtlid = ?;
+
+          basePath: StillBirthChildDetails.*
+          jsonMaps:
             - jsonPath: $.StillBirthChildDetails.*.id
 
 
@@ -997,6 +1038,12 @@ serviceMaps:
 
             - jsonPath: $.StillBirthChildDetails.*.auditDetails.lastModifiedBy
 
+            - jsonPath: $.StillBirthChildDetails.*.id
+
+        - query: INSERT INTO eg_birth_initiator_audit SELECT * FROM eg_birth_initiator WHERE birthdtlid = ?;
+
+          basePath: StillBirthChildDetails.*
+          jsonMaps:
             - jsonPath: $.StillBirthChildDetails.*.id
 
 
