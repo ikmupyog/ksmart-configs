@@ -531,7 +531,7 @@
                   "columns": [
                     {
                       "text": "നൽകുന്ന തീയതി / Date of Issue : {{issueDate}}",
-                      "width": "35%",
+                      "width": "50%",
                       "style": "details-body"
                     },
                     {
