@@ -6,26 +6,36 @@
     },
     "watermark": {
       "text": "KSMART DEMO",
-      "color": "gery",
-      "opacity": 0.1,
       "bold": true,
-      "italics": false
+      "color": "grey",
+      "opacity": 0.1,
+
+      "link": "https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
+      "image": "src/images/kerala-government.png"
+    },
+    "background":{
+      "color": "grey",
+      "opacity": 0.1,
+      "image": "src/images/kerala-government.png",
+      "width": 460,
+      "height": 320,
+      "absolutePosition": {"x": 75, "y": 250}
     },
     "content": [
       {
         "style": "ws-head",
         "table": {
           "widths": [
-            "50%",
-            "60%",
-            "50%"
+            "46%",
+            "46%",
+            "100%"
           ],
           "body": [
             [
               {
                 "stack": [
                   {
-                    "text": "{{keyNo}}: {{keyAckNo}}",
+                    "text": "{{keyNo}}   {{keyAckNo}}",
                     "style": "appendix-header-serialNo"
                   }
                 ]
@@ -34,16 +44,14 @@
                 "stack": [
                   {
                     "image": "{{logoindia}}",
-                    "width": 40,
-                    "height": 40
-                  }
-                ]
-              },
-              {
-                "stack": [
-                  {
-                    "text": "Government of India",
-                    "style": "appendix-header-italic"
+                    "width": 25,
+                    "height": 33,
+                    "margin": [
+                      10,
+                      0,
+                      10,
+                      -4
+                    ]
                   }
                 ]
               }
@@ -58,6 +66,7 @@
           "widths": [
             "20%",
             "60%",
+            "20%",
             "20%"
           ],
           "body": [
@@ -65,15 +74,30 @@
               {
                 "stack": [
                   {
-                    "image": "{{logokerala}}",
-                    "width": 70,
-                    "height": 70
+                    "image": "{{logotenant}}",
+                    "width": 50,
+                    "height": 50,
+                    "color": "grey",
+                    "opacity": 0.3,
+                    "margin": [
+                      20,
+                      0,
+                      0,
+                      0
+                    ]
+
                   }
                 ]
               },
 
               {
                 "stack": [
+                  {
+                    "text": "GOVERNMENT OF INDIA",
+                    "style": "appendix-header-body",
+                    "width": 30,
+                    "height": 30
+                  },
                   {
                     "text": "{{form5}}",
                     "style": "appendix-header-italic"
@@ -82,13 +106,25 @@
                     "text": "{{rule8}}",
                     "style": "main-body-style"
                   },
+
+                  {
+                    "text": "{{govtOfKeralaMl}}",
+                    "style": "appendix-header-body-ml"
+                  },
                   {
                     "text": "{{govtOfKerala}}",
                     "style": "appendix-header-body"
                   },
+
                   {
-                    "text": "{{govtOfKeralaMl}}",
-                    "style": "appendix-header-body-ml"
+                    "text": "{{deptUrbanAffairsMl}}",
+                    "style": "appendix-header-body-ml",
+                    "margin": [
+                      0,
+                      0,
+                      0,
+                      0
+                    ]
                   },
                   {
                     "text": "{{deptUrbanAffairs}}",
@@ -99,25 +135,22 @@
                       0,
                       0
                     ]
-                  },
-                  {
-                    "text": "{{deptUrbanAffairsMl}}",
-                    "style": "appendix-header-body",
-                    "margin": [
-                      0,
-                      0,
-                      0,
-                      0
-                    ]
                   }
                 ]
               },
               {
                 "stack": [
-                  {
-                    "image": "{{logotenant}}",
-                    "width": 70,
-                    "height": 70
+                  {"color": "gery",
+                    "opacity": 0.3,
+                    "image": "{{logobirth}}",
+                    "width": 50,
+                    "height": 50,
+                    "margin": [
+                      40,
+                      0,
+                      0,
+                      0
+                    ]
                   }
                 ]
               }
@@ -137,12 +170,12 @@
               {
                 "stack": [
                   {
-                    "text": "{{nameOfLbMl}} : {{tenantMl}} {{  lbtypecodeMl}}",
-                    "style": "details-body-center"
+                    "text": "{{tenantMl}}",
+                    "style": "details-body-center-ml"
                   },
                   {
-                    "text": "{{nameOfLb}} : {{tenant}} {{  lbtypecode}}",
-                    "style": "details-body-center"
+                    "text": "{{tenant}} {{  lbtypecode}}",
+                    "style": "details-body-center-bold"
                   }
 
                 ]
@@ -165,16 +198,13 @@
 
                   {
                     "text": "{{birthCertificateMl}}",
-                    "style": "title-header"
+                    "style": "title-header",
+                    "bold": true
                   },
                   {
                     "text": "{{birthCertificate}}",
-                    "style": "title-header"
-                  },
-
-                  {
-                    "text": "{{issueUnderSection12}}",
-                    "style": "rule-body_multiLang"
+                    "style": "title-header-Times",
+                    "bold": true
                   }
                 ]
               }
@@ -193,13 +223,13 @@
             [
               {
                 "stack": [
+                  {
+                    "text": "{{issueUnderSection121969ML}}",
+                    "style": "rule-header-ml"
+                  },
                   {
                     "text": "{{issueUnderSection121969}}",
                     "style": "rule-header"
-                  },
-                  {
-                    "text": "{{issueUnderSection121969ML}}",
-                    "style": "rule-header"
                   }
                 ]
               }
@@ -219,11 +249,11 @@
               {
                 "stack": [
                   {
-                    "text": "{{certify}} {{tenant}} {{lbtypecode}}  of Taluk  {{talukcode}}  of District {{distcode}} of State {{statecode}}.",
-                    "style": "rule-header"
+                    "text": "താഴെ പറയുന്ന വിവരങ്ങൾ {{statecodeMl}} സംസ്ഥാനത്തിലെ {{distcodeMl}} ജില്ലയിലെ {{talukcodeMl}} താലൂക്കിലെ  {{tenantMl}} {{certifyMl}}.",
+                    "style": "rule-header-ml"
                   },
                   {
-                    "text": "താഴെ പറയുന്ന വിവരങ്ങൾ {{statecodeMl}} സംസ്ഥാനത്തിലെ {{distcodeMl}} ജില്ലയിലെ {{talukcodeMl}} താലൂക്കിലെ  {{tenantMl}} {{lbtypecodeMl}} {{certifyMl}}.",
+                    "text": "{{certify}} {{tenant}} {{lbtypecode}}  of Taluk  {{talukcode}}  of District {{distcode}} of State {{statecode}}.",
                     "style": "rule-header"
                   }
                 ]
@@ -293,8 +323,8 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{dateofbirth}} /{{dobInWords}} ",
-                    "style": "details-body"
+                    "text": "{{dob}}  ({{dobInWords}})",
+                    "style": "details-body-bold"
                   }
                 ]
               }
@@ -313,7 +343,7 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{placeOfBirthMl}}/{{placeOfBirthEn}}",
+                    "text": "{{placeOfBirthMl}}/{{placeOfBirthEn}}{{hospitalMainPlace}}",
                     "style": "details-body"
                   }
                 ]
@@ -385,7 +415,7 @@
                   {
                     "text": "{{presentAddressLabel}} ",
                     "width": "49%",
-                    "style": "details-body"
+                    "style": "details-body-times"
                   },
                   {
                     "text": "  :",
@@ -393,7 +423,7 @@
                   },
                   {
                     "text": "{{presentAddress}}",
-                    "style": "details-body"
+                    "style": "details-body-times"
                   }
                 ]
               }
@@ -425,7 +455,7 @@
                   {
                     "text": "{{permanentAddressLabel}} ",
                     "width": "49%",
-                    "style": "details-body"
+                    "style": "details-body-times"
                   },
                   {
                     "text": "  :",
@@ -433,7 +463,7 @@
                   },
                   {
                     "text": "{{registerBirthPermanent}}",
-                    "style": "details-body"
+                    "style": "details-body-times"
                   }
                 ]
               }
@@ -442,27 +472,7 @@
               {
                 "columns": [
                   {
-                    "text": "{{registrationNoLabel}}: {{registrationNo}}",
-                    "width": "49%",
-                    "style": "details-body"
-                  },
-                  {
-                    "text": " ",
-                    "width": "1%"
-                  },
-                  {
-                    "text": "{{registrationDateLabel}} {{registrationDateStr}}",
-                    "style": "details-body"
-                  }
-                ]
-              }
-            ],
-            [
-              {
-                "columns": [
-
-                  {
-                    "text": "{{remarksLabel}} ",
+                    "text": "{{registrationNoLabel}} ",
                     "width": "49%",
                     "style": "details-body"
                   },
@@ -471,8 +481,8 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{remarksMl}}/{{remarks}}",
-                    "style": "details-body"
+                    "text": "{{registrationNo}}",
+                    "style": "details-body-times"
                   }
                 ]
               }
@@ -481,7 +491,26 @@
               {
                 "columns": [
                   {
-                    "text": "{{dateOfIssue}}: {{currentDateLong}}",
+                    "text": "{{registrationDateLabel}} ",
+                    "width": "49%",
+                    "style": "details-body"
+                  },
+                  {
+                    "text": "  :",
+                    "width": "1%"
+                  },
+                  {
+                    "text": "{{registrationDate}}",
+                    "style": "details-body-times"
+                  }
+                ]
+              }
+            ],
+            [
+              {
+                "columns": [
+                  {
+                    "text": "{{dateOfIssue}}: {{currentDate}} ({{currentTime}})",
                     "width": "49%",
                     "style": "details-body"
                   },
@@ -490,8 +519,8 @@
                     "width": "1%"
                   },
                   {
-                    "text": "{{updatedOn}} :{{currentDate}}",
-                    "style": "details-body"
+                    "text": "{{updatedOn}} :{{updatedDate}} ({{updatingTime}})",
+                    "style": "details-body-times"
                   }
                 ]
               }
@@ -510,7 +539,7 @@
                   },
                   {
                     "text": "{{registar}} {{tenant}} {{lbtypecode}} ",
-                    "style": "details-body"
+                    "style": "details-body-times"
                   }
                 ]
               }
@@ -531,54 +560,43 @@
                 "columns": [
                   {
                     "image": "{{qr_code_image}}",
-                    "width": 100,
-                    "height": 100,
+                    "width": 45,
+                    "height": 45,
                     "style": "qr-code"
-                  }
-                ]
-              }
-            ]
-          ]
-        },
-        "layout": "noBorders"
-      },
-      {
-        "style": "ws-head",
-        "table": {
-          "widths": [
-            "*"
-          ],
-          "body": [
-            [
-              {
-                "stack": [
-                  {
-                    "text": "{{ensureRegistration}}",
-                    "style": "details-body-center"
                   },
                   {
-                    "text": "{{ensureRegistrationMl}}",
-                    "style": "details-body-center"
-                  },
-                  {
-                    "text": "{{computerGenerated}}",
-                    "style": "details-body-center"
-                  },
-                  {
-                    "text": "{{validDocument}}",
-                    "style": "details-body-center"
-                  },
-                  {
-                    "text": "{{authenticity}}",
-                    "style": "details-body-center"
-                  },
-                  {
-                    "text": "{{ikm}}",
-                    "style": "details-body-center"
-                  },
-                  {
-                    "text": "{{printedInvalid}}",
-                    "style": "footer-red"
+                    "stack": [
+                      {
+                        "text": "{{ensureRegistration}}",
+                        "style": "details-body-center-bottom-bold"
+                      },
+                      {
+                        "text": "{{ensureRegistrationMl}}",
+                        "style": "details-body-center-bottomML"
+                      },
+                      {
+                        "text": "{{computerGenerated}}",
+                        "style": "details-body-center-bottom"
+                      },
+                      {
+                        "text": "{{validDocument}}",
+                        "style": "details-body-center-bottom"
+                      },
+                      {
+                        "text": "{{authenticity}}",
+                        "style": "details-body-center-bottom"
+                      },
+                      {
+                        "text": "{{ikm}}",
+                        "italics": true,
+                        "style": "details-body-center-bottom"
+                      },
+                      {
+                        "text": "{{printedInvalid}}",
+                        "italics": true,
+                        "style": "footer-red"
+                      }
+                    ]
                   }
                 ]
               }
@@ -590,39 +608,46 @@
     ],
     "styles": {
       "pdf-header": {
-        "fillColor": "#F2F2F2",
+        "fillColor": "#000000",
+        "fontSize": 12,
+        "bold": true,
+        "letterSpacing": 0.74,
+        "alignment": "center",
         "margin": [
-          -70,
-          -41,
-          -81,
-          10
+          0,
+          -10,
+          0,
+          0
         ]
       },
       "appendix-header-body-ml": {
         "color": "#000000",
-        "fontSize": 12,
+        "fontSize": 13,
         "alignment": "center"
       },
       "main-body-style": {
         "color": "#000000",
-        "fontSize": 10,
+        "fontSize": 8,
         "alignment": "center"
       },
       "main-body-style_ml": {
         "color": "#000000",
-        "fontSize": 10,
+        "fontSize": 11,
         "alignment": "center"
       },
       "appendix-header-italic": {
         "color": "#000000",
-        "fontSize": 10,
+        "fontSize": 9,
+        "bold": true,
         "fontWeight": 400,
+        "italics": true,
+        "font": "Times",
         "alignment": "center"
       },
       "appendix-header": {
         "color": "#000000",
         "bold": true,
-        "fontSize": 10,
+        "fontSize": 11,
         "fontWeight": 400,
         "alignment": "center"
       },
@@ -639,7 +664,7 @@
       "instruction-body": {
         "color": "#000000",
         "bold": false,
-        "fontSize": 10,
+        "fontSize": 11,
         "fontWeight": 400,
         "alignment": "center",
         "margin": [
@@ -662,17 +687,31 @@
       "footer": {
         "color": "#000000",
         "alignment": "center",
-        "fontSize": 10
+        "fontSize": 11
       },
       "footer-red": {
         "color": "#FF0000",
-        "fontSize": 10,
+        "fontSize": 7,
+        "font": "Times",
         "alignment": "center",
         "italics": true
       },
       "body-font": {
         "color": "#000000",
         "fontSize": 14,
+        "alignment": "center",
+        "margin": [
+          0,
+          -1,
+          0,
+          0
+        ]
+      },
+      "title-header-Times": {
+        "color": "#000000",
+        "bold": true,
+        "fontSize": 10,
+        "font": "Times",
         "alignment": "center",
         "margin": [
           0,
@@ -707,9 +746,10 @@
       },
       "appendix-header-serialNo": {
         "color": "#000000",
-        "bold": false,
-        "fontSize": 10,
-        "fontWeight": 400,
+        "bold": true,
+        "italics": true,
+        "font": "Times",
+        "fontSize": 8,
         "margin": [
           0,
           -5,
@@ -731,14 +771,23 @@
       },
       "rule-header": {
         "color": "#000000",
-        "bold": false,
-        "fontSize": 10,
-        "fontWeight": 400,
+        "fontSize": 7,
+        "font": "Times",
         "margin": [
           0,
           0,
           0,
-          3
+          2
+        ]
+      },
+      "rule-header-ml": {
+        "color": "#000000",
+        "fontSize": 9,
+        "margin": [
+          0,
+          0,
+          0,
+          2
         ]
       },
       "rule-header_multiLang": {
@@ -768,8 +817,8 @@
       "rule-body_multiLang": {
         "color": "#000000",
         "bold": false,
-        "fontSize": 10,
-        "fontWeight": 400,
+        "font": "Times",
+        "fontSize": 8,
         "alignment": "center"
       },
       "details-body-bottom": {
@@ -778,23 +827,78 @@
         "fontSize": 10,
         "alignment": "bottom"
       },
-
+      "details-body-bold": {
+        "color": "#000000",
+        "bold": true,
+        "fontSize": 7,
+        "font": "Times",
+        "alignment": "left"
+      },
       "details-body": {
         "color": "#000000",
         "bold": false,
-        "fontSize": 10,
+        "fontSize": 9,
         "alignment": "left"
       },
+      "details-body-times": {
+        "color": "#000000",
+        "font": "Times",
+        "fontSize": 8,
+        "alignment": "left"
+      },
+      "details-body-center-bold": {
+        "color": "#000000",
+        "bold": true,
+        "fontSize": 8,
+        "fontWeight": 100,
+        "font": "Times",
+        "alignment": "center"
+      },
+
       "details-body-center": {
         "color": "#000000",
         "bold": false,
-        "fontSize": 10,
+        "fontSize": 7,
+        "fontWeight": 100,
+        "font": "Times",
         "alignment": "center"
+      },
+      "details-body-center-ml": {
+        "color": "#000000",
+        "fontSize": 9,
+        "fontWeight": 400,
+        "alignment": "center"
+      },
+      "details-body-center-bottomML": {
+        "color": "#000000",
+        "italics": true,
+        "fontSize": 6,
+        "alignment": "center",
+        "margin": [
+          0,
+          0,
+          15,
+          5
+        ]
       },
       "details-body-center-bottom": {
         "color": "#000000",
-        "bold": false,
-        "fontSize": 10,
+        "font": "Times",
+        "italics": true,
+        "fontSize": 6,
+        "alignment": "center",
+        "margin": [
+          0,
+          0,
+          15,
+          5
+        ]
+      },
+      "details-body-center-bottom-bold": {
+        "color": "#000000",
+        "font": "Times",
+        "bold": true,
+        "fontSize": 6,
         "alignment": "center",
         "margin": [
           0,
@@ -806,8 +910,8 @@
       "appendix-header-body": {
         "color": "#000000",
         "bold": true,
-        "fontSize": 11,
-        "fontWeight": 400,
+        "fontSize": 8,
+        "font": "Times",
         "alignment": "center"
       },
       "receipt-value-down-sub": {
@@ -971,6 +1075,7 @@
       "pdf-watermark": {
         "link": "{{watermark}}"
       }
-    }
+    },
+    "footer": "(function(currentPage, pageCount) { return [{'columns': [{'text': currentPage.toString() + ' of ' + pageCount ,'alignment':'center'}]}] })"
   }
 }

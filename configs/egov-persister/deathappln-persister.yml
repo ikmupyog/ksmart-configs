@@ -369,11 +369,11 @@ serviceMaps:
 
       - jsonPath: $.deathCertificateDtls.*.AddressBirthDetails.PermanentAddrLbType
 
-      - jsonPath: $.deathCertificateDtls.*.AddressBirthDetails.PermanentAddrPostalCode
+      - jsonPath: $.deathCertificateDtls.*.AddressBirthDetails.permanentOutsideIndiaPostCode
 
-      - jsonPath: $.deathCertificateDtls.*.AddressBirthDetails.PermntOutsideIndiaprovinceEn
+      - jsonPath: $.deathCertificateDtls.*.AddressBirthDetails.permntOutsideIndiaprovinceEn
 
-      - jsonPath: $.deathCertificateDtls.*.AddressBirthDetails.PermntOutsideIndiaprovinceMl
+      - jsonPath: $.deathCertificateDtls.*.AddressBirthDetails.permntOutsideIndiaprovinceMl
 
       - jsonPath: $.deathCertificateDtls.*.AddressBirthDetails.PermanentAddrTownOrVillage
 
@@ -470,6 +470,38 @@ serviceMaps:
       - jsonPath: $.deathCertificateDtls.*.StatisticalInfo.MPDesignation
 
       - jsonPath: $.deathCertificateDtls.*.StatisticalInfo.MPAddress
+
+    - query: INSERT INTO public.eg_death_document_dtls(id, tenantid, death_dtls_id, document_type, filestore_id, death_ackno, active, created_by, createdtime, lastmodifiedby, lastmodifiedtime, rdo_proceedings_no, nac_registration_no)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+     
+
+      basePath: deathCertificateDtls.*.DeathNACDocuments.*
+      jsonMaps:
+      - jsonPath: $.deathCertificateDtls.*.DeathNACDocuments.*.Id
+      
+      - jsonPath: $.deathCertificateDtls.*.DeathNACDocuments.*.TenantId
+
+      - jsonPath: $.deathCertificateDtls.*.DeathNACDocuments.*.DeathDtlId
+
+      - jsonPath: $.deathCertificateDtls.*.DeathNACDocuments.*.DocumentType
+
+      - jsonPath: $.deathCertificateDtls.*.DeathNACDocuments.*.FileStoreId
+
+      - jsonPath: $.deathCertificateDtls.*.DeathNACDocuments.*.DeathACKNo
+
+      - jsonPath: $.deathCertificateDtls.*.DeathNACDocuments.*.Active
+
+      - jsonPath: $.deathCertificateDtls.*.DeathNACDocuments.*.AuditDetails.createdBy      
+
+      - jsonPath: $.deathCertificateDtls.*.DeathNACDocuments.*.AuditDetails.createdTime
+
+      - jsonPath: $.deathCertificateDtls.*.DeathNACDocuments.*.AuditDetails.lastModifiedBy
+      
+      - jsonPath: $.deathCertificateDtls.*.DeathNACDocuments.*.AuditDetails.lastModifiedTime
+
+      - jsonPath: $.deathCertificateDtls.*.DeathNACDocuments.*.proceedNoRDO
+
+      - jsonPath: $.deathCertificateDtls.*.DeathNACDocuments.*.regNoNAC
 
 #Jasmine 12.02.2023
 #commented on 15/12/2023(based on new suggession 14/12/2023 )
@@ -908,11 +940,11 @@ serviceMaps:
 
       - jsonPath: $.deathCertificateDtls.*.AddressBirthDetails.PermanentAddrLbType
 
-      - jsonPath: $.deathCertificateDtls.*.AddressBirthDetails.PermanentAddrPostalCode
+      - jsonPath: $.deathCertificateDtls.*.AddressBirthDetails.permanentOutsideIndiaPostCode
 
-      - jsonPath: $.deathCertificateDtls.*.AddressBirthDetails.PermntOutsideIndiaprovinceEn
+      - jsonPath: $.deathCertificateDtls.*.AddressBirthDetails.permntOutsideIndiaprovinceEn
 
-      - jsonPath: $.deathCertificateDtls.*.AddressBirthDetails.PermntOutsideIndiaprovinceMl
+      - jsonPath: $.deathCertificateDtls.*.AddressBirthDetails.permntOutsideIndiaprovinceMl
 
       - jsonPath: $.deathCertificateDtls.*.AddressBirthDetails.PermanentAddrTownOrVillage
 
@@ -1242,7 +1274,7 @@ serviceMaps:
 
       - jsonPath: $.deathAbandonedDtls.*.InformantDetailsDeathAbandoned.InformantName
 
-      - jsonPath: $.deathAbandonedDtls.*.InformantDetailsDeathAbandoned.InformantAadharNo
+      - jsonPath: $.deathAbandonedDtls.*.InformantDetailsDeathAbandoned.InformantAadhaarNo
 
       - jsonPath: $.deathAbandonedDtls.*.InformantDetailsDeathAbandoned.InformantMobileNo
 
@@ -1628,6 +1660,34 @@ serviceMaps:
       - jsonPath: $.deathAbandonedDtls.*.StatisticalInfoDeathAbandoned.MPDesignation
 
       - jsonPath: $.deathAbandonedDtls.*.StatisticalInfoDeathAbandoned.MPAddress
+
+    - query: INSERT INTO public.eg_death_document_dtls(id, tenantid, death_dtls_id, document_type, filestore_id, death_ackno, active, created_by, createdtime, lastmodifiedby, lastmodifiedtime)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+     
+
+      basePath: deathAbandonedDtls.*.DeathAbandonedDocuments.*
+      jsonMaps:
+      - jsonPath: $.deathAbandonedDtls.*.DeathAbandonedDocuments.*.Id
+      
+      - jsonPath: $.deathAbandonedDtls.*.DeathAbandonedDocuments.*.TenantId
+
+      - jsonPath: $.deathAbandonedDtls.*.DeathAbandonedDocuments.*.DeathDtlId
+
+      - jsonPath: $.deathAbandonedDtls.*.DeathAbandonedDocuments.*.DocumentType
+
+      - jsonPath: $.deathAbandonedDtls.*.DeathAbandonedDocuments.*.FileStoreId
+
+      - jsonPath: $.deathAbandonedDtls.*.DeathAbandonedDocuments.*.DeathACKNo
+
+      - jsonPath: $.deathAbandonedDtls.*.DeathAbandonedDocuments.*.Active
+
+      - jsonPath: $.deathAbandonedDtls.*.DeathAbandonedDocuments.*.AuditDetails.createdBy      
+
+      - jsonPath: $.deathAbandonedDtls.*.DeathAbandonedDocuments.*.AuditDetails.createdTime
+
+      - jsonPath: $.deathAbandonedDtls.*.DeathAbandonedDocuments.*.AuditDetails.lastModifiedBy
+      
+      - jsonPath: $.deathAbandonedDtls.*.DeathAbandonedDocuments.*.AuditDetails.lastModifiedTime
 
       # UPDATE DEATH ABANDONED  Rakhi S on 13.03.2023 
   - version: 1.0
@@ -2384,6 +2444,34 @@ serviceMaps:
 
       - jsonPath: $.deathNACDtls.*.AddressBirthDetails.isPrsentAddress
 
+    - query: INSERT INTO public.eg_death_document_dtls(id, tenantid, death_dtls_id, document_type, filestore_id, death_ackno, active, created_by, createdtime, lastmodifiedby, lastmodifiedtime)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+     
+
+      basePath: deathNACDtls.*.DeathNACDocuments.*
+      jsonMaps:
+      - jsonPath: $.deathNACDtls.*.DeathNACDocuments.*.Id
+      
+      - jsonPath: $.deathNACDtls.*.DeathNACDocuments.*.TenantId
+
+      - jsonPath: $.deathNACDtls.*.DeathNACDocuments.*.DeathDtlId
+
+      - jsonPath: $.deathNACDtls.*.DeathNACDocuments.*.DocumentType
+
+      - jsonPath: $.deathNACDtls.*.DeathNACDocuments.*.FileStoreId
+
+      - jsonPath: $.deathNACDtls.*.DeathNACDocuments.*.DeathACKNo
+
+      - jsonPath: $.deathNACDtls.*.DeathNACDocuments.*.Active
+
+      - jsonPath: $.deathNACDtls.*.DeathNACDocuments.*.AuditDetails.createdBy      
+
+      - jsonPath: $.deathNACDtls.*.DeathNACDocuments.*.AuditDetails.createdTime
+
+      - jsonPath: $.deathNACDtls.*.DeathNACDocuments.*.AuditDetails.lastModifiedBy
+      
+      - jsonPath: $.deathNACDtls.*.DeathNACDocuments.*.AuditDetails.lastModifiedTime
+
            # UPDATE DEATH NAC  Rakhi S on 30.03.2023 
   - version: 1.0
     description: Persists death reporting form details in eg_death_dtls,eg_death_address_dtls  table
@@ -2399,7 +2487,7 @@ serviceMaps:
 
     - query: UPDATE  public.eg_death_dtls  SET 
          lastmodifiedby = ? , lastmodifiedtime = ? ,    
-         action = ? , status = ?  
+         action = ? , status = ? 
          WHERE  tenantid = ? AND ack_no = ?
 
       basePath: deathNACDtls.*
@@ -2411,7 +2499,7 @@ serviceMaps:
      
       - jsonPath: $.deathNACDtls.*.action
 
-      - jsonPath: $.deathNACDtls.*.applicationStatus      
+      - jsonPath: $.deathNACDtls.*.applicationStatus     
 
       - jsonPath: $.deathNACDtls.*.InformationDeath.TenantId
 

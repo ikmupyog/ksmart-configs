@@ -10,12 +10,7 @@
       {
         "mappings": [
           {
-            "direct": [    
-              {
-                "variable": "logokerala",
-                "url":"https://ulb-logos.s3.ap-south-1.amazonaws.com/kerala_logo.jpg",
-                "type":"image"
-               },
+            "direct": [   
               {
                 "variable": "tenant",
                 "value": {
@@ -107,12 +102,6 @@
                 }
               },
               {
-                "variable": "noOfEmployees",
-                "value": {
-                  "path": "$.tradeLicenseDetail.noOfEmployees"
-                }
-              },
-              {
                 "variable": "applicantNameMal",
                 "value": {
                   "path": "$.tradeLicenseDetail.owners.*.applicantNameLocal"
@@ -137,33 +126,9 @@
                 }
               },
               {
-                "variable": "ownerHouseName",
+                "variable": "owneraddress",
                 "value": {
-                  "path": "$.tradeLicenseDetail.owners.*.houseName"
-                }
-              },
-              {
-                "variable": "ownerStreet",
-                "value": {
-                  "path": "$.tradeLicenseDetail.owners.*.street"
-                }
-              },
-              {
-                "variable": "ownerLocality",
-                "value": {
-                  "path": "$.tradeLicenseDetail.owners.*.locality"
-                }
-              },
-              {
-                "variable": "ownerPostOffice",
-                "value": {
-                  "path": "$.tradeLicenseDetail.owners.*.postOffice"
-                }
-              },
-              {
-                "variable": "ownerPincode",
-                "value": {
-                  "path": "$.tradeLicenseDetail.owners.*.pincode"
+                  "path": "$.tradeLicenseDetail.owners.*.address"
                 }
               },
               {
@@ -185,111 +150,42 @@
               }
             },
             {
-              "variable": "combainedDoorNo",
+              "variable": "address",
               "value": {
-                "path": "$.tradeLicenseDetail.address.doorNo"
-              }
-            },
-            {
-              "variable": "instLandmark",
-              "value": {
-                "path": "$.tradeLicenseDetail.address.landmark"
-              }
-            },
-            {
-              "variable": "instPincode",
-              "value": {
-                "path": "$.tradeLicenseDetail.address.pincode"
-              }
-            },
-            {
-              "variable": "instBuildingName",
-              "value": {
-                "path": "$.tradeLicenseDetail.address.buildingName"
-              }
-            },
-            {
-              "variable": "instStreet",
-              "value": {
-                "path": "$.tradeLicenseDetail.address.street"
-              }
-            },
-            {
-              "variable": "instLocality",
-              "value": {
-                "path": "$.tradeLicenseDetail.address.locality"
-              }
-            },
-            {
-              "variable": "wardNo",
-              "value": {
-                "path": "$.tradeLicenseDetail.address.wardNo"
-              }
-            },
-            {
-              "variable": "contactNo",
-              "value": {
-                "path": "$.tradeLicenseDetail.address.contactNo"
-              }
-            },
-            {
-              "variable": "email",
-              "value": {
-                "path": "$.tradeLicenseDetail.address.email"
-              }
-            },
-            {
-              "variable": "lbBuildingCode",
-              "value": {
-                "path": "$.tradeLicenseDetail.address.lbBuildingCode"
-              }
-            },
-            {
-              "variable": "lbBuildingName",
-              "value": {
-                "path": "$.tradeLicenseDetail.address.lbBuildingName"
-              }
-            },
-            {
-              "variable": "postOffice",
-              "value": {
-                "path": "$.tradeLicenseDetail.address.postOffice"
-              }
-            },
-            {
-              "variable": "waterbody",
-              "value": {
-                "path": "$.tradeLicenseDetail.address.waterbody"
-              }
-            },
-            {
-              "variable": "serviceArea",
-              "value": {
-                "path": "$.tradeLicenseDetail.address.serviceArea"
-              }
-            },
-            {
-              "variable": "localityName",
-              "value": {
-                "path": "$.tradeLicenseDetail.address.localityName"
+                "path": "$.tradeLicenseDetail.address"
               }
             },
             {
               "variable": "businessCategory",
               "value": {
-                "path": "$.tradeLicenseDetail.tradeUnits.*.businessCategory"
+                "path": "$.tradeLicenseDetail.tradeUnits[0].businessCategory"
+              },
+              "localisation":{
+                "required":true,
+                "prefix": null,
+                "module": "rainmaker-tl"
               }
             },
             {
               "variable": "businessType",
               "value": {
-                "path": "$.tradeLicenseDetail.tradeUnits.*.businessType"
+                "path": "$.tradeLicenseDetail.tradeUnits[0].businessType"
+              },
+              "localisation":{
+                "required":true,
+                "prefix": null,
+                "module": "rainmaker-tl"
               }
             },
             {
               "variable": "businessSubtype",
               "value": {
-                "path": "$.tradeLicenseDetail.tradeUnits.*.businessSubtype"
+                "path": "$.tradeLicenseDetail.tradeUnits[0].businessSubtype"
+              },
+              "localisation":{
+                "required":true,
+                "prefix": null,
+                "module": "rainmaker-tl"
               }
             },
             {
@@ -317,87 +213,9 @@
               }
             },
             {
-              "variable": "natureOfInstitution",
-              "value": {
-                "path": "$.tradeLicenseDetail.institution.natureOfInstitution"
-              }
-            },
-            {
-              "variable": "institutinEmail",
-              "value": {
-                "path": "$.tradeLicenseDetail.institution.email"
-              }
-            },
-            {
               "variable": "licenseUnitId",
               "value": {
                 "path": "$.tradeLicenseDetail.institution.licenseUnitId"
-              }
-            },
-            {
-              "variable": "blockNo",
-              "value": {
-                "path": "$.tradeLicenseDetail.structurePlace[0].blockNo"
-              }
-            },
-            {
-              "variable": "surveyNo",
-              "value": {
-                "path": "$.tradeLicenseDetail.structurePlace[0].surveyNo"
-              }
-            },
-            {
-              "variable": "subDivisionNo",
-              "value": {
-                "path": "$.tradeLicenseDetail.structurePlace[0].subDivisionNo"
-              }
-            },
-            {
-              "variable": "partitionNo",
-              "value": {
-                "path": "$.tradeLicenseDetail.structurePlace[0].partitionNo"
-              }
-            },
-            {
-              "variable": "doorNo",
-              "value": {
-                "path": "$.tradeLicenseDetail.structurePlace.*.doorNo"
-              }
-            },
-            {
-              "variable": "doorNoSub",
-              "value": {
-                "path": "$.tradeLicenseDetail.structurePlace.*.doorNoSub"
-              }
-            },
-            {
-              "variable": "buildingId",
-              "value": {
-                "path": "$.tradeLicenseDetail.structurePlace.*.buildingId"
-              }
-            },
-            {
-              "variable": "stallNo",
-              "value": {
-                "path": "$.tradeLicenseDetail.structurePlace.*.stallNo"
-              }
-            },
-            {
-              "variable": "vehicleNo",
-              "value": {
-                "path": "$.tradeLicenseDetail.structurePlace[0].vehicleNo"
-              }
-            },
-            {
-              "variable": "vesselNo",
-              "value": {
-                "path": "$.tradeLicenseDetail.structurePlace[0].vesselNo"
-              }
-            },
-            {
-              "variable": "isResurveyed",
-              "value": {
-                "path": "$.tradeLicenseDetail.structurePlace[0].isResurveyed"
               }
             },
             {
@@ -428,18 +246,6 @@
               "variable": "licenseeType",
               "value": {
                 "path": "$.tradeLicenseDetail.licenseeType"
-              }
-            },
-            {
-              "variable": "establishmentUnit",
-              "value": {
-                "path": "$.tradeLicenseDetail.establishmentUnit"
-              }
-            },
-            {
-              "variable": "establishmentUnitId",
-              "value": {
-                "path": "$.tradeLicenseDetail.establishmentUnitId"
               }
             },
             {
@@ -628,7 +434,7 @@
                     "prefix": null,
                     "module":"rainmaker-common"
                  }
-              },
+              }, 
               {
                   "variable": "license_issue_date",
                   "value": {
@@ -705,8 +511,62 @@
                 {
                   "variable":"localbodyName",
                   "value":"$.MdmsRes.tenant.tenants[0].name"
+                },
+                {
+                  "variable": "logoImage",
+                  "value": "$.MdmsRes.tenant.tenants[0].logoId",
+                  "type": "image"
                 }
               ]
+            },
+            { 
+              "path": "http://egov-filestore:8080/filestore/v1/files/url",
+              "queryParam": "tenantId=kl,fileStoreIds=$.tradeLicenseDetail.applicationDocuments[?(@.documentType== 'OWNERPHOTO')].fileStoreId",
+              "apiRequest": null,
+              "requesttype": "GET",
+              "responseMapping":[
+                {             
+                  "variable":"userpic",
+                  "value":"$.fileStoreIds[0].url",
+                  "type": "image"
+                }
+              ]
+            },  
+            {
+              "path": "http://egov-workflow-v2.egov:8080/egov-workflow-v2/egov-wf/process/_search",
+              "queryParam": "businessIds=$.applicationNumber,history=true,tenantId=$.tenantId",
+              "apiRequest": null,
+              "responseMapping":[
+                {            
+                  "variable":"approvedBy",
+                  "value":"$.ProcessInstances[?(@.action == 'APPROVE')].assigner.name"
+                }
+    
+              ]
+            },
+            {
+              "path": "http://collection-services:8080/collection-services/payments/TL/_search",
+              "queryParam": "tenantId=$.tenantId,consumerCodes=$.applicationNumber,businessServices=TL",
+              "apiRequest": null,
+              "responseMapping":[
+                {            
+                  "variable":"tradeLicenseFee",
+                  "value":"$.Payments[0].totalDue"
+                },
+                {            
+                  "variable":"recieptNo",
+                  "value":"$.Payments[0].paymentDetails[0].receiptNumber"
+                }
+
+              ]
+            }  
+          ]
+        },
+        {
+          "qrcodeConfig": [
+            {
+              "variable": "qrCode",
+              "value": "{{signedCertificateData}}"
             }
           ]
         }

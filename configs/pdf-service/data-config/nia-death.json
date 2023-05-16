@@ -1,5 +1,5 @@
 {
-  "key": "death-naccertificate",
+  "key": "death-niacertificate",
   "DataConfigs": {
     "serviceName": "rainmaker-common",
     "version": "1.0.0",
@@ -13,48 +13,9 @@
           {
             "direct": [
               {
-                "variable": "form10",
+                "variable": "nia",
                 "value": {
-                  "path": "PDF_NAC_FORM_10"
-                },
-                "type": "label",
-                "localisation":{
-                  "required":true,
-                  "prefix": null,
-                  "module":"rainmaker-common",
-                  "locale":"en_IN"
-                }
-              },
-              {
-                "variable": "rule13",
-                "value": {
-                  "path": "PDF_NAC_RULE_13"
-                },
-                "type": "label",
-                "localisation":{
-                  "required":true,
-                  "prefix": null,
-                  "module":"rainmaker-common",
-                  "locale":"en_IN"
-                }
-              },
-              {
-                "variable": "nac-death",
-                "value": {
-                  "path": "PDF_NAC_DEATH_CERTIFICATE"
-                },
-                "type": "label",
-                "localisation":{
-                  "required":true,
-                  "prefix": null,
-                  "module":"rainmaker-common",
-                  "locale":"en_IN"
-                }
-              },
-              {
-                "variable": "issueUnderSection171969",
-                "value": {
-                  "path": "PDF_NAC_ISSUED_UNDER_SECTION_17_1969"
+                  "path": "PDF_NIA_CERTIFICATE"
                 },
                 "type": "label",
                 "localisation":{
@@ -67,21 +28,7 @@
               {
                 "variable": "certify",
                 "value": {
-                  "path": "PDF_NAC_CERTIFY"
-                },
-                "type": "label",
-                "localisation":{
-                  "required":true,
-                  "prefix": null,
-                  "module":"rainmaker-common",
-                  "locale":"en_IN"
-                }
-
-              },
-              {
-                "variable": "son/wife",
-                "value": {
-                  "path": "PDF_NAC_SON_WIFE_DAUGHTER"
+                  "path": "PDF_NIA_CERTIFY"
                 },
                 "type": "label",
                 "localisation":{
@@ -92,9 +39,9 @@
                 }
               },
               {
-                "variable": "registration-year",
+                "variable": "enquiry",
                 "value": {
-                  "path": "PDF_NAC_REGISTRATION_YEAR"
+                  "path": "PDF_NIA_CERTIFY_ENQUIRY"
                 },
                 "type": "label",
                 "localisation":{
@@ -105,9 +52,9 @@
                 }
               },
               {
-                "variable": "relating-to",
+                "variable": "relating-to-death",
                 "value": {
-                  "path": "PDF_NAC_LOCALAREA"
+                  "path": "PDF_NIA_RELATING_TO_THE_DEATH"
                 },
                 "type": "label",
                 "localisation":{
@@ -118,9 +65,9 @@
                 }
               },
               {
-                "variable": "of-tehsil",
+                "variable": "application",
                 "value": {
-                  "path": "PDF_NAC_TEHSIL"
+                  "path": "PDF_NIA_APPLICATION"
                 },
                 "type": "label",
                 "localisation":{
@@ -131,9 +78,9 @@
                 }
               },
               {
-                "variable": "of-district",
+                "variable": "date-of-death",
                 "value": {
-                  "path": "PDF_NAC_DISTRICT"
+                  "path": "PDF_NIA_DATE_OF_DEATH"
                 },
                 "type": "label",
                 "localisation":{
@@ -144,9 +91,9 @@
                 }
               },
               {
-                "variable": "of-state",
+                "variable": "name-deceased",
                 "value": {
-                  "path": "PDF_NAC_STATE"
+                  "path": "PDF_NIA_NAME_OF_DECEASED"
                 },
                 "type": "label",
                 "localisation":{
@@ -157,9 +104,22 @@
                 }
               },
               {
-                "variable": "event-death",
+                "variable": "address-en",
                 "value": {
-                  "path": "PDF_NAC_EVENT_DEATH"
+                  "path": "PDF_NIA_ADDRESS"
+                },
+                "type": "label",
+                "localisation":{
+                  "required":true,
+                  "prefix": null,
+                  "module":"rainmaker-common",
+                  "locale":"en_IN"
+                }
+              },
+              {
+                "variable": "place-of-death",
+                "value": {
+                  "path": "PDF_NIA_DETAILS_DEATH"
                 },
                 "type": "label",
                 "localisation":{
@@ -196,49 +156,26 @@
                 }
               },
               {
-                "variable": "careOf",
-                "value": {
-                  "path": "$.InformationDeath.FatherNameEn"
-                }
-              },
-              {
-                "variable": "period",
-                "value": {
-                  "path": "$.InformationDeath.period"
-                }
-              },
-              {
                 "variable": "applicantNameEn",
                 "value": {
                   "path": "$.DeathApplicantDtls.ApplicantName"
                 }
               },
               {
-                "variable": "localAreaEn",
+                "variable": "application-no",
                 "value": {
-                  "path": "$.InformationDeath.DeathPlaceLocalityEn"
+                  "path": "$.InformationDeath.DeathACKNo"
                 }
               },
               {
-                "variable": "tehsil",
+                "variable": "death-date",
                 "value": {
-                  "path": "$.InformationDeath.lbTalukEn"
-                }
+                  "path": "$.InformationDeath.DateOfDeath"
+                },
+                "type": "date"
               },
               {
-                "variable": "district",
-                "value": {
-                  "path": "$.InformationDeath.lbDistrictEn"
-                }
-              },
-              {
-                "variable": "state",
-                "value": {
-                  "path": "$.state"
-                }
-              },
-              {
-                "variable": "fName",
+                "variable": "FName",
                 "value": {
                   "path": "$.InformationDeath.DeceasedFirstNameEn"
                 }
@@ -256,17 +193,42 @@
                 }
               },
               {
+                "variable": "fatherName",
+                "value": {
+                  "path": "$.InformationDeath.FatherNameEn"
+                }
+              },
+              {
                 "variable": "motherName",
                 "value": {
                   "path": "$.InformationDeath.MotherNameEn"
                 }
               },
               {
-                "variable": "certificateNo", 
+                "variable": "address",
                 "value": {
-                  "path": "$.InformationDeath.certificateNo"
+                  "path": "$.InformationDeath.permanentAddressFullEn"
+                }
+              },
+              {
+                "variable": "place",
+                "value": {
+                  "path": "$.InformationDeath.placeofDeath"
+                }
+              },
+              {
+                "variable": "localBodyName",
+                "value": {
+                  "path": "$.InformationDeath.localBodyName"
                 },
-                "type": "setEmpty"
+                "type":"setEmpty"
+              },
+              {
+                "variable": "issueDate",
+                "value": {
+                  "path": "$.InformationDeath.dateofissue"
+                },
+                "type": "date"
               },
               {
                 "variable": "date-en",
@@ -294,20 +256,6 @@
                   "locale":"en_IN"
                 }
               },
-              {
-                "variable": "localBodyName", 
-                "value": {
-                  "path": "$.InformationDeath.localBodyName"
-                },
-                "type":"setEmpty"
-              },
-              {
-                "variable": "issueDate", 
-                "value": {
-                  "path": "$.InformationDeath.dateofissue"
-                },
-                "type": "date"
-            },
               {
                 "variable": "seal-en",
                 "value": {
