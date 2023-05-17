@@ -161,7 +161,7 @@
                                       "layout": "1px"
                                     }
                                   ],
-								  [
+								                  [
                                     {
                                       "style": "ws-head",
                                       "table": {
@@ -190,7 +190,7 @@
                                       "layout": "1px"
                                     }
                                   ],
-								  [
+								                  [
                                     {
                                       "style": "ws-head",
                                       "table": {
@@ -219,7 +219,7 @@
                                       "layout": "1px"
                                     }
                                   ],
-								  [
+								                  [
                                     {
                                       "style": "ws-head",
                                       "table": {
@@ -240,7 +240,7 @@
                                                   "text": "{{name}}",
                                                   "style": "tl-table"
                                                 },
-												{
+												                        {
                                                   "text": "{{address}}",
                                                   "style": "tl-table"
                                                 }
@@ -252,7 +252,7 @@
                                       "layout": "1px"
                                     }
                                   ],
-								  [
+                                  [
                                     {
                                       "style": "ws-head",
                                       "table": {
@@ -281,7 +281,7 @@
                                       "layout": "1px"
                                     }
                                   ],
-								  [
+								                  [
                                     {
                                       "style": "ws-head",
                                       "table": {
@@ -323,7 +323,7 @@
                 ]
               },
               "layout": "noBorders"
-            }
+            },
             {
               "style": "ws-head",
               "table": {
@@ -331,22 +331,22 @@
                 "body": [
                   [
                     {
-						"stack": [
-                        {
-                          "text": "Date",
-                          "style": "tl-table-value"
-                        }
-                      ],
-					  "alignment":"left"
-                    },
-                    {
-                      "stack": [
-                        {
-                          "text": "Secretary",
-                          "style": "tl-table-value"
-                        }
-                      ],
-					  "alignment":"right"
+                    "stack": [
+                                {
+                                  "text": "Date",
+                                  "style": "tl-table-value"
+                                }
+                              ],
+                    "alignment":"left"
+                            },
+                            {
+                              "stack": [
+                                {
+                                  "text": "Secretary",
+                                  "style": "tl-table-value"
+                                }
+                              ],
+                    "alignment":"right"
                     }
                   ]
                 ]
@@ -360,14 +360,14 @@
                 "body": [
                   [
                     {
-						"stack": [
-                        {
-                          "text": "{{localbodyName}}",
-                          "style": "tl-table-value"
-                        }
-                      ],
-					  "alignment": "right"
-                    },
+                    "stack": [
+                                {
+                                  "text": "{{localbodyName}}",
+                                  "style": "tl-table-value"
+                                }
+                              ],
+                    "alignment": "right"
+                    }
                   ]
                 ]
               },
@@ -392,7 +392,7 @@
             },
             "tl-logo-header": {
               "color": "#0f0f0f",
-			  "font": "Times",
+			        "font": "Times",
               "fontSize": 14,
               "bold": true,
               "letterSpacing": 0.74,
