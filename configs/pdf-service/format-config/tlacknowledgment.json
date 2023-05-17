@@ -54,6 +54,14 @@
                   {
                     "text": "{{localbodyName}}",
                     "style": "tl-logo-header"
+                  },
+                  {
+                    "text": "Address : {{ulb-address}}",
+                    "style": "title-header"
+                  },
+                  {
+                    "text": "Contact No : {{corporationContact}} , Email : corporationEmail",
+                    "style": "title-header"
                   }
                 ],
                 "alignment": "center"
