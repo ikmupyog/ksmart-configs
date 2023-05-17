@@ -9,8 +9,8 @@
         "style": "ws-head",
         "table": {
           "widths": [
-            "50%",
-            "50%"
+            "70%",
+            "30%"
           ],
           "body": [
             [
@@ -60,7 +60,7 @@
                     "style": "title-header"
                   },
                   {
-                    "text": "Contact No : {{corporationContact}} , Email : corporationEmail",
+                    "text": "Contact No : {{corporationContact}} , Email : {{corporationEmail}}",
                     "style": "title-header"
                   }
                 ],
@@ -105,8 +105,7 @@
                 "style": "ws-head",
                 "table": {
                   "widths": [
-                    "85%",
-                    "15%"
+                    "*"
                   ],
                   "body": [
                     [
@@ -114,240 +113,227 @@
                         "style": "ws-head",
                         "table": {
                           "widths": [
-                            "*"
+                            "45%",
+                            "55%"
                           ],
                           "body": [
                             [
                               {
-                                "style": "ws-head",
-                                "table": {
-                                  "widths": [
-                                    "45%",
-                                    "55%"
-                                  ],
-                                  "body": [
-                                    [
-                                      {
-                                        "stack": [
-                                          {
-                                            "text": "Name of Service ",
-                                            "style": "tl-table-value"
-                                          }
-                                        ]
-                                      },
-                                      {
-                                        "stack": [
-                                          {
-                                            "text": "IFTE & OS License",
-                                            "style": "tl-table"
-                                          }
-                                        ]
-                                      }
-                                    ]
-                                  ]
-                                },
-                                "layout": "1px"
-                              }
-                            ],
-                            [
+                                "stack": [
+                                  {
+                                    "text": "Name of Service ",
+                                    "style": "tl-table-value"
+                                  }
+                                ]
+                              },
                               {
-                                "style": "ws-head",
-                                "table": {
-                                  "widths": [
-                                    "45%",
-                                    "55%"
-                                  ],
-                                  "body": [
-                                    [
-                                      {
-                                        "stack": [
-                                          {
-                                            "text": "e-File No",
-                                            "style": "tl-table-value"
-                                          }
-                                        ]
-                                      },
-                                      {
-                                        "stack": [
-                                          {
-                                            "text": "{{applicationNo}}",
-                                            "style": "tl-table"
-                                          }
-                                        ]
-                                      }
-                                    ]
-                                  ]
-                                },
-                                "layout": "1px"
-                              }
-                            ],
-                            [
-                              {
-                                "style": "ws-head",
-                                "table": {
-                                  "widths": [
-                                    "45%",
-                                    "55%"
-                                  ],
-                                  "body": [
-                                    [
-                                      {
-                                        "stack": [
-                                          {
-                                            "text": "e-File Date",
-                                            "style": "tl-table-value"
-                                          }
-                                        ]
-                                      },
-                                      {
-                                        "stack": [
-                                          {
-                                            "text": "{{applicationDate}}",
-                                            "style": "tl-table"
-                                          }
-                                        ]
-                                      }
-                                    ]
-                                  ]
-                                },
-                                "layout": "1px"
-                              }
-                            ],
-                            [
-                              {
-                                "style": "ws-head",
-                                "table": {
-                                  "widths": [
-                                    "45%",
-                                    "55%"
-                                  ],
-                                  "body": [
-                                    [
-                                      {
-                                        "stack": [
-                                          {
-                                            "text": "Mode of e-Filing",
-                                            "style": "tl-table-value"
-                                          }
-                                        ]
-                                      },
-                                      {
-                                        "stack": [
-                                          {
-                                            "text": "Self",
-                                            "style": "tl-table"
-                                          }
-                                        ]
-                                      }
-                                    ]
-                                  ]
-                                },
-                                "layout": "1px"
-                              }
-                            ],
-                            [
-                              {
-                                "style": "ws-head",
-                                "table": {
-                                  "widths": [
-                                    "45%",
-                                    "55%"
-                                  ],
-                                  "body": [
-                                    [
-                                      {
-                                        "stack": [
-                                          {
-                                            "text": "Applicant Details",
-                                            "style": "tl-table-value"
-                                          }
-                                        ]
-                                      },
-                                      {
-                                        "stack": [
-                                          {
-                                            "text": "{{name}}",
-                                            "style": "tl-table"
-                                          },
-                                          {
-                                            "text": "{{address}}",
-                                            "style": "tl-table"
-                                          }
-                                        ]
-                                      }
-                                    ]
-                                  ]
-                                },
-                                "layout": "1px"
-                              }
-                            ],
-                            [
-                              {
-                                "style": "ws-head",
-                                "table": {
-                                  "widths": [
-                                    "45%",
-                                    "55%"
-                                  ],
-                                  "body": [
-                                    [
-                                      {
-                                        "stack": [
-                                          {
-                                            "text": "Attachment(s)",
-                                            "style": "tl-table-value"
-                                          }
-                                        ]
-                                      },
-                                      {
-                                        "stack": [
-                                          {
-                                            "text": "",
-                                            "style": "tl-table"
-                                          }
-                                        ]
-                                      }
-                                    ]
-                                  ]
-                                },
-                                "layout": "1px"
-                              }
-                            ],
-                            [
-                              {
-                                "style": "ws-head",
-                                "table": {
-                                  "widths": [
-                                    "45%",
-                                    "55%"
-                                  ],
-                                  "body": [
-                                    [
-                                      {
-                                        "stack": [
-                                          {
-                                            "text": "Service Delivery Date",
-                                            "style": "tl-table-value"
-                                          }
-                                        ]
-                                      },
-                                      {
-                                        "stack": [
-                                          {
-                                            "text": "",
-                                            "style": "tl-table"
-                                          }
-                                        ]
-                                      }
-                                    ]
-                                  ]
-                                },
-                                "layout": "1px"
+                                "stack": [
+                                  {
+                                    "text": "IFTE & OS License",
+                                    "style": "tl-table"
+                                  }
+                                ]
                               }
                             ]
                           ]
                         },
-                        "layout": "noBorders"
+                        "layout": "1px"
+                      }
+                    ],
+                    [
+                      {
+                        "style": "ws-head",
+                        "table": {
+                          "widths": [
+                            "45%",
+                            "55%"
+                          ],
+                          "body": [
+                            [
+                              {
+                                "stack": [
+                                  {
+                                    "text": "e-File No",
+                                    "style": "tl-table-value"
+                                  }
+                                ]
+                              },
+                              {
+                                "stack": [
+                                  {
+                                    "text": "{{applicationNo}}",
+                                    "style": "tl-table"
+                                  }
+                                ]
+                              }
+                            ]
+                          ]
+                        },
+                        "layout": "1px"
+                      }
+                    ],
+                    [
+                      {
+                        "style": "ws-head",
+                        "table": {
+                          "widths": [
+                            "45%",
+                            "55%"
+                          ],
+                          "body": [
+                            [
+                              {
+                                "stack": [
+                                  {
+                                    "text": "e-File Date",
+                                    "style": "tl-table-value"
+                                  }
+                                ]
+                              },
+                              {
+                                "stack": [
+                                  {
+                                    "text": "{{applicationDate}}",
+                                    "style": "tl-table"
+                                  }
+                                ]
+                              }
+                            ]
+                          ]
+                        },
+                        "layout": "1px"
+                      }
+                    ],
+                    [
+                      {
+                        "style": "ws-head",
+                        "table": {
+                          "widths": [
+                            "45%",
+                            "55%"
+                          ],
+                          "body": [
+                            [
+                              {
+                                "stack": [
+                                  {
+                                    "text": "Mode of e-Filing",
+                                    "style": "tl-table-value"
+                                  }
+                                ]
+                              },
+                              {
+                                "stack": [
+                                  {
+                                    "text": "Self",
+                                    "style": "tl-table"
+                                  }
+                                ]
+                              }
+                            ]
+                          ]
+                        },
+                        "layout": "1px"
+                      }
+                    ],
+                    [
+                      {
+                        "style": "ws-head",
+                        "table": {
+                          "widths": [
+                            "45%",
+                            "55%"
+                          ],
+                          "body": [
+                            [
+                              {
+                                "stack": [
+                                  {
+                                    "text": "Applicant Details",
+                                    "style": "tl-table-value"
+                                  }
+                                ]
+                              },
+                              {
+                                "stack": [
+                                  {
+                                    "text": "{{name}}",
+                                    "style": "tl-table"
+                                  },
+                                  {
+                                    "text": "{{address}}",
+                                    "style": "tl-table"
+                                  }
+                                ]
+                              }
+                            ]
+                          ]
+                        },
+                        "layout": "1px"
+                      }
+                    ],
+                    [
+                      {
+                        "style": "ws-head",
+                        "table": {
+                          "widths": [
+                            "45%",
+                            "55%"
+                          ],
+                          "body": [
+                            [
+                              {
+                                "stack": [
+                                  {
+                                    "text": "Attachment(s)",
+                                    "style": "tl-table-value"
+                                  }
+                                ]
+                              },
+                              {
+                                "stack": [
+                                  {
+                                    "text": "",
+                                    "style": "tl-table"
+                                  }
+                                ]
+                              }
+                            ]
+                          ]
+                        },
+                        "layout": "1px"
+                      }
+                    ],
+                    [
+                      {
+                        "style": "ws-head",
+                        "table": {
+                          "widths": [
+                            "45%",
+                            "55%"
+                          ],
+                          "body": [
+                            [
+                              {
+                                "stack": [
+                                  {
+                                    "text": "Service Delivery Date",
+                                    "style": "tl-table-value"
+                                  }
+                                ]
+                              },
+                              {
+                                "stack": [
+                                  {
+                                    "text": "",
+                                    "style": "tl-table"
+                                  }
+                                ]
+                              }
+                            ]
+                          ]
+                        },
+                        "layout": "1px"
                       }
                     ]
                   ]
