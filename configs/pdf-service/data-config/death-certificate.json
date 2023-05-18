@@ -224,14 +224,16 @@
                     "value": {
                       "path": "$.InformationDeath.dateofissue"
                     },
-                    "type": "date"
+                    "type": "date",
+		     "format": "DD/MM/YYYY HH:MM:SS"
                 },
                 {
                     "variable": "updatedOn", 
                     "value": {
                       "path": "$.AuditDetails.lastModifiedTime"
                     },
-                    "type": "date"
+                    "type": "date",
+		    "format": "DD/MM/YYYY HH:MM:SS"
                 },
                 {
                     "variable": "issuingauthority", 
