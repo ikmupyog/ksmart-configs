@@ -147,7 +147,7 @@
                             ]
                           ]
                         },
-                        "layout": "noBorders"
+                        "layout": "1px"
                       }
                     ],
                     [
@@ -179,7 +179,7 @@
                             ]
                           ]
                         },
-                        "layout": "noBorders"
+                        "layout": "1px"
                       }
                     ],
                     [
@@ -211,39 +211,7 @@
                             ]
                           ]
                         },
-                        "layout": "noBorders"
-                      }
-                    ],
-                    [
-                      {
-                        "style": "ws-head",
-                        "table": {
-                          "widths": [
-                            "45%",
-                            "55%"
-                          ],
-                          "body": [
-                            [
-                              {
-                                "stack": [
-                                  {
-                                    "text": "Mode of e-Filing",
-                                    "style": "tl-table-value"
-                                  }
-                                ]
-                              },
-                              {
-                                "stack": [
-                                  {
-                                    "text": "Self",
-                                    "style": "tl-table"
-                                  }
-                                ]
-                              }
-                            ]
-                          ]
-                        },
-                        "layout": "noBorders"
+                        "layout": "1px"
                       }
                     ],
                     [
@@ -279,7 +247,7 @@
                             ]
                           ]
                         },
-                        "layout": "noBorders"
+                        "layout": "1px"
                       }
                     ],
                     [
@@ -311,39 +279,7 @@
                             ]
                           ]
                         },
-                        "layout": "noBorders"
-                      }
-                    ],
-                    [
-                      {
-                        "style": "ws-head",
-                        "table": {
-                          "widths": [
-                            "45%",
-                            "55%"
-                          ],
-                          "body": [
-                            [
-                              {
-                                "stack": [
-                                  {
-                                    "text": "Service Delivery Date",
-                                    "style": "tl-table-value"
-                                  }
-                                ]
-                              },
-                              {
-                                "stack": [
-                                  {
-                                    "text": "",
-                                    "style": "tl-table"
-                                  }
-                                ]
-                              }
-                            ]
-                          ]
-                        },
-                        "layout": "noBorders"
+                        "layout": "1px"
                       }
                     ]
                   ]
@@ -411,11 +347,9 @@
       },
       {
         "text": "Note: This is a system generated acknowledgement and does not need any signature",
-        "style": "footer-header",
-        "pageBreak": "before"
+        "style": "footer-header"
       }
     ],
-    "footer": "(function(currentPage, pageCount) { return currentPage.toString() + ' of ' + pageCount; })",
     "styles": {
       "pdf-header": {
         "fillColor": "#F2F2F2",
