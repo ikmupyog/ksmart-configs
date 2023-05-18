@@ -147,7 +147,7 @@
                             ]
                           ]
                         },
-                        "layout": "1px"
+                        "layout": "noBorders"
                       }
                     ],
                     [
@@ -179,7 +179,7 @@
                             ]
                           ]
                         },
-                        "layout": "1px"
+                        "layout": "noBorders"
                       }
                     ],
                     [
@@ -211,7 +211,7 @@
                             ]
                           ]
                         },
-                        "layout": "1px"
+                        "layout": "noBorders"
                       }
                     ],
                     [
@@ -243,7 +243,7 @@
                             ]
                           ]
                         },
-                        "layout": "1px"
+                        "layout": "noBorders"
                       }
                     ],
                     [
@@ -279,7 +279,7 @@
                             ]
                           ]
                         },
-                        "layout": "1px"
+                        "layout": "noBorders"
                       }
                     ],
                     [
@@ -311,7 +311,7 @@
                             ]
                           ]
                         },
-                        "layout": "1px"
+                        "layout": "noBorders"
                       }
                     ],
                     [
@@ -343,7 +343,7 @@
                             ]
                           ]
                         },
-                        "layout": "1px"
+                        "layout": "noBorders"
                       }
                     ]
                   ]
@@ -353,7 +353,7 @@
             ]
           ]
         },
-        "layout": "noBorders"
+        "layout": "2px"
       },
       {
         "style": "ws-head",
@@ -453,7 +453,8 @@
         "font": "Times",
         "fontSize": 13,
         "letterSpacing": 0.6,
-        "fontWeight": 500
+        "fontWeight": 500,
+        "bold" : true
       },
       "appendix-header": {
         "color": "#000000",
