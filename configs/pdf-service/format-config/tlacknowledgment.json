@@ -24,7 +24,7 @@
                   }
                 ],
                 "margin": [
-                  250,
+                  240,
                   0,
                   0,
                   0
@@ -449,7 +449,7 @@
         ]
       },
       "tl-logo-sub-header": {
-        "color": "#0f0f0f",
+        "color": "#000000",
         "font": "Times",
         "fontSize": 13,
         "letterSpacing": 0.6,
@@ -878,7 +878,6 @@
       "tl-table": {
         "color": "#000000",
         "font" : "Times",
-        "bold": true,
         "fontSize": 12,
         "fontWeight": 400,
         "margin": [
