@@ -11,6 +11,25 @@
           "topic": "common-pdf-generation-3",
           "mappings": [
             {
+              "externalAPI": [
+                {
+                  "path": "https://ksmart-dev.lsgkerala.gov.in/egov-mdms-service/v1/_get",
+                  "queryParam": "moduleName=tenant&masterName=tenants&tenantId=kl&filter=%5B?(@.code=='{$.InformationDeath.TenantId}')%5D",
+                  "apiRequest": null,
+                  "responseMapping": [
+                    {
+                      "variable": "tenantMl",
+                      "value": "$.MdmsRes.tenant.tenants[0].city.localName"
+                    },
+                    {
+                      "variable": "logotenant",
+                      "value": "$.MdmsRes.tenant.tenants[0].logoId",
+                      "type":"image"
+                    }
+                  ]
+                }
+              ],
+
               "direct": [
                 {
                   "variable": "logoindia",

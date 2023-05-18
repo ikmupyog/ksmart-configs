@@ -1,0 +1,166 @@
+{
+  "key": "tlacknowledgment",
+  "DataConfigs": {
+    "serviceName": "rainmaker-common",
+    "version": "1.0.0",
+    "baseKeyPath": "$.Licenses.*",
+    "entityIdPath":"$.id",
+    "isCommonTableBorderRequired": true,
+    "mappings": [
+      {
+        "mappings": [
+          {
+            "direct": [   
+              {
+                "variable": "tenant",
+                "value": {
+                "path": "$.tenantId"
+                },
+                "type": "setEmpty",
+                "localisation":{
+                "required":true,
+                "prefix": "TENANT_TENANTS",
+                "module":"rainmaker-common",
+                "locale":"en_IN"
+                }
+              },
+          
+              {
+                "variable": "tenantMl",
+                "value": {
+                "path": "$.tenantId"
+                },
+                "type": "setEmpty",
+                "localisation":{
+                "required":true,
+                "prefix": "TENANT_TENANTS",
+                "module":"rainmaker-common",
+                "locale":"ml_IN"
+                }
+              },
+            
+              {
+                  "variable": "municipal_corportaion",
+                  "value": {
+                    "path": "PDF_STATIC_LABEL_CONSOLIDATED_TLCERTIFICATE_MUNICIPAL_CORPORATION"
+                  },
+                  "type": "label",
+                  "localisation":{
+                    "required":true,
+                    "prefix": null,
+                    "module":"rainmaker-common"
+                 }
+              },
+              {
+                  "variable": "corporation_contact",
+                  "value": {
+                    "path": "PDF_STATIC_LABEL_CONSOLIDATED_TLCERTIFICATE_LICENSE_CORPORATION_CONTACT"
+                  },
+                  "type": "label",
+                  "localisation":{
+                    "required":true,
+                    "prefix": null,
+                    "module":"rainmaker-common"
+                 }
+              },
+              {
+                  "variable": "corporation_website",
+                  "value": {
+                    "path": "PDF_STATIC_LABEL_CONSOLIDATED_TLCERTIFICATE_LICENSE_CORPORATION_WEBSITE"
+                  },
+                  "type": "label",
+                  "localisation":{
+                    "required":true,
+                    "prefix": null,
+                    "module":"rainmaker-common"
+                 }
+              },
+              {
+                  "variable": "corporation_email",
+                  "value": {
+                    "path": "PDF_STATIC_LABEL_CONSOLIDATED_TLCERTIFICATE_LICENSE_CORPORATION_EMAIL"
+                  },
+                  "type": "label",
+                  "localisation":{
+                    "required":true,
+                    "prefix": null,
+                    "module":"rainmaker-common"
+                 }
+              },
+              {
+                  "variable": "trade_license_certifcate",
+                  "value": {
+                    "path": "PDF_STATIC_LABEL_CONSOLIDATED_TLCERTIFICATE_LICENSE_CERTIFICATE"
+                  },
+                  "type": "label",
+                  "localisation":{
+                    "required":true,
+                    "prefix": null,
+                    "module":"rainmaker-common"
+                 }
+              }
+          ]
+        },
+        {
+          "externalAPI": [     
+            { 
+              "path": "https://ksmart-dev.lsgkerala.gov.in/egov-mdms-service/v1/_get",
+              "queryParam": "moduleName=tenant&masterName=tenants&tenantId=kl&filter=%5B?(@.code=='{$.tenantId}')%5D",
+              "apiRequest": null,
+              "responseMapping":[
+                {             
+                  "variable":"ulb-address",
+                  "value":"$.MdmsRes.tenant.tenants[0].address"
+                },
+                {
+                  "variable":"corporationContact",
+                  "value":"$.MdmsRes.tenant.tenants[0].contactNumber"
+                },
+                {
+                  "variable":"corporationWebsite",
+                  "value":"$.MdmsRes.tenant.tenants[0].domainUrl"
+                },
+                {
+                  "variable":"corporationEmail",
+                  "value":"$.MdmsRes.tenant.tenants[0].emailId"
+                },
+                {
+                  "variable":"localbodyName",
+                  "value":"$.MdmsRes.tenant.tenants[0].name"
+                },
+                {
+                  "variable": "logoImage",
+                  "value": "$.MdmsRes.tenant.tenants[0].logoId",
+                  "type": "image"
+                }
+              ]
+            },
+            {
+              "path": "http://egov-workflow-v2.egov:8080/egov-workflow-v2/egov-wf/process/_search",
+              "queryParam": "businessIds=$.applicationNumber,history=true,tenantId=$.tenantId",
+              "apiRequest": null,
+              "responseMapping":[
+                {            
+                  "variable":"approvedBy",
+                  "value":"$.ProcessInstances[?(@.action == 'APPROVE')].assigner.name"
+                }
+    
+              ]
+            }
+            
+          ]
+        },
+        {
+          "qrcodeConfig": [
+            {
+              "variable": "qrCode",
+              "value": "{{signedCertificateData}}"
+            }
+          ]
+        }
+      ]
+
+    }
+  ]
+}
+}

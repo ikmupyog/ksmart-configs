@@ -200,48 +200,10 @@
                                 },
                                 "type": "date"
                             },
-                            {
-                                "variable": "marriagePlacenameEn",
-                                "value": {
-                                    "path": "$.marriageRegistryDetails.marriagePlacenameEn"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "marriageStreetEn",
-                                "value": {
-                                    "path": "$.marriageRegistryDetails.marriageStreetEn"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "marriageTalukID",
-                                "value": {
-                                    "path": "$.marriageRegistryDetails.marriageTalukID"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "marriageVillageName",
-                                "value": {
-                                    "path": "$.marriageRegistryDetails.marriageVillageName"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "marriageLandmark",
-                                "value": {
-                                    "path": "$.marriageRegistryDetails.marriageLandmark"
-                                },
-                                "type": "setEmpty"
-                            },
-                            {
-                                "variable": "marriageLocalityEn",
-                                "value": {
-                                    "path": "$.marriageRegistryDetails.marriageLocalityEn"
-                                },
-                                "type": "setEmpty"
-                            },
+                           
+                           
+                          
+                          
                             {
                                 "variable": "marriagePlaceFullAddress",
                                 "value": {
