@@ -668,7 +668,7 @@
         "qr-code": {
           "color": "#000000",
           "alignment": "left",
-          "margin": [0, 0, 0, 0]
+          "margin": [0, 17, 0, 0]
         },
         "footer": {
           "color": "#000000",
@@ -908,11 +908,11 @@
           "color": "#000000",
           "font": "Times",
           "bold": true,
-          "fontSize": 6,
+          "fontSize": 6.5,
           "alignment": "center",
           "margin": [
             0,
-            0,
+            14,
             15,
             5
           ]
@@ -920,7 +920,7 @@
         "details-body-center-bottomML": {
           "color": "#000000",
           "italics": true,
-          "fontSize": 6,
+          "fontSize": 6.5,
           "alignment": "center",
           "margin": [
             0,
@@ -933,7 +933,7 @@
           "color": "#000000",
           "font": "Times",
           "italics": true,
-          "fontSize": 6,
+          "fontSize": 6.5,
           "alignment": "center",
           "margin": [
             0,
