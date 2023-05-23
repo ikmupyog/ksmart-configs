@@ -14,7 +14,7 @@
                     {
                         "externalAPI": [
                             {
-                              "path": "https://ksmart.lsgkerala.gov.in/egov-mdms-service/v1/_get",
+                              "path": "https://ksmart-dev.lsgkerala.gov.in/egov-mdms-service/v1/_get",
                               "queryParam": "moduleName=tenant&masterName=tenants&tenantId=kl&filter=%5B?(@.code=='{$.marriageRegistryDetails.marriageTenantid}')%5D",
                               "apiRequest": null,
                               "responseMapping": [
