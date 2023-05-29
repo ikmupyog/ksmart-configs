@@ -50,7 +50,7 @@
               {
                 "variable": "receiptDate",
                 "value": {
-                  "path": "$.receiptDate"
+                  "path": "$.transactionDate"
                 },
                 "type": "date"
               },
@@ -86,18 +86,10 @@
                 }
               },
               {
-                "variable": "fromPeriod",
+                "variable": "financialYear",
                 "value": {
-                  "path": "$.paymentDetails[0].bill.billDetails[0].fromPeriod"
-                },
-                "type": "date"
-              },
-              {
-                "variable": "toPeriod",
-                "value": {
-                  "path": "$.paymentDetails[0].bill.billDetails[0].toPeriod"
-                },
-                "type": "date"
+                  "path": "$.paymentDetails[0].bill.billDetails[0].financialYear"
+                }
               },
               {
                 "variable": "consumerID",
@@ -126,7 +118,13 @@
               {
                 "variable": "headCode",
                 "value": {
-                  "path": "$.headCode"
+                  "path": "$.Demands[0].demandDetails[0].taxHeadMasterCode"
+                }
+              },
+              {
+                "variable": "headName",
+                "value": {
+                  "path": "$.Demands[0].consumerType"
                 }
               },
               {
