@@ -44,6 +44,12 @@
                     "path": "$.applicationNumber"
                   }
               },
+              {
+                "variable": "service",
+                "value": {
+                  "path": "$.service"
+                }
+            },
             {
               "variable": "address",
               "value": {

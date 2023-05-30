@@ -31,7 +31,7 @@
                           "style": "main-body-style"
                         },
                         {
-                          "text": "IFTE & OS LICENCE",
+                          "text": "IFTE & OS LICENSE",
                           "style": "tl-logo-sub-header"
                         }
                       ],
@@ -45,7 +45,7 @@
             {
               "style": "ws-head",
               "table": {
-                "widths": ["5%","45%","50%"],
+                "widths": ["4%","30%","66%"],
                 "body": [
                   [
                     {
@@ -59,6 +59,7 @@
                       "stack": [
                         {
                           "text": "License No",
+                          "bold" : true,
                           "style": "tl-table-value",
                           "widths":"40%"
                         }
@@ -69,7 +70,8 @@
                       "stack": [
                         {
                           "text": "{{licenseNumber}}",
-                          "style": "tl-table"
+                          "bold" : true,
+                          "style": "tl-table-value"
                         }
                       ]
                     }
@@ -240,7 +242,7 @@
                       "stack": [
                         {
                           "text": "Sl No",
-                          "style": "tl-table-value"
+                          "style": "tl-table"
                         }
                       ]
                     },
@@ -248,7 +250,7 @@
                       "stack": [
                         {
                           "text": "Business Category",
-                          "style": "tl-table-value"
+                          "style": "tl-table"
                         }
                       ]
                     },
@@ -256,7 +258,7 @@
                       "stack": [
                         {
                           "text": "Type",
-                          "style": "tl-table-value"
+                          "style": "tl-table"
                         }
                       ]
                     },
@@ -264,7 +266,7 @@
                       "stack": [
                         {
                           "text": "Sub Type",
-                          "style": "tl-table-value"
+                          "style": "tl-table"
                         }
                       ]
                     }
@@ -274,7 +276,7 @@
                       "stack": [
                         {
                           "text": "1",
-                          "style": "tl-table-value"
+                          "style": "tl-table"
                         }
                       ]
                     },
@@ -282,7 +284,7 @@
                       "stack": [
                         {
                           "text": "{{businessCategory}}",
-                          "style": "tl-table"
+                          "style": "tl-table-value"
                         }
                       ]
                     },
@@ -290,7 +292,7 @@
                       "stack": [
                         {
                           "text": "{{businessType}}",
-                          "style": "tl-table"
+                          "style": "tl-table-value"
                         }
                       ]
                     },
@@ -298,7 +300,7 @@
                       "stack": [
                         {
                           "text": "{{businessSubtype}}",
-                          "style": "tl-table"
+                          "style": "tl-table-value"
                         }
                       ]
                     }
@@ -344,7 +346,7 @@
                       "stack": [
                         {
                           "text": "Issue Date",
-                          "style": "tl-table-value"
+                          "style": "tl-table"
                         }
                       ]
                     },
@@ -352,7 +354,7 @@
                       "stack": [
                         {
                           "text": "Period of Validity",
-                          "style": "tl-table-value"
+                          "style": "tl-table"
                         }
                       ]
                     },
@@ -360,7 +362,7 @@
                       "stack": [
                         {
                           "text": "Renewal Date",
-                          "style": "tl-table-value"
+                          "style": "tl-table"
                         }
                       ]
                     },
@@ -368,7 +370,7 @@
                       "stack": [
                         {
                           "text": "{{trade_license_fee}}",
-                          "style": "tl-table-value"
+                          "style": "tl-table"
                         }
                       ]
                     },
@@ -376,7 +378,7 @@
                       "stack": [
                         {
                           "text": " Issuing Authority",
-                          "style": "tl-table-value"
+                          "style": "tl-table"
                         }
                       ]
                     }
@@ -386,7 +388,7 @@
                       "stack": [
                         {
                           "text": "{{licenseIssueDate}}",
-                          "style": "tl-table"
+                          "style": "tl-table-value"
                         }
                       ]
                     },
@@ -394,7 +396,7 @@
                       "stack": [
                         {
                           "text": "{{licenseValidityFrom}} - {{licenseValidityTo}}",
-                          "style": "tl-table"
+                          "style": "tl-table-value"
                         }
                       ]
                     },
@@ -402,7 +404,7 @@
                       "stack": [
                         {
                           "text": "",
-                          "style": "tl-table"
+                          "style": "tl-table-value"
                         }
                       ]
                     },
@@ -410,7 +412,7 @@
                       "stack": [
                         {
                           "text": "{{tradeLicenseFee}}",
-                          "style": "tl-table"
+                          "style": "tl-table-value"
                         }
                       ]
                     },
@@ -418,7 +420,7 @@
                       "stack": [
                         {
                           "text": "",
-                          "style": "tl-table"
+                          "style": "tl-table-value"
                         }
                       ]
                     }
@@ -525,27 +527,27 @@
                       "stack": [
                         {
                           "text": "{{approvedBy}}",
-                          "style": "tl-table"
+                          "style": "tl-table-value"
                         },
                         {
                           "text": "Designation",
-                          "style": "tl-table"
+                          "style": "tl-table-value"
                         },
                         {
                           "text": "Office",
-                          "style": "tl-table"
+                          "style": "tl-table-value"
                         },
                         {
                           "text": "Digital Signature ",
-                          "style": "tl-table"
+                          "style": "tl-table-value"
                         },
                         {
                           "text": "Time Stamp, Date",
-                          "style": "tl-table"
+                          "style": "tl-table-value"
                         },
                         {
                           "text": "Office Seal",
-                          "style": "tl-table"
+                          "style": "tl-table-value"
                         } 
                       ]
                     }
@@ -1306,9 +1308,15 @@
               "color": "#000000",
               "bold": true,
               "font": "Times",
-              "fontSize": 12,
-              "letterSpacing": 0.6,
-              "fontWeight": 400
+              "fontSize": 11,
+              "letterSpacing": 0.74,
+              "fontWeight": 400,
+              "margin": [
+                15,
+                0,
+                0,
+                5
+              ]
             },
             "appendix-header": {
               "color": "#000000",
@@ -1319,10 +1327,15 @@
             },
             "main-body-style": {
               "color": "#000000",
-              "bold": true,
               "font": "Times",
-              "fontSize": 13,
-              "alignment": "center"
+              "fontSize": 10,
+              "alignment": "center",
+              "margin": [
+                15,
+                0,
+                0,
+                5
+              ]
             },
             "appendix-header-italic": {
               "color": "#000000",
@@ -1736,7 +1749,7 @@
               "font" : "Times",
               "bold": true,
               "fontSize": 12,
-              "fontWeight": 600,
+              "fontWeight": 400,
               "margin": [
                 5,
                 5,
@@ -1747,9 +1760,8 @@
             "tl-table-value": {
               "color": "#000000",
               "font" : "Times",
-              "bold": true,
               "fontSize": 12,
-              "fontWeight": 500,
+              "fontWeight": 200,
               "margin": [
                 8,
                 5,

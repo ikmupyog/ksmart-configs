@@ -1,880 +1,839 @@
 {
   "key": "tlacknowledgment",
   "config": {
-      "defaultStyle": {
-          "font": "Meera"
-           },
-          "content": [
-			{
-			  "style": "ws-head",
-			  "table": {
-				"widths": [ "50%","50%"],
-				"body": [
-				  [
-					{
-					  "stack": [
-						{
-						  "image": "{{logoImage}}",
-						  "width": 50,
-						  "height": 59.25,
-						  "style": "tl-logo-image"
-						}
-					  ],
-					  "alignment": "center"
-					},
-					{
-                      "stack": [
-                        {
-                          "image": "{{qrCode}}",
-                          "style":"qr-image",
-                          "width":60,
-                          "height":60
-                        }
-                      ],
-					  "alignment": "right"
-                    }
-				  ]
-				]
-			  },
-			  "layout": "noBorders"
-			},	
-            {
-              "style": "ws-head",
-              "table": {
-                "widths": [
-                  "*"
+    "defaultStyle": {
+      "font": "Meera"
+    },
+    "content": [
+      {
+        "style": "ws-head",
+        "table": {
+          "widths": [
+            "50%",
+            "50%"
+          ],
+          "body": [
+            [
+              {
+                "stack": [
+                  {
+                    "image": "{{logoImage}}",
+                    "width": 50,
+                    "height": 59.25,
+                    "style": "tl-logo-image"
+                  }
                 ],
-                "body": [
-                  [
-                    {
-                      "stack": [
-                        {
-                          "image": "{{logoImage}}",
-                          "width": 50,
-                          "height": 59.25,
-                          "style": "tl-logo-image"
-                        },
-                        {
-                          "text": "{{localbodyName}}",
-                          "style": "tl-logo-header"
-                        }
-                      ],
-                      "alignment": "center"
-                    }
-                  ]
+                "margin": [
+                  240,
+                  0,
+                  0,
+                  0
                 ]
               },
-              "layout": "noBorders"
-            },
-            {
-              "style": "ws-head",
-              "table": {
-                "widths": ["*"],
-                "body": [
-                  [
-                    {
-                      "stack": [
-                        {
-                          "text": "Acknowledgment Receipt",
-                          "style": "tl-table-value"
-                        }
-                      ],
-                      "alignment": "center"
-                    }
-                  ]
+              {
+                "stack": [
+                  {
+                    "image": "{{qrCode}}",
+                    "style": "qr-image",
+                    "width": 60,
+                    "height": 60
+                  }
+                ],
+                "margin": [
+                  150,
+                  0,
+                  0,
+                  0
                 ]
-              },
-              "layout": "noBorders"
-            },   
-            {
-              "style": "ws-head",
-              "table": {
-                "widths": ["*"],
-                "body": [
-                  [
-                    {
-                      "style": "ws-head",
-                      "table": {
-                      "widths": ["85%","15%"],
-                      "body": [
-                          [
-                            {
-                              "style": "ws-head",
-                              "table": {
-                                "widths": ["*"],
-                                "body": [
-                                  [
-                                    {
-                                      "style": "ws-head",
-                                      "table": {
-                                        "widths": ["45%","55%"],
-                                        "body": [
-                                          [
-                                            {
-                                              "stack": [
-                                                {
-                                                  "text": "Name of Service ",
-                                                  "style": "tl-table-value"
-                                                }
-                                              ]
-                                            },
-                                            {
-                                              "stack": [
-                                                {
-                                                  "text": "IFTE & OS License",
-                                                  "style": "tl-table"
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        ]
-                                      },
-                                      "layout": "noBorders"
-                                    }
-                                  ],
-                                  [
-                                    {
-                                      "style": "ws-head",
-                                      "table": {
-                                        "widths": ["45%","55%"],
-                                        "body": [
-                                          [
-                                            {
-                                              "stack": [
-                                                {
-                                                  "text": "e-File No",
-                                                  "style": "tl-table-value"
-                                                }
-                                              ]
-                                            },
-                                            {
-                                              "stack": [
-                                                {
-                                                  "text": "{{applicationNo}}",
-                                                  "style": "tl-table"
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        ]
-                                      },
-                                      "layout": "1px"
-                                    }
-                                  ],
-								  [
-                                    {
-                                      "style": "ws-head",
-                                      "table": {
-                                        "widths": ["45%","55%"],
-                                        "body": [
-                                          [
-                                            {
-                                              "stack": [
-                                                {
-                                                  "text": "e-File Date",
-                                                  "style": "tl-table-value"
-                                                }
-                                              ]
-                                            },
-                                            {
-                                              "stack": [
-                                                {
-                                                  "text": "{{applicationDate}}",
-                                                  "style": "tl-table"
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        ]
-                                      },
-                                      "layout": "1px"
-                                    }
-                                  ],
-								  [
-                                    {
-                                      "style": "ws-head",
-                                      "table": {
-                                        "widths": ["45%","55%"],
-                                        "body": [
-                                          [
-                                            {
-                                              "stack": [
-                                                {
-                                                  "text": "Mode of e-Filing",
-                                                  "style": "tl-table-value"
-                                                }
-                                              ]
-                                            },
-                                            {
-                                              "stack": [
-                                                {
-                                                  "text": "Self",
-                                                  "style": "tl-table"
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        ]
-                                      },
-                                      "layout": "1px"
-                                    }
-                                  ],
-								  [
-                                    {
-                                      "style": "ws-head",
-                                      "table": {
-                                        "widths": ["45%","55%"],
-                                        "body": [
-                                          [
-                                            {
-                                              "stack": [
-                                                {
-                                                  "text": "Applicant Details",
-                                                  "style": "tl-table-value"
-                                                }
-                                              ]
-                                            },
-                                            {
-                                              "stack": [
-                                                {
-                                                  "text": "{{name}}",
-                                                  "style": "tl-table"
-                                                },
-												{
-                                                  "text": "{{address}}",
-                                                  "style": "tl-table"
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        ]
-                                      },
-                                      "layout": "1px"
-                                    }
-                                  ],
-								  [
-                                    {
-                                      "style": "ws-head",
-                                      "table": {
-                                        "widths": ["45%","55%"],
-                                        "body": [
-                                          [
-                                            {
-                                              "stack": [
-                                                {
-                                                  "text": "Attachment(s)",
-                                                  "style": "tl-table-value"
-                                                }
-                                              ]
-                                            },
-                                            {
-                                              "stack": [
-                                                {
-                                                  "text": "",
-                                                  "style": "tl-table"
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        ]
-                                      },
-                                      "layout": "1px"
-                                    }
-                                  ],
-								  [
-                                    {
-                                      "style": "ws-head",
-                                      "table": {
-                                        "widths": ["45%","55%"],
-                                        "body": [
-                                          [
-                                            {
-                                              "stack": [
-                                                {
-                                                  "text": "Service Delivery Date",
-                                                  "style": "tl-table-value"
-                                                }
-                                              ]
-                                            },
-                                            {
-                                              "stack": [
-                                                {
-                                                  "text": "",
-                                                  "style": "tl-table"
-                                                }
-                                              ]
-                                            }
-                                          ]
-                                        ]
-                                      },
-                                      "layout": "1px"
-                                    }
-                                  ]
+              }
+            ]
+          ]
+        },
+        "layout": "noBorders"
+      },
+      {
+        "style": "ws-head",
+        "table": {
+          "widths": [
+            "*"
+          ],
+          "body": [
+            [
+              {
+                "stack": [
+                  {
+                    "text": "{{localbodyName}}",
+                    "style": "tl-logo-header"
+                  },
+                  {
+                    "text": "Address : {{ulb-address}}",
+                    "style": "title-header"
+                  },
+                  {
+                    "text": "Contact No : {{corporationContact}} , Email : {{corporationEmail}}",
+                    "style": "title-header"
+                  }
+                ],
+                "alignment": "center"
+              }
+            ]
+          ]
+        },
+        "layout": "noBorders"
+      },
+      {
+        "style": "ws-head",
+        "table": {
+          "widths": [
+            "*"
+          ],
+          "body": [
+            [
+              {
+                "stack": [
+                  {
+                    "text": "Acknowledgment Receipt",
+                    "style": "tl-logo-sub-header"
+                  }
+                ],
+                "alignment": "center"
+              }
+            ]
+          ]
+        },
+        "layout": "noBorders"
+      },
+      {
+        "style": "ws-head",
+        "table": {
+          "widths": [
+            "*"
+          ],
+          "body": [
+            [
+              {
+                "style": "ws-head",
+                "table": {
+                  "widths": [
+                    "*"
+                  ],
+                  "body": [
+                    [
+                      {
+                        "style": "ws-head",
+                        "table": {
+                          "widths": [
+                            "45%",
+                            "55%"
+                          ],
+                          "body": [
+                            [
+                              {
+                                "stack": [
+                                  {
+                                    "text": "Name of Service ",
+                                    "style": "tl-table-value"
+                                  }
                                 ]
                               },
-                              "layout": "1px"
-                            }
+                              {
+                                "stack": [
+                                  {
+                                    "text": "{{service}}",
+                                    "style": "tl-table"
+                                  }
+                                ]
+                              }
+                            ]
                           ]
-                        ]
-                      },
-                      "layout": "noBorders"
-                    }
+                        },
+                        "layout": "1px"
+                      }
+                    ],
+                    [
+                      {
+                        "style": "ws-head",
+                        "table": {
+                          "widths": [
+                            "45%",
+                            "55%"
+                          ],
+                          "body": [
+                            [
+                              {
+                                "stack": [
+                                  {
+                                    "text": "e-File No",
+                                    "style": "tl-table-value"
+                                  }
+                                ]
+                              },
+                              {
+                                "stack": [
+                                  {
+                                    "text": "{{applicationNo}}",
+                                    "style": "tl-table"
+                                  }
+                                ]
+                              }
+                            ]
+                          ]
+                        },
+                        "layout": "1px"
+                      }
+                    ],
+                    [
+                      {
+                        "style": "ws-head",
+                        "table": {
+                          "widths": [
+                            "45%",
+                            "55%"
+                          ],
+                          "body": [
+                            [
+                              {
+                                "stack": [
+                                  {
+                                    "text": "e-File Date",
+                                    "style": "tl-table-value"
+                                  }
+                                ]
+                              },
+                              {
+                                "stack": [
+                                  {
+                                    "text": "{{applicationDate}}",
+                                    "style": "tl-table"
+                                  }
+                                ]
+                              }
+                            ]
+                          ]
+                        },
+                        "layout": "1px"
+                      }
+                    ],
+                    [
+                      {
+                        "style": "ws-head",
+                        "table": {
+                          "widths": [
+                            "45%",
+                            "55%"
+                          ],
+                          "body": [
+                            [
+                              {
+                                "stack": [
+                                  {
+                                    "text": "Applicant Details",
+                                    "style": "tl-table-value"
+                                  }
+                                ]
+                              },
+                              {
+                                "stack": [
+                                  {
+                                    "text": "{{name}}",
+                                    "style": "tl-table"
+                                  },
+                                  {
+                                    "text": "{{address}}",
+                                    "style": "tl-table"
+                                  }
+                                ]
+                              }
+                            ]
+                          ]
+                        },
+                        "layout": "1px"
+                      }
+                    ],
+                    [
+                      {
+                        "style": "ws-head",
+                        "table": {
+                          "widths": [
+                            "45%",
+                            "55%"
+                          ],
+                          "body": [
+                            [
+                              {
+                                "stack": [
+                                  {
+                                    "text": "Attachment(s)",
+                                    "style": "tl-table-value"
+                                  }
+                                ]
+                              },
+                              {
+                                "stack": [
+                                  {
+                                    "text": "",
+                                    "style": "tl-table"
+                                  }
+                                ]
+                              }
+                            ]
+                          ]
+                        },
+                        "layout": "1px"
+                      }
+                    ]
                   ]
-                ]
+                },
+                "layout": "noBorders"
+              }
+            ]
+          ]
+        },
+        "layout": "2px"
+      },
+      {
+        "style": "ws-head",
+        "table": {
+          "widths": [
+            "30%",
+            "70%"
+          ],
+          "body": [
+            [
+              {
+                "stack": [
+                  {
+                    "text": "Date",
+                    "style": "tl-table-value"
+                  }
+                ],
+                "alignment": "left"
               },
-              "layout": "noBorders"
-            }
-            {
-              "style": "ws-head",
-              "table": {
-                "widths": ["30%","70%"],
-                "body": [
-                  [
-                    {
-						"stack": [
-                        {
-                          "text": "Date",
-                          "style": "tl-table-value"
-                        }
-                      ],
-					  "alignment":"left"
-                    },
-                    {
-                      "stack": [
-                        {
-                          "text": "Secretary",
-                          "style": "tl-table-value"
-                        }
-                      ],
-					  "alignment":"right"
-                    }
-                  ]
-                ]
-              },
-              "layout": "noBorders"
-            },
-            {
-              "style": "ws-head",
-              "table": {
-                "widths": ["*"],
-                "body": [
-                  [
-                    {
-						"stack": [
-                        {
-                          "text": "{{localbodyName}}",
-                          "style": "tl-table-value"
-                        }
-                      ],
-					  "alignment": "right"
-                    },
-                  ]
-                ]
-              },
-              "layout": "noBorders"
-            },
-            {
-              "text": "Note: This is a system generated acknowledgement and does not need any signature",
-              "style": "footer-header",
-              "pageBreak": "before"
-            }
+              {
+                "stack": [
+                  {
+                    "text": "Secretary",
+                    "style": "tl-table-value"
+                  }
+                ],
+                "alignment": "right"
+              }
+            ]
+          ]
+        },
+        "layout": "noBorders"
+      },
+      {
+        "style": "ws-head",
+        "table": {
+          "widths": [
+            "*"
+          ],
+          "body": [
+            [
+              {
+                "stack": [
+                  {
+                    "text": "{{localbodyName}}",
+                    "style": "tl-table-value"
+                  }
+                ],
+                "alignment": "right"
+              }
+            ]
+          ]
+        },
+        "layout": "noBorders"
+      },
+      {
+        "text": "Note: This is a system generated acknowledgement and does not need any signature",
+        "style": "footer-header"
+      }
+    ],
+    "styles": {
+      "pdf-header": {
+        "fillColor": "#F2F2F2",
+        "margin": [
+          -70,
+          -41,
+          -81,
+          10
+        ]
+      },
+      "tl-logo-header": {
+        "color": "#0f0f0f",
+        "font": "Times",
+        "fontSize": 14,
+        "bold": true,
+        "letterSpacing": 0.74,
+        "fontWeight": 700,
+        "margin": [
+          15,
+          0,
+          0,
+          5
+        ]
+      },
+      "tl-logo-image": {
+        "margin": [
+          0,
+          -10,
+          0,
+          5
+        ]
+      },
+      "tl-logo-sub-header": {
+        "color": "#000000",
+        "font": "Times",
+        "fontSize": 13,
+        "letterSpacing": 0.6,
+        "fontWeight": 500,
+        "bold" : true
+      },
+      "appendix-header": {
+        "color": "#000000",
+        "bold": true,
+        "fontSize": 20,
+        "fontWeight": 400,
+        "alignment": "center"
+      },
+      "main-body-style": {
+        "color": "#000000",
+        "fontSize": 12,
+        "alignment": "center",
+        "italics": true
+      },
+      "appendix-header-italic": {
+        "color": "#000000",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "alignment": "center",
+        "bold": true,
+        "decoration": "underline",
+        "decorationColor": "#484848"
+      },
+      "appendix-header-emblem": {
+        "color": "#000000",
+        "alignment": "center",
+        "margin": [
+          0,
+          -30,
+          0,
+          0
+        ]
+      },
+      "instruction-body": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 7,
+        "fontWeight": 400,
+        "alignment": "center",
+        "margin": [
+          0,
+          -20,
+          0,
+          0
+        ]
+      },
+      "qr-code": {
+        "color": "#000000",
+        "alignment": "left",
+        "margin": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "footer": {
+        "color": "#000000",
+        "alignment": "left",
+        "margin": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "title-header": {
+        "color": "#000000",
+        "bold": true,
+        "fontSize": 10,
+        "alignment": "center",
+        "margin": [
+          0,
+          -1,
+          0,
+          0
+        ]
+      },
+      "title-header_multiLang": {
+        "color": "#000000",
+        "bold": true,
+        "fontSize": 12,
+        "alignment": "center",
+        "margin": [
+          0,
+          0,
+          0,
+          -10
+        ]
+      },
+      "appendix-header-serialNo": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 8,
+        "fontWeight": 400,
+        "margin": [
+          0,
+          -5,
+          0,
+          0
+        ]
+      },
+      "appendix-header-formNo": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 8,
+        "fontWeight": 400,
+        "margin": [
+          20,
+          -5,
+          0,
+          0
+        ]
+      },
+      "rule-header": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 10,
+        "fontWeight": 400,
+        "margin": [
+          0,
+          0,
+          0,
+          3
+        ]
+      },
+      "rule-header_multiLang": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 11,
+        "fontWeight": 400,
+        "margin": [
+          0,
+          0,
+          0,
+          -1
+        ]
+      },
+      "rule-body": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 10,
+        "fontWeight": 400,
+        "margin": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "rule-body_multiLang": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 11,
+        "fontWeight": 400,
+        "margin": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "details-body": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 12,
+        "fontWeight": 300,
+        "lineHeight": 2,
+        "margin": [
+          10,
+          0,
+          10,
+          0
+        ]
+      },
+      "details-body-border": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 12,
+        "fontWeight": 300,
+        "margin": [
+          10,
+          0,
+          10,
+          0
         ],
-		    "footer": "(function(currentPage, pageCount) { return currentPage.toString() + ' of ' + pageCount; })",
-          "styles": {
-            "pdf-header": {
-              "fillColor": "#F2F2F2",
-              "margin": [
-                -70,
-                -41,
-                -81,
-                10
-              ]
-            },
-            "tl-logo-header": {
-              "color": "#0f0f0f",
-			  "font": "Times",
-              "fontSize": 14,
-              "bold": true,
-              "letterSpacing": 0.74,
-              "fontWeight": 700,
-              "margin": [
-                15,
-                0,
-                0,
-                5
-              ]
-            },
-            "tl-logo-image":{
-              "margin": [
-                0,
-                -10,
-                0,
-                5
-              ]
-            },
-            "tl-logo-sub-header": {
-              "color": "#0f0f0f",
-              "font": "Times",
-              "fontSize": 13,
-              "letterSpacing": 0.6,
-              "fontWeight": 500
-            },
-            "appendix-header": {
-              "color": "#000000",
-              "bold": true,
-              "fontSize": 20,
-              "fontWeight": 400,
-              "alignment": "center"
-            },
-            "main-body-style": {
-              "color": "#000000",
-              "fontSize": 12,
-              "alignment": "center",
-              "italics": true
-            },
-            "appendix-header-italic": {
-              "color": "#000000",
-              "fontSize": 14,
-              "fontWeight": 400,
-              "alignment": "center",
-              "bold": true,
-              "decoration": "underline",
-              "decorationColor": "#484848"
-            },
-            "appendix-header-emblem": {
-              "color": "#000000",
-              "alignment": "center",
-              "margin": [
-                0,
-                -30,
-                0,
-                0
-              ]
-            },
-            "instruction-body": {
-              "color": "#000000",
-              "bold": false,
-              "fontSize": 7,
-              "fontWeight": 400,
-              "alignment": "center",
-              "margin": [
-                0,
-                -20,
-                0,
-                0
-              ]
-            },
-            "qr-code": {
-              "color": "#000000",
-              "alignment": "left",
-              "margin": [
-                0,
-                0,
-                0,
-                0
-              ]
-            },
-            "footer": {
-              "color": "#000000",
-              "alignment": "left",
-              "margin": [
-                0,
-                0,
-                0,
-                0
-              ]
-            },
-            "title-header": {
-              "color": "#000000",
-              "bold": true,
-              "fontSize": 10,
-              "alignment": "center",
-              "margin": [
-                0,
-                -1,
-                0,
-                0
-              ]
-            },
-            "title-header_multiLang": {
-              "color": "#000000",
-              "bold": true,
-              "fontSize": 12,
-              "alignment": "center",
-              "margin": [
-                0,
-                0,
-                0,
-                -10
-              ]
-            },
-            "appendix-header-serialNo": {
-              "color": "#000000",
-              "bold": false,
-              "fontSize": 8,
-              "fontWeight": 400,
-              "margin": [
-                0,
-                -5,
-                0,
-                0
-              ]
-            },
-            "appendix-header-formNo": {
-              "color": "#000000",
-              "bold": false,
-              "fontSize": 8,
-              "fontWeight": 400,
-              "margin": [
-                20,
-                -5,
-                0,
-                0
-              ]
-            },
-            "rule-header": {
-              "color": "#000000",
-              "bold": false,
-              "fontSize": 10,
-              "fontWeight": 400,
-              "margin": [
-                0,
-                0,
-                0,
-                3
-              ]
-            },
-            "rule-header_multiLang": {
-              "color": "#000000",
-              "bold": false,
-              "fontSize": 11,
-              "fontWeight": 400,
-              "margin": [
-                0,
-                0,
-                0,
-                -1
-              ]
-            },
-            "rule-body": {
-              "color": "#000000",
-              "bold": false,
-              "fontSize": 10,
-              "fontWeight": 400,
-              "margin": [
-                0,
-                0,
-                0,
-                0
-              ]
-            },
-            "rule-body_multiLang": {
-              "color": "#000000",
-              "bold": false,
-              "fontSize": 11,
-              "fontWeight": 400,
-              "margin": [
-                0,
-                0,
-                0,
-                0
-              ]
-            },
-            "details-body": {
-              "color": "#000000",
-              "bold": false,
-              "fontSize": 12,
-              "fontWeight": 300,
-              "lineHeight": 2,
-              "margin": [
-                10,
-                0,
-                10,
-                0
-              ]
-            },
-            "details-body-border": {
-              "color": "#000000",
-              "bold": false,
-              "fontSize": 12,
-              "fontWeight": 300,
-              "margin": [
-                10,
-                0,
-                10,
-                0
-              ],
-              "border":"2px"
-            },
-            "details-body-center": {
-              "color": "#000000",
-              "bold": false,
-              "fontSize": 11,
-              "alignment": "center"
-            },
-            "footer-red": {
-              "color": "#FF0000",
-              "fontSize": 7,
-              "alignment": "center",
-              "italics": true
-            },
-            "appendix-header-body": {
-              "color": "#000000",
-              "bold": true,
-              "fontSize": 14,
-              "fontWeight": 400,
-              "alignment": "center"
-            },
-            "receipt-value-down-sub": {
-              "color": "#000000",
-              "bold": false,
-              "fontSize": 11,
-              "fontWeight": 400,
-              "alignment": "left",
-              "margin": [
-                0,
-                0,
-                0,
-                5
-              ]
-            },
-            "receipt-value-down-rec": {
-              "color": "#000000",
-              "bold": false,
-              "fontSize": 13,
-              "fontWeight": 400,
-              "alignment": "left",
-              "margin": [
-                0,
-                0,
-                0,
-                0
-              ]
-            },
-            "receipt-value-down": {
-              "color": "#000000",
-              "bold": false,
-              "fontSize": 13,
-              "fontWeight": 400,
-              "alignment": "left",
-              "margin": [
-                -8,
-                0,
-                0,
-                5
-              ]
-            },
-            "pdf-application-no-value": {
-              "fontSize": 12,
-              "font": "Roboto",
-              "italics": true,
-              "margin": [
-                -18,
-                8,
-                0,
-                0
-              ],
-              "color": "#484848"
-            },
-            "pdf-header-text": {
-              "color": "#000000",
-              "fontSize": 17,
-              "fontWeight": 400,
-              "letterSpacing": 0.74,
-              "margin": [
-                0,
-                -10,
-                0,
-                5
-              ]
-            },
-            "pdf-header-text-serialNo": {
-              "color": "#000000",
-              "fontSize": 17,
-              "fontWeight": 400,
-              "letterSpacing": 0.74,
-              "margin": [
-                0,
-                -5,
-                0,
-                0
-              ]
-            },
-            "pdf-header-sub-text": {
-              "color": "#000000",
-              "fontSize": 12,
-              "letterSpacing": 0.6
-            },
-            "pdf-application-no": {
-              "fontSize": 12,
-              "bold": true,
-              "margin": [
-                -18,
-                8,
-                0,
-                0
-              ],
-              "color": "#0f0f0f"
-            },
-            "pdf-card-title": {
-              "fontSize": 11,
-              "bold": true,
-              "margin": [
-                -18,
-                16,
-                8,
-                8
-              ],
-              "color": "#0f0f0f",
-              "fontWeight": 500
-            },
-            "pdf-card-no-title": {
-              "fontSize": 11,
-              "bold": true,
-              "color": "#0f0f0f",
-              "fontWeight": 500
-            },
-            "pdf-table-card-white": {
-              "fillColor": "white",
-              "fontSize": 7,
-              "color": "#0f0f0f",
-              "margin": [
-                -20,
-                -2,
-                -8,
-                -8
-              ]
-            },
-            "pdf-table-card": {
-              "fillColor": "#F2F2F2",
-              "fontSize": 7,
-              "color": "#0f0f0f",
-              "margin": [
-                -20,
-                -2,
-                -8,
-                -8
-              ]
-            },
-            "pdf-card-key": {
-              "color": "rgba(0, 0, 0, 0.54)",
-              "fontSize": 8,
-              "margin": [
-                0,
-                1,
-                0,
-                0
-              ]
-            },
-            "pdf-card-sub-header": {
-              "color": "rgba(0, 0, 0, 0.94)",
-              "fontSize": 9,
-              "bold": true,
-              "margin": [
-                0,
-                3,
-                0,
-                0
-              ]
-            },
-            "pdf-card-value": {
-              "fontSize": 10,
-              "color": "rgba(0, 0, 0, 0.87)",
-              "margin": [
-                0,
-                0,
-                0,
-                1
-              ]
-            },
-            "pdf-head-qr-code": {
-              "fillColor": "#F2F2F2",
-              "margin": [
-                -70,
-                -41,
-                -81,
-                0
-              ]
-            },
-            "qr-text": {
-              "fontSize": 12,
-              "margin": [
-                40,
-                0,
-                0,
-                0
-              ],
-              "color": "#0f0f0f",
-              "alignment": "left"
-            },
-            "qr-image": {
-              "margin": [
-                40,
-                0,
-                0,
-                0
-              ],
-              "color": "#0f0f0f",
-              "alignment": "left"
-            },
-            "footer-header": {
-              "margin": [
-                0,
-                15,
-                0,
-                -40
-              ],
-              "bold": true,
-              "color": "#000000",
-              "alignment": "center"
-            },
-            "footer-bottom": {
-              "margin": [
-                0,
-                50,
-                0,
-                0
-              ],
-              "bold": true,
-              "color": "#000000",
-              "alignment": "right"
-            },
-            "tl-table": {
-              "color": "#0f0f0f",
-              "bold": true,
-              "fontSize": 12,
-              "fontWeight": 600,
-              "margin": [
-                5,
-                5,
-                0,
-                0
-              ]
-            },
-            "tl-table-value": {
-              "color": "#000000",
-              "bold": true,
-              "fontSize": 12,
-              "fontWeight": 500,
-              "margin": [
-                8,
-                5,
-                0,
-                0
-              ]
-            },
-            "tl-table-value-center": {
-              "color": "#000000",
-              "bold": true,
-              "fontSize": 12,
-              "fontWeight": 500,
-              "margin": [
-                8,
-                10,
-                0,
-                0
-              ]
-            }
-          }
+        "border": "2px"
+      },
+      "details-body-center": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 11,
+        "alignment": "center"
+      },
+      "footer-red": {
+        "color": "#FF0000",
+        "fontSize": 7,
+        "alignment": "center",
+        "italics": true
+      },
+      "appendix-header-body": {
+        "color": "#000000",
+        "bold": true,
+        "fontSize": 14,
+        "fontWeight": 400,
+        "alignment": "center"
+      },
+      "receipt-value-down-sub": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 11,
+        "fontWeight": 400,
+        "alignment": "left",
+        "margin": [
+          0,
+          0,
+          0,
+          5
+        ]
+      },
+      "receipt-value-down-rec": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 13,
+        "fontWeight": 400,
+        "alignment": "left",
+        "margin": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "receipt-value-down": {
+        "color": "#000000",
+        "bold": false,
+        "fontSize": 13,
+        "fontWeight": 400,
+        "alignment": "left",
+        "margin": [
+          -8,
+          0,
+          0,
+          5
+        ]
+      },
+      "pdf-application-no-value": {
+        "fontSize": 12,
+        "font": "Roboto",
+        "italics": true,
+        "margin": [
+          -18,
+          8,
+          0,
+          0
+        ],
+        "color": "#484848"
+      },
+      "pdf-header-text": {
+        "color": "#000000",
+        "fontSize": 17,
+        "fontWeight": 400,
+        "letterSpacing": 0.74,
+        "margin": [
+          0,
+          -10,
+          0,
+          5
+        ]
+      },
+      "pdf-header-text-serialNo": {
+        "color": "#000000",
+        "fontSize": 17,
+        "fontWeight": 400,
+        "letterSpacing": 0.74,
+        "margin": [
+          0,
+          -5,
+          0,
+          0
+        ]
+      },
+      "pdf-header-sub-text": {
+        "color": "#000000",
+        "fontSize": 12,
+        "letterSpacing": 0.6
+      },
+      "pdf-application-no": {
+        "fontSize": 12,
+        "bold": true,
+        "margin": [
+          -18,
+          8,
+          0,
+          0
+        ],
+        "color": "#0f0f0f"
+      },
+      "pdf-card-title": {
+        "fontSize": 11,
+        "bold": true,
+        "margin": [
+          -18,
+          16,
+          8,
+          8
+        ],
+        "color": "#0f0f0f",
+        "fontWeight": 500
+      },
+      "pdf-card-no-title": {
+        "fontSize": 11,
+        "bold": true,
+        "color": "#0f0f0f",
+        "fontWeight": 500
+      },
+      "pdf-table-card-white": {
+        "fillColor": "white",
+        "fontSize": 7,
+        "color": "#0f0f0f",
+        "margin": [
+          -20,
+          -2,
+          -8,
+          -8
+        ]
+      },
+      "pdf-table-card": {
+        "fillColor": "#F2F2F2",
+        "fontSize": 7,
+        "color": "#0f0f0f",
+        "margin": [
+          -20,
+          -2,
+          -8,
+          -8
+        ]
+      },
+      "pdf-card-key": {
+        "color": "rgba(0, 0, 0, 0.54)",
+        "fontSize": 8,
+        "margin": [
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      "pdf-card-sub-header": {
+        "color": "rgba(0, 0, 0, 0.94)",
+        "fontSize": 9,
+        "bold": true,
+        "margin": [
+          0,
+          3,
+          0,
+          0
+        ]
+      },
+      "pdf-card-value": {
+        "fontSize": 10,
+        "color": "rgba(0, 0, 0, 0.87)",
+        "margin": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "pdf-head-qr-code": {
+        "fillColor": "#F2F2F2",
+        "margin": [
+          -70,
+          -41,
+          -81,
+          0
+        ]
+      },
+      "qr-text": {
+        "fontSize": 12,
+        "margin": [
+          40,
+          0,
+          0,
+          0
+        ],
+        "color": "#0f0f0f",
+        "alignment": "left"
+      },
+      "qr-image": {
+        "margin": [
+          40,
+          0,
+          0,
+          0
+        ],
+        "color": "#0f0f0f",
+        "alignment": "left"
+      },
+      "footer-header": {
+        "margin": [
+          0,
+          15,
+          0,
+          -40
+        ],
+        "bold": true,
+        "color": "#000000",
+        "alignment": "center"
+      },
+      "footer-bottom": {
+        "margin": [
+          0,
+          50,
+          0,
+          0
+        ],
+        "bold": true,
+        "color": "#000000",
+        "alignment": "right"
+      },
+      "tl-table": {
+        "color": "#000000",
+        "font" : "Times",
+        "fontSize": 12,
+        "fontWeight": 400,
+        "margin": [
+          5,
+          5,
+          0,
+          0
+        ]
+      },
+      "tl-table-value": {
+        "color": "#000000",
+        "font" : "Times",
+        "fontSize": 12,
+        "fontWeight": 200,
+        "margin": [
+          8,
+          5,
+          0,
+          0
+        ]
+      }
     }
   }
+}
