@@ -1,5 +1,5 @@
 {
-  "key": "marriage-certificate",
+  "key": "hindumarriage-certificate",
   "config": {
       "defaultStyle": {
           "font": "Times"
@@ -221,12 +221,7 @@
                                             0,
                                             5
                                           ]
-                                    },
-                                    {
-                                    "image": "{{groomPhoto}}",
-                                    "width": 90,
-                                    "height": 90
-                                }
+                                    }
                                 ],"alignment" : "center"
                                 
                                 }
@@ -288,11 +283,7 @@
                                           0,
                                           5
                                         ]
-                                    },{
-                                    "image": "{{bridePhoto}}",
-                                    "width": 90,
-                                    "height": 90
-                                }],"alignment" : "center"
+                                    }],"alignment" : "center"
                                 , "margin":[ 
                                 5,
                             0,
